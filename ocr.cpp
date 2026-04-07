@@ -8,6 +8,8 @@
 
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
+#include "json.hpp"
+using json = nlohmann::json;
 
 typedef struct {
   __int32 t;
@@ -35,7 +37,7 @@ typedef __int64(__cdecl *OcrInitOptionsSetUseModelDelayLoad_t)(__int64, char);
 typedef __int64(__cdecl *CreateOcrPipeline_t)(__int64, __int64, __int64,
                                               __int64 *);
 
-void ocr(Img img) {
+void ocr(Img img, const char *output_json) {
   HINSTANCE hDLL = LoadLibraryA("oneocr.dll");
   if (hDLL == NULL) {
     std::cerr << "Failed to load DLL: " << GetLastError() << std::endl;
@@ -113,9 +115,13 @@ void ocr(Img img) {
   res = GetOcrLineCount(instance, &lc);
   assert(res == 0);
   printf("Recognize %lld lines\n", lc);
+
+  json result;
+  result["line_count"] = lc;
+  result["lines"] = json::array();
+
   for (__int64 lci = 0; lci < lc; lci++) {
     __int64 line = 0;
-    __int64 v106 = 0;
     GetOcrLine(instance, lci, &line);
     if (!line) {
       continue;
@@ -123,8 +129,19 @@ void ocr(Img img) {
     __int64 line_content = 0;
     GetOcrLineContent(line, &line_content);
     char *lcs = reinterpret_cast<char *>(line_content);
-    printf("%02lld: %s\n", lci, lcs);
-    // GetOcrLineBoundingBox(line, &v106);
+
+    __int64 line_bbox = 0;
+    GetOcrLineBoundingBox(line, &line_bbox);
+    float *lb = reinterpret_cast<float *>(line_bbox);
+
+    json line_obj;
+    line_obj["index"] = lci;
+    line_obj["text"] = std::string(lcs);
+    if (lb) {
+      line_obj["bbox"] = {{"x", lb[0]}, {"y", lb[1]}, {"w", lb[2]}, {"h", lb[3]}};
+    }
+    line_obj["words"] = json::array();
+
     __int64 lr = 0;
     GetOcrLineWordCount(line, &lr);
     for (__int64 j = 0; j < lr; j++) {
@@ -134,8 +151,23 @@ void ocr(Img img) {
       GetOcrWord(line, j, &v105);
       GetOcrWordContent(v105, &lpMultiByteStr);
       GetOcrWordBoundingBox(v105, &v107);
+      char *wcs = reinterpret_cast<char *>(lpMultiByteStr);
+      float *wb = reinterpret_cast<float *>(v107);
+
+      json word_obj;
+      word_obj["text"] = std::string(wcs);
+      if (wb) {
+        word_obj["bbox"] = {{"x", wb[0]}, {"y", wb[1]}, {"w", wb[2]}, {"h", wb[3]}};
+      }
+      line_obj["words"].push_back(word_obj);
     }
+    result["lines"].push_back(line_obj);
   }
+
+  std::ofstream ofs(output_json, std::ios::binary);
+  ofs << result.dump(2);
+  ofs.close();
+  printf("Results saved to %s\n", output_json);
 }
 
 int main(int argc, char *argv[]) {
@@ -201,7 +233,8 @@ int main(int argc, char *argv[]) {
             .step = (__int64)step,
             .data_ptr = (__int64)reinterpret_cast<char *>(bgra)};
 
-  ocr(ig);
+  std::string json_out = std::string(file_name) + ".json";
+  ocr(ig, json_out.c_str());
   free(bgra);
   return 0;
 }
