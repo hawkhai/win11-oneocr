@@ -130,10 +130,10 @@ WRAPPER_EXPORT int initModel(const wchar_t *model_dir) {
   // Initialize OCR pipeline
   __int64 ctx = 0;
   __int64 res = pCreateOcrInitOptions(&ctx);
-  if (res != 0) return OCR_ERR_INIT_OPTIONS;
+  if (res != 0) { FreeLibrary(g_hDLL); g_hDLL = NULL; return OCR_ERR_INIT_OPTIONS; }
 
   res = pOcrInitOptionsSetUseModelDelayLoad(ctx, 0);
-  if (res != 0) return OCR_ERR_DELAY_LOAD;
+  if (res != 0) { FreeLibrary(g_hDLL); g_hDLL = NULL; return OCR_ERR_DELAY_LOAD; }
 
   const char *key = {"kj)TGtrK>f]b[Piow.gU+nC@s\"\"\"\"\"\"4"};
 
@@ -146,6 +146,8 @@ WRAPPER_EXPORT int initModel(const wchar_t *model_dir) {
                            &g_pipeline);
   if (res != 0) {
     g_pipeline = 0;
+    FreeLibrary(g_hDLL);
+    g_hDLL = NULL;
     return OCR_ERR_CREATE_PIPE;
   }
 
@@ -179,12 +181,15 @@ WRAPPER_EXPORT int ocrImage(const wchar_t *image_path, char *&utf8_json, ALLOC_F
   if (!g_hDLL || !g_pipeline) return OCR_ERR_NOT_INIT;
   if (!image_path || !func) return OCR_ERR_INVALID_PARAM;
 
-  // Convert wchar_t path to UTF-8 for stb_image (which accepts char*)
   std::string path_u8 = wchar_to_utf8(image_path);
 
-  // Load image with stb_image
+  // Load image with _wfopen + stbi_load_from_file to support Unicode paths
   int width = 0, height = 0, channels = 0;
-  unsigned char *data = stbi_load(path_u8.c_str(), &width, &height, &channels, 0);
+  unsigned char *data = nullptr;
+  FILE *f = _wfopen(image_path, L"rb");
+  if (!f) return OCR_ERR_LOAD_IMAGE;
+  data = stbi_load_from_file(f, &width, &height, &channels, 0);
+  fclose(f);
   if (!data) return OCR_ERR_LOAD_IMAGE;
 
   // Convert to BGRA
