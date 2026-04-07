@@ -4,10 +4,10 @@
 #include <vector>
 
 #include <Windows.h>
-#include <opencv2/opencv.hpp>
 #include <stdio.h>
-using namespace cv;
-using namespace std;
+
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
 
 typedef struct {
   __int32 t;
@@ -147,34 +147,61 @@ int main(int argc, char *argv[]) {
     printf("Usage: ocr.exe <abc.png>\n");
     return 0;
   }
-  Mat img = imread(file_name, IMREAD_UNCHANGED);
-  if (img.empty()) {
-    cout << "can't read image!" << endl;
+
+  int width = 0, height = 0, channels = 0;
+  unsigned char *data = stbi_load(file_name, &width, &height, &channels, 0);
+  if (!data) {
+    printf("can't read image: %s\n", file_name);
     return -1;
   }
-
-  Mat img_rgba;
-  if (img.channels() == 3) {
-    cvtColor(img, img_rgba, COLOR_BGR2BGRA);
-  } else if (img.channels() == 4) {
-    img_rgba = img;
+  // Convert to BGRA (4 channels)
+  unsigned char *bgra = NULL;
+  if (channels == 3) {
+    // RGB -> BGRA
+    bgra = (unsigned char *)malloc(width * height * 4);
+    for (int i = 0; i < width * height; i++) {
+      bgra[i * 4 + 0] = data[i * 3 + 2]; // B
+      bgra[i * 4 + 1] = data[i * 3 + 1]; // G
+      bgra[i * 4 + 2] = data[i * 3 + 0]; // R
+      bgra[i * 4 + 3] = 255;             // A
+    }
+  } else if (channels == 4) {
+    // RGBA -> BGRA
+    bgra = (unsigned char *)malloc(width * height * 4);
+    for (int i = 0; i < width * height; i++) {
+      bgra[i * 4 + 0] = data[i * 4 + 2]; // B
+      bgra[i * 4 + 1] = data[i * 4 + 1]; // G
+      bgra[i * 4 + 2] = data[i * 4 + 0]; // R
+      bgra[i * 4 + 3] = data[i * 4 + 3]; // A
+    }
+  } else if (channels == 1) {
+    // Gray -> BGRA
+    bgra = (unsigned char *)malloc(width * height * 4);
+    for (int i = 0; i < width * height; i++) {
+      bgra[i * 4 + 0] = data[i]; // B
+      bgra[i * 4 + 1] = data[i]; // G
+      bgra[i * 4 + 2] = data[i]; // R
+      bgra[i * 4 + 3] = 255;     // A
+    }
   } else {
-    cout << "image type not support" << endl;
+    printf("image type not support (channels=%d)\n", channels);
+    stbi_image_free(data);
     return -1;
   }
+  stbi_image_free(data);
 
-  int rows = img_rgba.rows;
-  int cols = img_rgba.cols;
-  size_t step = img_rgba.step;
+  int rows = height;
+  int cols = width;
+  size_t step = (size_t)cols * 4;
 
-  size_t fileSize = rows * step;
   Img ig = {.t = 3,
             .col = cols,
             .row = rows,
             ._unk = 0,
             .step = (__int64)step,
-            .data_ptr = (__int64)reinterpret_cast<char *>(img_rgba.data)};
+            .data_ptr = (__int64)reinterpret_cast<char *>(bgra)};
 
   ocr(ig);
+  free(bgra);
   return 0;
 }
