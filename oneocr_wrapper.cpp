@@ -8,9 +8,32 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 #include "json.hpp"
-#include "oneocr.h"
 
 using json = nlohmann::json;
+
+// ---------- error codes (keep in sync with oneocr.h) ----------
+
+#define OCR_OK                  0
+#define OCR_ERR_LOAD_DLL       -1
+#define OCR_ERR_RESOLVE_FUNC   -2
+#define OCR_ERR_INIT_OPTIONS   -3
+#define OCR_ERR_DELAY_LOAD     -4
+#define OCR_ERR_CREATE_PIPE    -5
+#define OCR_ERR_NOT_INIT      -11
+#define OCR_ERR_INVALID_PARAM -12
+#define OCR_ERR_LOAD_IMAGE    -13
+#define OCR_ERR_ALLOC_BGRA    -14
+#define OCR_ERR_UNSUPPORTED   -15
+#define OCR_ERR_PROC_OPTIONS  -16
+#define OCR_ERR_MAX_LINES     -17
+#define OCR_ERR_RUN_PIPELINE  -18
+#define OCR_ERR_ALLOC_JSON    -19
+
+// ---------- export macros ----------
+
+typedef void* (*ALLOC_FUNC)(size_t size);
+
+#define WRAPPER_EXPORT extern "C" __declspec(dllexport)
 
 // ---------- oneocr.dll internal types ----------
 
@@ -74,7 +97,7 @@ static std::string wchar_to_utf8(const wchar_t *wstr) {
 
 // ---------- exported functions ----------
 
-int initModel(const wchar_t *model_dir) {
+WRAPPER_EXPORT int initModel(const wchar_t *model_dir) {
   if (g_hDLL) return 0; // already initialized
 
   // Build DLL path: model_dir\oneocr.dll
@@ -129,7 +152,7 @@ int initModel(const wchar_t *model_dir) {
   return OCR_OK;
 }
 
-int releaseModel() {
+WRAPPER_EXPORT int releaseModel() {
   if (g_hDLL) {
     FreeLibrary(g_hDLL);
     g_hDLL = NULL;
@@ -152,7 +175,7 @@ int releaseModel() {
   return 0;
 }
 
-int ocrImage(const wchar_t *image_path, char *&utf8_json, ALLOC_FUNC func) {
+WRAPPER_EXPORT int ocrImage(const wchar_t *image_path, char *&utf8_json, ALLOC_FUNC func) {
   if (!g_hDLL || !g_pipeline) return OCR_ERR_NOT_INIT;
   if (!image_path || !func) return OCR_ERR_INVALID_PARAM;
 
