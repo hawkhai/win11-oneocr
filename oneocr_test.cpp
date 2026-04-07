@@ -24,9 +24,9 @@ int main(int argc, char *argv[]) {
   }
   printf("Model initialized.\n");
 
-  // ocrImage: use malloc as the allocator
-  char *json = nullptr;
-  ret = ocr.ocrImage(image_path, json, malloc);
+  // ocrImage: result returned as std::string, no manual free needed
+  std::string json;
+  ret = ocr.ocrImage(image_path, json);
   if (ret != OCR_OK) {
     printf("ocrImage failed: %d\n", ret);
     return 1;
@@ -41,11 +41,10 @@ int main(int argc, char *argv[]) {
 
   // Print first 500 chars as preview
   printf("--- JSON preview (first 500 chars) ---\n");
-  printf("%.500s\n", json);
-  if (strlen(json) > 500) {
-    printf("... (%zu bytes total)\n", strlen(json));
+  printf("%.500s\n", json.c_str());
+  if (json.size() > 500) {
+    printf("... (%zu bytes total)\n", json.size());
   }
 
-  free(json);
   return 0;
 }

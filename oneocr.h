@@ -45,12 +45,10 @@ typedef int (*ocrImage_t)(const wchar_t* image_path, char*& utf8_json, ALLOC_FUN
 // Usage:
 //   OneOcr ocr(L"path_to_dir_containing_oneocr_wrapper_dll");
 //   if (ocr.isOk()) {
-//       int ret = ocr.initModel(L"path_to_model_dir");
-//       char* json = nullptr;
-//       ret = ocr.ocrImage(L"test.jpg", json, malloc);
+//       ocr.initModel(L"path_to_model_dir");
+//       std::string json;
+//       ocr.ocrImage(L"test.jpg", json);
 //       // use json ...
-//       free(json);
-//       ocr.releaseModel();
 //   }
 
 class OneOcr {
@@ -110,9 +108,15 @@ public:
         return m_releaseModel();
     }
 
-    int ocrImage(const wchar_t* image_path, char*& utf8_json, ALLOC_FUNC func) {
+    int ocrImage(const wchar_t* image_path, std::string& utf8_json) {
         if (!m_ocrImage) return OCR_ERR_LOAD_WRAPPER;
-        return m_ocrImage(image_path, utf8_json, func);
+        char* buf = nullptr;
+        int ret = m_ocrImage(image_path, buf, malloc);
+        if (buf) {
+            if (ret == OCR_OK) utf8_json = buf;
+            free(buf);
+        }
+        return ret;
     }
 
 private:
