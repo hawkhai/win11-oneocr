@@ -37,7 +37,7 @@ typedef __int64(__cdecl *OcrInitOptionsSetUseModelDelayLoad_t)(__int64, char);
 typedef __int64(__cdecl *CreateOcrPipeline_t)(__int64, __int64, __int64,
                                               __int64 *);
 
-void ocr(Img img, const char *output_json) {
+void ocr(Img img, const char *input_file, const char *output_json) {
   HINSTANCE hDLL = LoadLibraryA("oneocr.dll");
   if (hDLL == NULL) {
     std::cerr << "Failed to load DLL: " << GetLastError() << std::endl;
@@ -117,6 +117,8 @@ void ocr(Img img, const char *output_json) {
   printf("Recognize %lld lines\n", lc);
 
   json result;
+  result["file"] = std::string(input_file);
+  result["image"] = {{"width", img.col}, {"height", img.row}, {"step", img.step}};
   result["line_count"] = lc;
   result["lines"] = json::array();
 
@@ -140,10 +142,11 @@ void ocr(Img img, const char *output_json) {
     if (lb) {
       line_obj["bbox"] = {{"x", lb[0]}, {"y", lb[1]}, {"w", lb[2]}, {"h", lb[3]}};
     }
-    line_obj["words"] = json::array();
-
     __int64 lr = 0;
     GetOcrLineWordCount(line, &lr);
+    line_obj["word_count"] = lr;
+    line_obj["words"] = json::array();
+
     for (__int64 j = 0; j < lr; j++) {
       __int64 v105 = 0;
       __int64 v107 = 0;
@@ -155,6 +158,7 @@ void ocr(Img img, const char *output_json) {
       float *wb = reinterpret_cast<float *>(v107);
 
       json word_obj;
+      word_obj["index"] = j;
       word_obj["text"] = std::string(wcs);
       if (wb) {
         word_obj["bbox"] = {{"x", wb[0]}, {"y", wb[1]}, {"w", wb[2]}, {"h", wb[3]}};
@@ -234,7 +238,7 @@ int main(int argc, char *argv[]) {
             .data_ptr = (__int64)reinterpret_cast<char *>(bgra)};
 
   std::string json_out = std::string(file_name) + ".json";
-  ocr(ig, json_out.c_str());
+  ocr(ig, file_name, json_out.c_str());
   free(bgra);
   return 0;
 }
