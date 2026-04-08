@@ -87,7 +87,7 @@ ocr.exe photo.jpg --max-lines 50 --resize 800x600 -o result.json
         13.0, 38.0, 458.0, 38.0,
         458.0, 77.0, 13.0, 76.0
       ],
-      "style": { "type": "printed", "confidence": 0.98 },
+      "style": { "type": "printed", "confidence": 0.035 },
       "word_count": 2,
       "words": [
         {

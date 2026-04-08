@@ -227,14 +227,16 @@ static json build_result_json(const char *file_path_utf8, int width, int height,
       };
     }
 
-    // Line style: handwritten vs printed
+    // Line style: GetOcrLineStyle returns (style, handwritten_confidence)
+    //   style: 0 = handwritten, 1 = printed
+    //   handwritten_confidence: 0.0 = definitely printed, 1.0 = definitely handwritten
     if (pGetOcrLineStyle) {
       __int32 style = -1;
-      float style_confidence = 0.0f;
-      if (pGetOcrLineStyle(line, &style, &style_confidence) == 0) {
+      float hw_conf = 0.0f;
+      if (pGetOcrLineStyle(line, &style, &hw_conf) == 0) {
         line_obj["style"] = {
           {"type", style == 0 ? "handwritten" : "printed"},
-          {"confidence", style_confidence}
+          {"confidence", hw_conf}
         };
       }
     }

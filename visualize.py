@@ -152,6 +152,7 @@ def visualize(image_path, json_path, output_path=None):
         label_parts = [line.get("text", "")]
         if style:
             style_tag = "H" if style.get("type") == "handwritten" else "P"
+            # confidence: handwritten confidence (0.0 = printed, 1.0 = handwritten)
             style_conf = style.get("confidence")
             if style_conf is not None:
                 label_parts.append(f"[{style_tag}:{style_conf:.2f}]")
