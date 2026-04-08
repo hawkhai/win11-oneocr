@@ -140,7 +140,7 @@ void ocr(Img img, const char *input_file, const char *output_json) {
     line_obj["index"] = lci;
     line_obj["text"] = std::string(lcs);
     if (lb) {
-      line_obj["bbox"] = {{"x", lb[0]}, {"y", lb[1]}, {"w", lb[2]}, {"h", lb[3]}};
+      line_obj["bbox"] = {{"x1", lb[0]}, {"y1", lb[1]}, {"x2", lb[2]}, {"y2", lb[3]}};
     }
     __int64 lr = 0;
     GetOcrLineWordCount(line, &lr);
@@ -161,7 +161,7 @@ void ocr(Img img, const char *input_file, const char *output_json) {
       word_obj["index"] = j;
       word_obj["text"] = std::string(wcs);
       if (wb) {
-        word_obj["bbox"] = {{"x", wb[0]}, {"y", wb[1]}, {"w", wb[2]}, {"h", wb[3]}};
+        word_obj["bbox"] = {{"x1", wb[0]}, {"y1", wb[1]}, {"x2", wb[2]}, {"y2", wb[3]}};
       }
       line_obj["words"].push_back(word_obj);
     }
