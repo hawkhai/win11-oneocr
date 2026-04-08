@@ -5,7 +5,7 @@
 #include "oneocr.h"
 
 int main(int argc, char *argv[]) {
-  const wchar_t *image_path = L"ocr-book.jpg";
+  const wchar_t *image_path = L"test.png";
 
   // OneOcr: header-only, no .lib needed.
   // Pass nullptr to load oneocr_wrapper.dll from current directory.
