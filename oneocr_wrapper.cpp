@@ -281,7 +281,7 @@ WRAPPER_EXPORT int ocrImage(const wchar_t *image_path, char *&utf8_json, ALLOC_F
     line_obj["index"] = lci;
     line_obj["text"] = std::string(lcs);
     if (lb) {
-      line_obj["bbox"] = {{"x1", lb[0]}, {"y1", lb[1]}, {"x2", lb[2]}, {"y2", lb[3]}};
+      line_obj["bbox"] = {lb[0], lb[1], lb[2], lb[3]};
     }
 
     __int64 lr = 0;
@@ -303,7 +303,7 @@ WRAPPER_EXPORT int ocrImage(const wchar_t *image_path, char *&utf8_json, ALLOC_F
       word_obj["index"] = j;
       word_obj["text"] = std::string(wcs);
       if (wb) {
-        word_obj["bbox"] = {{"x1", wb[0]}, {"y1", wb[1]}, {"x2", wb[2]}, {"y2", wb[3]}};
+        word_obj["bbox"] = {wb[0], wb[1], wb[2], wb[3]};
       }
       line_obj["words"].push_back(word_obj);
     }

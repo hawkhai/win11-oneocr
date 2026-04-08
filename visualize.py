@@ -11,9 +11,9 @@ def load_result(json_path):
 
 
 def draw_bbox(draw, bbox, color, img_size, text="", width=2):
-    x1 = min(bbox["x1"], bbox["x2"])
-    baseline = min(bbox["y1"], bbox["y2"])
-    x2 = max(bbox["x1"], bbox["x2"])
+    x1 = min(bbox[0], bbox[2])
+    baseline = min(bbox[1], bbox[3])
+    x2 = max(bbox[0], bbox[2])
 
     # The OCR engine bbox is (x1, y1, x2, y2) where y1≈y2 (top of text only,
     # no height info). Estimate height from per-character width, ratio 1.5
