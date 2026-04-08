@@ -15,8 +15,9 @@ def draw_bbox(draw, bbox, color, img_size, text="", width=2):
     baseline = min(bbox["y1"], bbox["y2"])
     x2 = max(bbox["x1"], bbox["x2"])
 
-    # y1≈y2 is the TOP of the text (not baseline). Estimate height from
-    # per-character width using ratio 1.5 (empirically matches test data).
+    # The OCR engine bbox is (x1, y1, x2, y2) where y1≈y2 (top of text only,
+    # no height info). Estimate height from per-character width, ratio 1.5
+    # empirically matches test data vs. wechatocr ground truth.
     char_count = max(len(text), 1)
     char_width = (x2 - x1) / char_count
     estimated_h = char_width * 1.5

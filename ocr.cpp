@@ -38,7 +38,7 @@ typedef __int64(__cdecl *CreateOcrPipeline_t)(__int64, __int64, __int64,
                                               __int64 *);
 
 void ocr(Img img, const char *input_file, const char *output_json) {
-  HINSTANCE hDLL = LoadLibraryA("oneocr.dll");
+  HINSTANCE hDLL = LoadLibraryW(L"oneocr.dll");
   if (hDLL == NULL) {
     std::cerr << "Failed to load DLL: " << GetLastError() << std::endl;
     return;
@@ -74,6 +74,18 @@ void ocr(Img img, const char *input_file, const char *output_json) {
       (GetOcrWordContent_t)GetProcAddress(hDLL, "GetOcrWordContent");
   GetOcrWordBoundingBox_t GetOcrWordBoundingBox =
       (GetOcrWordBoundingBox_t)GetProcAddress(hDLL, "GetOcrWordBoundingBox");
+
+  if (!CreateOcrInitOptions || !CreateOcrProcessOptions || !CreateOcrPipeline ||
+      !OcrInitOptionsSetUseModelDelayLoad ||
+      !OcrProcessOptionsSetMaxRecognitionLineCount || !RunOcrPipeline ||
+      !GetOcrLineCount || !GetOcrLine || !GetOcrLineContent ||
+      !GetOcrLineBoundingBox || !GetOcrLineWordCount || !GetOcrWord ||
+      !GetOcrWordContent || !GetOcrWordBoundingBox) {
+    std::cerr << "Failed to resolve one or more DLL functions" << std::endl;
+    FreeLibrary(hDLL);
+    return;
+  }
+
   __int64 ctx = 0;
   __int64 pipeline = 0;
   __int64 opt = 0;
@@ -84,7 +96,7 @@ void ocr(Img img, const char *input_file, const char *output_json) {
   assert(res == 0);
   // key: kj)TGtrK>f]b[Piow.gU+nC@s""""""4
   const char *key = {"kj)TGtrK>f]b[Piow.gU+nC@s\"\"\"\"\"\"4"};
-  res = CreateOcrPipeline((__int64)"oneocr.onemodel", (__int64)key, ctx,
+  res = CreateOcrPipeline((__int64)(const char *)"oneocr.onemodel", (__int64)key, ctx,
                           &pipeline);
   printf("OCR model loaded...\n");
   // printf("res: %lld, ctx: 0x%llx, pipeline: 0x%llx\n", res, ctx, pipeline);
@@ -111,7 +123,7 @@ void ocr(Img img, const char *input_file, const char *output_json) {
          "0x%llx\n",
          ctx, pipeline, opt, instance);
 #endif
-  __int64 lc;
+  __int64 lc = 0;
   res = GetOcrLineCount(instance, &lc);
   assert(res == 0);
   printf("Recognize %lld lines\n", lc);
@@ -148,14 +160,14 @@ void ocr(Img img, const char *input_file, const char *output_json) {
     line_obj["words"] = json::array();
 
     for (__int64 j = 0; j < lr; j++) {
-      __int64 v105 = 0;
-      __int64 v107 = 0;
-      __int64 lpMultiByteStr = 0;
-      GetOcrWord(line, j, &v105);
-      GetOcrWordContent(v105, &lpMultiByteStr);
-      GetOcrWordBoundingBox(v105, &v107);
-      char *wcs = reinterpret_cast<char *>(lpMultiByteStr);
-      float *wb = reinterpret_cast<float *>(v107);
+      __int64 word = 0;
+      __int64 word_bbox_ptr = 0;
+      __int64 word_content = 0;
+      GetOcrWord(line, j, &word);
+      GetOcrWordContent(word, &word_content);
+      GetOcrWordBoundingBox(word, &word_bbox_ptr);
+      char *wcs = reinterpret_cast<char *>(word_content);
+      float *wb = reinterpret_cast<float *>(word_bbox_ptr);
 
       json word_obj;
       word_obj["index"] = j;
@@ -172,6 +184,7 @@ void ocr(Img img, const char *input_file, const char *output_json) {
   ofs << result.dump(2);
   ofs.close();
   printf("Results saved to %s\n", output_json);
+  FreeLibrary(hDLL);
 }
 
 int main(int argc, char *argv[]) {

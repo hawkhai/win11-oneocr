@@ -121,7 +121,12 @@ WRAPPER_EXPORT int initModel(const wchar_t *model_dir) {
   pGetOcrWordContent = (GetOcrWordContent_t)GetProcAddress(g_hDLL, "GetOcrWordContent");
   pGetOcrWordBoundingBox = (GetOcrWordBoundingBox_t)GetProcAddress(g_hDLL, "GetOcrWordBoundingBox");
 
-  if (!pCreateOcrInitOptions || !pCreateOcrPipeline || !pRunOcrPipeline) {
+  if (!pCreateOcrInitOptions || !pCreateOcrProcessOptions || !pCreateOcrPipeline ||
+      !pOcrInitOptionsSetUseModelDelayLoad ||
+      !pOcrProcessOptionsSetMaxRecognitionLineCount || !pRunOcrPipeline ||
+      !pGetOcrLineCount || !pGetOcrLine || !pGetOcrLineContent ||
+      !pGetOcrLineBoundingBox || !pGetOcrLineWordCount || !pGetOcrWord ||
+      !pGetOcrWordContent || !pGetOcrWordBoundingBox) {
     FreeLibrary(g_hDLL);
     g_hDLL = NULL;
     return OCR_ERR_RESOLVE_FUNC;
@@ -251,11 +256,11 @@ WRAPPER_EXPORT int ocrImage(const wchar_t *image_path, char *&utf8_json, ALLOC_F
 
   // Collect results into JSON
   __int64 lc = 0;
-  pGetOcrLineCount(instance, &lc);
+  if (pGetOcrLineCount(instance, &lc) != 0) lc = 0;
 
   json result;
   result["file"] = path_u8;
-  result["image"] = {{"width", width}, {"height", height}, {"step", (int)step}};
+  result["image"] = {{"width", width}, {"height", height}, {"step", (__int64)step}};
   result["line_count"] = lc;
   result["lines"] = json::array();
 
