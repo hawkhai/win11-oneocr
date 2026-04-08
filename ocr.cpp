@@ -329,10 +329,8 @@ static json ocr_one(const char *input_file, const OcrConfig &cfg) {
     line_obj["text"] = lcs ? std::string(lcs) : "";
     if (lb) {
       line_obj["bounding_box"] = {
-        {"x1", lb->x1}, {"y1", lb->y1},
-        {"x2", lb->x2}, {"y2", lb->y2},
-        {"x3", lb->x3}, {"y3", lb->y3},
-        {"x4", lb->x4}, {"y4", lb->y4}
+        lb->x1, lb->y1, lb->x2, lb->y2,
+        lb->x3, lb->y3, lb->x4, lb->y4
       };
     }
 
@@ -372,10 +370,8 @@ static json ocr_one(const char *input_file, const OcrConfig &cfg) {
       word_obj["text"] = wcs ? std::string(wcs) : "";
       if (wb) {
         word_obj["bounding_box"] = {
-          {"x1", wb->x1}, {"y1", wb->y1},
-          {"x2", wb->x2}, {"y2", wb->y2},
-          {"x3", wb->x3}, {"y3", wb->y3},
-          {"x4", wb->x4}, {"y4", wb->y4}
+          wb->x1, wb->y1, wb->x2, wb->y2,
+          wb->x3, wb->y3, wb->x4, wb->y4
         };
       }
       if (pGetOcrWordConfidence) {
