@@ -83,24 +83,20 @@ ocr.exe photo.jpg --max-lines 50 --resize 800x600 -o result.json
     {
       "index": 0,
       "text": "Hello World",
-      "bounding_box": {
-        "x1": 13.0, "y1": 38.0,
-        "x2": 458.0, "y2": 38.0,
-        "x3": 458.0, "y3": 77.0,
-        "x4": 13.0, "y4": 76.0
-      },
+      "bounding_box": [
+        13.0, 38.0, 458.0, 38.0,
+        458.0, 77.0, 13.0, 76.0
+      ],
       "style": { "type": "printed", "confidence": 0.98 },
       "word_count": 2,
       "words": [
         {
           "index": 0,
           "text": "Hello",
-          "bounding_box": {
-            "x1": 14.35, "y1": 39.70,
-            "x2": 140.35, "y2": 41.31,
-            "x3": 139.93, "y3": 73.42,
-            "x4": 13.78, "y4": 74.09
-          },
+          "bounding_box": [
+            14.35, 39.70, 140.35, 41.31,
+            139.93, 73.42, 13.78, 74.09
+          ],
           "confidence": 0.987
         }
       ]

@@ -38,31 +38,43 @@ def get_font(size=14):
 
 
 def parse_bbox(bbox_data):
-    """Parse bbox from either 4-point list or 8-point dict format.
+    """Parse bbox from array or legacy dict format.
+
+    Current format: [x1, y1, x2, y2, x3, y3, x4, y4]  (8 floats)
+    Legacy 4-float: [x1, y1, x2, y2]                    (baseline only)
+    Legacy dict:    {x1, y1, x2, y2, x3, y3, x4, y4}
 
     Returns 4 corner points: [(x1,y1), (x2,y2), (x3,y3), (x4,y4)]
     representing top-left, top-right, bottom-right, bottom-left.
     """
-    if isinstance(bbox_data, dict):
-        # 8-point format: {x1, y1, x2, y2, x3, y3, x4, y4}
+    if isinstance(bbox_data, list):
+        if len(bbox_data) == 8:
+            # Current format: [x1, y1, x2, y2, x3, y3, x4, y4]
+            return [
+                (bbox_data[0], bbox_data[1]),  # top-left
+                (bbox_data[2], bbox_data[3]),  # top-right
+                (bbox_data[4], bbox_data[5]),  # bottom-right
+                (bbox_data[6], bbox_data[7]),  # bottom-left
+            ]
+        elif len(bbox_data) >= 4:
+            # Legacy 4-float list: [x1, y1, x2, y2] (baseline only)
+            x1, y1, x2, y2_baseline = bbox_data[0], bbox_data[1], bbox_data[2], bbox_data[3]
+            estimated_h = abs(x2 - x1) * 0.5 if abs(x2 - x1) > 0 else 20
+            top = min(y1, y2_baseline)
+            bottom = top + estimated_h
+            return [
+                (x1, top),
+                (x2, top),
+                (x2, bottom),
+                (x1, bottom),
+            ]
+    elif isinstance(bbox_data, dict):
+        # Legacy dict format: {x1, y1, x2, y2, x3, y3, x4, y4}
         return [
-            (bbox_data["x1"], bbox_data["y1"]),  # top-left
-            (bbox_data["x2"], bbox_data["y2"]),  # top-right
-            (bbox_data["x3"], bbox_data["y3"]),  # bottom-right
-            (bbox_data["x4"], bbox_data["y4"]),  # bottom-left
-        ]
-    elif isinstance(bbox_data, list) and len(bbox_data) >= 4:
-        # Legacy 4-float list: [x1, y1, x2, y2] (top-left baseline)
-        x1, y1, x2, y2_baseline = bbox_data[0], bbox_data[1], bbox_data[2], bbox_data[3]
-        # Estimate height from baseline (legacy format has no height info)
-        estimated_h = abs(x2 - x1) * 0.5 if abs(x2 - x1) > 0 else 20
-        top = min(y1, y2_baseline)
-        bottom = top + estimated_h
-        return [
-            (x1, top),
-            (x2, top),
-            (x2, bottom),
-            (x1, bottom),
+            (bbox_data["x1"], bbox_data["y1"]),
+            (bbox_data["x2"], bbox_data["y2"]),
+            (bbox_data["x3"], bbox_data["y3"]),
+            (bbox_data["x4"], bbox_data["y4"]),
         ]
     return None
 
