@@ -233,18 +233,52 @@ bin\onnx_dump\
 | `com.microsoft.nchwc` | NCHW->NCHWc 布局算子 |
 | `com.microsoft.experimental` | 实验性算子 |
 
-### 模型分类
+### 模型分类（真正的 ONNX 模型，≥ 12KB）
 
-| 模型 | 大小 | producer | 用途 |
-|---|---|---|---|
-| `b512-SyncBN-x4_rpn_batch_quant_if.onnx` | ~11MB | onnx.quantize | 文字检测器 (Detector) |
-| `checkpoint.040.onnx` | ~3.5MB | PyTorch | 识别器 (Recognizer) |
-| `checkpoint.075_quant.onnx` | 0.3~3.7MB | PyTorch/onnx.quantize | 量化分类器 |
-| `rejection_model_*.onnx` | 27KB×10 | pytorch | 拒绝模型（10个语言变体） |
-| `confidence_model_*.onnx` | 29KB×12 | pytorch | 置信度模型（12个语言变体） |
+| 模型 | dump 文件 | 大小 | producer | 用途 |
+|---|---|---|---|---|
+| `b512-SyncBN-x4_rpn_batch_quant_if.onnx` | 0003 | **11.0 MB** | onnx.quantize | 文字检测器 (Detector)，RPN 网络，从图片中定位文字区域 |
+| `checkpoint.075_quant.onnx` | 0006 | **858 KB** | PyTorch | 主识别器 (Recognizer)，CRNN/Transformer 序列识别网络 |
+| `checkpoint.075_quant.onnx` | 0016 | **308 KB** | PyTorch | 第二语言/脚本方向的识别器变体 |
+| `checkpoint.075_quant.onnx`×6 | 0021–0046 | 1.1–3.9 KB | pytorch | **❗假 ONNX**（见下方“重命名 bug”） |
+| `rejection_model_*.onnx`×10 | 0052–0061 | **27 KB** | pytorch | 拒绝模型，判断识别结果是否可靠 |
+| `confidence_model_*.onnx`×11 | 0062–0072 | **29 KB** | pytorch | 置信度模型，给出识别结果可信度分数 |
+
+### OnnxDump 重命名 Bug（已知问题）
+
+34 个 `.onnx` 文件中有 **9 个 < 4KB 的假 ONNX**：它们实际是资源文件（char map、LogPrior 表等），被 `OnnxDump_RenameLastIfMatch` 错误重命名。
+
+**根因**：子模型的解密顺序不严格是“1个Decrypt+1个Encrypt”交替，存在多个资源块连续 Decrypt 后才出现 Encrypt 的情况：
+```
+Decrypt → 大 ONNX 模型 → 保存为 NNNN_decrypt.bin
+Decrypt → 资源文件（char map）→ 保存为 MMMM_decrypt.bin  ← g_last_saved_path 更新
+Encrypt → 路径校验（对应上面的 ONNX）→ 重命名 MMMM_decrypt.bin → MMMM_xxx.onnx  ❗错误
+```
+`g_last_saved_path` 总是指向最后保存的文件，资源块插在中间就会抢占重命名机会。
+
+### 非 ONNX 资源文件分类（39 个）
+
+| 头部特征 | 类型 | 说明 |
+|---|---|---|
+| `<LogPrior>` | LogPrior 转录概率表 | 语言模型先验概率，每个识别器变体配套一份 |
+| `! ` / `0.0 ` | 字符映射表 (char map) | 字符→标签索引的映射，每个识别器变体配套 |
+| `0a c6 02` (protobuf) | 配置 protobuf | 子模型元数据（含构建路径、偏移信息） |
+| `44 58 ...` (uint64×2) | 目录表 | 全局索引，包含所有子模型的偏移和大小 |
 
 ### onnxruntime 加载
-所有 ONNX 均因自定义算子 `com.microsoft.oneocr:OneOCRFeatureExtract` 未注册而无法用标准 onnxruntime 加载，需要 oneocr.dll 自带的 onnxruntime 提供自定义算子实现。
+所有真正的 ONNX 均因自定义算子 `com.microsoft.oneocr:OneOCRFeatureExtract` 未注册而无法用标准 onnxruntime 加载，需要 oneocr.dll 自带的 onnxruntime 提供自定义算子实现。
+
+### verify_onnx.py
+
+位于 `bin/verify_onnx.py`，功能：
+1. 跳过 8 字节 oneocr magic header
+2. 用 `find_onnx_end()` 截断尾部校验数据（含非规范 varint 检测）
+3. `onnx.load_from_string()` 反序列化
+4. `onnx.checker.check_model()` 结构校验（自定义算子容忍）
+5. `onnxruntime.InferenceSession()` 加载测试（可选）
+6. 自动区分 ONNX 模型和非 ONNX 资源文件
+
+运行方式：`python3 verify_onnx.py [目录]`，默认 `./onnx_dump`
 
 ---
 
@@ -257,6 +291,7 @@ bin\onnx_dump\
 | `onnx_dump` 只有1个文件（v2） | `base.empty()` 时 `return` 跳过保存；大部分 Decrypt 块是纯权重不含路径 | 去掉 empty return，所有大块都保存为 `_decrypt.bin`，由后续 Encrypt 重命名 |
 | 文件名乱码 `0001_+%`（v2） | `find_onnx_basename` 从**后**往**前**扫描，命中二进制权重中的假 `.onnx` 字节序列 | 改为**从前往后**扫描，第一个有效匹配即返回 |
 | `verify_onnx.py` 0055 加载失败（v3） | 尾部校验数据以非规范 varint `a8 00` 开头，解码为合法 field 5，未截断 | 新增非规范 varint 检测：tag 字节数 > 最小编码字节数时视为尾部数据 |
+| 小 .onnx 文件（<4KB）实为资源 | `OnnxDump_RenameLastIfMatch` 中 `g_last_saved_path` 被中间插入的资源块抢占 | 已知问题，需将重命名逻辑改为基于 key handle 关联而非“最后保存的文件” |
 
 ---
 
