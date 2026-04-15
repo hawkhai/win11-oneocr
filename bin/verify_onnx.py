@@ -50,16 +50,48 @@ def _decode_varint(data, pos):
     return -1, pos
 
 
+def _decode_varint_strict(data, pos):
+    """Decode varint and also return byte count. Returns (value, new_pos, nbytes)."""
+    result = 0
+    shift = 0
+    start = pos
+    while pos < len(data):
+        b = data[pos]
+        result |= (b & 0x7F) << shift
+        pos += 1
+        if (b & 0x80) == 0:
+            return result, pos, pos - start
+        shift += 7
+        if shift > 63:
+            return -1, pos, pos - start
+    return -1, pos, pos - start
+
+
+def _min_varint_bytes(value):
+    """Minimum bytes needed to encode a varint value."""
+    if value == 0:
+        return 1
+    n = 0
+    while value > 0:
+        value >>= 7
+        n += 1
+    return n
+
+
 def find_onnx_end(data):
     """解析 protobuf 顶层 fields，遇到非 ONNX field 时停止，返回有效 ONNX 的结束偏移。"""
     pos = 0
     while pos < len(data):
         tag_start = pos
-        tag, pos = _decode_varint(data, pos)
+        tag, pos, tag_bytes = _decode_varint_strict(data, pos)
         if tag == -1:
             return tag_start
         field_num = tag >> 3
         wire_type = tag & 0x07
+
+        # 非规范 varint 编码 (如 a8 00 而非 28) 说明不是正常 protobuf
+        if tag_bytes > _min_varint_bytes(tag):
+            return tag_start
 
         if field_num not in VALID_ONNX_FIELDS or wire_type > 5:
             return tag_start

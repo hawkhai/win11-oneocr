@@ -22,7 +22,8 @@ F:\pythonx\myocr\win11-oneocr\
 │   ├── MinHook.x64.dll
 │   ├── logdir/             # BCrypt hook 日志
 │   │   └── bcrypt_dump_<PID>.log
-│   └── onnx_dump/          # 解密出的 ONNX 子模型文件
+│   ├── onnx_dump/          # 解密出的 ONNX 子模型文件
+│   └── verify_onnx.py      # ONNX 模型校验脚本（跳过容器 header + 截断尾部）
 └── ../../note/minhook/     # MinHook 库（相对路径）
 ```
 
@@ -208,16 +209,18 @@ bin\onnx_dump\
 
 ### 正确提取 ONNX 的方法
 1. 跳过前 8 字节 magic header
-2. 解析 protobuf 顶层 field，只允许 ONNX ModelProto 的有效 field number（{1,2,3,4,5,6,7,8,14,25}）
-3. 遇到无效 field number 时截断，剩余是尾部校验数据
+2. 解析 protobuf 顶层 field tag，检查：
+   - field number 必须在 ONNX ModelProto 有效集合中（{1,2,3,4,5,6,7,8,14,25}）
+   - tag varint 必须是**最小编码**（非规范 varint 如 `a8 00` 代替 `28` 表示尾部校验数据开始）
+3. 遇到无效 field 或非规范 varint 时截断，剩余是尾部校验数据
 4. 用 `onnx.load_from_string()` 加载截断后的数据
 
 ### ONNX 模型验证结果（73 个 dump 文件）
 
 | 类型 | 数量 | 说明 |
 |---|---|---|
-| 有效 ONNX | **33** | 全部 `onnx.load` 成功，含自定义算子 |
-| 加载失败 | 1 | 0055，边界问题（tail=0 截断位置不准） |
+| 有效 ONNX | **34** | 全部 `onnx.load` 成功，含自定义算子 |
+| 加载失败 | **0** | 无 |
 | 非 ONNX 资源 | **39** | LogPrior表、字符映射表、配置数据、目录表 |
 
 ### 自定义算子域
@@ -253,6 +256,7 @@ bin\onnx_dump\
 | `onnx_dump` 目录为空（v1） | 依赖 Encrypt 设置 pending name，但实际 Encrypt 在 Decrypt 之后 | 改为直接从 Decrypt 明文中搜索 `.onnx` 提取文件名 |
 | `onnx_dump` 只有1个文件（v2） | `base.empty()` 时 `return` 跳过保存；大部分 Decrypt 块是纯权重不含路径 | 去掉 empty return，所有大块都保存为 `_decrypt.bin`，由后续 Encrypt 重命名 |
 | 文件名乱码 `0001_+%`（v2） | `find_onnx_basename` 从**后**往**前**扫描，命中二进制权重中的假 `.onnx` 字节序列 | 改为**从前往后**扫描，第一个有效匹配即返回 |
+| `verify_onnx.py` 0055 加载失败（v3） | 尾部校验数据以非规范 varint `a8 00` 开头，解码为合法 field 5，未截断 | 新增非规范 varint 检测：tag 字节数 > 最小编码字节数时视为尾部数据 |
 
 ---
 
