@@ -101,6 +101,34 @@ def confidence_color(confidence):
     return (r, g, 0)
 
 
+def split_overlapping_polygons(polys):
+    """Resolve horizontal overlaps between adjacent word polygons by splitting at midpoints.
+
+    Each poly is a list of (x, y) points (4 corners: TL, TR, BR, BL).
+    For each adjacent pair where the right edge of poly[i] overlaps the left
+    edge of poly[i+1], nudge both edges to their midpoint x.
+    Left-edge points are those with x <= center_x; right-edge points have x > center_x.
+    """
+    if not polys:
+        return polys
+    polys = [list(p) for p in polys]
+    for i in range(len(polys) - 1):
+        pts0 = polys[i]
+        pts1 = polys[i + 1]
+        # axis-aligned bounding x for each polygon
+        max_x0 = max(p[0] for p in pts0)
+        min_x1 = min(p[0] for p in pts1)
+        if max_x0 > min_x1:
+            mid = (max_x0 + min_x1) / 2.0
+            cx0 = sum(p[0] for p in pts0) / len(pts0)
+            cx1 = sum(p[0] for p in pts1) / len(pts1)
+            # nudge right-edge points of poly[i] to mid
+            polys[i]     = [(mid, p[1]) if p[0] > cx0 else p for p in pts0]
+            # nudge left-edge points of poly[i+1] to mid
+            polys[i + 1] = [(mid, p[1]) if p[0] <= cx1 else p for p in pts1]
+    return polys
+
+
 def visualize(image_path, json_path, output_path=None):
     data = load_result(json_path)
     img = Image.open(image_path).convert("RGB")
@@ -164,6 +192,7 @@ def visualize(image_path, json_path, output_path=None):
         draw.text((min_x, ty), label, fill=text_color, font=font)
 
         # Draw word-level bboxes
+        all_word_points = []
         for word in line.get("words", []):
             word_bbox = word.get("bounding_box", word.get("bbox"))
             if not word_bbox:
@@ -180,9 +209,12 @@ def visualize(image_path, json_path, output_path=None):
             else:
                 w_color = word_color
 
-            draw_polygon(draw, word_points, w_color, width=1)
+            all_word_points.append((word_points, w_color, conf))
 
-            # Show confidence below word
+        # Split overlapping word polygons then draw
+        split_pts = split_overlapping_polygons([p for p, _, _ in all_word_points])
+        for (_, w_color, conf), word_points in zip(all_word_points, split_pts):
+            draw_polygon(draw, word_points, w_color, width=1)
             if conf is not None:
                 wx = min(p[0] for p in word_points)
                 wy = max(p[1] for p in word_points) + 2
