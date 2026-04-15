@@ -22,9 +22,10 @@ static std::mutex g_log_mutex;
 static long long  g_call_seq = 0;   // monotonic call counter
 
 static void log_open() {
+    CreateDirectoryA("logdir", nullptr);
     char path[MAX_PATH];
     DWORD pid = GetCurrentProcessId();
-    snprintf(path, sizeof(path), "bcrypt_dump_%lu.log", (unsigned long)pid);
+    snprintf(path, sizeof(path), "logdir\\bcrypt_dump_%lu.log", (unsigned long)pid);
     g_log = fopen(path, "a");
     if (g_log) {
         fprintf(g_log, "\n\n=== BCrypt hook session started (PID %lu) ===\n\n", (unsigned long)pid);

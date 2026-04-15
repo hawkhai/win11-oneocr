@@ -20,7 +20,8 @@ F:\pythonx\myocr\win11-oneocr\
 │   ├── oneocr_wrapper.dll
 │   ├── oneocr_test.exe
 │   ├── MinHook.x64.dll
-│   ├── bcrypt_dump_<PID>.log
+│   ├── logdir/             # BCrypt hook 日志
+│   │   └── bcrypt_dump_<PID>.log
 │   └── onnx_dump/          # 解密出的 ONNX 子模型文件
 └── ../../note/minhook/     # MinHook 库（相对路径）
 ```
@@ -218,5 +219,6 @@ cmake --build build --config Release --target oneocr_wrapper oneocr_test
 
 ## BCrypt 日志文件
 
-- 位置：进程工作目录下 `bcrypt_dump_<PID>.log`
-- 本次分析的日志：`bin\bcrypt_dump_19900.log`，共 **4709 次**调用，session 正常完成
+- 位置：进程工作目录下 `logdir\bcrypt_dump_<PID>.log`
+- 本次分析的日志：`bin\bcrypt_dump_19900.log`（旧路径），共 **4709 次**调用，session 正常完成
+- 新版本日志输出到 `bin\logdir\` 子文件夹（`log_open()` 中 `CreateDirectoryA("logdir", nullptr)` 自动创建）
