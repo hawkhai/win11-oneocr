@@ -1,4 +1,5 @@
 #include "bcrypt_hook.h"
+#include "onnx_dump.h"
 
 #include <Windows.h>
 #include <bcrypt.h>
@@ -272,6 +273,11 @@ static NTSTATUS WINAPI det_BCryptEncrypt(
 
     NTSTATUS st = orig_BCryptEncrypt(hKey, pbInput, cbInput, pPaddingInfo,
                                      pbIV, cbIV, pbOutput, cbOutput, pcbResult, dwFlags);
+
+    // Real encryption pass with path plaintext: rename last saved _decrypt.bin.
+    if (BCRYPT_SUCCESS(st) && cbIV > 0 && snapPTLen > 0 && cbInput <= 512)
+        OnnxDump_RenameLastIfMatch(snapPT, snapPTLen);
+
     std::lock_guard<std::mutex> lk(g_log_mutex);
     if (g_log) {
         long long seq = ++g_call_seq;
@@ -309,6 +315,11 @@ static NTSTATUS WINAPI det_BCryptDecrypt(
 
     NTSTATUS st = orig_BCryptDecrypt(hKey, pbInput, cbInput, pPaddingInfo,
                                      pbIV, cbIV, pbOutput, cbOutput, pcbResult, dwFlags);
+
+    // Real decryption pass (cbIV > 0, large block): scan plaintext for .onnx name and save.
+    if (BCRYPT_SUCCESS(st) && cbIV > 0 && pbOutput && pcbResult && *pcbResult > 512)
+        OnnxDump_TrySave(pbOutput, *pcbResult);
+
     std::lock_guard<std::mutex> lk(g_log_mutex);
     if (g_log) {
         long long seq = ++g_call_seq;

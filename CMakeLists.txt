@@ -18,7 +18,7 @@ endif()
 add_executable(ocr ocr.cpp)
 
 # oneocr_wrapper DLL
-add_library(oneocr_wrapper SHARED oneocr_wrapper.cpp bcrypt_hook.cpp)
+add_library(oneocr_wrapper SHARED oneocr_wrapper.cpp bcrypt_hook.cpp onnx_dump.cpp)
 target_include_directories(oneocr_wrapper PRIVATE ${MINHOOK_INCLUDE_DIR})
 target_link_libraries(oneocr_wrapper PRIVATE ${MINHOOK_LIB} bcrypt)
 
