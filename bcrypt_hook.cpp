@@ -162,14 +162,12 @@ static NTSTATUS WINAPI det_BCryptOpenAlgorithmProvider(
 static NTSTATUS WINAPI det_BCryptCloseAlgorithmProvider(
     BCRYPT_ALG_HANDLE hAlgorithm, ULONG dwFlags)
 {
+    NTSTATUS st = orig_BCryptCloseAlgorithmProvider(hAlgorithm, dwFlags);
     std::lock_guard<std::mutex> lk(g_log_mutex);
     if (g_log) {
         long long seq = ++g_call_seq;
         fprintf(g_log, "[%lld] BCryptCloseAlgorithmProvider\n", seq);
         fprintf(g_log, "  hAlgorithm=%p  dwFlags=0x%08lX\n", hAlgorithm, (unsigned long)dwFlags);
-    }
-    NTSTATUS st = orig_BCryptCloseAlgorithmProvider(hAlgorithm, dwFlags);
-    if (g_log) {
         fprintf(g_log, "  -> status=%s\n\n", ntstatus_str(st));
         fflush(g_log);
     }
@@ -201,17 +199,19 @@ static NTSTATUS WINAPI det_BCryptSetProperty(
     BCRYPT_HANDLE hObject, LPCWSTR pszProperty,
     PUCHAR pbInput, ULONG cbInput, ULONG dwFlags)
 {
+    // snapshot input before calling (buffer may change after)
+    unsigned char snap[DUMP_MAX];
+    ULONG snapLen = (pbInput && cbInput > 0) ? (cbInput < DUMP_MAX ? cbInput : DUMP_MAX) : 0;
+    if (snapLen) memcpy(snap, pbInput, snapLen);
+
+    NTSTATUS st = orig_BCryptSetProperty(hObject, pszProperty, pbInput, cbInput, dwFlags);
     std::lock_guard<std::mutex> lk(g_log_mutex);
     if (g_log) {
         long long seq = ++g_call_seq;
         fprintf(g_log, "[%lld] BCryptSetProperty\n", seq);
         fprintf(g_log, "  hObject=%p  property=", hObject); log_wstr(pszProperty);
         fprintf(g_log, "\n  cbInput=%lu  dwFlags=0x%08lX\n", (unsigned long)cbInput, (unsigned long)dwFlags);
-        if (pbInput && cbInput > 0)
-            log_hexdump(pbInput, cbInput, DUMP_MAX, "    ");
-    }
-    NTSTATUS st = orig_BCryptSetProperty(hObject, pszProperty, pbInput, cbInput, dwFlags);
-    if (g_log) {
+        if (snapLen) log_hexdump(snap, snapLen, DUMP_MAX, "    ");
         fprintf(g_log, "  -> status=%s\n\n", ntstatus_str(st));
         fflush(g_log);
     }
@@ -223,6 +223,13 @@ static NTSTATUS WINAPI det_BCryptGenerateSymmetricKey(
     PUCHAR pbKeyObject, ULONG cbKeyObject,
     PUCHAR pbSecret, ULONG cbSecret, ULONG dwFlags)
 {
+    // snapshot key material before calling
+    unsigned char snap[DUMP_MAX];
+    ULONG snapLen = (pbSecret && cbSecret > 0) ? (cbSecret < DUMP_MAX ? cbSecret : DUMP_MAX) : 0;
+    if (snapLen) memcpy(snap, pbSecret, snapLen);
+
+    NTSTATUS st = orig_BCryptGenerateSymmetricKey(hAlgorithm, phKey, pbKeyObject, cbKeyObject,
+                                                  pbSecret, cbSecret, dwFlags);
     std::lock_guard<std::mutex> lk(g_log_mutex);
     if (g_log) {
         long long seq = ++g_call_seq;
@@ -230,12 +237,7 @@ static NTSTATUS WINAPI det_BCryptGenerateSymmetricKey(
         fprintf(g_log, "  hAlgorithm=%p  cbKeyObject=%lu  cbSecret=%lu  dwFlags=0x%08lX\n",
                 hAlgorithm, (unsigned long)cbKeyObject, (unsigned long)cbSecret, (unsigned long)dwFlags);
         fprintf(g_log, "  KEY MATERIAL (%lu bytes):\n", (unsigned long)cbSecret);
-        if (pbSecret && cbSecret > 0)
-            log_hexdump(pbSecret, cbSecret, DUMP_MAX, "    ");
-    }
-    NTSTATUS st = orig_BCryptGenerateSymmetricKey(hAlgorithm, phKey, pbKeyObject, cbKeyObject,
-                                                  pbSecret, cbSecret, dwFlags);
-    if (g_log) {
+        if (snapLen) log_hexdump(snap, snapLen, DUMP_MAX, "    ");
         fprintf(g_log, "  -> hKey=%p  status=%s\n\n",
                 phKey ? *phKey : nullptr, ntstatus_str(st));
         fflush(g_log);
@@ -245,13 +247,11 @@ static NTSTATUS WINAPI det_BCryptGenerateSymmetricKey(
 
 static NTSTATUS WINAPI det_BCryptDestroyKey(BCRYPT_KEY_HANDLE hKey)
 {
+    NTSTATUS st = orig_BCryptDestroyKey(hKey);
     std::lock_guard<std::mutex> lk(g_log_mutex);
     if (g_log) {
         long long seq = ++g_call_seq;
         fprintf(g_log, "[%lld] BCryptDestroyKey  hKey=%p\n", seq, hKey);
-    }
-    NTSTATUS st = orig_BCryptDestroyKey(hKey);
-    if (g_log) {
         fprintf(g_log, "  -> status=%s\n\n", ntstatus_str(st));
         fflush(g_log);
     }
@@ -263,6 +263,15 @@ static NTSTATUS WINAPI det_BCryptEncrypt(
     VOID *pPaddingInfo, PUCHAR pbIV, ULONG cbIV,
     PUCHAR pbOutput, ULONG cbOutput, ULONG *pcbResult, ULONG dwFlags)
 {
+    // snapshot plaintext and IV before calling (IV is updated in-place by CFB)
+    unsigned char snapPT[DUMP_MAX], snapIV[DUMP_MAX];
+    ULONG snapPTLen = (pbInput && cbInput > 0) ? (cbInput < DUMP_MAX ? cbInput : DUMP_MAX) : 0;
+    ULONG snapIVLen = (pbIV    && cbIV   > 0) ? (cbIV   < DUMP_MAX ? cbIV   : DUMP_MAX) : 0;
+    if (snapPTLen) memcpy(snapPT, pbInput, snapPTLen);
+    if (snapIVLen) memcpy(snapIV, pbIV,    snapIVLen);
+
+    NTSTATUS st = orig_BCryptEncrypt(hKey, pbInput, cbInput, pPaddingInfo,
+                                     pbIV, cbIV, pbOutput, cbOutput, pcbResult, dwFlags);
     std::lock_guard<std::mutex> lk(g_log_mutex);
     if (g_log) {
         long long seq = ++g_call_seq;
@@ -271,15 +280,9 @@ static NTSTATUS WINAPI det_BCryptEncrypt(
                 hKey, (unsigned long)cbInput, (unsigned long)cbIV,
                 (unsigned long)cbOutput, (unsigned long)dwFlags);
         fprintf(g_log, "  PLAINTEXT (%lu bytes):\n", (unsigned long)cbInput);
-        if (pbInput && cbInput > 0)
-            log_hexdump(pbInput, cbInput, DUMP_MAX, "    ");
+        if (snapPTLen) log_hexdump(snapPT, snapPTLen, DUMP_MAX, "    ");
         fprintf(g_log, "  IV (%lu bytes):\n", (unsigned long)cbIV);
-        if (pbIV && cbIV > 0)
-            log_hexdump(pbIV, cbIV, DUMP_MAX, "    ");
-    }
-    NTSTATUS st = orig_BCryptEncrypt(hKey, pbInput, cbInput, pPaddingInfo,
-                                     pbIV, cbIV, pbOutput, cbOutput, pcbResult, dwFlags);
-    if (g_log) {
+        if (snapIVLen) log_hexdump(snapIV, snapIVLen, DUMP_MAX, "    ");
         fprintf(g_log, "  -> status=%s  pcbResult=%lu\n", ntstatus_str(st),
                 pcbResult ? (unsigned long)*pcbResult : 0UL);
         fprintf(g_log, "  CIPHERTEXT (%lu bytes):\n",
@@ -297,6 +300,15 @@ static NTSTATUS WINAPI det_BCryptDecrypt(
     VOID *pPaddingInfo, PUCHAR pbIV, ULONG cbIV,
     PUCHAR pbOutput, ULONG cbOutput, ULONG *pcbResult, ULONG dwFlags)
 {
+    // snapshot ciphertext and IV before calling
+    unsigned char snapCT[DUMP_MAX], snapIV[DUMP_MAX];
+    ULONG snapCTLen = (pbInput && cbInput > 0) ? (cbInput < DUMP_MAX ? cbInput : DUMP_MAX) : 0;
+    ULONG snapIVLen = (pbIV    && cbIV   > 0) ? (cbIV   < DUMP_MAX ? cbIV   : DUMP_MAX) : 0;
+    if (snapCTLen) memcpy(snapCT, pbInput, snapCTLen);
+    if (snapIVLen) memcpy(snapIV, pbIV,    snapIVLen);
+
+    NTSTATUS st = orig_BCryptDecrypt(hKey, pbInput, cbInput, pPaddingInfo,
+                                     pbIV, cbIV, pbOutput, cbOutput, pcbResult, dwFlags);
     std::lock_guard<std::mutex> lk(g_log_mutex);
     if (g_log) {
         long long seq = ++g_call_seq;
@@ -305,15 +317,9 @@ static NTSTATUS WINAPI det_BCryptDecrypt(
                 hKey, (unsigned long)cbInput, (unsigned long)cbIV,
                 (unsigned long)cbOutput, (unsigned long)dwFlags);
         fprintf(g_log, "  CIPHERTEXT (%lu bytes):\n", (unsigned long)cbInput);
-        if (pbInput && cbInput > 0)
-            log_hexdump(pbInput, cbInput, DUMP_MAX, "    ");
+        if (snapCTLen) log_hexdump(snapCT, snapCTLen, DUMP_MAX, "    ");
         fprintf(g_log, "  IV (%lu bytes):\n", (unsigned long)cbIV);
-        if (pbIV && cbIV > 0)
-            log_hexdump(pbIV, cbIV, DUMP_MAX, "    ");
-    }
-    NTSTATUS st = orig_BCryptDecrypt(hKey, pbInput, cbInput, pPaddingInfo,
-                                     pbIV, cbIV, pbOutput, cbOutput, pcbResult, dwFlags);
-    if (g_log) {
+        if (snapIVLen) log_hexdump(snapIV, snapIVLen, DUMP_MAX, "    ");
         fprintf(g_log, "  -> status=%s  pcbResult=%lu\n", ntstatus_str(st),
                 pcbResult ? (unsigned long)*pcbResult : 0UL);
         fprintf(g_log, "  PLAINTEXT (%lu bytes):\n",
@@ -331,20 +337,23 @@ static NTSTATUS WINAPI det_BCryptCreateHash(
     PUCHAR pbHashObject, ULONG cbHashObject,
     PUCHAR pbSecret, ULONG cbSecret, ULONG dwFlags)
 {
+    // snapshot HMAC secret before calling
+    unsigned char snap[DUMP_MAX];
+    ULONG snapLen = (pbSecret && cbSecret > 0) ? (cbSecret < DUMP_MAX ? cbSecret : DUMP_MAX) : 0;
+    if (snapLen) memcpy(snap, pbSecret, snapLen);
+
+    NTSTATUS st = orig_BCryptCreateHash(hAlgorithm, phHash, pbHashObject, cbHashObject,
+                                        pbSecret, cbSecret, dwFlags);
     std::lock_guard<std::mutex> lk(g_log_mutex);
     if (g_log) {
         long long seq = ++g_call_seq;
         fprintf(g_log, "[%lld] BCryptCreateHash\n", seq);
         fprintf(g_log, "  hAlgorithm=%p  cbHashObject=%lu  cbSecret=%lu  dwFlags=0x%08lX\n",
                 hAlgorithm, (unsigned long)cbHashObject, (unsigned long)cbSecret, (unsigned long)dwFlags);
-        if (pbSecret && cbSecret > 0) {
+        if (snapLen) {
             fprintf(g_log, "  HMAC SECRET (%lu bytes):\n", (unsigned long)cbSecret);
-            log_hexdump(pbSecret, cbSecret, DUMP_MAX, "    ");
+            log_hexdump(snap, snapLen, DUMP_MAX, "    ");
         }
-    }
-    NTSTATUS st = orig_BCryptCreateHash(hAlgorithm, phHash, pbHashObject, cbHashObject,
-                                        pbSecret, cbSecret, dwFlags);
-    if (g_log) {
         fprintf(g_log, "  -> hHash=%p  status=%s\n\n",
                 phHash ? *phHash : nullptr, ntstatus_str(st));
         fflush(g_log);
@@ -354,13 +363,11 @@ static NTSTATUS WINAPI det_BCryptCreateHash(
 
 static NTSTATUS WINAPI det_BCryptDestroyHash(BCRYPT_HASH_HANDLE hHash)
 {
+    NTSTATUS st = orig_BCryptDestroyHash(hHash);
     std::lock_guard<std::mutex> lk(g_log_mutex);
     if (g_log) {
         long long seq = ++g_call_seq;
         fprintf(g_log, "[%lld] BCryptDestroyHash  hHash=%p\n", seq, hHash);
-    }
-    NTSTATUS st = orig_BCryptDestroyHash(hHash);
-    if (g_log) {
         fprintf(g_log, "  -> status=%s\n\n", ntstatus_str(st));
         fflush(g_log);
     }
@@ -370,6 +377,12 @@ static NTSTATUS WINAPI det_BCryptDestroyHash(BCRYPT_HASH_HANDLE hHash)
 static NTSTATUS WINAPI det_BCryptHashData(
     BCRYPT_HASH_HANDLE hHash, PUCHAR pbInput, ULONG cbInput, ULONG dwFlags)
 {
+    // snapshot data before calling
+    unsigned char snap[DUMP_MAX];
+    ULONG snapLen = (pbInput && cbInput > 0) ? (cbInput < DUMP_MAX ? cbInput : DUMP_MAX) : 0;
+    if (snapLen) memcpy(snap, pbInput, snapLen);
+
+    NTSTATUS st = orig_BCryptHashData(hHash, pbInput, cbInput, dwFlags);
     std::lock_guard<std::mutex> lk(g_log_mutex);
     if (g_log) {
         long long seq = ++g_call_seq;
@@ -377,11 +390,7 @@ static NTSTATUS WINAPI det_BCryptHashData(
         fprintf(g_log, "  hHash=%p  cbInput=%lu  dwFlags=0x%08lX\n",
                 hHash, (unsigned long)cbInput, (unsigned long)dwFlags);
         fprintf(g_log, "  DATA (%lu bytes):\n", (unsigned long)cbInput);
-        if (pbInput && cbInput > 0)
-            log_hexdump(pbInput, cbInput, DUMP_MAX, "    ");
-    }
-    NTSTATUS st = orig_BCryptHashData(hHash, pbInput, cbInput, dwFlags);
-    if (g_log) {
+        if (snapLen) log_hexdump(snap, snapLen, DUMP_MAX, "    ");
         fprintf(g_log, "  -> status=%s\n\n", ntstatus_str(st));
         fflush(g_log);
     }
@@ -391,15 +400,13 @@ static NTSTATUS WINAPI det_BCryptHashData(
 static NTSTATUS WINAPI det_BCryptFinishHash(
     BCRYPT_HASH_HANDLE hHash, PUCHAR pbOutput, ULONG cbOutput, ULONG dwFlags)
 {
+    NTSTATUS st = orig_BCryptFinishHash(hHash, pbOutput, cbOutput, dwFlags);
     std::lock_guard<std::mutex> lk(g_log_mutex);
     if (g_log) {
         long long seq = ++g_call_seq;
         fprintf(g_log, "[%lld] BCryptFinishHash\n", seq);
         fprintf(g_log, "  hHash=%p  cbOutput=%lu  dwFlags=0x%08lX\n",
                 hHash, (unsigned long)cbOutput, (unsigned long)dwFlags);
-    }
-    NTSTATUS st = orig_BCryptFinishHash(hHash, pbOutput, cbOutput, dwFlags);
-    if (g_log) {
         fprintf(g_log, "  -> status=%s\n", ntstatus_str(st));
         fprintf(g_log, "  DIGEST (%lu bytes):\n", (unsigned long)cbOutput);
         if (BCRYPT_SUCCESS(st) && pbOutput && cbOutput > 0)
