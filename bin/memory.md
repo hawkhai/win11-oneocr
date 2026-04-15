@@ -192,6 +192,59 @@ bin\onnx_dump\
 
 ---
 
+## oneocr 容器格式（解密后的子模型结构）
+
+每个解密后的数据块并非裸 ONNX protobuf，而是 oneocr 自定义容器格式：
+
+```
+[8 bytes magic: 4a 1a 08 2b 25 00 00 00]   ← 所有子模型统一的固定头
+[ONNX protobuf 或其他资源数据]         ← 实际内容
+[1~15 bytes 尾部校验/签名数据]          ← 非 protobuf 的额外字节
+```
+
+### 特殊情况
+- **目录表**（0001，22624字节）：前 16 字节是两个 uint64 LE（`0x5844`, `0x585c`），不使用通用 magic
+- **尾部校验数据**：大小不固定（1~15字节），导致 `onnx.load` 直接加载失败
+
+### 正确提取 ONNX 的方法
+1. 跳过前 8 字节 magic header
+2. 解析 protobuf 顶层 field，只允许 ONNX ModelProto 的有效 field number（{1,2,3,4,5,6,7,8,14,25}）
+3. 遇到无效 field number 时截断，剩余是尾部校验数据
+4. 用 `onnx.load_from_string()` 加载截断后的数据
+
+### ONNX 模型验证结果（73 个 dump 文件）
+
+| 类型 | 数量 | 说明 |
+|---|---|---|
+| 有效 ONNX | **33** | 全部 `onnx.load` 成功，含自定义算子 |
+| 加载失败 | 1 | 0055，边界问题（tail=0 截断位置不准） |
+| 非 ONNX 资源 | **39** | LogPrior表、字符映射表、配置数据、目录表 |
+
+### 自定义算子域
+
+| 域名 | 说明 |
+|---|---|
+| `com.microsoft.oneocr` | OneOCR 专用算子（如 `OneOCRFeatureExtract`） |
+| `com.microsoft` | 微软通用算子 |
+| `com.microsoft.mlfeaturizers` | ML 特征提取算子 |
+| `com.microsoft.nchwc` | NCHW->NCHWc 布局算子 |
+| `com.microsoft.experimental` | 实验性算子 |
+
+### 模型分类
+
+| 模型 | 大小 | producer | 用途 |
+|---|---|---|---|
+| `b512-SyncBN-x4_rpn_batch_quant_if.onnx` | ~11MB | onnx.quantize | 文字检测器 (Detector) |
+| `checkpoint.040.onnx` | ~3.5MB | PyTorch | 识别器 (Recognizer) |
+| `checkpoint.075_quant.onnx` | 0.3~3.7MB | PyTorch/onnx.quantize | 量化分类器 |
+| `rejection_model_*.onnx` | 27KB×10 | pytorch | 拒绝模型（10个语言变体） |
+| `confidence_model_*.onnx` | 29KB×12 | pytorch | 置信度模型（12个语言变体） |
+
+### onnxruntime 加载
+所有 ONNX 均因自定义算子 `com.microsoft.oneocr:OneOCRFeatureExtract` 未注册而无法用标准 onnxruntime 加载，需要 oneocr.dll 自带的 onnxruntime 提供自定义算子实现。
+
+---
+
 ## 常见错误及解决
 
 | 错误 | 原因 | 解决 |
