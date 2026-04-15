@@ -72,3 +72,31 @@ foreach(TARGET_NAME oneocr_wrapper oneocr_test)
         COMMENT "Copying MinHook DLL to ${TARGET_NAME} output directory"
     )
 endforeach()
+
+# x64 Release: copy all final artifacts to ${CMAKE_SOURCE_DIR}/bin
+set(DIST_DIR "${CMAKE_SOURCE_DIR}/bin")
+set(COPY_SCRIPT "${CMAKE_SOURCE_DIR}/cmake/copy_release_artifacts.cmake")
+
+# oneocr_wrapper.dll + its import lib (.lib skipped, only DLL matters at runtime)
+add_custom_command(TARGET oneocr_wrapper POST_BUILD
+    COMMAND ${CMAKE_COMMAND}
+        -D CONFIG=$<CONFIG>
+        -D ARCH=${CMAKE_SIZEOF_VOID_P}
+        -D DIST_DIR=${DIST_DIR}
+        "-D FILES=$<TARGET_FILE:oneocr_wrapper>;${MINHOOK_DLL}"
+        -D CMAKE_COMMAND=${CMAKE_COMMAND}
+        -P "${COPY_SCRIPT}"
+    COMMENT "x64 Release: copying oneocr_wrapper.dll + MinHook DLL to bin/"
+)
+
+# oneocr_test.exe
+add_custom_command(TARGET oneocr_test POST_BUILD
+    COMMAND ${CMAKE_COMMAND}
+        -D CONFIG=$<CONFIG>
+        -D ARCH=${CMAKE_SIZEOF_VOID_P}
+        -D DIST_DIR=${DIST_DIR}
+        "-D FILES=$<TARGET_FILE:oneocr_test>"
+        -D CMAKE_COMMAND=${CMAKE_COMMAND}
+        -P "${COPY_SCRIPT}"
+    COMMENT "x64 Release: copying oneocr_test.exe to bin/"
+)
