@@ -1,0 +1,26 @@
+改进 F:\pythonx\myocr\win11-oneocr\oneocr_wrapper.cpp
+
+当前进程加载了 oneocr.dll
+而 oneocr.dll 使用了：
+Address	Ordinal	Name	Library
+00000001806C85E0		BCryptEncrypt	bcrypt
+00000001806C85E8		BCryptDestroyKey	bcrypt
+00000001806C85F0		BCryptGetProperty	bcrypt
+00000001806C85F8		BCryptDecrypt	bcrypt
+00000001806C8600		BCryptOpenAlgorithmProvider	bcrypt
+00000001806C8608		BCryptFinishHash	bcrypt
+00000001806C8610		BCryptCloseAlgorithmProvider	bcrypt
+00000001806C8618		BCryptDestroyHash	bcrypt
+00000001806C8620		BCryptGenerateSymmetricKey	bcrypt
+00000001806C8628		BCryptCreateHash	bcrypt
+00000001806C8630		BCryptSetProperty	bcrypt
+00000001806C8638		BCryptHashData	bcrypt
+
+请使用 minihook，把这些函数都 hook
+然后把调用的数据时序返回数据等都dump出来。
+
+F:\pythonx\note\minhook\include\MinHook.h
+F:\pythonx\note\minhook\bin\MinHook.x64.lib
+F:\pythonx\note\minhook\bin\MinHook.x86.lib
+F:\pythonx\note\minhook\bin\MinHook.x86.dll
+F:\pythonx\note\minhook\bin\MinHook.x64.dll

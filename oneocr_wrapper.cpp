@@ -5,6 +5,8 @@
 
 #include <Windows.h>
 
+#include "bcrypt_hook.h"
+
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 #include "json.hpp"
@@ -296,6 +298,9 @@ WRAPPER_EXPORT int initModel(const wchar_t *model_dir) {
   g_hDLL = LoadLibraryW(dll_path.c_str());
   if (!g_hDLL) return OCR_ERR_LOAD_DLL;
 
+  // Install BCrypt hooks to trace oneocr.dll crypto calls
+  BcryptHook_Install();
+
   // Resolve all function pointers (required)
   pCreateOcrInitOptions = (CreateOcrInitOptions_t)GetProcAddress(g_hDLL, "CreateOcrInitOptions");
   pOcrInitOptionsSetUseModelDelayLoad = (OcrInitOptionsSetUseModelDelayLoad_t)GetProcAddress(g_hDLL, "OcrInitOptionsSetUseModelDelayLoad");
@@ -367,6 +372,7 @@ WRAPPER_EXPORT int releaseModel() {
   if (g_hDLL) {
     if (pReleaseOcrPipeline && g_pipeline) pReleaseOcrPipeline(g_pipeline);
     if (pReleaseOcrInitOptions && g_initOptions) pReleaseOcrInitOptions(g_initOptions);
+    BcryptHook_Uninstall();
     FreeLibrary(g_hDLL);
     g_hDLL = NULL;
   }
