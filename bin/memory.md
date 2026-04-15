@@ -341,3 +341,238 @@ cmake --build build --config Release --target oneocr_wrapper oneocr_test
 - 位置：进程工作目录下 `logdir\bcrypt_dump_<PID>.log`
 - 本次分析的日志：`bin\bcrypt_dump_19900.log`（旧路径），共 **4709 次**调用，session 正常完成
 - 新版本日志输出到 `bin\logdir\` 子文件夹（`log_open()` 中 `CreateDirectoryA("logdir", nullptr)` 自动创建）
+
+---
+
+## onnxruntime.dll 分析
+
+### 基本信息
+
+| 项目 | 值 |
+|---|---|
+| 文件 | `bin\onnxruntime.dll` |
+| 大小 | 15,246,320 字节（~14.5 MB） |
+| 版本 | **1.23.0** |
+| 链接器 | MSVC 14.42 |
+| 导出函数 | 仅 **2 个** |
+
+### 导出函数
+
+| ordinal | RVA | 函数名 |
+|---|---|---|
+| 1 | 0x00028A00 | `OrtGetApiBase` |
+| 2 | 0x001D7A00 | `OrtSessionOptionsAppendExecutionProvider_CPU` |
+
+这是 ONNX Runtime 标准 C API 设计：所有功能通过 `OrtGetApiBase()` 返回的 **`OrtApiBase`** 结构体间接访问。`OrtApiBase::GetApi(version)` 返回 `OrtApi` 函数指针表（vtable），所有具体 API（`CreateSession`、`Run` 等）都是该表中的函数指针。
+
+### OrtApiBase 结构
+
+```cpp
+struct OrtApiBase {
+    const OrtApi* (ORT_API_CALL* GetApi)(uint32_t version);  // 获取指定版本的 OrtApi
+    const char*   (ORT_API_CALL* GetVersionString)(void);     // 返回版本字符串 "1.23.0"
+};
+```
+
+- `OrtGetApiBase()` 是全局唯一入口点
+- `GetApi(ORT_API_VERSION)` 返回包含 200+ 个函数指针的 `OrtApi` 结构体
+- oneocr.dll 调用链：`OrtGetApiBase() → GetApi() → OrtApi->CreateSessionFromArray() / Run() / ...`
+
+### OrtApi vtable 关键函数偏移（0-indexed，v1.23.0）
+
+以下是 `struct OrtApi` 中函数指针的顺序（每个占 8 字节/x64）：
+
+| 索引 | 函数 | 用途 |
+|---|---|---|
+| 0 | `CreateStatus` | 创建错误状态 |
+| 1 | `GetErrorCode` | 获取错误码 |
+| 2 | `GetErrorMessage` | 获取错误信息 |
+| 3 | `CreateEnv` | 创建运行环境 |
+| 4 | `CreateEnvWithCustomLogger` | 创建运行环境（自定义日志） |
+| 5 | `EnableTelemetryEvents` | |
+| 6 | `DisableTelemetryEvents` | |
+| **7** | **`CreateSession`** | **从文件加载模型** |
+| **8** | **`CreateSessionFromArray`** | **从内存加载模型**（oneocr.dll 用这个） |
+| **9** | **`Run`** | **核心推理函数** |
+| 10 | `CreateSessionOptions` | |
+| 11 | `SetOptimizedModelFilePath` | |
+| 12 | `CloneSessionOptions` | |
+| 13 | `SetSessionExecutionMode` | |
+| 14 | `EnableProfiling` | |
+| 15 | `DisableProfiling` | |
+| 16 | `EnableMemPattern` | |
+| 17 | `DisableMemPattern` | |
+| 18 | `EnableCpuMemArena` | |
+| 19 | `DisableCpuMemArena` | |
+| 20 | `SetSessionLogId` | |
+| 21 | `SetSessionLogVerbosityLevel` | |
+| 22 | `SetSessionLogSeverityLevel` | |
+| 23 | `SetSessionGraphOptimizationLevel` | |
+| 24 | `SetIntraOpNumThreads` | |
+| 25 | `SetInterOpNumThreads` | |
+| 26 | `CreateCustomOpDomain` | |
+| 27 | `CustomOpDomain_Add` | |
+| 28 | `AddCustomOpDomain` | |
+| 29 | `RegisterCustomOpsLibrary` | |
+| **30** | **`SessionGetInputCount`** | **获取模型输入数量** |
+| **31** | **`SessionGetOutputCount`** | **获取模型输出数量** |
+| 32 | `SessionGetOverridableInitializerCount` | |
+| **33** | **`SessionGetInputTypeInfo`** | **获取输入类型信息** |
+| **34** | **`SessionGetOutputTypeInfo`** | **获取输出类型信息** |
+| 35 | `SessionGetOverridableInitializerTypeInfo` | |
+| **36** | **`SessionGetInputName`** | **获取输入名** |
+| **37** | **`SessionGetOutputName`** | **获取输出名** |
+| 38 | `SessionGetOverridableInitializerName` | |
+| 39 | `CreateRunOptions` | |
+| 40–47 | `RunOptions*` 系列 | |
+| 48 | `CreateTensorAsOrtValue` | |
+| **49** | **`CreateTensorWithDataAsOrtValue`** | **从用户 buffer 创建 tensor** |
+| 50 | `IsTensor` | |
+| **51** | **`GetTensorMutableData`** | **获取 tensor 数据指针** |
+| 52 | `FillStringTensor` | |
+| 53 | `GetStringTensorDataLength` | |
+| 54 | `GetStringTensorContent` | |
+| 55 | `CastTypeInfoToTensorInfo` | |
+| 56 | `GetOnnxTypeFromTypeInfo` | |
+| 57 | `CreateTensorTypeAndShapeInfo` | |
+| 58 | `SetTensorElementType` | |
+| 59 | `SetDimensions` | |
+| **60** | **`GetTensorElementType`** | **获取 tensor 元素类型** |
+| **61** | **`GetDimensionsCount`** | **获取维度数** |
+| **62** | **`GetDimensions`** | **获取各维度大小** |
+| 63 | `GetSymbolicDimensions` | |
+| 64 | `GetTensorShapeElementCount` | |
+| **65** | **`GetTensorTypeAndShape`** | **从 OrtValue 获取 shape+type 信息** |
+| 66 | `GetTypeInfo` | |
+| 67 | `GetValueType` | |
+| 68 | `CreateMemoryInfo` | |
+| 69 | `CreateCpuMemoryInfo` | |
+| ... | _后续 130+ 个函数_ | |
+
+### 关键函数签名
+
+```cpp
+// [7] CreateSession — 从文件加载
+OrtStatus* CreateSession(const OrtEnv* env, const ORTCHAR_T* model_path,
+                         const OrtSessionOptions* options, OrtSession** out);
+
+// [8] CreateSessionFromArray — 从内存加载（oneocr.dll 解密后调用）
+OrtStatus* CreateSessionFromArray(const OrtEnv* env, const void* model_data,
+                                  size_t model_data_length,
+                                  const OrtSessionOptions* options, OrtSession** out);
+
+// [9] Run — 推理
+OrtStatus* Run(OrtSession* session, const OrtRunOptions* run_options,
+               const char* const* input_names,
+               const OrtValue* const* inputs, size_t input_len,
+               const char* const* output_names, size_t output_names_len,
+               OrtValue** outputs);
+
+// [51] GetTensorMutableData — 获取 tensor 原始数据指针
+OrtStatus* GetTensorMutableData(OrtValue* value, void** out);
+
+// [65] GetTensorTypeAndShape — 获取 tensor 类型和形状
+OrtStatus* GetTensorTypeAndShape(const OrtValue* value, OrtTensorTypeAndShapeInfo** out);
+```
+
+### Hook 方案：替换 OrtApi vtable
+
+**原理**：MinHook 只能 hook 导出函数，而 OrtApi 中的函数（`Run`、`CreateSession` 等）不是导出的——它们是 vtable 中的函数指针。因此需要：
+
+1. **Hook `OrtGetApiBase`**（唯一入口，RVA=0x28A00）
+2. 调用原始 `OrtGetApiBase()` 拿到真正的 `OrtApiBase*`
+3. 调用 `OrtApiBase->GetApi(version)` 拿到真正的 `const OrtApi*`
+4. **复制一份 `OrtApi` 到可写内存**，替换关键函数指针为 detour
+5. 构造一个假的 `OrtApiBase`，其 `GetApi` 返回我们修改后的 `OrtApi`
+6. 返回假的 `OrtApiBase` 给 `oneocr.dll`
+
+```
+oneocr.dll → OrtGetApiBase() → [MinHook detour]
+  → 调用原始 OrtGetApiBase() → 拿到 real_api_base
+  → real_api_base->GetApi(ver) → 拿到 real_api (const OrtApi*)
+  → memcpy(fake_api, real_api, sizeof(OrtApi))
+  → fake_api.Run = det_OrtRun            // 替换 Run
+  → fake_api.CreateSessionFromArray = det_CreateSessionFromArray  // 替换 CreateSession
+  → fake_api_base.GetApi = [返回 &fake_api]
+  → return &fake_api_base
+```
+
+### 需要 hook 的函数及目的
+
+| 函数 | hook 目的 |
+|---|---|
+| `CreateSessionFromArray` [8] | 拦截模型加载：记录 model_data（解密后的 ONNX protobuf）、session handle → 模型名映射 |
+| `Run` [9] | **核心**：拦截每次推理调用，dump 输入输出 tensor 的 name/shape/dtype/data |
+| `GetTensorMutableData` [51] | （可选）记录 tensor 数据访问 |
+
+### Run hook 能获取的数据
+
+每次 `Run` 调用可以拿到：
+
+- **session** → 对应哪个模型（通过 `CreateSessionFromArray` 时的映射）
+- **input_names[]** + **inputs[]** → 每个输入 tensor 的名字和 `OrtValue*`
+- **output_names[]** + **outputs[]** → 每个输出 tensor 的名字和 `OrtValue*`（Run 返回后填充）
+
+对每个 `OrtValue*` 可以进一步查询：
+- `GetTensorTypeAndShape` → `OrtTensorTypeAndShapeInfo*`
+  - `GetTensorElementType` → dtype（float32/int64/uint8 等）
+  - `GetDimensionsCount` + `GetDimensions` → shape（如 `[1, 3, 512, 512]`）
+  - `GetTensorShapeElementCount` → 元素总数
+- `GetTensorMutableData` → `void*` 原始数据指针
+- 数据大小 = 元素总数 × dtype 字节数
+
+### dump 数据方案
+
+```
+ort_dump/
+    session_0001_CreateSessionFromArray.log   ← 记录 model_data_length, session handle
+    run_0001_session_0001/                     ← 每次 Run 一个子目录
+        input_0_<name>.bin                     ← 原始 tensor 数据
+        input_0_<name>.json                    ← { shape, dtype, size }
+        output_0_<name>.bin
+        output_0_<name>.json
+    run_0002_session_0001/
+        ...
+```
+
+### oneocr.dll 对 onnxruntime 的使用模式（推测）
+
+1. **初始化阶段**（`CreateOcrPipeline` 内）：
+   - 解密每个 ONNX 子模型（通过 BCrypt）
+   - 对每个有效模型调用 `CreateSessionFromArray` 加载到 onnxruntime
+   - 注册自定义算子域 `com.microsoft.oneocr`（通过 `CreateCustomOpDomain` + `CustomOpDomain_Add` + `AddCustomOpDomain`）
+   - 共创建约 **34 个 session**（对应 34 个有效 ONNX 模型）
+
+2. **推理阶段**（`RunOcrPipeline` 内）：
+   - 按检测→识别→后处理的 pipeline 顺序依次调用各 session 的 `Run`
+   - Detector 模型输入：预处理后的图片 tensor（如 `[1, 3, H, W]` float32）
+   - Detector 模型输出：文字区域 bbox
+   - Recognizer 模型输入：裁切后的文字行图片
+   - Recognizer 模型输出：字符序列 logits
+   - Confidence/Rejection 模型：对识别结果打分
+
+### 注意事项
+
+- `OrtApi` 是 `const` 的，原始指针指向 onnxruntime.dll 的只读数据段，不能直接 patch
+- 必须 **复制到可写内存** 后替换函数指针
+- `OrtApi` 结构体很大（200+ 个函数指针，~1600+ 字节），复制时需要知道准确大小
+  - 可以先用 `sizeof(void*) * 250` 的保守上限复制
+  - 或者从 onnxruntime 1.23.0 源码中数出精确的成员数量
+- `OrtGetApiBase` 只会在 `oneocr.dll` 初始化时被调用一次，hook 时机需要在 `initModel` 之前
+- 当前架构中 hook 安装在 `BcryptHook_Install()` 中，可以新增 `OrtHook_Install()` 类似逻辑
+- 由于 `Run` 可能被多线程调用，dump 逻辑需要线程安全
+
+### 与现有 BCrypt hook 的关系
+
+BCrypt hook 拦截的是**加密层**（解密 ONNX 模型数据），ORT hook 拦截的是**推理层**（模型的输入输出 tensor）。两者互补：
+
+```
+oneocr.dll 内部流程：
+  BCryptDecrypt(密文) → ONNX protobuf 明文  ← BCrypt hook 在这里 dump 模型文件
+  CreateSessionFromArray(明文) → session     ← ORT hook 在这里记录 session
+  Run(session, inputs) → outputs             ← ORT hook 在这里 dump tensor 数据
+```
+
+### ORT_API_VERSION
+
+onnxruntime 1.23.0 对应的 `ORT_API_VERSION` 值需要确认。根据 onnxruntime 版本历史，1.23.0 的 API version 为 **23**（通常主版本号 1.X.0 对应 API version X，但需从源码确认 `#define ORT_API_VERSION` 的值）。oneocr.dll 调用 `GetApi` 时传入的版本号也需要通过 hook 记录确认。
