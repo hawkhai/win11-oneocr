@@ -3,6 +3,7 @@
 #include <fstream>
 
 #include "oneocr.h"
+#include "bcrypt_hook.h"
 
 int main(int argc, char *argv[]) {
   const wchar_t *image_path = L"test.png";
@@ -15,11 +16,15 @@ int main(int argc, char *argv[]) {
     return 1;
   }
 
+  // Install BCrypt hooks before initModel (which loads oneocr.dll and triggers crypto calls)
+  BcryptHook_Install();
+
   // initModel: pass the directory containing oneocr.dll + oneocr.onemodel
   // Here we use "." since bin files are copied to the exe directory.
   int ret = ocr.initModel(L".");
   if (ret != OCR_OK) {
     printf("initModel failed: %d\n", ret);
+    BcryptHook_Uninstall();
     return 1;
   }
   printf("Model initialized.\n");
@@ -61,5 +66,6 @@ int main(int argc, char *argv[]) {
     printf("Extended result saved to %s\n", out_file_ex);
   }
 
+  BcryptHook_Uninstall();
   return 0;
 }

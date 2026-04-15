@@ -4,13 +4,12 @@
 
 ```
 F:\pythonx\myocr\win11-oneocr\
-├── oneocr_wrapper.cpp      # 主 DLL 封装，加载 oneocr.dll，暴露 OCR API
-├── oneocr_wrapper.h
+├── oneocr_wrapper.cpp      # 主 DLL 封装，加载 oneocr.dll，暴露 OCR API（纯 OCR，无 hook）
 ├── bcrypt_hook.cpp         # 12 个 BCrypt 函数的 MinHook 钩子 + 日志
 ├── bcrypt_hook.h
 ├── onnx_dump.cpp           # 从 BCryptDecrypt 明文提取并保存 ONNX 子模型
 ├── onnx_dump.h
-├── oneocr_test.cpp         # 测试程序
+├── oneocr_test.cpp         # 测试程序 + MinHook 钩子安装/卸载入口
 ├── CMakeLists.txt
 ├── cmake/
 │   └── copy_release_artifacts.cmake   # x64 Release 后处理拷贝脚本
@@ -42,6 +41,23 @@ F:\pythonx\myocr\win11-oneocr\
 ---
 
 ## BCrypt Hook 架构
+
+### 宿主进程
+
+MinHook 逻辑全部在 `oneocr_test.exe`（EXE 端），不在 `oneocr_wrapper.dll`（DLL 端）。
+
+- `bcrypt_hook.cpp` / `onnx_dump.cpp` 编译链接到 `oneocr_test` 目标
+- `oneocr_wrapper.dll` 是纯 OCR 封装，不依赖 MinHook
+- MinHook 钩子是进程级别的，从 EXE 安装后对进程内所有 DLL（含 oneocr.dll）生效
+
+**调用顺序**（`oneocr_test.cpp::main`）：
+```cpp
+OneOcr ocr;                    // 加载 oneocr_wrapper.dll
+BcryptHook_Install();          // 安装 BCrypt 钩子（在 initModel 之前）
+ocr.initModel(L".");           // 加载 oneocr.dll，触发 BCrypt 调用 → 被钩子拦截
+// ... OCR 操作 ...
+BcryptHook_Uninstall();        // 卸载钩子
+```
 
 ### 钩住的 12 个函数（均来自 `bcrypt.dll`）
 
@@ -287,6 +303,7 @@ Encrypt → 路径校验（对应上面的 ONNX）→ 重命名 MMMM_decrypt.bin
 | 错误 | 原因 | 解决 |
 |---|---|---|
 | `initModel failed: -5` (`OCR_ERR_CREATE_PIPE`) | BCrypt hook 死锁导致 `CreateOcrPipeline` 超时/失败 | 修复所有 detour 为先调原始函数再加锁记日志 |
+| MinHook 放在 DLL 中不合理 | wrapper DLL 不应承担 hook 职责；hook 是调试/分析工具，属于 EXE 端 | 将 bcrypt_hook/onnx_dump 从 oneocr_wrapper 移到 oneocr_test |
 | `onnx_dump` 目录为空（v1） | 依赖 Encrypt 设置 pending name，但实际 Encrypt 在 Decrypt 之后 | 改为直接从 Decrypt 明文中搜索 `.onnx` 提取文件名 |
 | `onnx_dump` 只有1个文件（v2） | `base.empty()` 时 `return` 跳过保存；大部分 Decrypt 块是纯权重不含路径 | 去掉 empty return，所有大块都保存为 `_decrypt.bin`，由后续 Encrypt 重命名 |
 | 文件名乱码 `0001_+%`（v2） | `find_onnx_basename` 从**后**往**前**扫描，命中二进制权重中的假 `.onnx` 字节序列 | 改为**从前往后**扫描，第一个有效匹配即返回 |
@@ -306,6 +323,16 @@ cmake --build build --config Release --target oneocr_wrapper oneocr_test
 
 # 产物自动拷贝到 bin/ 由 cmake/copy_release_artifacts.cmake 处理
 ```
+
+### CMake 目标依赖
+
+| 目标 | 类型 | 源文件 | 链接库 |
+|---|---|---|---|
+| `oneocr_wrapper` | SHARED (DLL) | `oneocr_wrapper.cpp` | _(无外部依赖)_ |
+| `oneocr_test` | EXE | `oneocr_test.cpp`, `bcrypt_hook.cpp`, `onnx_dump.cpp` | `MinHook.x64.lib`, `bcrypt.lib` |
+
+- `MinHook.x64.dll` 仅拷贝到 `oneocr_test` 输出目录
+- x64 Release 发布：`oneocr_wrapper.dll` 不再携带 MinHook DLL；`oneocr_test.exe` 携带 MinHook DLL
 
 ---
 

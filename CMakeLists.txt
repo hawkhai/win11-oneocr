@@ -18,12 +18,12 @@ endif()
 add_executable(ocr ocr.cpp)
 
 # oneocr_wrapper DLL
-add_library(oneocr_wrapper SHARED oneocr_wrapper.cpp bcrypt_hook.cpp onnx_dump.cpp)
-target_include_directories(oneocr_wrapper PRIVATE ${MINHOOK_INCLUDE_DIR})
-target_link_libraries(oneocr_wrapper PRIVATE ${MINHOOK_LIB} bcrypt)
+add_library(oneocr_wrapper SHARED oneocr_wrapper.cpp)
 
-# oneocr_test: header-only usage, no .lib linking needed
-add_executable(oneocr_test oneocr_test.cpp)
+# oneocr_test: header-only usage + MinHook BCrypt tracing
+add_executable(oneocr_test oneocr_test.cpp bcrypt_hook.cpp onnx_dump.cpp)
+target_include_directories(oneocr_test PRIVATE ${MINHOOK_INCLUDE_DIR})
+target_link_libraries(oneocr_test PRIVATE ${MINHOOK_LIB} bcrypt)
 add_dependencies(oneocr_test oneocr_wrapper)
 
 # Copy bin/ runtime files (DLLs and model) to output directory
@@ -63,40 +63,38 @@ add_custom_command(TARGET oneocr_test POST_BUILD
     COMMENT "Copying oneocr_wrapper.dll to oneocr_test output directory"
 )
 
-# Copy MinHook runtime DLL alongside oneocr_wrapper and oneocr_test
-foreach(TARGET_NAME oneocr_wrapper oneocr_test)
-    add_custom_command(TARGET ${TARGET_NAME} POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E copy_if_different
-            "${MINHOOK_DLL}"
-            "$<TARGET_FILE_DIR:${TARGET_NAME}>/$<IF:$<EQUAL:${CMAKE_SIZEOF_VOID_P},8>,MinHook.x64.dll,MinHook.x86.dll>"
-        COMMENT "Copying MinHook DLL to ${TARGET_NAME} output directory"
-    )
-endforeach()
+# Copy MinHook runtime DLL alongside oneocr_test
+add_custom_command(TARGET oneocr_test POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        "${MINHOOK_DLL}"
+        "$<TARGET_FILE_DIR:oneocr_test>/$<IF:$<EQUAL:${CMAKE_SIZEOF_VOID_P},8>,MinHook.x64.dll,MinHook.x86.dll>"
+    COMMENT "Copying MinHook DLL to oneocr_test output directory"
+)
 
 # x64 Release: copy all final artifacts to ${CMAKE_SOURCE_DIR}/bin
 set(DIST_DIR "${CMAKE_SOURCE_DIR}/bin")
 set(COPY_SCRIPT "${CMAKE_SOURCE_DIR}/cmake/copy_release_artifacts.cmake")
 
-# oneocr_wrapper.dll + its import lib (.lib skipped, only DLL matters at runtime)
+# oneocr_wrapper.dll
 add_custom_command(TARGET oneocr_wrapper POST_BUILD
     COMMAND ${CMAKE_COMMAND}
         -D CONFIG=$<CONFIG>
         -D ARCH=${CMAKE_SIZEOF_VOID_P}
         -D DIST_DIR=${DIST_DIR}
-        "-D FILES=$<TARGET_FILE:oneocr_wrapper>;${MINHOOK_DLL}"
+        "-D FILES=$<TARGET_FILE:oneocr_wrapper>"
         -D CMAKE_COMMAND=${CMAKE_COMMAND}
         -P "${COPY_SCRIPT}"
-    COMMENT "x64 Release: copying oneocr_wrapper.dll + MinHook DLL to bin/"
+    COMMENT "x64 Release: copying oneocr_wrapper.dll to bin/"
 )
 
-# oneocr_test.exe
+# oneocr_test.exe + MinHook DLL
 add_custom_command(TARGET oneocr_test POST_BUILD
     COMMAND ${CMAKE_COMMAND}
         -D CONFIG=$<CONFIG>
         -D ARCH=${CMAKE_SIZEOF_VOID_P}
         -D DIST_DIR=${DIST_DIR}
-        "-D FILES=$<TARGET_FILE:oneocr_test>"
+        "-D FILES=$<TARGET_FILE:oneocr_test>;${MINHOOK_DLL}"
         -D CMAKE_COMMAND=${CMAKE_COMMAND}
         -P "${COPY_SCRIPT}"
-    COMMENT "x64 Release: copying oneocr_test.exe to bin/"
+    COMMENT "x64 Release: copying oneocr_test.exe + MinHook DLL to bin/"
 )
