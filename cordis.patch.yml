@@ -1,0 +1,7 @@
+- insert:
+    - id: win11-oneocr
+      name: dsh-win11-oneocr
+      config:
+        ocrBin: ''
+        timeoutMs: 60000
+        maxOutputBytes: 4194304

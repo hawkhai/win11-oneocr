@@ -4,6 +4,18 @@ Offline OCR engine extracted from the Windows 11 Snipping Tool, with full-featur
 
 Based on: https://b1tg.github.io/post/win11-oneocr/
 
+## DeepSeek Harness plugin
+
+This repository can be installed as a [DeepSeek Harness](https://github.com/deepseek-ai/DeepSeek-Harness) plugin:
+
+```powershell
+dsh plugin add github:hawkhai/win11-oneocr
+```
+
+It registers `oneocr_recognize`, a model-facing tool that accepts a local image path and returns recognized text together with OneOCR's structured line/word polygons, confidence values, image angle, and handwriting style. The tool runs locally on Windows 11; image bytes are not sent to an external OCR service.
+
+The bundle defaults to the prebuilt `bin/ocr.exe` and its adjacent runtime files. Override `ocrBin`, `timeoutMs`, or `maxOutputBytes` in the plugin row if needed.
+
 ## Features
 
 | Feature | Description |
