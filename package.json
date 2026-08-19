@@ -1,13 +1,16 @@
 {
   "name": "dsh-win11-oneocr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DeepSeek Harness tool for offline OCR with the Windows 11 Snipping Tool OneOCR engine.",
   "type": "module",
   "main": "src/index.js",
   "exports": "./src/index.js",
   "files": [
     "src",
-    "bin",
+    "bin/ocr.exe",
+    "bin/oneocr.dll",
+    "bin/oneocr.onemodel",
+    "bin/onnxruntime.dll",
     "cordis.patch.yml",
     "README.md"
   ],

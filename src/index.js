@@ -24,6 +24,7 @@ function sessionPath(path, exec) {
 
 function runProcess(command, args, { cwd, timeoutMs, maxOutputBytes, signal }) {
   return new Promise((resolveRun, reject) => {
+    if (signal?.aborted) return reject(new Error('OneOCR call aborted'))
     const child = spawn(command, args, { cwd, windowsHide: true, shell: false, stdio: ['ignore', 'pipe', 'pipe'] })
     let stdout = Buffer.alloc(0)
     let stderr = Buffer.alloc(0)
@@ -103,6 +104,7 @@ export function apply(ctx, config = {}) {
     },
     isConcurrencySafe: () => true,
     async execute(args, exec) {
+      if (exec.signal?.aborted) throw new Error('OneOCR call aborted')
       if (process.platform !== 'win32') throw new Error('OneOCR requires Windows 11')
       if (typeof args.image_path !== 'string' || !args.image_path.trim()) throw new Error('image_path must be a non-empty string')
       const maxLines = positiveInteger(args.max_lines, 1000, 'max_lines')
