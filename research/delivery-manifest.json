@@ -18,7 +18,7 @@
   "source_build": "docs/portable.md",
   "files": {
     "artifacts/linux-x64/BUILD.json": {
-      "sha256": "5d6f44f686f7af4cb783ec51896019f16e263999897cf457f3a68a4b5684c210",
+      "sha256": "d684f3f24bfe07075204fb7aaa715bcf44f00be21609156477248cfc4b216758",
       "size": 7170
     },
     "artifacts/linux-x64/bin/ocr": {
@@ -62,8 +62,8 @@
       "size": 4520
     },
     "artifacts/linux-x64/share/oneocr/error-codes.md": {
-      "sha256": "a4019cf59730c0a9e6076cba758c6989282a89edeaf776d6b262880416a5ffad",
-      "size": 14503
+      "sha256": "968aa938bff6631556286270f779c627a16c6f1c59ace4ea72ac0699491f791a",
+      "size": 21141
     },
     "artifacts/linux-x64/share/oneocr/licenses/gcc-runtime-GPL-3.txt": {
       "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
@@ -110,11 +110,11 @@
       "size": 1024
     },
     "artifacts/linux-x64/share/oneocr/portable.md": {
-      "sha256": "ddf0adda4ddd54c1ed661f7a55abf7b977a2144852390fbed11cc751616162bc",
-      "size": 12577
+      "sha256": "cae57021a5b5e49247b33080608febd0a1c383cb82d4fc5104fa895cb8ed1705",
+      "size": 12800
     },
     "artifacts/win32-x64/BUILD.json": {
-      "sha256": "7d8ae5fef58f6bded10e3cd0f8fde4ab0fa67361dec298a9561e45128f6d67ed",
+      "sha256": "d2c32b7bd7bff90d500561c0c110dea5b167cf93e1552828667d41104bb8f549",
       "size": 7950
     },
     "artifacts/win32-x64/bin/concrt140.dll": {
@@ -190,8 +190,8 @@
       "size": 4520
     },
     "artifacts/win32-x64/share/oneocr/error-codes.md": {
-      "sha256": "a4019cf59730c0a9e6076cba758c6989282a89edeaf776d6b262880416a5ffad",
-      "size": 14503
+      "sha256": "968aa938bff6631556286270f779c627a16c6f1c59ace4ea72ac0699491f791a",
+      "size": 21141
     },
     "artifacts/win32-x64/share/oneocr/licenses/gcc-runtime-GPL-3.txt": {
       "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
@@ -238,8 +238,8 @@
       "size": 1024
     },
     "artifacts/win32-x64/share/oneocr/portable.md": {
-      "sha256": "ddf0adda4ddd54c1ed661f7a55abf7b977a2144852390fbed11cc751616162bc",
-      "size": 12577
+      "sha256": "cae57021a5b5e49247b33080608febd0a1c383cb82d4fc5104fa895cb8ed1705",
+      "size": 12800
     },
     "models/auxiliary/2e1f404d421766c7c36bbab20204e1e2aa40542b8bdd4be689ec538627c322dc.onnx": {
       "sha256": "2e1f404d421766c7c36bbab20204e1e2aa40542b8bdd4be689ec538627c322dc",

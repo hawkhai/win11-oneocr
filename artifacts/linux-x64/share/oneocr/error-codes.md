@@ -2,6 +2,92 @@
 
 本文覆盖仓库公开定义的全部状态码，依据 `native/include/oneocr_portable.h`、`native/src/engine.cpp`、`native/src/windows_compat.cpp`、`oneocr.h` 和 `oneocr_wrapper.cpp` 的当前实现。返回码要与**接口、后端和操作阶段**一起记录：同一个数字在不同接口中可能有不同含义。
 
+**本文的 `ONEOCR_*` 和 `OCR_ERR_*` 负数均由本项目定义，不是微软官方 OneOCR 错误码。** 下节单独列出已核实的官方资料；不能将不同接口的数值直接互换。
+
+## 微软官方资料、状态与适用范围
+
+核查日期：**2026-11-02**。在 Microsoft Learn / microsoft.com 检索 `oneocr.dll`、`RunOcrPipeline`、`OneOCR error code`，并检查下列公开 API 文档，**未找到 Photos 内部 `oneocr.dll` 导出函数的官方完整返回码表**。这里记录的是本次检索结果，不把社区绑定、逆向观测或项目包装层当成微软接口规范。
+
+微软有公开的 [Windows App SDK OCR 接入文档](https://learn.microsoft.com/en-us/windows/ai/apis/text-recognition) 和 [TextRecognizer API](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.ai.imaging.textrecognizer?view=windows-app-sdk-1.8)。其公开入口是 WinRT `TextRecognizer`；[RecognizeTextFromImage](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.ai.imaging.textrecognizer.recognizetextfromimage?view=windows-app-sdk-1.8) 返回识别对象，该参考页没有列出 Photos 内部 `RunOcrPipeline` 的数字错误枚举。不能据此推定两者使用同一模型、版本、限制或内部状态值。
+
+| 来源层级 | 本文内容 | 可用于什么 |
+| --- | --- | --- |
+| 微软公开 API / 上游源码 | 下列就绪状态、HRESULT、固定版本 ORT 枚举 | 解释相应官方接口或底层运行库的实际返回值 |
+| 本项目源码定义 | `ONEOCR_*`、`OCR_ERR_*`、兼容层映射 | 对接本仓库提供的 C ABI / 包装 DLL |
+| 指定 DLL 的研究观测 | 如历史版本 `RunOcrPipeline=3` | 仅解释记录中指定版本、函数和输入；不推广为官方枚举 |
+
+### 官方 OCR 模型就绪状态
+
+`TextRecognizer.GetReadyState()` 使用 [`AIFeatureReadyState`](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.ai.aifeaturereadystate?view=windows-app-sdk-2.0)。以下是核查时官方页面列出的全部成员；其中 4..6 明确标注从 Windows App SDK 2.0 起提供。
+
+| 数值 | 官方成员 | 含义与版本范围 |
+| --- | --- | --- |
+| `0` | `Ready` | 模型已就绪；后续仍可能退回非就绪状态 |
+| `1` | `NotReady` | 尚未就绪；按官方流程检查并准备模型 |
+| `2` | `NotSupportedOnCurrentSystem` | 当前系统或硬件不支持 |
+| `3` | `DisabledByUser` | 模型被移除或禁用 |
+| `4` | `CapabilityMissing` | 2.0 起：应用缺少 capability 声明；官方说明关联 `systemAIModels` 和访问拒绝异常 |
+| `5` | `NotCompatibleWithSystemHardware` | 2.0 起：硬件与模型不兼容 |
+| `6` | `OSUpdateNeeded` | 2.0 起：操作系统版本不兼容，需要升级 |
+
+`EnsureReadyAsync()` 的结果另用 [`AIFeatureReadyResultState`](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.ai.aifeaturereadyresultstate?view=windows-app-sdk-1.8)：
+
+| 数值 | 官方成员 | 含义 |
+| --- | --- | --- |
+| `0` | `InProgress` | 准备中 |
+| `1` | `Success` | 准备成功 |
+| `2` | `Failure` | 准备失败 |
+
+这两套枚举连成功值都不同：`Ready=0`，`Success=1`。失败详情来自 [`AIFeatureReadyResult.ExtendedError`](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.ai.aifeaturereadyresult.extendederror?view=windows-app-sdk-1.8)，其 C++/WinRT 类型为 `HResult`，C# 投影为 `System.Exception`。官方 OCR 示例在准备失败时读取该属性。
+
+上述就绪检查、组件安装及 capability 属于官方 Windows API 的接入流程；本项目离线原生引擎不调用它们，也不返回这些状态。
+
+### 官方通用 HRESULT 参考
+
+微软的 [Common HRESULT values](https://learn.microsoft.com/en-us/windows/win32/seccrypto/common-hresult-values) 列出以下常见值，完整 Windows 定义另见 SDK 的 `Winerror.h`。**这是通用 Windows 错误表，不是 OneOCR 专属错误表，也不表示 OCR 一定会返回其中每项。**
+
+| 十六进制值 | 官方名称 | 含义 |
+| --- | --- | --- |
+| `0x00000000` | `S_OK` | 成功 |
+| `0x80004001` | `E_NOTIMPL` | 未实现 |
+| `0x80004002` | `E_NOINTERFACE` | 不支持所请求接口 |
+| `0x80004003` | `E_POINTER` | 指针无效 |
+| `0x80004004` | `E_ABORT` | 操作中止 |
+| `0x80004005` | `E_FAIL` | 未细分的失败 |
+| `0x8000FFFF` | `E_UNEXPECTED` | 非预期失败 |
+| `0x80070005` | `E_ACCESSDENIED` | 访问被拒绝 |
+| `0x80070006` | `E_HANDLE` | 句柄无效 |
+| `0x8007000E` | `E_OUTOFMEMORY` | 内存分配失败 |
+| `0x80070057` | `E_INVALIDARG` | 参数无效 |
+
+对官方 WinRT API，记录异常类型、HRESULT 的 **32 位十六进制表示**及消息；不要把 HRESULT 截断、取负或映射为本项目 `-12/-18` 后声称来自官方。特别是本项目 `OCR_ERR_LOAD_DLL=-1` 只是包装层失败标记，并非 Windows 加载器的具体原因。
+
+### 固定推理依赖：ORT 1.23.2 的官方错误枚举
+
+本项目固定版本的微软上游源码 [`onnxruntime_c_api.h`：OrtErrorCode](https://github.com/microsoft/onnxruntime/blob/a83fc4d58cb48eb68890dd689f94f28288cf2278/include/onnxruntime/core/session/onnxruntime_c_api.h#L232-L248) 定义以下全部成员。数值按 C 枚举声明顺序从 0 递增；中文说明用于接入解读，不是 Photos 内部状态的推断。
+
+| 数值 | 上游常量 | 含义 |
+| --- | --- | --- |
+| `0` | `ORT_OK` | 成功 |
+| `1` | `ORT_FAIL` | 一般失败 |
+| `2` | `ORT_INVALID_ARGUMENT` | 参数非法 |
+| `3` | `ORT_NO_SUCHFILE` | 文件不存在 |
+| `4` | `ORT_NO_MODEL` | 无模型 |
+| `5` | `ORT_ENGINE_ERROR` | 引擎错误 |
+| `6` | `ORT_RUNTIME_EXCEPTION` | 运行时异常 |
+| `7` | `ORT_INVALID_PROTOBUF` | Protobuf 无效 |
+| `8` | `ORT_MODEL_LOADED` | 模型已加载相关状态 |
+| `9` | `ORT_NOT_IMPLEMENTED` | 未实现 |
+| `10` | `ORT_INVALID_GRAPH` | 计算图非法 |
+| `11` | `ORT_EP_FAIL` | 执行提供程序失败 |
+| `12` | `ORT_MODEL_LOAD_CANCELED` | 模型加载已取消 |
+| `13` | `ORT_MODEL_REQUIRES_COMPILATION` | 模型需要编译 |
+| `14` | `ORT_NOT_FOUND` | 请求对象未找到 |
+
+当前本项目边界把捕获到的 `Ort::Exception` 统一转为 `ONEOCR_RUNTIME_ERROR (-31)`，只传出异常文本，**不单独透传 `OrtErrorCode` 整数**；不能从 `-31` 反推上表某一项，也不能把 `ORT_NO_SUCHFILE=3` 当成 `RunOcrPipeline=3` 的解释。其余本项目状态仍按下一节源码定义判断。
+
+## 本项目各接入入口
+
 | 接入入口 | 错误形式 | 适用位置 |
 | --- | --- | --- |
 | 原生 C ABI：`oneocr_create`、`oneocr_recognize_file`、`oneocr_recognize_bgra` | 整数状态码＋可选 UTF-8 `char* error` | `artifacts/*/bin/oneocr_portable.dll` 或 `artifacts/*/lib/liboneocr_portable.so` |
@@ -76,7 +162,7 @@ done:
 
 FFI 应保留原始返回指针再交给 `oneocr_free()`；例如 ctypes 不要用会自动转为 Python `bytes` 的返回类型丢失指针。C++ RAII 封装当前只抛出错误文本；需要按数字分类时，直接使用 C ABI。
 
-## 原微软 DLL 的旧包装接口：全部公开定义
+## 本项目针对原微软 DLL 的旧包装接口：全部公开定义
 
 这些名称来自根目录 `oneocr.h`。`initModel` 的目录包含原 DLL 和 `.onemodel`，与原生实例接口所用的准备后 `models/` 目录不同。成功值为 `OCR_OK (0)`。
 
@@ -107,7 +193,7 @@ FFI 应保留原始返回指针再交给 `oneocr_free()`；例如 ctypes 不要�
 
 `OneOcr` 辅助类接收的 `std::string& utf8_json` 在失败时也可能保留上一次成功内容；必须先检查返回码，再使用字符串。
 
-微软 DLL 自身的内部返回值没有完整公开枚举，本项目也不编造其字典。历史 9.0.103 的尺寸拒绝曾观测到内部 `RunOcrPipeline=3`，旧包装层将其转成 `-18`；不能把这个观测推广为所有内部状态的解释。
+本次检索未找到微软 DLL 内部返回值的官方完整枚举。历史 9.0.103 的尺寸拒绝曾观测到内部 `RunOcrPipeline=3`，旧包装层将其转成 `-18`，指定版本的研究记录保存在仓库 `docs/2026-11-02_oneocr-parity-phase2.md`；这是观测结果，不能推广为官方状态定义。
 
 ## 原生 Windows 兼容适配 DLL：实际映射
 

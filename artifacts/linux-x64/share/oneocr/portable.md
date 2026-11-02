@@ -107,6 +107,8 @@ C 接口见 `native/include/oneocr_portable.h`。路径与 JSON 使用 UTF-8，�
 
 完整错误码、原生/旧接口的映射差异、错误字符串与内存释放、CLI/插件/JNI 的错误处理及接入示例，见 [错误码与接入处理](error-codes.md)。原生 C ABI 的 `-18` 表示尺寸问题，旧接口的 `-18` 是汇总管线错误；CLI 失败统一为进程退出码 `1`。
 
+该文档另附微软公开 OCR API 的就绪状态、HRESULT 和固定 ORT 版本的官方源码链接；本项目的 `ONEOCR_*`、`OCR_ERR_*` 负数是项目定义，不能作为微软内部 OneOCR 返回码表使用。
+
 Windows 构建另生成 `oneocr_wrapper.dll`，保留 `initModel`、`releaseModel`、`ocrImage`、`ocrImageEx`、`ocrImageRaw` 五个旧入口；初始化目录改为准备后的 `models/`。新适配库调用本项目 C++ 引擎，不加载原 `oneocr.dll`。
 
 JSON 继续使用 `file`、`image`、`image_angle`、`lines`、`words`、`bounding_box`、`style`、`confidence`。`image_angle` 使用 `[0,360)` 度。词置信度使用恢复的原始 21 项特征和同源网络；手写置信度使用原始分类器与校准表。增加的 `engine` 对象保留 `parity: incomplete`，表示有限回归通过不等于所有输入、参数与目标平台都已验证。
