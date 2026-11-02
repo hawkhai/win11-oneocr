@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "source_commit": "65af3b93cab5f45c76594f3265210646d4b3809e",
+  "source_repository": "https://github.com/Azure-Samples/cognitive-services-sample-data-files",
+  "license_file": "../oneocr-parity/LICENSE.azure.txt",
+  "font_files": [
+    {
+      "file": "LeelawUI.ttf",
+      "sha256": "796dc7e97b357f9c2ad10044d01a86d3fb49cf80e3693011eb055c466c995de0"
+    },
+    {
+      "file": "Nirmala.ttf",
+      "sha256": "290ab4239acf6145d080713cb79cf13be95f320d1ae47afea1f5dee4ad20ecc5"
+    },
+    {
+      "file": "arial.ttf",
+      "sha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1"
+    },
+    {
+      "file": "simsun.ttc",
+      "sha256": "120a51d2b14eb588700a21e15fc301f0ea55d7c1a4e1f3ae61db83b7c8d42cd6"
+    }
+  ],
+  "cases": [
+    {
+      "name": "azure-multilingual",
+      "file": "azure-multilingual.png",
+      "sha256": "31b9bd7cc31ba3f98be9f59ed2b2bcc357c8946691192f8acd5fdb177ab07141",
+      "width": 1016,
+      "height": 749,
+      "tags": [
+        "multilingual",
+        "printed"
+      ],
+      "source": "azure-samples",
+      "source_path": "ComputerVision/Images/MultiLingual.png"
+    },
+    {
+      "name": "azure-printed-photo",
+      "file": "azure-printed-photo.jpg",
+      "sha256": "144ba6545b0c43115f121acf107303ed7a687150c06e60f559d9965a88e2df29",
+      "width": 1254,
+      "height": 704,
+      "tags": [
+        "camera-photo",
+        "printed"
+      ],
+      "source": "azure-samples",
+      "source_path": "ComputerVision/Images/printed_text.jpg"
+    },
+    {
+      "name": "azure-dog-negative",
+      "file": "azure-dog-negative.jpg",
+      "sha256": "cc413070133fc9625b5dc6ce2c3dcedba98aedfb531f35046d03f750577a93f6",
+      "width": 600,
+      "height": 450,
+      "tags": [
+        "non-text",
+        "photo"
+      ],
+      "source": "azure-samples",
+      "source_path": "ComputerVision/Images/dog.jpg"
+    },
+    {
+      "name": "script-latin",
+      "file": "script-latin.png",
+      "sha256": "6a76a7580dd0a2fbc56c076516e466baf2a976f2313a9d3b2b7bbdaf83c13746",
+      "width": 1100,
+      "height": 170,
+      "tags": [
+        "synthetic",
+        "script-latin",
+        "printed"
+      ],
+      "source": "Locally generated fixture, not a Microsoft demonstration or accuracy ground truth",
+      "rendered_text": "Invoice number A-2026 / Total EUR 129.50",
+      "font": "arial.ttf"
+    },
+    {
+      "name": "script-cjk",
+      "file": "script-cjk.png",
+      "sha256": "845a6747caa7ca3d7ac2371f02b2b3430bea21029df8cdb26c9e18e5bdc3fc92",
+      "width": 1100,
+      "height": 170,
+      "tags": [
+        "synthetic",
+        "script-cjk",
+        "printed"
+      ],
+      "source": "Locally generated fixture, not a Microsoft demonstration or accuracy ground truth",
+      "rendered_text": "中文简体與繁體 日本語 한국어 2026",
+      "font": "simsun.ttc"
+    },
+    {
+      "name": "script-cyrillic",
+      "file": "script-cyrillic.png",
+      "sha256": "a8deedce268eda416e2d9367adf814e415708dd8fd4eea97ce452dbd579faf4d",
+      "width": 1100,
+      "height": 170,
+      "tags": [
+        "synthetic",
+        "script-cyrillic",
+        "printed"
+      ],
+      "source": "Locally generated fixture, not a Microsoft demonstration or accuracy ground truth",
+      "rendered_text": "Привет мир! Проверка текста 2026",
+      "font": "arial.ttf"
+    },
+    {
+      "name": "script-arabic",
+      "file": "script-arabic.png",
+      "sha256": "e48442631d86fa27962307a8032d269c763a57935ae745ef6e872f635594b0b2",
+      "width": 1100,
+      "height": 170,
+      "tags": [
+        "synthetic",
+        "script-arabic",
+        "printed"
+      ],
+      "source": "Locally generated fixture, not a Microsoft demonstration or accuracy ground truth",
+      "rendered_text": "مرحبا بالعالم 2026",
+      "font": "arial.ttf"
+    },
+    {
+      "name": "script-devanagari",
+      "file": "script-devanagari.png",
+      "sha256": "817f4a05c40c0cbac98f81814d61152e314b240d4199793dda14a5b940f03f5d",
+      "width": 1100,
+      "height": 170,
+      "tags": [
+        "synthetic",
+        "script-devanagari",
+        "printed"
+      ],
+      "source": "Locally generated fixture, not a Microsoft demonstration or accuracy ground truth",
+      "rendered_text": "नमस्ते दुनिया 2026",
+      "font": "Nirmala.ttf"
+    },
+    {
+      "name": "script-hebrew",
+      "file": "script-hebrew.png",
+      "sha256": "42015ba90bfde98c1c475b34d11df29b6e318ce997cdbb56b284dfd95d2aa837",
+      "width": 1100,
+      "height": 170,
+      "tags": [
+        "synthetic",
+        "script-hebrew",
+        "printed"
+      ],
+      "source": "Locally generated fixture, not a Microsoft demonstration or accuracy ground truth",
+      "rendered_text": "שלום עולם 2026",
+      "font": "arial.ttf"
+    },
+    {
+      "name": "script-thai",
+      "file": "script-thai.png",
+      "sha256": "0ce235ffaa2c52c2aac207917f46e03ee44a00e45c59220bb5b6504674f5c621",
+      "width": 1100,
+      "height": 170,
+      "tags": [
+        "synthetic",
+        "script-thai",
+        "printed"
+      ],
+      "source": "Locally generated fixture, not a Microsoft demonstration or accuracy ground truth",
+      "rendered_text": "สวัสดีชาวโลก 2026",
+      "font": "LeelawUI.ttf"
+    },
+    {
+      "name": "script-tamil",
+      "file": "script-tamil.png",
+      "sha256": "77b009b5c817155c5e1436b01ae0e0b3dedfbc7d66c06d2a71018e09032f432b",
+      "width": 1100,
+      "height": 170,
+      "tags": [
+        "synthetic",
+        "script-tamil",
+        "printed"
+      ],
+      "source": "Locally generated fixture, not a Microsoft demonstration or accuracy ground truth",
+      "rendered_text": "வணக்கம் உலகம் 2026",
+      "font": "Nirmala.ttf"
+    },
+    {
+      "name": "script-greek",
+      "file": "script-greek.png",
+      "sha256": "9f1dabf2c1b619e335c8f3997102123be05e73f716b4a2e3011380f521c0ca53",
+      "width": 1100,
+      "height": 170,
+      "tags": [
+        "synthetic",
+        "script-greek",
+        "printed"
+      ],
+      "source": "Locally generated fixture, not a Microsoft demonstration or accuracy ground truth",
+      "rendered_text": "Γειά σου κόσμε 2026",
+      "font": "arial.ttf"
+    },
+    {
+      "name": "mixed-nine-scripts",
+      "file": "mixed-nine-scripts.png",
+      "sha256": "ce409c9986860c21aa5588d8b7a9d6c7c4e5fb665169d70310b834f3c340da59",
+      "width": 1100,
+      "height": 900,
+      "tags": [
+        "synthetic",
+        "multilingual",
+        "mixed-scripts",
+        "reading-order"
+      ],
+      "source": "Locally generated fixture, not a Microsoft demonstration or accuracy ground truth"
+    },
+    {
+      "name": "dark-contact-screenshot",
+      "file": "dark-contact-screenshot.png",
+      "sha256": "1d006a3a0e2cc45827a0fe181c1d2f5bed74bf663b0d927b44fdfec135b18876",
+      "width": 1100,
+      "height": 440,
+      "tags": [
+        "synthetic",
+        "screenshot",
+        "email",
+        "phone",
+        "dark-background"
+      ],
+      "source": "Locally generated fixture, not a Microsoft demonstration or accuracy ground truth"
+    },
+    {
+      "name": "single-table",
+      "file": "single-table.png",
+      "sha256": "cc1ec436c62abbe6e3de67aa5709bb4e77340b863b332392806fed9528486fdf",
+      "width": 1100,
+      "height": 470,
+      "tags": [
+        "synthetic",
+        "table",
+        "rows",
+        "columns",
+        "word-boundaries"
+      ],
+      "source": "Locally generated fixture, not a Microsoft demonstration or accuracy ground truth"
+    },
+    {
+      "name": "low-contrast-small-blur",
+      "file": "low-contrast-small-blur.png",
+      "sha256": "9b1bc333919d27b1dfee8296cbf25eb5376a14f78de8cb4e2d2d83beebbd4f53",
+      "width": 1100,
+      "height": 230,
+      "tags": [
+        "synthetic",
+        "low-contrast",
+        "small-font",
+        "blur"
+      ],
+      "source": "Locally generated fixture, not a Microsoft demonstration or accuracy ground truth"
+    },
+    {
+      "name": "printed-and-real-handwriting",
+      "file": "printed-and-real-handwriting.png",
+      "sha256": "1fe635d1bd36eb184dc6f73b57f552fd0792e9f162b8aa3a4bf3f268115dba9b",
+      "width": 1100,
+      "height": 814,
+      "tags": [
+        "derived",
+        "printed",
+        "real-handwriting",
+        "mixed-style"
+      ],
+      "source": "Locally generated fixture, not a Microsoft demonstration or accuracy ground truth",
+      "derived_from": "../oneocr-parity/handwriting-azure.jpg",
+      "operation": "Unscaled source pasted below a synthetic printed header"
+    },
+    {
+      "name": "blank-unicode-空白-😀",
+      "file": "blank-unicode-空白-😀.png",
+      "sha256": "4f276c6adf8852e89048c73a9c96922effec0893a48e394277a06e3ead39205f",
+      "width": 640,
+      "height": 360,
+      "tags": [
+        "synthetic",
+        "blank",
+        "unicode-path"
+      ],
+      "source": "Locally generated fixture, not a Microsoft demonstration or accuracy ground truth"
+    }
+  ]
+}

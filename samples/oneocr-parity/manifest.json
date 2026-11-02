@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "source_url": "https://github.com/Azure-Samples/cognitive-services-sample-data-files/blob/65af3b93cab5f45c76594f3265210646d4b3809e/ComputerVision/Images/handwritten_text.jpg",
+  "source_commit": "65af3b93cab5f45c76594f3265210646d4b3809e",
+  "source_sha256": "cafe17111f6a496a5dc976804f33ecff2e66a2375a8e06f3c67f1ea7588a3e23",
+  "license_file": "LICENSE.azure.txt",
+  "cases": [
+    {
+      "name": "handwriting-azure",
+      "file": "handwriting-azure.jpg",
+      "sha256": "cafe17111f6a496a5dc976804f33ecff2e66a2375a8e06f3c67f1ea7588a3e23"
+    },
+    {
+      "name": "handwriting-rotate-0.5",
+      "file": "handwriting-rotate-0.5.png",
+      "sha256": "bb52038fe7e19fa3557934e3b92a56ab1db3be24994327b5ba1645d17c79883a",
+      "derived_from": "handwriting-azure.jpg",
+      "rotation_degrees": 0.5
+    },
+    {
+      "name": "handwriting-rotate-3",
+      "file": "handwriting-rotate-3.png",
+      "sha256": "dbbde3f98e615790ddcdb67a134cd419261cda494f00d2a6df6b3adaedeb3025",
+      "derived_from": "handwriting-azure.jpg",
+      "rotation_degrees": 3
+    },
+    {
+      "name": "handwriting-rotate-10",
+      "file": "handwriting-rotate-10.png",
+      "sha256": "b7644226f06a64310e7256adecb5d53fd9de8e38c32776aa7e01fb881f1dce5f",
+      "derived_from": "handwriting-azure.jpg",
+      "rotation_degrees": 10
+    },
+    {
+      "name": "handwriting-rotate-90",
+      "file": "handwriting-rotate-90.png",
+      "sha256": "a93bceadbed021463485e12653adb02a22a645b5c76b8445fd4c034fcfa5b72d",
+      "derived_from": "handwriting-azure.jpg",
+      "rotation_degrees": 90
+    },
+    {
+      "name": "handwriting-rotate-180",
+      "file": "handwriting-rotate-180.png",
+      "sha256": "1290b294eaac0416439a27dd56b555ff23c6c2662c7500e62c815437e5291aa6",
+      "derived_from": "handwriting-azure.jpg",
+      "rotation_degrees": 180
+    },
+    {
+      "name": "handwriting-rotate-270",
+      "file": "handwriting-rotate-270.png",
+      "sha256": "a075e3fbd92a9fa856f8ec3625047074764f7dee2646ab53d6f0bf0a6d1979b5",
+      "derived_from": "handwriting-azure.jpg",
+      "rotation_degrees": 270
+    }
+  ]
+}
