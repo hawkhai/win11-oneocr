@@ -48,6 +48,8 @@ python scripts/verify-delivery.py --all-samples --output work/replay-checkout
 
 Linux 使用 `python3`。校验全部模型和运行文件 SHA-256，并从无关工作目录运行 105 行书页，与冻结 DLL 输出按原阈值比较；`--all-samples` 再检查全部 110 张图。验收仍是文字、顺序、词切分及手写类别完全一致，坐标 1 px、角度 0.1 度、置信度 `1e-3`。
 
+这是原生 CLI 的拉取即用流程。使用 DSH JavaScript 插件时，宿主仍需 Node.js 20+，按已有 `package-lock.json` 安装插件依赖；`node_modules` 不加入 Git。
+
 三个原接口拒绝用例单独统计，不冒充识别成功；详情见 [全量报告](../reports/oneocr-all-samples-2026-11-02/README.md)。模型损坏或文件缺失会明确报错，不会自动下载或换模型。
 
 ## 资产权利与交付边界

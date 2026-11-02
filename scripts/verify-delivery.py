@@ -44,8 +44,8 @@ def main():
         comparison=comparator.compare(baseline,result)
         if not comparison['passed']:raise RuntimeError('Book parity failed: '+json.dumps(comparison,ensure_ascii=False))
     if args.all_samples:
-        output=args.output or ROOT/'work/delivery-all-samples'
-        subprocess.run([sys.executable,str(ROOT/'scripts/run-all-samples.py'),'--inventory',str(ROOT/'samples/manifest.json'),'--baseline',str(ROOT/'reports/oneocr-all-samples-2026-11-02/legacy'),'--binary',str(binary),'--output',str(output)],cwd=ROOT,check=True)
+        output=(args.output or ROOT/'work/delivery-all-samples').resolve()
+        subprocess.run([sys.executable,'-X','utf8',str(ROOT/'scripts/run-all-samples.py'),'--inventory',str(ROOT/'samples/manifest.json'),'--baseline',str(ROOT/'reports/oneocr-all-samples-2026-11-02/legacy'),'--binary',str(binary),'--output',str(output)],cwd=ROOT,check=True)
     print(json.dumps({'passed':True,'platform':key,'verified_assets':len(manifest['files']),'book_lines':len(result['lines']),'all_samples':args.all_samples},ensure_ascii=False))
     return 0
 

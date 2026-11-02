@@ -23,6 +23,7 @@ def write(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2)+'\n', encoding='utf8')
 
 def main():
+    sys.stdout.reconfigure(encoding='utf8')
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--inventory', type=Path, required=True)
     p.add_argument('--refresh-inventory', action='store_true')
