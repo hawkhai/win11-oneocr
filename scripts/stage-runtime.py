@@ -23,6 +23,7 @@ if __name__=='__main__':
     subprocess.run([args.cmake,'--install',str(args.build),'--config',args.config,'--prefix',str(prefix)],check=True)
     notices=prefix/'share/oneocr';notices.mkdir(parents=True,exist_ok=True)
     shutil.copy2(ROOT/'THIRD_PARTY_NOTICES.md',notices/'THIRD_PARTY_NOTICES.md')
+    shutil.copy2(ROOT/'docs/error-codes.md',notices/'error-codes.md')
     for source in (ROOT/'licenses').glob('*.txt'):
         destination=notices/'licenses'/source.name;destination.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(source,destination)
     # npm omits symbolic links; materialize installed library aliases locally.

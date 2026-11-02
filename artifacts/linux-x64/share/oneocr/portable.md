@@ -105,6 +105,8 @@ std::string result = engine.recognize("test.png");
 
 C 接口见 `native/include/oneocr_portable.h`。路径与 JSON 使用 UTF-8，所有返回字符串由 `oneocr_free` 释放；失败时 JSON 输出置空。图像宽、高各须为 50～10000 像素，与固定 DLL 的 `RunOcrPipeline` 边界一致；不满足时返回 `ONEOCR_IMAGE_SIZE_ERROR (-18)`。BGRA 接口额外接收缓冲区字节数，可验证步长和越界；alpha 与旧接口一致，不参与识别。一个实例内识别调用串行化，独立实例可并发；销毁实例前调用方必须结束使用它的线程。
 
+完整错误码、原生/旧接口的映射差异、错误字符串与内存释放、CLI/插件/JNI 的错误处理及接入示例，见 [错误码与接入处理](error-codes.md)。原生 C ABI 的 `-18` 表示尺寸问题，旧接口的 `-18` 是汇总管线错误；CLI 失败统一为进程退出码 `1`。
+
 Windows 构建另生成 `oneocr_wrapper.dll`，保留 `initModel`、`releaseModel`、`ocrImage`、`ocrImageEx`、`ocrImageRaw` 五个旧入口；初始化目录改为准备后的 `models/`。新适配库调用本项目 C++ 引擎，不加载原 `oneocr.dll`。
 
 JSON 继续使用 `file`、`image`、`image_angle`、`lines`、`words`、`bounding_box`、`style`、`confidence`。`image_angle` 使用 `[0,360)` 度。词置信度使用恢复的原始 21 项特征和同源网络；手写置信度使用原始分类器与校准表。增加的 `engine` 对象保留 `parity: incomplete`，表示有限回归通过不等于所有输入、参数与目标平台都已验证。

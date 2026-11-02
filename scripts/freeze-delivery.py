@@ -29,6 +29,7 @@ def main():
         notices=prefix/'share/oneocr';notices.mkdir(parents=True,exist_ok=True)
         shutil.copyfile(ROOT/'THIRD_PARTY_NOTICES.md',notices/'THIRD_PARTY_NOTICES.md')
         shutil.copyfile(ROOT/'docs/portable.md',notices/'portable.md')
+        shutil.copyfile(ROOT/'docs/error-codes.md',notices/'error-codes.md')
         for path in (ROOT/'licenses').glob('*.txt'):
             target=notices/'licenses'/path.name;target.parent.mkdir(exist_ok=True);shutil.copyfile(path,target)
         build=json.loads((prefix/'BUILD.json').read_text(encoding='utf8'))

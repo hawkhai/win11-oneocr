@@ -32,6 +32,7 @@ for current results and exact tolerances. Full cross-platform validation is
 still incomplete; native results expose `engine.parity = "incomplete"`.
 
 See [native build and API instructions](docs/portable.md),
+[all error codes and integration handling](docs/error-codes.md),
 [research report](docs/2026-11-02_oneocr-source-report.md) and
 [component/model notices](THIRD_PARTY_NOTICES.md). The Windows DLL-dependent
 implementation documented below remains available as the optional legacy
