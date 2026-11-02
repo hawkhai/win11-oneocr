@@ -65,7 +65,7 @@ def replay(session,raw_hash,kind):
     if not errors:raise ValueError('Native layout replays missing')
     return max(errors),samples
 
-def convert(models,verify,record_contracts):
+def convert(models,verify,record_contracts,evidence_dir=None):
     manifest=json.loads((models/'manifest.json').read_text(encoding='utf8'))
     contracts=json.loads(CONTRACTS.read_text(encoding='utf8')) if CONTRACTS.exists() else {}
     options=ort.SessionOptions();options.intra_op_num_threads=1;options.log_severity_level=3
@@ -75,6 +75,20 @@ def convert(models,verify,record_contracts):
         path=models/record['file'];raw=path.read_bytes();raw_hash=sha(raw)
         if raw_hash!=record['sha256']:raise ValueError('Source graph checksum mismatch')
         original=onnx.load_model_from_string(raw)
+        if not any(node.domain=='com.microsoft.oneocr' for node in original.graph.node):
+            # Newer packages ship these networks directly as standard ONNX.
+            # Preserve their bytes; old private-layer contracts do not apply.
+            onnx.checker.check_model(original)
+            if any(node.domain not in ('','ai.onnx','com.microsoft') for node in original.graph.node):
+                raise ValueError('Unrecognized auxiliary operator domain')
+            ort.InferenceSession(raw,sess_options=options,providers=['CPUExecutionProvider'])
+            target='portable_auxiliary/'+raw_hash+'.onnx'
+            (models/target).parent.mkdir(exist_ok=True);(models/target).write_bytes(raw)
+            report.append({'source':record['file'],'file':target,'source_sha256':raw_hash,'sha256':raw_hash,
+                           'kind':'standard-onnx','transformation':'none; exact source bytes',
+                           'validation':'stock ORT load; DLL parity is evaluated separately','native_samples':0,'accepted':True})
+            print(record['role'],raw_hash[:12],'standard ONNX; no conversion',flush=True)
+            continue
         contract=contracts.get(raw_hash)
         if not verify and not contract:raise ValueError('No validated conversion contract for '+record['file'])
         activations=['Relu','Identity'] if record['role']=='layout' and verify else [contract['activation'] if contract else 'Relu']
@@ -101,7 +115,7 @@ def convert(models,verify,record_contracts):
     if record_contracts:
         CONTRACTS.parent.mkdir(exist_ok=True)
         CONTRACTS.write_text(json.dumps(contracts,indent=2),encoding='utf8')
-    output=ROOT/'work/oneocr-portable/evidence/auxiliary-conversion.json'
+    output=(evidence_dir or ROOT/'work/oneocr-portable/evidence')/'auxiliary-conversion.json'
     output.parent.mkdir(parents=True,exist_ok=True);output.write_text(json.dumps(report,indent=2),encoding='utf8')
 
 if __name__=='__main__':
@@ -109,4 +123,5 @@ if __name__=='__main__':
     p.add_argument('--models',type=Path,default=ROOT/'models')
     p.add_argument('--verify',action='store_true')
     p.add_argument('--record-contracts',action='store_true')
-    args=p.parse_args();convert(args.models,args.verify or args.record_contracts,args.record_contracts)
+    p.add_argument('--evidence-dir',type=Path)
+    args=p.parse_args();convert(args.models,args.verify or args.record_contracts,args.record_contracts,args.evidence_dir)

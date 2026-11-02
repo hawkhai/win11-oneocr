@@ -1,0 +1,17 @@
+{
+  "file": "oneocr-capabilities/script-tamil.png",
+  "image_sha256": "77b009b5c817155c5e1436b01ae0e0b3dedfbc7d66c06d2a71018e09032f432b",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.485564200032968,
+    "peak_working_set_bytes": 164732928,
+    "stderr": ""
+  },
+  "result_sha256": "a74b611d6bff34ca808be2edb7f5b9065eacf61de416e199b8e7130a487eaa40"
+}

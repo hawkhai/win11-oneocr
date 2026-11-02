@@ -131,8 +131,11 @@ if __name__=='__main__':
     p.add_argument('--models',type=Path,default=ROOT/'models')
     p.add_argument('--unpacked',type=Path,default=ROOT/'work/oneocr-portable/unpacked')
     p.add_argument('--raw-only',action='store_true',help='Research only: skip portable graph conversion')
+    p.add_argument('--evidence-dir',type=Path)
     args=p.parse_args();prepare(args.source,args.models,args.unpacked)
     if not args.raw_only:
         for script in ('inspect-models.py','convert-auxiliary.py'):
-            subprocess.run([sys.executable,str(ROOT/'scripts'/script),'--models',str(args.models)],check=True)
+            command=[sys.executable,str(ROOT/'scripts'/script),'--models',str(args.models)]
+            if args.evidence_dir:command+=['--evidence-dir',str(args.evidence_dir)]
+            subprocess.run(command,check=True)
         print('Portable model preparation complete; no Microsoft DLL was loaded')

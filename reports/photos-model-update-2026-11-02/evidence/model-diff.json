@@ -1,0 +1,628 @@
+{
+  "old_source": {
+    "oneocr.onemodel": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1"
+  },
+  "new_source": {
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155"
+  },
+  "graphs": [
+    {
+      "identity": [
+        "detector",
+        "Universal"
+      ],
+      "old_sha256": "c242d98c8ef41a8f5f623801bf6dd24969076de33cd24f72b57b9dcb7e9527c3",
+      "new_sha256": "035ce56dbf49553b72d081ef2b51659ebab919e596d903f5dd892f1a2777c92b",
+      "changed": true
+    },
+    {
+      "identity": [
+        "classifier",
+        "ONNX"
+      ],
+      "old_sha256": "c7ed7237e6d3aa920f094c7c843dcc1d62e485f62f359847a8ed16d5933c9cf5",
+      "new_sha256": "20f7dfcdc33289aeb45c16fc7b349d7cd8e94d6d531cfe234d31dd637da97ef9",
+      "changed": true
+    },
+    {
+      "identity": [
+        "recognizer",
+        "ArabicMixed"
+      ],
+      "old_sha256": "34d9e1b38368332ea7266a510555302fc7707610de16c11e1d3b0c8eaa705e08",
+      "new_sha256": "f5b75bf06ae7cafc971ec1a09a6f8d6e33932471087007b9b9da71567a96d8c2",
+      "changed": true
+    },
+    {
+      "identity": [
+        "recognizer",
+        "CJKPrinted"
+      ],
+      "old_sha256": "fdbdebd3f600340649822a817cf9bf3d2acebaab67c08b784458cd0eb3236f05",
+      "new_sha256": "ff10bab34f2b1250e32e179aab21218cb05ad8fce972d089b5ccf8c02ab478d0",
+      "changed": true
+    },
+    {
+      "identity": [
+        "recognizer",
+        "CyrillicMixed"
+      ],
+      "old_sha256": "d95e2ad42ea71bb269bd15754e8cc5a2f0a72c3e634fb9874174a7f42d6aebf0",
+      "new_sha256": "4ad10b28e6f3d296b32f09f76f5cfc254b4c18bcec4a784d25009a5b81671df9",
+      "changed": true
+    },
+    {
+      "identity": [
+        "recognizer",
+        "DevanagariMixed"
+      ],
+      "old_sha256": "ccca63cccf14110a5d06b2d524c3dd4ea0a950c2535898ced838e7f36b73b36e",
+      "new_sha256": "51702124827aba276fd5068cb71766c6f1a0008a5a4eb3eded0254921bff2784",
+      "changed": true
+    },
+    {
+      "identity": [
+        "recognizer",
+        "GreekMixed"
+      ],
+      "old_sha256": "4a279c5b50dfa28019ee089515612df66aecb96c1c9cb03218b26d0d0835b848",
+      "new_sha256": "2e1deb29f14f68c6a03359bf41a956653279d1bce4f9b6d9d0058c94c1a3c1c2",
+      "changed": true
+    },
+    {
+      "identity": [
+        "recognizer",
+        "HebrewPrinted"
+      ],
+      "old_sha256": "d5f49fbcf5566904906702a22ae10d0446ae102acd9d6c37b82085842476ece4",
+      "new_sha256": "07069ae041e43a9a9aa05699e224f01ac6945457fe4951ab9bb73d510e0a6045",
+      "changed": true
+    },
+    {
+      "identity": [
+        "recognizer",
+        "LatinPrintedV2"
+      ],
+      "old_sha256": "4e79a3e71ce0b8385028f9053f9948bd10c2ea51bd77221e43af08bb2f18989f",
+      "new_sha256": "d6c8c8cb894547225e32a46b91b4025b9e5e0d735b4e88402e9779ba65b55e06",
+      "changed": true
+    },
+    {
+      "identity": [
+        "recognizer",
+        "TamilPrinted"
+      ],
+      "old_sha256": "e88fa0e78d8c346f7ca6a3ba9ec24eafd06801aabe640c9a10c9fe32158f0844",
+      "new_sha256": "f88f18d67aaac8f230b99859ad93acf00e0dae1ff0be410020ac7c7daa0db2b1",
+      "changed": true
+    },
+    {
+      "identity": [
+        "recognizer",
+        "ThaiMixed"
+      ],
+      "old_sha256": "11acded0952bfe60cc31aba6cd9a51c8b96dc9facf679b7a73c3d308dd4ec7de",
+      "new_sha256": "52600bd18800814813cff1723b8ddede878850117e06c96b25f147cbe16561ed",
+      "changed": true
+    },
+    {
+      "identity": [
+        "rejection",
+        "ArabicMixedDummy"
+      ],
+      "old_sha256": "a984730f53a863c6e1373d23a2cf38bc47c9e9dba1f5b043d108ceceea9c32a6",
+      "new_sha256": "a81e28bc31652f5fccb19e2f32bac9d3ec178673c9dec21a0b754340d65468a3",
+      "changed": true
+    },
+    {
+      "identity": [
+        "rejection",
+        "CJKMixedDummy"
+      ],
+      "old_sha256": "b3d95f7cd7a9279472b56af1695faf99ba1757f8512b4d87131b51b6f8e7bc95",
+      "new_sha256": "43244df0aea4e99cda8376d4d0816209951882b5a21342f24686dbb17e5c006d",
+      "changed": true
+    },
+    {
+      "identity": [
+        "rejection",
+        "CJKPrintedDummy"
+      ],
+      "old_sha256": "1cc5440a95085227dbd32bea8e9cd8745c6942920066489f20a3a0d0ddcdf8f0",
+      "new_sha256": "9c4fa04e0af7a395d2c84543e112289c16d1156e7d34f21d09a070b77e601fe4",
+      "changed": true
+    },
+    {
+      "identity": [
+        "rejection",
+        "CyrillicMixedDummy"
+      ],
+      "old_sha256": "b07947558c78c350ebdabd5338dd9d5aadb5f7d89fb9de87595b60d585b1135a",
+      "new_sha256": "7f3fe3b6d4a5a0c7f48abceda1dd6f627a66cfc8df795a72870b074bec48a989",
+      "changed": true
+    },
+    {
+      "identity": [
+        "rejection",
+        "DevanagariMixedDummy"
+      ],
+      "old_sha256": "33e007562e48fd91329a15bd3194929b8103789cab9c4849288c81dd8bd2fb17",
+      "new_sha256": "2e1f404d421766c7c36bbab20204e1e2aa40542b8bdd4be689ec538627c322dc",
+      "changed": true
+    },
+    {
+      "identity": [
+        "rejection",
+        "GreekMixedDummy"
+      ],
+      "old_sha256": "4579fe1fedceb79545cfdcee7ad240ce5c4dd52c1caf056a2134fd796e495c08",
+      "new_sha256": "c5c2c0e76528ae2c8189a3a428b86d6e506007edcbbaf428ef6163d9ccef853d",
+      "changed": true
+    },
+    {
+      "identity": [
+        "rejection",
+        "HebrewPrintedDummy"
+      ],
+      "old_sha256": "67638266acf04dc7838befd6a610e103dceb679dacde925c7bb87422a61728f2",
+      "new_sha256": "85fe8cfedca5dd70045acb2865075bdfe0c04e4bdcd8c426f06fc37f67e1a25b",
+      "changed": true
+    },
+    {
+      "identity": [
+        "rejection",
+        "LatinMixedV2Dummy"
+      ],
+      "old_sha256": "8a7b13bbc4bc87b1b095c2510e9fadc4ec57af96ae4049473c1c2b9deaeea22b",
+      "new_sha256": "e25dd4aebebb5a077b5680b171831b15c6be482d0732e0c0149cb352b882d63e",
+      "changed": true
+    },
+    {
+      "identity": [
+        "rejection",
+        "LatinPrintedV2Dummy"
+      ],
+      "old_sha256": "92952d075a5ab53639e0413c7e99baee6b701eac02e5d3676ac5d7107bdd303a",
+      "new_sha256": "3396533e28371e3672a54252e4a783d3813167a45782bd76da4b7331f51ae79e",
+      "changed": true
+    },
+    {
+      "identity": [
+        "rejection",
+        "TamilPrintedDummy"
+      ],
+      "old_sha256": "359a347ac03397c3779e91c9290e60d7b02f979bd0278e1c145aa51d2bd37933",
+      "new_sha256": "3259f4b4548bc8534dd12dbacb65d14ddc1c0965536f7746821e2d4e75905fdc",
+      "changed": true
+    },
+    {
+      "identity": [
+        "rejection",
+        "ThaiMixedDummy"
+      ],
+      "old_sha256": "c27a07e870c27fa8f57ba00c8b215a762c86bf90bb5e1ffa061727893548cdbb",
+      "new_sha256": "e9c7124809544706bccadfd91552ed955693a7b42f6a676ff525daa957f47259",
+      "changed": true
+    },
+    {
+      "identity": [
+        "confidence",
+        "ArabicMixedDummy"
+      ],
+      "old_sha256": "032d40c7aa17364504a07cde2c061ee1080abde36bc94a807d086334a49c947a",
+      "new_sha256": "495e14fae872ac8a426bc136852d0be06b5fed9342bfb35a6685ed3742a0e3d8",
+      "changed": true
+    },
+    {
+      "identity": [
+        "confidence",
+        "CJKMixedDummy"
+      ],
+      "old_sha256": "7887683eb094b3df2aa701b9f5fbcf8f3869aca479f19eb4c9b4aa9b8e24d71d",
+      "new_sha256": "d831a56a4182d9d84408a59a59f754d9be98754a73ada0796077539e3b36bc19",
+      "changed": true
+    },
+    {
+      "identity": [
+        "confidence",
+        "CJKPrintedDummy"
+      ],
+      "old_sha256": "eb8dc24dbb949eb6d483fddca77b1387e98a05d59c025418dde50addaa21d039",
+      "new_sha256": "d0d7e8add0ede09450ce6142afa73f53358505fe2b445e603a38d2dfe770dc65",
+      "changed": true
+    },
+    {
+      "identity": [
+        "confidence",
+        "CyrillicMixedDummy"
+      ],
+      "old_sha256": "d1034fd16b872ec6227a65fb0dbcdf4ffae9f763be3814c849902f43eee4c65b",
+      "new_sha256": "ec8c7473d12b52f142b333f37c457484646d5bf50d115cfcf24ba56d5c16a967",
+      "changed": true
+    },
+    {
+      "identity": [
+        "confidence",
+        "DevanagariMixedDummy"
+      ],
+      "old_sha256": "504b89966924e31b52762149398c438c8bf3208305043a218ee378c163da0ad9",
+      "new_sha256": "4d74d93755eaafce99d746043974bc604fdb2490a716885d9d27234a17a26d0f",
+      "changed": true
+    },
+    {
+      "identity": [
+        "confidence",
+        "GreekMixedDummy"
+      ],
+      "old_sha256": "9fbfec65247f0872ebaa6454f5e5b9ebacfe23c1c1966a026e57b25e02682973",
+      "new_sha256": "80597608ec91e4aad0e2301e6b602b25b172b1110bd3cf34fe594674018e5416",
+      "changed": true
+    },
+    {
+      "identity": [
+        "confidence",
+        "HebrewPrintedDummy"
+      ],
+      "old_sha256": "e9ccab44d59a1e395cab36fa5efa97e714f6c04e29c21abee9f8dbc958536f41",
+      "new_sha256": "974bff43c4f01cbb8c84a106b2166155aa66a37b68846d2708377a1a67e8413b",
+      "changed": true
+    },
+    {
+      "identity": [
+        "confidence",
+        "LatinMixedV2Dummy"
+      ],
+      "old_sha256": "33740bb3ab0cf328965e7b0cbe2339fb69bf3dbe1f7128ea2546309a3b3e4bda",
+      "new_sha256": "8443e13c1f4ce9b8e6eba3c99a8a34e0121d334ef22fa4d9e8706e6eb47f2288",
+      "changed": true
+    },
+    {
+      "identity": [
+        "confidence",
+        "LatinPrintedV2Dummy"
+      ],
+      "old_sha256": "a8a540fa983a6cfdbd114a7a0647928984e9decc6893d25df2e0e02df9731394",
+      "new_sha256": "49f52e5fb889b66047c8c45cc5df4404e753ab0a92de0f487635c1d3cdba6d6e",
+      "changed": true
+    },
+    {
+      "identity": [
+        "confidence",
+        "TamilPrintedDummy"
+      ],
+      "old_sha256": "059f63960782c0107655ac4e8ef9d8c68e31e5779a1b1884857856043719a0ef",
+      "new_sha256": "cf07dfba6ad9c47742b1782b2efd2f1bb61e8fecfe2310a0d7407bf8c93df9e1",
+      "changed": true
+    },
+    {
+      "identity": [
+        "confidence",
+        "ThaiMixedDummy"
+      ],
+      "old_sha256": "6994639d1f9fc149df22a220f7f3c6c63ed3289546ee3ee046ef1235186d1eb4",
+      "new_sha256": "61b7a6c92e8acbb871a3b56cb884e7f5fe11ad0477bda04dfa90a47afa0e41f0",
+      "changed": true
+    },
+    {
+      "identity": [
+        "layout",
+        "CJK"
+      ],
+      "old_sha256": "3fa89852fee4f3061e17ab40e85708639c4bc3aea3c8735dc2068098be9f5dd7",
+      "new_sha256": "2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed",
+      "changed": true
+    }
+  ],
+  "vocabularies_unchanged": true,
+  "changed_settings": [
+    "rejection_settings"
+  ],
+  "graph_structure_and_initializers": [
+    {
+      "identity": "detector/Universal",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 86,
+      "old_initializer_count": 340,
+      "new_initializer_count": 257,
+      "operator_sequence_equal": true
+    },
+    {
+      "identity": "classifier/ONNX",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": true,
+      "unchanged_initializers": 13,
+      "old_initializer_count": 46,
+      "new_initializer_count": 46,
+      "operator_sequence_equal": true
+    },
+    {
+      "identity": "recognizer/ArabicMixed",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": true,
+      "unchanged_initializers": 21,
+      "old_initializer_count": 59,
+      "new_initializer_count": 59,
+      "operator_sequence_equal": true
+    },
+    {
+      "identity": "recognizer/CJKPrinted",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": true,
+      "unchanged_initializers": 22,
+      "old_initializer_count": 53,
+      "new_initializer_count": 53,
+      "operator_sequence_equal": true
+    },
+    {
+      "identity": "recognizer/CyrillicMixed",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": true,
+      "unchanged_initializers": 22,
+      "old_initializer_count": 53,
+      "new_initializer_count": 53,
+      "operator_sequence_equal": true
+    },
+    {
+      "identity": "recognizer/DevanagariMixed",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": true,
+      "unchanged_initializers": 21,
+      "old_initializer_count": 59,
+      "new_initializer_count": 59,
+      "operator_sequence_equal": true
+    },
+    {
+      "identity": "recognizer/GreekMixed",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": true,
+      "unchanged_initializers": 19,
+      "old_initializer_count": 59,
+      "new_initializer_count": 59,
+      "operator_sequence_equal": true
+    },
+    {
+      "identity": "recognizer/HebrewPrinted",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": true,
+      "unchanged_initializers": 21,
+      "old_initializer_count": 59,
+      "new_initializer_count": 59,
+      "operator_sequence_equal": true
+    },
+    {
+      "identity": "recognizer/LatinPrintedV2",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": true,
+      "unchanged_initializers": 22,
+      "old_initializer_count": 59,
+      "new_initializer_count": 59,
+      "operator_sequence_equal": true
+    },
+    {
+      "identity": "recognizer/TamilPrinted",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": true,
+      "unchanged_initializers": 20,
+      "old_initializer_count": 59,
+      "new_initializer_count": 59,
+      "operator_sequence_equal": true
+    },
+    {
+      "identity": "recognizer/ThaiMixed",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": true,
+      "unchanged_initializers": 21,
+      "old_initializer_count": 59,
+      "new_initializer_count": 59,
+      "operator_sequence_equal": true
+    },
+    {
+      "identity": "rejection/ArabicMixedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 0,
+      "old_initializer_count": 7,
+      "new_initializer_count": 8,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "rejection/CJKMixedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 6,
+      "old_initializer_count": 7,
+      "new_initializer_count": 8,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "rejection/CJKPrintedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 0,
+      "old_initializer_count": 7,
+      "new_initializer_count": 8,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "rejection/CyrillicMixedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 0,
+      "old_initializer_count": 7,
+      "new_initializer_count": 8,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "rejection/DevanagariMixedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 0,
+      "old_initializer_count": 7,
+      "new_initializer_count": 8,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "rejection/GreekMixedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 0,
+      "old_initializer_count": 7,
+      "new_initializer_count": 8,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "rejection/HebrewPrintedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 0,
+      "old_initializer_count": 7,
+      "new_initializer_count": 8,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "rejection/LatinMixedV2Dummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 6,
+      "old_initializer_count": 7,
+      "new_initializer_count": 8,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "rejection/LatinPrintedV2Dummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 0,
+      "old_initializer_count": 7,
+      "new_initializer_count": 8,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "rejection/TamilPrintedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 0,
+      "old_initializer_count": 7,
+      "new_initializer_count": 8,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "rejection/ThaiMixedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 0,
+      "old_initializer_count": 7,
+      "new_initializer_count": 8,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "confidence/ArabicMixedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 5,
+      "old_initializer_count": 12,
+      "new_initializer_count": 13,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "confidence/CJKMixedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 11,
+      "old_initializer_count": 12,
+      "new_initializer_count": 13,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "confidence/CJKPrintedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 5,
+      "old_initializer_count": 12,
+      "new_initializer_count": 13,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "confidence/CyrillicMixedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 5,
+      "old_initializer_count": 12,
+      "new_initializer_count": 13,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "confidence/DevanagariMixedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 5,
+      "old_initializer_count": 12,
+      "new_initializer_count": 13,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "confidence/GreekMixedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 5,
+      "old_initializer_count": 12,
+      "new_initializer_count": 13,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "confidence/HebrewPrintedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 5,
+      "old_initializer_count": 12,
+      "new_initializer_count": 13,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "confidence/LatinMixedV2Dummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 11,
+      "old_initializer_count": 12,
+      "new_initializer_count": 13,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "confidence/LatinPrintedV2Dummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 5,
+      "old_initializer_count": 12,
+      "new_initializer_count": 13,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "confidence/TamilPrintedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 5,
+      "old_initializer_count": 12,
+      "new_initializer_count": 13,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "confidence/ThaiMixedDummy",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 5,
+      "old_initializer_count": 12,
+      "new_initializer_count": 13,
+      "operator_sequence_equal": false
+    },
+    {
+      "identity": "layout/CJK",
+      "raw_bytes_changed": true,
+      "initializer_names_equal": false,
+      "unchanged_initializers": 4,
+      "old_initializer_count": 35,
+      "new_initializer_count": 36,
+      "operator_sequence_equal": false
+    }
+  ]
+}

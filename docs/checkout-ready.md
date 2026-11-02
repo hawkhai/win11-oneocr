@@ -57,7 +57,7 @@ python scripts/verify-delivery.py
 python scripts/verify-delivery.py --all-samples --output work/replay-checkout
 ```
 
-Linux 使用 `python3`。校验全部模型和运行文件 SHA-256，并从无关工作目录运行 105 行书页，与冻结 DLL 输出按原阈值比较；`--all-samples` 再检查全部 110 张图。验收仍是文字、顺序、词切分及手写类别完全一致，坐标 1 px、角度 0.1 度、置信度 `1e-3`。
+Linux 使用 `python3`。校验全部模型和运行文件 SHA-256，并从无关工作目录运行书页，与当前模型绑定的冻结 DLL 输出按原阈值比较（当前 Photos 版为 106 行，旧版为 105 行）；`--all-samples` 再检查全部 110 张图。`delivery-manifest.json` 的 `reference` 明确指向当前基准，模型与基准版本不符会报错。验收仍是文字、顺序、词切分及手写类别完全一致，坐标 1 px、角度 0.1 度、置信度 `1e-3`。
 
 这是原生 CLI 的拉取即用流程。使用 DSH JavaScript 插件时，宿主仍需 Node.js 20+，按已有 `package-lock.json` 安装插件依赖；`node_modules` 不加入 Git。
 

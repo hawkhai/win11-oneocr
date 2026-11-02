@@ -9,7 +9,7 @@ import onnxruntime as ort
 
 ROOT = Path(__file__).resolve().parents[1]
 
-def inspect(models):
+def inspect(models,evidence_dir=None):
     manifest = json.loads((models/'manifest.json').read_text(encoding='utf8'))
     options = ort.SessionOptions()
     options.intra_op_num_threads = 1
@@ -36,13 +36,16 @@ def inspect(models):
     session = ort.InferenceSession(str(target),sess_options=options,providers=['CPUExecutionProvider'])
     transformation = {'file':'detector/text_detector.portable.onnx','sha256':hashlib.sha256(target.read_bytes()).hexdigest(),'source_sha256':hashlib.sha256((models/'detector/text_detector.onnx').read_bytes()).hexdigest(),'transformation':'backward graph slice for the 18 FPN outputs; optional feature_p2 branch removed','outputs':outputs,'replay':{}}
     trace = ROOT/'work/oneocr-portable/traces/ocr-book'
-    if (trace/'trace.json').exists():
+    binding=trace/'model-source.json'
+    bound_source=json.loads(binding.read_text(encoding='utf8')).get('oneocr.onemodel') if binding.is_file() else None
+    if (trace/'trace.json').exists() and bound_source==manifest['source_assets']['oneocr.onemodel']:
         entry = json.loads((trace/'trace.json').read_text(encoding='utf8'))[0]
         inputs = {k:np.load(trace/v['file']) for k,v in entry['inputs'].items()}
         values = session.run(outputs,inputs)
         for name,value in zip(outputs,values):
             expected = np.load(trace/entry['outputs'][name]['file'])
             transformation['replay'][name] = {'max_absolute_error':float(np.max(np.abs(value-expected))), 'shape':list(value.shape)}
+    else:transformation['replay_status']='not_replayed: historical trace is unbound or belongs to another model'
     manifest['portable_detector'] = transformation
     # Only assets selected by the preparation manifest are authoritative.
     # Older experiments can leave files under vocab/; never auto-enroll them.
@@ -51,7 +54,8 @@ def inspect(models):
         if hashlib.sha256(path.read_bytes()).hexdigest()!=record['sha256']:
             raise ValueError('Vocabulary checksum mismatch: '+record['file'])
     (models/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf8')
-    output = ROOT/'work/oneocr-portable/evidence/standard-ort-load.json'
+    output = (evidence_dir or ROOT/'work/oneocr-portable/evidence')/'standard-ort-load.json'
+    output.parent.mkdir(parents=True,exist_ok=True)
     output.write_text(json.dumps({'raw_models':report,'portable_detector':transformation},indent=2),encoding='utf8')
     print('Stock ORT loaded',sum(x['load'] for x in report),'/',len(report),'raw models')
     print('Portable detector replay:',{k:x['max_absolute_error'] for k,x in transformation['replay'].items()})
@@ -59,4 +63,5 @@ def inspect(models):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--models',type=Path,default=ROOT/'models')
-    inspect(p.parse_args().models)
+    p.add_argument('--evidence-dir',type=Path)
+    args=p.parse_args();inspect(args.models,args.evidence_dir)

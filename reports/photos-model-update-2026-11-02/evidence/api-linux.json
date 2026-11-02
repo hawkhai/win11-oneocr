@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "library": "/mnt/f/pythonx/myocr/win11-oneocr/artifacts/linux-x64/lib/liboneocr_portable.so",
+  "checks": [
+    "file versus padded BGRA exact result equivalence",
+    "six concurrent calls on one context",
+    "two concurrent independent contexts",
+    "missing image leaves JSON null with image error",
+    "max_lines=1",
+    "existing invalid image leaves JSON null with image error",
+    "corrupt vocabulary rejected before inference; source assets unchanged"
+  ]
+}

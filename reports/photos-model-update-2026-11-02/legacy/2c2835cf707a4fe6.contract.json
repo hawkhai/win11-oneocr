@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/references/cn-ticket-result.jpg",
+  "image_sha256": "82c775acfc4ba81b4ed6c09606d78f53e536d94229e97c5109b71c0bbacd47a6",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.5761279999860562,
+    "peak_working_set_bytes": 291688448,
+    "stderr": ""
+  },
+  "result_sha256": "78e19392ca3264e98879100d25faeba3b54bca58d41ecf5e309880396f26441c"
+}

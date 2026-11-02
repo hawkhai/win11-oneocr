@@ -1,0 +1,18 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/dewarp-thesis-wordlist.jpg",
+  "image": {
+    "height": 230,
+    "step": 688,
+    "width": 172
+  },
+  "image_angle": 0.0,
+  "line_count": 0,
+  "lines": []
+}

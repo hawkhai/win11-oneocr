@@ -6,7 +6,8 @@ import json
 import os
 from pathlib import Path
 import tempfile
-from PIL import Image
+import struct
+import subprocess
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -16,6 +17,7 @@ if __name__=='__main__':
     p.add_argument('--models',type=Path,default=ROOT/'models')
     p.add_argument('--image',type=Path,default=ROOT/'test.png')
     p.add_argument('--output',type=Path,default=ROOT/'work/oneocr-portable/evidence/api-integration.json')
+    p.add_argument('--pixel-decoder',type=Path,help='Optional native decoder; avoids a Pillow test dependency')
     args=p.parse_args();library=args.library.resolve();models=args.models.resolve()
     directory=os.add_dll_directory(str(library.parent)) if os.name=='nt' else None
     dll=C.CDLL(str(library))
@@ -42,12 +44,21 @@ if __name__=='__main__':
     checks=[]
     try:
         baseline=recognize(context)
-        image=Image.open(args.image).convert('RGBA');raw=image.tobytes('raw','BGRA');stride=image.width*4+16
-        padded=bytearray(stride*image.height)
-        for y in range(image.height):padded[y*stride:y*stride+image.width*4]=raw[y*image.width*4:(y+1)*image.width*4]
+        if args.pixel_decoder:
+            with tempfile.TemporaryDirectory(prefix='oneocr-api-pixels-') as temporary:
+                decoded=Path(temporary)/'pixels.bgra'
+                subprocess.run([str(args.pixel_decoder.resolve()),str(args.image.resolve()),str(decoded)],check=True,timeout=30)
+                payload=decoded.read_bytes();width,height=struct.unpack_from('<ii',payload);raw=payload[8:]
+                if width<1 or height<1 or len(raw)!=width*height*4:raise ValueError('Invalid native pixel payload')
+        else:
+            from PIL import Image
+            image=Image.open(args.image).convert('RGBA');width,height=image.size;raw=image.tobytes('raw','BGRA')
+        stride=width*4+16
+        padded=bytearray(stride*height)
+        for y in range(height):padded[y*stride:y*stride+width*4]=raw[y*width*4:(y+1)*width*4]
         buffer=(C.c_ubyte*len(padded)).from_buffer(padded)
         result,error=ptr(),ptr()
-        code=dll.oneocr_recognize_bgra(context,buffer,len(padded),image.width,image.height,stride,None,C.byref(result),C.byref(error))
+        code=dll.oneocr_recognize_bgra(context,buffer,len(padded),width,height,stride,None,C.byref(result),C.byref(error))
         value,message=text(result),text(error)
         if code:raise RuntimeError(message)
         actual=json.loads(value);baseline['file']=actual['file'];baseline['image']['step']=stride

@@ -17,3 +17,5 @@
 - E-013 | n/a_re | validated | Extracted source-only archive builds and passes original book parity | E-013.md
 - E-014 | n/a_re | validated | 全部 110 张图片在 Windows 与 Linux 严格回归通过 | E-014.md
 - E-015 | n/a_re | validated | 恢复曲线过滤与原生 float 多边形相交 | E-015.md
+- E-016 | n/a_re | validated | Photos 11.0.15 新模型双平台完整回归 | E-016.md
+- E-017 | n/a_re | validated | 更正 E-016 的新版回归产物引用 | E-017.md

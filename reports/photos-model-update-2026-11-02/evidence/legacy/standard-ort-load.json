@@ -1,0 +1,191 @@
+{
+  "raw_models": [
+    {
+      "file": "detector/text_detector.onnx",
+      "load": true
+    },
+    {
+      "file": "classifier/script_classifier.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_arabic.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_cjk.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_cyrillic.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_devanagari.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_greek.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_hebrew.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_latin.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_tamil.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_thai.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/a984730f53a863c6e1373d23a2cf38bc47c9e9dba1f5b043d108ceceea9c32a6.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\a984730f53a863c6e1373d23a2cf38bc47c9e9dba1f5b043d108ceceea9c32a6.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/b3d95f7cd7a9279472b56af1695faf99ba1757f8512b4d87131b51b6f8e7bc95.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\b3d95f7cd7a9279472b56af1695faf99ba1757f8512b4d87131b51b6f8e7bc95.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/1cc5440a95085227dbd32bea8e9cd8745c6942920066489f20a3a0d0ddcdf8f0.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\1cc5440a95085227dbd32bea8e9cd8745c6942920066489f20a3a0d0ddcdf8f0.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/b07947558c78c350ebdabd5338dd9d5aadb5f7d89fb9de87595b60d585b1135a.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\b07947558c78c350ebdabd5338dd9d5aadb5f7d89fb9de87595b60d585b1135a.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/33e007562e48fd91329a15bd3194929b8103789cab9c4849288c81dd8bd2fb17.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\33e007562e48fd91329a15bd3194929b8103789cab9c4849288c81dd8bd2fb17.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/4579fe1fedceb79545cfdcee7ad240ce5c4dd52c1caf056a2134fd796e495c08.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\4579fe1fedceb79545cfdcee7ad240ce5c4dd52c1caf056a2134fd796e495c08.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/67638266acf04dc7838befd6a610e103dceb679dacde925c7bb87422a61728f2.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\67638266acf04dc7838befd6a610e103dceb679dacde925c7bb87422a61728f2.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/8a7b13bbc4bc87b1b095c2510e9fadc4ec57af96ae4049473c1c2b9deaeea22b.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\8a7b13bbc4bc87b1b095c2510e9fadc4ec57af96ae4049473c1c2b9deaeea22b.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/92952d075a5ab53639e0413c7e99baee6b701eac02e5d3676ac5d7107bdd303a.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\92952d075a5ab53639e0413c7e99baee6b701eac02e5d3676ac5d7107bdd303a.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/359a347ac03397c3779e91c9290e60d7b02f979bd0278e1c145aa51d2bd37933.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\359a347ac03397c3779e91c9290e60d7b02f979bd0278e1c145aa51d2bd37933.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/c27a07e870c27fa8f57ba00c8b215a762c86bf90bb5e1ffa061727893548cdbb.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\c27a07e870c27fa8f57ba00c8b215a762c86bf90bb5e1ffa061727893548cdbb.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/032d40c7aa17364504a07cde2c061ee1080abde36bc94a807d086334a49c947a.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\032d40c7aa17364504a07cde2c061ee1080abde36bc94a807d086334a49c947a.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/7887683eb094b3df2aa701b9f5fbcf8f3869aca479f19eb4c9b4aa9b8e24d71d.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\7887683eb094b3df2aa701b9f5fbcf8f3869aca479f19eb4c9b4aa9b8e24d71d.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/eb8dc24dbb949eb6d483fddca77b1387e98a05d59c025418dde50addaa21d039.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\eb8dc24dbb949eb6d483fddca77b1387e98a05d59c025418dde50addaa21d039.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/d1034fd16b872ec6227a65fb0dbcdf4ffae9f763be3814c849902f43eee4c65b.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\d1034fd16b872ec6227a65fb0dbcdf4ffae9f763be3814c849902f43eee4c65b.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/504b89966924e31b52762149398c438c8bf3208305043a218ee378c163da0ad9.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\504b89966924e31b52762149398c438c8bf3208305043a218ee378c163da0ad9.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/9fbfec65247f0872ebaa6454f5e5b9ebacfe23c1c1966a026e57b25e02682973.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\9fbfec65247f0872ebaa6454f5e5b9ebacfe23c1c1966a026e57b25e02682973.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/e9ccab44d59a1e395cab36fa5efa97e714f6c04e29c21abee9f8dbc958536f41.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\e9ccab44d59a1e395cab36fa5efa97e714f6c04e29c21abee9f8dbc958536f41.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/33740bb3ab0cf328965e7b0cbe2339fb69bf3dbe1f7128ea2546309a3b3e4bda.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\33740bb3ab0cf328965e7b0cbe2339fb69bf3dbe1f7128ea2546309a3b3e4bda.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/a8a540fa983a6cfdbd114a7a0647928984e9decc6893d25df2e0e02df9731394.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\a8a540fa983a6cfdbd114a7a0647928984e9decc6893d25df2e0e02df9731394.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/059f63960782c0107655ac4e8ef9d8c68e31e5779a1b1884857856043719a0ef.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\059f63960782c0107655ac4e8ef9d8c68e31e5779a1b1884857856043719a0ef.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "auxiliary/6994639d1f9fc149df22a220f7f3c6c63ed3289546ee3ee046ef1235186d1eb4.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\auxiliary\\6994639d1f9fc149df22a220f7f3c6c63ed3289546ee3ee046ef1235186d1eb4.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    },
+    {
+      "file": "layout/line_layout.onnx",
+      "load": false,
+      "error": "[ONNXRuntimeError] : 1 : FAIL : Load model from work\\model-update-photos-2026.11090.22001.0\\reprepared-legacy\\layout\\line_layout.onnx failed:Fatal error: com.microsoft.oneocr:OneOCRFeatureExtract(-1) is not a registered function/op"
+    }
+  ],
+  "portable_detector": {
+    "file": "detector/text_detector.portable.onnx",
+    "sha256": "21425f36343c149a460bf5876da438da9200593c09725759e262db489ade2665",
+    "source_sha256": "c242d98c8ef41a8f5f623801bf6dd24969076de33cd24f72b57b9dcb7e9527c3",
+    "transformation": "backward graph slice for the 18 FPN outputs; optional feature_p2 branch removed",
+    "outputs": [
+      "scores_hori_fpn2",
+      "bbox_deltas_hori_fpn2",
+      "scores_vert_fpn2",
+      "bbox_deltas_vert_fpn2",
+      "link_scores_hori_fpn2",
+      "link_scores_vert_fpn2",
+      "scores_hori_fpn3",
+      "bbox_deltas_hori_fpn3",
+      "scores_vert_fpn3",
+      "bbox_deltas_vert_fpn3",
+      "link_scores_hori_fpn3",
+      "link_scores_vert_fpn3",
+      "scores_hori_fpn4",
+      "bbox_deltas_hori_fpn4",
+      "scores_vert_fpn4",
+      "bbox_deltas_vert_fpn4",
+      "link_scores_hori_fpn4",
+      "link_scores_vert_fpn4"
+    ],
+    "replay": {},
+    "replay_status": "not_replayed: historical trace is unbound or belongs to another model"
+  }
+}

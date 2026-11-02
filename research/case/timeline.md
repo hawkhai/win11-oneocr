@@ -85,3 +85,10 @@
 - decision_delta: [sample_inventory=110, all_image_regressions=passed, original_assets=unchanged, full_goal=incomplete]
 - carry_forward_refs: [scope.md, workitems.md, evidence/E-014.md, evidence/E-015.md]
 - next: retain unimplemented fallback/configuration paths and unverified macOS/Android/ARM64 targets as incomplete
+
+## 2026-11-02T19:59:24.799505+08:00 | lead | photos-model-update
+- decision_delta: [source_model=f6cef38b, native_dll_reference=11.0.15, portable_ORT=1.23.2_retained, all_regressions=passed, full_goal=incomplete]
+- results: Windows/Linux each 107 strict recognition + 3 original errors, 27 fixed cases and 106-line book; 8 CTests and ABI pass. Old 9.0.103 preparation remains compatible (105-line book).
+- evidence_ids: [E-017]
+- evidence_correction: E-016 linked an old artifact by mistake; its immutable record is preserved, E-017 hashes the correct new summary.
+- carry_forward_refs: [scope.md, reports/photos-model-update-2026-11-02/README.md]

@@ -1,0 +1,18 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\thumbnails\\quality-noisy-fraktur.jpg",
+  "image": {
+    "height": 230,
+    "step": 568,
+    "width": 142
+  },
+  "image_angle": 0.0,
+  "line_count": 0,
+  "lines": []
+}

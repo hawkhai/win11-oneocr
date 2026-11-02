@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/references/receipt-perspective.png",
+  "image_sha256": "6d576cea131563ac04cb417715df4b0aa7645bb2bf5bb8f83d197beed766c71b",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 2.0364490000065416,
+    "peak_working_set_bytes": 308252672,
+    "stderr": ""
+  },
+  "result_sha256": "416a4c99cd067919e19bb636c74fdeed004018375a8ca0aedccc1d03b1fa1a53"
+}

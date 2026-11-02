@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/images/easy-yuyuan-road.jpg",
+  "image_sha256": "7d8f231016c6a35da879b7d79b39c45b694aef962ae30f64063d981e618fbf7f",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.2587091000168584,
+    "peak_working_set_bytes": 200634368,
+    "stderr": ""
+  },
+  "result_sha256": "981e852334bba2e53c1ac6d2b24528c381618c4623b2f121f42af8cfd73018ac"
+}

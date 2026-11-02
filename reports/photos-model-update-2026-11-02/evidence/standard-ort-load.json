@@ -1,0 +1,168 @@
+{
+  "raw_models": [
+    {
+      "file": "detector/text_detector.onnx",
+      "load": true
+    },
+    {
+      "file": "classifier/script_classifier.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_arabic.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_cjk.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_cyrillic.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_devanagari.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_greek.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_hebrew.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_latin.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_tamil.onnx",
+      "load": true
+    },
+    {
+      "file": "recognizers/recognizer_thai.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/a81e28bc31652f5fccb19e2f32bac9d3ec178673c9dec21a0b754340d65468a3.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/43244df0aea4e99cda8376d4d0816209951882b5a21342f24686dbb17e5c006d.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/9c4fa04e0af7a395d2c84543e112289c16d1156e7d34f21d09a070b77e601fe4.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/7f3fe3b6d4a5a0c7f48abceda1dd6f627a66cfc8df795a72870b074bec48a989.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/2e1f404d421766c7c36bbab20204e1e2aa40542b8bdd4be689ec538627c322dc.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/c5c2c0e76528ae2c8189a3a428b86d6e506007edcbbaf428ef6163d9ccef853d.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/85fe8cfedca5dd70045acb2865075bdfe0c04e4bdcd8c426f06fc37f67e1a25b.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/e25dd4aebebb5a077b5680b171831b15c6be482d0732e0c0149cb352b882d63e.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/3396533e28371e3672a54252e4a783d3813167a45782bd76da4b7331f51ae79e.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/3259f4b4548bc8534dd12dbacb65d14ddc1c0965536f7746821e2d4e75905fdc.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/e9c7124809544706bccadfd91552ed955693a7b42f6a676ff525daa957f47259.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/495e14fae872ac8a426bc136852d0be06b5fed9342bfb35a6685ed3742a0e3d8.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/d831a56a4182d9d84408a59a59f754d9be98754a73ada0796077539e3b36bc19.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/d0d7e8add0ede09450ce6142afa73f53358505fe2b445e603a38d2dfe770dc65.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/ec8c7473d12b52f142b333f37c457484646d5bf50d115cfcf24ba56d5c16a967.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/4d74d93755eaafce99d746043974bc604fdb2490a716885d9d27234a17a26d0f.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/80597608ec91e4aad0e2301e6b602b25b172b1110bd3cf34fe594674018e5416.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/974bff43c4f01cbb8c84a106b2166155aa66a37b68846d2708377a1a67e8413b.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/8443e13c1f4ce9b8e6eba3c99a8a34e0121d334ef22fa4d9e8706e6eb47f2288.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/49f52e5fb889b66047c8c45cc5df4404e753ab0a92de0f487635c1d3cdba6d6e.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/cf07dfba6ad9c47742b1782b2efd2f1bb61e8fecfe2310a0d7407bf8c93df9e1.onnx",
+      "load": true
+    },
+    {
+      "file": "auxiliary/61b7a6c92e8acbb871a3b56cb884e7f5fe11ad0477bda04dfa90a47afa0e41f0.onnx",
+      "load": true
+    },
+    {
+      "file": "layout/line_layout.onnx",
+      "load": true
+    }
+  ],
+  "portable_detector": {
+    "file": "detector/text_detector.portable.onnx",
+    "sha256": "92dbcb06742332f1e117eb6e9496ac53b9bd48edfb74a44d673c7399f2638fa5",
+    "source_sha256": "035ce56dbf49553b72d081ef2b51659ebab919e596d903f5dd892f1a2777c92b",
+    "transformation": "backward graph slice for the 18 FPN outputs; optional feature_p2 branch removed",
+    "outputs": [
+      "scores_hori_fpn2",
+      "bbox_deltas_hori_fpn2",
+      "scores_vert_fpn2",
+      "bbox_deltas_vert_fpn2",
+      "link_scores_hori_fpn2",
+      "link_scores_vert_fpn2",
+      "scores_hori_fpn3",
+      "bbox_deltas_hori_fpn3",
+      "scores_vert_fpn3",
+      "bbox_deltas_vert_fpn3",
+      "link_scores_hori_fpn3",
+      "link_scores_vert_fpn3",
+      "scores_hori_fpn4",
+      "bbox_deltas_hori_fpn4",
+      "scores_vert_fpn4",
+      "bbox_deltas_vert_fpn4",
+      "link_scores_hori_fpn4",
+      "link_scores_vert_fpn4"
+    ],
+    "replay": {},
+    "replay_status": "not_replayed: historical trace is unbound or belongs to another model"
+  }
+}

@@ -17,6 +17,10 @@ def main():
     parser.add_argument('--output',type=Path)
     args=parser.parse_args()
     manifest=json.loads((ROOT/'research/delivery-manifest.json').read_text(encoding='utf8'))
+    reference=manifest.get('reference',{})
+    model_manifest=json.loads((ROOT/'models/manifest.json').read_text(encoding='utf8'))
+    if reference and reference['model_source_sha256']!=model_manifest['source_assets']['oneocr.onemodel']:
+        raise RuntimeError('Active model and regression reference are bound to different source versions')
     for name,record in manifest['files'].items():
         path=ROOT/name
         if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest()!=record['sha256']:
@@ -37,7 +41,7 @@ def main():
         subprocess.run([str(binary),'--model-dir',str(ROOT/'models'),str(ROOT/'ocr-book.jpg'),'--quiet','--output',str(destination)],cwd=temporary,check=True,timeout=120)
         result=json.loads(destination.read_text(encoding='utf8'))
         # The whole-book baseline is committed alongside the original corpus.
-        baseline=json.loads((ROOT/'research/case/baseline/ocr-book.json').read_text(encoding='utf8'))
+        baseline=json.loads((ROOT/reference.get('book_baseline','research/case/baseline/ocr-book.json')).read_text(encoding='utf8'))
         import importlib.util
         spec=importlib.util.spec_from_file_location('delivery_compare',ROOT/'scripts/compare-results.py')
         comparator=importlib.util.module_from_spec(spec);spec.loader.exec_module(comparator)
@@ -45,7 +49,7 @@ def main():
         if not comparison['passed']:raise RuntimeError('Book parity failed: '+json.dumps(comparison,ensure_ascii=False))
     if args.all_samples:
         output=(args.output or ROOT/'work/delivery-all-samples').resolve()
-        subprocess.run([sys.executable,'-X','utf8',str(ROOT/'scripts/run-all-samples.py'),'--inventory',str(ROOT/'samples/manifest.json'),'--baseline',str(ROOT/'reports/oneocr-all-samples-2026-11-02/legacy'),'--binary',str(binary),'--output',str(output)],cwd=ROOT,check=True)
+        subprocess.run([sys.executable,'-X','utf8',str(ROOT/'scripts/run-all-samples.py'),'--inventory',str(ROOT/'samples/manifest.json'),'--baseline',str(ROOT/reference.get('all_samples_baseline','reports/oneocr-all-samples-2026-11-02/legacy')),'--binary',str(binary),'--output',str(output)],cwd=ROOT,check=True)
     print(json.dumps({'passed':True,'platform':key,'verified_assets':len(manifest['files']),'book_lines':len(result['lines']),'all_samples':args.all_samples},ensure_ascii=False))
     return 0
 

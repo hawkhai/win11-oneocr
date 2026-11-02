@@ -537,6 +537,7 @@ def capture_worker(args):
     write_json(destination/'manifest.json',manifest)
     if args.trace:
         write_json(CASE/'traces'/trace_name/'trace.json',traces)
+        write_json(CASE/'traces'/trace_name/'model-source.json',manifest['source_assets'])
         if args.trace_geometry:
             write_json(CASE/'traces'/trace_name/'geometry.json',geometry)
             write_json(CASE/'traces'/trace_name/'lattices.json',lattices)

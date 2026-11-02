@@ -1,7 +1,7 @@
 {
   "parity": "incomplete",
   "onnxruntime_commit": "a83fc4d58cb48eb68890dd689f94f28288cf2278",
-  "model_source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+  "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
   "files": {
     "bin/ocr": "5e9d7b3594bd9d84ebb1f9356610a57687101f64239318c540cdc98dfc6a09d3",
     "include/oneocr_portable.h": "949be635a16e8965c66e455e3247b92f36510eb4f2eff57c5960b9862e7a3e9d",
@@ -23,7 +23,7 @@
     "share/oneocr/licenses/opencv-Apache-2.0.txt": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
     "share/oneocr/licenses/opencv-softfloat-fdlibm.txt": "07360afca97fb6a725a50797960c4506f592dab5331df2b780c85e459d422ce3",
     "share/oneocr/licenses/opencv-zlib.txt": "18dbd37f0ab175c37877e9053ff870a7de2809a3e9b9673b2696aa5009264638",
-    "share/oneocr/portable.md": "a743d1bcb7ca85610f52f86e4f7d60844d9af4d0250d74bac23d51b710c07e19",
+    "share/oneocr/portable.md": "7e8fb4cedd0ec37f78221a77fa676793000ef24e617e38cde745914e981c325b",
     "share/oneocr/THIRD_PARTY_NOTICES.md": "abbfe6185b766706a100b0d2aa58f848262ced5a5855707e4a54d79c2880b238"
   },
   "source_files": {
@@ -70,5 +70,6 @@
     "native/tests/ordering_test.cpp": "450b5ba99e66bd73c7d8449be34895824eda7130b7d712e27580f69363227362",
     "native/tests/tensor_probe.cpp": "fa3d1d23505b1f442ec07f11448c2e9d7171fddab7cebbbc1b5ffde49c164e5c"
   },
-  "model_directory": "../../models"
+  "model_directory": "../../models",
+  "model_manifest_sha256": "8e6d5b973aad14590890ce78de39e5414b7297df4350d65e7a2990ab9b9c929a"
 }

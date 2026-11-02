@@ -1,0 +1,351 @@
+{
+  "source_package": "Microsoft.Windows.Photos_2026.11090.22001.0_x64__8wekyb3d8bbwe",
+  "assets": [
+    {
+      "name": "oneocr.onemodel",
+      "source": "C:\\Program Files\\WindowsApps\\Microsoft.Windows.Photos_2026.11090.22001.0_x64__8wekyb3d8bbwe\\oneocr.onemodel",
+      "size": 58446000,
+      "sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155"
+    },
+    {
+      "name": "oneocr.dll",
+      "source": "C:\\Program Files\\WindowsApps\\Microsoft.Windows.Photos_2026.11090.22001.0_x64__8wekyb3d8bbwe\\oneocr.dll",
+      "size": 40680656,
+      "sha256": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+      "versions": {
+        "CompanyName": "Microsoft Corporation",
+        "FileDescription": "One OCR",
+        "FileVersion": "11.0.15",
+        "InternalName": "One OCR",
+        "LegalCopyright": "© Microsoft Corporation. All rights reserved.",
+        "OriginalFilename": "oneocr.dll",
+        "ProductName": "Microsoft® Windows® Operating System",
+        "ProductVersion": "11.0.15"
+      },
+      "imports": [
+        "onnxruntime.dll",
+        "bcrypt.dll",
+        "dbghelp.dll",
+        "KERNEL32.dll",
+        "ADVAPI32.dll"
+      ],
+      "exports": [
+        {
+          "name": "AddOcrDetectionResultObject",
+          "rva": "0x447b30"
+        },
+        {
+          "name": "AnalyzeOcrDocument",
+          "rva": "0x447b60"
+        },
+        {
+          "name": "CreateOcrDocumentAnalysisResult",
+          "rva": "0x447c90"
+        },
+        {
+          "name": "CreateOcrDocumentDetectionResult",
+          "rva": "0x447d00"
+        },
+        {
+          "name": "CreateOcrDocumentInput",
+          "rva": "0x447e00"
+        },
+        {
+          "name": "CreateOcrDocumentPipeline",
+          "rva": "0x448080"
+        },
+        {
+          "name": "CreateOcrInitOptions",
+          "rva": "0x4459b0"
+        },
+        {
+          "name": "CreateOcrPipeline",
+          "rva": "0x445a10"
+        },
+        {
+          "name": "CreateOcrProcessOptions",
+          "rva": "0x445df0"
+        },
+        {
+          "name": "DetectOcrDocumentObjects",
+          "rva": "0x448460"
+        },
+        {
+          "name": "GetImageAngle",
+          "rva": "0x445fe0"
+        },
+        {
+          "name": "GetOcrDetectionResultObject",
+          "rva": "0x448990"
+        },
+        {
+          "name": "GetOcrDetectionResultObjects",
+          "rva": "0x4489f0"
+        },
+        {
+          "name": "GetOcrDocumentInputImage",
+          "rva": "0x448a40"
+        },
+        {
+          "name": "GetOcrDocumentInputOptions",
+          "rva": "0x448ab0"
+        },
+        {
+          "name": "GetOcrDocumentLine",
+          "rva": "0x448ae0"
+        },
+        {
+          "name": "GetOcrDocumentLineCount",
+          "rva": "0x448b80"
+        },
+        {
+          "name": "GetOcrDocumentPipelineSupportedFeatures",
+          "rva": "0x448be0"
+        },
+        {
+          "name": "GetOcrDocumentTable",
+          "rva": "0x448c10"
+        },
+        {
+          "name": "GetOcrDocumentTableBoundingBox",
+          "rva": "0x448c60"
+        },
+        {
+          "name": "GetOcrDocumentTableCell",
+          "rva": "0x448c80"
+        },
+        {
+          "name": "GetOcrDocumentTableCellBoundingBox",
+          "rva": "0x448cc0"
+        },
+        {
+          "name": "GetOcrDocumentTableCellContent",
+          "rva": "0x448ce0"
+        },
+        {
+          "name": "GetOcrDocumentTableCellCount",
+          "rva": "0x448d10"
+        },
+        {
+          "name": "GetOcrDocumentTableCellKind",
+          "rva": "0x448d40"
+        },
+        {
+          "name": "GetOcrDocumentTableCellPosition",
+          "rva": "0x448d80"
+        },
+        {
+          "name": "GetOcrDocumentTableCount",
+          "rva": "0x448dc0"
+        },
+        {
+          "name": "GetOcrDocumentTableSize",
+          "rva": "0x448e00"
+        },
+        {
+          "name": "GetOcrLine",
+          "rva": "0x446000"
+        },
+        {
+          "name": "GetOcrLineBoundingBox",
+          "rva": "0x446060"
+        },
+        {
+          "name": "GetOcrLineContent",
+          "rva": "0x446080"
+        },
+        {
+          "name": "GetOcrLineCount",
+          "rva": "0x4460b0"
+        },
+        {
+          "name": "GetOcrLineStyle",
+          "rva": "0x446100"
+        },
+        {
+          "name": "GetOcrLineWordCount",
+          "rva": "0x446130"
+        },
+        {
+          "name": "GetOcrWord",
+          "rva": "0x446160"
+        },
+        {
+          "name": "GetOcrWordBoundingBox",
+          "rva": "0x4461b0"
+        },
+        {
+          "name": "GetOcrWordConfidence",
+          "rva": "0x4461d0"
+        },
+        {
+          "name": "GetOcrWordContent",
+          "rva": "0x4461f0"
+        },
+        {
+          "name": "OcrInitOptionsSetUseModelDelayLoad",
+          "rva": "0x446220"
+        },
+        {
+          "name": "OcrProcessOptionsGetDetectorOutputGeometryMode",
+          "rva": "0x446230"
+        },
+        {
+          "name": "OcrProcessOptionsGetEnableWordLevelConfidence",
+          "rva": "0x446260"
+        },
+        {
+          "name": "OcrProcessOptionsGetFeatures",
+          "rva": "0x448e30"
+        },
+        {
+          "name": "OcrProcessOptionsGetMaxRecognitionLineCount",
+          "rva": "0x446280"
+        },
+        {
+          "name": "OcrProcessOptionsGetResizeResolution",
+          "rva": "0x4462a0"
+        },
+        {
+          "name": "OcrProcessOptionsGetRunBackendModelOnCPU",
+          "rva": "0x4462d0"
+        },
+        {
+          "name": "OcrProcessOptionsGetUsePartialRej",
+          "rva": "0x4462f0"
+        },
+        {
+          "name": "OcrProcessOptionsGetUseSingleDigit",
+          "rva": "0x446310"
+        },
+        {
+          "name": "OcrProcessOptionsSetDetectorOutputGeometryMode",
+          "rva": "0x446330"
+        },
+        {
+          "name": "OcrProcessOptionsSetEnableWordLevelConfidence",
+          "rva": "0x4463b0"
+        },
+        {
+          "name": "OcrProcessOptionsSetFeatures",
+          "rva": "0x448e60"
+        },
+        {
+          "name": "OcrProcessOptionsSetMaxRecognitionLineCount",
+          "rva": "0x4463d0"
+        },
+        {
+          "name": "OcrProcessOptionsSetResizeResolution",
+          "rva": "0x4463f0"
+        },
+        {
+          "name": "OcrProcessOptionsSetRunBackendModelOnCPU",
+          "rva": "0x446420"
+        },
+        {
+          "name": "OcrProcessOptionsSetUsePartialRej",
+          "rva": "0x446440"
+        },
+        {
+          "name": "OcrProcessOptionsSetUseSingleDigit",
+          "rva": "0x446460"
+        },
+        {
+          "name": "RecognizeOcrDocumentObjects",
+          "rva": "0x448e90"
+        },
+        {
+          "name": "ReleaseOcrDocumentAnalysisResult",
+          "rva": "0x4492a0"
+        },
+        {
+          "name": "ReleaseOcrDocumentDetectionResult",
+          "rva": "0x449300"
+        },
+        {
+          "name": "ReleaseOcrDocumentInput",
+          "rva": "0x449380"
+        },
+        {
+          "name": "ReleaseOcrInitOptions",
+          "rva": "0x446480"
+        },
+        {
+          "name": "ReleaseOcrPipeline",
+          "rva": "0x446490"
+        },
+        {
+          "name": "ReleaseOcrProcessOptions",
+          "rva": "0x4464b0"
+        },
+        {
+          "name": "ReleaseOcrResult",
+          "rva": "0x4464f0"
+        },
+        {
+          "name": "RunOcrPipeline",
+          "rva": "0x446520"
+        },
+        {
+          "name": "SetOcrPipelineWorkloadOption",
+          "rva": "0x446820"
+        },
+        {
+          "name": "icudt74_dat",
+          "rva": "0x7fb950"
+        }
+      ]
+    },
+    {
+      "name": "onnxruntime.dll",
+      "source": "C:\\Program Files\\WindowsApps\\Microsoft.Windows.Photos_2026.11090.22001.0_x64__8wekyb3d8bbwe\\onnxruntime.dll",
+      "size": 21669744,
+      "sha256": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+      "versions": {
+        "CompanyName": "Microsoft Corporation",
+        "FileDescription": "ONNX Runtime",
+        "FileVersion": "1.24.20260504.1.7444c45",
+        "InternalName": "ONNX Runtime",
+        "LegalCopyright": "© Microsoft Corporation. All rights reserved.",
+        "OriginalFilename": "onnxruntime.dll",
+        "ProductName": "Microsoft® Windows® Operating System",
+        "ProductVersion": "1.24.20260504.1.7444c45"
+      },
+      "imports": [
+        "KERNEL32.dll",
+        "ADVAPI32.dll",
+        "api-ms-win-core-path-l1-1-0.dll",
+        "SETUPAPI.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "dbghelp.dll"
+      ],
+      "exports": [
+        {
+          "name": "OrtGetApiBase",
+          "rva": "0x6b8b0"
+        },
+        {
+          "name": "OrtSessionOptionsAppendExecutionProviderEx_DML",
+          "rva": "0xfcd30"
+        },
+        {
+          "name": "OrtSessionOptionsAppendExecutionProvider_CPU",
+          "rva": "0x332e30"
+        },
+        {
+          "name": "OrtSessionOptionsAppendExecutionProvider_DML",
+          "rva": "0xfcc30"
+        }
+      ]
+    }
+  ],
+  "wrapper_sha256": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+}

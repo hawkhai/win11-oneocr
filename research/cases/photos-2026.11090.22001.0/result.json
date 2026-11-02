@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "verified_date": "2026-11-02",
+  "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+  "source_package": "Microsoft.Windows.Photos_2026.11090.22001.0_x64__8wekyb3d8bbwe",
+  "original_dll_version": "11.0.15",
+  "original_runtime_version": "1.24.20260504.1.7444c45",
+  "portable_runtime_version": "1.23.2",
+  "platforms": {
+    "windows-x64": {
+      "all_samples_passed": 110,
+      "recognition_passes": 107,
+      "error_contract_passes": 3,
+      "original_corpus_passed": 27,
+      "book_lines": 106,
+      "book_parity_passed": true,
+      "ctest_passed": 8,
+      "api_integration_passed": true,
+      "runtime_bindings": {
+        "ocr.exe": "abaa054a76c8dd299e457c07dcbfcc9e29c41e33a394694950517b3865e39af2",
+        "oneocr_portable.dll": "e9c6a3c4c1a31f7452dc48e316323dcd66ff1e65c8106a85a5c1819fbc18b74f",
+        "onnxruntime.dll": "f91839182f99548847810c9d4c5a9655dc85b3b7321d540b9ba1b25db34e48e9"
+      }
+    },
+    "linux-x64": {
+      "all_samples_passed": 110,
+      "recognition_passes": 107,
+      "error_contract_passes": 3,
+      "original_corpus_passed": 27,
+      "book_lines": 106,
+      "book_parity_passed": true,
+      "ctest_passed": 8,
+      "api_integration_passed": true,
+      "runtime_bindings": {
+        "ocr": "5e9d7b3594bd9d84ebb1f9356610a57687101f64239318c540cdc98dfc6a09d3"
+      }
+    }
+  },
+  "graphs": 34,
+  "complete_vocabularies": 9,
+  "auxiliary_standard_onnx_graphs": 23,
+  "vocabulary_outputs_unchanged": true,
+  "acceptance_thresholds_unchanged": true,
+  "old_model_reprepare_book_passed": true,
+  "old_model_book_lines": 105,
+  "old_assets_preserved_at": "bin/ (9.0.103 reference) and existing Git history",
+  "new_reference_assets": "bin/photos-2026.11090.22001.0/",
+  "models_preparation": "static extraction; standard auxiliary graphs copied byte-for-byte; no Microsoft DLL loaded during preparation",
+  "full_cross_platform_goal_complete": false,
+  "unverified_targets": [
+    "macOS",
+    "Android",
+    "ARM64"
+  ],
+  "active_model_files": 155,
+  "delivery_asset_files": 209,
+  "delivery_manifest_sha256": "c1695853bfd35a7cee1552c62ac59a87b09add94191528a6921c9967d9304e50"
+}

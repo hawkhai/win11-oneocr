@@ -4,6 +4,8 @@
 
 完整 Git 检出已包含独立模型与验证过的 Windows x64、Linux x64 原生运行文件，无需 Python、编译器、账号或激活服务即可识别。
 
+当前 `models/` 使用 Photos 2026.11090.22001.0 的模型，以配套 OneOCR 11.0.15 为基准，两端全部 110 张图片及原固定回归已严格通过，见 [新版模型回归](reports/photos-model-update-2026-11-02/README.md)。原 9.0.103 DLL/模型仍保存在 `bin/` 作旧版对照；新版对照文件单独位于 `bin/photos-2026.11090.22001.0/`。
+
 ```powershell
 .\ocr.cmd .\ocr-book.jpg --text
 ```
@@ -25,7 +27,7 @@ included but have not been verified on those targets.
 
 The recovered detector, line/word alignment, reading order, confidence,
 handwriting and orientation logic is checked against the fixed original DLL.
-See the [all-sample regression report](reports/oneocr-all-samples-2026-11-02/README.md)
+See the [current model regression report](reports/photos-model-update-2026-11-02/README.md)
 for current results and exact tolerances. Full cross-platform validation is
 still incomplete; native results expose `engine.parity = "incomplete"`.
 

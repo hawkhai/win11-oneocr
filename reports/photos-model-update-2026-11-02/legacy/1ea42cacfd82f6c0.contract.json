@@ -1,0 +1,17 @@
+{
+  "file": "oneocr-capabilities/script-latin.png",
+  "image_sha256": "6a76a7580dd0a2fbc56c076516e466baf2a976f2313a9d3b2b7bbdaf83c13746",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.5877876000013202,
+    "peak_working_set_bytes": 165011456,
+    "stderr": ""
+  },
+  "result_sha256": "6b88dae0b148a67785b0949b13aa3ec12e3b1b84c93ef3db6c5f072294cecdcf"
+}

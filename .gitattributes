@@ -4,8 +4,10 @@
 /reports/oneocr-classics-2026-11-02/report.html whitespace=cr-at-eol,-blank-at-eol
 /reports/oneocr-all-samples-2026-11-02/** -text whitespace=cr-at-eol
 /reports/checkout-ready-2026-11-02/** -text whitespace=cr-at-eol
+/reports/photos-model-update-2026-11-02/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 /models/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 /artifacts/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/bin/photos-2026.11090.22001.0/** -text
 /research/case/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 /ocr.sh text eol=lf
 /licenses/gcc-runtime-copyright.txt -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof

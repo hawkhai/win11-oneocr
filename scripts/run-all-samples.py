@@ -31,6 +31,8 @@ def main():
     p.add_argument('--baseline', type=Path, required=True)
     p.add_argument('--binary', type=Path, required=True)
     p.add_argument('--output', type=Path, required=True)
+    p.add_argument('--models',type=Path,default=ROOT/'models')
+    p.add_argument('--legacy-binary-dir',type=Path,default=ROOT/'bin')
     args = p.parse_args()
     files = sorted(x for x in (ROOT/'samples').rglob('*') if x.suffix.lower() in EXTENSIONS)
     cases = [{'name': hashlib.sha256(x.relative_to(ROOT/'samples').as_posix().encode()).hexdigest()[:16],
@@ -55,13 +57,13 @@ def main():
             paths.update(x for x in binary.parent.glob(pattern) if x.is_file() and x.suffix.lower() not in ('.lib','.exp','.pdb'))
         return {x.name:digest(x) for x in sorted(paths)}
     native_bindings=runtime_bindings()
-    bindings = {x: digest(ROOT/'bin'/x) for x in ('oneocr.dll','oneocr.onemodel','onnxruntime.dll','oneocr_wrapper.dll')} if args.freeze_dll else None
+    bindings = {x: digest(args.legacy_binary_dir/x) for x in ('oneocr.dll','oneocr.onemodel','onnxruntime.dll','oneocr_wrapper.dll')} if args.freeze_dll else None
     results = []
     for case in inventory['cases']:
         name, source = case['name'], ROOT/'samples'/case['file']
         golden, contract_path = args.baseline/(name+'.json'), args.baseline/(name+'.contract.json')
         if args.freeze_dll and not contract_path.exists():
-            measurement = runner.run([sys.executable, str(ROOT/'scripts/run-legacy.py'), str(source), str(golden.resolve())], ROOT)
+            measurement = runner.run([sys.executable,'-X','utf8', str(ROOT/'scripts/run-legacy.py'), str(source), str(golden.resolve()),'--binary-dir',str(args.legacy_binary_dir.resolve())], ROOT)
             write(contract_path, {'file':case['file'], 'image_sha256':case['sha256'], 'dll_bindings':bindings, 'measurement':measurement,
                                  'result_sha256': digest(golden) if golden.exists() else None})
         contract = json.loads(contract_path.read_text(encoding='utf8'))
@@ -72,7 +74,7 @@ def main():
         destination = (args.output/'native'/(name+'.json')).resolve()
         destination.parent.mkdir(exist_ok=True)
         if destination.exists(): destination.unlink()
-        measurement = runner.run([str(binary),str(source),'--model-dir',str(ROOT/'models'),'--quiet','--output',str(destination)],binary.parent)
+        measurement = runner.run([str(binary),str(source),'--model-dir',str(args.models.resolve()),'--quiet','--output',str(destination)],binary.parent)
         entry = {'file':case['file'], 'name':name, 'passed':False, 'measurement':measurement}
         if contract['measurement']['exit_code'] == 0 and measurement['exit_code'] == 0:
             report = comparator.compare(json.loads(golden.read_text(encoding='utf8')),json.loads(destination.read_text(encoding='utf8')))
@@ -95,7 +97,7 @@ def main():
         write(args.output/'suite.json', {'passed':all(x['passed'] for x in results), 'completed_cases':len(results), 'total_cases':len(cases),
               'passed_cases':sum(x['passed'] for x in results), 'recognition_passes':sum(x['status']=='passed' for x in results),
               'error_contract_passes':sum(x['status'] in ('expected_size_error','expected_channel_error') for x in results),
-              'binary_sha256':native_bindings[binary.name], 'runtime_bindings':native_bindings, 'inventory_sha256':digest(args.inventory), 'cases':results})
+              'binary_sha256':native_bindings[binary.name], 'runtime_bindings':native_bindings, 'model_manifest_sha256':digest(args.models/'manifest.json'), 'inventory_sha256':digest(args.inventory), 'cases':results})
     if runtime_bindings()!=native_bindings:raise ValueError('Native runtime changed during suite execution')
     return 0 if all(x['passed'] for x in results) else 1
 

@@ -48,6 +48,8 @@ if __name__=='__main__':
     p.add_argument('--binary',type=Path)
     p.add_argument('--limit',type=int)
     p.add_argument('--output-dir',type=Path,help='Keep a new phase separate from existing evidence')
+    p.add_argument('--models',type=Path,default=ROOT/'models')
+    p.add_argument('--legacy-binary-dir',type=Path,default=ROOT/'bin')
     args=p.parse_args()
     corpus=CASE/'corpus'
     if not (corpus/'manifest.json').is_file():corpus=ROOT/'research/case/corpus'
@@ -58,9 +60,9 @@ if __name__=='__main__':
     results=[]
     for entry in fixtures:
         if args.backend=='legacy':
-            command=[sys.executable,str(ROOT/'scripts/run-legacy.py'),str(corpus/entry['file']),str(output/(entry['name']+'.json'))]
+            command=[sys.executable,'-X','utf8',str(ROOT/'scripts/run-legacy.py'),str(corpus/entry['file']),str(output/(entry['name']+'.json')),'--binary-dir',str(args.legacy_binary_dir.resolve())]
         else:
-            command=[str(binary),str(corpus/entry['file']),'--output',str(output/(entry['name']+'.json')),'--quiet','--model-dir',str(ROOT/'models')]
+            command=[str(binary),str(corpus/entry['file']),'--output',str(output/(entry['name']+'.json')),'--quiet','--model-dir',str(args.models.resolve())]
         result=run(command,binary.parent);result['name']=entry['name'];result['runner']='original-wrapper-python-process' if args.backend=='legacy' else 'native-cli';results.append(result)
         print(entry['name'],result['exit_code'],round(result['seconds'],3),flush=True)
     (output/'measurements.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf8')
