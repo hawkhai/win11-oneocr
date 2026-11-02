@@ -385,7 +385,21 @@
     "active_model_files": 155,
     "delivery_asset_files": 209,
     "delivery_manifest_sha256": "59792c0b26c5ca7f1fd750618824f6eedc36b91827bd135d1b2dd385d213e07c",
-    "default_reference_selection_verified": true
+    "default_reference_selection_verified": true,
+    "clean_checkout": {
+      "source_commit": "6ce8085",
+      "windows": {
+        "assets_verified": 209,
+        "book_lines": 106,
+        "all_samples_passed": 110
+      },
+      "linux": {
+        "assets_verified": 209,
+        "book_lines": 106,
+        "network_namespace": true,
+        "all_samples_already_passed_in_versioned_work_case": 110
+      }
+    }
   },
   "active_regression_report": "reports/photos-model-update-2026-11-02/README.md"
 }
