@@ -25,6 +25,8 @@ Image load_image(const char* path) {
     int w=0,h=0,c=0;
     if(!stbi_info_from_memory(bytes.data(),static_cast<int>(bytes.size()),&w,&h,&c)) throw ImageError("Unsupported or corrupt image");
     dimensions(w,h);
+    // The original wrapper accepts gray, RGB and RGBA, but rejects gray+alpha.
+    if(c!=1 && c!=3 && c!=4) throw UnsupportedImageError("Unsupported image channel count");
     unsigned char* data=stbi_load_from_memory(bytes.data(),static_cast<int>(bytes.size()),&w,&h,&c,4);
     if(!data) throw ImageError("Image decoder failed");
     struct Release { unsigned char* p; ~Release(){ stbi_image_free(p); } } guard{data};
@@ -67,6 +69,22 @@ Image resize(const Image& in,int w,int h) {
         for(int c=0;c<3;c++) out.rgb[(size_t(y)*w+x)*3+c]=value[c];
     }
     return out;
+}
+std::array<int,2> detector_dimensions(int width,int height,int limit_width,int limit_height) {
+    dimensions(width,height);
+    if(limit_width<1 || limit_height<1)throw std::invalid_argument("Invalid detector limits");
+    // OneOCR 9.0.103: 180113400 -> 1801b2810 -> 1801b2250.
+    // Limits apply to the short/long edge; enlargement is capped at 1.5x.
+    // Preserve integer truncation at each resize step, then round UP to stride 32.
+    int short_edge=std::min(width,height),long_edge=std::max(width,height);
+    int short_limit=std::min(std::min(limit_width,limit_height),int(short_edge*1.5f+.5f));
+    int long_limit=std::min(std::max(limit_width,limit_height),int(long_edge*1.5f+.5f));
+    if(short_edge<short_limit) {long_edge=int(int64_t(short_limit)*long_edge/short_edge);short_edge=short_limit;}
+    if(long_limit<long_edge) {short_edge=int(int64_t(long_limit)*short_edge/long_edge);long_edge=long_limit;}
+    if(short_limit<short_edge) {long_edge=int(int64_t(short_limit)*long_edge/short_edge);short_edge=short_limit;}
+    short_edge=std::max(1,(short_edge+31)/32)*32;
+    long_edge=std::max(1,(long_edge+31)/32)*32;
+    return width>=height?std::array<int,2>{long_edge,short_edge}:std::array<int,2>{short_edge,long_edge};
 }
 Image warp_quad(const Image& in,const Quad& q,int w,int h) {
     dimensions(w,h);
@@ -113,6 +131,33 @@ float quad_area(const Quad& q) {
     return std::abs(area)*.5f;
 }
 static float cross(Point o,Point a,Point b) { return (a.x-o.x)*(b.y-o.y)-(a.y-o.y)*(b.x-o.x); }
+float quad_iou(const Quad& first,const Quad& second) {
+    float winding=0;
+    for(int i=0;i<4;i++)winding+=second[i].x*second[(i+1)%4].y-second[(i+1)%4].x*second[i].y;
+    float sign=winding>=0?1.f:-1.f;
+    std::vector<Point> polygon(first.begin(),first.end());
+    for(int edge=0;edge<4 && !polygon.empty();edge++) {
+        Point a=second[edge],b=second[(edge+1)%4];
+        std::vector<Point> clipped;
+        Point previous=polygon.back();float previous_side=sign*cross(a,b,previous);
+        for(auto point:polygon) {
+            float side=sign*cross(a,b,point);
+            if((side>=0)!=(previous_side>=0)) {
+                float ratio=previous_side/(previous_side-side);
+                clipped.push_back({previous.x+ratio*(point.x-previous.x),previous.y+ratio*(point.y-previous.y)});
+            }
+            if(side>=0)clipped.push_back(point);
+            previous=point;previous_side=side;
+        }
+        polygon=std::move(clipped);
+    }
+    float twice_area=0;
+    for(size_t i=0;i<polygon.size();i++) {
+        Point a=polygon[i],b=polygon[(i+1)%polygon.size()];twice_area+=a.x*b.y-b.x*a.y;
+    }
+    float intersection=std::abs(twice_area)*.5f,area=quad_area(first)+quad_area(second)-intersection;
+    return area>0?intersection/area:0;
+}
 Quad minimum_rectangle(std::vector<Point> p) {
     if(p.empty()) throw std::invalid_argument("Empty polygon");
     std::sort(p.begin(),p.end(),[](Point a,Point b){return a.x<b.x || (a.x==b.x && a.y<b.y);});

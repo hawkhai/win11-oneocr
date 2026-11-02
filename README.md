@@ -9,9 +9,11 @@ Model preparation can unpack the existing local `.onemodel` without loading
 Microsoft DLLs. Android/macOS configurations and an Android JNI example are
 included but have not been verified on those targets.
 
-**Full DLL parity is not achieved:** the strict 27-case comparison currently
-passes 1 case. Text, geometry, ordering and calibrated word confidence still
-differ. Native results expose `engine.parity = "incomplete"`.
+The recovered detector, line/word alignment, reading order, confidence,
+handwriting and orientation logic is checked against the fixed original DLL.
+See the [all-sample regression report](reports/oneocr-all-samples-2026-11-02/README.md)
+for current results and exact tolerances. Full cross-platform validation is
+still incomplete; native results expose `engine.parity = "incomplete"`.
 
 See [native build and API instructions](docs/portable.md),
 [research report](docs/2026-11-02_oneocr-source-report.md) and

@@ -1,0 +1,5972 @@
+{
+  "source_sha256": "0dbbec98e5e33de0be9b12d5f286011a6ea8f18e40baae092542b38ff00e7c7b",
+  "function": "0x5f040",
+  "cases": [
+    {
+      "lines": [
+        {
+          "polygon": [
+            36,
+            2,
+            65.0,
+            2.0,
+            94,
+            2,
+            94,
+            17,
+            65.0,
+            17.0,
+            36,
+            17
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.4146378863207758,
+          "language_score": 0.07623192208923672,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            102,
+            19,
+            102.0,
+            27.0,
+            102,
+            35,
+            33,
+            35,
+            33.0,
+            27.0,
+            33,
+            19
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.1862033210959666,
+          "language_score": 0.05592464089950048,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            20,
+            6,
+            99,
+            6,
+            99,
+            32,
+            20,
+            32
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.6333759955042545,
+          "language_score": 0.01032228833091967,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            46,
+            0,
+            46,
+            24,
+            34,
+            24,
+            34,
+            0
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.934044231230488,
+          "language_score": 0.05449610655738849,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            38,
+            3,
+            132,
+            3,
+            132,
+            20,
+            38,
+            20
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.5023472973495401,
+          "language_score": 0.0792329546781966,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            114,
+            16,
+            114,
+            39,
+            36,
+            39,
+            36,
+            16
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.2864271673904162,
+          "language_score": 0.06356418324192599,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            17,
+            10,
+            29.5,
+            10.0,
+            42,
+            10,
+            42,
+            35,
+            29.5,
+            35.0,
+            17,
+            35
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.8868089543511397,
+          "language_score": 0.09353428519673904,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            99,
+            10,
+            99.0,
+            21.5,
+            99,
+            33,
+            22,
+            33,
+            22.0,
+            21.5,
+            22,
+            10
+          ],
+          "horizontal": false,
+          "text": "AB",
+          "confidence_score": 0.4048408946943579,
+          "language_score": 0.02295782151958593,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        1
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            16,
+            0,
+            60,
+            0,
+            60,
+            19,
+            16,
+            19
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.1630463545196459,
+          "language_score": 0.07156473682656109,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            103,
+            15,
+            103,
+            40,
+            29,
+            40,
+            29,
+            15
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.7667336535106539,
+          "language_score": 0.009191430437265613,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            11,
+            5,
+            63,
+            5,
+            63,
+            20,
+            11,
+            20
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.7212967458488764,
+          "language_score": 0.03816720176205006,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            87,
+            9,
+            87,
+            32,
+            8,
+            32,
+            8,
+            9
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.2851928209538387,
+          "language_score": 0.06130234797066666,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            27,
+            17,
+            63.0,
+            17.0,
+            99,
+            17,
+            99,
+            41,
+            63.0,
+            41.0,
+            27,
+            41
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.8767204957986628,
+          "language_score": 0.09955246129917056,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            44,
+            2,
+            44.0,
+            16.0,
+            44,
+            30,
+            25,
+            30,
+            25.0,
+            16.0,
+            25,
+            2
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.8231739682582723,
+          "language_score": 0.08130779376091388,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            21,
+            18,
+            115,
+            18,
+            115,
+            40,
+            21,
+            40
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.3819088037369487,
+          "language_score": 0.06275909836008231,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            34,
+            0,
+            34,
+            15,
+            14,
+            15,
+            14,
+            0
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.9379445165844207,
+          "language_score": 0.05627545589165911,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            28,
+            11,
+            72,
+            11,
+            72,
+            33,
+            28,
+            33
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.2078525567817704,
+          "language_score": 0.06963507519338272,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            81,
+            13,
+            81,
+            32,
+            6,
+            32,
+            6,
+            13
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.20761879683319773,
+          "language_score": 0.09988944450764267,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            17,
+            11,
+            66.0,
+            11.0,
+            115,
+            11,
+            115,
+            30,
+            66.0,
+            30.0,
+            17,
+            30
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.7599705167778109,
+          "language_score": 0.028393079211091864,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            123,
+            7,
+            123.0,
+            15.0,
+            123,
+            23,
+            21,
+            23,
+            21.0,
+            15.0,
+            21,
+            7
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.4670832468566284,
+          "language_score": 0.005810431351404533,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            22,
+            1,
+            78,
+            1,
+            78,
+            25,
+            22,
+            25
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.9217448372553071,
+          "language_score": 0.07227746449422494,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            46,
+            1,
+            46,
+            11,
+            27,
+            11,
+            27,
+            1
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.8754620126082859,
+          "language_score": 0.09832025162852195,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            10,
+            4,
+            88,
+            4,
+            88,
+            33,
+            10,
+            33
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.9647183490281059,
+          "language_score": 0.03748233523909087,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            95,
+            9,
+            95,
+            33,
+            22,
+            33,
+            22,
+            9
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.21512383520169487,
+          "language_score": 0.039947819502519646,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            6,
+            13,
+            15.5,
+            13.0,
+            25,
+            13,
+            25,
+            32,
+            15.5,
+            32.0,
+            6,
+            32
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.4360255042624739,
+          "language_score": 0.05564582253356881,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            58,
+            13,
+            58.0,
+            20.5,
+            58,
+            28,
+            32,
+            28,
+            32.0,
+            20.5,
+            32,
+            13
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.4081352771428943,
+          "language_score": 0.08543613024736266,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            0,
+            11,
+            95,
+            11,
+            95,
+            29,
+            0,
+            29
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.5751281335826118,
+          "language_score": 0.04064112954531697,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            54,
+            16,
+            54,
+            33,
+            19,
+            33,
+            19,
+            16
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.993431817783747,
+          "language_score": 0.07133320027507598,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            21,
+            7,
+            37,
+            7,
+            37,
+            23,
+            21,
+            23
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.36850961927870707,
+          "language_score": 0.009361039280703597,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            96,
+            14,
+            96,
+            35,
+            14,
+            35,
+            14,
+            14
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.7022482686030821,
+          "language_score": 0.05796867320424402,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            24,
+            13,
+            29.0,
+            13.0,
+            34,
+            13,
+            34,
+            27,
+            29.0,
+            27.0,
+            24,
+            27
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.9984166161605936,
+          "language_score": 0.09163402777198705,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            94,
+            12,
+            94.0,
+            18.0,
+            94,
+            24,
+            2,
+            24,
+            2.0,
+            18.0,
+            2,
+            12
+          ],
+          "horizontal": false,
+          "text": "中文",
+          "confidence_score": 0.07880289641078364,
+          "language_score": 0.07498114946358067,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            29,
+            0,
+            114,
+            0,
+            114,
+            14,
+            29,
+            14
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.9309825845902591,
+          "language_score": 0.030978379318077665,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            54,
+            13,
+            54,
+            29,
+            22,
+            29,
+            22,
+            13
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.7978424465997173,
+          "language_score": 0.0754766536112551,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            14,
+            15,
+            102,
+            15,
+            102,
+            29,
+            14,
+            29
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.17081752909274017,
+          "language_score": 0.06171729729740212,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            95,
+            18,
+            95,
+            41,
+            13,
+            41,
+            13,
+            18
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.41970118256338373,
+          "language_score": 0.022729041568985243,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        1
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            27,
+            17,
+            46.0,
+            17.0,
+            65,
+            17,
+            65,
+            37,
+            46.0,
+            37.0,
+            27,
+            37
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.8907620045298307,
+          "language_score": 0.03295931512663695,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            71,
+            2,
+            71.0,
+            7.0,
+            71,
+            12,
+            19,
+            12,
+            19.0,
+            7.0,
+            19,
+            2
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.7066513515271547,
+          "language_score": 0.0028415771494347706,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            5,
+            16,
+            46,
+            16,
+            46,
+            40,
+            5,
+            40
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.7710482228965014,
+          "language_score": 0.043309687350855074,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            122,
+            4,
+            122,
+            27,
+            31,
+            27,
+            31,
+            4
+          ],
+          "horizontal": false,
+          "text": "AB",
+          "confidence_score": 0.3428894522895577,
+          "language_score": 0.038715464604212754,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            25,
+            9,
+            103,
+            9,
+            103,
+            33,
+            25,
+            33
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.989687857753397,
+          "language_score": 0.015879071023864988,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            52,
+            9,
+            52,
+            21,
+            13,
+            21,
+            13,
+            9
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.6209864911137678,
+          "language_score": 0.01823128757204918,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            11,
+            10,
+            59.5,
+            10.0,
+            108,
+            10,
+            108,
+            25,
+            59.5,
+            25.0,
+            11,
+            25
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.6263942682067803,
+          "language_score": 0.023321017861463268,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            34,
+            18,
+            34.0,
+            24.5,
+            34,
+            31,
+            24,
+            31,
+            24.0,
+            24.5,
+            24,
+            18
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.9852609911674545,
+          "language_score": 0.03391990881786129,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            8,
+            5,
+            28,
+            5,
+            28,
+            27,
+            8,
+            27
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.15882616391041082,
+          "language_score": 0.0705070909289448,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            25,
+            14,
+            25,
+            43,
+            8,
+            43,
+            8,
+            14
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.7786639821938042,
+          "language_score": 0.04056755732414411,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        1
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            13,
+            8,
+            33,
+            8,
+            33,
+            34,
+            13,
+            34
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.9485051316345884,
+          "language_score": 0.03937289204444907,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            104,
+            15,
+            104,
+            44,
+            33,
+            44,
+            33,
+            15
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.22930141703299212,
+          "language_score": 0.06976414874692588,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            27,
+            6,
+            55.5,
+            6.0,
+            84,
+            6,
+            84,
+            34,
+            55.5,
+            34.0,
+            27,
+            34
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.528926628620887,
+          "language_score": 0.024782905094979102,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            64,
+            12,
+            64.0,
+            20.0,
+            64,
+            28,
+            37,
+            28,
+            37.0,
+            20.0,
+            37,
+            12
+          ],
+          "horizontal": false,
+          "text": "中文",
+          "confidence_score": 0.7648164036232057,
+          "language_score": 0.0722996898213157,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            17,
+            4,
+            52.5,
+            4.0,
+            88,
+            4,
+            88,
+            19,
+            52.5,
+            19.0,
+            17,
+            19
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.9328039100582152,
+          "language_score": 0.012153548787189961,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            19,
+            12,
+            99,
+            12,
+            99,
+            37,
+            19,
+            37
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.675044415326601,
+          "language_score": 0.06430218673737541,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            95,
+            8,
+            95,
+            18,
+            17,
+            18,
+            17,
+            8
+          ],
+          "horizontal": false,
+          "text": "AB",
+          "confidence_score": 0.9294753341012287,
+          "language_score": 0.018789397835810205,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            25,
+            13,
+            69,
+            13,
+            69,
+            23,
+            25,
+            23
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.4685382103376333,
+          "language_score": 0.02447524251352634,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            25,
+            4,
+            132,
+            4,
+            132,
+            17,
+            25,
+            17
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.6152370944237986,
+          "language_score": 0.04362740397444091,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            62,
+            2,
+            62,
+            24,
+            5,
+            24,
+            5,
+            2
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.004872784359284066,
+          "language_score": 0.050427975620125444,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            7,
+            18,
+            63,
+            18,
+            63,
+            43,
+            7,
+            43
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.4582004236953151,
+          "language_score": 0.08108981821369718,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            9,
+            17,
+            25.5,
+            17.0,
+            42,
+            17,
+            42,
+            42,
+            25.5,
+            42.0,
+            9,
+            42
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.6673708561996224,
+          "language_score": 0.05323508488784432,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            21,
+            13,
+            21.0,
+            20.5,
+            21,
+            28,
+            6,
+            28,
+            6.0,
+            20.5,
+            6,
+            13
+          ],
+          "horizontal": false,
+          "text": "AB",
+          "confidence_score": 0.7890094805345339,
+          "language_score": 0.09311633226953595,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            15,
+            14,
+            66.5,
+            14.0,
+            118,
+            14,
+            118,
+            43,
+            66.5,
+            43.0,
+            15,
+            43
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.4911939997593938,
+          "language_score": 0.02242768330320325,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            18,
+            3,
+            100,
+            3,
+            100,
+            14,
+            18,
+            14
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.5432917085096688,
+          "language_score": 0.0645352519835309,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            91,
+            16,
+            91,
+            37,
+            6,
+            37,
+            6,
+            16
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.26474939582693846,
+          "language_score": 0.015046032178577983,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            11,
+            1,
+            64,
+            1,
+            64,
+            30,
+            11,
+            30
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.9440738670738391,
+          "language_score": 0.05605474619109764,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            18,
+            4,
+            90,
+            4,
+            90,
+            20,
+            18,
+            20
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.3141552706824914,
+          "language_score": 0.046959964031950296,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            15,
+            19,
+            15,
+            38,
+            2,
+            38,
+            2,
+            19
+          ],
+          "horizontal": false,
+          "text": "中文",
+          "confidence_score": 0.749416939572009,
+          "language_score": 0.052681172580011836,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            4,
+            16,
+            52,
+            16,
+            52,
+            35,
+            4,
+            35
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.07646033990734635,
+          "language_score": 0.04448894284096777,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            14,
+            4,
+            23.5,
+            4.0,
+            33,
+            4,
+            33,
+            29,
+            23.5,
+            29.0,
+            14,
+            29
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.22619444394148747,
+          "language_score": 0.010974790597483408,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            104,
+            16,
+            104.0,
+            27.0,
+            104,
+            38,
+            29,
+            38,
+            29.0,
+            27.0,
+            29,
+            16
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.43051442519610594,
+          "language_score": 0.039597098810802124,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            27,
+            14,
+            78.5,
+            14.0,
+            130,
+            14,
+            130,
+            26,
+            78.5,
+            26.0,
+            27,
+            26
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.26229043903751714,
+          "language_score": 0.014199766530109015,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            28,
+            10,
+            61,
+            10,
+            61,
+            22,
+            28,
+            22
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.7032983288864889,
+          "language_score": 0.01583472964009105,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            40,
+            4,
+            40,
+            28,
+            4,
+            28,
+            4,
+            4
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.9641629704130099,
+          "language_score": 0.042860977550281544,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            28,
+            10,
+            134,
+            10,
+            134,
+            29,
+            28,
+            29
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.03601945674493967,
+          "language_score": 0.049652943837976096,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            26,
+            16,
+            107,
+            16,
+            107,
+            41,
+            26,
+            41
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.13887464573687203,
+          "language_score": 0.00012977517034679087,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            61,
+            5,
+            61,
+            18,
+            20,
+            18,
+            20,
+            5
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.7552708419213621,
+          "language_score": 0.0001132998182015621,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            34,
+            16,
+            46,
+            16,
+            46,
+            32,
+            34,
+            32
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.8106517554670194,
+          "language_score": 0.08281419504283997,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            27,
+            17,
+            66.5,
+            17.0,
+            106,
+            17,
+            106,
+            35,
+            66.5,
+            35.0,
+            27,
+            35
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.004757375614463877,
+          "language_score": 0.09379501027685413,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            96,
+            17,
+            96.0,
+            23.5,
+            96,
+            30,
+            16,
+            30,
+            16.0,
+            23.5,
+            16,
+            17
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.7176642371989209,
+          "language_score": 0.08818262027712552,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            12,
+            7,
+            39.5,
+            7.0,
+            67,
+            7,
+            67,
+            23,
+            39.5,
+            23.0,
+            12,
+            23
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.7651465067146067,
+          "language_score": 0.059201015913243914,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            26,
+            7,
+            93,
+            7,
+            93,
+            17,
+            26,
+            17
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.17898765645381964,
+          "language_score": 0.021709712966595483,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            87,
+            9,
+            87,
+            21,
+            32,
+            21,
+            32,
+            9
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.9276314654741118,
+          "language_score": 0.04669668193426929,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            38,
+            11,
+            106,
+            11,
+            106,
+            34,
+            38,
+            34
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.12907179680884717,
+          "language_score": 0.011909655291640574,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            32,
+            15,
+            108,
+            15,
+            108,
+            25,
+            32,
+            25
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.15202093951877993,
+          "language_score": 0.035269421811956844,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            41,
+            13,
+            41,
+            24,
+            21,
+            24,
+            21,
+            13
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.5424332635878345,
+          "language_score": 0.08882661709890687,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            25,
+            4,
+            122,
+            4,
+            122,
+            25,
+            25,
+            25
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.06893953710070988,
+          "language_score": 0.055219792027933944,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            5,
+            11,
+            56.0,
+            11.0,
+            107,
+            11,
+            107,
+            34,
+            56.0,
+            34.0,
+            5,
+            34
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.7542833358149345,
+          "language_score": 0.08165421226610457,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            90,
+            16,
+            90.0,
+            26.5,
+            90,
+            37,
+            4,
+            37,
+            4.0,
+            26.5,
+            4,
+            16
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.5733978520042918,
+          "language_score": 0.004283148168333584,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            8,
+            7,
+            46.5,
+            7.0,
+            85,
+            7,
+            85,
+            27,
+            46.5,
+            27.0,
+            8,
+            27
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.05743681711975257,
+          "language_score": 0.04327428730004514,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            23,
+            13,
+            122,
+            13,
+            122,
+            30,
+            23,
+            30
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.3421611903605405,
+          "language_score": 0.039868988149016626,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            40,
+            7,
+            40,
+            30,
+            5,
+            30,
+            5,
+            7
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.05792713769132296,
+          "language_score": 0.022582845960421392,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            30,
+            19,
+            136,
+            19,
+            136,
+            37,
+            30,
+            37
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.34803890935434834,
+          "language_score": 0.08942557600768672,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            1,
+            4,
+            71,
+            4,
+            71,
+            24,
+            1,
+            24
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.5500604641759798,
+          "language_score": 0.03197521713774738,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            81,
+            4,
+            81,
+            30,
+            7,
+            30,
+            7,
+            4
+          ],
+          "horizontal": false,
+          "text": "中文",
+          "confidence_score": 0.24402213191683753,
+          "language_score": 0.09282631542611389,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            22,
+            6,
+            82,
+            6,
+            82,
+            30,
+            22,
+            30
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.30503754916400205,
+          "language_score": 0.051050654524157024,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            19,
+            5,
+            38.5,
+            5.0,
+            58,
+            5,
+            58,
+            32,
+            38.5,
+            32.0,
+            19,
+            32
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.7619764152871812,
+          "language_score": 0.06587351473340221,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            118,
+            14,
+            118.0,
+            24.5,
+            118,
+            35,
+            19,
+            35,
+            19.0,
+            24.5,
+            19,
+            14
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.9727548665877356,
+          "language_score": 0.07305152171878027,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            17,
+            13,
+            50.5,
+            13.0,
+            84,
+            13,
+            84,
+            30,
+            50.5,
+            30.0,
+            17,
+            30
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.5553106593658602,
+          "language_score": 0.028360016558257685,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            2,
+            16,
+            49,
+            16,
+            49,
+            28,
+            2,
+            28
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.7134221725575951,
+          "language_score": 0.06695340706945785,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            32,
+            9,
+            32,
+            35,
+            2,
+            35,
+            2,
+            9
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.7380696024498024,
+          "language_score": 0.013347876238669199,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            13,
+            17,
+            56,
+            17,
+            56,
+            34,
+            13,
+            34
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.1575651937943987,
+          "language_score": 0.06254211082924978,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            6,
+            16,
+            93,
+            16,
+            93,
+            28,
+            6,
+            28
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.028513441572782794,
+          "language_score": 0.02214326453070804,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            109,
+            17,
+            109,
+            45,
+            32,
+            45,
+            32,
+            17
+          ],
+          "horizontal": false,
+          "text": "AB",
+          "confidence_score": 0.11884144172023381,
+          "language_score": 0.01801021772413124,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            6,
+            0,
+            22,
+            0,
+            22,
+            19,
+            6,
+            19
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.47908176048438156,
+          "language_score": 0.033491207895359955,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        1,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            22,
+            5,
+            76.5,
+            5.0,
+            131,
+            5,
+            131,
+            24,
+            76.5,
+            24.0,
+            22,
+            24
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.009286343577323275,
+          "language_score": 0.051087623577557126,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            73,
+            8,
+            73.0,
+            20.5,
+            73,
+            33,
+            15,
+            33,
+            15.0,
+            20.5,
+            15,
+            8
+          ],
+          "horizontal": false,
+          "text": "中文",
+          "confidence_score": 0.9128259681509556,
+          "language_score": 0.016930073803553058,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            22,
+            13,
+            27.5,
+            13.0,
+            33,
+            13,
+            33,
+            27,
+            27.5,
+            27.0,
+            22,
+            27
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.7335971672422334,
+          "language_score": 0.019621066741103532,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            21,
+            18,
+            49,
+            18,
+            49,
+            34,
+            21,
+            34
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.6262147315939182,
+          "language_score": 0.05751680798676136,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            77,
+            19,
+            77,
+            37,
+            17,
+            37,
+            17,
+            19
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.40450144556210255,
+          "language_score": 0.012895929599538081,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            36,
+            14,
+            103,
+            14,
+            103,
+            31,
+            36,
+            31
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.8860086964481734,
+          "language_score": 0.05988869390320284,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            6,
+            9,
+            68,
+            9,
+            68,
+            30,
+            6,
+            30
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.9678829691950572,
+          "language_score": 0.022020548244721227,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            31,
+            9,
+            31,
+            23,
+            16,
+            23,
+            16,
+            9
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.9171947796848442,
+          "language_score": 0.051767180994693886,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            3,
+            0,
+            99,
+            0,
+            99,
+            23,
+            3,
+            23
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.6512970797452697,
+          "language_score": 0.06297395174531428,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            8,
+            7,
+            20.5,
+            7.0,
+            33,
+            7,
+            33,
+            26,
+            20.5,
+            26.0,
+            8,
+            26
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.6736878117059683,
+          "language_score": 0.007809645744655624,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            59,
+            14,
+            59.0,
+            21.0,
+            59,
+            28,
+            27,
+            28,
+            27.0,
+            21.0,
+            27,
+            14
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.976381927347554,
+          "language_score": 0.046711473785403926,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            8,
+            7,
+            34.0,
+            7.0,
+            60,
+            7,
+            60,
+            35,
+            34.0,
+            35.0,
+            8,
+            35
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.5416744192198258,
+          "language_score": 0.005781152709200377,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            6,
+            5,
+            23,
+            5,
+            23,
+            15,
+            6,
+            15
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.299116689218203,
+          "language_score": 0.05846325385201517,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            46,
+            15,
+            46,
+            29,
+            7,
+            29,
+            7,
+            15
+          ],
+          "horizontal": false,
+          "text": "中文",
+          "confidence_score": 0.0026638929406680445,
+          "language_score": 0.0838549500252544,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            2,
+            16,
+            21,
+            16,
+            21,
+            35,
+            2,
+            35
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.7501530098005165,
+          "language_score": 0.04262262934204804,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            38,
+            14,
+            58,
+            14,
+            58,
+            43,
+            38,
+            43
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.11117040393870137,
+          "language_score": 0.06477389322154183,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            127,
+            2,
+            127,
+            24,
+            24,
+            24,
+            24,
+            2
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.8394651606355027,
+          "language_score": 0.0030290401176572444,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            32,
+            12,
+            64,
+            12,
+            64,
+            27,
+            32,
+            27
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.018554283801767046,
+          "language_score": 0.05339568147868391,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            31,
+            13,
+            61.5,
+            13.0,
+            92,
+            13,
+            92,
+            39,
+            61.5,
+            39.0,
+            31,
+            39
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.7907491747557742,
+          "language_score": 0.08673443604665436,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            67,
+            9,
+            67.0,
+            16.0,
+            67,
+            23,
+            19,
+            23,
+            19.0,
+            16.0,
+            19,
+            9
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.11510518952698379,
+          "language_score": 0.06629802411692001,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            37,
+            14,
+            87.5,
+            14.0,
+            138,
+            14,
+            138,
+            32,
+            87.5,
+            32.0,
+            37,
+            32
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.42359687220958187,
+          "language_score": 0.01814435507184229,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            18,
+            3,
+            18.0,
+            11.0,
+            18,
+            19,
+            2,
+            19,
+            2.0,
+            11.0,
+            2,
+            3
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.44615043158338863,
+          "language_score": 0.09000834154339674,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            1,
+            13,
+            34.5,
+            13.0,
+            68,
+            13,
+            68,
+            42,
+            34.5,
+            42.0,
+            1,
+            42
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.41247532262056374,
+          "language_score": 0.09055705540641096,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            147,
+            14,
+            147.0,
+            23.5,
+            147,
+            33,
+            38,
+            33,
+            38.0,
+            23.5,
+            38,
+            14
+          ],
+          "horizontal": false,
+          "text": "AB",
+          "confidence_score": 0.3632004900466914,
+          "language_score": 0.07980220479484733,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            23,
+            4,
+            74,
+            4,
+            74,
+            29,
+            23,
+            29
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.16311125181981823,
+          "language_score": 0.039470483794935805,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            108,
+            16,
+            108,
+            26,
+            5,
+            26,
+            5,
+            16
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.07951908311228462,
+          "language_score": 0.07284907086306977,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            24,
+            5,
+            123,
+            5,
+            123,
+            21,
+            24,
+            21
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.1641891616738863,
+          "language_score": 0.04158490023770299,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            22,
+            15,
+            22,
+            36,
+            4,
+            36,
+            4,
+            15
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.36989606383085405,
+          "language_score": 0.01710632901202943,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            24,
+            6,
+            80,
+            6,
+            80,
+            26,
+            24,
+            26
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.989660547222278,
+          "language_score": 0.06676001714226656,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            51,
+            6,
+            51,
+            18,
+            29,
+            18,
+            29,
+            6
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.45485008228020185,
+          "language_score": 0.08942205571288497,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            3,
+            10,
+            59,
+            10,
+            59,
+            28,
+            3,
+            28
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.5041457318438365,
+          "language_score": 0.08364221173860537,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            107,
+            15,
+            107,
+            29,
+            14,
+            29,
+            14,
+            15
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.9054156375990002,
+          "language_score": 0.07300573992465235,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            10,
+            5,
+            56,
+            5,
+            56,
+            27,
+            10,
+            27
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.33316609662695196,
+          "language_score": 0.04052669895293289,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            39,
+            4,
+            39,
+            30,
+            24,
+            30,
+            24,
+            4
+          ],
+          "horizontal": false,
+          "text": "中文",
+          "confidence_score": 0.6534483493394766,
+          "language_score": 0.07294888084588261,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            15,
+            7,
+            44,
+            7,
+            44,
+            35,
+            15,
+            35
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.50926321205502,
+          "language_score": 0.01862270584260787,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            14,
+            17,
+            14,
+            33,
+            3,
+            33,
+            3,
+            17
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.7222012816145548,
+          "language_score": 0.09787034766042349,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            30,
+            5,
+            76.5,
+            5.0,
+            123,
+            5,
+            123,
+            24,
+            76.5,
+            24.0,
+            30,
+            24
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.5387757649863116,
+          "language_score": 0.0703544133304658,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            55,
+            3,
+            55.0,
+            10.5,
+            55,
+            18,
+            26,
+            18,
+            26.0,
+            10.5,
+            26,
+            3
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.09197280311339584,
+          "language_score": 0.027855690835521262,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            8,
+            7,
+            56.5,
+            7.0,
+            105,
+            7,
+            105,
+            22,
+            56.5,
+            22.0,
+            8,
+            22
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.7265169613441209,
+          "language_score": 0.075990375890961,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            110,
+            8,
+            110.0,
+            19.5,
+            110,
+            31,
+            25,
+            31,
+            25.0,
+            19.5,
+            25,
+            8
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.7038578641142897,
+          "language_score": 0.09038500274858173,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            28,
+            0,
+            71.5,
+            0.0,
+            115,
+            0,
+            115,
+            17,
+            71.5,
+            17.0,
+            28,
+            17
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.20733329994540917,
+          "language_score": 0.02930710203198832,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            40,
+            3,
+            40.0,
+            10.0,
+            40,
+            17,
+            25,
+            17,
+            25.0,
+            10.0,
+            25,
+            3
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.9087313042473738,
+          "language_score": 0.06292463914631347,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            25,
+            16,
+            91,
+            16,
+            91,
+            34,
+            25,
+            34
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.016695187701809555,
+          "language_score": 0.07676412688618206,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            95,
+            19,
+            95,
+            43,
+            15,
+            43,
+            15,
+            19
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.3842707030333955,
+          "language_score": 0.06604702511979843,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            28,
+            10,
+            117,
+            10,
+            117,
+            30,
+            28,
+            30
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.45184912392584475,
+          "language_score": 0.07700706857526231,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            54,
+            15,
+            54,
+            28,
+            30,
+            28,
+            30,
+            15
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.9457926180076776,
+          "language_score": 0.061207944020912564,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            39,
+            6,
+            118,
+            6,
+            118,
+            35,
+            39,
+            35
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.04014319861240412,
+          "language_score": 0.07505649131589992,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            49,
+            6,
+            49,
+            30,
+            0,
+            30,
+            0,
+            6
+          ],
+          "horizontal": false,
+          "text": "中文",
+          "confidence_score": 0.6335886641509031,
+          "language_score": 0.07323278507064225,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            39,
+            7,
+            145,
+            7,
+            145,
+            18,
+            39,
+            18
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.6239164821550945,
+          "language_score": 0.036781293688697744,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            91,
+            19,
+            91,
+            31,
+            25,
+            31,
+            25,
+            19
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.18239028663809864,
+          "language_score": 0.06847662772618422,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            31,
+            2,
+            66,
+            2,
+            66,
+            29,
+            31,
+            29
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.5065655237739902,
+          "language_score": 0.06930770578648077,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            29,
+            9,
+            29,
+            20,
+            9,
+            20,
+            9,
+            9
+          ],
+          "horizontal": false,
+          "text": "AB",
+          "confidence_score": 0.7742211968358825,
+          "language_score": 0.034852016778271135,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            36,
+            9,
+            117,
+            9,
+            117,
+            37,
+            36,
+            37
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.7607471962282822,
+          "language_score": 0.09368942880413808,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            62,
+            4,
+            62,
+            29,
+            24,
+            29,
+            24,
+            4
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.34004055538386246,
+          "language_score": 0.04069569776132977,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            4,
+            8,
+            28.5,
+            8.0,
+            53,
+            8,
+            53,
+            26,
+            28.5,
+            26.0,
+            4,
+            26
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.013306036343408323,
+          "language_score": 0.06977077799989126,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            120,
+            1,
+            120.0,
+            12.5,
+            120,
+            24,
+            14,
+            24,
+            14.0,
+            12.5,
+            14,
+            1
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.7585249124745269,
+          "language_score": 0.014525838469588093,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            20,
+            9,
+            50.5,
+            9.0,
+            81,
+            9,
+            81,
+            27,
+            50.5,
+            27.0,
+            20,
+            27
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.40625889063939236,
+          "language_score": 0.03428687159542555,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            102,
+            2,
+            102.0,
+            11.5,
+            102,
+            21,
+            32,
+            21,
+            32.0,
+            11.5,
+            32,
+            2
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.01996830589318921,
+          "language_score": 0.04854667571578678,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            23,
+            4,
+            72.5,
+            4.0,
+            122,
+            4,
+            122,
+            30,
+            72.5,
+            30.0,
+            23,
+            30
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.218405721975527,
+          "language_score": 0.041547569437844156,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            58,
+            8,
+            58.0,
+            21.0,
+            58,
+            34,
+            8,
+            34,
+            8.0,
+            21.0,
+            8,
+            8
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.6765813937348435,
+          "language_score": 0.05242966199085882,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            23,
+            2,
+            103,
+            2,
+            103,
+            16,
+            23,
+            16
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.5064357022578603,
+          "language_score": 0.04422728062405138,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            83,
+            15,
+            83,
+            39,
+            22,
+            39,
+            22,
+            15
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.18636909063702167,
+          "language_score": 0.01587539560291651,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            13,
+            8,
+            92,
+            8,
+            92,
+            29,
+            13,
+            29
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.8665283219265836,
+          "language_score": 0.07081418352682688,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            119,
+            6,
+            119,
+            27,
+            28,
+            27,
+            28,
+            6
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.5711954797502772,
+          "language_score": 0.018972741836885264,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            17,
+            16,
+            110,
+            16,
+            110,
+            32,
+            17,
+            32
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.8738796336517094,
+          "language_score": 0.011738991995074522,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            67,
+            0,
+            67,
+            18,
+            2,
+            18,
+            2,
+            0
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.970935219989626,
+          "language_score": 0.0017878667291823414,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            2,
+            14,
+            22,
+            14,
+            22,
+            36,
+            2,
+            36
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.3837925137236289,
+          "language_score": 0.0054015412795734965,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            91,
+            7,
+            91,
+            17,
+            19,
+            17,
+            19,
+            7
+          ],
+          "horizontal": false,
+          "text": "AB",
+          "confidence_score": 0.3187938842058611,
+          "language_score": 0.036144518394884195,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            14,
+            11,
+            79,
+            11,
+            79,
+            33,
+            14,
+            33
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.9846329951016058,
+          "language_score": 0.08431281968177222,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            32,
+            15,
+            32,
+            37,
+            22,
+            37,
+            22,
+            15
+          ],
+          "horizontal": false,
+          "text": "中文",
+          "confidence_score": 0.334429791511085,
+          "language_score": 0.06145410077907861,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            32,
+            12,
+            129,
+            12,
+            129,
+            34,
+            32,
+            34
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.17782234908885264,
+          "language_score": 0.07516366210457487,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            54,
+            0,
+            54,
+            25,
+            4,
+            25,
+            4,
+            0
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.022038655448136657,
+          "language_score": 0.08389062667649683,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            29,
+            18,
+            50.5,
+            18.0,
+            72,
+            18,
+            72,
+            33,
+            50.5,
+            33.0,
+            29,
+            33
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.6626103832873076,
+          "language_score": 0.09629266083560609,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            86,
+            17,
+            86.0,
+            22.0,
+            86,
+            27,
+            4,
+            27,
+            4.0,
+            22.0,
+            4,
+            17
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.07832088266275972,
+          "language_score": 0.021653492138563678,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            13,
+            0,
+            20.0,
+            0.0,
+            27,
+            0,
+            27,
+            27,
+            20.0,
+            27.0,
+            13,
+            27
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.053478964081699276,
+          "language_score": 0.01230477770594356,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            62,
+            1,
+            62.0,
+            9.5,
+            62,
+            18,
+            12,
+            18,
+            12.0,
+            9.5,
+            12,
+            1
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.9468209517325474,
+          "language_score": 0.011440410612083295,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            20,
+            18,
+            74.0,
+            18.0,
+            128,
+            18,
+            128,
+            31,
+            74.0,
+            31.0,
+            20,
+            31
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.9138978946154501,
+          "language_score": 0.07003084256778704,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            58,
+            4,
+            58.0,
+            13.5,
+            58,
+            23,
+            19,
+            23,
+            19.0,
+            13.5,
+            19,
+            4
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.6266391190959764,
+          "language_score": 0.07734132446358774,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            5,
+            2,
+            55,
+            2,
+            55,
+            26,
+            5,
+            26
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.39432787958043625,
+          "language_score": 0.004237460164747487,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            54,
+            16,
+            54,
+            40,
+            21,
+            40,
+            21,
+            16
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.11270416625629187,
+          "language_score": 0.0060700052005440265,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            24,
+            2,
+            70,
+            2,
+            70,
+            12,
+            24,
+            12
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.7941528971821584,
+          "language_score": 0.06627844676309168,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            41,
+            5,
+            41,
+            18,
+            8,
+            18,
+            8,
+            5
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.8699392727853827,
+          "language_score": 0.06803497548557849,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            22,
+            12,
+            115,
+            12,
+            115,
+            34,
+            22,
+            34
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.7028255649392421,
+          "language_score": 0.06006029289356618,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            116,
+            8,
+            116,
+            36,
+            37,
+            36,
+            37,
+            8
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.28664946479576503,
+          "language_score": 0.058758555149896294,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            19,
+            8,
+            68,
+            8,
+            68,
+            24,
+            19,
+            24
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.4166517238485885,
+          "language_score": 0.05548777659351779,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            56,
+            17,
+            56,
+            34,
+            12,
+            34,
+            12,
+            17
+          ],
+          "horizontal": false,
+          "text": "AB",
+          "confidence_score": 0.5271539627895823,
+          "language_score": 0.07269076853755137,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            0,
+            3,
+            104,
+            3,
+            104,
+            25,
+            0,
+            25
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.21224521291009502,
+          "language_score": 0.03524834657751437,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            18,
+            8,
+            18,
+            26,
+            6,
+            26,
+            6,
+            8
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.5087116574937446,
+          "language_score": 0.034443080496041945,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            1,
+            2,
+            65,
+            2,
+            65,
+            27,
+            1,
+            27
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.9306026602482995,
+          "language_score": 0.015640016492922338,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            34,
+            0,
+            34,
+            29,
+            16,
+            29,
+            16,
+            0
+          ],
+          "horizontal": false,
+          "text": "中文",
+          "confidence_score": 0.8577147942733041,
+          "language_score": 0.02443689175047773,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            11,
+            3,
+            23.0,
+            3.0,
+            35,
+            3,
+            35,
+            14,
+            23.0,
+            14.0,
+            11,
+            14
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.5510757836185124,
+          "language_score": 0.007723344056675785,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            82,
+            11,
+            82.0,
+            24.5,
+            82,
+            38,
+            25,
+            38,
+            25.0,
+            24.5,
+            25,
+            11
+          ],
+          "horizontal": false,
+          "text": "AB",
+          "confidence_score": 0.5895206473441854,
+          "language_score": 0.0772511090690945,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            36,
+            0,
+            50.5,
+            0.0,
+            65,
+            0,
+            65,
+            21,
+            50.5,
+            21.0,
+            36,
+            21
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.8718866831537994,
+          "language_score": 0.01938224797542386,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            111,
+            7,
+            111.0,
+            15.0,
+            111,
+            23,
+            4,
+            23,
+            4.0,
+            15.0,
+            4,
+            7
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.6612613228697365,
+          "language_score": 0.055762210465734874,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            21,
+            6,
+            44.5,
+            6.0,
+            68,
+            6,
+            68,
+            21,
+            44.5,
+            21.0,
+            21,
+            21
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.07657602080227077,
+          "language_score": 0.00444910061968562,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            51,
+            4,
+            51.0,
+            13.0,
+            51,
+            22,
+            14,
+            22,
+            14.0,
+            13.0,
+            14,
+            4
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.3290728788015719,
+          "language_score": 0.012407864808518831,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            22,
+            8,
+            51,
+            8,
+            51,
+            37,
+            22,
+            37
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.17472842794260457,
+          "language_score": 0.07590380956671415,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            48,
+            1,
+            48,
+            23,
+            5,
+            23,
+            5,
+            1
+          ],
+          "horizontal": false,
+          "text": "AB",
+          "confidence_score": 0.18633468142073295,
+          "language_score": 0.028495415673899828,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            20,
+            14,
+            120,
+            14,
+            120,
+            38,
+            20,
+            38
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.5299460235685601,
+          "language_score": 0.04468424773918672,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            67,
+            19,
+            67,
+            44,
+            23,
+            44,
+            23,
+            19
+          ],
+          "horizontal": false,
+          "text": "中文",
+          "confidence_score": 0.7361680415844043,
+          "language_score": 0.09053181163140425,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            14,
+            13,
+            101,
+            13,
+            101,
+            29,
+            14,
+            29
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.7098825130606456,
+          "language_score": 0.039026011406353936,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            66,
+            12,
+            66,
+            34,
+            13,
+            34,
+            13,
+            12
+          ],
+          "horizontal": false,
+          "text": "AB",
+          "confidence_score": 0.2016369480333926,
+          "language_score": 0.06963129862401632,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            18,
+            4,
+            70,
+            4,
+            70,
+            17,
+            18,
+            17
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.3755929095630095,
+          "language_score": 0.07523840074026046,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            61,
+            19,
+            61,
+            34,
+            36,
+            34,
+            36,
+            19
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.058967932537843604,
+          "language_score": 0.09190688966053037,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            19,
+            8,
+            59,
+            8,
+            59,
+            26,
+            19,
+            26
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.347762304860728,
+          "language_score": 0.07204529791743243,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            29,
+            9,
+            29,
+            24,
+            17,
+            24,
+            17,
+            9
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.20619902496285525,
+          "language_score": 0.09170947182882691,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            21,
+            11,
+            57,
+            11,
+            57,
+            35,
+            21,
+            35
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.07798192998848397,
+          "language_score": 0.03146203233875968,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            113,
+            19,
+            113,
+            33,
+            26,
+            33,
+            26,
+            19
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.5812929337245244,
+          "language_score": 0.09734232443792903,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            35,
+            11,
+            59.5,
+            11.0,
+            84,
+            11,
+            84,
+            21,
+            59.5,
+            21.0,
+            35,
+            21
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.4760261853275707,
+          "language_score": 0.09530013447235305,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            59,
+            9,
+            59.0,
+            17.0,
+            59,
+            25,
+            4,
+            25,
+            4.0,
+            17.0,
+            4,
+            9
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.7970275077656396,
+          "language_score": 0.034454092194139974,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            14,
+            0,
+            45.0,
+            0.0,
+            76,
+            0,
+            76,
+            14,
+            45.0,
+            14.0,
+            14,
+            14
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.12633815344120325,
+          "language_score": 0.004982394738447871,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            68,
+            12,
+            68.0,
+            26.5,
+            68,
+            41,
+            17,
+            41,
+            17.0,
+            26.5,
+            17,
+            12
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.7693763569539288,
+          "language_score": 0.09611403973020544,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            37,
+            14,
+            79.0,
+            14.0,
+            121,
+            14,
+            121,
+            25,
+            79.0,
+            25.0,
+            37,
+            25
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.5067597067963562,
+          "language_score": 0.022582913487245827,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            83,
+            10,
+            83.0,
+            15.0,
+            83,
+            20,
+            23,
+            20,
+            23.0,
+            15.0,
+            23,
+            10
+          ],
+          "horizontal": false,
+          "text": "中文",
+          "confidence_score": 0.8858491908725352,
+          "language_score": 0.06582254906876424,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            0,
+            13,
+            52,
+            13,
+            52,
+            28,
+            0,
+            28
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.7364492784829784,
+          "language_score": 0.03882672229971314,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            65,
+            15,
+            65,
+            28,
+            7,
+            28,
+            7,
+            15
+          ],
+          "horizontal": false,
+          "text": "中文",
+          "confidence_score": 0.32412981896039583,
+          "language_score": 0.0727948019642447,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            7,
+            17,
+            23,
+            17,
+            23,
+            32,
+            7,
+            32
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.008591801214169581,
+          "language_score": 0.03848107207048895,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            124,
+            10,
+            124,
+            26,
+            36,
+            26,
+            36,
+            10
+          ],
+          "horizontal": false,
+          "text": "AB",
+          "confidence_score": 0.08120457703150175,
+          "language_score": 0.028063315630726882,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            38,
+            7,
+            52,
+            7,
+            52,
+            18,
+            38,
+            18
+          ],
+          "horizontal": true,
+          "text": "AB",
+          "confidence_score": 0.20272748397541118,
+          "language_score": 0.014064292731425121,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            87,
+            9,
+            87,
+            31,
+            32,
+            31,
+            32,
+            9
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.46756585474429135,
+          "language_score": 0.0053746987781417175,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            3,
+            5,
+            77,
+            5,
+            77,
+            23,
+            3,
+            23
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.8728743708109609,
+          "language_score": 0.0995644195768538,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            78,
+            18,
+            78,
+            34,
+            37,
+            34,
+            37,
+            18
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.8950740264932455,
+          "language_score": 0.08050226399600918,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            8,
+            12,
+            58,
+            12,
+            58,
+            34,
+            8,
+            34
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.9957090959786181,
+          "language_score": 0.022233571993003687,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            64,
+            8,
+            64,
+            32,
+            26,
+            32,
+            26,
+            8
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.026800714459839114,
+          "language_score": 0.08658227537940072,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            16,
+            16,
+            31,
+            16,
+            31,
+            27,
+            16,
+            27
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.6329185328402945,
+          "language_score": 0.012825525505557345,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            64,
+            4,
+            64,
+            25,
+            9,
+            25,
+            9,
+            4
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.3378857636892204,
+          "language_score": 0.05963247520849675,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            1,
+            17,
+            53.5,
+            17.0,
+            106,
+            17,
+            106,
+            42,
+            53.5,
+            42.0,
+            1,
+            42
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.07887131693131744,
+          "language_score": 0.09679271799011066,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            28,
+            13,
+            28.0,
+            22.0,
+            28,
+            31,
+            15,
+            31,
+            15.0,
+            22.0,
+            15,
+            13
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.2742341559749244,
+          "language_score": 0.07439279936973522,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            17,
+            14,
+            58.5,
+            14.0,
+            100,
+            14,
+            100,
+            39,
+            58.5,
+            39.0,
+            17,
+            39
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.15975992914732262,
+          "language_score": 0.09013566071005318,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            68,
+            3,
+            68.0,
+            11.5,
+            68,
+            20,
+            10,
+            20,
+            10.0,
+            11.5,
+            10,
+            3
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.696782794134881,
+          "language_score": 0.0830060599955893,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            39,
+            1,
+            47.0,
+            1.0,
+            55,
+            1,
+            55,
+            29,
+            47.0,
+            29.0,
+            39,
+            29
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.34166694206893466,
+          "language_score": 0.08413194751558532,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            66,
+            16,
+            66.0,
+            21.5,
+            66,
+            27,
+            7,
+            27,
+            7.0,
+            21.5,
+            7,
+            16
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.3451563023442904,
+          "language_score": 0.06939163978437937,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            21,
+            9,
+            115,
+            9,
+            115,
+            19,
+            21,
+            19
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.0917810177717856,
+          "language_score": 0.036574301531033485,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            126,
+            13,
+            126,
+            29,
+            36,
+            29,
+            36,
+            13
+          ],
+          "horizontal": false,
+          "text": "AB",
+          "confidence_score": 0.7075547721337031,
+          "language_score": 0.09149190241288917,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            29,
+            17,
+            110,
+            17,
+            110,
+            31,
+            29,
+            31
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.6057017162584151,
+          "language_score": 0.09830938334345088,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            60,
+            9,
+            60,
+            36,
+            16,
+            36,
+            16,
+            9
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.13587261862475486,
+          "language_score": 0.05271014935796233,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            21,
+            12,
+            106,
+            12,
+            106,
+            31,
+            21,
+            31
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.8589396978742875,
+          "language_score": 0.031448028967463994,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            90,
+            14,
+            90,
+            32,
+            27,
+            32,
+            27,
+            14
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.6813747851162454,
+          "language_score": 0.034115922945423115,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            39,
+            10,
+            90,
+            10,
+            90,
+            33,
+            39,
+            33
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.13658968822955897,
+          "language_score": 0.025554221053907998,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            89,
+            8,
+            89,
+            36,
+            18,
+            36,
+            18,
+            8
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.6837631365275222,
+          "language_score": 0.014795610232054524,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            24,
+            19,
+            104,
+            19,
+            104,
+            35,
+            24,
+            35
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.5631843070477016,
+          "language_score": 0.08744305143974271,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            134,
+            14,
+            134,
+            35,
+            38,
+            35,
+            38,
+            14
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.9946852348054667,
+          "language_score": 0.01404126341865367,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            12,
+            4,
+            115,
+            4,
+            115,
+            24,
+            12,
+            24
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.2078462071128826,
+          "language_score": 0.06759436171946476,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            90,
+            3,
+            90,
+            29,
+            32,
+            29,
+            32,
+            3
+          ],
+          "horizontal": false,
+          "text": "A",
+          "confidence_score": 0.17599044199547786,
+          "language_score": 0.07195817611131003,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            0,
+            2,
+            38.5,
+            2.0,
+            77,
+            2,
+            77,
+            17,
+            38.5,
+            17.0,
+            0,
+            17
+          ],
+          "horizontal": true,
+          "text": "A",
+          "confidence_score": 0.2435039076035257,
+          "language_score": 0.06449509667777802,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            24,
+            5,
+            24.0,
+            13.5,
+            24,
+            22,
+            13,
+            22,
+            13.0,
+            13.5,
+            13,
+            5
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.5371592739876003,
+          "language_score": 0.05347333439738833,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            38,
+            5,
+            61.5,
+            5.0,
+            85,
+            5,
+            85,
+            17,
+            61.5,
+            17.0,
+            38,
+            17
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.7173589436717673,
+          "language_score": 0.0230827935543509,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            23,
+            18,
+            23.0,
+            31.5,
+            23,
+            45,
+            13,
+            45,
+            13.0,
+            31.5,
+            13,
+            18
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.17702254678258866,
+          "language_score": 0.016474449673437953,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            29,
+            6,
+            77.0,
+            6.0,
+            125,
+            6,
+            125,
+            21,
+            77.0,
+            21.0,
+            29,
+            21
+          ],
+          "horizontal": true,
+          "text": "中文",
+          "confidence_score": 0.8367307845127162,
+          "language_score": 0.02388041070968262,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            73,
+            2,
+            73.0,
+            13.0,
+            73,
+            24,
+            31,
+            24,
+            31.0,
+            13.0,
+            31,
+            2
+          ],
+          "horizontal": false,
+          "text": "中文",
+          "confidence_score": 0.3851677924794432,
+          "language_score": 0.029185390323907247,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            18,
+            17,
+            69,
+            17,
+            69,
+            40,
+            18,
+            40
+          ],
+          "horizontal": true,
+          "text": "+",
+          "confidence_score": 0.40506039399694405,
+          "language_score": 0.017228103481427372,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            83,
+            5,
+            83,
+            27,
+            37,
+            27,
+            37,
+            5
+          ],
+          "horizontal": false,
+          "text": "+",
+          "confidence_score": 0.03473538763163264,
+          "language_score": 0.00843266919406136,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            27,
+            14,
+            112,
+            14,
+            112,
+            38,
+            27,
+            38
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.46381802908482983,
+          "language_score": 0.08891439831112141,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            59,
+            7,
+            59,
+            25,
+            20,
+            25,
+            20,
+            7
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.7029506415522697,
+          "language_score": 0.04733475755118578,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            24,
+            19,
+            128,
+            19,
+            128,
+            48,
+            24,
+            48
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.7305882526075222,
+          "language_score": 0.021598046378426737,
+          "script": 2,
+          "style": 1,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            58,
+            18,
+            58,
+            36,
+            15,
+            36,
+            15,
+            18
+          ],
+          "horizontal": false,
+          "text": "XY",
+          "confidence_score": 0.7894464973833833,
+          "language_score": 0.0760140023080341,
+          "script": 3,
+          "style": 1,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "lines": [
+        {
+          "polygon": [
+            0,
+            4,
+            42,
+            4,
+            42,
+            31,
+            0,
+            31
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.5276279437909757,
+          "language_score": 0.04922284356543449,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            71,
+            17,
+            71,
+            32,
+            6,
+            32,
+            6,
+            17
+          ],
+          "horizontal": false,
+          "text": "123",
+          "confidence_score": 0.9923389761159743,
+          "language_score": 0.008532934502779876,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            33,
+            13,
+            120,
+            13,
+            120,
+            42,
+            33,
+            42
+          ],
+          "horizontal": true,
+          "text": "XY",
+          "confidence_score": 0.6473381923776745,
+          "language_score": 0.050847185784463254,
+          "script": 3,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            81,
+            11,
+            81,
+            25,
+            13,
+            25,
+            13,
+            11
+          ],
+          "horizontal": false,
+          "text": "中文",
+          "confidence_score": 0.6823516051080948,
+          "language_score": 0.09514750406943165,
+          "script": 2,
+          "style": 0,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            8,
+            5,
+            58,
+            5,
+            58,
+            34,
+            8,
+            34
+          ],
+          "horizontal": true,
+          "text": "123",
+          "confidence_score": 0.41481167541699526,
+          "language_score": 0.06484664406779203,
+          "script": 2,
+          "style": 2,
+          "min_rectangle": false
+        },
+        {
+          "polygon": [
+            109,
+            2,
+            109,
+            13,
+            10,
+            13,
+            10,
+            2
+          ],
+          "horizontal": false,
+          "text": "AB",
+          "confidence_score": 0.28579043459086473,
+          "language_score": 0.04386839139767292,
+          "script": 3,
+          "style": 0,
+          "min_rectangle": false
+        }
+      ],
+      "kept": [
+        0,
+        2,
+        4
+      ]
+    }
+  ]
+}

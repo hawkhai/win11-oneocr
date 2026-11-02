@@ -1,6 +1,6 @@
 # OneOCR 原生源码运行时
 
-已有可编译、可运行的 C++20 实现，Windows x64 和 Linux x64 已验证脱离原始 OneOCR DLL 运行。**完整能力对齐尚未完成，当前是实验版本。** 27 项固定用例均能执行，但按全部字段、框坐标、角度和置信度的严格标准仅 1 项通过，不能替换要求原 DLL 等价输出的业务。
+已有可编译、可运行的 C++20 实现，Windows x64 和 Linux x64 已验证脱离原始 OneOCR DLL 运行。第二阶段已恢复检测片段连接、曲线校正、行词框、阅读顺序、21 项置信度特征、手写和方向决策，并按原有严格阈值逐项回归。当前证据与剩余边界见 [第二阶段报告](2026-11-02_oneocr-parity-phase2.md)。Android、macOS、ARM64 尚未完成目标环境验证，完整跨平台目标仍为未完成。
 
 ## 已交付内容
 
@@ -8,13 +8,17 @@
 - 实例式 C ABI、C++ RAII 接口、Windows 旧接口适配 DLL、Android JNI/Java 示例。
 - 从本地模型容器静态导出 67 项资源，包括 34 个 ONNX 图、九组完整字表、组合字符映射和校准表；模型准备也不加载微软 DLL。
 - 23 个私有特征层转换为标准 ONNX 运算。22 个小型网络各使用 64 组原生探针；最大输出差为 `1.7673e-5`。布局网络在 12 次原生调用的输出上误差为 0。
-- Windows 的 ONNX Runtime 已从固定提交源码构建。Linux 本轮使用校验过的官方 CPU SDK 编译、运行本项目 C++ 源码；Linux ORT 自身的源码构建尚未执行。
+- ONNX Runtime 固定为 1.23.2。严格对齐构建需使用本文的源码构建入口；它会固定浮点融合规则，并补齐 GCC 15 所需的标准头文件。各平台实测状态见第二阶段报告。
 
 模型数据保存在独立的 `models/`，不作为 C++ 数组嵌入程序。容器准备工具单独采用 AGPL-3.0-only；C++ 运行时维持项目 MIT 标识，模型所有权保持原样，详见 [第三方声明](../THIRD_PARTY_NOTICES.md)。
 
 ## 本机重新构建
 
 在项目根目录运行。研究环境仅用于模型准备、构建和验证。
+
+图像校正使用与固定 DLL 内一致的 OpenCV 4.10.0 源码版本，只构建 `core` 和 `imgproc` 并静态链接。构建脚本自动调用 `scripts/fetch-opencv.py`，核对固定提交；直接调用 CMake 或在其他平台构建时，先运行 `python3 scripts/fetch-opencv.py`，也可通过 `ONEOCR_OPENCV_SOURCE` 指定已有的同版本源码。关闭 IPP、视频、图像编解码器和其他模块的下载。
+
+Unicode 双向文本和泰语分词使用固定 ICU 74.2 的 common 源码与字典数据，全部静态链接。先用 `python3 scripts/prepare-icu.py` 在 Linux/macOS 构建主机生成数据 C 文件；Windows 构建脚本在数据缺失时调用 WSL，需要其中安装 C/C++ 编译器和 make。已有同版源码可用 `-IcuSource` 或 CMake 的 `ONEOCR_ICU_SOURCE` 指定，数据 C 文件可用 `ONEOCR_ICU_DATA_C` 指定。宿主生成工具不参与正式识别。
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/bootstrap-research.ps1
@@ -38,27 +42,29 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-native.ps1 -Sd
 
 使用 Python 3.12+ 准备数据；将 `models/` 复制到目标平台即可，推理不需要 Python。
 
-Linux x64 使用官方 SDK 的已验证路径：
+Linux/macOS 构建主机先准备 OpenCV 与 ICU 数据：
 
 ```bash
-python3 scripts/fetch-runtime.py --sdk linux-x64
-export ONNXRUNTIME_ROOT="$PWD/work/vendor/sdk-linux-x64/onnxruntime-linux-x64-1.23.2"
-cmake --preset linux-x64
+python3 scripts/fetch-opencv.py
+python3 scripts/prepare-icu.py
+```
+
+ORT 自身从源码构建的通用路径，在对应架构主机上执行。Linux 建议在本地 Linux 文件系统中选择构建目录，以减少跨 WSL 文件系统的编译开销：
+
+```bash
+python3 scripts/fetch-runtime.py --source
+python3 scripts/build-ort.py --build_dir "$PWD/work/ort-source" --config Release --update --build --parallel 4 --build_shared_lib --skip_tests --compile_no_warning_as_error --cmake_extra_defines onnxruntime_BUILD_UNIT_TESTS=OFF
+cmake --install work/ort-source/Release --config Release --prefix "$PWD/work/ort-install"
+export ONNXRUNTIME_ROOT="$PWD/work/ort-install"
+cmake --preset linux-x64 -U ONNXRUNTIME_INCLUDE_DIR -U ONNXRUNTIME_LIBRARY
 cmake --build --preset linux-x64
 ctest --test-dir build/linux-x64 --output-on-failure
 build/linux-x64/native/ocr test.png --model-dir models --text
 ```
 
-ORT 自身从源码构建的通用路径，在对应架构主机上执行：
-
-```bash
-python3 scripts/fetch-runtime.py --source
-python3 scripts/build-ort.py --build_dir "$PWD/work/ort-source" --config Release --update --build --target onnxruntime --parallel 4 --build_shared_lib --skip_tests --compile_no_warning_as_error --cmake_extra_defines onnxruntime_BUILD_UNIT_TESTS=OFF
-cmake --install work/ort-source/Release --config Release --prefix "$PWD/work/ort-install"
-export ONNXRUNTIME_ROOT="$PWD/work/ort-install"
-```
-
 随后选择 `linux-x64`、`macos-x64` 或 `macos-arm64` 预设。Linux ARM64 可在 ARM64 主机按上述通用流程原生构建；从 x64 交叉编译时，`linux-arm64` 预设要求 `aarch64-linux-gnu-g++` 和对应 ARM64 ORT SDK。
+
+`build-ort.py` 在非 Windows 平台强制 `-ffp-contract=off`，保留源码中显式的 FMA 运算。官方 Linux 预编译 SDK 虽能运行，本轮有 2/27 固定用例因量化加法的半整数舍入差异而超出严格阈值，不能作为等价验收的默认运行库。失败记录保留在案件 `evidence/hash-linux/`；没有改模型或放宽比较标准。
 
 Android 使用同一份 C++ 核心和 NDK：
 
@@ -66,7 +72,7 @@ Android 使用同一份 C++ 核心和 NDK：
 export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
 export ANDROID_NDK_HOME="$ANDROID_SDK_ROOT/ndk/27.2.12479018"
 python3 scripts/fetch-runtime.py --source
-python3 scripts/build-ort.py --build_dir "$PWD/work/ort-android" --config Release --update --build --target onnxruntime --parallel 4 --android --android_abi arm64-v8a --android_api 27 --android_sdk_path "$ANDROID_SDK_ROOT" --android_ndk_path "$ANDROID_NDK_HOME" --android_cpp_shared --build_shared_lib --skip_tests --cmake_extra_defines onnxruntime_BUILD_UNIT_TESTS=OFF
+python3 scripts/build-ort.py --build_dir "$PWD/work/ort-android" --config Release --update --build --parallel 4 --android --android_abi arm64-v8a --android_api 27 --android_sdk_path "$ANDROID_SDK_ROOT" --android_ndk_path "$ANDROID_NDK_HOME" --android_cpp_shared --build_shared_lib --skip_tests --cmake_extra_defines onnxruntime_BUILD_UNIT_TESTS=OFF
 cmake --install work/ort-android/Release --config Release --prefix "$PWD/work/ort-android-install"
 export ONNXRUNTIME_ROOT="$PWD/work/ort-android-install"
 cmake --preset android-arm64
@@ -80,7 +86,7 @@ Android 与 macOS 命令是构建配置，尚未进行目标平台编译或真�
 | 平台 | 本项目编译 | 本项目运行 | ORT 本机源码构建 |
 | --- | --- | --- | --- |
 | Windows x64 | 通过 | 通过 | 通过 |
-| Linux x64 / WSL | 通过 | 无网络命名空间内通过 | 未执行；本轮使用官方 SDK |
+| Linux x64 / WSL | 通过 | 无网络命名空间内通过 | 通过；固定隐式浮点融合规则 |
 | Linux arm64 | 未验证 | 未验证 | 未验证 |
 | macOS x64 / arm64 | 未验证 | 未验证 | 未验证 |
 | Android arm64-v8a | 未验证 | 未验证 | 未验证 |
@@ -95,11 +101,11 @@ oneocr::Engine engine("models");
 std::string result = engine.recognize("test.png");
 ```
 
-C 接口见 `native/include/oneocr_portable.h`。路径与 JSON 使用 UTF-8，所有返回字符串由 `oneocr_free` 释放；失败时 JSON 输出置空。BGRA 接口额外接收缓冲区字节数，可验证步长和越界；alpha 与旧接口一致，不参与识别。一个实例内识别调用串行化，独立实例可并发；销毁实例前调用方必须结束使用它的线程。
+C 接口见 `native/include/oneocr_portable.h`。路径与 JSON 使用 UTF-8，所有返回字符串由 `oneocr_free` 释放；失败时 JSON 输出置空。图像宽、高各须为 50～10000 像素，与固定 DLL 的 `RunOcrPipeline` 边界一致；不满足时返回 `ONEOCR_IMAGE_SIZE_ERROR (-18)`。BGRA 接口额外接收缓冲区字节数，可验证步长和越界；alpha 与旧接口一致，不参与识别。一个实例内识别调用串行化，独立实例可并发；销毁实例前调用方必须结束使用它的线程。
 
 Windows 构建另生成 `oneocr_wrapper.dll`，保留 `initModel`、`releaseModel`、`ocrImage`、`ocrImageEx`、`ocrImageRaw` 五个旧入口；初始化目录改为准备后的 `models/`。新适配库调用本项目 C++ 引擎，不加载原 `oneocr.dll`。
 
-JSON 继续使用 `file`、`image`、`image_angle`、`lines`、`words`、`bounding_box`、`style`、`confidence`。`image_angle` 使用 `[0,360)` 度。增加的 `engine` 对象明确记录 `parity: incomplete`：当前词置信度为未经原始校准器处理的 CTC 分数，框、阅读顺序与手写处理也未完全对齐。
+JSON 继续使用 `file`、`image`、`image_angle`、`lines`、`words`、`bounding_box`、`style`、`confidence`。`image_angle` 使用 `[0,360)` 度。词置信度使用恢复的原始 21 项特征和同源网络；手写置信度使用原始分类器与校准表。增加的 `engine` 对象保留 `parity: incomplete`，表示有限回归通过不等于所有输入、参数与目标平台都已验证。
 
 插件默认使用 `artifacts/<process.platform>-<process.arch>/bin/ocr[.exe]`，可配置 `ocrBin`、`modelDir`、`timeoutMs`、`maxOutputBytes`。`backend: legacy` 显式启用旧 Windows 路径；发布包不附带原始 OCR DLL 或模型。原 DLL 构建可使用 `-DONEOCR_BUILD_PORTABLE=OFF -DONEOCR_BUILD_LEGACY=ON`，CLI 目标为 `ocr_legacy`。
 
@@ -113,7 +119,7 @@ JSON 继续使用 `file`、`image`、`image_angle`、`lines`、`words`、`boundi
 .\.research-python\python.exe scripts/summarize-parity.py
 ```
 
-最后一条当前应返回非零，这是原 DLL 对齐失败的真实结果。原始 CLI 不支持本次 Unicode 路径用例，基准工具改用原始 wrapper 的宽字符入口，并在独立子进程运行。
+固定 27 项已按全部比较字段回归。全目录 110 张图片（含缩略图、拼图、参考图）的最新结果与复跑命令见 [全样本报告](../reports/oneocr-all-samples-2026-11-02/README.md)；使用 `scripts/run-all-samples.py` 检查，不允许遗漏图片。原始 CLI 不支持 Unicode 路径用例，基准工具使用原始 wrapper 的宽字符入口，并在独立子进程运行。`scripts/run-parity-suite.py` 可复放其他固定清单；所有失败项保留，不自动放宽阈值。`--error-baseline` 只用于已记录的原 DLL 错误契约，不能将识别差异当成预期错误。
 
 Linux 的断网测试使用独立网络命名空间，不修改主机联网状态：
 

@@ -36,7 +36,7 @@ if __name__=='__main__':
         individual.parent.mkdir(parents=True,exist_ok=True)
         individual.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf8')
         results.append({k:v for k,v in result.items() if k!='failures'})
-    summary={'passed':bool(results) and all(x['passed'] for x in results),'passed_cases':sum(x['passed'] for x in results),'total_cases':len(results),'cases':results,'coverage_gap':'No independently sourced real handwriting fixture is present.'}
+    summary={'passed':bool(results) and all(x['passed'] for x in results),'passed_cases':sum(x['passed'] for x in results),'total_cases':len(results),'cases':results,'coverage_gap':'This 27-case corpus contains no real handwriting; samples/oneocr-parity is reported separately.'}
     args.output.parent.mkdir(parents=True,exist_ok=True);args.output.write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf8')
     print(json.dumps({k:v for k,v in summary.items() if k!='cases'},ensure_ascii=False))
     raise SystemExit(0 if summary['passed'] else 1)

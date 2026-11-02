@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/images/cn-english-book-cover.jpeg",
+  "image_sha256": "13f3a759b7d9d7fc781943f2e192b35c65ea354c09969f6ba9944448fb99578a",
+  "dll_bindings": {
+    "oneocr.dll": "0dbbec98e5e33de0be9b12d5f286011a6ea8f18e40baae092542b38ff00e7c7b",
+    "oneocr.onemodel": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+    "onnxruntime.dll": "c23ac24e40ef4f94201d2b9265482ec211a28dfbf2c480273de35db97a38adbb",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.7794720999663696,
+    "peak_working_set_bytes": 197386240,
+    "stderr": ""
+  },
+  "result_sha256": "c8716cfd3e558f9f4ed09ff8912e03d611851cfff7bd1f1c5363de9cb30ff8f7"
+}

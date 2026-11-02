@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/references/cards-result.jpg",
+  "image_sha256": "db03b6571ced50e5dd2f128c46a4ec0effcd30beadd82df3e3b2479c321da1ce",
+  "dll_bindings": {
+    "oneocr.dll": "0dbbec98e5e33de0be9b12d5f286011a6ea8f18e40baae092542b38ff00e7c7b",
+    "oneocr.onemodel": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+    "onnxruntime.dll": "c23ac24e40ef4f94201d2b9265482ec211a28dfbf2c480273de35db97a38adbb",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.8627330000163056,
+    "peak_working_set_bytes": 229322752,
+    "stderr": ""
+  },
+  "result_sha256": "ba479c3855a2153f01643b9ebabcc62db447b2624a70b12b7edc0f0fc08ef5d9"
+}

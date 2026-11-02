@@ -1,0 +1,48 @@
+{
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\thumbnails\\psm-license-plate.jpg",
+  "image": {
+    "height": 87,
+    "step": 1440,
+    "width": 360
+  },
+  "image_angle": 0.27903494238853455,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        29.0,
+        18.0,
+        337.0,
+        20.0,
+        337.0,
+        70.0,
+        29.0,
+        69.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03530000150203705,
+        "type": "printed"
+      },
+      "text": "MHO4DW8351",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            29.547990798950195,
+            18.98676300048828,
+            337.3235168457031,
+            20.123971939086914,
+            338.0,
+            70.0,
+            29.55493927001953,
+            70.0
+          ],
+          "confidence": 0.8365104794502258,
+          "index": 0,
+          "text": "MHO4DW8351"
+        }
+      ]
+    }
+  ]
+}

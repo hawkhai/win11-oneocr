@@ -1,0 +1,17 @@
+{
+  "file": "oneocr-capabilities/printed-and-real-handwriting.png",
+  "image_sha256": "1fe635d1bd36eb184dc6f73b57f552fd0792e9f162b8aa3a4bf3f268115dba9b",
+  "dll_bindings": {
+    "oneocr.dll": "0dbbec98e5e33de0be9b12d5f286011a6ea8f18e40baae092542b38ff00e7c7b",
+    "oneocr.onemodel": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+    "onnxruntime.dll": "c23ac24e40ef4f94201d2b9265482ec211a28dfbf2c480273de35db97a38adbb",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.9718615000019781,
+    "peak_working_set_bytes": 257048576,
+    "stderr": ""
+  },
+  "result_sha256": "29db2c69438514b2d4f8647d074bc0da856625ba641025f293d07a7eaafb68cc"
+}

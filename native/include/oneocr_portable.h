@@ -21,10 +21,12 @@ typedef struct oneocr_options {
     int32_t resize_height;
 } oneocr_options;
 enum oneocr_status {
-    ONEOCR_OK=0, ONEOCR_INVALID_ARGUMENT=-12, ONEOCR_IMAGE_ERROR=-13,
+    ONEOCR_OK=0, ONEOCR_INVALID_ARGUMENT=-12, ONEOCR_IMAGE_ERROR=-13, ONEOCR_UNSUPPORTED_IMAGE=-15, ONEOCR_IMAGE_SIZE_ERROR=-18,
     ONEOCR_MODEL_ERROR=-30, ONEOCR_RUNTIME_ERROR=-31, ONEOCR_ALLOCATION_ERROR=-19
 };
-/* All paths are UTF-8. Each context serializes its own inference calls.
+/* All paths are UTF-8. Input width and height must each be 50..10000 pixels,
+ * matching the fixed original DLL's RunOcrPipeline argument contract.
+ * Each context serializes its own inference calls.
  * Error/JSON strings returned by these functions must use oneocr_free().
  * Set output pointers to NULL on entry; failures also leave JSON NULL.
  * A context must not be destroyed while another thread is using it. */

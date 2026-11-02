@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/images/psm-license-plate.png",
+  "image_sha256": "7a6c7235932620734e50f2390835aeff238f0b9b4dbac38399b36aede4956102",
+  "dll_bindings": {
+    "oneocr.dll": "0dbbec98e5e33de0be9b12d5f286011a6ea8f18e40baae092542b38ff00e7c7b",
+    "oneocr.onemodel": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+    "onnxruntime.dll": "c23ac24e40ef4f94201d2b9265482ec211a28dfbf2c480273de35db97a38adbb",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.7391740999883041,
+    "peak_working_set_bytes": 181301248,
+    "stderr": ""
+  },
+  "result_sha256": "2751dbccbfaa3148d079009a714a60c6604c41aee63a6bfbd2cd80c5a6aef4bd"
+}

@@ -15,6 +15,7 @@ if __name__=='__main__':
     p.add_argument('--library',type=Path,required=True)
     p.add_argument('--models',type=Path,default=ROOT/'models')
     p.add_argument('--image',type=Path,default=ROOT/'test.png')
+    p.add_argument('--output',type=Path,default=ROOT/'work/oneocr-portable/evidence/api-integration.json')
     args=p.parse_args();library=args.library.resolve();models=args.models.resolve()
     directory=os.add_dll_directory(str(library.parent)) if os.name=='nt' else None
     dll=C.CDLL(str(library))
@@ -98,5 +99,5 @@ if __name__=='__main__':
         if not code or context.value or 'checksum' not in message.lower():raise AssertionError('Corrupt asset was not rejected by SHA-256')
         checks.append('corrupt vocabulary rejected before inference; source assets unchanged')
     report={'passed':True,'library':str(library),'checks':checks}
-    (workspace/'evidence/api-integration.json').write_text(json.dumps(report,indent=2),encoding='utf8')
+    args.output.parent.mkdir(parents=True,exist_ok=True);args.output.write_text(json.dumps(report,indent=2),encoding='utf8')
     print(json.dumps(report,ensure_ascii=False))

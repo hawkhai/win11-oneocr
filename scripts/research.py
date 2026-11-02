@@ -53,6 +53,9 @@ def capture_worker(args):
     import onnx
     import numpy as np
     binary = Path(args.bin).resolve()
+    if args.trace_geometry and sha(binary/'oneocr.dll')!='0dbbec98e5e33de0be9b12d5f286011a6ea8f18e40baae092542b38ff00e7c7b':
+        raise ValueError('Geometry layouts require the fixed 9.0.103 DLL sample')
+    trace_name=args.trace_label or (Path(args.trace).stem if args.trace else '')
     destination = Path(args.models).resolve()
     destination.mkdir(parents=True, exist_ok=True)
     directory = os.add_dll_directory(str(binary))
@@ -161,7 +164,7 @@ def capture_worker(args):
         if not status and args.trace and session in sessions:
             try:
                 record = sessions[session]
-                trace_dir = CASE/'traces'/Path(args.trace).stem
+                trace_dir = CASE/'traces'/trace_name
                 trace_dir.mkdir(parents=True,exist_ok=True)
                 index = len(traces)
                 entry = {'model':record['file'],'inputs':{},'outputs':{}}
@@ -238,6 +241,182 @@ def capture_worker(args):
             kernel.VirtualProtect(api,1600,old.value,C.byref(ignored))
     patch({8:C.cast(callbacks[0],ptr).value,151:C.cast(callbacks[1],ptr).value,9:C.cast(callbacks[2],ptr).value})
     dll = C.WinDLL(str(binary/'oneocr.dll'))
+    geometry_restore=[];geometry=[];lattices=[];recognition_records=[];native_model_metadata={};quad_normalizations=[];analyzed_lines=[];detector_selection=[]
+    if args.trace_geometry:
+        signature=C.WINFUNCTYPE(C.c_uint64,*([C.c_uint64]*8))
+        address=dll._handle+0x256ba60+3*8
+        slot=C.cast(address,C.POINTER(ptr));previous=slot[0];original=signature(previous)
+        def read_vector(address,stride):
+            begin,end=C.c_uint64.from_address(address).value,C.c_uint64.from_address(address+8).value
+            if end<begin or (end-begin)%stride or end-begin>16000000:raise ValueError('Native geometry vector bounds')
+            return begin,(end-begin)//stride
+        def geometry_hook(*parameters):
+            result=original(*parameters)
+            try:
+                begin,count=read_vector(parameters[1],16);polygons=[]
+                for i in range(count):
+                    polygon=C.c_uint64.from_address(begin+i*16).value
+                    upper,n_upper=read_vector(polygon+0x40,8);lower,n_lower=read_vector(polygon+0x58,8)
+                    polygons.append({'score':C.c_float.from_address(polygon+0x14).value,'horizontal':bool(C.c_uint8.from_address(polygon+0x24).value),'level':C.c_int32.from_address(polygon+0x28).value,'curved':bool(C.c_uint8.from_address(polygon).value),'ambiguous':bool(C.c_uint8.from_address(polygon+1).value),'min_rectangle':bool(C.c_uint8.from_address(polygon+0x2c).value),'upper':list((C.c_float*(n_upper*2)).from_address(upper)),'lower':list((C.c_float*(n_lower*2)).from_address(lower))})
+                geometry.append({'polygons':polygons,'count':count})
+            except BaseException as error:errors.append('Geometry capture: '+repr(error))
+            return result
+        callback=signature(geometry_hook);callbacks.append(callback)
+        protection=C.c_ulong()
+        if not kernel.VirtualProtect(address,8,0x04,C.byref(protection)):raise C.WinError(C.get_last_error())
+        slot[0]=C.cast(callback,ptr).value
+        ignored=C.c_ulong();kernel.VirtualProtect(address,8,protection.value,C.byref(ignored))
+        geometry_restore.append((address,slot,previous))
+        width_signature=C.WINFUNCTYPE(None,ptr,C.c_float,C.c_float,ptr,ptr,ptr,ptr)
+        width_address=dll._handle+0x256b400+8;width_slot=C.cast(width_address,C.POINTER(ptr));width_previous=width_slot[0];width_original=width_signature(width_previous)
+        def width_hook(this,width,height,options,output_width,output_height,output_scale):
+            width_original(this,width,height,options,output_width,output_height,output_scale)
+            try:quad_normalizations.append({'crop_width':width,'crop_height':height,'normalized_width':C.c_int32.from_address(output_width).value,'normalized_height':C.c_int32.from_address(output_height).value,'scale':C.c_double.from_address(output_scale).value})
+            except BaseException as error:errors.append('Quad normalization capture: '+repr(error))
+        width_callback=width_signature(width_hook);callbacks.append(width_callback);width_protection=C.c_ulong()
+        if not kernel.VirtualProtect(width_address,8,0x04,C.byref(width_protection)):raise C.WinError(C.get_last_error())
+        width_slot[0]=C.cast(width_callback,ptr).value
+        width_ignored=C.c_ulong();kernel.VirtualProtect(width_address,8,width_protection.value,C.byref(width_ignored));geometry_restore.append((width_address,width_slot,width_previous))
+        analyzer_signature=C.WINFUNCTYPE(C.c_uint64,*([C.c_uint64]*8))
+        analyzer_address=dll._handle+0x2568138+3*8;analyzer_slot=C.cast(analyzer_address,C.POINTER(ptr));analyzer_previous=analyzer_slot[0];analyzer_original=analyzer_signature(analyzer_previous)
+        def analyzer_hook(*parameters):
+            result=analyzer_original(*parameters)
+            try:
+                begin,count=read_vector(parameters[1],8)
+                batch=[]
+                for i in range(count):
+                    line=C.c_uint64.from_address(begin+i*8).value
+                    batch.append({'index':i,'box':list((C.c_float*8).from_address(line+0xc0)),'horizontal':bool(C.c_uint8.from_address(line+299).value),'flip':C.c_int32.from_address(line+0x134).value,'flip_ambiguous':bool(C.c_uint8.from_address(line+300).value),'script':C.c_int32.from_address(line+0x148).value,'style':C.c_int32.from_address(line+0x13c).value,'style_confidence':C.c_float.from_address(line+0x140).value,'layout':C.c_int32.from_address(line+0x154).value})
+                analyzed_lines.append(batch)
+            except BaseException as error:errors.append('Analyzer capture: '+repr(error))
+            return result
+        analyzer_callback=analyzer_signature(analyzer_hook);callbacks.append(analyzer_callback);analyzer_protection=C.c_ulong()
+        if not kernel.VirtualProtect(analyzer_address,8,0x04,C.byref(analyzer_protection)):raise C.WinError(C.get_last_error())
+        analyzer_slot[0]=C.cast(analyzer_callback,ptr).value
+        analyzer_ignored=C.c_ulong();kernel.VirtualProtect(analyzer_address,8,analyzer_protection.value,C.byref(analyzer_ignored));geometry_restore.append((analyzer_address,analyzer_slot,analyzer_previous))
+        def read_native_string(address):
+            length=C.c_uint64.from_address(address+16).value
+            capacity=C.c_uint64.from_address(address+24).value
+            if length>1000000 or length>capacity:raise ValueError('Native string bounds')
+            data=C.c_uint64.from_address(address).value if capacity>15 else address
+            return C.string_at(data,length).decode('utf8')
+        def words_from_vector(address,stride):
+            begin,count=read_vector(address,stride);words=[]
+            for i in range(count):
+                word=begin+i*stride
+                candidate_vector=word+(8 if stride==32 else 16)
+                candidates,n=read_vector(candidate_vector,72)
+                text=read_native_string(candidates) if n else ''
+                words.append({'start':C.c_int32.from_address(word+(0 if stride==32 else 8)).value,
+                              'end':C.c_int32.from_address(word+(4 if stride==32 else 12)).value,'text':text,
+                              'pixel_start':C.c_int32.from_address(word).value,'pixel_end':C.c_int32.from_address(word+4).value,
+                              'candidate_confidence':C.c_float.from_address(candidates+0x20).value if n else None,
+                              'candidate_language_score':C.c_float.from_address(candidates+0x24).value if n else None})
+            return words
+        def install_observation(vtable_rva,index,observe,before=None):
+            address=dll._handle+vtable_rva+index*8
+            slot=C.cast(address,C.POINTER(ptr));previous=slot[0];original=signature(previous)
+            def hook(*parameters):
+                if before:
+                    try:before(parameters)
+                    except BaseException as error:errors.append('Preprocess capture: '+repr(error))
+                result=original(*parameters)
+                try:observe(parameters)
+                except BaseException as error:errors.append('Postprocess capture: '+repr(error))
+                return result
+            callback=signature(hook);callbacks.append(callback)
+            protection=C.c_ulong()
+            if not kernel.VirtualProtect(address,8,0x04,C.byref(protection)):raise C.WinError(C.get_last_error())
+            slot[0]=C.cast(callback,ptr).value
+            ignored=C.c_ulong();kernel.VirtualProtect(address,8,protection.value,C.byref(ignored))
+            geometry_restore.append((address,slot,previous))
+        def detector_selection_snapshot(parameters,phase):
+            begin,count=read_vector(parameters[2],16);polygons=[]
+            for i in range(count):
+                polygon=C.c_uint64.from_address(begin+i*16).value
+                upper,n_upper=read_vector(polygon+0x40,8);lower,n_lower=read_vector(polygon+0x58,8)
+                polygons.append({'score':C.c_float.from_address(polygon+0x14).value,'horizontal':bool(C.c_uint8.from_address(polygon+0x24).value),'curved':bool(C.c_uint8.from_address(polygon).value),'level':C.c_int32.from_address(polygon+0x28).value,'id':C.c_int32.from_address(polygon+0x20).value,'upper':list((C.c_float*(n_upper*2)).from_address(upper)),'lower':list((C.c_float*(n_lower*2)).from_address(lower))})
+            record={'phase':phase,'polygons':polygons,'nms_threshold':C.c_float.from_address(parameters[0]+0x74).value,'coverage_threshold':C.c_float.from_address(parameters[0]+0x78).value}
+            record['vtable_rva']=hex(C.c_uint64.from_address(parameters[0]).value-dll._handle)
+            record['ambiguity']=bool(C.c_uint8.from_address(parameters[0]+0x238).value)
+            record['ambiguity_thresholds']=list((C.c_float*4).from_address(parameters[0]+0x23c))
+            head=C.c_uint64.from_address(parameters[0]+0x80).value
+            record['level_thresholds']={}
+            def visit_threshold(node):
+                if C.c_uint8.from_address(node+25).value:return
+                visit_threshold(C.c_uint64.from_address(node).value)
+                record['level_thresholds'][C.c_int32.from_address(node+28).value]=C.c_float.from_address(node+32).value
+                visit_threshold(C.c_uint64.from_address(node+16).value)
+            visit_threshold(C.c_uint64.from_address(head+8).value)
+            if phase=='after':
+                begin,count=read_vector(parameters[1],4);record['selected']=list((C.c_int32*count).from_address(begin))
+            detector_selection.append(record)
+        for nms_table in (0x256be60,0x256c990,0x256c188,0x256c1f8,0x256cbe0,0x256d050):
+            install_observation(nms_table,0,lambda parameters:detector_selection_snapshot(parameters,'after'),lambda parameters:detector_selection_snapshot(parameters,'before'))
+        def observe_lattice(parameters):
+            begin,count=read_vector(parameters[2],4)
+            lattices.append({'phones':list((C.c_int32*count).from_address(begin)),
+                             'words':words_from_vector(parameters[3],32)})
+        def observe_recognition(parameters):
+            begin,count=read_vector(parameters[1],176)
+            recognition_records.append([{'text':read_native_string(begin+i*176),
+                                          'words':words_from_vector(begin+i*176+32,40)} for i in range(count)])
+        install_observation(0x256a180,2,observe_lattice)
+        install_observation(0x2569388,5,observe_recognition)
+        def observe_single(parameters):
+            address=parameters[1]
+            begin,count=read_vector(address+0x98,8)
+            recognition_records.append([{'text':read_native_string(address),
+                                          'box':list((C.c_float*8).from_address(parameters[2]+0xc0)),
+                                          'language_score':C.c_double.from_address(address+0x38).value,
+                                          'rejected':bool(C.c_uint8.from_address(address+0x50).value),
+                                          'words':words_from_vector(address+32,40),
+                                          'blank_intervals':[list((C.c_int32*2).from_address(begin+i*8)) for i in range(count)]}])
+            head=C.c_uint64.from_address(parameters[0]+0x3f8).value
+            queue=[C.c_uint64.from_address(head+8).value];visited=set()
+            while queue:
+                node=queue.pop()
+                if node in visited or C.c_uint8.from_address(node+0x19).value:continue
+                visited.add(node)
+                if len(visited)>100:raise ValueError('Character model tree bounds')
+                queue.extend([C.c_uint64.from_address(node).value,C.c_uint64.from_address(node+16).value])
+                model=C.c_uint64.from_address(node+0x80).value
+                if model:
+                    name=read_native_string(node+0x20)
+                    native_model_metadata[name]={'words_u32':list((C.c_uint32*52).from_address(model))}
+        install_observation(0x2569388,3,observe_single)
+        install_observation(0x2569388,4,observe_single)
+        def observe_mbr(parameters):
+            sentence=C.c_uint64.from_address(parameters[2]+64).value
+            record={'kind':'mbr','words':words_from_vector(parameters[3],32),'sentence_words':[]}
+            for offset in (0xe0,0xf8):
+                begin,count=read_vector(sentence+offset,120)
+                for i in range(count):
+                    word=begin+i*120;characters,n=read_vector(word+0x28,40)
+                    chars=[]
+                    for j in range(n):
+                        item=characters+j*40;character=C.c_uint64.from_address(item).value
+                        chars.append({'text':read_native_string(character+0x30),
+                                      'frames':list((C.c_int32*2).from_address(item+8)),
+                                      'scores':list((C.c_float*6).from_address(item+16))})
+                    record['sentence_words'].append({'list_offset':offset,'text':read_native_string(word),'characters':chars})
+            lattices.append(record)
+        install_observation(0x25696b8,2,observe_mbr)
+        def observe_scope(parameters):
+            sentence=C.c_uint64.from_address(parameters[0]+0x28).value
+            record={'kind':'sentence','sentence_words':[]}
+            for offset in (0xe0,0xf8):
+                begin,count=read_vector(sentence+offset,120)
+                for i in range(count):
+                    word=begin+i*120;characters,n=read_vector(word+0x28,40);chars=[]
+                    for j in range(n):
+                        item=characters+j*40;character=C.c_uint64.from_address(item).value
+                        chars.append({'text':read_native_string(character+0x30),
+                                      'frames':list((C.c_int32*2).from_address(item+8)),
+                                      'scores':list((C.c_float*4).from_address(item+16))})
+                    record['sentence_words'].append({'list_offset':offset,'text':read_native_string(word),'characters':chars})
+            lattices.append(record)
+        install_observation(0x2569648,2,observe_scope)
     crypto_restore = None
     crypto_records = []
     if args.capture_records:
@@ -293,7 +472,7 @@ def capture_worker(args):
         if args.vocab:
             extract_vocabs(dll,bind,check,pipeline,forcing,destination)
         if args.trace:
-            trace_pipeline(bind,check,pipeline,args.trace)
+            trace_pipeline(bind,check,pipeline,args.trace,CASE/'traces'/trace_name,args.pixel_decoder,args.trace_max_lines)
         if args.probe_aux:
             create_memory = fn(69,ptr,C.c_int,C.c_int,C.POINTER(ptr))
             create_tensor = fn(49,ptr,ptr,ptr,C.c_size_t,C.POINTER(C.c_int64),C.c_size_t,C.c_int,C.POINTER(ptr))
@@ -340,6 +519,11 @@ def capture_worker(args):
         if options.value:
             bind('ReleaseOcrInitOptions',C.c_int64)(options)
         patch(saved)
+        for address,slot,previous in reversed(geometry_restore):
+            protection=C.c_ulong()
+            if not kernel.VirtualProtect(address,8,0x04,C.byref(protection)):raise C.WinError(C.get_last_error())
+            slot[0]=previous
+            ignored=C.c_ulong();kernel.VirtualProtect(address,8,protection.value,C.byref(ignored))
         if crypto_restore:
             address,slot,previous = crypto_restore
             protection = C.c_ulong()
@@ -352,7 +536,15 @@ def capture_worker(args):
     manifest = {'schema_version':1,'source_assets':{x.name:sha(x) for x in binary.iterdir() if x.name in ('oneocr.dll','oneocr.onemodel','onnxruntime.dll')},'ort_version':api_base.GetVersionString().decode(),'models':sorted(records.values(),key=lambda x:x['file']),'errors':errors}
     write_json(destination/'manifest.json',manifest)
     if args.trace:
-        write_json(CASE/'traces'/Path(args.trace).stem/'trace.json',traces)
+        write_json(CASE/'traces'/trace_name/'trace.json',traces)
+        if args.trace_geometry:
+            write_json(CASE/'traces'/trace_name/'geometry.json',geometry)
+            write_json(CASE/'traces'/trace_name/'lattices.json',lattices)
+            write_json(CASE/'traces'/trace_name/'recognition.json',recognition_records)
+            write_json(CASE/'traces'/trace_name/'native-model-metadata.json',native_model_metadata)
+            write_json(CASE/'traces'/trace_name/'quad-normalizations.json',quad_normalizations)
+            write_json(CASE/'traces'/trace_name/'analyzed-lines.json',analyzed_lines)
+            write_json(CASE/'traces'/trace_name/'detector-selection.json',detector_selection)
     if errors:
         raise RuntimeError(f'Extraction errors: {errors}')
     print('Captured models:',len(records),flush=True)
@@ -439,17 +631,36 @@ def extract_vocabs(dll,bind,check,pipeline,forcing,destination):
         forcing['script'] = None
         bind('ReleaseOcrProcessOptions',C.c_int64)(opts)
 
-def trace_pipeline(bind,check,pipeline,path):
-    from PIL import Image
-    image = Image.open(path).convert('RGBA')
-    data = C.create_string_buffer(image.tobytes('raw','BGRA'))
+def trace_pipeline(bind,check,pipeline,path,directory,pixel_decoder=None,max_lines=1000):
+    if pixel_decoder:
+        import struct
+        pixels=directory/'source-pixels.bgra';directory.mkdir(parents=True,exist_ok=True)
+        decoder=Path(pixel_decoder).resolve()
+        subprocess.run([str(decoder),str(Path(path).resolve()),str(pixels.resolve())],check=True,timeout=30)
+        payload=pixels.read_bytes();width,height=struct.unpack_from('<ii',payload)
+        if width<=0 or height<=0 or len(payload)!=8+width*height*4:raise ValueError('Invalid isolated pixel decoder output')
+        raw=payload[8:];decoder_record={'implementation':'project stb_image child process','binary_sha256':sha(decoder)}
+    else:
+        from PIL import Image
+        image=Image.open(path)
+        if image.format!='PNG':raise ValueError('Non-PNG traces require --pixel-decoder to match the original wrapper pixels')
+        image=image.convert('RGBA');width,height=image.size;raw=image.tobytes('raw','BGRA');decoder_record={'implementation':'Pillow RGBA (PNG only)'}
+    write_json(directory/'pixel-source.json',dict(decoder_record,width=width,height=height,bgra_sha256=hashlib.sha256(raw).hexdigest()))
+    data = C.create_string_buffer(raw)
     class Frame(C.Structure):
         _fields_ = [('type',C.c_int32),('width',C.c_int32),('height',C.c_int32),('reserved',C.c_int32),('stride',C.c_int64),('data',C.c_void_p)]
-    frame = Frame(3,image.width,image.height,0,image.width*4,C.cast(data,C.c_void_p))
+    frame = Frame(3,width,height,0,width*4,C.cast(data,C.c_void_p))
     opts,result = C.c_int64(),C.c_int64()
     check(bind('CreateOcrProcessOptions',C.POINTER(C.c_int64))(C.byref(opts)))
     try:
+        check(bind('OcrProcessOptionsSetMaxRecognitionLineCount',C.c_int64,C.c_int64)(opts,max_lines))
         check(bind('RunOcrPipeline',C.c_int64,C.POINTER(Frame),C.c_int64,C.POINTER(C.c_int64))(pipeline,C.byref(frame),opts,C.byref(result)))
+        count=C.c_int64();check(bind('GetOcrLineCount',C.c_int64,C.POINTER(C.c_int64))(result,C.byref(count)))
+        metadata=[]
+        for index in range(count.value):
+            line=C.c_int64();check(bind('GetOcrLine',C.c_int64,C.c_int64,C.POINTER(C.c_int64))(result,index,C.byref(line)))
+            metadata.append({'index':index,'angle':C.c_float.from_address(line.value+0x58).value,'script':C.c_int32.from_address(line.value+0x7c).value,'box':list((C.c_float*8).from_address(line.value+8))})
+        write_json(directory/'native-lines.json',metadata)
     finally:
         if result.value:
             bind('ReleaseOcrResult',C.c_int64)(result)
@@ -462,9 +673,15 @@ def main():
     p.add_argument('--models',default=str(ROOT/'models'))
     p.add_argument('--vocab',action='store_true')
     p.add_argument('--trace',help='Capture unmodified native model inputs/outputs for this local image')
+    p.add_argument('--trace-label',help='Case-local trace directory name; keeps earlier snapshots intact')
+    p.add_argument('--trace-geometry',action='store_true',help='Observe fixed DLL TextDetector polygon outputs in this isolated process')
+    p.add_argument('--pixel-decoder',help='Research-only oneocr_decode_image executable, required for non-PNG traces')
+    p.add_argument('--trace-max-lines',type=int,default=1000,help='Match the original wrapper line limit (default: 1000)')
     p.add_argument('--probe-aux',action='store_true',help='Collect 64 deterministic native samples per 21-feature model')
     p.add_argument('--capture-records',action='store_true',help='Capture plaintext model records at the local DLL BCrypt boundary')
     args = p.parse_args()
+    if args.trace_label and (Path(args.trace_label).name!=args.trace_label or args.trace_label in ('.','..')):p.error('trace-label must be a directory name')
+    if args.trace_geometry and not args.trace:p.error('trace-geometry requires trace')
     if args.command == 'inventory':
         inventory()
     elif args.command == 'extract':
@@ -473,11 +690,15 @@ def main():
             command.append('--vocab')
         if args.trace:
             command.extend(['--trace',str(Path(args.trace).resolve())])
+        if args.trace_label:command.extend(['--trace-label',args.trace_label])
+        if args.trace:command.extend(['--trace-max-lines',str(args.trace_max_lines)])
+        if args.trace_geometry:command.append('--trace-geometry')
+        if args.pixel_decoder:command.extend(['--pixel-decoder',str(Path(args.pixel_decoder).resolve())])
         if args.probe_aux:
             command.append('--probe-aux')
         if args.capture_records:
             command.append('--capture-records')
-        suffix = '-vocab' if args.vocab else ('-trace-'+Path(args.trace).stem if args.trace else ('-aux' if args.probe_aux else ('-records' if args.capture_records else '')))
+        suffix = '-vocab' if args.vocab else ('-trace-'+(args.trace_label or Path(args.trace).stem) if args.trace else ('-aux' if args.probe_aux else ('-records' if args.capture_records else '')))
         log = CASE/f'evidence/extraction{suffix}.log'
         log.parent.mkdir(parents=True,exist_ok=True)
         with log.open('w',encoding='utf8') as output:

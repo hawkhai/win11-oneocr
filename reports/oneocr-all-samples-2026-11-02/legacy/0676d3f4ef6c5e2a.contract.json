@@ -1,0 +1,17 @@
+{
+  "file": "oneocr-capabilities/script-greek.png",
+  "image_sha256": "9f1dabf2c1b619e335c8f3997102123be05e73f716b4a2e3011380f521c0ca53",
+  "dll_bindings": {
+    "oneocr.dll": "0dbbec98e5e33de0be9b12d5f286011a6ea8f18e40baae092542b38ff00e7c7b",
+    "oneocr.onemodel": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+    "onnxruntime.dll": "c23ac24e40ef4f94201d2b9265482ec211a28dfbf2c480273de35db97a38adbb",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.8624289999715984,
+    "peak_working_set_bytes": 165060608,
+    "stderr": ""
+  },
+  "result_sha256": "2d3341dad32f365e73ef700ce97698242cd0a716d366edb93d00365ef859da28"
+}

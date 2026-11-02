@@ -27,19 +27,32 @@ def run(command,cwd):
             if dll.GetProcessMemoryInfo(int(process._handle),C.byref(memory),C.sizeof(memory)):
                 peak=max(peak or 0,memory.peak_working)
             time.sleep(.02)
+    elif sys.platform=='linux':
+        while process.poll() is None:
+            if time.perf_counter()-started>120:
+                process.kill();process.communicate()
+                return {'exit_code':-1,'seconds':time.perf_counter()-started,'peak_working_set_bytes':peak,'stderr':'OCR timed out after 120 seconds'}
+            try:
+                status=Path(f'/proc/{process.pid}/status').read_text()
+                for line in status.splitlines():
+                    if line.startswith('VmHWM:'):peak=max(peak or 0,int(line.split()[1])*1024)
+            except (FileNotFoundError,ProcessLookupError):pass
+            time.sleep(.02)
     stdout,stderr=process.communicate(timeout=120)
     return {'exit_code':process.returncode,'seconds':time.perf_counter()-started,'peak_working_set_bytes':peak,'stderr':stderr.decode('utf8',errors='replace')[-2000:]}
 
 if __name__=='__main__':
+    sys.stdout.reconfigure(encoding='utf8')
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--backend',choices=['legacy','native'],required=True)
     p.add_argument('--binary',type=Path)
     p.add_argument('--limit',type=int)
+    p.add_argument('--output-dir',type=Path,help='Keep a new phase separate from existing evidence')
     args=p.parse_args()
     corpus=CASE/'corpus';fixtures=json.loads((corpus/'manifest.json').read_text(encoding='utf8'))['cases']
     if args.limit:fixtures=fixtures[:args.limit]
     binary=(args.binary or (ROOT/'bin/ocr.exe' if args.backend=='legacy' else ROOT/'build/portable/native/Release/ocr.exe')).resolve()
-    output=CASE/('corpus-'+args.backend);output.mkdir(exist_ok=True)
+    output=(args.output_dir or CASE/('corpus-'+args.backend)).resolve();output.mkdir(parents=True,exist_ok=True)
     results=[]
     for entry in fixtures:
         if args.backend=='legacy':

@@ -22,8 +22,8 @@ if __name__=='__main__':
         target=vendor/'onnxruntime'
         if not target.exists():
             env=dict(os.environ,GIT_LFS_SKIP_SMUDGE='1')
-            subprocess.run(['git','clone','--depth','1','--branch','v'+lock['version'],lock['repository'],str(target)],check=True,env=env)
-        revision=subprocess.check_output(['git','-C',str(target),'rev-parse','HEAD'],text=True).strip()
+            subprocess.run(['git','-c','core.autocrlf=false','clone','--depth','1','--branch','v'+lock['version'],lock['repository'],str(target)],check=True,env=env)
+        revision=subprocess.check_output(['git','-c','safe.directory='+str(target),'-C',str(target),'rev-parse','HEAD'],text=True).strip()
         if revision!=lock['commit']:raise SystemExit('ORT source revision mismatch; existing source was not modified')
         print(target)
     else:

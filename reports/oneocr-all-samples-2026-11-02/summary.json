@@ -1,0 +1,88 @@
+{
+  "verified_at": "2026-11-02T19:12:21.312509+08:00",
+  "sample_commit": "13de74a",
+  "all_sample_images": 110,
+  "new_capability_images": 18,
+  "newly_committed_existing_handwriting_images": 7,
+  "inventory_sha256": "914964629eb4826b394b30feadb41669756c69654d191282f205d3dcf0878aa0",
+  "prepared_model_manifest_sha256": "785d10573b6cae27b83bf7d2d7bbb43dd8a9bf1da794344c468f2cee0cf29573",
+  "source_assets": {
+    "oneocr.dll": "0dbbec98e5e33de0be9b12d5f286011a6ea8f18e40baae092542b38ff00e7c7b",
+    "oneocr.onemodel": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+    "onnxruntime.dll": "c23ac24e40ef4f94201d2b9265482ec211a28dfbf2c480273de35db97a38adbb",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "strict_tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "exact_fields": [
+    "line count",
+    "line text",
+    "reading order",
+    "word count and splitting",
+    "word text",
+    "style type",
+    "image dimensions and stride"
+  ],
+  "platforms": {
+    "windows-x64": {
+      "build": "passed",
+      "run": "passed",
+      "passed_cases": 110,
+      "recognition_passes": 107,
+      "error_contract_passes": 3,
+      "runtime_bindings": {
+        "ocr.exe": "abaa054a76c8dd299e457c07dcbfcc9e29c41e33a394694950517b3865e39af2",
+        "oneocr_portable.dll": "e9c6a3c4c1a31f7452dc48e316323dcd66ff1e65c8106a85a5c1819fbc18b74f",
+        "onnxruntime.dll": "f91839182f99548847810c9d4c5a9655dc85b3b7321d540b9ba1b25db34e48e9"
+      },
+      "suite_file": "windows/suite.json",
+      "suite_sha256": "088c117da707f446e49f453aec261db5842ac8546d02ccf29915285a6212154e",
+      "sum_case_seconds": 125.5256955998484,
+      "median_case_seconds": 0.85572795002372,
+      "maximum_case_seconds": 6.723048500018194,
+      "maximum_case_peak_working_set_bytes": 394522624,
+      "unit_tests_passed": 8,
+      "original_corpus_passed": 27,
+      "book_lines": 105,
+      "book_strict_passed": true
+    },
+    "linux-x64": {
+      "build": "passed",
+      "run": "passed",
+      "passed_cases": 110,
+      "recognition_passes": 107,
+      "error_contract_passes": 3,
+      "runtime_bindings": {
+        "liboneocr_portable.so": "d95c1d28db3e556ac5630b8eb894a4dbaf0923e923b399784905e1e711417704",
+        "ocr": "92621063f19f6b58162fbc1676a537ab0612ff370c0a50834752bd0a82122697"
+      },
+      "suite_file": "linux/suite.json",
+      "suite_sha256": "c664840da219bfead65613234a1bbde3eaa50680cd2173e1f342bd5d7b65d10c",
+      "sum_case_seconds": 182.753271195,
+      "median_case_seconds": 1.420210638499988,
+      "maximum_case_seconds": 7.622878103999994,
+      "maximum_case_peak_working_set_bytes": 410337280,
+      "unit_tests_passed": 8,
+      "original_corpus_passed": 27,
+      "book_lines": 105,
+      "book_strict_passed": true
+    }
+  },
+  "native_polygon_oracle_pairs": 2112,
+  "native_polygon_maximum_area_error": 0,
+  "recognition_nms_cases": 72,
+  "full_cross_platform_goal_complete": false,
+  "unverified_targets": [
+    "Linux arm64",
+    "macOS x64/arm64",
+    "Android arm64-v8a"
+  ],
+  "limitations": [
+    "Finite fixtures do not prove equivalence for every image or option",
+    "Degenerate curve fallback, very long line clipping and additional ambiguity/option configurations remain incomplete",
+    "Real handwriting outside the existing English source remains a coverage gap"
+  ]
+}

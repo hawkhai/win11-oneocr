@@ -19,6 +19,7 @@ if __name__=='__main__':
     p.add_argument('--output',type=Path,required=True)
     args=p.parse_args()
     if sys.platform!='linux':raise SystemExit('Linux network namespace required')
+    import resource
     if Path('/proc/self/ns/net').readlink()==Path('/proc/1/ns/net').readlink():raise SystemExit('No distinct network namespace; use unshare -n')
     with socket.socket() as connection:
         connection.settimeout(.5)
@@ -39,7 +40,7 @@ if __name__=='__main__':
         time.sleep(.01)
     stdout,stderr=process.communicate()
     forbidden=[name for name in mappings if any(token in Path(name).name.lower() for token in ('oneocr.dll','onnxruntime.dll','wine'))]
-    report={'passed':process.returncode==0 and not forbidden,'exit_code':process.returncode,'network_error':network_error,'mapped_files':sorted(mappings),'forbidden_modules':forbidden,'seconds':time.perf_counter()-started,'stderr':stderr.decode('utf8',errors='replace'),'note':'Only source-built native OCR plus Linux ORT are executed; Python is the test harness, not the OCR backend.'}
+    report={'passed':process.returncode==0 and not forbidden,'exit_code':process.returncode,'network_error':network_error,'mapped_files':sorted(mappings),'forbidden_modules':forbidden,'seconds':time.perf_counter()-started,'peak_working_set_bytes':resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss*1024,'stderr':stderr.decode('utf8',errors='replace'),'note':'Only source-built native OCR plus Linux ORT are executed; Python is the test harness, not the OCR backend.'}
     if args.output.exists():
         result=json.loads(args.output.read_text(encoding='utf8'));report['line_count']=result['line_count'];report['parity']=result.get('engine',{}).get('parity')
     args.output.with_suffix('.verification.json').write_text(json.dumps(report,indent=2),encoding='utf8')

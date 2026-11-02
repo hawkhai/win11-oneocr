@@ -1,0 +1,48 @@
+{
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\images\\psm-designer-word.png",
+  "image": {
+    "height": 379,
+    "step": 4000,
+    "width": 1000
+  },
+  "image_angle": 3.486083745956421,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        95.0,
+        93.0,
+        930.0,
+        152.0,
+        924.0,
+        308.0,
+        84.0,
+        265.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03530000150203705,
+        "type": "printed"
+      },
+      "text": "Designer",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            106.1964111328125,
+            93.9596939086914,
+            930.0,
+            158.9798583984375,
+            930.0,
+            308.0,
+            95.38395690917969,
+            252.26495361328125
+          ],
+          "confidence": 0.9909897446632385,
+          "index": 0,
+          "text": "Designer"
+        }
+      ]
+    }
+  ]
+}
