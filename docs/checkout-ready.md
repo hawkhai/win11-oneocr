@@ -21,6 +21,8 @@ Linux x64，glibc 2.43 或更新（实测 Ubuntu 26.04）：
 
 现有预编译文件只覆盖 Windows x64 和 Linux x64。macOS、Android、ARM64 的源码配置和示例已提交，但不能把它们视作拉取后已可直接执行的平台。
 
+另有 [JavaScript + WebAssembly 交付](wasm.md)：`artifacts/wasm32/` 与同一份 `models/` 可供 Node 和支持 SIMD128 的浏览器加载。Node 入口为 `node web/cli.mjs ...`，可用 `python scripts/verify-delivery.py --wasm` 校验；浏览器及 JS 引擎的一致性状态须分别查看实测报告。
+
 干净 Git 克隆的最终结果见 [换机验收](../reports/checkout-ready-2026-11-02/README.md)：两端各通过 110 张样本、原 27 项及 105 行书页，未使用原机器构建目录或研究环境。
 
 本次没有 push。如通过离线 Git 包转移，在新电脑执行：

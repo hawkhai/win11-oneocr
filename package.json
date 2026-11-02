@@ -1,20 +1,30 @@
 {
   "name": "dsh-win11-oneocr",
   "version": "0.1.1",
-  "description": "Offline OneOCR with a native cross-platform source backend and optional Windows legacy adapter. Portable backend is experimental.",
+  "description": "Offline OneOCR with native C++ and JavaScript/WebAssembly backends and an optional Windows legacy adapter. Cross-platform validation is incomplete.",
   "type": "module",
   "main": "src/index.js",
-  "exports": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./wasm": { "types": "./artifacts/wasm32/oneocr.d.mts", "default": "./artifacts/wasm32/oneocr.mjs" },
+    "./wasm/worker": { "types": "./artifacts/wasm32/worker-client.d.mts", "default": "./artifacts/wasm32/worker-client.mjs" }
+  },
   "files": [
     "src",
+    "examples/wasm",
     "artifacts/*/bin/**",
     "artifacts/*/lib/**",
     "artifacts/*/share/**",
+    "artifacts/wasm32/*.mjs",
+    "artifacts/wasm32/*.wasm",
+    "artifacts/wasm32/*.d.mts",
+    "artifacts/wasm32/BUILD.json",
     "native/include",
     "cordis.patch.yml",
     "README.md",
     "docs/portable.md",
     "docs/error-codes.md",
+    "docs/wasm.md",
     "THIRD_PARTY_NOTICES.md",
     "licenses/onnxruntime-LICENSE.txt",
     "licenses/onnxruntime-ThirdPartyNotices.txt",
@@ -28,7 +38,8 @@
     "licenses/nlohmann-json-MIT.txt"
   ],
   "scripts": {
-    "test": "node test/standalone-test.mjs"
+    "test": "node test/standalone-test.mjs",
+    "test:wasm": "node test/wasm-test.mjs"
   },
   "keywords": [
     "dsh",

@@ -5,9 +5,15 @@
 /reports/oneocr-all-samples-2026-11-02/** -text whitespace=cr-at-eol
 /reports/checkout-ready-2026-11-02/** -text whitespace=cr-at-eol
 /reports/photos-model-update-2026-11-02/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/reports/wasm-2026-11-03/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 /models/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 /artifacts/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 /bin/photos-2026.11090.22001.0/** -text
 /research/case/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 /ocr.sh text eol=lf
 /licenses/gcc-runtime-copyright.txt -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/licenses/emscripten-LICENSE.txt -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/licenses/musl-COPYRIGHT.txt -text
+/licenses/libcxx-LICENSE.txt -text
+/licenses/libcxxabi-LICENSE.txt -text
+/licenses/compiler-rt-LICENSE.txt -text

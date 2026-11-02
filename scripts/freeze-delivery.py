@@ -24,12 +24,15 @@ def main():
                 if path.is_file():
                     target=destination/path.relative_to(source);target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(path,target)
     files={}
-    for platform in ('win32-x64','linux-x64'):
+    platforms=['win32-x64','linux-x64']
+    if (ROOT/'artifacts/wasm32/BUILD.json').is_file():platforms.append('wasm32')
+    for platform in platforms:
         prefix=ROOT/'artifacts'/platform
         notices=prefix/'share/oneocr';notices.mkdir(parents=True,exist_ok=True)
         shutil.copyfile(ROOT/'THIRD_PARTY_NOTICES.md',notices/'THIRD_PARTY_NOTICES.md')
         shutil.copyfile(ROOT/'docs/portable.md',notices/'portable.md')
         shutil.copyfile(ROOT/'docs/error-codes.md',notices/'error-codes.md')
+        shutil.copyfile(ROOT/'docs/wasm.md',notices/'wasm.md')
         for path in (ROOT/'licenses').glob('*.txt'):
             target=notices/'licenses'/path.name;target.parent.mkdir(exist_ok=True);shutil.copyfile(path,target)
         build=json.loads((prefix/'BUILD.json').read_text(encoding='utf8'))
@@ -38,7 +41,7 @@ def main():
         build['model_manifest_sha256']=sha(ROOT/'models/manifest.json')
         build['files']={path.relative_to(prefix).as_posix():sha(path) for path in sorted(prefix.rglob('*')) if path.is_file() and path.name!='BUILD.json' and 'models' not in path.relative_to(prefix).parts}
         (prefix/'BUILD.json').write_text(json.dumps(build,indent=2)+'\n',encoding='utf8')
-    for directory in ('models','artifacts/win32-x64','artifacts/linux-x64'):
+    for directory in ['models',*('artifacts/'+p for p in platforms)]:
         for path in (ROOT/directory).rglob('*'):
             if not path.is_file():continue
             if path.is_relative_to(ROOT/'artifacts') and 'models' in path.relative_to(ROOT/'artifacts').parts:continue
@@ -47,6 +50,9 @@ def main():
               'platforms':{'win32-x64':{'entry':'artifacts/win32-x64/bin/ocr.exe','launcher':'ocr.cmd','system_requirements':'Windows 10/11 x64 with built-in UCRT; release VC 14.44 CRT bundled'},
                            'linux-x64':{'entry':'artifacts/linux-x64/bin/ocr','launcher':'ocr.sh','system_requirements':'glibc >= 2.43; release GCC C++ runtime bundled (tested Ubuntu 26.04 x64)'}},
               'common_models':'models/manifest.json','source_build':'docs/portable.md','files':dict(sorted(files.items()))}
+    if 'wasm32' in platforms:
+        manifest['platforms']['wasm32']={'entry':'artifacts/wasm32/oneocr.mjs','cli':'artifacts/wasm32/cli.mjs','source_build':'docs/wasm.md',
+            'system_requirements':'WebAssembly SIMD128 and BigInt; Node >= 20 or a compatible browser; target engines require their own regression'}
     previous=ROOT/'research/delivery-manifest.json'
     if args.reference_report:
         report=args.reference_report.resolve()

@@ -15,6 +15,8 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--all-samples',action='store_true')
     parser.add_argument('--output',type=Path)
+    parser.add_argument('--wasm',action='store_true',help='Run the committed WebAssembly backend with Node, without native platform libraries')
+    parser.add_argument('--node',default='node')
     args=parser.parse_args()
     manifest=json.loads((ROOT/'research/delivery-manifest.json').read_text(encoding='utf8'))
     reference=manifest.get('reference',{})
@@ -26,19 +28,20 @@ def main():
         if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest()!=record['sha256']:
             raise RuntimeError('Missing or changed delivery asset: '+name)
     machine=platform.machine().lower()
-    if machine not in ('amd64','x86_64'):raise RuntimeError('No verified prebuilt runtime for architecture: '+machine)
-    key='win32-x64' if sys.platform=='win32' else 'linux-x64' if sys.platform=='linux' else None
-    if not key:raise RuntimeError('No verified prebuilt runtime for OS: '+sys.platform)
+    if not args.wasm and machine not in ('amd64','x86_64'):raise RuntimeError('No verified prebuilt runtime for architecture: '+machine)
+    key='wasm32' if args.wasm else 'win32-x64' if sys.platform=='win32' else 'linux-x64' if sys.platform=='linux' else None
+    if not key or key not in manifest['platforms']:raise RuntimeError('No committed runtime for this target')
     if key=='linux-x64':
         libc,version=platform.libc_ver()
         if libc!='glibc' or tuple(map(int,version.split('.'))) < (2,43):
             raise RuntimeError('This Linux bundle requires glibc >= 2.43. Build from source on older systems; see docs/portable.md')
     binary=ROOT/manifest['platforms'][key]['entry']
-    if not os.access(binary,os.X_OK):raise RuntimeError('Executable bit missing: use git clone, or chmod +x '+str(binary))
+    if not args.wasm and not os.access(binary,os.X_OK):raise RuntimeError('Executable bit missing: use git clone, or chmod +x '+str(binary))
+    command=[args.node,str(ROOT/manifest['platforms'][key]['cli'])] if args.wasm else [str(binary)]
     with tempfile.TemporaryDirectory(prefix='oneocr-delivery-') as temporary:
         destination=Path(temporary)/'book.json'
         # Execute from an unrelated directory so no working-tree path is implicit.
-        subprocess.run([str(binary),'--model-dir',str(ROOT/'models'),str(ROOT/'ocr-book.jpg'),'--quiet','--output',str(destination)],cwd=temporary,check=True,timeout=120)
+        subprocess.run([*command,'--model-dir',str(ROOT/'models'),str(ROOT/'ocr-book.jpg'),'--quiet','--output',str(destination)],cwd=temporary,check=True,timeout=600 if args.wasm else 120)
         result=json.loads(destination.read_text(encoding='utf8'))
         # The whole-book baseline is committed alongside the original corpus.
         baseline=json.loads((ROOT/reference.get('book_baseline','research/case/baseline/ocr-book.json')).read_text(encoding='utf8'))
@@ -49,7 +52,10 @@ def main():
         if not comparison['passed']:raise RuntimeError('Book parity failed: '+json.dumps(comparison,ensure_ascii=False))
     if args.all_samples:
         output=(args.output or ROOT/'work/delivery-all-samples').resolve()
-        subprocess.run([sys.executable,'-X','utf8',str(ROOT/'scripts/run-all-samples.py'),'--inventory',str(ROOT/'samples/manifest.json'),'--baseline',str(ROOT/reference.get('all_samples_baseline','reports/oneocr-all-samples-2026-11-02/legacy')),'--binary',str(binary),'--output',str(output)],cwd=ROOT,check=True)
+        if args.wasm:
+            subprocess.run([sys.executable,'-X','utf8',str(ROOT/'scripts/run-wasm-parity.py'),'--node',args.node,'--output',str(output)],cwd=ROOT,check=True)
+        else:
+            subprocess.run([sys.executable,'-X','utf8',str(ROOT/'scripts/run-all-samples.py'),'--inventory',str(ROOT/'samples/manifest.json'),'--baseline',str(ROOT/reference.get('all_samples_baseline','reports/oneocr-all-samples-2026-11-02/legacy')),'--binary',str(binary),'--output',str(output)],cwd=ROOT,check=True)
     print(json.dumps({'passed':True,'platform':key,'verified_assets':len(manifest['files']),'book_lines':len(result['lines']),'all_samples':args.all_samples},ensure_ascii=False))
     return 0
 

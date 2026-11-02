@@ -23,12 +23,21 @@
 #include <mutex>
 #include <numeric>
 #include <stdexcept>
+#ifdef __EMSCRIPTEN__
+extern "C" const char* oneocr_wasm_numeric_profile();
+#endif
 
 using nlohmann::json;
 using namespace oneocr_native;
 namespace fs=std::filesystem;
 namespace {
-constexpr const char* capabilities=R"({"backend":"native-onnx-cpu","parity":"incomplete","word_confidence":"native_21_features_mlp","style_confidence":"native_classifier_calibrated","geometry":"native_curve_polygons"})";
+constexpr const char* capabilities=
+#ifdef __EMSCRIPTEN__
+R"({"backend":"wasm-onnx-cpu","numeric_profile":"oneocr-wasm-fma-nchwc16-v2",)"
+#else
+R"({"backend":"native-onnx-cpu",)"
+#endif
+R"("parity":"incomplete","word_confidence":"native_21_features_mlp","style_confidence":"native_classifier_calibrated","geometry":"native_curve_polygons"})";
 class ImageSizeError : public std::runtime_error {public:using std::runtime_error::runtime_error;};
 Ort::Env& environment() { static Ort::Env env(ORT_LOGGING_LEVEL_ERROR,"oneocr-portable");return env; }
 fs::path asset(const fs::path& root,const std::string& relative) {
@@ -108,6 +117,9 @@ struct oneocr_context {
     std::unique_ptr<Ort::Session> layout_session;
     std::vector<std::array<float,2>> handwritten_calibration;
     explicit oneocr_context(const char* directory):root(fs::u8path(directory)) {
+#ifdef __EMSCRIPTEN__
+        if(std::string(oneocr_wasm_numeric_profile())!="oneocr-wasm-fma-nchwc16-v2")throw std::runtime_error("Wasm numerical runtime profile mismatch");
+#endif
         if(std::string(OrtGetApiBase()->GetVersionString())!="1.23.2") throw std::runtime_error("ONNX Runtime v1.23.2 is required");
         auto manifest=read_json(root/"manifest.json");
         if(manifest.at("schema_version")!=1) throw std::runtime_error("Unsupported model manifest version");

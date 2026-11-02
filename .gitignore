@@ -16,6 +16,7 @@
 /artifacts/*
 !/artifacts/win32-x64/
 !/artifacts/linux-x64/
+!/artifacts/wasm32/
 /artifacts/*/models/
 /.research-python/
 __pycache__/

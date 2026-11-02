@@ -23,5 +23,6 @@
   "container_format_reference": { "repository": "https://github.com/shiyori/oneocr-native", "commit": "6020d4339ce2feb835393e2512e433baec29f8d3", "license": "AGPL-3.0-only", "integration": "standalone preparation utility; not linked into native runtime" },
   "opencv": { "version": "4.10.0", "repository": "https://github.com/opencv/opencv.git", "commit": "71d3237a093b60a27601c20e9ee6c3e52154e8b1", "modules": ["core", "imgproc"], "license": "Apache-2.0" },
   "icu": { "version": "74.2", "tag": "release-74-2", "repository": "https://github.com/unicode-org/icu.git", "commit": "2d029329c82c7792b985024b2bdab5fc7278fbc8", "license": "Unicode-3.0", "data_sha256": "dc778b9ffe18ed319ad3fb70754f80e51cf7b6dbfff38fc0c0a5f27bb5463dad" },
-  "ghidra": { "version": "11.3.2", "java": "Temurin 21.0.8+9" }
+  "ghidra": { "version": "11.3.2", "java": "Temurin 21.0.8+9" },
+  "webassembly": { "emscripten_version": "4.0.8", "emsdk_commit": "419021fa040428bc69ef1559b325addb8e10211f", "repository": "https://github.com/emscripten-core/emsdk.git", "simd": "SIMD128", "relaxed_simd": false, "threads": false }
 }

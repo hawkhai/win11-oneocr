@@ -12,11 +12,16 @@
     "lib/libonnxruntime.so.1": "49c78b3bb1c401e77fbdbb6460bb55a3c610413770f17c977fdf4e86af054f75",
     "lib/libonnxruntime.so.1.23.2": "49c78b3bb1c401e77fbdbb6460bb55a3c610413770f17c977fdf4e86af054f75",
     "lib/libstdc++.so.6": "5bb0d21308f123b6ad46c6f35b42cedfcb8d6d439a53aa3dae04d880aaffdde3",
-    "share/oneocr/error-codes.md": "968aa938bff6631556286270f779c627a16c6f1c59ace4ea72ac0699491f791a",
+    "share/oneocr/error-codes.md": "5980ae721f3a9fe77c196603e96fb6454c2fc016e64cfaa5cbb0ac7eb8c31629",
+    "share/oneocr/licenses/compiler-rt-LICENSE.txt": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d",
+    "share/oneocr/licenses/emscripten-LICENSE.txt": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86",
     "share/oneocr/licenses/gcc-runtime-copyright.txt": "d7815dd2364180835891947d96d808878204dea45b8597602a7952332195fbea",
     "share/oneocr/licenses/gcc-runtime-GPL-3.txt": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
     "share/oneocr/licenses/icu-Unicode-3.0.txt": "fcd7d69d457ebec8024269777c5d9cf3afc554592484d3dc7d9e619872f89c9c",
+    "share/oneocr/licenses/libcxx-LICENSE.txt": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b",
+    "share/oneocr/licenses/libcxxabi-LICENSE.txt": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c",
     "share/oneocr/licenses/msvc-runtime-notice.txt": "60943b6388944e8283d620c161b8129e01dc656ad0c43f4d53951e49c3ba44fa",
+    "share/oneocr/licenses/musl-COPYRIGHT.txt": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af",
     "share/oneocr/licenses/nlohmann-json-MIT.txt": "62f9a1bd84e5f64b4bd1542e556cb94d9872621b6e2e5af4d5d0b3e5bdf38c6a",
     "share/oneocr/licenses/oneocr-native-AGPL-3.0.txt": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
     "share/oneocr/licenses/onnxruntime-LICENSE.txt": "c250d6278f0b47a6439fb7592b08b58a55eb9f535aa49a1db63211c3f982b674",
@@ -25,7 +30,8 @@
     "share/oneocr/licenses/opencv-softfloat-fdlibm.txt": "07360afca97fb6a725a50797960c4506f592dab5331df2b780c85e459d422ce3",
     "share/oneocr/licenses/opencv-zlib.txt": "18dbd37f0ab175c37877e9053ff870a7de2809a3e9b9673b2696aa5009264638",
     "share/oneocr/portable.md": "cae57021a5b5e49247b33080608febd0a1c383cb82d4fc5104fa895cb8ed1705",
-    "share/oneocr/THIRD_PARTY_NOTICES.md": "abbfe6185b766706a100b0d2aa58f848262ced5a5855707e4a54d79c2880b238"
+    "share/oneocr/THIRD_PARTY_NOTICES.md": "da3ddebee72ad0c5d1d8c5f29870c58b52bd7cffe899876e10879a2e4feeb715",
+    "share/oneocr/wasm.md": "fe0aad6476d02176b8d75041d4670ee85164cc78da13e0e723232b80addda193"
   },
   "source_files": {
     "CMakeLists.txt": "f61d1dc0d14810e367b9b3d2579e767c428b5d27db5a82380a7d109a5ee61ff1",

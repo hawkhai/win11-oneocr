@@ -11,6 +11,7 @@ export const inject = ['tools']
 const DEFAULT_OCR_BIN = fileURLToPath(new URL('../bin/ocr.exe', import.meta.url))
 const PORTABLE_OCR_BIN = fileURLToPath(new URL(`../artifacts/${process.platform}-${process.arch}/bin/ocr${process.platform === 'win32' ? '.exe' : ''}`, import.meta.url))
 const DEFAULT_MODEL_DIR = fileURLToPath(new URL('../models', import.meta.url))
+const WASM_CLI = fileURLToPath(new URL('../artifacts/wasm32/cli.mjs', import.meta.url))
 
 function positiveInteger(value, fallback, label) {
   const resolved = value === undefined ? fallback : value
@@ -81,15 +82,15 @@ function plainText(result) {
 
 export function apply(ctx, config = {}) {
   const backend = config.backend ?? 'portable'
-  if (!['portable', 'legacy'].includes(backend)) throw new Error('backend must be portable or legacy')
-  const ocrBin = typeof config.ocrBin === 'string' && config.ocrBin ? resolve(config.ocrBin) : backend === 'legacy' ? DEFAULT_OCR_BIN : PORTABLE_OCR_BIN
+  if (!['portable', 'legacy', 'wasm'].includes(backend)) throw new Error('backend must be portable, legacy or wasm')
+  const ocrBin = typeof config.ocrBin === 'string' && config.ocrBin ? resolve(config.ocrBin) : backend === 'legacy' ? DEFAULT_OCR_BIN : backend === 'wasm' ? WASM_CLI : PORTABLE_OCR_BIN
   const modelDir = typeof config.modelDir === 'string' && config.modelDir ? resolve(config.modelDir) : DEFAULT_MODEL_DIR
   const timeoutMs = positiveInteger(config.timeoutMs, 60_000, 'timeoutMs')
   const maxOutputBytes = positiveInteger(config.maxOutputBytes, 4 * 1024 * 1024, 'maxOutputBytes')
 
   ctx.tools.register(defineTool({
     name: 'oneocr_recognize',
-    description: 'Recognize text in a local image with offline OneOCR. The portable native backend runs on supported desktop platforms; its JSON includes capability and parity status. Returns plain text and structured line/word results.',
+    description: 'Recognize text in a local image with offline OneOCR using the configured native, WebAssembly or Windows legacy backend. JSON includes capability and parity status. Returns plain text and structured line/word results.',
     parameters: {
       image_path: { type: 'string', required: true, description: 'Absolute path, or a path relative to the current session workspace.' },
       max_lines: { type: 'integer', description: 'Maximum recognition lines (1-1000). Default: 1000.' },
@@ -120,12 +121,14 @@ export function apply(ctx, config = {}) {
       const tempDir = await fs.mkdtemp(join(tmpdir(), 'dsh-oneocr-'))
       const outputPath = join(tempDir, 'result.json')
       const argv = [sessionPath(args.image_path, exec), '--output', outputPath, '--max-lines', String(maxLines), '--quiet']
-      if (backend === 'portable') argv.push('--model-dir', modelDir)
+      if (backend !== 'legacy') argv.push('--model-dir', modelDir)
       if (hasWidth) {
         argv.push('--resize', `${positiveInteger(args.resize_width, 0, 'resize_width')}x${positiveInteger(args.resize_height, 0, 'resize_height')}`)
       }
       try {
-        await runProcess(ocrBin, argv, { cwd: dirname(ocrBin), timeoutMs, maxOutputBytes, signal: exec.signal })
+        const command = backend === 'wasm' ? process.execPath : ocrBin
+        if (backend === 'wasm') argv.unshift(ocrBin)
+        await runProcess(command, argv, { cwd: dirname(ocrBin), timeoutMs, maxOutputBytes, signal: exec.signal })
         const info = await fs.stat(outputPath)
         if (info.size > maxOutputBytes) throw new Error(`OneOCR result exceeded ${maxOutputBytes} bytes`)
         const result = JSON.parse(await fs.readFile(outputPath, 'utf8'))

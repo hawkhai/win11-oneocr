@@ -96,6 +96,7 @@
 | 微软 DLL 的旧包装接口：`initModel`、`ocrImage*` | `OCR_ERR_*` 整数返回值 | `bin/oneocr_wrapper.dll` 或 `bin/photos-2026.11090.22001.0/oneocr_wrapper.dll` |
 | 原生 CLI：`ocr.cmd`、`ocr.sh`、`artifacts/*/bin/ocr[.exe]` | 进程退出码 `0` / `1`；错误说明在 stderr | 推荐的命令行入口 |
 | DSH 插件 | JavaScript `Error` / Promise rejection | `src/index.js` |
+| JavaScript / WebAssembly | 原生失败为 `OneOcrError`，保留 `code` / `stage`；加载与 Worker 失败也可能是普通 `Error` | `artifacts/wasm32/`，见 [Wasm 接入](wasm.md) |
 | Android JNI/Java 示例 | Java 异常，当前不透传整数状态码 | `native/android/`；目标平台尚未验证 |
 
 宿主连动态库都未加载成功时，应记录系统加载器或 FFI 的异常；此时没有调用 C ABI，不能把系统错误号解释为下表的 OneOCR 状态码。
@@ -235,6 +236,12 @@ FFI 应保留原始返回指针再交给 `oneocr_free()`；例如 ctypes 不要�
 ### Android 示例
 
 Java 包装层对已关闭实例抛 `IllegalStateException`，非 direct BGRA 缓冲区抛 `IllegalArgumentException`；JNI 将原生错误文本转为 `IllegalStateException`，当前不保留整数码，无法取得文本时使用 `Native OCR failed`。JVM 自身的空指针、库加载、内存异常另按 Java/JNI 规则处理。本示例的目标平台运行仍未验证。
+
+### JavaScript / WebAssembly
+
+`OneOcrError.code` 保留同一 C ABI 的整数码，`stage` 标明创建、识别或 JS 参数/资源检查阶段；错误消息仍是诊断文本。JS 侧参数校验也可能抛 `-12`，可信清单摘要不符或不支持的清单版本为 `-30`。关闭的直接实例调用返回 `-12`。
+
+Worker 会传回原生数字码；模块加载、文件/HTTP、Worker 退出、取消和超时也可能以普通 `Error` 拒绝 Promise，没有 OCR 数字码。Node 的 `ENOENT` 等字符串 `code` 保留其系统错误含义。取消或超时会终止 Worker，后续调用必须新建实例；不把这些情况伪造成 `-31`。Wasm CLI 同样成功退出 `0`、失败退出 `1`，不透传负数状态码。
 
 ## 三个回归拒绝样本
 

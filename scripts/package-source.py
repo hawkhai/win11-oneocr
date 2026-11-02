@@ -6,8 +6,8 @@ from pathlib import Path
 import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
-DIRECTORIES=('native','cmake','docs','licenses','research','scripts','src','test','samples','reports/oneocr-all-samples-2026-11-02')
-EXTENSIONS={'.cpp','.h','.hpp','.cmake','.json','.md','.txt','.py','.ps1','.java','.js','.mjs','.yml','.yaml','.png','.jpg','.jpeg','.bmp','.gif','.tif','.tiff','.webp'}
+DIRECTORIES=('native','cmake','docs','licenses','research','scripts','src','web','test','examples','samples','reports/oneocr-all-samples-2026-11-02')
+EXTENSIONS={'.cpp','.h','.hpp','.cmake','.json','.md','.txt','.py','.ps1','.java','.js','.mjs','.cjs','.mts','.html','.yml','.yaml','.png','.jpg','.jpeg','.bmp','.gif','.tif','.tiff','.webp'}
 ROOT_FILES=('.gitignore','.npmignore','CMakeLists.txt','CMakePresets.json','README.md','ocr.cmd','ocr.sh',
             'THIRD_PARTY_NOTICES.md','package.json','package-lock.json','cordis.patch.yml',
             'ocr.cpp','oneocr_wrapper.cpp','oneocr_test.cpp','oneocr.h','json.hpp','stb_image.h',
