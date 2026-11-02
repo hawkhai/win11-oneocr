@@ -1,0 +1,25 @@
+{
+  "passed": false,
+  "expected_lines": 1,
+  "actual_lines": 2,
+  "same_position_text_matches": 1,
+  "failure_count": 2,
+  "failures": [
+    {
+      "field": "line_count",
+      "expected": 1,
+      "actual": 2
+    },
+    {
+      "field": "image_angle",
+      "expected": 0.0,
+      "actual": 2.4495460987091064
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "vertical-cjk"
+}

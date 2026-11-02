@@ -1,0 +1,359 @@
+{
+  "passed": false,
+  "passed_cases": 1,
+  "total_cases": 27,
+  "cases": [
+    {
+      "passed": false,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 35,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "latin-18"
+    },
+    {
+      "passed": false,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 58,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "latin-36"
+    },
+    {
+      "passed": false,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 44,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "latin-rotate-0.5"
+    },
+    {
+      "passed": false,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 53,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "latin-rotate-3"
+    },
+    {
+      "passed": false,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 63,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "latin-rotate-10"
+    },
+    {
+      "passed": false,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 43,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "latin-rotate-90"
+    },
+    {
+      "passed": false,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 48,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "latin-rotate-180"
+    },
+    {
+      "passed": false,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 59,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "latin-rotate-270"
+    },
+    {
+      "passed": false,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 69,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "cjk-18"
+    },
+    {
+      "passed": false,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 95,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "cjk-36"
+    },
+    {
+      "passed": false,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 95,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "cjk-rotate-0.5"
+    },
+    {
+      "passed": false,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 98,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "cjk-rotate-3"
+    },
+    {
+      "passed": false,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 134,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "cjk-rotate-10"
+    },
+    {
+      "passed": false,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 109,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "cjk-rotate-90"
+    },
+    {
+      "passed": false,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 81,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "cjk-rotate-180"
+    },
+    {
+      "passed": false,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 81,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "cjk-rotate-270"
+    },
+    {
+      "passed": false,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 29,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "cyrillic-36"
+    },
+    {
+      "passed": false,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 0,
+      "failure_count": 30,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "arabic-36"
+    },
+    {
+      "passed": false,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 13,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "devanagari-36"
+    },
+    {
+      "passed": false,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 0,
+      "failure_count": 18,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "hebrew-36"
+    },
+    {
+      "passed": false,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 13,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "thai-36"
+    },
+    {
+      "passed": false,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 17,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "tamil-36"
+    },
+    {
+      "passed": false,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 25,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "greek-36"
+    },
+    {
+      "passed": true,
+      "expected_lines": 0,
+      "actual_lines": 0,
+      "same_position_text_matches": 0,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "blank"
+    },
+    {
+      "passed": false,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 22,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "透明路径-emoji-😀"
+    },
+    {
+      "passed": false,
+      "expected_lines": 6,
+      "actual_lines": 6,
+      "same_position_text_matches": 6,
+      "failure_count": 56,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "multi-column"
+    },
+    {
+      "passed": false,
+      "expected_lines": 1,
+      "actual_lines": 13,
+      "same_position_text_matches": 1,
+      "failure_count": 62,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "name": "vertical-cjk"
+    }
+  ],
+  "coverage_gap": "No independently sourced real handwriting fixture is present."
+}

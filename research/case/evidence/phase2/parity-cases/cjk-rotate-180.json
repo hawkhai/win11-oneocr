@@ -1,0 +1,780 @@
+{
+  "passed": false,
+  "expected_lines": 2,
+  "actual_lines": 2,
+  "same_position_text_matches": 0,
+  "failure_count": 153,
+  "failures": [
+    {
+      "field": "lines[0].text",
+      "expected": "中文识别与跨平台源码",
+      "actual": "日本語テキスト"
+    },
+    {
+      "field": "lines[0].bounding_box[0]",
+      "expected": 969.0,
+      "actual": 723.0
+    },
+    {
+      "field": "lines[0].bounding_box[1]",
+      "expected": 179.0,
+      "actual": 92.0
+    },
+    {
+      "field": "lines[0].bounding_box[2]",
+      "expected": 609.0,
+      "actual": 968.0
+    },
+    {
+      "field": "lines[0].bounding_box[3]",
+      "expected": 179.0,
+      "actual": 92.0
+    },
+    {
+      "field": "lines[0].bounding_box[4]",
+      "expected": 609.0,
+      "actual": 968.0
+    },
+    {
+      "field": "lines[0].bounding_box[5]",
+      "expected": 142.0,
+      "actual": 128.0
+    },
+    {
+      "field": "lines[0].bounding_box[6]",
+      "expected": 969.0,
+      "actual": 723.0
+    },
+    {
+      "field": "lines[0].bounding_box[7]",
+      "expected": 142.0,
+      "actual": 127.0
+    },
+    {
+      "field": "lines[0].word_count",
+      "expected": 10,
+      "actual": 7
+    },
+    {
+      "field": "lines[0].words[0].text",
+      "expected": "中",
+      "actual": "日"
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[0]",
+      "expected": 968.02978515625,
+      "actual": 962.698486328125
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[1]",
+      "expected": 180.0,
+      "actual": 127.88890075683594
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[2]",
+      "expected": 943.291015625,
+      "actual": 958.0150146484375
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[3]",
+      "expected": 180.0,
+      "actual": 127.88883972167969
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[4]",
+      "expected": 943.8084716796875,
+      "actual": 958.7508544921875
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[5]",
+      "expected": 142.38177490234375,
+      "actual": 92.318359375
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[6]",
+      "expected": 968.5849609375,
+      "actual": 963.4490356445312
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[7]",
+      "expected": 142.30152893066406,
+      "actual": 92.32164764404297
+    },
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.9965423345565796,
+      "actual": 0.9991519451141357
+    },
+    {
+      "field": "lines[0].words[1].text",
+      "expected": "文",
+      "actual": "本"
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[0]",
+      "expected": 932.1585693359375,
+      "actual": 929.914306640625
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[1]",
+      "expected": 180.0,
+      "actual": 127.88848876953125
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[2]",
+      "expected": 908.657958984375,
+      "actual": 925.2308349609375
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[3]",
+      "expected": 180.0,
+      "actual": 127.888427734375
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[4]",
+      "expected": 909.1214599609375,
+      "actual": 925.8636474609375
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[5]",
+      "expected": 142.48641967773438,
+      "actual": 92.29537200927734
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[6]",
+      "expected": 932.6590576171875,
+      "actual": 930.5618286132812
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[7]",
+      "expected": 142.4178924560547,
+      "actual": 92.29865264892578
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.9962360858917236,
+      "actual": 0.9996441602706909
+    },
+    {
+      "field": "lines[0].words[2].text",
+      "expected": "识",
+      "actual": "語"
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[1]",
+      "expected": 180.0,
+      "actual": 127.88801574707031
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[2]",
+      "expected": 869.0757446289062,
+      "actual": 887.76318359375
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[3]",
+      "expected": 180.0,
+      "actual": 127.88795471191406
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[4]",
+      "expected": 869.47900390625,
+      "actual": 888.2782592773438
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[5]",
+      "expected": 142.5792694091797,
+      "actual": 92.26909637451172
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[7]",
+      "expected": 142.52413940429688,
+      "actual": 92.27238464355469
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.9964494109153748,
+      "actual": 0.9991355538368225
+    },
+    {
+      "field": "lines[0].words[3].text",
+      "expected": "别",
+      "actual": "テ"
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[0]",
+      "expected": 857.944580078125,
+      "actual": 854.97900390625
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[1]",
+      "expected": 180.0,
+      "actual": 127.88754272460938
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[2]",
+      "expected": 834.4425659179688,
+      "actual": 850.2955322265625
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[3]",
+      "expected": 180.0,
+      "actual": 127.88748168945312
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[4]",
+      "expected": 834.7918090820312,
+      "actual": 850.69287109375
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[5]",
+      "expected": 142.6322021484375,
+      "actual": 92.24282836914062
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[6]",
+      "expected": 858.32958984375,
+      "actual": 855.3910522460938
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[7]",
+      "expected": 142.59820556640625,
+      "actual": 92.24610900878906
+    },
+    {
+      "field": "lines[0].words[3].confidence",
+      "expected": 0.9959691166877747,
+      "actual": 0.9977949857711792
+    },
+    {
+      "field": "lines[0].words[4].text",
+      "expected": "与",
+      "actual": "キ"
+    },
+    {
+      "field": "lines[0].words[4].bounding_box[0]",
+      "expected": 823.31005859375,
+      "actual": 817.5113525390625
+    },
+    {
+      "field": "lines[0].words[4].bounding_box[1]",
+      "expected": 180.0,
+      "actual": 127.8870620727539
+    },
+    {
+      "field": "lines[0].words[4].bounding_box[2]",
+      "expected": 799.8094482421875,
+      "actual": 812.827880859375
+    },
+    {
+      "field": "lines[0].words[4].bounding_box[3]",
+      "expected": 180.0,
+      "actual": 127.88700866699219
+    },
+    {
+      "field": "lines[0].words[4].bounding_box[4]",
+      "expected": 800.1046142578125,
+      "actual": 813.1075439453125
+    },
+    {
+      "field": "lines[0].words[4].bounding_box[5]",
+      "expected": 142.66900634765625,
+      "actual": 92.216552734375
+    },
+    {
+      "field": "lines[0].words[4].bounding_box[6]",
+      "expected": 823.642333984375,
+      "actual": 817.8056640625
+    },
+    {
+      "field": "lines[0].words[4].bounding_box[7]",
+      "expected": 142.6483154296875,
+      "actual": 92.21984100341797
+    },
+    {
+      "field": "lines[0].words[4].confidence",
+      "expected": 0.995918333530426,
+      "actual": 0.9998584985733032
+    },
+    {
+      "field": "lines[0].words[5].text",
+      "expected": "跨",
+      "actual": "ス"
+    },
+    {
+      "field": "lines[0].words[5].bounding_box[1]",
+      "expected": 180.0,
+      "actual": 127.88665008544922
+    },
+    {
+      "field": "lines[0].words[5].bounding_box[2]",
+      "expected": 760.228515625,
+      "actual": 780.043701171875
+    },
+    {
+      "field": "lines[0].words[5].bounding_box[3]",
+      "expected": 180.0,
+      "actual": 127.88658905029297
+    },
+    {
+      "field": "lines[0].words[5].bounding_box[4]",
+      "expected": 760.4620971679688,
+      "actual": 780.2202758789062
+    },
+    {
+      "field": "lines[0].words[5].bounding_box[5]",
+      "expected": 142.68795776367188,
+      "actual": 92.19356536865234
+    },
+    {
+      "field": "lines[0].words[5].bounding_box[7]",
+      "expected": 142.67782592773438,
+      "actual": 92.19685363769531
+    },
+    {
+      "field": "lines[0].words[5].confidence",
+      "expected": 0.9962590932846069,
+      "actual": 0.9992685914039612
+    },
+    {
+      "field": "lines[0].words[6].text",
+      "expected": "平",
+      "actual": "ト"
+    },
+    {
+      "field": "lines[0].words[6].bounding_box[0]",
+      "expected": 749.095947265625,
+      "actual": 747.259521484375
+    },
+    {
+      "field": "lines[0].words[6].bounding_box[1]",
+      "expected": 180.0,
+      "actual": 127.88617706298828
+    },
+    {
+      "field": "lines[0].words[6].bounding_box[2]",
+      "expected": 725.5939331054688,
+      "actual": 742.5760498046875
+    },
+    {
+      "field": "lines[0].words[6].bounding_box[3]",
+      "expected": 180.0,
+      "actual": 127.88611602783203
+    },
+    {
+      "field": "lines[0].words[6].bounding_box[4]",
+      "expected": 725.77490234375,
+      "actual": 742.6348876953125
+    },
+    {
+      "field": "lines[0].words[6].bounding_box[5]",
+      "expected": 142.67579650878906,
+      "actual": 92.16729736328125
+    },
+    {
+      "field": "lines[0].words[6].bounding_box[6]",
+      "expected": 749.3126220703125,
+      "actual": 747.3330688476562
+    },
+    {
+      "field": "lines[0].words[6].bounding_box[7]",
+      "expected": 142.68405151367188,
+      "actual": 92.17057800292969
+    },
+    {
+      "field": "lines[0].words[6].confidence",
+      "expected": 0.9961603283882141,
+      "actual": 0.9883013367652893
+    },
+    {
+      "field": "lines[1].text",
+      "expected": "日本語テキスト",
+      "actual": "中文识别与跨平台源码"
+    },
+    {
+      "field": "lines[1].bounding_box[0]",
+      "expected": 968.0,
+      "actual": 609.0
+    },
+    {
+      "field": "lines[1].bounding_box[1]",
+      "expected": 127.0,
+      "actual": 142.0
+    },
+    {
+      "field": "lines[1].bounding_box[2]",
+      "expected": 723.0,
+      "actual": 969.0
+    },
+    {
+      "field": "lines[1].bounding_box[3]",
+      "expected": 127.0,
+      "actual": 142.0
+    },
+    {
+      "field": "lines[1].bounding_box[4]",
+      "expected": 723.0,
+      "actual": 969.0
+    },
+    {
+      "field": "lines[1].bounding_box[5]",
+      "expected": 92.0,
+      "actual": 179.0
+    },
+    {
+      "field": "lines[1].bounding_box[6]",
+      "expected": 968.0,
+      "actual": 609.0
+    },
+    {
+      "field": "lines[1].bounding_box[7]",
+      "expected": 92.0,
+      "actual": 179.0
+    },
+    {
+      "field": "lines[1].word_count",
+      "expected": 7,
+      "actual": 10
+    },
+    {
+      "field": "lines[1].words[0].text",
+      "expected": "日",
+      "actual": "中"
+    },
+    {
+      "field": "lines[1].words[0].bounding_box[0]",
+      "expected": 967.1080932617188,
+      "actual": 963.6534423828125
+    },
+    {
+      "field": "lines[1].words[0].bounding_box[1]",
+      "expected": 128.0,
+      "actual": 179.6908721923828
+    },
+    {
+      "field": "lines[1].words[0].bounding_box[2]",
+      "expected": 940.0115966796875,
+      "actual": 958.732177734375
+    },
+    {
+      "field": "lines[1].words[0].bounding_box[3]",
+      "expected": 128.0,
+      "actual": 179.68910217285156
+    },
+    {
+      "field": "lines[1].words[0].bounding_box[4]",
+      "expected": 940.703857421875,
+      "actual": 959.263916015625
+    },
+    {
+      "field": "lines[1].words[0].bounding_box[5]",
+      "expected": 92.34127044677734,
+      "actual": 142.30517578125
+    },
+    {
+      "field": "lines[1].words[0].bounding_box[6]",
+      "expected": 967.885498046875,
+      "actual": 964.192626953125
+    },
+    {
+      "field": "lines[1].words[0].bounding_box[7]",
+      "expected": 92.32508087158203,
+      "actual": 142.302490234375
+    },
+    {
+      "field": "lines[1].words[0].confidence",
+      "expected": 0.9962490797042847,
+      "actual": 0.999708354473114
+    },
+    {
+      "field": "lines[1].words[1].text",
+      "expected": "本",
+      "actual": "文"
+    },
+    {
+      "field": "lines[1].words[1].bounding_box[0]",
+      "expected": 931.764892578125,
+      "actual": 929.204833984375
+    },
+    {
+      "field": "lines[1].words[1].bounding_box[1]",
+      "expected": 128.0,
+      "actual": 179.67845153808594
+    },
+    {
+      "field": "lines[1].words[1].bounding_box[2]",
+      "expected": 910.5615234375,
+      "actual": 924.2836303710938
+    },
+    {
+      "field": "lines[1].words[1].bounding_box[3]",
+      "expected": 128.0,
+      "actual": 179.6766815185547
+    },
+    {
+      "field": "lines[1].words[1].bounding_box[4]",
+      "expected": 911.15869140625,
+      "actual": 924.7628784179688
+    },
+    {
+      "field": "lines[1].words[1].bounding_box[5]",
+      "expected": 92.35359954833984,
+      "actual": 142.32406616210938
+    },
+    {
+      "field": "lines[1].words[1].bounding_box[6]",
+      "expected": 932.4312744140625,
+      "actual": 929.6915893554688
+    },
+    {
+      "field": "lines[1].words[1].bounding_box[7]",
+      "expected": 92.34619140625,
+      "actual": 142.3213653564453
+    },
+    {
+      "field": "lines[1].words[1].confidence",
+      "expected": 0.9965412020683289,
+      "actual": 0.999267041683197
+    },
+    {
+      "field": "lines[1].words[2].text",
+      "expected": "語",
+      "actual": "识"
+    },
+    {
+      "field": "lines[1].words[2].bounding_box[0]",
+      "expected": 895.2461547851562,
+      "actual": 889.8350219726562
+    },
+    {
+      "field": "lines[1].words[2].bounding_box[1]",
+      "expected": 128.0,
+      "actual": 179.6642608642578
+    },
+    {
+      "field": "lines[1].words[2].bounding_box[2]",
+      "expected": 862.850830078125,
+      "actual": 884.913818359375
+    },
+    {
+      "field": "lines[1].words[2].bounding_box[3]",
+      "expected": 128.0,
+      "actual": 179.66249084472656
+    },
+    {
+      "field": "lines[1].words[2].bounding_box[4]",
+      "expected": 863.2954711914062,
+      "actual": 885.3331909179688
+    },
+    {
+      "field": "lines[1].words[2].bounding_box[5]",
+      "expected": 92.34650421142578,
+      "actual": 142.3456268310547
+    },
+    {
+      "field": "lines[1].words[2].bounding_box[6]",
+      "expected": 895.795166015625,
+      "actual": 890.2619018554688
+    },
+    {
+      "field": "lines[1].words[2].bounding_box[7]",
+      "expected": 92.35279846191406,
+      "actual": 142.3429412841797
+    },
+    {
+      "field": "lines[1].words[2].confidence",
+      "expected": 0.9960351586341858,
+      "actual": 0.9994992017745972
+    },
+    {
+      "field": "lines[1].words[3].text",
+      "expected": "テ",
+      "actual": "别"
+    },
+    {
+      "field": "lines[1].words[3].bounding_box[1]",
+      "expected": 128.0,
+      "actual": 179.65184020996094
+    },
+    {
+      "field": "lines[1].words[3].bounding_box[2]",
+      "expected": 832.2200927734375,
+      "actual": 850.4652099609375
+    },
+    {
+      "field": "lines[1].words[3].bounding_box[3]",
+      "expected": 128.0,
+      "actual": 179.6500701904297
+    },
+    {
+      "field": "lines[1].words[3].bounding_box[4]",
+      "expected": 832.5684204101562,
+      "actual": 850.8321533203125
+    },
+    {
+      "field": "lines[1].words[3].bounding_box[5]",
+      "expected": 92.32501983642578,
+      "actual": 142.364501953125
+    },
+    {
+      "field": "lines[1].words[3].bounding_box[7]",
+      "expected": 92.34113311767578,
+      "actual": 142.36181640625
+    },
+    {
+      "field": "lines[1].words[3].confidence",
+      "expected": 0.9954363107681274,
+      "actual": 0.9985435009002686
+    },
+    {
+      "field": "lines[1].words[4].text",
+      "expected": "キ",
+      "actual": "与"
+    },
+    {
+      "field": "lines[1].words[4].bounding_box[0]",
+      "expected": 819.2635498046875,
+      "actual": 820.9378662109375
+    },
+    {
+      "field": "lines[1].words[4].bounding_box[1]",
+      "expected": 128.0,
+      "actual": 179.63943481445312
+    },
+    {
+      "field": "lines[1].words[4].bounding_box[2]",
+      "expected": 796.2904663085938,
+      "actual": 816.0166015625
+    },
+    {
+      "field": "lines[1].words[4].bounding_box[3]",
+      "expected": 128.0,
+      "actual": 179.6376495361328
+    },
+    {
+      "field": "lines[1].words[4].bounding_box[4]",
+      "expected": 796.5233154296875,
+      "actual": 816.3311767578125
+    },
+    {
+      "field": "lines[1].words[4].bounding_box[5]",
+      "expected": 92.28362274169922,
+      "actual": 142.38339233398438
+    },
+    {
+      "field": "lines[1].words[4].bounding_box[6]",
+      "expected": 819.5685424804688,
+      "actual": 821.2598876953125
+    },
+    {
+      "field": "lines[1].words[4].bounding_box[7]",
+      "expected": 92.31464385986328,
+      "actual": 142.3806915283203
+    },
+    {
+      "field": "lines[1].words[5].text",
+      "expected": "ス",
+      "actual": "跨"
+    },
+    {
+      "field": "lines[1].words[5].bounding_box[0]",
+      "expected": 783.9203491210938,
+      "actual": 786.4892578125
+    },
+    {
+      "field": "lines[1].words[5].bounding_box[1]",
+      "expected": 128.0,
+      "actual": 179.62701416015625
+    },
+    {
+      "field": "lines[1].words[5].bounding_box[2]",
+      "expected": 760.36083984375,
+      "actual": 781.5679931640625
+    },
+    {
+      "field": "lines[1].words[5].bounding_box[3]",
+      "expected": 128.0,
+      "actual": 179.625244140625
+    },
+    {
+      "field": "lines[1].words[5].bounding_box[4]",
+      "expected": 760.4782104492188,
+      "actual": 781.8301391601562
+    },
+    {
+      "field": "lines[1].words[5].bounding_box[5]",
+      "expected": 92.22718811035156,
+      "actual": 142.4022674560547
+    },
+    {
+      "field": "lines[1].words[5].bounding_box[6]",
+      "expected": 784.1143188476562,
+      "actual": 786.7588500976562
+    },
+    {
+      "field": "lines[1].words[5].bounding_box[7]",
+      "expected": 92.26691436767578,
+      "actual": 142.39956665039062
+    },
+    {
+      "field": "lines[1].words[5].confidence",
+      "expected": 0.9962114691734314,
+      "actual": 0.9991803765296936
+    },
+    {
+      "field": "lines[1].words[6].text",
+      "expected": "ト",
+      "actual": "平"
+    },
+    {
+      "field": "lines[1].words[6].bounding_box[0]",
+      "expected": 739.1549682617188,
+      "actual": 747.1194458007812
+    },
+    {
+      "field": "lines[1].words[6].bounding_box[1]",
+      "expected": 128.0,
+      "actual": 179.61282348632812
+    },
+    {
+      "field": "lines[1].words[6].bounding_box[2]",
+      "expected": 723.0,
+      "actual": 742.1982421875
+    },
+    {
+      "field": "lines[1].words[6].bounding_box[3]",
+      "expected": 128.0,
+      "actual": 179.61105346679688
+    },
+    {
+      "field": "lines[1].words[6].bounding_box[4]",
+      "expected": 723.0,
+      "actual": 742.400390625
+    },
+    {
+      "field": "lines[1].words[6].bounding_box[5]",
+      "expected": 92.15180206298828,
+      "actual": 142.423828125
+    },
+    {
+      "field": "lines[1].words[6].bounding_box[6]",
+      "expected": 739.2056884765625,
+      "actual": 747.3291015625
+    },
+    {
+      "field": "lines[1].words[6].bounding_box[7]",
+      "expected": 92.18478393554688,
+      "actual": 142.421142578125
+    },
+    {
+      "field": "lines[1].words[6].confidence",
+      "expected": 0.9830626845359802,
+      "actual": 0.999420166015625
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "cjk-rotate-180"
+}

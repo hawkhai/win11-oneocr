@@ -1,0 +1,150 @@
+{
+  "passed": false,
+  "expected_lines": 1,
+  "actual_lines": 1,
+  "same_position_text_matches": 1,
+  "failure_count": 27,
+  "failures": [
+    {
+      "field": "image_angle",
+      "expected": 359.74407958984375,
+      "actual": 359.9786376953125
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[0]",
+      "expected": 26.280094146728516,
+      "actual": 33.18584442138672
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[2]",
+      "expected": 121.52112579345703,
+      "actual": 99.94142150878906
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[4]",
+      "expected": 120.7427978515625,
+      "actual": 99.17606353759766
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[5]",
+      "expected": 81.77315521240234,
+      "actual": 79.32251739501953
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[6]",
+      "expected": 25.501768112182617,
+      "actual": 32.42049026489258
+    },
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.984575092792511,
+      "actual": 0.9963611364364624
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[0]",
+      "expected": 131.8999786376953,
+      "actual": 122.96058654785156
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[2]",
+      "expected": 314.4463806152344,
+      "actual": 293.3023681640625
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[4]",
+      "expected": 313.6680603027344,
+      "actual": 292.5370178222656
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[5]",
+      "expected": 80.47114562988281,
+      "actual": 77.28797149658203
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[6]",
+      "expected": 131.12167358398438,
+      "actual": 122.19522857666016
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[7]",
+      "expected": 81.82929992675781,
+      "actual": 79.08030700683594
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.9926614761352539,
+      "actual": 0.9979461431503296
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[0]",
+      "expected": 323.6042175292969,
+      "actual": 311.71771240234375
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[2]",
+      "expected": 382.8249206542969,
+      "actual": 364.66180419921875
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[4]",
+      "expected": 382.0466003417969,
+      "actual": 363.8964538574219
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[5]",
+      "expected": 78.87684631347656,
+      "actual": 76.53712463378906
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[6]",
+      "expected": 322.8258972167969,
+      "actual": 310.9523620605469
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[7]",
+      "expected": 80.30183410644531,
+      "actual": 77.09420776367188
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.9882414937019348,
+      "actual": 0.9946850538253784
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[0]",
+      "expected": 392.59326171875,
+      "actual": 389.9828796386719
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[2]",
+      "expected": 473.0,
+      "actual": 454.4365234375
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[4]",
+      "expected": 473.0,
+      "actual": 453.6711730957031
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[6]",
+      "expected": 391.81494140625,
+      "actual": 389.217529296875
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[7]",
+      "expected": 78.61843872070312,
+      "actual": 76.27069854736328
+    },
+    {
+      "field": "lines[0].words[3].confidence",
+      "expected": 0.9780166745185852,
+      "actual": 0.9917213916778564
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "透明路径-emoji-😀"
+}

@@ -1,0 +1,23 @@
+适用于 .NET Framework MSBuild 版本 17.14.40+3e7442088
+
+  oneocr_icu_data.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\Release\oneocr_icu_data.lib
+  oneocr_confidence_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_confidence_test.exe
+  oneocr_decode_image.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_decode_image.exe
+  oneocr_classification_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_classification_test.exe
+  oneocr_ordering_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_ordering_test.exe
+  zlib.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\3rdparty\lib\Release\zlib.lib
+  oneocr_math_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_math_test.exe
+  oneocr_tensor_probe.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_tensor_probe.exe
+  opencv_core.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\lib\Release\opencv_core4100.lib
+  opencv_imgproc.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\lib\Release\opencv_imgproc4100.lib
+  oneocr_icu_common.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\Release\oneocr_icu_common.lib
+  oneocr_alignment_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_alignment_test.exe
+  oneocr_detector_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_detector_test.exe
+  nms.cpp
+  nms.cpp
+    正在创建库 F:/pythonx/myocr/win11-oneocr/build/source-runtime/native/Release/oneocr_portable.lib 和对象 F:/pythonx/myocr/win11-oneocr/build/source-runtime/native/Release/oneocr_portable.exp
+  oneocr_nms_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_nms_test.exe
+  oneocr_portable.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_portable.dll
+  oneocr_api_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_api_test.exe
+  ocr.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\ocr.exe
+  oneocr_wrapper_compat.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_wrapper.dll

@@ -1,0 +1,412 @@
+make[0]: Making `install' in `stubdata'
+make[1]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/stubdata'
+/bin/bash ../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib
+mkdir /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install
+mkdir /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib
+/usr/bin/install -c libicudata.a /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib
+make[1]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/stubdata'
+make[0]: Making `install' in `common'
+make[1]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/common'
+/bin/bash ../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+mkdir /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include
+mkdir /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/appendable.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/brkiter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/bytestream.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/bytestrie.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/bytestriebuilder.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/caniter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/casemap.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/char16ptr.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/chariter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/dbbi.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/docmain.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/dtintrv.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/edits.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/enumset.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/errorcode.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/filteredbrk.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/icudataver.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/icuplug.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/idna.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/localebuilder.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/localematcher.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/localpointer.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/locdspnm.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/locid.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/messagepattern.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/normalizer2.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/normlzr.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/parseerr.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/parsepos.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/platform.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ptypes.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/putil.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/rbbi.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/rep.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/resbund.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/schriter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/simpleformatter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/std_string.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/strenum.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/stringoptions.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/stringpiece.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/stringtriebuilder.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/symtable.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ubidi.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ubiditransform.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ubrk.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ucasemap.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ucat.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/uchar.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ucharstrie.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ucharstriebuilder.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/uchriter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/uclean.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ucnv.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ucnv_cb.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ucnv_err.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ucnvsel.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/uconfig.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ucpmap.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ucptrie.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ucurr.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/udata.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/udisplaycontext.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/uenum.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/uidna.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/uiter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/uldnames.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/uloc.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ulocale.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ulocbuilder.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/umachine.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/umisc.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/umutablecptrie.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/unifilt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/unifunct.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/unimatch.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/uniset.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/unistr.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/unorm.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/unorm2.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/uobject.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/urename.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/urep.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ures.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/uscript.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/uset.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/usetiter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ushape.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/usprep.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ustring.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/ustringtrie.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/utext.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/utf.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/utf16.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/utf32.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/utf8.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/utf_old.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/utrace.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/utypes.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/uvernum.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/common/unicode/uversion.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/bin/bash ../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib
+/usr/bin/install -c ../lib/libicuuc.a /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib
+make[1]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/common'
+make[0]: Making `install' in `i18n'
+make[1]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/i18n'
+/bin/bash ../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/alphaindex.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/basictz.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/calendar.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/choicfmt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/coleitr.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/coll.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/compactdecimalformat.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/curramt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/currpinf.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/currunit.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/datefmt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/dcfmtsym.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/decimfmt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/displayoptions.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/dtfmtsym.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/dtitvfmt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/dtitvinf.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/dtptngen.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/dtrule.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/fieldpos.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/fmtable.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/format.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/formattednumber.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/formattedvalue.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/fpositer.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/gender.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/gregocal.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/listformatter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/measfmt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/measunit.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/measure.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/msgfmt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/nounit.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/numberformatter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/numberrangeformatter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/numfmt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/numsys.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/plurfmt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/plurrule.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/rbnf.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/rbtz.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/regex.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/region.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/reldatefmt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/scientificnumberformatter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/search.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/selfmt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/simplenumberformatter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/simpletz.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/smpdtfmt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/sortkey.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/stsearch.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/tblcoll.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/timezone.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/tmunit.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/tmutamt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/tmutfmt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/translit.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/tzfmt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/tznames.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/tzrule.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/tztrans.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/ucal.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/ucol.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/ucoleitr.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/ucsdet.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/udat.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/udateintervalformat.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/udatpg.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/udisplayoptions.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/ufieldpositer.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/uformattable.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/uformattednumber.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/uformattedvalue.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/ugender.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/ulistformatter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/ulocdata.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/umsg.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/unirepl.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/unum.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/unumberformatter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/unumberoptions.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/unumberrangeformatter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/unumsys.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/upluralrules.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/uregex.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/uregion.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/ureldatefmt.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/usearch.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/usimplenumberformatter.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/uspoof.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/utmscale.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/utrans.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/i18n/unicode/vtzone.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/bin/bash ../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib
+/usr/bin/install -c ../lib/libicui18n.a /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib
+make[1]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/i18n'
+make[0]: Making `install' in `io'
+make[1]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/io'
+/bin/bash ../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/io/unicode/ustdio.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/usr/bin/install -c -m 644 ../../vendor/icu-linux/icu4c/source/io/unicode/ustream.h /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/include/unicode
+/bin/bash ../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib
+/usr/bin/install -c ../lib/libicuio.a /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib
+make[1]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/io'
+make[0]: Making `install' in `tools'
+make[1]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools'
+make[1]: Making `install' in `toolutil'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/toolutil'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib
+/usr/bin/install -c ../../lib/libicutu.a /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/toolutil'
+make[1]: Making `install' in `ctestfw'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/ctestfw'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib
+/usr/bin/install -c libicutest.a /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/ctestfw'
+make[1]: Making `install' in `makeconv'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/makeconv'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+mkdir /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share
+mkdir /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man
+mkdir /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/usr/bin/install -c -m 644 makeconv.1 /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+mkdir /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+/usr/bin/install -c ../../bin/makeconv /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/makeconv'
+make[1]: Making `install' in `genrb'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/genrb'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/usr/bin/install -c -m 644 genrb.1 derb.1 /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+/usr/bin/install -c ../../bin/genrb /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+/usr/bin/install -c ../../bin/derb /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/genrb'
+make[1]: Making `install' in `genbrk'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/genbrk'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/usr/bin/install -c -m 644 genbrk.1 /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+/usr/bin/install -c ../../bin/genbrk /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/genbrk'
+make[1]: Making `install' in `gencnval'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/gencnval'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/usr/bin/install -c -m 644 gencnval.1 /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+/usr/bin/install -c ../../bin/gencnval /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/gencnval'
+make[1]: Making `install' in `gensprep'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/gensprep'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man8
+mkdir /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man8
+/usr/bin/install -c -m 644 gensprep.8 /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man8
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/sbin
+mkdir /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/sbin
+/usr/bin/install -c ../../bin/gensprep /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/sbin
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/gensprep'
+make[1]: Making `install' in `icuinfo'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/icuinfo'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+/usr/bin/install -c icuinfo /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/icuinfo'
+make[1]: Making `install' in `genccode'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/genccode'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man8
+/usr/bin/install -c -m 644 genccode.8 /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man8
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/sbin
+/usr/bin/install -c ../../bin/genccode /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/sbin
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/genccode'
+make[1]: Making `install' in `gencmn'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/gencmn'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man8
+/usr/bin/install -c -m 644 gencmn.8 /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man8
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/sbin
+/usr/bin/install -c ../../bin/gencmn /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/sbin
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/gencmn'
+make[1]: Making `install' in `icupkg'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/icupkg'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man8
+/usr/bin/install -c -m 644 icupkg.8 /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man8
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/sbin
+/usr/bin/install -c ../../bin/icupkg /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/sbin
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/icupkg'
+make[1]: Making `install' in `pkgdata'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/pkgdata'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/usr/bin/install -c -m 644 pkgdata.1 /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+/usr/bin/install -c ../../bin/pkgdata /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/pkgdata'
+make[1]: Making `install' in `gentest'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/gentest'
+make[2]: Nothing to be done for 'install'.
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/gentest'
+make[1]: Making `install' in `gennorm2'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/gennorm2'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/sbin
+/usr/bin/install -c ../../bin/gennorm2 /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/sbin
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/gennorm2'
+make[1]: Making `install' in `gencfu'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/gencfu'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/usr/bin/install -c -m 644 gencfu.1 /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+/usr/bin/install -c ../../bin/gencfu /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/gencfu'
+make[1]: Making `install' in `gendict'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/gendict'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/usr/bin/install -c -m 644 gendict.1 /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+/usr/bin/install -c ../../bin/gendict /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/gendict'
+make[1]: Making `install' in `icuexportdata'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/icuexportdata'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/usr/bin/install -c -m 644 icuexportdata.1 /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+/usr/bin/install -c ../../bin/icuexportdata /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/icuexportdata'
+make[1]: Making `install' in `escapesrc'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/escapesrc'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/sbin
+/usr/bin/install -c ../../bin/escapesrc /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/sbin
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools/escapesrc'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools'
+make[2]: Nothing to be done for 'install-local'.
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools'
+make[1]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/tools'
+make[0]: Making `install' in `data'
+make[1]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/data'
+/bin/bash ../../vendor/icu-linux/icu4c/source/mkinstalldirs  /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib
+LD_LIBRARY_PATH=../stubdata:../tools/ctestfw:../lib:$LD_LIBRARY_PATH  ../bin/pkgdata -O ../data/icupkg.inc -q -c -s /mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/data/out/build/icudt74l -d ../lib -m static -r 74.2 -e icudt74  -T ./out/tmp -s ./out/build/icudt74l -p icudt74l -L icudata ./out/tmp/icudata.lst -I /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib
+pkgdata: cd ../lib/ && /usr/bin/install -c libicudata.a /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib/libicudata.a
+make[1]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/data'
+make[0]: Making `install' in `extra'
+make[1]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/extra'
+make[1]: Making `install' in `scrptrun'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/extra/scrptrun'
+make[2]: Nothing to be done for 'install'.
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/extra/scrptrun'
+make[1]: Making `install' in `uconv'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/extra/uconv'
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+/usr/bin/install -c ../../bin/uconv /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin
+/bin/bash ../../../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/usr/bin/install -c -m 644 uconv.1 /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/extra/uconv'
+make[2]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/extra'
+make[2]: Nothing to be done for 'install-local'.
+make[2]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/extra'
+make[1]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build/extra'
+make[1]: Entering directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build'
+mkdir /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/icu
+mkdir /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/icu/74.2
+mkdir /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/icu/74.2/config
+mkdir /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib/icu
+mkdir /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib/icu/74.2
+/usr/bin/install -c -m 644 ../vendor/icu-linux/icu4c/source/config/mh-linux /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/icu/74.2/config/mh-linux
+/usr/bin/install -c ../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/icu/74.2/mkinstalldirs
+/usr/bin/install -c ../vendor/icu-linux/icu4c/source/install-sh /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/icu/74.2/install-sh
+mkdir /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib/pkgconfig
+/usr/bin/install -c -m 644 ./config/icu-uc.pc ./config/icu-i18n.pc ./config/icu-io.pc /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib/pkgconfig/
+/usr/bin/install -c -m 644 ../vendor/icu-linux/icu4c/source/../LICENSE /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/icu/74.2/LICENSE
+/usr/bin/install -c ./config/icu-config /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin/icu-config
+/usr/bin/install -c -m 644 ./config/Makefile.inc /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib/icu/74.2/Makefile.inc
+/usr/bin/install -c -m 644 ./config/pkgdata.inc /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib/icu/74.2/pkgdata.inc
+cd /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib/icu/74.2/..; \
+    rm -rf current && ln -s 74.2 current; \
+    rm -f Makefile.inc && ln -s current/Makefile.inc Makefile.inc; \
+    rm -f pkgdata.inc && ln -s current/pkgdata.inc pkgdata.inc
+cd . \
+ && CONFIG_FILES=./config/icu-config.1 CONFIG_HEADERS= /bin/bash ./config.status
+config.status: creating ./config/icu-config.1
+/bin/bash ../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/usr/bin/install -c -m 644 config/icu-config.1 /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+make[1]: Leaving directory '/mnt/f/pythonx/myocr/win11-oneocr/work/icu-source-build'
+/usr/bin/install -c -m 644 ../vendor/icu-linux/icu4c/source/config/mh-linux /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/icu/74.2/config/mh-linux
+/usr/bin/install -c ../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/icu/74.2/mkinstalldirs
+/usr/bin/install -c ../vendor/icu-linux/icu4c/source/install-sh /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/icu/74.2/install-sh
+/usr/bin/install -c -m 644 ./config/icu-uc.pc ./config/icu-i18n.pc ./config/icu-io.pc /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib/pkgconfig/
+/usr/bin/install -c -m 644 ../vendor/icu-linux/icu4c/source/../LICENSE /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/icu/74.2/LICENSE
+/usr/bin/install -c ./config/icu-config /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/bin/icu-config
+/usr/bin/install -c -m 644 ./config/Makefile.inc /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib/icu/74.2/Makefile.inc
+/usr/bin/install -c -m 644 ./config/pkgdata.inc /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib/icu/74.2/pkgdata.inc
+cd /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/lib/icu/74.2/..; \
+    rm -rf current && ln -s 74.2 current; \
+    rm -f Makefile.inc && ln -s current/Makefile.inc Makefile.inc; \
+    rm -f pkgdata.inc && ln -s current/pkgdata.inc pkgdata.inc
+/bin/bash ../vendor/icu-linux/icu4c/source/mkinstalldirs /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1
+/usr/bin/install -c -m 644 config/icu-config.1 /mnt/f/pythonx/myocr/win11-oneocr/work/icu-install/share/man/man1

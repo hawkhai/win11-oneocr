@@ -1,0 +1,10 @@
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/work/ort-linux-install/include/onnxruntime/provider_options.h
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/work/ort-linux-install/include/onnxruntime/cpu_provider_factory.h
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/work/ort-linux-install/include/onnxruntime/core/providers/resource.h
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/work/ort-linux-install/include/onnxruntime/core/providers/custom_op_context.h
+CMake Error at /root/oneocr-ort-linux-source/Release/cmake_install.cmake:67 (file):
+  file INSTALL cannot find
+  "/root/oneocr-ort-linux-source/Release/libonnxruntime_providers_shared.so":
+  No such file or directory.
+
+

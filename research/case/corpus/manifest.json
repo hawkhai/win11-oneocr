@@ -1,0 +1,273 @@
+{
+  "cases": [
+    {
+      "name": "latin-18",
+      "file": "latin-18.png",
+      "tags": [
+        "latin",
+        "printed",
+        "small-font"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "latin-36",
+      "file": "latin-36.png",
+      "tags": [
+        "latin",
+        "printed",
+        "normal"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "latin-rotate-0.5",
+      "file": "latin-rotate-0.5.png",
+      "tags": [
+        "latin",
+        "rotation",
+        "0.5"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "latin-rotate-3",
+      "file": "latin-rotate-3.png",
+      "tags": [
+        "latin",
+        "rotation",
+        "3"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "latin-rotate-10",
+      "file": "latin-rotate-10.png",
+      "tags": [
+        "latin",
+        "rotation",
+        "10"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "latin-rotate-90",
+      "file": "latin-rotate-90.png",
+      "tags": [
+        "latin",
+        "rotation",
+        "90"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "latin-rotate-180",
+      "file": "latin-rotate-180.png",
+      "tags": [
+        "latin",
+        "rotation",
+        "180"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "latin-rotate-270",
+      "file": "latin-rotate-270.png",
+      "tags": [
+        "latin",
+        "rotation",
+        "270"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "cjk-18",
+      "file": "cjk-18.png",
+      "tags": [
+        "cjk",
+        "printed",
+        "small-font"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "cjk-36",
+      "file": "cjk-36.png",
+      "tags": [
+        "cjk",
+        "printed",
+        "normal"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "cjk-rotate-0.5",
+      "file": "cjk-rotate-0.5.png",
+      "tags": [
+        "cjk",
+        "rotation",
+        "0.5"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "cjk-rotate-3",
+      "file": "cjk-rotate-3.png",
+      "tags": [
+        "cjk",
+        "rotation",
+        "3"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "cjk-rotate-10",
+      "file": "cjk-rotate-10.png",
+      "tags": [
+        "cjk",
+        "rotation",
+        "10"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "cjk-rotate-90",
+      "file": "cjk-rotate-90.png",
+      "tags": [
+        "cjk",
+        "rotation",
+        "90"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "cjk-rotate-180",
+      "file": "cjk-rotate-180.png",
+      "tags": [
+        "cjk",
+        "rotation",
+        "180"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "cjk-rotate-270",
+      "file": "cjk-rotate-270.png",
+      "tags": [
+        "cjk",
+        "rotation",
+        "270"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "cyrillic-36",
+      "file": "cyrillic-36.png",
+      "tags": [
+        "cyrillic",
+        "printed",
+        "normal"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "arabic-36",
+      "file": "arabic-36.png",
+      "tags": [
+        "arabic",
+        "printed",
+        "normal"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "devanagari-36",
+      "file": "devanagari-36.png",
+      "tags": [
+        "devanagari",
+        "printed",
+        "normal"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "hebrew-36",
+      "file": "hebrew-36.png",
+      "tags": [
+        "hebrew",
+        "printed",
+        "normal"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "thai-36",
+      "file": "thai-36.png",
+      "tags": [
+        "thai",
+        "printed",
+        "normal"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "tamil-36",
+      "file": "tamil-36.png",
+      "tags": [
+        "tamil",
+        "printed",
+        "normal"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "greek-36",
+      "file": "greek-36.png",
+      "tags": [
+        "greek",
+        "printed",
+        "normal"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "blank",
+      "file": "blank.png",
+      "tags": [
+        "blank"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "透明路径-emoji-😀",
+      "file": "透明路径-emoji-😀.png",
+      "tags": [
+        "unicode-path",
+        "alpha"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "multi-column",
+      "file": "multi-column.png",
+      "tags": [
+        "columns"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    },
+    {
+      "name": "vertical-cjk",
+      "file": "vertical-cjk.png",
+      "tags": [
+        "cjk",
+        "vertical"
+      ],
+      "source": "generated locally by scripts/make-corpus.py; not an accuracy ground truth"
+    }
+  ],
+  "missing_fonts": [],
+  "coverage_gaps": [
+    "Real handwriting images are not present; cursive fonts are not counted as handwriting.",
+    "Generated text supplies reproducible DLL comparisons, not independent recognition ground truth."
+  ]
+}

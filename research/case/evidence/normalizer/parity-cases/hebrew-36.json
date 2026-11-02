@@ -1,0 +1,105 @@
+{
+  "passed": false,
+  "expected_lines": 1,
+  "actual_lines": 1,
+  "same_position_text_matches": 0,
+  "failure_count": 18,
+  "failures": [
+    {
+      "field": "lines[0].text",
+      "expected": "2026 םלוע םולש",
+      "actual": "שלום עולם 2026"
+    },
+    {
+      "field": "lines[0].words[0].text",
+      "expected": "2026",
+      "actual": "שלום"
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[0]",
+      "expected": 190.52896118164062,
+      "actual": 50.653934478759766
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[2]",
+      "expected": 273.0,
+      "actual": 100.67581176757812
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[4]",
+      "expected": 273.0,
+      "actual": 100.51132202148438
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[6]",
+      "expected": 190.15841674804688,
+      "actual": 50.60071563720703
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[7]",
+      "expected": 76.2984848022461,
+      "actual": 77.66259765625
+    },
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.9788631200790405,
+      "actual": 0.9671369791030884
+    },
+    {
+      "field": "lines[0].words[1].text",
+      "expected": "םלוע",
+      "actual": "עולם"
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[0]",
+      "expected": 112.71111297607422,
+      "actual": 126.77418518066406
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[6]",
+      "expected": 112.51521301269531,
+      "actual": 126.5516357421875
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.9005042910575867,
+      "actual": 0.9800678491592407
+    },
+    {
+      "field": "lines[0].words[2].text",
+      "expected": "םולש",
+      "actual": "2026"
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[0]",
+      "expected": 26.730426788330078,
+      "actual": 205.0692901611328
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[2]",
+      "expected": 100.1949462890625,
+      "actual": 265.9654846191406
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[4]",
+      "expected": 100.02842712402344,
+      "actual": 265.4333190917969
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[6]",
+      "expected": 26.7288818359375,
+      "actual": 204.67257690429688
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.8347744941711426,
+      "actual": 0.9991614818572998
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "hebrew-36"
+}

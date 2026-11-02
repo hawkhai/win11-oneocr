@@ -49,7 +49,9 @@ if __name__=='__main__':
     p.add_argument('--limit',type=int)
     p.add_argument('--output-dir',type=Path,help='Keep a new phase separate from existing evidence')
     args=p.parse_args()
-    corpus=CASE/'corpus';fixtures=json.loads((corpus/'manifest.json').read_text(encoding='utf8'))['cases']
+    corpus=CASE/'corpus'
+    if not (corpus/'manifest.json').is_file():corpus=ROOT/'research/case/corpus'
+    fixtures=json.loads((corpus/'manifest.json').read_text(encoding='utf8'))['cases']
     if args.limit:fixtures=fixtures[:args.limit]
     binary=(args.binary or (ROOT/'bin/ocr.exe' if args.backend=='legacy' else ROOT/'build/portable/native/Release/ocr.exe')).resolve()
     output=(args.output_dir or CASE/('corpus-'+args.backend)).resolve();output.mkdir(parents=True,exist_ok=True)

@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "case_root": "F:\\pythonx\\myocr\\win11-oneocr\\work\\oneocr-portable",
+  "generated_at": "2026-11-02T04:46:28.140058+00:00",
+  "scope": {
+    "auth_status": "granted",
+    "network_mode": "offline",
+    "ready_for_act": "true",
+    "assets": [
+      "F:\\pythonx\\myocr\\win11-oneocr\\bin\\oneocr.dll",
+      "F:\\pythonx\\myocr\\win11-oneocr\\bin\\oneocr.onemodel",
+      "F:\\pythonx\\myocr\\win11-oneocr\\bin\\onnxruntime.dll",
+      "F:\\pythonx\\myocr\\win11-oneocr\\bin\\oneocr_wrapper.dll"
+    ]
+  },
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "evidence": 9,
+    "workitems": 6,
+    "timeline_events": 7,
+    "findings": 3,
+    "paths": 1
+  },
+  "issues": [],
+  "traceability": {
+    "E-001": {
+      "workitems": 2,
+      "timeline": 2,
+      "reports": 2
+    },
+    "E-002": {
+      "workitems": 2,
+      "timeline": 2,
+      "reports": 2
+    },
+    "E-003": {
+      "workitems": 2,
+      "timeline": 2,
+      "reports": 2
+    },
+    "E-004": {
+      "workitems": 2,
+      "timeline": 3,
+      "reports": 2
+    },
+    "E-005": {
+      "workitems": 2,
+      "timeline": 2,
+      "reports": 2
+    },
+    "E-006": {
+      "workitems": 2,
+      "timeline": 2,
+      "reports": 2
+    },
+    "E-007": {
+      "workitems": 3,
+      "timeline": 2,
+      "reports": 2
+    },
+    "E-008": {
+      "workitems": 3,
+      "timeline": 2,
+      "reports": 2
+    },
+    "E-009": {
+      "workitems": 2,
+      "timeline": 2,
+      "reports": 2
+    }
+  }
+}

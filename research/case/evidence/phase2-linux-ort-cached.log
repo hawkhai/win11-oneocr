@@ -1,0 +1,1168 @@
+['/usr/bin/python3', '/mnt/f/pythonx/myocr/win11-oneocr/scripts/build-ort.py', '--build_dir', '/tmp/oneocr-ort-linux-source', '--config', 'Release', '--update', '--build', '--target', 'onnxruntime', '--parallel', '8', '--build_shared_lib', '--skip_tests', '--compile_no_warning_as_error', '--allow_running_as_root', '--cmake_generator', 'Ninja', '--cmake_extra_defines', 'onnxruntime_BUILD_UNIT_TESTS=OFF', 'CMAKE_POLICY_VERSION_MINIMUM=3.5', 'FETCHCONTENT_SOURCE_DIR_ABSEIL_CPP=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/abseil_cpp-src', 'FETCHCONTENT_SOURCE_DIR_DATE=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/date-src', 'FETCHCONTENT_SOURCE_DIR_EIGEN3=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/eigen3-src', 'FETCHCONTENT_SOURCE_DIR_FLATBUFFERS=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/flatbuffers-src', 'FETCHCONTENT_SOURCE_DIR_GOOGLETEST=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/googletest-src', 'FETCHCONTENT_SOURCE_DIR_GSL=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/gsl-src', 'FETCHCONTENT_SOURCE_DIR_MICROSOFT_WIL=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/microsoft_wil-src', 'FETCHCONTENT_SOURCE_DIR_MP11=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/mp11-src', 'FETCHCONTENT_SOURCE_DIR_NLOHMANN_JSON=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/nlohmann_json-src', 'FETCHCONTENT_SOURCE_DIR_ONNX=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src', 'FETCHCONTENT_SOURCE_DIR_PROTOBUF=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/protobuf-src', 'FETCHCONTENT_SOURCE_DIR_PYTORCH_CPUINFO=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/pytorch_cpuinfo-src', 'FETCHCONTENT_SOURCE_DIR_RE2=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/re2-src', 'FETCHCONTENT_SOURCE_DIR_SAFEINT=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/safeint-src']
+2026-11-02 17:57:28,277 tools_python_utils [INFO] - flatbuffers module is not installed. parse_config will not be available
+2026-11-02 17:57:28,354 build [DEBUG] - Command line arguments:
+  --build_dir /tmp/oneocr-ort-linux-source --config Release --update --build --target onnxruntime --parallel 8 --build_shared_lib --skip_tests --compile_no_warning_as_error --allow_running_as_root --cmake_generator Ninja --cmake_extra_defines CMAKE_C_FLAGS=-ffp-contract=off CMAKE_CXX_FLAGS=-ffp-contract=off onnxruntime_BUILD_UNIT_TESTS=OFF CMAKE_POLICY_VERSION_MINIMUM=3.5 FETCHCONTENT_SOURCE_DIR_ABSEIL_CPP=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/abseil_cpp-src FETCHCONTENT_SOURCE_DIR_DATE=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/date-src FETCHCONTENT_SOURCE_DIR_EIGEN3=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/eigen3-src FETCHCONTENT_SOURCE_DIR_FLATBUFFERS=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/flatbuffers-src FETCHCONTENT_SOURCE_DIR_GOOGLETEST=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/googletest-src FETCHCONTENT_SOURCE_DIR_GSL=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/gsl-src FETCHCONTENT_SOURCE_DIR_MICROSOFT_WIL=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/microsoft_wil-src FETCHCONTENT_SOURCE_DIR_MP11=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/mp11-src FETCHCONTENT_SOURCE_DIR_NLOHMANN_JSON=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/nlohmann_json-src FETCHCONTENT_SOURCE_DIR_ONNX=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src FETCHCONTENT_SOURCE_DIR_PROTOBUF=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/protobuf-src FETCHCONTENT_SOURCE_DIR_PYTORCH_CPUINFO=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/pytorch_cpuinfo-src FETCHCONTENT_SOURCE_DIR_RE2=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/re2-src FETCHCONTENT_SOURCE_DIR_SAFEINT=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/safeint-src
+2026-11-02 17:57:28,363 build [INFO] - Build started
+2026-11-02 17:57:28,363 build [INFO] - git submodule sync --recursive
+Synchronizing submodule url for 'cmake/external/emsdk'
+Synchronizing submodule url for 'cmake/external/libprotobuf-mutator'
+Synchronizing submodule url for 'cmake/external/onnx'
+Synchronizing submodule url for 'cmake/external/onnx/third_party/pybind11'
+2026-11-02 17:57:29,400 build [INFO] - git submodule update --init --recursive
+2026-11-02 17:57:30,666 build [INFO] - Generating CMake build tree
+2026-11-02 17:57:30,667 build [INFO] - /usr/bin/cmake /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/cmake --compile-no-warning-as-error -Donnxruntime_ENABLE_EXTERNAL_CUSTOM_OP_SCHEMAS=OFF -Donnxruntime_RUN_ONNX_TESTS=OFF -Donnxruntime_GENERATE_TEST_REPORTS=ON -DPython_EXECUTABLE=/usr/bin/python3 -Donnxruntime_USE_VCPKG=OFF -Donnxruntime_USE_MIMALLOC=OFF -Donnxruntime_ENABLE_PYTHON=OFF -Donnxruntime_BUILD_CSHARP=OFF -Donnxruntime_BUILD_JAVA=OFF -Donnxruntime_BUILD_NODEJS=OFF -Donnxruntime_BUILD_OBJC=OFF -Donnxruntime_BUILD_SHARED_LIB=ON -Donnxruntime_BUILD_APPLE_FRAMEWORK=OFF -Donnxruntime_USE_DNNL=OFF -Donnxruntime_USE_NNAPI_BUILTIN=OFF -Donnxruntime_USE_VSINPU=OFF -Donnxruntime_USE_RKNPU=OFF -Donnxruntime_ENABLE_MICROSOFT_INTERNAL=OFF -Donnxruntime_USE_VITISAI=OFF -Donnxruntime_USE_TENSORRT=OFF -Donnxruntime_USE_NV=OFF -Donnxruntime_USE_TENSORRT_BUILTIN_PARSER=ON -Donnxruntime_USE_TENSORRT_INTERFACE=OFF -Donnxruntime_USE_CUDA_INTERFACE=OFF -Donnxruntime_USE_NV_INTERFACE=OFF -Donnxruntime_USE_OPENVINO_INTERFACE=OFF -Donnxruntime_USE_VITISAI_INTERFACE=OFF -Donnxruntime_USE_QNN_INTERFACE=OFF -Donnxruntime_USE_MIGRAPHX_INTERFACE=OFF -Donnxruntime_USE_MIGRAPHX=OFF -Donnxruntime_DISABLE_CONTRIB_OPS=OFF -Donnxruntime_DISABLE_ML_OPS=OFF -Donnxruntime_DISABLE_RTTI=OFF -Donnxruntime_DISABLE_EXCEPTIONS=OFF -Donnxruntime_MINIMAL_BUILD=OFF -Donnxruntime_EXTENDED_MINIMAL_BUILD=OFF -Donnxruntime_MINIMAL_BUILD_CUSTOM_OPS=OFF -Donnxruntime_REDUCED_OPS_BUILD=OFF -Donnxruntime_CLIENT_PACKAGE_BUILD=OFF -Donnxruntime_BUILD_MS_EXPERIMENTAL_OPS=OFF -Donnxruntime_ENABLE_LTO=OFF -Donnxruntime_USE_ACL=OFF -Donnxruntime_USE_ARMNN=OFF -Donnxruntime_ARMNN_RELU_USE_CPU=ON -Donnxruntime_ARMNN_BN_USE_CPU=ON -Donnxruntime_USE_JSEP=OFF -Donnxruntime_USE_WEBGPU=OFF -Donnxruntime_USE_EXTERNAL_DAWN=OFF -Donnxruntime_WGSL_TEMPLATE=static -Donnxruntime_ENABLE_NVTX_PROFILE=OFF -Donnxruntime_ENABLE_TRAINING=OFF -Donnxruntime_ENABLE_TRAINING_OPS=OFF -Donnxruntime_ENABLE_TRAINING_APIS=OFF -Donnxruntime_ENABLE_CPU_FP16_OPS=OFF -Donnxruntime_USE_NCCL=OFF -Donnxruntime_BUILD_BENCHMARKS=OFF -Donnxruntime_GCOV_COVERAGE=OFF -Donnxruntime_ENABLE_MEMORY_PROFILE=OFF -Donnxruntime_ENABLE_CUDA_LINE_NUMBER_INFO=OFF -Donnxruntime_USE_CUDA_NHWC_OPS=OFF -Donnxruntime_BUILD_WEBASSEMBLY_STATIC_LIB=OFF -Donnxruntime_ENABLE_WEBASSEMBLY_EXCEPTION_CATCHING=ON -Donnxruntime_ENABLE_WEBASSEMBLY_API_EXCEPTION_CATCHING=OFF -Donnxruntime_ENABLE_WEBASSEMBLY_EXCEPTION_THROWING=ON -Donnxruntime_WEBASSEMBLY_RUN_TESTS_IN_BROWSER=OFF -Donnxruntime_ENABLE_WEBASSEMBLY_THREADS=OFF -Donnxruntime_ENABLE_WEBASSEMBLY_DEBUG_INFO=OFF -Donnxruntime_ENABLE_WEBASSEMBLY_PROFILING=OFF -Donnxruntime_ENABLE_LAZY_TENSOR=OFF -Donnxruntime_ENABLE_CUDA_PROFILING=OFF -Donnxruntime_USE_XNNPACK=OFF -Donnxruntime_USE_WEBNN=OFF -Donnxruntime_USE_CANN=OFF -Donnxruntime_DISABLE_FLOAT8_TYPES=OFF -Donnxruntime_DISABLE_SPARSE_TENSORS=OFF -Donnxruntime_DISABLE_OPTIONAL_TYPE=OFF -Donnxruntime_CUDA_MINIMAL=OFF -DCMAKE_C_FLAGS=-ffp-contract=off -DCMAKE_CXX_FLAGS=-ffp-contract=off -Donnxruntime_BUILD_UNIT_TESTS=OFF -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DFETCHCONTENT_SOURCE_DIR_ABSEIL_CPP=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/abseil_cpp-src -DFETCHCONTENT_SOURCE_DIR_DATE=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/date-src -DFETCHCONTENT_SOURCE_DIR_EIGEN3=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/eigen3-src -DFETCHCONTENT_SOURCE_DIR_FLATBUFFERS=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/flatbuffers-src -DFETCHCONTENT_SOURCE_DIR_GOOGLETEST=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/googletest-src -DFETCHCONTENT_SOURCE_DIR_GSL=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/gsl-src -DFETCHCONTENT_SOURCE_DIR_MICROSOFT_WIL=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/microsoft_wil-src -DFETCHCONTENT_SOURCE_DIR_MP11=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/mp11-src -DFETCHCONTENT_SOURCE_DIR_NLOHMANN_JSON=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/nlohmann_json-src -DFETCHCONTENT_SOURCE_DIR_ONNX=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src -DFETCHCONTENT_SOURCE_DIR_PROTOBUF=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/protobuf-src -DFETCHCONTENT_SOURCE_DIR_PYTORCH_CPUINFO=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/pytorch_cpuinfo-src -DFETCHCONTENT_SOURCE_DIR_RE2=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/re2-src -DFETCHCONTENT_SOURCE_DIR_SAFEINT=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/safeint-src -G Ninja -DCMAKE_BUILD_TYPE=Release
+Ignoring COMPILE_WARNING_AS_ERROR target property and CMAKE_COMPILE_WARNING_AS_ERROR variable.
+CMake Deprecation Warning at CMakeLists.txt:9 (cmake_policy):
+  The OLD behavior for policy CMP0104 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- The C compiler identification is GNU 15.2.0
+-- The CXX compiler identification is GNU 15.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test COMPILER_SUPPORT_MF16C
+-- Performing Test COMPILER_SUPPORT_MF16C - Success
+-- Performing Test COMPILER_SUPPORT_FMA
+-- Performing Test COMPILER_SUPPORT_FMA - Success
+-- Performing Test COMPILER_SUPPORT_AVX
+-- Performing Test COMPILER_SUPPORT_AVX - Success
+Building ONNX Runtime for x86_64 CPU ARCH
+-- Performing Test onnxruntime_HAVE_BUILTIN_ATOMICS
+-- Performing Test onnxruntime_HAVE_BUILTIN_ATOMICS - Success
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test Iconv_IS_BUILT_IN
+-- Performing Test Iconv_IS_BUILT_IN - Success
+-- Found Iconv: built in to C library
+-- Found Patch: /usr/bin/patch
+Patch found: /usr/bin/patch
+-- Found Python: /usr/bin/python3 (found suitable version "3.14.4", minimum required is "3.10") found components: Interpreter
+-- Loading Dependencies URLs ...
+-- Loading Dependencies ...
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX17
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX17 - Success
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX20
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX20 - Failed
+-- Abseil source dir:/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/abseil_cpp-src
+CMake Deprecation Warning at /mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/protobuf-src/CMakeLists.txt:2 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- 
+-- 3.21.12.0
+-- Performing Test protobuf_HAVE_LD_VERSION_SCRIPT
+-- Performing Test protobuf_HAVE_LD_VERSION_SCRIPT - Success
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR) 
+-- Performing Test protobuf_HAVE_BUILTIN_ATOMICS
+-- Performing Test protobuf_HAVE_BUILTIN_ATOMICS - Success
+CMake Deprecation Warning at /mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/date-src/CMakeLists.txt:18 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+# date: USE_SYSTEM_TZ_DB ON
+# date: MANUAL_TZ_DB OFF
+# date: USE_TZ_DB_IN_DOT OFF
+# date: BUILD_SHARED_LIBS OFF
+# date: ENABLE_DATE_TESTING OFF
+# date: DISABLE_STRING_VIEW OFF
+CMake Warning (dev) at /usr/share/cmake-4.2/Modules/FetchContent.cmake:1963 (message):
+  Calling FetchContent_Populate(mp11) is deprecated, call
+  FetchContent_MakeAvailable(mp11) instead.  Policy CMP0169 can be set to OLD
+  to allow FetchContent_Populate(mp11) to be called directly for now, but the
+  ability to call it with declared details will be removed completely in a
+  future version.
+Call Stack (most recent call first):
+  external/onnxruntime_external_deps.cmake:297 (FetchContent_Populate)
+  CMakeLists.txt:516 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Using the multi-header code from /mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/nlohmann_json-src/include/
+CMake Deprecation Warning at /mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/pytorch_cpuinfo-src/CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Warning (dev) at /usr/share/cmake-4.2/Modules/FetchContent.cmake:1963 (message):
+  Calling FetchContent_Populate(safeint) is deprecated, call
+  FetchContent_MakeAvailable(safeint) instead.  Policy CMP0169 can be set to
+  OLD to allow FetchContent_Populate(safeint) to be called directly for now,
+  but the ability to call it with declared details will be removed completely
+  in a future version.
+Call Stack (most recent call first):
+  external/onnxruntime_external_deps.cmake:442 (FetchContent_Populate)
+  CMakeLists.txt:516 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Proceeding with version: 23.5.26.0
+-- Looking for strtof_l
+-- Looking for strtof_l - found
+-- Looking for strtoull_l
+-- Looking for strtoull_l - found
+-- Looking for realpath
+-- Looking for realpath - found
+-- CMAKE_CXX_FLAGS: -ffp-contract=off -ffunction-sections -fdata-sections -DCPUINFO_SUPPORTED
+-- Found Python3: /usr/bin/python3 (found version "3.14.4") found components: Interpreter
+-- ONNX_PROTOC_EXECUTABLE: $<TARGET_FILE:protobuf::protoc>
+-- Protobuf_VERSION: 
+Generated: /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx-ml.proto
+Generated: /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx-operators-ml.proto
+Generated: /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx-data.proto
+-- 
+-- ******** Summary ********
+--   CMake version                     : 4.2.3
+--   CMake command                     : /usr/bin/cmake
+--   System                            : Linux
+--   C++ compiler                      : /usr/bin/c++
+--   C++ compiler version              : 15.2.0
+--   CXX flags                         : -ffp-contract=off -ffunction-sections -fdata-sections -DCPUINFO_SUPPORTED -Wnon-virtual-dtor
+--   Build type                        : Release
+--   Compile definitions               : EIGEN_MPL2_ONLY;_GNU_SOURCE
+--   CMAKE_PREFIX_PATH                 : 
+--   CMAKE_INSTALL_PREFIX              : /usr/local
+--   CMAKE_MODULE_PATH                 : /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/cmake/external
+-- 
+--   ONNX version                      : 1.18.0
+--   ONNX NAMESPACE                    : onnx
+--   ONNX_USE_LITE_PROTO               : ON
+--   USE_PROTOBUF_SHARED_LIBS          : OFF
+--   ONNX_DISABLE_EXCEPTIONS           : OFF
+--   ONNX_DISABLE_STATIC_REGISTRATION  : OFF
+--   ONNX_WERROR                       : OFF
+--   ONNX_BUILD_TESTS                  : OFF
+--   BUILD_SHARED_LIBS                 : OFF
+-- 
+--   Protobuf compiler                 : $<TARGET_FILE:protobuf::protoc>
+--   Protobuf includes                 : 
+--   Protobuf libraries                : 
+--   ONNX_BUILD_PYTHON                 : OFF
+-- 
+-- Configured Eigen 3.4.90
+-- 
+-- Finished fetching external dependencies
+-- Performing Test HAS_AMBIGUOUS_REVERSED_OPERATOR
+-- Performing Test HAS_AMBIGUOUS_REVERSED_OPERATOR - Failed
+-- Performing Test HAS_INTERFERENCE_SIZE
+-- Performing Test HAS_INTERFERENCE_SIZE - Success
+-- Performing Test HAS_BITWISE_INSTEAD_OF_LOGICAL
+-- Performing Test HAS_BITWISE_INSTEAD_OF_LOGICAL - Failed
+-- Performing Test HAS_CAST_FUNCTION_TYPE
+-- Performing Test HAS_CAST_FUNCTION_TYPE - Success
+-- Performing Test HAS_CATCH_VALUE
+-- Performing Test HAS_CATCH_VALUE - Success
+-- Performing Test HAS_CLASS_MEMACCESS
+-- Performing Test HAS_CLASS_MEMACCESS - Success
+-- Performing Test HAS_DANGLING_REFERENCE
+-- Performing Test HAS_DANGLING_REFERENCE - Success
+-- Performing Test HAS_DEPRECATED_ANON_ENUM_ENUM_CONVERSION
+-- Performing Test HAS_DEPRECATED_ANON_ENUM_ENUM_CONVERSION - Failed
+-- Performing Test HAS_DEPRECATED_BUILTINS
+-- Performing Test HAS_DEPRECATED_BUILTINS - Failed
+-- Performing Test HAS_DEPRECATED_COPY
+-- Performing Test HAS_DEPRECATED_COPY - Success
+-- Performing Test HAS_DEPRECATED_DECLARATIONS
+-- Performing Test HAS_DEPRECATED_DECLARATIONS - Success
+-- Performing Test HAS_DEPRECATED_LITERAL_OPERATOR
+-- Performing Test HAS_DEPRECATED_LITERAL_OPERATOR - Success
+-- Performing Test HAS_DEPRECATED_THIS_CAPTURE
+-- Performing Test HAS_DEPRECATED_THIS_CAPTURE - Failed
+-- Performing Test HAS_ENUM_CONSTEXPR_CONVERSION
+-- Performing Test HAS_ENUM_CONSTEXPR_CONVERSION - Failed
+-- Performing Test HAS_FORMAT_TRUNCATION
+-- Performing Test HAS_FORMAT_TRUNCATION - Success
+-- Performing Test HAS_IGNORED_ATTRIBUTES
+-- Performing Test HAS_IGNORED_ATTRIBUTES - Success
+-- Performing Test HAS_MAYBE_UNINITIALIZED
+-- Performing Test HAS_MAYBE_UNINITIALIZED - Success
+-- Performing Test HAS_MISSING_BRACES
+-- Performing Test HAS_MISSING_BRACES - Success
+-- Performing Test HAS_NONNULL_COMPARE
+-- Performing Test HAS_NONNULL_COMPARE - Success
+-- Performing Test HAS_PARENTHESES
+-- Performing Test HAS_PARENTHESES - Success
+-- Performing Test HAS_SHORTEN_64_TO_32
+-- Performing Test HAS_SHORTEN_64_TO_32 - Failed
+-- Performing Test HAS_STRICT_ALIASING
+-- Performing Test HAS_STRICT_ALIASING - Success
+NVCC_ERROR = 
+NVCC_OUT = no such file or directory
+-- Performing Test HAS_STRINGOP_OVERFLOW
+-- Performing Test HAS_STRINGOP_OVERFLOW - Success
+-- Performing Test HAS_TAUTOLOGICAL_POINTER_COMPARE
+-- Performing Test HAS_TAUTOLOGICAL_POINTER_COMPARE - Failed
+-- Performing Test HAS_UNDEFINED_VAR_TEMPLATE
+-- Performing Test HAS_UNDEFINED_VAR_TEMPLATE - Failed
+-- Performing Test HAS_UNUSED_BUT_SET_PARAMETER
+-- Performing Test HAS_UNUSED_BUT_SET_PARAMETER - Success
+-- Performing Test HAS_UNUSED_BUT_SET_VARIABLE
+-- Performing Test HAS_UNUSED_BUT_SET_VARIABLE - Success
+-- Performing Test HAS_UNUSED_VARIABLE
+-- Performing Test HAS_UNUSED_VARIABLE - Success
+-- Performing Test HAS_USELESS_CAST
+-- Performing Test HAS_USELESS_CAST - Success
+-- Looking for reallocarray
+-- Looking for reallocarray - found
+-- Found Git: /usr/bin/git (found version "2.53.0")
+-- Looking for clock_gettime in rt
+-- Looking for clock_gettime in rt - found
+-- CMAKE_CXX_COMPILER_ID: GNU
+-- CMAKE_CXX_COMPILER_VERSION: 15.2.0
+-- Using -mavx2 -mfma -mavxvnni flags
+-- Performing Test LINKER_SUPPORT_RPATH
+-- Performing Test LINKER_SUPPORT_RPATH - Success
+-- Configuring done (192.2s)
+-- Generating done (5.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    FETCHCONTENT_SOURCE_DIR_GOOGLETEST
+    FETCHCONTENT_SOURCE_DIR_MICROSOFT_WIL
+
+
+-- Build files have been written to: /tmp/oneocr-ort-linux-source/Release
+2026-11-02 18:00:47,885 build [INFO] - Building targets for Release configuration
+2026-11-02 18:00:47,886 build [INFO] - /usr/bin/cmake --build /tmp/oneocr-ort-linux-source/Release --config Release --target onnxruntime -- -j8
+[0/2] Re-checking globbed directories...
+[1/1135] Building CXX object _deps/abseil_cpp-build/absl/base/CMakeFiles/base.dir/internal/unscaledcycleclock.cc.o
+[2/1135] Building CXX object _deps/abseil_cpp-build/absl/base/CMakeFiles/base.dir/internal/cycleclock.cc.o
+[3/1135] Building CXX object _deps/abseil_cpp-build/absl/debugging/CMakeFiles/utf8_for_code_point.dir/internal/utf8_for_code_point.cc.o
+[4/1135] Building CXX object _deps/abseil_cpp-build/absl/base/CMakeFiles/spinlock_wait.dir/internal/spinlock_wait.cc.o
+[5/1135] Linking CXX static library _deps/abseil_cpp-build/absl/base/libabsl_spinlock_wait.a
+[6/1135] Building CXX object _deps/abseil_cpp-build/absl/base/CMakeFiles/log_severity.dir/log_severity.cc.o
+[7/1135] Linking CXX static library _deps/abseil_cpp-build/absl/base/libabsl_log_severity.a
+[8/1135] Building CXX object _deps/abseil_cpp-build/absl/base/CMakeFiles/raw_logging_internal.dir/internal/raw_logging.cc.o
+[9/1135] Linking CXX static library _deps/abseil_cpp-build/absl/base/libabsl_raw_logging_internal.a
+[10/1135] Building CXX object _deps/abseil_cpp-build/absl/base/CMakeFiles/throw_delegate.dir/internal/throw_delegate.cc.o
+[11/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.o
+[12/1135] Building CXX object _deps/abseil_cpp-build/absl/base/CMakeFiles/base.dir/internal/spinlock.cc.o
+[13/1135] Building CXX object _deps/abseil_cpp-build/absl/base/CMakeFiles/base.dir/internal/thread_identity.cc.o
+[14/1135] Building CXX object _deps/abseil_cpp-build/absl/base/CMakeFiles/base.dir/internal/sysinfo.cc.o
+[15/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.o
+[16/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.o
+[17/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.o
+[18/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.o
+[19/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.o
+[20/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.o
+[21/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.o
+[22/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.o
+[23/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.o
+[24/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.o
+[25/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.o
+[26/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.o
+[27/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.o
+[28/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.o
+[29/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.o
+[30/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.o
+[31/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.o
+[32/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.o
+[33/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.o
+[34/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.o
+[35/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.o
+[36/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.o
+[37/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.o
+[38/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.o
+[39/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.o
+[40/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.o
+[41/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.o
+[42/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.o
+[43/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.o
+[44/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.o
+[45/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.o
+[46/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.o
+[47/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.o
+[48/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.o
+[49/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.o
+[50/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.o
+[51/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.o
+[52/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.o
+[53/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.o
+[54/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.o
+[55/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.o
+[56/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.o
+[57/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.o
+[58/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.o
+[59/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.o
+[60/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.o
+[61/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.o
+[62/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.o
+[63/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.o
+[64/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.o
+[65/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.o
+[66/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.o
+[67/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.o
+[68/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.o
+[69/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.o
+[70/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.o
+[71/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.o
+[72/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.o
+[73/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.o
+[74/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.o
+[75/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.o
+[76/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.o
+[77/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.o
+[78/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.o
+[79/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.o
+[80/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.o
+[81/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.o
+[82/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.o
+[83/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.o
+[84/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.o
+[85/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.o
+[86/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.o
+[87/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.o
+[88/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.o
+[89/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.o
+[90/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.o
+[91/1135] Linking CXX static library _deps/abseil_cpp-build/absl/base/libabsl_base.a
+[92/1135] Linking CXX static library _deps/abseil_cpp-build/absl/base/libabsl_throw_delegate.a
+[93/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.o
+[94/1135] Linking CXX static library _deps/abseil_cpp-build/absl/debugging/libabsl_utf8_for_code_point.a
+[95/1135] Building CXX object _deps/abseil_cpp-build/absl/debugging/CMakeFiles/decode_rust_punycode.dir/internal/decode_rust_punycode.cc.o
+[96/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.o
+[97/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.o
+[98/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/string_view.dir/string_view.cc.o
+[99/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings_internal.dir/internal/utf8.cc.o
+[100/1135] Building CXX object _deps/abseil_cpp-build/absl/numeric/CMakeFiles/int128.dir/int128.cc.o
+[101/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings_internal.dir/internal/ostringstream.cc.o
+[102/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.o
+[103/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.o
+[104/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings_internal.dir/internal/escaping.cc.o
+[105/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/code_generator.cc.o
+[106/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.o
+[107/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/enum_field.cc.o
+[108/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.o
+[109/1135] Linking CXX static library _deps/protobuf-build/libprotobuf.a
+[110/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/extension.cc.o
+[111/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/enum.cc.o
+[112/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/generator.cc.o
+[113/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/field.cc.o
+[114/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/command_line_interface.cc.o
+[115/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/map_field.cc.o
+[116/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/padding_optimizer.cc.o
+[117/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/file.cc.o
+[118/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/helpers.cc.o
+[119/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/message_field.cc.o
+[120/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/primitive_field.cc.o
+[121/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_doc_comment.cc.o
+[122/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/service.cc.o
+[123/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_enum_field.cc.o
+[124/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_enum.cc.o
+[125/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_generator.cc.o
+[126/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/string_field.cc.o
+[127/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/parse_function_generator.cc.o
+[128/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/message.cc.o
+[129/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_helpers.cc.o
+[130/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_map_field.cc.o
+[131/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_field_base.cc.o
+[132/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_message_field.cc.o
+[133/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_primitive_field.cc.o
+[134/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc.o
+[135/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc.o
+[136/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc.o
+[137/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc.o
+[138/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_message.cc.o
+[139/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_reflection_class.cc.o
+[140/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc.o
+[141/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/context.cc.o
+[142/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/doc_comment.cc.o
+[143/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum.cc.o
+[144/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum_field.cc.o
+[145/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/extension.cc.o
+[146/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum_field_lite.cc.o
+[147/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum_lite.cc.o
+[148/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/extension_lite.cc.o
+[149/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/generator_factory.cc.o
+[150/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/generator.cc.o
+[151/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/kotlin_generator.cc.o
+[152/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/field.cc.o
+[153/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/map_field.cc.o
+[154/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/file.cc.o
+[155/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/helpers.cc.o
+[156/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/map_field_lite.cc.o
+[157/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_builder_lite.cc.o
+[158/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_field.cc.o
+[159/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/name_resolver.cc.o
+[160/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_builder.cc.o
+[161/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_field_lite.cc.o
+[162/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message.cc.o
+[163/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_lite.cc.o
+[164/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/primitive_field_lite.cc.o
+[165/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/primitive_field.cc.o
+[166/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/shared_code_generator.cc.o
+[167/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/string_field.cc.o
+[168/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/service.cc.o
+[169/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/string_field_lite.cc.o
+[170/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_enum_field.cc.o
+[171/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_extension.cc.o
+[172/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_enum.cc.o
+[173/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_generator.cc.o
+[174/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_field.cc.o
+[175/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_map_field.cc.o
+[176/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_message_field.cc.o
+[177/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_oneof.cc.o
+[178/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_file.cc.o
+[179/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc.o
+[180/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/plugin.cc.o
+[181/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_helpers.cc.o
+[182/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_message.cc.o
+[183/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/python/helpers.cc.o
+[184/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/plugin.pb.cc.o
+[185/1135] Linking CXX static library _deps/abseil_cpp-build/absl/debugging/libabsl_decode_rust_punycode.a
+[186/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/zip_writer.cc.o
+[187/1135] Linking CXX static library _deps/abseil_cpp-build/absl/numeric/libabsl_int128.a
+[188/1135] Linking CXX static library _deps/abseil_cpp-build/absl/strings/libabsl_string_view.a
+[189/1135] Building CXX object _deps/abseil_cpp-build/absl/crc/CMakeFiles/crc_cpu_detect.dir/internal/cpu_detect.cc.o
+[190/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/subprocess.cc.o
+[191/1135] Building CXX object _deps/abseil_cpp-build/absl/debugging/CMakeFiles/demangle_rust.dir/internal/demangle_rust.cc.o
+[192/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings.dir/ascii.cc.o
+[193/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings.dir/internal/charconv_parse.cc.o
+[194/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/ruby/ruby_generator.cc.o
+[195/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings.dir/charconv.cc.o
+[196/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/python/generator.cc.o
+[197/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings.dir/escaping.cc.o
+[198/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/php/php_generator.cc.o
+[199/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings.dir/internal/stringify_sink.cc.o
+[200/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings.dir/internal/damerau_levenshtein_distance.cc.o
+[201/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings.dir/internal/memutil.cc.o
+[202/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings.dir/match.cc.o
+[203/1135] Linking CXX static library _deps/abseil_cpp-build/absl/strings/libabsl_strings_internal.a
+[204/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings.dir/internal/charconv_bigint.cc.o
+[205/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings.dir/str_split.cc.o
+[206/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings.dir/str_cat.cc.o
+[207/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings.dir/str_replace.cc.o
+[208/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/python/pyi_generator.cc.o
+[209/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings.dir/substitute.cc.o
+[210/1135] Building CXX object _deps/abseil_cpp-build/absl/time/CMakeFiles/civil_time.dir/internal/cctz/src/civil_time_detail.cc.o
+[211/1135] Building CXX object _deps/abseil_cpp-build/absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/time_zone_fixed.cc.o
+[212/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/strings.dir/numbers.cc.o
+[213/1135] Building CXX object _deps/abseil_cpp-build/absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/time_zone_if.cc.o
+[214/1135] Linking CXX static library _deps/protobuf-build/libprotoc.a
+[215/1135] Building CXX object _deps/abseil_cpp-build/absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/time_zone_posix.cc.o
+[216/1135] Building CXX object _deps/abseil_cpp-build/absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/time_zone_impl.cc.o
+[217/1135] Linking CXX static library _deps/abseil_cpp-build/absl/crc/libabsl_crc_cpu_detect.a
+[218/1135] Building CXX object _deps/abseil_cpp-build/absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/time_zone_lookup.cc.o
+[219/1135] Building CXX object _deps/abseil_cpp-build/absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/zone_info_source.cc.o
+[220/1135] Building CXX object _deps/abseil_cpp-build/absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/time_zone_libc.cc.o
+[221/1135] Building CXX object _deps/abseil_cpp-build/absl/debugging/CMakeFiles/debugging_internal.dir/internal/address_is_readable.cc.o
+[222/1135] Building CXX object _deps/abseil_cpp-build/absl/crc/CMakeFiles/crc_internal.dir/internal/crc_x86_arm_combined.cc.o
+[223/1135] Building CXX object _deps/abseil_cpp-build/absl/debugging/CMakeFiles/debugging_internal.dir/internal/elf_mem_image.cc.o
+[224/1135] Building CXX object _deps/abseil_cpp-build/absl/base/CMakeFiles/malloc_internal.dir/internal/low_level_alloc.cc.o
+[225/1135] Linking CXX static library _deps/abseil_cpp-build/absl/debugging/libabsl_demangle_rust.a
+[226/1135] Linking CXX static library _deps/abseil_cpp-build/absl/strings/libabsl_strings.a
+[227/1135] Building CXX object _deps/protobuf-build/CMakeFiles/protoc.dir/src/google/protobuf/compiler/main.cc.o
+[228/1135] Building CXX object _deps/abseil_cpp-build/absl/crc/CMakeFiles/crc_internal.dir/internal/crc.cc.o
+[229/1135] Building CXX object _deps/abseil_cpp-build/absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/time_zone_format.cc.o
+[230/1135] Building CXX object _deps/abseil_cpp-build/absl/debugging/CMakeFiles/debugging_internal.dir/internal/vdso_support.cc.o
+[231/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/str_format_internal.dir/internal/str_format/extension.cc.o
+[232/1135] Building CXX object _deps/abseil_cpp-build/absl/time/CMakeFiles/time_zone.dir/internal/cctz/src/time_zone_info.cc.o
+[233/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/str_format_internal.dir/internal/str_format/output.cc.o
+[234/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/str_format_internal.dir/internal/str_format/bind.cc.o
+[235/1135] Building CXX object _deps/abseil_cpp-build/absl/time/CMakeFiles/time.dir/clock.cc.o
+[236/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/str_format_internal.dir/internal/str_format/parser.cc.o
+[237/1135] Linking CXX static library _deps/abseil_cpp-build/absl/time/libabsl_civil_time.a
+[238/1135] Linking CXX static library _deps/abseil_cpp-build/absl/time/libabsl_time_zone.a
+[239/1135] Building CXX object _deps/abseil_cpp-build/absl/debugging/CMakeFiles/demangle_internal.dir/internal/demangle.cc.o
+[240/1135] Linking CXX static library _deps/abseil_cpp-build/absl/base/libabsl_malloc_internal.a
+[241/1135] Building CXX object _deps/abseil_cpp-build/absl/base/CMakeFiles/tracing_internal.dir/internal/tracing.cc.o
+[242/1135] Linking CXX static library _deps/abseil_cpp-build/absl/crc/libabsl_crc_internal.a
+[243/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/str_format_internal.dir/internal/str_format/arg.cc.o
+[244/1135] Building CXX object _deps/abseil_cpp-build/absl/time/CMakeFiles/time.dir/duration.cc.o
+[245/1135] Linking CXX executable _deps/protobuf-build/protoc-3.21.12.0
+[246/1135] Building CXX object _deps/abseil_cpp-build/absl/time/CMakeFiles/time.dir/civil_time.cc.o
+[247/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/str_format_internal.dir/internal/str_format/float_conversion.cc.o
+[248/1135] Building CXX object _deps/abseil_cpp-build/absl/time/CMakeFiles/time.dir/format.cc.o
+[249/1135] Linking CXX static library _deps/abseil_cpp-build/absl/debugging/libabsl_debugging_internal.a
+[250/1135] Linking CXX static library _deps/abseil_cpp-build/absl/debugging/libabsl_demangle_internal.a
+[251/1135] Linking CXX static library _deps/abseil_cpp-build/absl/strings/libabsl_str_format_internal.a
+[252/1135] Building CXX object _deps/abseil_cpp-build/absl/debugging/CMakeFiles/stacktrace.dir/stacktrace.cc.o
+[253/1135] Building CXX object _deps/abseil_cpp-build/absl/time/CMakeFiles/time.dir/time.cc.o
+[254/1135] Linking CXX static library _deps/abseil_cpp-build/absl/time/libabsl_time.a
+[255/1135] Creating executable symlink _deps/protobuf-build/protoc
+[256/1135] Linking CXX static library _deps/abseil_cpp-build/absl/base/libabsl_tracing_internal.a
+[257/1135] Building CXX object _deps/abseil_cpp-build/absl/crc/CMakeFiles/crc32c.dir/crc32c.cc.o
+[258/1135] Linking CXX static library _deps/abseil_cpp-build/absl/debugging/libabsl_stacktrace.a
+[259/1135] Building CXX object _deps/abseil_cpp-build/absl/crc/CMakeFiles/crc32c.dir/internal/crc_memcpy_fallback.cc.o
+[260/1135] Building CXX object _deps/abseil_cpp-build/absl/crc/CMakeFiles/crc32c.dir/internal/crc_memcpy_x86_arm_combined.cc.o
+[261/1135] Building CXX object _deps/abseil_cpp-build/absl/debugging/CMakeFiles/symbolize.dir/symbolize.cc.o
+[262/1135] Linking CXX static library _deps/abseil_cpp-build/absl/debugging/libabsl_symbolize.a
+[263/1135] Building CXX object _deps/abseil_cpp-build/absl/synchronization/CMakeFiles/graphcycles_internal.dir/internal/graphcycles.cc.o
+[264/1135] Building CXX object _deps/abseil_cpp-build/absl/log/CMakeFiles/log_internal_fnmatch.dir/internal/fnmatch.cc.o
+[265/1135] Linking CXX static library _deps/abseil_cpp-build/absl/synchronization/libabsl_graphcycles_internal.a
+[266/1135] Building CXX object _deps/abseil_cpp-build/absl/synchronization/CMakeFiles/kernel_timeout_internal.dir/internal/kernel_timeout.cc.o
+[267/1135] Linking CXX static library _deps/abseil_cpp-build/absl/synchronization/libabsl_kernel_timeout_internal.a
+[268/1135] Building CXX object _deps/abseil_cpp-build/absl/hash/CMakeFiles/city.dir/internal/city.cc.o
+[269/1135] Building CXX object _deps/abseil_cpp-build/absl/hash/CMakeFiles/low_level_hash.dir/internal/low_level_hash.cc.o
+[270/1135] Building CXX object _deps/abseil_cpp-build/absl/profiling/CMakeFiles/exponential_biased.dir/internal/exponential_biased.cc.o
+[271/1135] Building CXX object _deps/abseil_cpp-build/absl/crc/CMakeFiles/crc32c.dir/internal/crc_non_temporal_memcpy.cc.o
+[272/1135] Linking CXX static library _deps/abseil_cpp-build/absl/crc/libabsl_crc32c.a
+[273/1135] Building CXX object _deps/abseil_cpp-build/absl/synchronization/CMakeFiles/synchronization.dir/barrier.cc.o
+[274/1135] Building CXX object _deps/abseil_cpp-build/absl/synchronization/CMakeFiles/synchronization.dir/blocking_counter.cc.o
+[275/1135] Building CXX object _deps/abseil_cpp-build/absl/synchronization/CMakeFiles/synchronization.dir/internal/futex_waiter.cc.o
+[276/1135] Building CXX object _deps/abseil_cpp-build/absl/synchronization/CMakeFiles/synchronization.dir/internal/win32_waiter.cc.o
+[277/1135] Building CXX object _deps/abseil_cpp-build/absl/synchronization/CMakeFiles/synchronization.dir/internal/create_thread_identity.cc.o
+[278/1135] Building CXX object _deps/abseil_cpp-build/absl/crc/CMakeFiles/crc_cord_state.dir/internal/crc_cord_state.cc.o
+[279/1135] Building CXX object _deps/abseil_cpp-build/absl/synchronization/CMakeFiles/synchronization.dir/internal/per_thread_sem.cc.o
+[280/1135] Linking CXX static library _deps/abseil_cpp-build/absl/crc/libabsl_crc_cord_state.a
+[281/1135] Building CXX object _deps/abseil_cpp-build/absl/synchronization/CMakeFiles/synchronization.dir/internal/pthread_waiter.cc.o
+[282/1135] Linking CXX static library _deps/abseil_cpp-build/absl/hash/libabsl_city.a
+[283/1135] Linking CXX static library _deps/abseil_cpp-build/absl/hash/libabsl_low_level_hash.a
+[284/1135] Running gen_proto.py on onnx/onnx.in.proto
+Processing /mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/onnx.in.proto
+Writing /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx-ml.proto
+Writing /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx-ml.proto3
+generating /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx_pb.py
+[285/1135] Linking CXX static library _deps/abseil_cpp-build/absl/log/libabsl_log_internal_fnmatch.a
+[286/1135] Linking CXX static library _deps/abseil_cpp-build/absl/profiling/libabsl_exponential_biased.a
+[287/1135] Building CXX object _deps/abseil_cpp-build/absl/synchronization/CMakeFiles/synchronization.dir/internal/sem_waiter.cc.o
+[288/1135] Building CXX object _deps/abseil_cpp-build/absl/synchronization/CMakeFiles/synchronization.dir/internal/waiter_base.cc.o
+[289/1135] Building CXX object _deps/abseil_cpp-build/absl/synchronization/CMakeFiles/synchronization.dir/internal/stdcpp_waiter.cc.o
+[290/1135] Building CXX object _deps/abseil_cpp-build/absl/synchronization/CMakeFiles/synchronization.dir/notification.cc.o
+[291/1135] Building CXX object _deps/abseil_cpp-build/absl/hash/CMakeFiles/hash.dir/internal/hash.cc.o
+[292/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/cord_internal.dir/internal/cord_rep_btree_navigator.cc.o
+[293/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/cord_internal.dir/internal/cord_rep_btree_reader.cc.o
+[294/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/cord_internal.dir/internal/cord_internal.cc.o
+[295/1135] Running C++ protocol buffer compiler on /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx-ml.proto
+[296/1135] Building CXX object _deps/abseil_cpp-build/absl/synchronization/CMakeFiles/synchronization.dir/mutex.cc.o
+[297/1135] Linking CXX static library _deps/abseil_cpp-build/absl/synchronization/libabsl_synchronization.a
+[298/1135] Linking CXX static library _deps/abseil_cpp-build/absl/hash/libabsl_hash.a
+[299/1135] Building CXX object _deps/abseil_cpp-build/absl/flags/CMakeFiles/flags_commandlineflag_internal.dir/internal/commandlineflag.cc.o
+[300/1135] Building CXX object _deps/abseil_cpp-build/absl/log/CMakeFiles/vlog_config_internal.dir/internal/vlog_config.cc.o
+[301/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/cord_internal.dir/internal/cord_rep_crc.cc.o
+[302/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/cordz_functions.dir/internal/cordz_functions.cc.o
+[303/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/cord_internal.dir/internal/cord_rep_consume.cc.o
+[304/1135] Linking CXX static library _deps/abseil_cpp-build/absl/log/libabsl_vlog_config_internal.a
+[305/1135] Linking CXX static library _deps/abseil_cpp-build/absl/strings/libabsl_cordz_functions.a
+[306/1135] Running gen_proto.py on onnx/onnx-operators.in.proto
+Processing /mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/onnx-operators.in.proto
+Writing /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx-operators-ml.proto
+Writing /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx-operators-ml.proto3
+generating /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx_operators_pb.py
+[307/1135] Building CXX object _deps/abseil_cpp-build/absl/log/CMakeFiles/log_internal_proto.dir/internal/proto.cc.o
+[308/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/cordz_handle.dir/internal/cordz_handle.cc.o
+[309/1135] Linking CXX static library _deps/abseil_cpp-build/absl/strings/libabsl_cordz_handle.a
+[310/1135] Running gen_proto.py on onnx/onnx-data.in.proto
+Processing /mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/onnx-data.in.proto
+Writing /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx-data.proto
+Writing /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx-data.proto3
+generating /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx_data_pb.py
+[311/1135] Building CXX object _deps/abseil_cpp-build/absl/log/CMakeFiles/log_internal_globals.dir/internal/globals.cc.o
+[312/1135] Building CXX object _deps/abseil_cpp-build/absl/base/CMakeFiles/strerror.dir/internal/strerror.cc.o
+[313/1135] Building CXX object _deps/abseil_cpp-build/absl/log/CMakeFiles/log_sink.dir/log_sink.cc.o
+[314/1135] Linking CXX static library _deps/abseil_cpp-build/absl/flags/libabsl_flags_commandlineflag_internal.a
+[315/1135] Building CXX object _deps/abseil_cpp-build/absl/debugging/CMakeFiles/examine_stack.dir/internal/examine_stack.cc.o
+[316/1135] Building CXX object _deps/abseil_cpp-build/absl/log/CMakeFiles/log_globals.dir/globals.cc.o
+[317/1135] Linking CXX static library _deps/abseil_cpp-build/absl/log/libabsl_log_internal_globals.a
+[318/1135] Linking CXX static library _deps/abseil_cpp-build/absl/log/libabsl_log_internal_proto.a
+[319/1135] Building CXX object _deps/abseil_cpp-build/absl/container/CMakeFiles/hashtablez_sampler.dir/internal/hashtablez_sampler_force_weak_definition.cc.o
+[320/1135] Building CXX object _deps/abseil_cpp-build/absl/flags/CMakeFiles/flags_commandlineflag.dir/commandlineflag.cc.o
+[321/1135] Linking CXX static library _deps/abseil_cpp-build/absl/log/libabsl_log_globals.a
+[322/1135] Linking CXX static library _deps/abseil_cpp-build/absl/log/libabsl_log_sink.a
+[323/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/cord_internal.dir/internal/cord_rep_btree.cc.o
+[324/1135] Building CXX object _deps/abseil_cpp-build/absl/container/CMakeFiles/hashtablez_sampler.dir/internal/hashtablez_sampler.cc.o
+[325/1135] Building CXX object _deps/abseil_cpp-build/absl/log/CMakeFiles/log_internal_nullguard.dir/internal/nullguard.cc.o
+[326/1135] Linking CXX static library _deps/abseil_cpp-build/absl/strings/libabsl_cord_internal.a
+[327/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/cordz_info.dir/internal/cordz_info.cc.o
+[328/1135] Building CXX object _deps/abseil_cpp-build/absl/flags/CMakeFiles/flags_program_name.dir/internal/program_name.cc.o
+[329/1135] Linking CXX static library _deps/abseil_cpp-build/absl/strings/libabsl_cordz_info.a
+[330/1135] Building CXX object _deps/abseil_cpp-build/absl/log/CMakeFiles/log_internal_structured_proto.dir/internal/structured_proto.cc.o
+[331/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/arenaz_sampler.cc.o
+[332/1135] Building CXX object _deps/abseil_cpp-build/absl/log/CMakeFiles/log_internal_format.dir/internal/log_format.cc.o
+[333/1135] Building CXX object _deps/abseil_cpp-build/absl/log/CMakeFiles/log_internal_log_sink_set.dir/internal/log_sink_set.cc.o
+[334/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/arena.cc.o
+[335/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/any_lite.cc.o
+[336/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/cord.dir/cord_analysis.cc.o
+[337/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/arenastring.cc.o
+[338/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/generated_enum_util.cc.o
+[339/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/io_win32.cc.o
+[340/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/implicit_weak_message.cc.o
+[341/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/generated_message_util.cc.o
+[342/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/inlined_string_field.cc.o
+[343/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/coded_stream.cc.o
+[344/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/strtod.cc.o
+[345/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/zero_copy_stream.cc.o
+[346/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.o
+[347/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.o
+[348/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/map.cc.o
+[349/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/bytestream.cc.o
+[350/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/message_lite.cc.o
+[351/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/repeated_ptr_field.cc.o
+[352/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/parse_context.cc.o
+[353/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/extension_set.cc.o
+[354/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/generated_message_tctable_lite.cc.o
+[355/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/statusor.cc.o
+[356/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/status.cc.o
+[357/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/int128.cc.o
+[358/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/common.cc.o
+[359/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/stringpiece.cc.o
+[360/1135] Running C++ protocol buffer compiler on /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx-operators-ml.proto
+[361/1135] Running C++ protocol buffer compiler on /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx-data.proto
+[362/1135] Linking CXX static library _deps/abseil_cpp-build/absl/base/libabsl_strerror.a
+[363/1135] Linking CXX static library _deps/abseil_cpp-build/absl/container/libabsl_hashtablez_sampler.a
+[364/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/stringprintf.cc.o
+[365/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/structurally_valid.cc.o
+[366/1135] Linking CXX static library _deps/abseil_cpp-build/absl/debugging/libabsl_examine_stack.a
+[367/1135] Linking CXX static library _deps/abseil_cpp-build/absl/flags/libabsl_flags_program_name.a
+[368/1135] Building CXX object _deps/abseil_cpp-build/absl/debugging/CMakeFiles/leak_check.dir/leak_check.cc.o
+[369/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/time.cc.o
+[370/1135] Building CXX object _deps/abseil_cpp-build/absl/strings/CMakeFiles/cord.dir/cord.cc.o
+[371/1135] Linking CXX static library _deps/abseil_cpp-build/absl/flags/libabsl_flags_commandlineflag.a
+[372/1135] Linking CXX static library _deps/abseil_cpp-build/absl/log/libabsl_log_internal_format.a
+[373/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/repeated_field.cc.o
+[374/1135] Building CXX object _deps/abseil_cpp-build/absl/flags/CMakeFiles/flags_private_handle_accessor.dir/internal/private_handle_accessor.cc.o
+[375/1135] Linking CXX static library _deps/abseil_cpp-build/absl/log/libabsl_log_internal_log_sink_set.a
+[376/1135] Linking CXX static library _deps/abseil_cpp-build/absl/log/libabsl_log_internal_nullguard.a
+[377/1135] Linking CXX static library _deps/abseil_cpp-build/absl/log/libabsl_log_internal_structured_proto.a
+[378/1135] Linking CXX static library _deps/abseil_cpp-build/absl/strings/libabsl_cord.a
+[379/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/wire_format_lite.cc.o
+[380/1135] Building CXX object _deps/abseil_cpp-build/absl/flags/CMakeFiles/flags_config.dir/usage_config.cc.o
+[381/1135] Building CXX object _deps/protobuf-build/CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/strutil.cc.o
+[382/1135] Linking CXX static library _deps/protobuf-build/libprotobuf-lite.a
+[383/1135] Building CXX object _deps/abseil_cpp-build/absl/flags/CMakeFiles/flags_marshalling.dir/marshalling.cc.o
+[384/1135] Building CXX object _deps/abseil_cpp-build/absl/log/CMakeFiles/log_internal_message.dir/internal/log_message.cc.o
+[385/1135] Building CXX object _deps/abseil_cpp-build/absl/container/CMakeFiles/raw_hash_set.dir/internal/raw_hash_set.cc.o
+[386/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatbuffers.dir/src/util.cpp.o
+[387/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/util.cpp.o
+[388/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_binary.cpp.o
+[389/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatbuffers.dir/src/reflection.cpp.o
+[390/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatbuffers.dir/src/idl_gen_text.cpp.o
+[391/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/reflection.cpp.o
+[392/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_text.cpp.o
+[393/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_dart.cpp.o
+[394/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_go.cpp.o
+[395/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_kotlin.cpp.o
+[396/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_csharp.cpp.o
+[397/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_php.cpp.o
+[398/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_cpp.cpp.o
+[399/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_java.cpp.o
+[400/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_lobster.cpp.o
+[401/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_python.cpp.o
+[402/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatbuffers.dir/src/idl_parser.cpp.o
+[403/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_fbs.cpp.o
+[404/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_ts.cpp.o
+[405/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_parser.cpp.o
+[406/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/file_name_saving_file_manager.cpp.o
+[407/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/file_binary_writer.cpp.o
+[408/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_grpc.cpp.o
+[409/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/file_writer.cpp.o
+[410/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_json_schema.cpp.o
+[411/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/flatc_main.cpp.o
+[412/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/annotated_binary_text_gen.cpp.o
+[413/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/code_generators.cpp.o
+[414/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/bfbs_gen_lua.cpp.o
+[415/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_swift.cpp.o
+[416/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/flatc.cpp.o
+[417/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/binary_annotator.cpp.o
+[418/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_rust.cpp.o
+[419/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/src/bfbs_gen_nim.cpp.o
+[420/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/grpc/src/compiler/python_generator.cc.o
+[421/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/grpc/src/compiler/cpp_generator.cc.o
+[422/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/grpc/src/compiler/go_generator.cc.o
+[423/1135] Linking CXX static library _deps/abseil_cpp-build/absl/container/libabsl_raw_hash_set.a
+[424/1135] Linking CXX static library _deps/abseil_cpp-build/absl/debugging/libabsl_leak_check.a
+[425/1135] Linking CXX static library _deps/abseil_cpp-build/absl/flags/libabsl_flags_config.a
+[426/1135] Linking CXX static library _deps/abseil_cpp-build/absl/flags/libabsl_flags_marshalling.a
+[427/1135] Linking CXX static library _deps/abseil_cpp-build/absl/flags/libabsl_flags_private_handle_accessor.a
+[428/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/grpc/src/compiler/swift_generator.cc.o
+[429/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx_proto.dir/onnx/onnx-operators-ml.pb.cc.o
+[430/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/grpc/src/compiler/java_generator.cc.o
+[431/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx_proto.dir/onnx/onnx-data.pb.cc.o
+[432/1135] Linking CXX static library _deps/abseil_cpp-build/absl/log/libabsl_log_internal_message.a
+[433/1135] Linking CXX static library _deps/flatbuffers-build/libflatbuffers.a
+[434/1135] Building CXX object _deps/abseil_cpp-build/absl/log/CMakeFiles/log_internal_conditions.dir/internal/conditions.cc.o
+[435/1135] Building CXX object _deps/flatbuffers-build/CMakeFiles/flatc.dir/grpc/src/compiler/ts_generator.cc.o
+[436/1135] Building CXX object _deps/abseil_cpp-build/absl/flags/CMakeFiles/flags_internal.dir/internal/flag.cc.o
+[437/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/common/assertions.cc.o
+[438/1135] Building CXX object _deps/abseil_cpp-build/absl/log/CMakeFiles/log_internal_check_op.dir/internal/check_op.cc.o
+[439/1135] Linking CXX executable _deps/flatbuffers-build/flatc
+[440/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/common/path.cc.o
+[441/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/common/status.cc.o
+[442/1135] Building CXX object _deps/abseil_cpp-build/absl/flags/CMakeFiles/flags_reflection.dir/reflection.cc.o
+[443/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/common/model_helpers.cc.o
+[444/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/common/interned_strings.cc.o
+[445/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/attr_proto_util.cc.o
+[446/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx_proto.dir/onnx/onnx-ml.pb.cc.o
+[447/1135] Linking CXX static library _deps/onnx-build/libonnx_proto.a
+[448/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/controlflow/defs.cc.o
+[449/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/controlflow/utils.cc.o
+[450/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/data_type_utils.cc.o
+[451/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/checker.cc.o
+[452/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/controlflow/old.cc.o
+[453/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/common/ir_pb_converter.cc.o
+[454/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/function.cc.o
+[455/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/generator/utils.cc.o
+[456/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/image/defs.cc.o
+[457/1135] Building CXX object CMakeFiles/onnxruntime_lora.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/lora/adapter_format_utils.cc.o
+[458/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/generator/defs.cc.o
+[459/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/generator/old.cc.o
+[460/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/logical/defs.cc.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/logical/defs.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::BinaryLogicDocGenerator(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/logical/defs.cc:19:68: warning: unused parameter ‘name’ [-Wunused-parameter]
+   19 | std::function<void(OpSchema&)> BinaryLogicDocGenerator(const char* name) {
+      |                                                        ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/logical/defs.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::BinaryBitwiseDocGenerator(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/logical/defs.cc:247:77: warning: unused parameter ‘name’ [-Wunused-parameter]
+  247 | static std::function<void(OpSchema&)> BinaryBitwiseDocGenerator(const char* name) {
+      |                                                                 ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/logical/defs.cc: At global scope:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/logical/defs.cc:141:20: warning: ‘onnx::BitShift_ver11_doc’ defined but not used [-Wunused-variable]
+  141 | static const char* BitShift_ver11_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~~~~~~
+[461/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/math/utils.cc.o
+[462/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/logical/old.cc.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/logical/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::BinaryLogicDocGenerator_opset12(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/logical/old.cc:11:83: warning: unused parameter ‘name’ [-Wunused-parameter]
+   11 | static std::function<void(OpSchema&)> BinaryLogicDocGenerator_opset12(const char* name) {
+      |                                                                       ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/logical/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::BinaryLogicDocGenerator_opset1(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/logical/old.cc:84:82: warning: unused parameter ‘name’ [-Wunused-parameter]
+   84 | static std::function<void(OpSchema&)> BinaryLogicDocGenerator_opset1(const char* name) {
+      |                                                                      ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/logical/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::BinaryLogicDocGenerator_opset7(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/logical/old.cc:106:82: warning: unused parameter ‘name’ [-Wunused-parameter]
+  106 | static std::function<void(OpSchema&)> BinaryLogicDocGenerator_opset7(const char* name) {
+      |                                                                      ~~~~~~~~~~~~^~~~
+[463/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/object_detection/defs.cc.o
+[464/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/object_detection/old.cc.o
+[465/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/optional/old.cc.o
+[466/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/optional/defs.cc.o
+[467/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/math/defs.cc.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/defs.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::MathDocGenerator(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/defs.cc:44:68: warning: unused parameter ‘name’ [-Wunused-parameter]
+   44 | static std::function<void(OpSchema&)> MathDocGenerator(const char* name) {
+      |                                                        ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/defs.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::SoftmaxFamilyDocGenerator(const char*, const char*, const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/defs.cc:1017:39: warning: unused parameter ‘name’ [-Wunused-parameter]
+ 1017 | SoftmaxFamilyDocGenerator(const char* name, const char* description, const char* equation) {
+      |                           ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/defs.cc:1017:57: warning: unused parameter ‘description’ [-Wunused-parameter]
+ 1017 | SoftmaxFamilyDocGenerator(const char* name, const char* description, const char* equation) {
+      |                                             ~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/defs.cc:1017:82: warning: unused parameter ‘equation’ [-Wunused-parameter]
+ 1017 | SoftmaxFamilyDocGenerator(const char* name, const char* description, const char* equation) {
+      |                                                                      ~~~~~~~~~~~~^~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/defs.cc: At global scope:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/defs.cc:1238:20: warning: ‘onnx::Gemm_ver13_doc’ defined but not used [-Wunused-variable]
+ 1238 | static const char* Gemm_ver13_doc = R"DOC(General Matrix multiplication:
+      |                    ^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/defs.cc:727:20: warning: ‘onnx::PRelu_ver16_doc’ defined but not used [-Wunused-variable]
+  727 | static const char* PRelu_ver16_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/defs.cc:672:20: warning: ‘onnx::Pow_ver15_doc’ defined but not used [-Wunused-variable]
+  672 | static const char* Pow_ver15_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~
+[468/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/printer.cc.o
+[469/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/nn/defs.cc.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::PoolOpSchemaGenerator(const char*, const char*, const char*, bool, bool)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc:205:17: warning: unused parameter ‘name’ [-Wunused-parameter]
+  205 |     const char* name,
+      |     ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc:206:17: warning: unused parameter ‘opName’ [-Wunused-parameter]
+  206 |     const char* opName,
+      |     ~~~~~~~~~~~~^~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc:207:17: warning: unused parameter ‘additionalDescription’ [-Wunused-parameter]
+  207 |     const char* additionalDescription,
+      |     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::LpPoolOpSchemaGenerator(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc:552:75: warning: unused parameter ‘name’ [-Wunused-parameter]
+  552 | static std::function<void(OpSchema&)> LpPoolOpSchemaGenerator(const char* name) {
+      |                                                               ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::RoiPoolOpSchemaGenerator(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc:678:76: warning: unused parameter ‘name’ [-Wunused-parameter]
+  678 | static std::function<void(OpSchema&)> RoiPoolOpSchemaGenerator(const char* name) {
+      |                                                                ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::ConvOpSchemaGenerator(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc:733:73: warning: unused parameter ‘filter_desc’ [-Wunused-parameter]
+  733 | static std::function<void(OpSchema&)> ConvOpSchemaGenerator(const char* filter_desc) {
+      |                                                             ~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::ConvTransposeOpSchemaGenerator(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc:1248:82: warning: unused parameter ‘filter_desc’ [-Wunused-parameter]
+ 1248 | static std::function<void(OpSchema&)> ConvTransposeOpSchemaGenerator(const char* filter_desc) {
+      |                                                                      ~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::GlobalPoolingOpSchemaGenerator(const char*, const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc:1491:82: warning: unused parameter ‘op_type’ [-Wunused-parameter]
+ 1491 | static std::function<void(OpSchema&)> GlobalPoolingOpSchemaGenerator(const char* op_type, const char* op) {
+      |                                                                      ~~~~~~~~~~~~^~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc:1491:103: warning: unused parameter ‘op’ [-Wunused-parameter]
+ 1491 | static std::function<void(OpSchema&)> GlobalPoolingOpSchemaGenerator(const char* op_type, const char* op) {
+      |                                                                                           ~~~~~~~~~~~~^~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::GlobalLpPoolingOpSchemaGenerator(const char*, const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc:1538:84: warning: unused parameter ‘op_type’ [-Wunused-parameter]
+ 1538 | static std::function<void(OpSchema&)> GlobalLpPoolingOpSchemaGenerator(const char* op_type, const char* op) {
+      |                                                                        ~~~~~~~~~~~~^~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc:1538:105: warning: unused parameter ‘op’ [-Wunused-parameter]
+ 1538 | static std::function<void(OpSchema&)> GlobalLpPoolingOpSchemaGenerator(const char* op_type, const char* op) {
+      |                                                                                             ~~~~~~~~~~~~^~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc: At global scope:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/defs.cc:1849:20: warning: ‘onnx::Dropout_ver22_doc’ defined but not used [-Wunused-variable]
+ 1849 | static const char* Dropout_ver22_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~~~~~
+[470/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/quantization/defs.cc.o
+[471/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/nn/old.cc.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::GlobalLpPoolingOpSchemaGenerator_opset2(const char*, const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:39:91: warning: unused parameter ‘op_type’ [-Wunused-parameter]
+   39 | static std::function<void(OpSchema&)> GlobalLpPoolingOpSchemaGenerator_opset2(const char* op_type, const char* op) {
+      |                                                                               ~~~~~~~~~~~~^~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:39:112: warning: unused parameter ‘op’ [-Wunused-parameter]
+   39 | static std::function<void(OpSchema&)> GlobalLpPoolingOpSchemaGenerator_opset2(const char* op_type, const char* op) {
+      |                                                                                                    ~~~~~~~~~~~~^~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::GlobalPoolingOpSchemaGenerator_opset1(const char*, const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:565:89: warning: unused parameter ‘op_type’ [-Wunused-parameter]
+  565 | static std::function<void(OpSchema&)> GlobalPoolingOpSchemaGenerator_opset1(const char* op_type, const char* op) {
+      |                                                                             ~~~~~~~~~~~~^~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:565:110: warning: unused parameter ‘op’ [-Wunused-parameter]
+  565 | static std::function<void(OpSchema&)> GlobalPoolingOpSchemaGenerator_opset1(const char* op_type, const char* op) {
+      |                                                                                                  ~~~~~~~~~~~~^~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::ConvTransposeOpSchemaGenerator_opset11(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:859:90: warning: unused parameter ‘filter_desc’ [-Wunused-parameter]
+  859 | static std::function<void(OpSchema&)> ConvTransposeOpSchemaGenerator_opset11(const char* filter_desc) {
+      |                                                                              ~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::ConvOpSchemaGenerator_opset11(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:983:81: warning: unused parameter ‘filter_desc’ [-Wunused-parameter]
+  983 | static std::function<void(OpSchema&)> ConvOpSchemaGenerator_opset11(const char* filter_desc) {
+      |                                                                     ~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::RoiPoolOpSchemaGenerator_opset1(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:1128:83: warning: unused parameter ‘name’ [-Wunused-parameter]
+ 1128 | static std::function<void(OpSchema&)> RoiPoolOpSchemaGenerator_opset1(const char* name) {
+      |                                                                       ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::LpPoolOpSchemaGenerator_opset18(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:1186:83: warning: unused parameter ‘name’ [-Wunused-parameter]
+ 1186 | static std::function<void(OpSchema&)> LpPoolOpSchemaGenerator_opset18(const char* name) {
+      |                                                                       ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::PoolOpSchemaGenerator_opset19(const char*, const char*, const char*, bool, bool)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:1377:17: warning: unused parameter ‘name’ [-Wunused-parameter]
+ 1377 |     const char* name,
+      |     ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:1378:17: warning: unused parameter ‘opName’ [-Wunused-parameter]
+ 1378 |     const char* opName,
+      |     ~~~~~~~~~~~~^~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:1379:17: warning: unused parameter ‘additionalDescription’ [-Wunused-parameter]
+ 1379 |     const char* additionalDescription,
+      |     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::PoolOpSchemaGenerator_9(const char*, const char*, const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:2039:37: warning: unused parameter ‘name’ [-Wunused-parameter]
+ 2039 | PoolOpSchemaGenerator_9(const char* name, const char* opName, const char* additionalDescription) {
+      |                         ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:2039:55: warning: unused parameter ‘opName’ [-Wunused-parameter]
+ 2039 | PoolOpSchemaGenerator_9(const char* name, const char* opName, const char* additionalDescription) {
+      |                                           ~~~~~~~~~~~~^~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:2039:75: warning: unused parameter ‘additionalDescription’ [-Wunused-parameter]
+ 2039 | PoolOpSchemaGenerator_9(const char* name, const char* opName, const char* additionalDescription) {
+      |                                                               ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::PoolOpSchemaGenerator_10(const char*, const char*, const char*, bool, int)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:2116:17: warning: unused parameter ‘name’ [-Wunused-parameter]
+ 2116 |     const char* name,
+      |     ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:2117:17: warning: unused parameter ‘opName’ [-Wunused-parameter]
+ 2117 |     const char* opName,
+      |     ~~~~~~~~~~~~^~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:2118:17: warning: unused parameter ‘additionalDescription’ [-Wunused-parameter]
+ 2118 |     const char* additionalDescription,
+      |     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::PoolOpSchemaGenerator_11(const char*, const char*, const char*, bool, bool)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:2227:17: warning: unused parameter ‘name’ [-Wunused-parameter]
+ 2227 |     const char* name,
+      |     ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:2228:17: warning: unused parameter ‘opName’ [-Wunused-parameter]
+ 2228 |     const char* opName,
+      |     ~~~~~~~~~~~~^~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:2229:17: warning: unused parameter ‘additionalDescription’ [-Wunused-parameter]
+ 2229 |     const char* additionalDescription,
+      |     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::LpPoolOpSchemaGenerator_10(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:2710:78: warning: unused parameter ‘name’ [-Wunused-parameter]
+ 2710 | static std::function<void(OpSchema&)> LpPoolOpSchemaGenerator_10(const char* name) {
+      |                                                                  ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::LpPoolOpSchemaGenerator_11(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:2764:78: warning: unused parameter ‘name’ [-Wunused-parameter]
+ 2764 | static std::function<void(OpSchema&)> LpPoolOpSchemaGenerator_11(const char* name) {
+      |                                                                  ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::ConvOpSchemaGenerator_10(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:2825:76: warning: unused parameter ‘filter_desc’ [-Wunused-parameter]
+ 2825 | static std::function<void(OpSchema&)> ConvOpSchemaGenerator_10(const char* filter_desc) {
+      |                                                                ~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::ConvTransposeOpSchemaGenerator_10(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:3039:85: warning: unused parameter ‘filter_desc’ [-Wunused-parameter]
+ 3039 | static std::function<void(OpSchema&)> ConvTransposeOpSchemaGenerator_10(const char* filter_desc) {
+      |                                                                         ~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc: At global scope:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:3906:20: warning: ‘onnx::BatchNormalization_ver7_doc’ defined but not used [-Wunused-variable]
+ 3906 | static const char* BatchNormalization_ver7_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:3670:20: warning: ‘onnx::Dropout_ver10_doc’ defined but not used [-Wunused-variable]
+ 3670 | static const char* Dropout_ver10_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:3647:20: warning: ‘onnx::Dropout_ver7_doc’ defined but not used [-Wunused-variable]
+ 3647 | static const char* Dropout_ver7_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:1549:20: warning: ‘onnx::Dropout_ver12_doc’ defined but not used [-Wunused-variable]
+ 1549 | static const char* Dropout_ver12_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/nn/old.cc:276:20: warning: ‘onnx::Dropout_ver13_doc’ defined but not used [-Wunused-variable]
+  276 | static const char* Dropout_ver13_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~~~~~
+[472/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/parser.cc.o
+[473/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/quantization/old.cc.o
+[474/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/reduction/defs.cc.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/reduction/defs.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::ArgReduceDocGenerator(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/reduction/defs.cc:97:73: warning: unused parameter ‘name’ [-Wunused-parameter]
+   97 | static std::function<void(OpSchema&)> ArgReduceDocGenerator(const char* name) {
+      |                                                             ~~~~~~~~~~~~^~~~
+[475/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/math/old.cc.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::MathDocGenerator_opset13(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc:986:76: warning: unused parameter ‘name’ [-Wunused-parameter]
+  986 | static std::function<void(OpSchema&)> MathDocGenerator_opset13(const char* name) {
+      |                                                                ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::MathDocGenerator_opset_7(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc:1031:76: warning: unused parameter ‘name’ [-Wunused-parameter]
+ 1031 | static std::function<void(OpSchema&)> MathDocGenerator_opset_7(const char* name) {
+      |                                                                ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::SoftmaxFamilyDocGenerator_opset_11(const char*, const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc:1068:86: warning: unused parameter ‘name’ [-Wunused-parameter]
+ 1068 | static std::function<void(OpSchema&)> SoftmaxFamilyDocGenerator_opset_11(const char* name, const char* description) {
+      |                                                                          ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc:1068:104: warning: unused parameter ‘description’ [-Wunused-parameter]
+ 1068 | static std::function<void(OpSchema&)> SoftmaxFamilyDocGenerator_opset_11(const char* name, const char* description) {
+      |                                                                                            ~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::SoftmaxFamilyDocGenerator_opset1(const char*, const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc:2488:84: warning: unused parameter ‘name’ [-Wunused-parameter]
+ 2488 | static std::function<void(OpSchema&)> SoftmaxFamilyDocGenerator_opset1(const char* name, const char* description) {
+      |                                                                        ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc:2488:102: warning: unused parameter ‘description’ [-Wunused-parameter]
+ 2488 | static std::function<void(OpSchema&)> SoftmaxFamilyDocGenerator_opset1(const char* name, const char* description) {
+      |                                                                                          ~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::MathDocGenerator_old(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc:2575:72: warning: unused parameter ‘name’ [-Wunused-parameter]
+ 2575 | static std::function<void(OpSchema&)> MathDocGenerator_old(const char* name) {
+      |                                                            ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::MathDocGenerator_old_opset6(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc:2607:79: warning: unused parameter ‘name’ [-Wunused-parameter]
+ 2607 | static std::function<void(OpSchema&)> MathDocGenerator_old_opset6(const char* name) {
+      |                                                                   ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc: At global scope:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc:3918:20: warning: ‘onnx::PRelu_ver9_doc’ defined but not used [-Wunused-variable]
+ 3918 | static const char* PRelu_ver9_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc:3397:20: warning: ‘onnx::Gemm_ver9_doc’ defined but not used [-Wunused-variable]
+ 3397 | static const char* Gemm_ver9_doc = R"DOC(General Matrix multiplication:
+      |                    ^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc:3331:20: warning: ‘onnx::Gemm_ver7_doc’ defined but not used [-Wunused-variable]
+ 3331 | static const char* Gemm_ver7_doc = R"DOC(General Matrix multiplication:
+      |                    ^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc:3059:20: warning: ‘onnx::PRelu_ver7_doc’ defined but not used [-Wunused-variable]
+ 3059 | static const char* PRelu_ver7_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc:1626:20: warning: ‘onnx::Gemm_ver11_doc’ defined but not used [-Wunused-variable]
+ 1626 | static const char* Gemm_ver11_doc = R"DOC(General Matrix multiplication:
+      |                    ^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc:1470:20: warning: ‘onnx::Pow_ver12_doc’ defined but not used [-Wunused-variable]
+ 1470 | static const char* Pow_ver12_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/math/old.cc:1416:20: warning: ‘onnx::Pow_ver13_doc’ defined but not used [-Wunused-variable]
+ 1416 | static const char* Pow_ver13_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~
+[476/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/reduction/utils.cc.o
+[477/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/rnn/defs.cc.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/rnn/defs.cc:371:20: warning: ‘onnx::LSTM_ver22_doc’ defined but not used [-Wunused-variable]
+  371 | static const char* LSTM_ver22_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/rnn/defs.cc:266:20: warning: ‘onnx::GRU_ver22_doc’ defined but not used [-Wunused-variable]
+  266 | static const char* GRU_ver22_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/rnn/defs.cc:176:20: warning: ‘onnx::RNN_ver22_doc’ defined but not used [-Wunused-variable]
+  176 | static const char* RNN_ver22_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~
+[478/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/reduction/old.cc.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/reduction/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::ReduceDocGenerator_opset12(const char*, bool)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/reduction/old.cc:26:17: warning: unused parameter ‘name’ [-Wunused-parameter]
+   26 |     const char* name,
+      |     ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/reduction/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::ArgReduceDocGenerator_opset12(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/reduction/old.cc:120:81: warning: unused parameter ‘name’ [-Wunused-parameter]
+  120 | static std::function<void(OpSchema&)> ArgReduceDocGenerator_opset12(const char* name) {
+      |                                                                     ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/reduction/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::ReduceDocGenerator_opset1(const char*, const char*, int)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/reduction/old.cc:200:39: warning: unused parameter ‘name’ [-Wunused-parameter]
+  200 | ReduceDocGenerator_opset1(const char* name, const char* empty_value, int opset = 1) {
+      |                           ~~~~~~~~~~~~^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/reduction/old.cc: In function ‘std::function<void(onnx::OpSchema&)> onnx::ArgReduceDocGenerator_opset1(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/reduction/old.cc:300:80: warning: unused parameter ‘name’ [-Wunused-parameter]
+  300 | static std::function<void(OpSchema&)> ArgReduceDocGenerator_opset1(const char* name) {
+      |                                                                    ~~~~~~~~~~~~^~~~
+[479/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/rnn/old.cc.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/rnn/old.cc:433:20: warning: ‘onnx::RNN_ver14_doc’ defined but not used [-Wunused-variable]
+  433 | static const char* RNN_ver14_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/rnn/old.cc:284:20: warning: ‘onnx::LSTM_ver14_doc’ defined but not used [-Wunused-variable]
+  284 | static const char* LSTM_ver14_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/rnn/old.cc:179:20: warning: ‘onnx::GRU_ver14_doc’ defined but not used [-Wunused-variable]
+  179 | static const char* GRU_ver14_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~
+[480/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/shape_inference.cc.o
+[481/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/sequence/defs.cc.o
+[482/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/tensor_proto_util.cc.o
+[483/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/tensor_util.cc.o
+[484/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/tensor/utils.cc.o
+[485/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/text/defs.cc.o
+[486/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/schema.cc.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/schema.cc: In member function ‘onnx::OpSchema& onnx::OpSchema::Input(int, std::string, const std::string&, std::string, FormalParameterOption, bool, int, DifferentiationCategory)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/schema.cc:589:24: warning: unused parameter ‘description’ [-Wunused-parameter]
+  589 |     const std::string& description,
+      |     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/schema.cc: In member function ‘onnx::OpSchema& onnx::OpSchema::Input(int, const char*, const char*, const char*, FormalParameterOption, bool, int, DifferentiationCategory)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/schema.cc:614:17: warning: unused parameter ‘description’ [-Wunused-parameter]
+  614 |     const char* description,
+      |     ~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/schema.cc: In member function ‘onnx::OpSchema& onnx::OpSchema::Output(int, std::string, const std::string&, std::string, FormalParameterOption, bool, int, DifferentiationCategory)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/schema.cc:646:24: warning: unused parameter ‘description’ [-Wunused-parameter]
+  646 |     const std::string& description,
+      |     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/schema.cc: In member function ‘onnx::OpSchema& onnx::OpSchema::Output(int, const char*, const char*, const char*, FormalParameterOption, bool, int, DifferentiationCategory)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/schema.cc:671:17: warning: unused parameter ‘description’ [-Wunused-parameter]
+  671 |     const char* description,
+      |     ~~~~~~~~~~~~^~~~~~~~~~~
+[487/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/training/defs.cc.o
+[488/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/tensor/defs.cc.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src/onnx/defs/tensor/defs.cc:3010:20: warning: ‘onnx::Where_ver16_doc’ defined but not used [-Wunused-variable]
+ 3010 | static const char* Where_ver16_doc = R"DOC(
+      |                    ^~~~~~~~~~~~~~~
+[489/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/traditionalml/old.cc.o
+[490/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/traditionalml/defs.cc.o
+[491/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/version_converter/helper.cc.o
+[492/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/cpuid_uarch.cc.o
+[493/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/defs/tensor/old.cc.o
+[494/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/cpuid_info_vendor.cc.o
+[495/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/inliner/inliner.cc.o
+[496/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/shape_inference/implementation.cc.o
+[497/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/helper.cc.o
+[498/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/cpuid_info.cc.o
+[499/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/logging/capture.cc.o
+[500/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/denormal.cc.o
+[501/1135] Building CXX object CMakeFiles/onnxruntime_flatbuffers.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/flatbuffers/flatbuffers_utils.cc.o
+[502/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/logging/sinks/ostream_sink.cc.o
+[503/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/logging/logging.cc.o
+[504/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/profiler_common.cc.o
+[505/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/platform/check_intel.cc.o
+[506/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.cc.o
+FAILED: [code=1] CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.cc.o 
+/usr/bin/c++ -DCPUINFO_SUPPORTED_PLATFORM=1 -DEIGEN_MPL2_ONLY -DEIGEN_USE_THREADS -DONLY_C_LOCALE=0 -DORT_ENABLE_STREAM -DPLATFORM_POSIX -D_GNU_SOURCE -I/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/include/onnxruntime -I/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/include/onnxruntime/core/session -I/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/pytorch_cpuinfo-src/include -I/tmp/oneocr-ort-linux-source/Release -I/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime -I/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/date-src/include -I/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/eigen3-src -I/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/abseil_cpp-src -isystem /mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/safeint-src -isystem /mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/gsl-src/include -ffp-contract=off -ffunction-sections -fdata-sections -DCPUINFO_SUPPORTED -O3 -DNDEBUG -fPIC -Wall -Wextra -Wno-deprecated-copy -Wno-nonnull-compare -Wno-deprecated-literal-operator -Wno-interference-size -MD -MT CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.cc.o -MF CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.cc.o.d -o CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.cc.o -c /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.cc
+In file included from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.cc:4:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.h:18:3: error: ‘uint32_t’ does not name a type
+   18 |   uint32_t major{};
+      |   ^~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.h:10:1: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+    9 | #include "core/common/status.h"
+  +++ |+#include <cstdint>
+   10 | 
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.h:19:3: error: ‘uint32_t’ does not name a type
+   19 |   uint32_t minor{};
+      |   ^~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.h:19:3: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.h:20:3: error: ‘uint32_t’ does not name a type
+   20 |   uint32_t patch{};
+      |   ^~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.h:20:3: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+In file included from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.cc:8:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.cc: In function ‘onnxruntime::common::Status onnxruntime::ParseSemVerVersion(std::string_view, SemVerVersion*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.cc:41:79: error: ‘struct onnxruntime::SemVerVersion’ has no member named ‘major’
+   41 |   ORT_RETURN_IF_ERROR(parse_version_component(match_result[1], semver_version.major));
+      |                                                                               ^~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/include/onnxruntime/core/common/common.h:255:21: note: in definition of macro ‘ORT_RETURN_IF_ERROR_SESSIONID’
+  255 |     auto _status = (expr);                                                                                             \
+      |                     ^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.cc:41:3: note: in expansion of macro ‘ORT_RETURN_IF_ERROR’
+   41 |   ORT_RETURN_IF_ERROR(parse_version_component(match_result[1], semver_version.major));
+      |   ^~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.cc:42:79: error: ‘struct onnxruntime::SemVerVersion’ has no member named ‘minor’
+   42 |   ORT_RETURN_IF_ERROR(parse_version_component(match_result[2], semver_version.minor));
+      |                                                                               ^~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/include/onnxruntime/core/common/common.h:255:21: note: in definition of macro ‘ORT_RETURN_IF_ERROR_SESSIONID’
+  255 |     auto _status = (expr);                                                                                             \
+      |                     ^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.cc:42:3: note: in expansion of macro ‘ORT_RETURN_IF_ERROR’
+   42 |   ORT_RETURN_IF_ERROR(parse_version_component(match_result[2], semver_version.minor));
+      |   ^~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.cc:43:79: error: ‘struct onnxruntime::SemVerVersion’ has no member named ‘patch’
+   43 |   ORT_RETURN_IF_ERROR(parse_version_component(match_result[3], semver_version.patch));
+      |                                                                               ^~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/include/onnxruntime/core/common/common.h:255:21: note: in definition of macro ‘ORT_RETURN_IF_ERROR_SESSIONID’
+  255 |     auto _status = (expr);                                                                                             \
+      |                     ^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/semver.cc:43:3: note: in expansion of macro ‘ORT_RETURN_IF_ERROR’
+   43 |   ORT_RETURN_IF_ERROR(parse_version_component(match_result[3], semver_version.patch));
+      |   ^~~~~~~~~~~~~~~~~~~
+[507/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/profiler.cc.o
+[508/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/status.cc.o
+[509/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/spin_pause.cc.o
+[510/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/platform/env.cc.o
+[511/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/platform/device_discovery_common.cc.o
+[512/1135] Building CXX object CMakeFiles/onnxruntime_common.dir/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/onnxruntime/core/common/threadpool.cc.o
+[513/1135] Building CXX object _deps/onnx-build/CMakeFiles/onnx.dir/onnx/version_converter/convert.cc.o
+ninja: build stopped: subcommand failed.
+Namespace(build_dir='/tmp/oneocr-ort-linux-source', config=['Release'], update=True, build=True, clean=False, parallel=8, target='onnxruntime', compile_no_warning_as_error=True, build_shared_lib=True, build_apple_framework=False, enable_lto=False, use_cache=False, use_binskim_compliant_compile_flags=False, cmake_extra_defines=[['CMAKE_C_FLAGS=-ffp-contract=off', 'CMAKE_CXX_FLAGS=-ffp-contract=off', 'onnxruntime_BUILD_UNIT_TESTS=OFF', 'CMAKE_POLICY_VERSION_MINIMUM=3.5', 'FETCHCONTENT_SOURCE_DIR_ABSEIL_CPP=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/abseil_cpp-src', 'FETCHCONTENT_SOURCE_DIR_DATE=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/date-src', 'FETCHCONTENT_SOURCE_DIR_EIGEN3=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/eigen3-src', 'FETCHCONTENT_SOURCE_DIR_FLATBUFFERS=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/flatbuffers-src', 'FETCHCONTENT_SOURCE_DIR_GOOGLETEST=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/googletest-src', 'FETCHCONTENT_SOURCE_DIR_GSL=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/gsl-src', 'FETCHCONTENT_SOURCE_DIR_MICROSOFT_WIL=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/microsoft_wil-src', 'FETCHCONTENT_SOURCE_DIR_MP11=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/mp11-src', 'FETCHCONTENT_SOURCE_DIR_NLOHMANN_JSON=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/nlohmann_json-src', 'FETCHCONTENT_SOURCE_DIR_ONNX=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src', 'FETCHCONTENT_SOURCE_DIR_PROTOBUF=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/protobuf-src', 'FETCHCONTENT_SOURCE_DIR_PYTORCH_CPUINFO=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/pytorch_cpuinfo-src', 'FETCHCONTENT_SOURCE_DIR_RE2=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/re2-src', 'FETCHCONTENT_SOURCE_DIR_SAFEINT=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/safeint-src']], cmake_path='cmake', cmake_generator='Ninja', use_vcpkg=False, use_vcpkg_ms_internal_asset_cache=False, skip_submodule_sync=False, test=False, skip_tests=True, ctest_path='ctest', enable_onnx_tests=False, path_to_protoc_exe=None, fuzz_testing=False, enable_symbolic_shape_infer_tests=False, skip_onnx_tests=False, skip_winml_tests=False, skip_nodejs_tests=False, test_all_timeout='10800', enable_transformers_tool_test=False, build_micro_benchmarks=False, code_coverage=False, enable_training=False, enable_training_apis=False, enable_training_ops=False, enable_nccl=False, nccl_home=None, enable_memory_profile=False, enable_address_sanitizer=False, gen_doc=None, rv64=False, riscv_toolchain_root='', riscv_qemu_path='', android=False, android_abi='arm64-v8a', android_api=27, android_sdk_path='', android_ndk_path='', android_cpp_shared=False, android_run_emulator=False, build_wasm=False, build_wasm_static_lib=False, emsdk_version='4.0.8', enable_wasm_simd=False, enable_wasm_relaxed_simd=False, enable_wasm_threads=False, disable_wasm_exception_catching=False, enable_wasm_api_exception_catching=False, enable_wasm_exception_throwing_override=True, wasm_run_tests_in_browser=False, enable_wasm_profiling=False, enable_wasm_debug_info=False, wasm_malloc=None, emscripten_settings=None, use_full_protobuf=False, use_mimalloc=False, external_graph_transformer_path=None, use_extensions=False, extensions_overridden_path=None, minimal_build=None, include_ops_by_config=None, enable_reduced_operator_type_support=False, disable_contrib_ops=False, disable_ml_ops=False, disable_rtti=False, disable_types=[], disable_exceptions=False, client_package_build=False, enable_pybind=False, build_wheel=False, wheel_name_suffix=None, skip_keras_test=False, build_csharp=False, build_nuget=False, msbuild_extra_options=None, build_java=False, build_nodejs=False, build_objc=False, use_cuda=False, cuda_version=None, cuda_home=None, cudnn_home=None, enable_cuda_line_info=False, enable_cuda_nhwc_ops=False, disable_cuda_nhwc_ops=False, enable_cuda_minimal_build=False, nvcc_threads=-1, enable_nvtx_profile=False, enable_cuda_profiling=False, use_dnnl=False, dnnl_gpu_runtime='', dnnl_opencl_root='', dnnl_aarch64_runtime='', dnnl_acl_root='', use_openvino=None, use_tensorrt=False, use_tensorrt_builtin_parser=True, use_tensorrt_oss_parser=False, tensorrt_home=None, tensorrt_rtx_home=None, use_nv_tensorrt_rtx=False, use_dml=False, dml_path='', dml_external_project=False, use_nnapi=False, nnapi_min_api=None, use_coreml=False, use_qnn=None, qnn_home=None, use_snpe=False, snpe_root=None, use_vitisai=False, use_armnn=False, armnn_relu=False, armnn_bn=False, armnn_home=None, armnn_libs=None, use_acl=False, acl_home=None, acl_libs=None, no_kleidiai=False, use_rknpu=False, use_cann=False, cann_home=None, use_migraphx=False, migraphx_home=None, use_rocm=False, rocm_version=None, rocm_home=None, use_webnn=False, use_jsep=False, use_webgpu=False, use_external_dawn=False, wgsl_template='static', use_xnnpack=False, use_vsinpu=False, use_azure=False, enable_lazy_tensor=False, ms_experimental=False, enable_msinternal=False, use_lock_free_queue=False, enable_generic_interface=False, allow_running_as_root=True, enable_external_custom_op_schemas=False)
+Traceback (most recent call last):
+  File "/mnt/f/pythonx/myocr/win11-oneocr/scripts/build-ort.py", line 34, in <module>
+    runpy.run_path(str(entry),run_name='__main__')
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/tools/ci_build/build.py", line 2670, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/tools/ci_build/build.py", line 2571, in main
+    build_targets(args, cmake_path, build_dir, configs, num_parallel_jobs, args.target)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/tools/ci_build/build.py", line 1363, in build_targets
+    run_subprocess(cmd_args, env=env)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/tools/ci_build/build.py", line 148, in run_subprocess
+    return run(*args, cwd=cwd, capture_stdout=capture_stdout, shell=shell, env=my_env)
+  File "/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/tools/python/util/run.py", line 50, in run
+    completed_process = subprocess.run(
+        cmd,
+    ...<6 lines>...
+        shell=shell,
+    )
+  File "/usr/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/usr/bin/cmake', '--build', '/tmp/oneocr-ort-linux-source/Release', '--config', 'Release', '--target', 'onnxruntime', '--', '-j8']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/mnt/f/pythonx/myocr/win11-oneocr/work/oneocr-portable/build-linux-ort-cached.py", line 12, in <module>
+    subprocess.run(command,cwd=root,check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '/mnt/f/pythonx/myocr/win11-oneocr/scripts/build-ort.py', '--build_dir', '/tmp/oneocr-ort-linux-source', '--config', 'Release', '--update', '--build', '--target', 'onnxruntime', '--parallel', '8', '--build_shared_lib', '--skip_tests', '--compile_no_warning_as_error', '--allow_running_as_root', '--cmake_generator', 'Ninja', '--cmake_extra_defines', 'onnxruntime_BUILD_UNIT_TESTS=OFF', 'CMAKE_POLICY_VERSION_MINIMUM=3.5', 'FETCHCONTENT_SOURCE_DIR_ABSEIL_CPP=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/abseil_cpp-src', 'FETCHCONTENT_SOURCE_DIR_DATE=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/date-src', 'FETCHCONTENT_SOURCE_DIR_EIGEN3=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/eigen3-src', 'FETCHCONTENT_SOURCE_DIR_FLATBUFFERS=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/flatbuffers-src', 'FETCHCONTENT_SOURCE_DIR_GOOGLETEST=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/googletest-src', 'FETCHCONTENT_SOURCE_DIR_GSL=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/gsl-src', 'FETCHCONTENT_SOURCE_DIR_MICROSOFT_WIL=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/microsoft_wil-src', 'FETCHCONTENT_SOURCE_DIR_MP11=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/mp11-src', 'FETCHCONTENT_SOURCE_DIR_NLOHMANN_JSON=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/nlohmann_json-src', 'FETCHCONTENT_SOURCE_DIR_ONNX=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/onnx-src', 'FETCHCONTENT_SOURCE_DIR_PROTOBUF=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/protobuf-src', 'FETCHCONTENT_SOURCE_DIR_PYTORCH_CPUINFO=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/pytorch_cpuinfo-src', 'FETCHCONTENT_SOURCE_DIR_RE2=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/re2-src', 'FETCHCONTENT_SOURCE_DIR_SAFEINT=/mnt/f/pythonx/myocr/win11-oneocr/work/ort-source/Release/_deps/safeint-src']' returned non-zero exit status 1.

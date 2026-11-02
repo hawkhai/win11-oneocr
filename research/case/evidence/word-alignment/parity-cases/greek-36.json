@@ -1,0 +1,30 @@
+{
+  "passed": false,
+  "expected_lines": 1,
+  "actual_lines": 1,
+  "same_position_text_matches": 1,
+  "failure_count": 3,
+  "failures": [
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.9883224368095398,
+      "actual": 0.9968161582946777
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.9907907843589783,
+      "actual": 0.9980141520500183
+    },
+    {
+      "field": "lines[0].words[3].confidence",
+      "expected": 0.9925022125244141,
+      "actual": 0.9987839460372925
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "greek-36"
+}

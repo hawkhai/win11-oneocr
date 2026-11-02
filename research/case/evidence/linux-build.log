@@ -1,0 +1,97 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+
+  0      0   0      0   0      0      0      0                              0
+  0      0   0      0   0      0      0      0                              0
+  0      0   0      0   0      0      0      0                              0
+
+  0      0   0      0   0      0      0      0                              0
+  8  7.92M   8 699.0k   0      0 417.3k      0   00:19   00:01   00:18 699.0k
+ 22  7.92M  22  1.81M   0      0 694.3k      0   00:11   00:02   00:09 928.4k
+ 37  7.92M  37  2.94M   0      0 820.5k      0   00:09   00:03   00:06  0.98M
+ 51  7.92M  51  4.07M   0      0 892.9k      0   00:09   00:04   00:05  1.01M
+ 65  7.92M  65  5.20M   0      0 939.4k      0   00:08   00:05   00:03  1.04M
+ 79  7.92M  79  6.33M   0      0 972.2k      0   00:08   00:06   00:02  1.12M
+ 94  7.92M  94  7.46M   0      0 996.2k      0   00:08   00:07   00:01  1.12M
+100  7.92M 100  7.92M   0      0  0.98M      0   00:08   00:08          1.12M
+100  7.92M 100  7.92M   0      0  0.98M      0   00:08   00:08          1.12M
+100  7.92M 100  7.92M   0      0  0.98M      0   00:08   00:08          1.12M
+work/vendor/ort-linux.tgz: OK
+-- The CXX compiler identification is GNU 15.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (4.6s)
+-- Generating done (0.3s)
+-- Build files have been written to: /mnt/f/pythonx/myocr/win11-oneocr/build/linux-x64
+[1/10] Building CXX object native/CMakeFiles/oneocr_api_test.dir/tests/api_test.cpp.o
+[2/10] Building CXX object native/CMakeFiles/oneocr_math_test.dir/tests/math_test.cpp.o
+[3/10] Building CXX object native/CMakeFiles/ocr.dir/src/cli.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/cli.cpp: In function ‘int command(const std::vector<std::__cxx11::basic_string<char> >&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/cli.cpp:50:49: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   50 |             fs::path exe=fs::absolute(fs::u8path(args[0])).parent_path();
+      |                                       ~~~~~~~~~~^~~~~~~~~
+In file included from /usr/include/c++/15/filesystem:54,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/cli.cpp:4:
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/cli.cpp:63:43: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   63 |                 std::ofstream f(fs::u8path(destination),std::ios::binary);
+      |                                 ~~~~~~~~~~^~~~~~~~~~~~~
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+[4/10] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/image.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp: In function ‘oneocr_native::Image oneocr_native::load_image(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp:18:44: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = const char*; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   18 |     std::ifstream f(std::filesystem::u8path(path),std::ios::binary|std::ios::ate);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/c++/15/filesystem:54,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp:4:
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+[5/10] Building CXX object native/CMakeFiles/oneocr_math_test.dir/src/image.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp: In function ‘oneocr_native::Image oneocr_native::load_image(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp:18:44: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = const char*; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   18 |     std::ifstream f(std::filesystem::u8path(path),std::ios::binary|std::ios::ate);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/c++/15/filesystem:54,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp:4:
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+[6/10] Linking CXX executable native/oneocr_math_test
+[7/10] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/engine.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp: In function ‘std::filesystem::__cxx11::path {anonymous}::asset(const std::filesystem::__cxx11::path&, const std::string&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:25:26: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   25 |     fs::path p=fs::u8path(relative);
+      |                ~~~~~~~~~~^~~~~~~~~~
+In file included from /usr/include/c++/15/filesystem:54,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/sha256.hpp:6,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:3:
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp: In constructor ‘oneocr_context::oneocr_context(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:98:67: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = const char*; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   98 |     explicit oneocr_context(const char* directory):root(fs::u8path(directory)) {
+      |                                                         ~~~~~~~~~~^~~~~~~~~~~
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+[8/10] Linking CXX shared library native/liboneocr_portable.so
+[9/10] Linking CXX executable native/oneocr_api_test
+[10/10] Linking CXX executable native/ocr
+Test project /mnt/f/pythonx/myocr/win11-oneocr/build/linux-x64
+    Start 1: portable_api
+1/2 Test #1: portable_api .....................   Passed    0.04 sec
+    Start 2: portable_math
+2/2 Test #2: portable_math ....................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.07 sec

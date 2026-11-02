@@ -1,0 +1,204 @@
+2026-11-02 17:49:21,154 tools_python_utils [INFO] - flatbuffers module is not installed. parse_config will not be available
+2026-11-02 17:49:21,323 build [DEBUG] - Command line arguments:
+  --build_dir /tmp/oneocr-ort-linux-source --config Release --update --build --target onnxruntime --parallel 8 --build_shared_lib --skip_tests --compile_no_warning_as_error --allow_running_as_root --cmake_generator Ninja --cmake_extra_defines onnxruntime_BUILD_UNIT_TESTS=OFF CMAKE_CXX_FLAGS=-ffp-contract=off CMAKE_C_FLAGS=-ffp-contract=off CMAKE_POLICY_VERSION_MINIMUM=3.5
+2026-11-02 17:49:21,332 build [INFO] - Build started
+2026-11-02 17:49:21,332 build [INFO] - git submodule sync --recursive
+Synchronizing submodule url for 'cmake/external/emsdk'
+Synchronizing submodule url for 'cmake/external/libprotobuf-mutator'
+Synchronizing submodule url for 'cmake/external/onnx'
+Synchronizing submodule url for 'cmake/external/onnx/third_party/pybind11'
+2026-11-02 17:49:23,593 build [INFO] - git submodule update --init --recursive
+2026-11-02 17:49:25,584 build [INFO] - Generating CMake build tree
+2026-11-02 17:49:25,585 build [INFO] - /usr/bin/cmake /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/cmake --compile-no-warning-as-error -Donnxruntime_ENABLE_EXTERNAL_CUSTOM_OP_SCHEMAS=OFF -Donnxruntime_RUN_ONNX_TESTS=OFF -Donnxruntime_GENERATE_TEST_REPORTS=ON -DPython_EXECUTABLE=/usr/bin/python3 -Donnxruntime_USE_VCPKG=OFF -Donnxruntime_USE_MIMALLOC=OFF -Donnxruntime_ENABLE_PYTHON=OFF -Donnxruntime_BUILD_CSHARP=OFF -Donnxruntime_BUILD_JAVA=OFF -Donnxruntime_BUILD_NODEJS=OFF -Donnxruntime_BUILD_OBJC=OFF -Donnxruntime_BUILD_SHARED_LIB=ON -Donnxruntime_BUILD_APPLE_FRAMEWORK=OFF -Donnxruntime_USE_DNNL=OFF -Donnxruntime_USE_NNAPI_BUILTIN=OFF -Donnxruntime_USE_VSINPU=OFF -Donnxruntime_USE_RKNPU=OFF -Donnxruntime_ENABLE_MICROSOFT_INTERNAL=OFF -Donnxruntime_USE_VITISAI=OFF -Donnxruntime_USE_TENSORRT=OFF -Donnxruntime_USE_NV=OFF -Donnxruntime_USE_TENSORRT_BUILTIN_PARSER=ON -Donnxruntime_USE_TENSORRT_INTERFACE=OFF -Donnxruntime_USE_CUDA_INTERFACE=OFF -Donnxruntime_USE_NV_INTERFACE=OFF -Donnxruntime_USE_OPENVINO_INTERFACE=OFF -Donnxruntime_USE_VITISAI_INTERFACE=OFF -Donnxruntime_USE_QNN_INTERFACE=OFF -Donnxruntime_USE_MIGRAPHX_INTERFACE=OFF -Donnxruntime_USE_MIGRAPHX=OFF -Donnxruntime_DISABLE_CONTRIB_OPS=OFF -Donnxruntime_DISABLE_ML_OPS=OFF -Donnxruntime_DISABLE_RTTI=OFF -Donnxruntime_DISABLE_EXCEPTIONS=OFF -Donnxruntime_MINIMAL_BUILD=OFF -Donnxruntime_EXTENDED_MINIMAL_BUILD=OFF -Donnxruntime_MINIMAL_BUILD_CUSTOM_OPS=OFF -Donnxruntime_REDUCED_OPS_BUILD=OFF -Donnxruntime_CLIENT_PACKAGE_BUILD=OFF -Donnxruntime_BUILD_MS_EXPERIMENTAL_OPS=OFF -Donnxruntime_ENABLE_LTO=OFF -Donnxruntime_USE_ACL=OFF -Donnxruntime_USE_ARMNN=OFF -Donnxruntime_ARMNN_RELU_USE_CPU=ON -Donnxruntime_ARMNN_BN_USE_CPU=ON -Donnxruntime_USE_JSEP=OFF -Donnxruntime_USE_WEBGPU=OFF -Donnxruntime_USE_EXTERNAL_DAWN=OFF -Donnxruntime_WGSL_TEMPLATE=static -Donnxruntime_ENABLE_NVTX_PROFILE=OFF -Donnxruntime_ENABLE_TRAINING=OFF -Donnxruntime_ENABLE_TRAINING_OPS=OFF -Donnxruntime_ENABLE_TRAINING_APIS=OFF -Donnxruntime_ENABLE_CPU_FP16_OPS=OFF -Donnxruntime_USE_NCCL=OFF -Donnxruntime_BUILD_BENCHMARKS=OFF -Donnxruntime_GCOV_COVERAGE=OFF -Donnxruntime_ENABLE_MEMORY_PROFILE=OFF -Donnxruntime_ENABLE_CUDA_LINE_NUMBER_INFO=OFF -Donnxruntime_USE_CUDA_NHWC_OPS=OFF -Donnxruntime_BUILD_WEBASSEMBLY_STATIC_LIB=OFF -Donnxruntime_ENABLE_WEBASSEMBLY_EXCEPTION_CATCHING=ON -Donnxruntime_ENABLE_WEBASSEMBLY_API_EXCEPTION_CATCHING=OFF -Donnxruntime_ENABLE_WEBASSEMBLY_EXCEPTION_THROWING=ON -Donnxruntime_WEBASSEMBLY_RUN_TESTS_IN_BROWSER=OFF -Donnxruntime_ENABLE_WEBASSEMBLY_THREADS=OFF -Donnxruntime_ENABLE_WEBASSEMBLY_DEBUG_INFO=OFF -Donnxruntime_ENABLE_WEBASSEMBLY_PROFILING=OFF -Donnxruntime_ENABLE_LAZY_TENSOR=OFF -Donnxruntime_ENABLE_CUDA_PROFILING=OFF -Donnxruntime_USE_XNNPACK=OFF -Donnxruntime_USE_WEBNN=OFF -Donnxruntime_USE_CANN=OFF -Donnxruntime_DISABLE_FLOAT8_TYPES=OFF -Donnxruntime_DISABLE_SPARSE_TENSORS=OFF -Donnxruntime_DISABLE_OPTIONAL_TYPE=OFF -Donnxruntime_CUDA_MINIMAL=OFF -Donnxruntime_BUILD_UNIT_TESTS=OFF -DCMAKE_CXX_FLAGS=-ffp-contract=off -DCMAKE_C_FLAGS=-ffp-contract=off -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -G Ninja -DCMAKE_BUILD_TYPE=Release
+Ignoring COMPILE_WARNING_AS_ERROR target property and CMAKE_COMPILE_WARNING_AS_ERROR variable.
+CMake Deprecation Warning at CMakeLists.txt:9 (cmake_policy):
+  The OLD behavior for policy CMP0104 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- The C compiler identification is GNU 15.2.0
+-- The CXX compiler identification is GNU 15.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test COMPILER_SUPPORT_MF16C
+-- Performing Test COMPILER_SUPPORT_MF16C - Success
+-- Performing Test COMPILER_SUPPORT_FMA
+-- Performing Test COMPILER_SUPPORT_FMA - Success
+-- Performing Test COMPILER_SUPPORT_AVX
+-- Performing Test COMPILER_SUPPORT_AVX - Success
+Building ONNX Runtime for x86_64 CPU ARCH
+-- Performing Test onnxruntime_HAVE_BUILTIN_ATOMICS
+-- Performing Test onnxruntime_HAVE_BUILTIN_ATOMICS - Success
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test Iconv_IS_BUILT_IN
+-- Performing Test Iconv_IS_BUILT_IN - Success
+-- Found Iconv: built in to C library
+-- Found Patch: /usr/bin/patch
+Patch found: /usr/bin/patch
+-- Found Python: /usr/bin/python3 (found suitable version "3.14.4", minimum required is "3.10") found components: Interpreter
+-- Loading Dependencies URLs ...
+-- Loading Dependencies ...
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX17
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX17 - Success
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX20
+-- Performing Test ABSL_INTERNAL_AT_LEAST_CXX20 - Failed
+-- Abseil source dir:/tmp/oneocr-ort-linux-source/Release/_deps/abseil_cpp-src
+CMake Deprecation Warning at /tmp/oneocr-ort-linux-source/Release/_deps/protobuf-src/CMakeLists.txt:2 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- 
+-- 3.21.12.0
+-- Performing Test protobuf_HAVE_LD_VERSION_SCRIPT
+-- Performing Test protobuf_HAVE_LD_VERSION_SCRIPT - Success
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR) 
+-- Performing Test protobuf_HAVE_BUILTIN_ATOMICS
+-- Performing Test protobuf_HAVE_BUILTIN_ATOMICS - Success
+CMake Deprecation Warning at /tmp/oneocr-ort-linux-source/Release/_deps/date-src/CMakeLists.txt:18 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+# date: USE_SYSTEM_TZ_DB ON
+# date: MANUAL_TZ_DB OFF
+# date: USE_TZ_DB_IN_DOT OFF
+# date: BUILD_SHARED_LIBS OFF
+# date: ENABLE_DATE_TESTING OFF
+# date: DISABLE_STRING_VIEW OFF
+CMake Warning (dev) at /usr/share/cmake-4.2/Modules/FetchContent.cmake:1963 (message):
+  Calling FetchContent_Populate(mp11) is deprecated, call
+  FetchContent_MakeAvailable(mp11) instead.  Policy CMP0169 can be set to OLD
+  to allow FetchContent_Populate(mp11) to be called directly for now, but the
+  ability to call it with declared details will be removed completely in a
+  future version.
+Call Stack (most recent call first):
+  external/onnxruntime_external_deps.cmake:297 (FetchContent_Populate)
+  CMakeLists.txt:516 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Using the multi-header code from /tmp/oneocr-ort-linux-source/Release/_deps/nlohmann_json-src/include/
+CMake Deprecation Warning at /tmp/oneocr-ort-linux-source/Release/_deps/pytorch_cpuinfo-src/CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Warning (dev) at /usr/share/cmake-4.2/Modules/FetchContent.cmake:1963 (message):
+  Calling FetchContent_Populate(safeint) is deprecated, call
+  FetchContent_MakeAvailable(safeint) instead.  Policy CMP0169 can be set to
+  OLD to allow FetchContent_Populate(safeint) to be called directly for now,
+  but the ability to call it with declared details will be removed completely
+  in a future version.
+Call Stack (most recent call first):
+  external/onnxruntime_external_deps.cmake:442 (FetchContent_Populate)
+  CMakeLists.txt:516 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Proceeding with version: 23.5.26.0
+-- Looking for strtof_l
+-- Looking for strtof_l - found
+-- Looking for strtoull_l
+-- Looking for strtoull_l - found
+-- Looking for realpath
+-- Looking for realpath - found
+-- CMAKE_CXX_FLAGS: -ffp-contract=off -ffunction-sections -fdata-sections -DCPUINFO_SUPPORTED
+-- Found Python3: /usr/bin/python3 (found version "3.14.4") found components: Interpreter
+-- ONNX_PROTOC_EXECUTABLE: $<TARGET_FILE:protobuf::protoc>
+-- Protobuf_VERSION: 
+Generated: /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx-ml.proto
+Generated: /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx-operators-ml.proto
+Generated: /tmp/oneocr-ort-linux-source/Release/_deps/onnx-build/onnx/onnx-data.proto
+-- 
+-- ******** Summary ********
+--   CMake version                     : 4.2.3
+--   CMake command                     : /usr/bin/cmake
+--   System                            : Linux
+--   C++ compiler                      : /usr/bin/c++
+--   C++ compiler version              : 15.2.0
+--   CXX flags                         : -ffp-contract=off -ffunction-sections -fdata-sections -DCPUINFO_SUPPORTED -Wnon-virtual-dtor
+--   Build type                        : Release
+--   Compile definitions               : EIGEN_MPL2_ONLY;_GNU_SOURCE
+--   CMAKE_PREFIX_PATH                 : 
+--   CMAKE_INSTALL_PREFIX              : /usr/local
+--   CMAKE_MODULE_PATH                 : /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/onnxruntime/cmake/external
+-- 
+--   ONNX version                      : 1.18.0
+--   ONNX NAMESPACE                    : onnx
+--   ONNX_USE_LITE_PROTO               : ON
+--   USE_PROTOBUF_SHARED_LIBS          : OFF
+--   ONNX_DISABLE_EXCEPTIONS           : OFF
+--   ONNX_DISABLE_STATIC_REGISTRATION  : OFF
+--   ONNX_WERROR                       : OFF
+--   ONNX_BUILD_TESTS                  : OFF
+--   BUILD_SHARED_LIBS                 : OFF
+-- 
+--   Protobuf compiler                 : $<TARGET_FILE:protobuf::protoc>
+--   Protobuf includes                 : 
+--   Protobuf libraries                : 
+--   ONNX_BUILD_PYTHON                 : OFF
+-- 
+-- Configured Eigen 3.4.90
+-- 
+-- Finished fetching external dependencies
+-- Performing Test HAS_AMBIGUOUS_REVERSED_OPERATOR
+-- Performing Test HAS_AMBIGUOUS_REVERSED_OPERATOR - Failed
+-- Performing Test HAS_INTERFERENCE_SIZE
+-- Performing Test HAS_INTERFERENCE_SIZE - Success
+-- Performing Test HAS_BITWISE_INSTEAD_OF_LOGICAL
+-- Performing Test HAS_BITWISE_INSTEAD_OF_LOGICAL - Failed
+-- Performing Test HAS_CAST_FUNCTION_TYPE
+-- Performing Test HAS_CAST_FUNCTION_TYPE - Success
+-- Performing Test HAS_CATCH_VALUE
+-- Performing Test HAS_CATCH_VALUE - Success
+-- Performing Test HAS_CLASS_MEMACCESS
+-- Performing Test HAS_CLASS_MEMACCESS - Success
+-- Performing Test HAS_DANGLING_REFERENCE
+-- Performing Test HAS_DANGLING_REFERENCE - Success
+-- Performing Test HAS_DEPRECATED_ANON_ENUM_ENUM_CONVERSION
+-- Performing Test HAS_DEPRECATED_ANON_ENUM_ENUM_CONVERSION - Failed
+-- Performing Test HAS_DEPRECATED_BUILTINS
+-- Performing Test HAS_DEPRECATED_BUILTINS - Failed
+-- Performing Test HAS_DEPRECATED_COPY
+-- Performing Test HAS_DEPRECATED_COPY - Success
+-- Performing Test HAS_DEPRECATED_DECLARATIONS
+-- Performing Test HAS_DEPRECATED_DECLARATIONS - Success
+-- Performing Test HAS_DEPRECATED_LITERAL_OPERATOR
+-- Performing Test HAS_DEPRECATED_LITERAL_OPERATOR - Success
+-- Performing Test HAS_DEPRECATED_THIS_CAPTURE
+-- Performing Test HAS_DEPRECATED_THIS_CAPTURE - Failed
+-- Performing Test HAS_ENUM_CONSTEXPR_CONVERSION
+-- Performing Test HAS_ENUM_CONSTEXPR_CONVERSION - Failed
+-- Performing Test HAS_FORMAT_TRUNCATION
+-- Performing Test HAS_FORMAT_TRUNCATION - Success
+-- Performing Test HAS_IGNORED_ATTRIBUTES
+-- Performing Test HAS_IGNORED_ATTRIBUTES - Success
+-- Performing Test HAS_MAYBE_UNINITIALIZED

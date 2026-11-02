@@ -1,0 +1,33 @@
+适用于 .NET Framework MSBuild 版本 17.14.40+3e7442088
+
+  oneocr_math_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_math_test.exe
+  zlib.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\3rdparty\lib\Release\zlib.lib
+  oneocr_confidence_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_confidence_test.exe
+  oneocr_decode_image.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_decode_image.exe
+  oneocr_detector_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_detector_test.exe
+  oneocr_icu_data.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\Release\oneocr_icu_data.lib
+  oneocr_ordering_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_ordering_test.exe
+  oneocr_classification_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_classification_test.exe
+  opencv_core.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\lib\Release\opencv_core4100.lib
+  oneocr_icu_common.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\Release\oneocr_icu_common.lib
+  opencv_imgproc.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\lib\Release\opencv_imgproc4100.lib
+  oneocr_nms_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_nms_test.exe
+  oneocr_alignment_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_alignment_test.exe
+  engine.cpp
+F:\pythonx\myocr\win11-oneocr\native\src\trace.hpp(19,31): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+  (编译源文件“../../../native/src/engine.cpp”)
+  
+F:\pythonx\myocr\win11-oneocr\native\src\trace.hpp(22,36): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+  (编译源文件“../../../native/src/engine.cpp”)
+  
+F:\pythonx\myocr\win11-oneocr\native\src\engine.cpp(34,20): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+F:\pythonx\myocr\win11-oneocr\native\src\engine.cpp(107,61): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+F:\pythonx\myocr\win11-oneocr\native\src\engine.cpp(444,60): warning C4456: “item”的声明隐藏了上一个本地声明 [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+      F:\pythonx\myocr\win11-oneocr\native\src\engine.cpp(317,19):
+      参见“item”的声明
+  
+    正在创建库 F:/pythonx/myocr/win11-oneocr/build/source-runtime/native/Release/oneocr_portable.lib 和对象 F:/pythonx/myocr/win11-oneocr/build/source-runtime/native/Release/oneocr_portable.exp
+  oneocr_portable.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_portable.dll
+  oneocr_api_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_api_test.exe
+  oneocr_wrapper_compat.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_wrapper.dll
+  ocr.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\ocr.exe

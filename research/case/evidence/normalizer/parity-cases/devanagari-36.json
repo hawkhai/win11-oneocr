@@ -1,0 +1,80 @@
+{
+  "passed": false,
+  "expected_lines": 1,
+  "actual_lines": 1,
+  "same_position_text_matches": 1,
+  "failure_count": 13,
+  "failures": [
+    {
+      "field": "lines[0].words[0].bounding_box[0]",
+      "expected": 24.7493839263916,
+      "actual": 31.46578025817871
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[2]",
+      "expected": 123.24534606933594,
+      "actual": 118.77893829345703
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[4]",
+      "expected": 122.74075317382812,
+      "actual": 118.2686996459961
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[6]",
+      "expected": 23.974300384521484,
+      "actual": 30.71864891052246
+    },
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.974247932434082,
+      "actual": 0.9859222769737244
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[0]",
+      "expected": 133.43460083007812,
+      "actual": 138.92813110351562
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[2]",
+      "expected": 219.1943359375,
+      "actual": 212.80850219726562
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[4]",
+      "expected": 218.95330810546875,
+      "actual": 212.55335998535156
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[6]",
+      "expected": 132.95765686035156,
+      "actual": 138.47254943847656
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.7220977544784546,
+      "actual": 0.9773107767105103
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[2]",
+      "expected": 307.0,
+      "actual": 290.04705810546875
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[4]",
+      "expected": 307.0,
+      "actual": 290.0014953613281
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.9965461492538452,
+      "actual": 0.9847912192344666
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "devanagari-36"
+}

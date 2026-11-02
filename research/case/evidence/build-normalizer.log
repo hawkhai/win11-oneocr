@@ -1,0 +1,363 @@
+CMake is re-running because F:/pythonx/myocr/win11-oneocr/build/source-runtime/CMakeFiles/generate.stamp is out-of-date.
+  the file 'F:/pythonx/myocr/win11-oneocr/CMakeLists.txt'
+  is newer than 'F:/pythonx/myocr/win11-oneocr/build/source-runtime/CMakeFiles/generate.stamp.depend'
+  result='-1'
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.19045.
+-- Found Git: C:/Program Files/Git/cmd/git.exe (found version "2.54.0.windows.1")
+CMake Deprecation Warning at work/vendor/opencv/CMakeLists.txt:25 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- 'Release' build type is used by default. Use CMAKE_BUILD_TYPE to specify build type (Release or Debug)
+-- Detected processor: AMD64
+-- Found PythonInterp: C:/Users/CF/AppData/Local/easyclawg/ai/tool_cache/resources/tools/win/python-3.11.9/python3.exe (found suitable version "3.11.9", minimum required is "3.2")
+-- Could NOT find PythonLibs (missing: PYTHON_LIBRARIES PYTHON_INCLUDE_DIRS) (Required is exact version "3.11.9")
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'numpy'
+-- Performing Test HAVE_CXX_FP:PRECISE
+-- Performing Test HAVE_CXX_FP:PRECISE - Success
+-- Performing Test HAVE_C_FP:PRECISE
+-- Performing Test HAVE_C_FP:PRECISE - Success
+-- Performing Test HAVE_CPU_SSE3_SUPPORT (check file: work/vendor/opencv/cmake/checks/cpu_sse3.cpp)
+-- Performing Test HAVE_CPU_SSE3_SUPPORT - Success
+-- Performing Test HAVE_CPU_BASELINE_FLAGS
+-- Performing Test HAVE_CPU_BASELINE_FLAGS - Success
+-- Performing Test HAVE_CXX_W15240
+-- Performing Test HAVE_CXX_W15240 - Success
+-- Performing Test HAVE_C_W15240
+-- Performing Test HAVE_C_W15240 - Success
+-- Looking for malloc.h
+-- Looking for malloc.h - found
+-- Looking for _aligned_malloc
+-- Looking for _aligned_malloc - found
+-- Looking for fseeko
+-- Looking for fseeko - not found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of off64_t
+-- Check size of off64_t - failed
+-- ADE: Downloading v0.1.2d.zip from https://github.com/opencv/ade/archive/v0.1.2d.zip
+-- Looking for mfapi.h
+-- Looking for mfapi.h - found
+-- Looking for vidcap.h
+-- Looking for vidcap.h - found
+-- Looking for d3d11_4.h
+-- Looking for d3d11_4.h - found
+-- Using whitelist: opencv_core;opencv_imgproc
+-- Module opencv_calib3d disabled by whitelist
+-- Module opencv_dnn disabled by whitelist
+-- Module opencv_features2d disabled by whitelist
+-- Module opencv_flann disabled by whitelist
+-- Module opencv_highgui disabled by whitelist
+-- Module opencv_imgcodecs disabled by whitelist
+-- Module opencv_java_bindings_generator disabled by whitelist
+-- Module opencv_js_bindings_generator disabled by whitelist
+-- Module opencv_ml disabled by whitelist
+-- Module opencv_objc_bindings_generator disabled by whitelist
+-- Module opencv_objdetect disabled by whitelist
+-- Module opencv_photo disabled by whitelist
+-- Module opencv_python_bindings_generator disabled by whitelist
+-- Module opencv_python_tests disabled by whitelist
+-- Module opencv_stitching disabled by whitelist
+-- Module opencv_video disabled by whitelist
+-- Allocator metrics storage type: 'long long'
+-- Excluding from source files list: modules/imgproc/src/corner.avx.cpp
+-- Excluding from source files list: modules/imgproc/src/imgwarp.avx2.cpp
+-- Excluding from source files list: modules/imgproc/src/imgwarp.lasx.cpp
+-- Excluding from source files list: modules/imgproc/src/imgwarp.sse4_1.cpp
+-- Excluding from source files list: modules/imgproc/src/resize.avx2.cpp
+-- Excluding from source files list: modules/imgproc/src/resize.lasx.cpp
+-- Excluding from source files list: modules/imgproc/src/resize.sse4_1.cpp
+CMake Warning (dev) at work/vendor/opencv/CMakeLists.txt:1155 (install):
+  Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+  "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- 
+-- General configuration for OpenCV 4.10.0 =====================================
+--   Version control:               4.10.0
+-- 
+--   Platform:
+--     Timestamp:                   2026-11-02T05:54:42Z
+--     Host:                        Windows 10.0.19045 AMD64
+--     CMake:                       3.31.6-msvc6
+--     CMake generator:             Visual Studio 17 2022
+--     CMake build tool:            C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe
+--     MSVC:                        1944
+--     Configuration:               Debug Release MinSizeRel RelWithDebInfo
+-- 
+--   CPU/HW features:
+--     Baseline:                    SSE SSE2 SSE3
+--       requested:                 SSE3
+-- 
+--   C/C++:
+--     Built as dynamic libs?:      NO
+--     C++ standard:                20
+--     C++ Compiler:                C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe  (ver 19.44.35227.0)
+--     C++ flags (Release):         /DWIN32 /D_WINDOWS /GR  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:precise     /EHa /wd4127 /wd4251 /wd4324 /wd4275 /wd4512 /wd4589 /wd4819 /MP  /O2 /Ob2 /DNDEBUG 
+--     C++ flags (Debug):           /DWIN32 /D_WINDOWS /GR  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:precise     /EHa /wd4127 /wd4251 /wd4324 /wd4275 /wd4512 /wd4589 /wd4819 /MP  /Zi /Ob0 /Od /RTC1 
+--     C Compiler:                  C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+--     C flags (Release):           /DWIN32 /D_WINDOWS  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:precise     /MP   /O2 /Ob2 /DNDEBUG 
+--     C flags (Debug):             /DWIN32 /D_WINDOWS  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:precise     /MP /Zi /Ob0 /Od /RTC1 
+--     Linker flags (Release):      /machine:x64  /INCREMENTAL:NO 
+--     Linker flags (Debug):        /machine:x64  /debug /INCREMENTAL 
+--     ccache:                      NO
+--     Precompiled headers:         YES
+--     Extra dependencies:
+--     3rdparty dependencies:       zlib
+-- 
+--   OpenCV modules:
+--     To be built:                 core imgproc
+--     Disabled:                    gapi videoio world
+--     Disabled by dependency:      calib3d dnn features2d flann highgui imgcodecs java_bindings_generator js_bindings_generator ml objc_bindings_generator objdetect photo python_bindings_generator python_tests stitching video
+--     Unavailable:                 java python2 python3 ts
+--     Applications:                -
+--     Documentation:               NO
+--     Non-free algorithms:         NO
+-- 
+--   Windows RT support:            NO
+-- 
+--   GUI: 
+--     Win32 UI:                    YES
+-- 
+--   Media I/O: 
+--     ZLib:                        build (ver 1.3.1)
+--     HDR:                         YES
+--     SUNRASTER:                   YES
+--     PXM:                         YES
+--     PFM:                         YES
+-- 
+--   Video I/O:
+--     DC1394:                      NO
+--     DirectShow:                  YES
+--     Media Foundation:            YES
+--       DXVA:                      YES
+-- 
+--   Parallel framework:            Concurrency
+-- 
+--   Trace:                         YES (built-in)
+-- 
+--   Other third-party libraries:
+--     Custom HAL:                  NO
+--     Flatbuffers:                 builtin/3rdparty (23.5.9)
+-- 
+--   Python (for build):            C:/Users/CF/AppData/Local/easyclawg/ai/tool_cache/resources/tools/win/python-3.11.9/python3.exe
+-- 
+--   Install to:                    C:/Program Files/win11-oneocr
+-- -----------------------------------------------------------------
+-- 
+-- Configuring done (19.0s)
+-- Generating done (0.8s)
+-- Build files have been written to: F:/pythonx/myocr/win11-oneocr/build/source-runtime
+适用于 .NET Framework MSBuild 版本 17.14.40+3e7442088
+
+  1>Checking Build System
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/vendor/opencv/3rdparty/zlib/CMakeLists.txt
+  oneocr_math_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_math_test.exe
+  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  gzclose.c
+  gzlib.c
+  gzread.c
+  gzwrite.c
+  oneocr_ordering_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_ordering_test.exe
+  inflate.c
+  infback.c
+  inftrees.c
+  inffast.c
+  trees.c
+  uncompr.c
+  zutil.c
+  oneocr_detector_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_detector_test.exe
+  zlib.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\3rdparty\lib\Release\zlib.lib
+  Processing OpenCL kernels (core)
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/CMakeLists.txt
+  cmake_pch.cxx
+  algorithm.cpp
+  arithm.cpp
+  arithm.dispatch.cpp
+  array.cpp
+  async.cpp
+  batch_distance.cpp
+  bindings_utils.cpp
+  buffer_area.cpp
+  channels.cpp
+  check.cpp
+  command_line_parser.cpp
+  conjugate_gradient.cpp
+  convert.dispatch.cpp
+  convert_c.cpp
+  convert_scale.dispatch.cpp
+  copy.cpp
+  count_non_zero.dispatch.cpp
+  cuda_gpu_mat.cpp
+  cuda_gpu_mat_nd.cpp
+  cuda_host_mem.cpp
+  cuda_info.cpp
+  cuda_stream.cpp
+  datastructs.cpp
+  directx.cpp
+  downhill_simplex.cpp
+  dxt.cpp
+  gl_core_3_1.cpp
+  glob.cpp
+  hal_internal.cpp
+  has_non_zero.dispatch.cpp
+  kmeans.cpp
+  lapack.cpp
+  lda.cpp
+  logger.cpp
+  lpsolver.cpp
+  lut.cpp
+  mathfuncs.cpp
+  mathfuncs_core.dispatch.cpp
+  matmul.dispatch.cpp
+  matrix.cpp
+  matrix_c.cpp
+  matrix_decomp.cpp
+  matrix_expressions.cpp
+  matrix_iterator.cpp
+  matrix_operations.cpp
+  matrix_sparse.cpp
+  matrix_transform.cpp
+  matrix_wrap.cpp
+  mean.dispatch.cpp
+  merge.dispatch.cpp
+  minmax.cpp
+  norm.cpp
+  ocl.cpp
+  opencl_clblas.cpp
+  opencl_clfft.cpp
+  opencl_core.cpp
+  opengl.cpp
+  out.cpp
+  ovx.cpp
+  parallel_openmp.cpp
+  parallel_tbb.cpp
+  parallel_impl.cpp
+  pca.cpp
+  persistence.cpp
+  persistence_base64_encoding.cpp
+  persistence_json.cpp
+  persistence_types.cpp
+  persistence_xml.cpp
+  persistence_yml.cpp
+  rand.cpp
+  softfloat.cpp
+  split.dispatch.cpp
+  stat.dispatch.cpp
+  stat_c.cpp
+  stl.cpp
+  sum.dispatch.cpp
+  system.cpp
+  tables.cpp
+  trace.cpp
+  types.cpp
+  umatrix.cpp
+  datafile.cpp
+  filesystem.cpp
+  logtagconfigparser.cpp
+  logtagmanager.cpp
+  samples.cpp
+  va_intel.cpp
+  opencl_kernels_core.cpp
+  alloc.cpp
+  parallel.cpp
+  parallel.cpp
+  opencv_core.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\lib\Release\opencv_core4100.lib
+  Processing OpenCL kernels (imgproc)
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/imgproc/CMakeLists.txt
+  cmake_pch.cxx
+  accum.cpp
+  accum.dispatch.cpp
+  approx.cpp
+  bilateral_filter.dispatch.cpp
+  blend.cpp
+  box_filter.dispatch.cpp
+  canny.cpp
+  clahe.cpp
+  color.cpp
+  color_hsv.dispatch.cpp
+  color_lab.cpp
+  color_rgb.dispatch.cpp
+  color_yuv.dispatch.cpp
+  colormap.cpp
+  connectedcomponents.cpp
+  contours.cpp
+  contours_approx.cpp
+  contours_common.cpp
+  contours_link.cpp
+  contours_new.cpp
+  convhull.cpp
+  corner.cpp
+  cornersubpix.cpp
+  demosaicing.cpp
+  deriv.cpp
+  distransform.cpp
+  drawing.cpp
+  emd.cpp
+  emd_new.cpp
+  featureselect.cpp
+  filter.dispatch.cpp
+  floodfill.cpp
+  gabor.cpp
+  generalized_hough.cpp
+  geometry.cpp
+  grabcut.cpp
+  hershey_fonts.cpp
+  histogram.cpp
+  hough.cpp
+  imgwarp.cpp
+  intelligent_scissors.cpp
+  intersection.cpp
+  linefit.cpp
+  lsd.cpp
+  main.cpp
+  matchcontours.cpp
+  median_blur.dispatch.cpp
+  min_enclosing_triangle.cpp
+  moments.cpp
+  morph.dispatch.cpp
+  phasecorr.cpp
+  pyramids.cpp
+  resize.cpp
+  rotcalipers.cpp
+  samplers.cpp
+  segmentation.cpp
+  shapedescr.cpp
+  smooth.dispatch.cpp
+  spatialgradient.cpp
+  stackblur.cpp
+  subdivision2d.cpp
+  sumpixels.dispatch.cpp
+  tables.cpp
+  templmatch.cpp
+  thresh.cpp
+  utils.cpp
+  opencl_kernels_imgproc.cpp
+  opencv_imgproc.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\lib\Release\opencv_imgproc4100.lib
+  engine.cpp
+F:\pythonx\myocr\win11-oneocr\native\src\trace.hpp(19,31): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+  (编译源文件“../../../native/src/engine.cpp”)
+  
+F:\pythonx\myocr\win11-oneocr\native\src\trace.hpp(22,36): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+  (编译源文件“../../../native/src/engine.cpp”)
+  
+F:\pythonx\myocr\win11-oneocr\native\src\engine.cpp(29,20): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+F:\pythonx\myocr\win11-oneocr\native\src\engine.cpp(95,61): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+  normalizer.cpp
+F:\pythonx\myocr\win11-oneocr\native\src\normalizer.cpp(2,10): error C1083: 无法打开包括文件: “opencv2/core.hpp”: No such file or directory [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+  正在生成代码...

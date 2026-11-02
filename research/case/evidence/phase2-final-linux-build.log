@@ -1,0 +1,331 @@
+[1/16] Building CXX object native/CMakeFiles/oneocr_api_test.dir/tests/api_test.cpp.o
+[2/16] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/detector.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/detector.cpp: In function ‘oneocr_native::LineCurve oneocr_native::refit_line_polygons(const std::vector<Point>&, const std::vector<Point>&, bool, float)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/detector.cpp:135:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  135 |     if(!horizontal)curve.corners={curve.corners[3],curve.corners[0],curve.corners[1],curve.corners[2]};return curve;
+      |     ^~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/detector.cpp:135:104: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  135 |     if(!horizontal)curve.corners={curve.corners[3],curve.corners[0],curve.corners[1],curve.corners[2]};return curve;
+      |                                                                                                        ^~~~~~
+[3/16] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/fragment.cpp.o
+In file included from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.hpp:3795,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core.hpp:58,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/imgproc/include/opencv2/imgproc.hpp:46,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/fragment.cpp:2:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const cv::Mat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:103:57: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  103 | inline _InputArray::_InputArray(const Mat& m) { init(MAT+ACCESS_READ, &m); }
+      |                                                      ~~~^~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const std::vector<cv::Mat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:104:83: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  104 | inline _InputArray::_InputArray(const std::vector<Mat>& vec) { init(STD_VECTOR_MAT+ACCESS_READ, &vec); }
+      |                                                                     ~~~~~~~~~~~~~~^~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const cv::UMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:105:59: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  105 | inline _InputArray::_InputArray(const UMat& m) { init(UMAT+ACCESS_READ, &m); }
+      |                                                       ~~~~^~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const std::vector<cv::UMat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:106:85: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  106 | inline _InputArray::_InputArray(const std::vector<UMat>& vec) { init(STD_VECTOR_UMAT+ACCESS_READ, &vec); }
+      |                                                                      ~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const std::array<cv::Mat, _Nm>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:118:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  118 | { init(STD_ARRAY_MAT + ACCESS_READ, arr.data(), Size(1, _Nm)); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const cv::cuda::GpuMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:148:21: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  148 | { init(CUDA_GPU_MAT + ACCESS_READ, &d_mat); }
+      |        ~~~~~~~~~~~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const std::vector<cv::cuda::GpuMat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:151:38: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  151 | {       init(STD_VECTOR_CUDA_GPU_MAT + ACCESS_READ, &d_mat);}
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const cv::ogl::Buffer&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:154:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  154 | { init(OPENGL_BUFFER + ACCESS_READ, &buf); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const cv::cuda::HostMem&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:157:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  157 | { init(CUDA_HOST_MEM + ACCESS_READ, &cuda_mem); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray()’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:200:49: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  200 | inline _OutputArray::_OutputArray() { init(NONE + ACCESS_WRITE, 0); }
+      |                                            ~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(cv::Mat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:202:53: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  202 | inline _OutputArray::_OutputArray(Mat& m) { init(MAT+ACCESS_WRITE, &m); }
+      |                                                  ~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(std::vector<cv::Mat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:203:80: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  203 | inline _OutputArray::_OutputArray(std::vector<Mat>& vec) { init(STD_VECTOR_MAT + ACCESS_WRITE, &vec); }
+      |                                                                 ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(cv::UMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:204:56: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  204 | inline _OutputArray::_OutputArray(UMat& m) { init(UMAT + ACCESS_WRITE, &m); }
+      |                                                   ~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(std::vector<cv::UMat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:205:82: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  205 | inline _OutputArray::_OutputArray(std::vector<UMat>& vec) { init(STD_VECTOR_UMAT + ACCESS_WRITE, &vec); }
+      |                                                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(std::array<cv::Mat, _Nm>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:217:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  217 | { init(STD_ARRAY_MAT + ACCESS_WRITE, arr.data(), Size(1, _Nm)); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(cv::cuda::GpuMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:272:21: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  272 | { init(CUDA_GPU_MAT + ACCESS_WRITE, &d_mat); }
+      |        ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(std::vector<cv::cuda::GpuMat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:275:38: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  275 | {       init(STD_VECTOR_CUDA_GPU_MAT + ACCESS_WRITE, &d_mat);}
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(cv::ogl::Buffer&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:278:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  278 | { init(OPENGL_BUFFER + ACCESS_WRITE, &buf); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(cv::cuda::HostMem&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:281:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  281 | { init(CUDA_HOST_MEM + ACCESS_WRITE, &cuda_mem); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(cv::Mat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:328:63: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  328 | inline _InputOutputArray::_InputOutputArray(Mat& m) { init(MAT+ACCESS_RW, &m); }
+      |                                                            ~~~^~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(std::vector<cv::Mat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:329:89: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  329 | inline _InputOutputArray::_InputOutputArray(std::vector<Mat>& vec) { init(STD_VECTOR_MAT+ACCESS_RW, &vec); }
+      |                                                                           ~~~~~~~~~~~~~~^~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(cv::UMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:330:65: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  330 | inline _InputOutputArray::_InputOutputArray(UMat& m) { init(UMAT+ACCESS_RW, &m); }
+      |                                                             ~~~~^~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(std::vector<cv::UMat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:331:91: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  331 | inline _InputOutputArray::_InputOutputArray(std::vector<UMat>& vec) { init(STD_VECTOR_UMAT+ACCESS_RW, &vec); }
+      |                                                                            ~~~~~~~~~~~~~~~^~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(std::array<cv::Mat, _Nm>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:343:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  343 | { init(STD_ARRAY_MAT + ACCESS_RW, arr.data(), Size(1, _Nm)); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(cv::cuda::GpuMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:398:21: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  398 | { init(CUDA_GPU_MAT + ACCESS_RW, &d_mat); }
+      |        ~~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(cv::ogl::Buffer&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:401:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  401 | { init(OPENGL_BUFFER + ACCESS_RW, &buf); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(cv::cuda::HostMem&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:404:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  404 | { init(CUDA_HOST_MEM + ACCESS_RW, &cuda_mem); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/fragment.cpp: In function ‘std::vector<std::vector<long unsigned int> > oneocr_native::fragment_chains(const std::vector<Segment>&, bool)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/fragment.cpp:36:9: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   36 |         if(best<0)continue;int64_t target=best;
+      |         ^~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/fragment.cpp:36:28: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   36 |         if(best<0)continue;int64_t target=best;
+      |                            ^~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In instantiation of ‘cv::Mat::Mat(const cv::Matx<_Tp, m, n>&, bool) [with _Tp = double; int m = 2; int n = 3]’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/imgproc/include/opencv2/imgproc.hpp:2584:64:   required from here
+ 2584 |     return Mat(getRotationMatrix2D_(center, angle, scale), true);
+      |                                                                ^
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:533:23: warning: arithmetic between different enumeration types ‘cv::Mat::<unnamed enum>’ and ‘cv::traits::Type<double>::<unnamed enum>’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  533 |     : flags(MAGIC_VAL + traits::Type<_Tp>::value + CV_MAT_CONT_FLAG), dims(2), rows(m), cols(n), data(0),
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+[4/16] Building CXX object native/CMakeFiles/oneocr_detector_test.dir/src/detector.cpp.o
+[5/16] Building CXX object native/CMakeFiles/ocr.dir/src/cli.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/cli.cpp: In function ‘std::filesystem::__cxx11::path executable_path(const std::string&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/cli.cpp:28:35: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   28 |     return fs::absolute(fs::u8path(fallback));
+      |                         ~~~~~~~~~~^~~~~~~~~~
+In file included from /usr/include/c++/15/filesystem:54,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/cli.cpp:4:
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/cli.cpp: In function ‘int command(const std::vector<std::__cxx11::basic_string<char> >&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/cli.cpp:80:43: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   80 |                 std::ofstream f(fs::u8path(destination),std::ios::binary);
+      |                                 ~~~~~~~~~~^~~~~~~~~~~~~
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+[6/16] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/confidence.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:77:30: warning: ‘std::vector<unsigned int> oneocr_native::codepoints(const std::string&)’ defined but not used [-Wunused-function]
+   77 | static std::vector<uint32_t> codepoints(const std::string& text) {
+      |                              ^~~~~~~~~~
+[7/16] Building CXX object native/CMakeFiles/oneocr_detector_test.dir/tests/detector_test.cpp.o
+[8/16] Building CXX object native/CMakeFiles/oneocr_detector_test.dir/src/fragment.cpp.o
+In file included from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.hpp:3795,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core.hpp:58,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/imgproc/include/opencv2/imgproc.hpp:46,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/fragment.cpp:2:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const cv::Mat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:103:57: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  103 | inline _InputArray::_InputArray(const Mat& m) { init(MAT+ACCESS_READ, &m); }
+      |                                                      ~~~^~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const std::vector<cv::Mat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:104:83: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  104 | inline _InputArray::_InputArray(const std::vector<Mat>& vec) { init(STD_VECTOR_MAT+ACCESS_READ, &vec); }
+      |                                                                     ~~~~~~~~~~~~~~^~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const cv::UMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:105:59: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  105 | inline _InputArray::_InputArray(const UMat& m) { init(UMAT+ACCESS_READ, &m); }
+      |                                                       ~~~~^~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const std::vector<cv::UMat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:106:85: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  106 | inline _InputArray::_InputArray(const std::vector<UMat>& vec) { init(STD_VECTOR_UMAT+ACCESS_READ, &vec); }
+      |                                                                      ~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const std::array<cv::Mat, _Nm>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:118:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  118 | { init(STD_ARRAY_MAT + ACCESS_READ, arr.data(), Size(1, _Nm)); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const cv::cuda::GpuMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:148:21: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  148 | { init(CUDA_GPU_MAT + ACCESS_READ, &d_mat); }
+      |        ~~~~~~~~~~~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const std::vector<cv::cuda::GpuMat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:151:38: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  151 | {       init(STD_VECTOR_CUDA_GPU_MAT + ACCESS_READ, &d_mat);}
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const cv::ogl::Buffer&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:154:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  154 | { init(OPENGL_BUFFER + ACCESS_READ, &buf); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const cv::cuda::HostMem&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:157:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  157 | { init(CUDA_HOST_MEM + ACCESS_READ, &cuda_mem); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray()’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:200:49: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  200 | inline _OutputArray::_OutputArray() { init(NONE + ACCESS_WRITE, 0); }
+      |                                            ~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(cv::Mat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:202:53: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  202 | inline _OutputArray::_OutputArray(Mat& m) { init(MAT+ACCESS_WRITE, &m); }
+      |                                                  ~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(std::vector<cv::Mat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:203:80: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  203 | inline _OutputArray::_OutputArray(std::vector<Mat>& vec) { init(STD_VECTOR_MAT + ACCESS_WRITE, &vec); }
+      |                                                                 ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(cv::UMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:204:56: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  204 | inline _OutputArray::_OutputArray(UMat& m) { init(UMAT + ACCESS_WRITE, &m); }
+      |                                                   ~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(std::vector<cv::UMat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:205:82: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  205 | inline _OutputArray::_OutputArray(std::vector<UMat>& vec) { init(STD_VECTOR_UMAT + ACCESS_WRITE, &vec); }
+      |                                                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(std::array<cv::Mat, _Nm>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:217:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  217 | { init(STD_ARRAY_MAT + ACCESS_WRITE, arr.data(), Size(1, _Nm)); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(cv::cuda::GpuMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:272:21: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  272 | { init(CUDA_GPU_MAT + ACCESS_WRITE, &d_mat); }
+      |        ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(std::vector<cv::cuda::GpuMat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:275:38: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  275 | {       init(STD_VECTOR_CUDA_GPU_MAT + ACCESS_WRITE, &d_mat);}
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(cv::ogl::Buffer&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:278:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  278 | { init(OPENGL_BUFFER + ACCESS_WRITE, &buf); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(cv::cuda::HostMem&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:281:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  281 | { init(CUDA_HOST_MEM + ACCESS_WRITE, &cuda_mem); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(cv::Mat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:328:63: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  328 | inline _InputOutputArray::_InputOutputArray(Mat& m) { init(MAT+ACCESS_RW, &m); }
+      |                                                            ~~~^~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(std::vector<cv::Mat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:329:89: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  329 | inline _InputOutputArray::_InputOutputArray(std::vector<Mat>& vec) { init(STD_VECTOR_MAT+ACCESS_RW, &vec); }
+      |                                                                           ~~~~~~~~~~~~~~^~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(cv::UMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:330:65: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  330 | inline _InputOutputArray::_InputOutputArray(UMat& m) { init(UMAT+ACCESS_RW, &m); }
+      |                                                             ~~~~^~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(std::vector<cv::UMat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:331:91: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  331 | inline _InputOutputArray::_InputOutputArray(std::vector<UMat>& vec) { init(STD_VECTOR_UMAT+ACCESS_RW, &vec); }
+      |                                                                            ~~~~~~~~~~~~~~~^~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(std::array<cv::Mat, _Nm>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:343:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  343 | { init(STD_ARRAY_MAT + ACCESS_RW, arr.data(), Size(1, _Nm)); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(cv::cuda::GpuMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:398:21: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  398 | { init(CUDA_GPU_MAT + ACCESS_RW, &d_mat); }
+      |        ~~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(cv::ogl::Buffer&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:401:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  401 | { init(OPENGL_BUFFER + ACCESS_RW, &buf); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(cv::cuda::HostMem&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:404:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  404 | { init(CUDA_HOST_MEM + ACCESS_RW, &cuda_mem); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In instantiation of ‘cv::Mat::Mat(const cv::Matx<_Tp, m, n>&, bool) [with _Tp = double; int m = 2; int n = 3]’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/imgproc/include/opencv2/imgproc.hpp:2584:64:   required from here
+ 2584 |     return Mat(getRotationMatrix2D_(center, angle, scale), true);
+      |                                                                ^
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:533:23: warning: arithmetic between different enumeration types ‘cv::Mat::<unnamed enum>’ and ‘cv::traits::Type<double>::<unnamed enum>’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  533 |     : flags(MAGIC_VAL + traits::Type<_Tp>::value + CV_MAT_CONT_FLAG), dims(2), rows(m), cols(n), data(0),
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+[9/16] Building CXX object native/CMakeFiles/oneocr_confidence_test.dir/src/confidence.cpp.o
+[10/16] Linking CXX executable bin/oneocr_confidence_test
+[11/16] Building CXX object native/CMakeFiles/oneocr_detector_test.dir/src/image.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp: In function ‘oneocr_native::Image oneocr_native::load_image(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp:18:44: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = const char*; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   18 |     std::ifstream f(std::filesystem::u8path(path),std::ios::binary|std::ios::ate);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/c++/15/filesystem:54,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp:4:
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+[12/16] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/engine.cpp.o
+In file included from /mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:4:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/trace.hpp: In constructor ‘oneocr_native::TensorTrace::TensorTrace(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/trace.hpp:22:42: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = const char*; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   22 |         directory=std::filesystem::u8path(path)/(std::string(role)+"-"+std::to_string(sequence.fetch_add(1)));
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/c++/15/filesystem:54,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/sha256.hpp:6,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:3:
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp: In function ‘std::filesystem::__cxx11::path {anonymous}::asset(const std::filesystem::__cxx11::path&, const std::string&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:35:26: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   35 |     fs::path p=fs::u8path(relative);
+      |                ~~~~~~~~~~^~~~~~~~~~
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp: In constructor ‘oneocr_context::oneocr_context(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:109:67: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = const char*; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+  109 |     explicit oneocr_context(const char* directory):root(fs::u8path(directory)) {
+      |                                                         ~~~~~~~~~~^~~~~~~~~~~
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:158:17: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  158 |                 if(info.types[i]==4)info.blank=int(i);if(info.types[i]==5)info.space=int(i);if(info.types[i]==8)info.trash=int(i);
+      |                 ^~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:158:55: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  158 |                 if(info.types[i]==4)info.blank=int(i);if(info.types[i]==5)info.space=int(i);if(info.types[i]==8)info.trash=int(i);
+      |                                                       ^~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp: At global scope:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:61:6: warning: ‘oneocr_native::Quad {anonymous}::span(const oneocr_native::Quad&, float, float)’ defined but not used [-Wunused-function]
+   61 | Quad span(const Quad& q,float start,float end) {return {interpolate(q[0],q[1],start),interpolate(q[0],q[1],end),interpolate(q[3],q[2],end),interpolate(q[3],q[2],start)};}
+      |      ^~~~
+[13/16] Linking CXX executable bin/oneocr_detector_test
+[14/16] Linking CXX shared library native/liboneocr_portable.so
+[15/16] Linking CXX executable native/oneocr_api_test
+[16/16] Linking CXX executable native/ocr

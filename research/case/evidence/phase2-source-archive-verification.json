@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "archive": "F:\\pythonx\\myocr\\win11-oneocr\\artifacts\\oneocr-source-phase2.zip",
+  "sha256": "a92a8be63561d6c6c09344aa45831123959d9773ac895a3931f612849f3e1fb7",
+  "source_files": 145,
+  "all_archived_files_match_current_workspace": true,
+  "original_dll_book_parity": true,
+  "matching_book_lines": 105,
+  "unit_tests_passed": 8,
+  "compiled_binaries_in_archive": false,
+  "models_in_archive": false,
+  "dependency_sources": "pinned OpenCV/ICU checkouts reused, rebuilt for this fresh source tree; existing source-built Windows ORT SDK",
+  "source_build_directory": "build/source-phase2-check"
+}

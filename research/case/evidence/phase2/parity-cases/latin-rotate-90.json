@@ -1,0 +1,510 @@
+{
+  "passed": false,
+  "expected_lines": 2,
+  "actual_lines": 2,
+  "same_position_text_matches": 0,
+  "failure_count": 99,
+  "failures": [
+    {
+      "field": "image_angle",
+      "expected": 270.0,
+      "actual": 270.228759765625
+    },
+    {
+      "field": "lines[0].text",
+      "expected": "OneOCR native source 2026",
+      "actual": "Hello World! Linux Android macOS"
+    },
+    {
+      "field": "lines[0].bounding_box[0]",
+      "expected": 42.0,
+      "actual": 94.0
+    },
+    {
+      "field": "lines[0].bounding_box[1]",
+      "expected": 970.0,
+      "actual": 414.0
+    },
+    {
+      "field": "lines[0].bounding_box[2]",
+      "expected": 42.0,
+      "actual": 131.0
+    },
+    {
+      "field": "lines[0].bounding_box[3]",
+      "expected": 506.0,
+      "actual": 414.0
+    },
+    {
+      "field": "lines[0].bounding_box[4]",
+      "expected": 77.0,
+      "actual": 131.0
+    },
+    {
+      "field": "lines[0].bounding_box[5]",
+      "expected": 506.0,
+      "actual": 975.0
+    },
+    {
+      "field": "lines[0].bounding_box[6]",
+      "expected": 77.0,
+      "actual": 94.0
+    },
+    {
+      "field": "lines[0].bounding_box[7]",
+      "expected": 970.0,
+      "actual": 975.0
+    },
+    {
+      "field": "lines[0].word_count",
+      "expected": 4,
+      "actual": 5
+    },
+    {
+      "field": "lines[0].words[0].text",
+      "expected": "OneOCR",
+      "actual": "Hello"
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[0]",
+      "expected": 42.0,
+      "actual": 95.21675872802734
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[2]",
+      "expected": 42.44955062866211,
+      "actual": 95.1751480102539
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[3]",
+      "expected": 822.20654296875,
+      "actual": 901.345703125
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[4]",
+      "expected": 77.82220458984375,
+      "actual": 131.51092529296875
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[5]",
+      "expected": 822.0726318359375,
+      "actual": 902.261962890625
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[6]",
+      "expected": 77.6865234375,
+      "actual": 131.46607971191406
+    },
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.9914888739585876,
+      "actual": 0.9826706647872925
+    },
+    {
+      "field": "lines[0].words[1].text",
+      "expected": "native",
+      "actual": "World!"
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[0]",
+      "expected": 42.50013732910156,
+      "actual": 95.15879821777344
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[1]",
+      "expected": 809.8433227539062,
+      "actual": 874.5419921875
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[2]",
+      "expected": 42.883731842041016,
+      "actual": 95.0993423461914
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[3]",
+      "expected": 716.5587158203125,
+      "actual": 777.0739135742188
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[4]",
+      "expected": 77.41842651367188,
+      "actual": 131.5926055908203
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[5]",
+      "expected": 716.3299560546875,
+      "actual": 777.7565307617188
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[6]",
+      "expected": 77.79145812988281,
+      "actual": 131.52853393554688
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[7]",
+      "expected": 809.698486328125,
+      "actual": 875.4078979492188
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.9944565296173096,
+      "actual": 0.9964399933815002
+    },
+    {
+      "field": "lines[0].words[2].text",
+      "expected": "source",
+      "actual": "Linux"
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[0]",
+      "expected": 42.94089126586914,
+      "actual": 95.08894348144531
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[1]",
+      "expected": 704.7586059570312,
+      "actual": 760.0170288085938
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[2]",
+      "expected": 43.36112594604492,
+      "actual": 95.04583740234375
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[3]",
+      "expected": 599.11376953125,
+      "actual": 689.3526611328125
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[4]",
+      "expected": 76.45360565185547,
+      "actual": 131.65025329589844
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[5]",
+      "expected": 598.7787475585938,
+      "actual": 689.870361328125
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[6]",
+      "expected": 77.35658264160156,
+      "actual": 131.60382080078125
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[7]",
+      "expected": 704.518310546875,
+      "actual": 760.6676025390625
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.9949767589569092,
+      "actual": 0.9933487176895142
+    },
+    {
+      "field": "lines[0].words[3].text",
+      "expected": "2026",
+      "actual": "Android"
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[0]",
+      "expected": 43.40803909301758,
+      "actual": 95.02800750732422
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[1]",
+      "expected": 586.7511596679688,
+      "actual": 660.1122436523438
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[2]",
+      "expected": 43.724037170410156,
+      "actual": 94.96409606933594
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[3]",
+      "expected": 506.0,
+      "actual": 555.3341064453125
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[4]",
+      "expected": 75.3382797241211,
+      "actual": 131.73834228515625
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[5]",
+      "expected": 506.0,
+      "actual": 555.5997924804688
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[6]",
+      "expected": 76.32850646972656,
+      "actual": 131.6694793701172
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[7]",
+      "expected": 586.4051513671875,
+      "actual": 660.574951171875
+    },
+    {
+      "field": "lines[0].words[3].confidence",
+      "expected": 0.9810009598731995,
+      "actual": 0.9961161017417908
+    },
+    {
+      "field": "lines[1].text",
+      "expected": "Hello World! Linux Android macOS",
+      "actual": "OneOCR native source 2026"
+    },
+    {
+      "field": "lines[1].bounding_box[0]",
+      "expected": 94.0,
+      "actual": 43.0
+    },
+    {
+      "field": "lines[1].bounding_box[1]",
+      "expected": 975.0,
+      "actual": 506.0
+    },
+    {
+      "field": "lines[1].bounding_box[2]",
+      "expected": 94.0,
+      "actual": 78.0
+    },
+    {
+      "field": "lines[1].bounding_box[3]",
+      "expected": 414.0,
+      "actual": 506.0
+    },
+    {
+      "field": "lines[1].bounding_box[4]",
+      "expected": 131.0,
+      "actual": 77.0
+    },
+    {
+      "field": "lines[1].bounding_box[5]",
+      "expected": 414.0,
+      "actual": 970.0
+    },
+    {
+      "field": "lines[1].bounding_box[6]",
+      "expected": 131.0,
+      "actual": 42.0
+    },
+    {
+      "field": "lines[1].bounding_box[7]",
+      "expected": 975.0,
+      "actual": 970.0
+    },
+    {
+      "field": "lines[1].word_count",
+      "expected": 5,
+      "actual": 4
+    },
+    {
+      "field": "lines[1].words[0].text",
+      "expected": "Hello",
+      "actual": "OneOCR"
+    },
+    {
+      "field": "lines[1].words[0].bounding_box[0]",
+      "expected": 94.60569763183594,
+      "actual": 42.439796447753906
+    },
+    {
+      "field": "lines[1].words[0].bounding_box[1]",
+      "expected": 974.21923828125,
+      "actual": 964.131103515625
+    },
+    {
+      "field": "lines[1].words[0].bounding_box[2]",
+      "expected": 94.7082748413086,
+      "actual": 42.871891021728516
+    },
+    {
+      "field": "lines[1].words[0].bounding_box[3]",
+      "expected": 888.1256103515625,
+      "actual": 855.91015625
+    },
+    {
+      "field": "lines[1].words[0].bounding_box[4]",
+      "expected": 131.5332794189453,
+      "actual": 77.10820007324219
+    },
+    {
+      "field": "lines[1].words[0].bounding_box[5]",
+      "expected": 889.0322875976562,
+      "actual": 855.8082275390625
+    },
+    {
+      "field": "lines[1].words[0].bounding_box[6]",
+      "expected": 131.46304321289062,
+      "actual": 77.65269470214844
+    },
+    {
+      "field": "lines[1].words[0].bounding_box[7]",
+      "expected": 975.2904052734375,
+      "actual": 964.125244140625
+    },
+    {
+      "field": "lines[1].words[0].confidence",
+      "expected": 0.9766440987586975,
+      "actual": 0.9943999648094177
+    },
+    {
+      "field": "lines[1].words[1].text",
+      "expected": "World!",
+      "actual": "native"
+    },
+    {
+      "field": "lines[1].words[1].bounding_box[0]",
+      "expected": 94.71499633789062,
+      "actual": 42.99534606933594
+    },
+    {
+      "field": "lines[1].words[1].bounding_box[1]",
+      "expected": 877.2120361328125,
+      "actual": 824.9899291992188
+    },
+    {
+      "field": "lines[1].words[1].bounding_box[2]",
+      "expected": 94.7536849975586,
+      "actual": 43.312801361083984
+    },
+    {
+      "field": "lines[1].words[1].bounding_box[3]",
+      "expected": 775.9605712890625,
+      "actual": 745.4806518554688
+    },
+    {
+      "field": "lines[1].words[1].bounding_box[4]",
+      "expected": 131.61709594726562,
+      "actual": 76.55260467529297
+    },
+    {
+      "field": "lines[1].words[1].bounding_box[5]",
+      "expected": 776.65380859375,
+      "actual": 745.2806396484375
+    },
+    {
+      "field": "lines[1].words[1].bounding_box[6]",
+      "expected": 131.54164123535156,
+      "actual": 76.95263671875
+    },
+    {
+      "field": "lines[1].words[1].bounding_box[7]",
+      "expected": 878.09814453125,
+      "actual": 824.8604736328125
+    },
+    {
+      "field": "lines[1].words[1].confidence",
+      "expected": 0.9919087886810303,
+      "actual": 0.9956750273704529
+    },
+    {
+      "field": "lines[1].words[2].text",
+      "expected": "Linux",
+      "actual": "source"
+    },
+    {
+      "field": "lines[1].words[2].bounding_box[0]",
+      "expected": 94.75373077392578,
+      "actual": 43.42743682861328
+    },
+    {
+      "field": "lines[1].words[2].bounding_box[1]",
+      "expected": 761.4090576171875,
+      "actual": 716.7689819335938
+    },
+    {
+      "field": "lines[1].words[2].bounding_box[2]",
+      "expected": 94.718017578125,
+      "actual": 43.79780578613281
+    },
+    {
+      "field": "lines[1].words[2].bounding_box[3]",
+      "expected": 677.1343383789062,
+      "actual": 624.0081787109375
+    },
+    {
+      "field": "lines[1].words[2].bounding_box[4]",
+      "expected": 131.68431091308594,
+      "actual": 75.94144439697266
+    },
+    {
+      "field": "lines[1].words[2].bounding_box[5]",
+      "expected": 677.6392822265625,
+      "actual": 623.7002563476562
+    },
+    {
+      "field": "lines[1].words[2].bounding_box[6]",
+      "expected": 131.62744140625,
+      "actual": 76.40814971923828
+    },
+    {
+      "field": "lines[1].words[2].bounding_box[7]",
+      "expected": 762.074951171875,
+      "actual": 716.54345703125
+    },
+    {
+      "field": "lines[1].words[2].confidence",
+      "expected": 0.9931983947753906,
+      "actual": 0.9972965121269226
+    },
+    {
+      "field": "lines[1].words[3].text",
+      "expected": "Android",
+      "actual": "2026"
+    },
+    {
+      "field": "lines[1].words[3].bounding_box[0]",
+      "expected": 94.71173095703125,
+      "actual": 43.930076599121094
+    },
+    {
+      "field": "lines[1].words[3].bounding_box[1]",
+      "expected": 666.8270263671875,
+      "actual": 590.8792724609375
+    },
+    {
+      "field": "lines[1].words[3].bounding_box[2]",
+      "expected": 94.5494613647461,
+      "actual": 44.19462585449219
+    },
+    {
+      "field": "lines[1].words[3].bounding_box[3]",
+      "expected": 545.56982421875,
+      "actual": 524.62158203125
+    },
+    {
+      "field": "lines[1].words[3].bounding_box[4]",
+      "expected": 131.7633514404297,
+      "actual": 75.44140625
+    },
+    {
+      "field": "lines[1].words[3].bounding_box[5]",
+      "expected": 545.822265625,
+      "actual": 524.2254638671875
+    },
+    {
+      "field": "lines[1].words[3].bounding_box[6]",
+      "expected": 131.69107055664062,
+      "actual": 75.77476501464844
+    },
+    {
+      "field": "lines[1].words[3].bounding_box[7]",
+      "expected": 667.3125610351562,
+      "actual": 590.5419921875
+    },
+    {
+      "field": "lines[1].words[3].confidence",
+      "expected": 0.9889299869537354,
+      "actual": 0.9970297813415527
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "latin-rotate-90"
+}

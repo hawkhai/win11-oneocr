@@ -1,0 +1,100 @@
+{
+  "passed": false,
+  "expected_lines": 1,
+  "actual_lines": 1,
+  "same_position_text_matches": 1,
+  "failure_count": 17,
+  "failures": [
+    {
+      "field": "lines[0].words[0].bounding_box[2]",
+      "expected": 224.38844299316406,
+      "actual": 220.24545288085938
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[4]",
+      "expected": 223.9588623046875,
+      "actual": 219.81414794921875
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[5]",
+      "expected": 85.0,
+      "actual": 83.80805969238281
+    },
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.9276630878448486,
+      "actual": 0.9880741834640503
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[0]",
+      "expected": 238.7213592529297,
+      "actual": 241.99400329589844
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[2]",
+      "expected": 377.0657653808594,
+      "actual": 372.4853210449219
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[4]",
+      "expected": 376.90704345703125,
+      "actual": 372.3204040527344
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[5]",
+      "expected": 84.58865356445312,
+      "actual": 83.33433532714844
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[6]",
+      "expected": 238.3168487548828,
+      "actual": 241.6007537841797
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[7]",
+      "expected": 85.0,
+      "actual": 83.7403793334961
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.951664924621582,
+      "actual": 0.9892663955688477
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[0]",
+      "expected": 391.3987731933594,
+      "actual": 394.2338562011719
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[2]",
+      "expected": 467.0,
+      "actual": 454.6465148925781
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[4]",
+      "expected": 467.0,
+      "actual": 454.6253662109375
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[6]",
+      "expected": 391.26513671875,
+      "actual": 394.1070251464844
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[7]",
+      "expected": 84.46865844726562,
+      "actual": 83.26666259765625
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.9847301244735718,
+      "actual": 0.9914138317108154
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "tamil-36"
+}

@@ -1,0 +1,160 @@
+F:\pythonx\myocr\win11-oneocr\work\vendor\opencv
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.19045.
+CMake Deprecation Warning at work/vendor/opencv/CMakeLists.txt:25 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Detected processor: AMD64
+-- Using whitelist: opencv_core;opencv_imgproc
+-- Module opencv_calib3d disabled by whitelist
+-- Module opencv_dnn disabled by whitelist
+-- Module opencv_features2d disabled by whitelist
+-- Module opencv_flann disabled by whitelist
+-- Module opencv_highgui disabled by whitelist
+-- Module opencv_imgcodecs disabled by whitelist
+-- Module opencv_java_bindings_generator disabled by whitelist
+-- Module opencv_js_bindings_generator disabled by whitelist
+-- Module opencv_ml disabled by whitelist
+-- Module opencv_objc_bindings_generator disabled by whitelist
+-- Module opencv_objdetect disabled by whitelist
+-- Module opencv_photo disabled by whitelist
+-- Module opencv_python_bindings_generator disabled by whitelist
+-- Module opencv_python_tests disabled by whitelist
+-- Module opencv_stitching disabled by whitelist
+-- Module opencv_video disabled by whitelist
+-- Allocator metrics storage type: 'long long'
+-- Excluding from source files list: modules/imgproc/src/corner.avx.cpp
+-- Excluding from source files list: modules/imgproc/src/imgwarp.avx2.cpp
+-- Excluding from source files list: modules/imgproc/src/imgwarp.lasx.cpp
+-- Excluding from source files list: modules/imgproc/src/imgwarp.sse4_1.cpp
+-- Excluding from source files list: modules/imgproc/src/resize.avx2.cpp
+-- Excluding from source files list: modules/imgproc/src/resize.lasx.cpp
+-- Excluding from source files list: modules/imgproc/src/resize.sse4_1.cpp
+CMake Warning (dev) at work/vendor/opencv/CMakeLists.txt:1155 (install):
+  Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+  "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- 
+-- General configuration for OpenCV 4.10.0 =====================================
+--   Version control:               4.10.0
+-- 
+--   Platform:
+--     Timestamp:                   2026-11-02T05:54:42Z
+--     Host:                        Windows 10.0.19045 AMD64
+--     CMake:                       3.31.6-msvc6
+--     CMake generator:             Visual Studio 17 2022
+--     CMake build tool:            C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe
+--     MSVC:                        1944
+--     Configuration:               Debug Release MinSizeRel RelWithDebInfo
+-- 
+--   CPU/HW features:
+--     Baseline:                    SSE SSE2 SSE3
+--       requested:                 SSE3
+-- 
+--   C/C++:
+--     Built as dynamic libs?:      NO
+--     C++ standard:                20
+--     C++ Compiler:                C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe  (ver 19.44.35227.0)
+--     C++ flags (Release):         /DWIN32 /D_WINDOWS /GR  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:precise     /EHa /wd4127 /wd4251 /wd4324 /wd4275 /wd4512 /wd4589 /wd4819 /MP  /O2 /Ob2 /DNDEBUG 
+--     C++ flags (Debug):           /DWIN32 /D_WINDOWS /GR  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:precise     /EHa /wd4127 /wd4251 /wd4324 /wd4275 /wd4512 /wd4589 /wd4819 /MP  /Zi /Ob0 /Od /RTC1 
+--     C Compiler:                  C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+--     C flags (Release):           /DWIN32 /D_WINDOWS  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:precise     /MP   /O2 /Ob2 /DNDEBUG 
+--     C flags (Debug):             /DWIN32 /D_WINDOWS  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:precise     /MP /Zi /Ob0 /Od /RTC1 
+--     Linker flags (Release):      /machine:x64  /INCREMENTAL:NO 
+--     Linker flags (Debug):        /machine:x64  /debug /INCREMENTAL 
+--     ccache:                      NO
+--     Precompiled headers:         YES
+--     Extra dependencies:
+--     3rdparty dependencies:       zlib
+-- 
+--   OpenCV modules:
+--     To be built:                 core imgproc
+--     Disabled:                    gapi videoio world
+--     Disabled by dependency:      calib3d dnn features2d flann highgui imgcodecs java_bindings_generator js_bindings_generator ml objc_bindings_generator objdetect photo python_bindings_generator python_tests stitching video
+--     Unavailable:                 java python2 python3 ts
+--     Applications:                -
+--     Documentation:               NO
+--     Non-free algorithms:         NO
+-- 
+--   Windows RT support:            NO
+-- 
+--   GUI: 
+--     Win32 UI:                    YES
+-- 
+--   Media I/O: 
+--     ZLib:                        build (ver 1.3.1)
+--     HDR:                         YES
+--     SUNRASTER:                   YES
+--     PXM:                         YES
+--     PFM:                         YES
+-- 
+--   Video I/O:
+--     DC1394:                      NO
+--     DirectShow:                  YES
+--     Media Foundation:            YES
+--       DXVA:                      YES
+-- 
+--   Parallel framework:            Concurrency
+-- 
+--   Trace:                         YES (built-in)
+-- 
+--   Other third-party libraries:
+--     Custom HAL:                  NO
+--     Flatbuffers:                 builtin/3rdparty (23.5.9)
+-- 
+--   Python (for build):            C:/Users/CF/AppData/Local/easyclawg/ai/tool_cache/resources/tools/win/python-3.11.9/python3.exe
+-- 
+--   Install to:                    C:/Program Files/win11-oneocr
+-- -----------------------------------------------------------------
+-- 
+-- Configuring done (13.0s)
+-- Generating done (5.1s)
+-- Build files have been written to: F:/pythonx/myocr/win11-oneocr/build/source-runtime
+适用于 .NET Framework MSBuild 版本 17.14.40+3e7442088
+
+  oneocr_decode_image.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_decode_image.exe
+  oneocr_icu_data.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\Release\oneocr_icu_data.lib
+  oneocr_math_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_math_test.exe
+  oneocr_ordering_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_ordering_test.exe
+  oneocr_confidence_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_confidence_test.exe
+  oneocr_classification_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_classification_test.exe
+  zlib.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\3rdparty\lib\Release\zlib.lib
+  opencv_core.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\lib\Release\opencv_core4100.lib
+  oneocr_icu_common.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\Release\oneocr_icu_common.lib
+  opencv_imgproc.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\lib\Release\opencv_imgproc4100.lib
+  oneocr_alignment_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_alignment_test.exe
+  oneocr_detector_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_detector_test.exe
+  oneocr_nms_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_nms_test.exe
+  oneocr_portable.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_portable.dll
+  ocr.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\ocr.exe
+  oneocr_wrapper_compat.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_wrapper.dll
+  oneocr_api_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_api_test.exe
+Internal ctest changing into directory: F:/pythonx/myocr/win11-oneocr/build/source-runtime
+Test project F:/pythonx/myocr/win11-oneocr/build/source-runtime
+    Start 1: portable_classification
+1/8 Test #1: portable_classification ..........   Passed    0.06 sec
+    Start 2: portable_api
+2/8 Test #2: portable_api .....................   Passed    0.05 sec
+    Start 3: portable_math
+3/8 Test #3: portable_math ....................   Passed    0.01 sec
+    Start 4: portable_reading_order
+4/8 Test #4: portable_reading_order ...........   Passed    0.02 sec
+    Start 5: portable_detector_geometry
+5/8 Test #5: portable_detector_geometry .......   Passed    0.04 sec
+    Start 6: portable_word_alignment
+6/8 Test #6: portable_word_alignment ..........   Passed    0.02 sec
+    Start 7: portable_confidence_features
+7/8 Test #7: portable_confidence_features .....   Passed    0.06 sec
+    Start 8: portable_polygon_nms
+8/8 Test #8: portable_polygon_nms .............   Passed    0.03 sec
+
+100% tests passed, 0 tests failed out of 8
+
+Total Test time (real) =   0.32 sec

@@ -1,0 +1,486 @@
+{
+  "passed": true,
+  "tensors": 96,
+  "reports": [
+    {
+      "tensor": "bbox_deltas_hori_fpn2",
+      "exact": true,
+      "sha256": "e48b03c59ee3708eb5fa52188d5821bab1cf97052c2ecd7092600b7666e9ecfa"
+    },
+    {
+      "tensor": "bbox_deltas_hori_fpn2_quantized",
+      "exact": true,
+      "sha256": "bef67f6d0bfae484f8ac87174cb53fb86354e1ed76e7623581930118bb1de0cb"
+    },
+    {
+      "tensor": "bbox_deltas_hori_fpn3",
+      "exact": true,
+      "sha256": "80c0c2158f404c00d736e4ef6440433e1a6012230e13d39d88bcc0f30f9f387b"
+    },
+    {
+      "tensor": "bbox_deltas_hori_fpn3_quantized",
+      "exact": true,
+      "sha256": "bbe149d5b3433c81cce91ddf6faaa34abc88479cf1ba6c75bc4e71ec3e76f9de"
+    },
+    {
+      "tensor": "bbox_deltas_hori_fpn4",
+      "exact": true,
+      "sha256": "d87395ae5286308bcd7e8367ab24fcafddbbf6e8e6fb8075718123cfe735b912"
+    },
+    {
+      "tensor": "bbox_deltas_hori_fpn4_quantized",
+      "exact": true,
+      "sha256": "739c88af2b8f4fd07d3e2cf16cac73ed452c4ff1946fa59c6f6e85cf55342071"
+    },
+    {
+      "tensor": "bbox_deltas_vert_fpn2",
+      "exact": true,
+      "sha256": "9572babacd93851b8b63c2b46c5e347af18b2559689676bc1249373b1b6fa5d0"
+    },
+    {
+      "tensor": "bbox_deltas_vert_fpn2_quantized",
+      "exact": true,
+      "sha256": "5fa1eae5efe85b6bf2c7feb22c6b6724c267ba1cff23b50362ca754dcc270683"
+    },
+    {
+      "tensor": "bbox_deltas_vert_fpn3",
+      "exact": true,
+      "sha256": "994c6eb2992534f030d9f4ac27d52d9d78f7c21bb4b68246d3bf184ca0588235"
+    },
+    {
+      "tensor": "bbox_deltas_vert_fpn3_quantized",
+      "exact": true,
+      "sha256": "e7a2466ac116ee939c136e2b6b2656dc2abb5be55a3770fae1021dbb84676884"
+    },
+    {
+      "tensor": "bbox_deltas_vert_fpn4",
+      "exact": true,
+      "sha256": "589aac489b1c8e7f6df3debab866ddbcbf804a31cb6013e82a9661811b344700"
+    },
+    {
+      "tensor": "bbox_deltas_vert_fpn4_quantized",
+      "exact": true,
+      "sha256": "475b2631cefc82ee7e94440d46804498339cde2aefa356dee9111b827bd9e246"
+    },
+    {
+      "tensor": "feature_p2_quantized",
+      "exact": true,
+      "sha256": "c2477c4e7da63f9e8fee9ef9928875d1607d8759d724b227a73a2985b35e5d4b"
+    },
+    {
+      "tensor": "link_scores_hori_fpn2",
+      "exact": true,
+      "sha256": "763a06e3ae85d6dce5463cd80b39e22c4b0d98a327716242462665f417c6dd60"
+    },
+    {
+      "tensor": "link_scores_hori_fpn2_quantized",
+      "exact": true,
+      "sha256": "223162731b73fe713560aef043d53c75a0ccf8806cf503113d0c67aee5070f4f"
+    },
+    {
+      "tensor": "link_scores_hori_fpn3",
+      "exact": true,
+      "sha256": "a75608e38f2b1fd12f36a86f2f5af7f12002e83e26db9aabaf2884c7db450180"
+    },
+    {
+      "tensor": "link_scores_hori_fpn3_quantized",
+      "exact": true,
+      "sha256": "9b6347fc4448c17080a19d4a4a4a3643e3ca288ffa7c9386806fad6b53a860b5"
+    },
+    {
+      "tensor": "link_scores_hori_fpn4",
+      "exact": true,
+      "sha256": "3637018c201f657f0680244fbc16eb2a11ba9872e59f3296cbcb5209bca81473"
+    },
+    {
+      "tensor": "link_scores_hori_fpn4_quantized",
+      "exact": true,
+      "sha256": "5ca51418737fbe8007638d74a52456bd4556731444aa7a32baf8be8acaa73c81"
+    },
+    {
+      "tensor": "link_scores_vert_fpn2",
+      "exact": true,
+      "sha256": "edc41303fcdc5d2cd96ca71b9241c52383306f66a38da764bf0e94163636ccb4"
+    },
+    {
+      "tensor": "link_scores_vert_fpn2_quantized",
+      "exact": true,
+      "sha256": "61333e501d49cef7b8abc2a6b8def45a9f9cb701ff672540e4523d339dab70ef"
+    },
+    {
+      "tensor": "link_scores_vert_fpn3",
+      "exact": true,
+      "sha256": "6aa08a2dcbe5d9f1418512d7bcdd84ace76fff3a1fd1955e6fa1b6ea6b0d4da0"
+    },
+    {
+      "tensor": "link_scores_vert_fpn3_quantized",
+      "exact": true,
+      "sha256": "4e9732001d2b915dbd55c0850799670b2df5ffc03c131d06a7510350c2d11c0a"
+    },
+    {
+      "tensor": "link_scores_vert_fpn4",
+      "exact": true,
+      "sha256": "f4f31ae81b1662ca0d722c28a58d4521e54043b2790fdf127d2e699f70b91004"
+    },
+    {
+      "tensor": "link_scores_vert_fpn4_quantized",
+      "exact": true,
+      "sha256": "22ed5ddaabe2254516dd68cf6dab51be0931b3c497fb3c0e81d91b5b48c6ce2a"
+    },
+    {
+      "tensor": "pytorch_1342_quantized",
+      "exact": true,
+      "sha256": "36c71cbbf39713c0f373264cca8f19537518a5ea42bccb20973d3b541509a7c9"
+    },
+    {
+      "tensor": "pytorch_1344_quantized",
+      "exact": true,
+      "sha256": "4d18c493aa33c80683118021bb63983d9f359939e6e6b62209a088e99c341cfc"
+    },
+    {
+      "tensor": "pytorch_1346_quantized",
+      "exact": true,
+      "sha256": "88db8a02a8a71b24983927ecb271cf695f2b756fc986b50ec9fbab453c8d90ac"
+    },
+    {
+      "tensor": "pytorch_1348_quantized",
+      "exact": true,
+      "sha256": "0d4a20562aefa013ee82a26bbddad167894e5c8faebbf3c3b7cffabb4265c3b3"
+    },
+    {
+      "tensor": "pytorch_1350_quantized",
+      "exact": true,
+      "sha256": "415ef88008a25341f9342a098e227da05a5a68afb7e2258b41eb7a49e80ec15a"
+    },
+    {
+      "tensor": "pytorch_1739_quantized",
+      "exact": true,
+      "sha256": "58fc49ed1e84d055bd26946510aa35530aafed5e2a27c314ba944a71f12259c7"
+    },
+    {
+      "tensor": "pytorch_1742_quantized",
+      "exact": true,
+      "sha256": "66970fd7d7ad298f9b54e369a6aedbb5b6da4c1876c6362a31858ad8444db9bc"
+    },
+    {
+      "tensor": "pytorch_1745_quantized",
+      "exact": true,
+      "sha256": "39c37ecab6a53ef416e05bdf1ec7dd6ea8f5c5eb1300e8d3d464f724e609403d"
+    },
+    {
+      "tensor": "pytorch_1748_quantized",
+      "exact": true,
+      "sha256": "905b6f7391b711d1550f3a8fad78548e7f2c14b0f907dc3140961fe844e945bb"
+    },
+    {
+      "tensor": "pytorch_1751_quantized",
+      "exact": true,
+      "sha256": "e3998cd99ce8f51f9ba23260956b7a19b3d7fcdac18e98473e00f6c4f3bc9941"
+    },
+    {
+      "tensor": "pytorch_1754_quantized",
+      "exact": true,
+      "sha256": "38422e6672c8a025b4fb7ea8ad2ca99062678a3e12da48951d503ae427d432ef"
+    },
+    {
+      "tensor": "pytorch_1757_quantized",
+      "exact": true,
+      "sha256": "1aed412ac4d1ee32d11a06da1ab6210f71f8e07653acc3c7cf5bdea75b2a01f5"
+    },
+    {
+      "tensor": "pytorch_1760_quantized",
+      "exact": true,
+      "sha256": "d8acf4edd9e180904893ae4045815b6f9b5405dd238c615e53e36b7f269440fd"
+    },
+    {
+      "tensor": "pytorch_1763_quantized",
+      "exact": true,
+      "sha256": "6f66be8cfea89250cd1a879f4e441a8d753e2fc249b54a42c7effcd0780e4cd6"
+    },
+    {
+      "tensor": "pytorch_1766_quantized",
+      "exact": true,
+      "sha256": "91c1438b1250291c339700f15d24fc8499cdfdd6a3fd5f0f33057b0eb5d7426d"
+    },
+    {
+      "tensor": "pytorch_1769_quantized",
+      "exact": true,
+      "sha256": "c8763f0239b605356070d6920b43c637ab9e125bfd1cef1b7817d35896d1b239"
+    },
+    {
+      "tensor": "pytorch_1772_quantized",
+      "exact": true,
+      "sha256": "76ad81f82852a7c6c88f9baf884a8e0f60e2cbb43e73c005947d9be3e2ea5058"
+    },
+    {
+      "tensor": "pytorch_1775_quantized",
+      "exact": true,
+      "sha256": "a7779450f8cf9742112763d3ceff5413c21976b0bff2badd171adf8fc9d6c228"
+    },
+    {
+      "tensor": "pytorch_1778_quantized",
+      "exact": true,
+      "sha256": "d578dadffcd203fb7562083ca818288e57e968b141eb2f3111c3efb527a4fa4c"
+    },
+    {
+      "tensor": "pytorch_1781_quantized",
+      "exact": true,
+      "sha256": "05e5ff3302b4b7408899570a830d388c93703b025a2968123f9b88cd4b619d80"
+    },
+    {
+      "tensor": "pytorch_1784_quantized",
+      "exact": true,
+      "sha256": "a7ec7a30f8aa8d8897e11e06d64ff6557dcf1d2d04a912f9f049b3db5ac58199"
+    },
+    {
+      "tensor": "pytorch_1787_quantized",
+      "exact": true,
+      "sha256": "1a805d94e600d5809fe2736f0b63ec5ec4ce192539e79d8da1d6fc9592ffaa94"
+    },
+    {
+      "tensor": "pytorch_1790_quantized",
+      "exact": true,
+      "sha256": "faf9cb700043d80fc17afaa3078513c6258156903e5fbaa5be45156a89b1c6a7"
+    },
+    {
+      "tensor": "pytorch_1793_quantized",
+      "exact": true,
+      "sha256": "8484b6d2ea388ff77ac30982a4e8274c9a5d896cec04d03911e63603b36eb89e"
+    },
+    {
+      "tensor": "pytorch_1796_quantized",
+      "exact": true,
+      "sha256": "8a11af87d50ed7ca3d954b1a4ea98125c40a822ff5e1e96c073e2f1c8986a0ba"
+    },
+    {
+      "tensor": "pytorch_1799_quantized",
+      "exact": true,
+      "sha256": "83a1833483e5350c28339fae118762ff4a801019b9db07bb6fb275b58ce35b11"
+    },
+    {
+      "tensor": "pytorch_1802_quantized",
+      "exact": true,
+      "sha256": "173d7e33204f5b44592265d008bf584d7ad961db52fb97a4ba0d951a411fde6e"
+    },
+    {
+      "tensor": "pytorch_1805_quantized",
+      "exact": true,
+      "sha256": "d240b0867801370a6a89f801e11aafbc46a2edeb9058a7d313f87b51dbfedbfe"
+    },
+    {
+      "tensor": "pytorch_1808_quantized",
+      "exact": true,
+      "sha256": "1a6e5114741750b8ced297ae8705c3ae310f255a7e5aa8281955c4b31ac535b3"
+    },
+    {
+      "tensor": "pytorch_1811_quantized",
+      "exact": true,
+      "sha256": "f485e83d3a1033f0c6c6b9d2bd2be094362634aad94d7c4facbbcf4a5a7f20b9"
+    },
+    {
+      "tensor": "pytorch_1814_quantized",
+      "exact": true,
+      "sha256": "5e8a45e7cc2218992356b6cd1dc08954cab825ef8702b44fc97e7873c5627b7c"
+    },
+    {
+      "tensor": "pytorch_294",
+      "exact": true,
+      "sha256": "c855efdb4600c0f7881fb6440b99a8205eb16753c92be574f670ffb64517adf1"
+    },
+    {
+      "tensor": "pytorch_295",
+      "exact": true,
+      "sha256": "55a438912c6f3e1afe4ad062b1d9f423618638e80b4877e7694618dcd43f1230"
+    },
+    {
+      "tensor": "pytorch_295_quantized",
+      "exact": true,
+      "sha256": "3a5b371ac2a0a0fea03f13541a696a2aeaf9bfafa2e447dc91628a50d3eda468"
+    },
+    {
+      "tensor": "pytorch_301_quantized",
+      "exact": true,
+      "sha256": "63a69b8a67aa882d50aefd36176a07c42fb272bf95861503b61621948f791f06"
+    },
+    {
+      "tensor": "pytorch_307_quantized",
+      "exact": true,
+      "sha256": "a7532956385bc834b0a109b7bb085b019c00a9008837d333df304623569824f7"
+    },
+    {
+      "tensor": "pytorch_314_quantized",
+      "exact": true,
+      "sha256": "7f26750c89477f7fd3eb9d529a116de67faec0679cd294534c529648e0f79c42"
+    },
+    {
+      "tensor": "pytorch_323_quantized",
+      "exact": true,
+      "sha256": "f6cf370a7ecd99f361a8a0ba7d398f17a9798aaa16cf95426b03f77afda17a67"
+    },
+    {
+      "tensor": "pytorch_330_quantized",
+      "exact": true,
+      "sha256": "31a88648e098058bdc790b5f4c3e2344404312317e349aa527d04b3df3dd8c6e"
+    },
+    {
+      "tensor": "pytorch_339_quantized",
+      "exact": true,
+      "sha256": "66a67544e588b543b324333dc71f8f935185a31a5ece00b4d38bc045cbf18c04"
+    },
+    {
+      "tensor": "pytorch_346_quantized",
+      "exact": true,
+      "sha256": "d1e938358adbf55e5730b37ba88bf9c9cc6420bf15ef652ce98e2ed9d0027fe8"
+    },
+    {
+      "tensor": "pytorch_355_quantized",
+      "exact": true,
+      "sha256": "60a437b54122baedbb31b265113ee84b07c68e39edd8bdee72c18f559cdb746b"
+    },
+    {
+      "tensor": "pytorch_362_quantized",
+      "exact": true,
+      "sha256": "08b6211d5f6f72793a4f0200c8e268fa632f6723202135b49a77647921691f39"
+    },
+    {
+      "tensor": "pytorch_370_quantized",
+      "exact": true,
+      "sha256": "ee2dfe9dd5e196a42bfcb74733dbca8dcd44c56c66523663c715c2953c2a6711"
+    },
+    {
+      "tensor": "pytorch_373_quantized",
+      "exact": true,
+      "sha256": "b0015d840ba6f68674e789c8817cd08a9f5575d2158673c16e4ba672d8127c11"
+    },
+    {
+      "tensor": "pytorch_380_quantized",
+      "exact": true,
+      "sha256": "b401ff15b00ac0e893fe5732c6a942e1d50c5b4c5d8bb436021a47199cecb81c"
+    },
+    {
+      "tensor": "pytorch_383_quantized",
+      "exact": true,
+      "sha256": "e2a3c724e19c5f640809cf1f32396cb448111448d29d17afd11d4e3e7c7fe935"
+    },
+    {
+      "tensor": "pytorch_390_quantized",
+      "exact": true,
+      "sha256": "de081c5ede1f36e00fd56c111a37a12ef733169636f592e6c96fbee9afc675c4"
+    },
+    {
+      "tensor": "pytorch_393_quantized",
+      "exact": true,
+      "sha256": "a18b42988d7d7ddbfa64f857b4601a09da4b37a79443cd847d34122b00b63eb5"
+    },
+    {
+      "tensor": "pytorch_470_quantized",
+      "exact": true,
+      "sha256": "2510a3e5de5c6dcade89fd2d48b13717d65849d4121c72f2fca05cdc9bf4beb1"
+    },
+    {
+      "tensor": "pytorch_472_quantized",
+      "exact": true,
+      "sha256": "4f092e0e0febfde068503c96c5100eaef893c2187de64a756980d451980dfaa6"
+    },
+    {
+      "tensor": "pytorch_474_quantized",
+      "exact": true,
+      "sha256": "0ec6bca4a55c8efbd125d1926d096e19fc4518498d2e8b126e0d8a78aefed936"
+    },
+    {
+      "tensor": "pytorch_476_quantized",
+      "exact": true,
+      "sha256": "433e8c17caddf294fd95176291dbd908feb5d3d20ad66af2ff045a4e28cae970"
+    },
+    {
+      "tensor": "pytorch_478_quantized",
+      "exact": true,
+      "sha256": "7b8fb1a75c858ccbf129f72c38d448e2f70f9727a1ab90e7174ec3447ac52184"
+    },
+    {
+      "tensor": "pytorch_906_quantized",
+      "exact": true,
+      "sha256": "dbf52d23a146832ec815ba1f3327e126b193d9136919658674cdcf3ae3ffe0d7"
+    },
+    {
+      "tensor": "pytorch_908_quantized",
+      "exact": true,
+      "sha256": "67d2aa378a05eeca5d0e6d959ad53542939ab3f1e9088d29c8036ddd653dde29"
+    },
+    {
+      "tensor": "pytorch_910_quantized",
+      "exact": true,
+      "sha256": "4b3691bec1285df3ff0403352da072108a13a7d5e177e527378bedd63fb3fb41"
+    },
+    {
+      "tensor": "pytorch_912_quantized",
+      "exact": true,
+      "sha256": "abefbee2ff24ae55339405dfb62583be7e6d10ece25ae0df0bce296985283e87"
+    },
+    {
+      "tensor": "pytorch_914_quantized",
+      "exact": true,
+      "sha256": "c02605b7ce433abb5b69fa221823cedea49228358ba9aa3de3e2ef78148894d8"
+    },
+    {
+      "tensor": "scores_hori_fpn2",
+      "exact": true,
+      "sha256": "99449d16cad5195d164d66ebf0e4d163068a4323a23937a61aac39cb5b0c730b"
+    },
+    {
+      "tensor": "scores_hori_fpn2_quantized",
+      "exact": true,
+      "sha256": "c16cddf6fab66b105a6b8d6938e5e8a7f68e68a7262472e52e83f4cd5cf4ef2f"
+    },
+    {
+      "tensor": "scores_hori_fpn3",
+      "exact": true,
+      "sha256": "b22d1dbf1592c4426a44cd695c4204f0f5ac38ad535fecedb397771ce99d3f9a"
+    },
+    {
+      "tensor": "scores_hori_fpn3_quantized",
+      "exact": true,
+      "sha256": "9a587d926fdfb70cab51a188a076360b4996983542f784459d836d021e14f31b"
+    },
+    {
+      "tensor": "scores_hori_fpn4",
+      "exact": true,
+      "sha256": "1274906fcb5dd418146a30c0d88f8d7214833639a2cd8a2b9042f5c2fcdc9fb1"
+    },
+    {
+      "tensor": "scores_hori_fpn4_quantized",
+      "exact": true,
+      "sha256": "a2c33ee13caab407c2d01f26de836cb952cd208294ec20368943996a92cc6448"
+    },
+    {
+      "tensor": "scores_vert_fpn2",
+      "exact": true,
+      "sha256": "69e6e0e18dab595567b28b458bc9ef60703f91e09280e780c68fdc183654e9f9"
+    },
+    {
+      "tensor": "scores_vert_fpn2_quantized",
+      "exact": true,
+      "sha256": "b08876f20daa3aa31b53470bc52219ff8a4c02fb84ef116daf71e493f572e9dd"
+    },
+    {
+      "tensor": "scores_vert_fpn3",
+      "exact": true,
+      "sha256": "fb84f99f8538ec1e35b7c85bb05c738217e7a908a85f90a5f3ec611e1a55a01d"
+    },
+    {
+      "tensor": "scores_vert_fpn3_quantized",
+      "exact": true,
+      "sha256": "2a6b0d62626932eeb4df0105f89d507afd99f7f4851a143cca901a544238c82a"
+    },
+    {
+      "tensor": "scores_vert_fpn4",
+      "exact": true,
+      "sha256": "538081805496e136ba0ec26dcf107a26067c714cfba0727c324103bfc4d78d8b"
+    },
+    {
+      "tensor": "scores_vert_fpn4_quantized",
+      "exact": true,
+      "sha256": "f9b1a95cac54db1e20fd795d782b102f02e448bf473f0ffc43303cd842174124"
+    }
+  ]
+}

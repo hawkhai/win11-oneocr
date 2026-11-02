@@ -1,0 +1,12 @@
+{
+  "file": "vocab/vocab_greek.json",
+  "sha256": "fc2bae03822956f490eab8e6d3f81f182f1c8ae9b601552026f6d5eab10b6fec",
+  "entries": 244,
+  "source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+  "source_resource": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\GreekMixed\\char2ind.txt",
+  "dictionary_sha256": "75ab97960eb7b56ba4e392cc4780c6c72d54d6e96f566cdc8182ce04f7a17b25",
+  "empty_indices": [
+    243
+  ],
+  "method": "complete original char2ind.txt plus composite_chars_map; preserves special token metadata"
+}

@@ -1,0 +1,12 @@
+{
+  "file": "vocab/vocab_latin.json",
+  "sha256": "db155fa47657d83ab4a7bcc4ef3f303fd7bbf636de1a9691ea3d7ea5691f64ca",
+  "entries": 548,
+  "source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+  "source_resource": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\LatinPrintedV2\\char2ind.txt",
+  "dictionary_sha256": "1e770e8c8452f7fa26bf82029f356e6a6caeec2ccc378855825d177c10d25fa8",
+  "empty_indices": [
+    547
+  ],
+  "method": "complete original char2ind.txt plus composite_chars_map; preserves special token metadata"
+}

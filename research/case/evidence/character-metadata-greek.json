@@ -1,0 +1,1958 @@
+{
+  "source_sha256": "0dbbec98e5e33de0be9b12d5f286011a6ea8f18e40baae092542b38ff00e7c7b",
+  "model": "GreekMixed",
+  "characters": [
+    {
+      "id": 0,
+      "logical_id": 0,
+      "physical_id": 1,
+      "type": 5,
+      "logical": "<space>",
+      "physical": "<space>"
+    },
+    {
+      "id": 1,
+      "logical_id": 1,
+      "physical_id": 2,
+      "type": 7,
+      "logical": "!",
+      "physical": "!"
+    },
+    {
+      "id": 2,
+      "logical_id": 2,
+      "physical_id": 3,
+      "type": 0,
+      "logical": "\"",
+      "physical": "\""
+    },
+    {
+      "id": 3,
+      "logical_id": 3,
+      "physical_id": 61,
+      "type": 0,
+      "logical": "#",
+      "physical": "#"
+    },
+    {
+      "id": 4,
+      "logical_id": 4,
+      "physical_id": 4,
+      "type": 0,
+      "logical": "$",
+      "physical": "$"
+    },
+    {
+      "id": 5,
+      "logical_id": 5,
+      "physical_id": 5,
+      "type": 0,
+      "logical": "%",
+      "physical": "%"
+    },
+    {
+      "id": 6,
+      "logical_id": 6,
+      "physical_id": 6,
+      "type": 0,
+      "logical": "&",
+      "physical": "&"
+    },
+    {
+      "id": 7,
+      "logical_id": 7,
+      "physical_id": 7,
+      "type": 6,
+      "logical": "'",
+      "physical": "'"
+    },
+    {
+      "id": 8,
+      "logical_id": 8,
+      "physical_id": 8,
+      "type": 0,
+      "logical": "(",
+      "physical": "("
+    },
+    {
+      "id": 9,
+      "logical_id": 9,
+      "physical_id": 9,
+      "type": 0,
+      "logical": ")",
+      "physical": ")"
+    },
+    {
+      "id": 10,
+      "logical_id": 10,
+      "physical_id": 10,
+      "type": 7,
+      "logical": "*",
+      "physical": "*"
+    },
+    {
+      "id": 11,
+      "logical_id": 11,
+      "physical_id": 11,
+      "type": 0,
+      "logical": "+",
+      "physical": "+"
+    },
+    {
+      "id": 12,
+      "logical_id": 12,
+      "physical_id": 12,
+      "type": 0,
+      "logical": ",",
+      "physical": ","
+    },
+    {
+      "id": 13,
+      "logical_id": 13,
+      "physical_id": 13,
+      "type": 7,
+      "logical": "-",
+      "physical": "-"
+    },
+    {
+      "id": 14,
+      "logical_id": 14,
+      "physical_id": 14,
+      "type": 7,
+      "logical": ".",
+      "physical": "."
+    },
+    {
+      "id": 15,
+      "logical_id": 15,
+      "physical_id": 15,
+      "type": 0,
+      "logical": "/",
+      "physical": "/"
+    },
+    {
+      "id": 16,
+      "logical_id": 16,
+      "physical_id": 16,
+      "type": 0,
+      "logical": "0",
+      "physical": "0"
+    },
+    {
+      "id": 17,
+      "logical_id": 17,
+      "physical_id": 17,
+      "type": 0,
+      "logical": "1",
+      "physical": "1"
+    },
+    {
+      "id": 18,
+      "logical_id": 18,
+      "physical_id": 18,
+      "type": 0,
+      "logical": "2",
+      "physical": "2"
+    },
+    {
+      "id": 19,
+      "logical_id": 19,
+      "physical_id": 19,
+      "type": 0,
+      "logical": "3",
+      "physical": "3"
+    },
+    {
+      "id": 20,
+      "logical_id": 20,
+      "physical_id": 20,
+      "type": 0,
+      "logical": "4",
+      "physical": "4"
+    },
+    {
+      "id": 21,
+      "logical_id": 21,
+      "physical_id": 21,
+      "type": 0,
+      "logical": "5",
+      "physical": "5"
+    },
+    {
+      "id": 22,
+      "logical_id": 22,
+      "physical_id": 22,
+      "type": 0,
+      "logical": "6",
+      "physical": "6"
+    },
+    {
+      "id": 23,
+      "logical_id": 23,
+      "physical_id": 23,
+      "type": 0,
+      "logical": "7",
+      "physical": "7"
+    },
+    {
+      "id": 24,
+      "logical_id": 24,
+      "physical_id": 24,
+      "type": 0,
+      "logical": "8",
+      "physical": "8"
+    },
+    {
+      "id": 25,
+      "logical_id": 25,
+      "physical_id": 25,
+      "type": 0,
+      "logical": "9",
+      "physical": "9"
+    },
+    {
+      "id": 26,
+      "logical_id": 26,
+      "physical_id": 26,
+      "type": 7,
+      "logical": ":",
+      "physical": ":"
+    },
+    {
+      "id": 27,
+      "logical_id": 27,
+      "physical_id": 27,
+      "type": 7,
+      "logical": ";",
+      "physical": ";"
+    },
+    {
+      "id": 28,
+      "logical_id": 28,
+      "physical_id": 28,
+      "type": 7,
+      "logical": "<",
+      "physical": "<"
+    },
+    {
+      "id": 29,
+      "logical_id": 29,
+      "physical_id": 29,
+      "type": 7,
+      "logical": "=",
+      "physical": "="
+    },
+    {
+      "id": 30,
+      "logical_id": 30,
+      "physical_id": 30,
+      "type": 0,
+      "logical": ">",
+      "physical": ">"
+    },
+    {
+      "id": 31,
+      "logical_id": 31,
+      "physical_id": 31,
+      "type": 7,
+      "logical": "?",
+      "physical": "?"
+    },
+    {
+      "id": 32,
+      "logical_id": 32,
+      "physical_id": 32,
+      "type": 0,
+      "logical": "@",
+      "physical": "@"
+    },
+    {
+      "id": 33,
+      "logical_id": 65,
+      "physical_id": 33,
+      "type": 1,
+      "logical": "a",
+      "physical": "A"
+    },
+    {
+      "id": 34,
+      "logical_id": 66,
+      "physical_id": 34,
+      "type": 1,
+      "logical": "b",
+      "physical": "B"
+    },
+    {
+      "id": 35,
+      "logical_id": 67,
+      "physical_id": 35,
+      "type": 1,
+      "logical": "c",
+      "physical": "C"
+    },
+    {
+      "id": 36,
+      "logical_id": 68,
+      "physical_id": 36,
+      "type": 1,
+      "logical": "d",
+      "physical": "D"
+    },
+    {
+      "id": 37,
+      "logical_id": 69,
+      "physical_id": 37,
+      "type": 1,
+      "logical": "e",
+      "physical": "E"
+    },
+    {
+      "id": 38,
+      "logical_id": 70,
+      "physical_id": 38,
+      "type": 1,
+      "logical": "f",
+      "physical": "F"
+    },
+    {
+      "id": 39,
+      "logical_id": 71,
+      "physical_id": 39,
+      "type": 1,
+      "logical": "g",
+      "physical": "G"
+    },
+    {
+      "id": 40,
+      "logical_id": 72,
+      "physical_id": 40,
+      "type": 1,
+      "logical": "h",
+      "physical": "H"
+    },
+    {
+      "id": 41,
+      "logical_id": 73,
+      "physical_id": 41,
+      "type": 1,
+      "logical": "i",
+      "physical": "I"
+    },
+    {
+      "id": 42,
+      "logical_id": 74,
+      "physical_id": 42,
+      "type": 1,
+      "logical": "j",
+      "physical": "J"
+    },
+    {
+      "id": 43,
+      "logical_id": 75,
+      "physical_id": 43,
+      "type": 1,
+      "logical": "k",
+      "physical": "K"
+    },
+    {
+      "id": 44,
+      "logical_id": 76,
+      "physical_id": 44,
+      "type": 1,
+      "logical": "l",
+      "physical": "L"
+    },
+    {
+      "id": 45,
+      "logical_id": 77,
+      "physical_id": 45,
+      "type": 1,
+      "logical": "m",
+      "physical": "M"
+    },
+    {
+      "id": 46,
+      "logical_id": 78,
+      "physical_id": 46,
+      "type": 1,
+      "logical": "n",
+      "physical": "N"
+    },
+    {
+      "id": 47,
+      "logical_id": 79,
+      "physical_id": 47,
+      "type": 1,
+      "logical": "o",
+      "physical": "O"
+    },
+    {
+      "id": 48,
+      "logical_id": 80,
+      "physical_id": 48,
+      "type": 1,
+      "logical": "p",
+      "physical": "P"
+    },
+    {
+      "id": 49,
+      "logical_id": 81,
+      "physical_id": 49,
+      "type": 1,
+      "logical": "q",
+      "physical": "Q"
+    },
+    {
+      "id": 50,
+      "logical_id": 82,
+      "physical_id": 50,
+      "type": 1,
+      "logical": "r",
+      "physical": "R"
+    },
+    {
+      "id": 51,
+      "logical_id": 83,
+      "physical_id": 51,
+      "type": 1,
+      "logical": "s",
+      "physical": "S"
+    },
+    {
+      "id": 52,
+      "logical_id": 84,
+      "physical_id": 52,
+      "type": 1,
+      "logical": "t",
+      "physical": "T"
+    },
+    {
+      "id": 53,
+      "logical_id": 85,
+      "physical_id": 53,
+      "type": 1,
+      "logical": "u",
+      "physical": "U"
+    },
+    {
+      "id": 54,
+      "logical_id": 86,
+      "physical_id": 54,
+      "type": 1,
+      "logical": "v",
+      "physical": "V"
+    },
+    {
+      "id": 55,
+      "logical_id": 87,
+      "physical_id": 55,
+      "type": 1,
+      "logical": "w",
+      "physical": "W"
+    },
+    {
+      "id": 56,
+      "logical_id": 88,
+      "physical_id": 56,
+      "type": 1,
+      "logical": "x",
+      "physical": "X"
+    },
+    {
+      "id": 57,
+      "logical_id": 89,
+      "physical_id": 57,
+      "type": 1,
+      "logical": "y",
+      "physical": "Y"
+    },
+    {
+      "id": 58,
+      "logical_id": 90,
+      "physical_id": 58,
+      "type": 1,
+      "logical": "z",
+      "physical": "Z"
+    },
+    {
+      "id": 59,
+      "logical_id": 59,
+      "physical_id": 59,
+      "type": 0,
+      "logical": "[",
+      "physical": "["
+    },
+    {
+      "id": 60,
+      "logical_id": 60,
+      "physical_id": 60,
+      "type": 0,
+      "logical": "\\",
+      "physical": "\\"
+    },
+    {
+      "id": 61,
+      "logical_id": 61,
+      "physical_id": 62,
+      "type": 0,
+      "logical": "]",
+      "physical": "]"
+    },
+    {
+      "id": 62,
+      "logical_id": 62,
+      "physical_id": 63,
+      "type": 0,
+      "logical": "^",
+      "physical": "^"
+    },
+    {
+      "id": 63,
+      "logical_id": 63,
+      "physical_id": 64,
+      "type": 7,
+      "logical": "_",
+      "physical": "_"
+    },
+    {
+      "id": 64,
+      "logical_id": 64,
+      "physical_id": 65,
+      "type": 0,
+      "logical": "`",
+      "physical": "`"
+    },
+    {
+      "id": 65,
+      "logical_id": 65,
+      "physical_id": 66,
+      "type": 1,
+      "logical": "a",
+      "physical": "a"
+    },
+    {
+      "id": 66,
+      "logical_id": 66,
+      "physical_id": 67,
+      "type": 1,
+      "logical": "b",
+      "physical": "b"
+    },
+    {
+      "id": 67,
+      "logical_id": 67,
+      "physical_id": 68,
+      "type": 1,
+      "logical": "c",
+      "physical": "c"
+    },
+    {
+      "id": 68,
+      "logical_id": 68,
+      "physical_id": 69,
+      "type": 1,
+      "logical": "d",
+      "physical": "d"
+    },
+    {
+      "id": 69,
+      "logical_id": 69,
+      "physical_id": 70,
+      "type": 1,
+      "logical": "e",
+      "physical": "e"
+    },
+    {
+      "id": 70,
+      "logical_id": 70,
+      "physical_id": 71,
+      "type": 1,
+      "logical": "f",
+      "physical": "f"
+    },
+    {
+      "id": 71,
+      "logical_id": 71,
+      "physical_id": 72,
+      "type": 1,
+      "logical": "g",
+      "physical": "g"
+    },
+    {
+      "id": 72,
+      "logical_id": 72,
+      "physical_id": 73,
+      "type": 1,
+      "logical": "h",
+      "physical": "h"
+    },
+    {
+      "id": 73,
+      "logical_id": 73,
+      "physical_id": 74,
+      "type": 1,
+      "logical": "i",
+      "physical": "i"
+    },
+    {
+      "id": 74,
+      "logical_id": 74,
+      "physical_id": 75,
+      "type": 1,
+      "logical": "j",
+      "physical": "j"
+    },
+    {
+      "id": 75,
+      "logical_id": 75,
+      "physical_id": 76,
+      "type": 1,
+      "logical": "k",
+      "physical": "k"
+    },
+    {
+      "id": 76,
+      "logical_id": 76,
+      "physical_id": 77,
+      "type": 1,
+      "logical": "l",
+      "physical": "l"
+    },
+    {
+      "id": 77,
+      "logical_id": 77,
+      "physical_id": 78,
+      "type": 1,
+      "logical": "m",
+      "physical": "m"
+    },
+    {
+      "id": 78,
+      "logical_id": 78,
+      "physical_id": 79,
+      "type": 1,
+      "logical": "n",
+      "physical": "n"
+    },
+    {
+      "id": 79,
+      "logical_id": 79,
+      "physical_id": 80,
+      "type": 1,
+      "logical": "o",
+      "physical": "o"
+    },
+    {
+      "id": 80,
+      "logical_id": 80,
+      "physical_id": 81,
+      "type": 1,
+      "logical": "p",
+      "physical": "p"
+    },
+    {
+      "id": 81,
+      "logical_id": 81,
+      "physical_id": 82,
+      "type": 1,
+      "logical": "q",
+      "physical": "q"
+    },
+    {
+      "id": 82,
+      "logical_id": 82,
+      "physical_id": 83,
+      "type": 1,
+      "logical": "r",
+      "physical": "r"
+    },
+    {
+      "id": 83,
+      "logical_id": 83,
+      "physical_id": 84,
+      "type": 1,
+      "logical": "s",
+      "physical": "s"
+    },
+    {
+      "id": 84,
+      "logical_id": 84,
+      "physical_id": 85,
+      "type": 1,
+      "logical": "t",
+      "physical": "t"
+    },
+    {
+      "id": 85,
+      "logical_id": 85,
+      "physical_id": 86,
+      "type": 1,
+      "logical": "u",
+      "physical": "u"
+    },
+    {
+      "id": 86,
+      "logical_id": 86,
+      "physical_id": 87,
+      "type": 1,
+      "logical": "v",
+      "physical": "v"
+    },
+    {
+      "id": 87,
+      "logical_id": 87,
+      "physical_id": 88,
+      "type": 1,
+      "logical": "w",
+      "physical": "w"
+    },
+    {
+      "id": 88,
+      "logical_id": 88,
+      "physical_id": 89,
+      "type": 1,
+      "logical": "x",
+      "physical": "x"
+    },
+    {
+      "id": 89,
+      "logical_id": 89,
+      "physical_id": 90,
+      "type": 1,
+      "logical": "y",
+      "physical": "y"
+    },
+    {
+      "id": 90,
+      "logical_id": 90,
+      "physical_id": 91,
+      "type": 1,
+      "logical": "z",
+      "physical": "z"
+    },
+    {
+      "id": 91,
+      "logical_id": 91,
+      "physical_id": 92,
+      "type": 0,
+      "logical": "{",
+      "physical": "{"
+    },
+    {
+      "id": 92,
+      "logical_id": 92,
+      "physical_id": 93,
+      "type": 0,
+      "logical": "|",
+      "physical": "|"
+    },
+    {
+      "id": 93,
+      "logical_id": 93,
+      "physical_id": 94,
+      "type": 0,
+      "logical": "}",
+      "physical": "}"
+    },
+    {
+      "id": 94,
+      "logical_id": 94,
+      "physical_id": 95,
+      "type": 7,
+      "logical": "~",
+      "physical": "~"
+    },
+    {
+      "id": 95,
+      "logical_id": 95,
+      "physical_id": 96,
+      "type": 0,
+      "logical": "©",
+      "physical": "©"
+    },
+    {
+      "id": 96,
+      "logical_id": 96,
+      "physical_id": 97,
+      "type": 0,
+      "logical": "«",
+      "physical": "«"
+    },
+    {
+      "id": 97,
+      "logical_id": 97,
+      "physical_id": 98,
+      "type": 0,
+      "logical": "®",
+      "physical": "®"
+    },
+    {
+      "id": 98,
+      "logical_id": 98,
+      "physical_id": 99,
+      "type": 0,
+      "logical": "°",
+      "physical": "°"
+    },
+    {
+      "id": 99,
+      "logical_id": 99,
+      "physical_id": 100,
+      "type": 7,
+      "logical": "·",
+      "physical": "·"
+    },
+    {
+      "id": 100,
+      "logical_id": 100,
+      "physical_id": 101,
+      "type": 0,
+      "logical": "»",
+      "physical": "»"
+    },
+    {
+      "id": 101,
+      "logical_id": 101,
+      "physical_id": 102,
+      "type": 0,
+      "logical": "ʹ",
+      "physical": "ʹ"
+    },
+    {
+      "id": 102,
+      "logical_id": 103,
+      "physical_id": 103,
+      "type": 0,
+      "logical": "ͱ",
+      "physical": "Ͱ"
+    },
+    {
+      "id": 103,
+      "logical_id": 103,
+      "physical_id": 104,
+      "type": 0,
+      "logical": "ͱ",
+      "physical": "ͱ"
+    },
+    {
+      "id": 104,
+      "logical_id": 105,
+      "physical_id": 105,
+      "type": 0,
+      "logical": "ͳ",
+      "physical": "Ͳ"
+    },
+    {
+      "id": 105,
+      "logical_id": 105,
+      "physical_id": 106,
+      "type": 0,
+      "logical": "ͳ",
+      "physical": "ͳ"
+    },
+    {
+      "id": 106,
+      "logical_id": 106,
+      "physical_id": 107,
+      "type": 0,
+      "logical": "͵",
+      "physical": "͵"
+    },
+    {
+      "id": 107,
+      "logical_id": 108,
+      "physical_id": 108,
+      "type": 0,
+      "logical": "ͷ",
+      "physical": "Ͷ"
+    },
+    {
+      "id": 108,
+      "logical_id": 108,
+      "physical_id": 109,
+      "type": 0,
+      "logical": "ͷ",
+      "physical": "ͷ"
+    },
+    {
+      "id": 109,
+      "logical_id": 109,
+      "physical_id": 110,
+      "type": 0,
+      "logical": "ͺ",
+      "physical": "ͺ"
+    },
+    {
+      "id": 110,
+      "logical_id": 110,
+      "physical_id": 111,
+      "type": 0,
+      "logical": "ͻ",
+      "physical": "ͻ"
+    },
+    {
+      "id": 111,
+      "logical_id": 111,
+      "physical_id": 112,
+      "type": 0,
+      "logical": "ͼ",
+      "physical": "ͼ"
+    },
+    {
+      "id": 112,
+      "logical_id": 112,
+      "physical_id": 113,
+      "type": 0,
+      "logical": "ͽ",
+      "physical": "ͽ"
+    },
+    {
+      "id": 113,
+      "logical_id": 221,
+      "physical_id": 114,
+      "type": 0,
+      "logical": "ϳ",
+      "physical": "Ϳ"
+    },
+    {
+      "id": 114,
+      "logical_id": 114,
+      "physical_id": 115,
+      "type": 0,
+      "logical": "΄",
+      "physical": "΄"
+    },
+    {
+      "id": 115,
+      "logical_id": 115,
+      "physical_id": 116,
+      "type": 0,
+      "logical": "΅",
+      "physical": "΅"
+    },
+    {
+      "id": 116,
+      "logical_id": 150,
+      "physical_id": 117,
+      "type": 0,
+      "logical": "ά",
+      "physical": "Ά"
+    },
+    {
+      "id": 117,
+      "logical_id": 151,
+      "physical_id": 118,
+      "type": 0,
+      "logical": "έ",
+      "physical": "Έ"
+    },
+    {
+      "id": 118,
+      "logical_id": 152,
+      "physical_id": 119,
+      "type": 0,
+      "logical": "ή",
+      "physical": "Ή"
+    },
+    {
+      "id": 119,
+      "logical_id": 153,
+      "physical_id": 120,
+      "type": 0,
+      "logical": "ί",
+      "physical": "Ί"
+    },
+    {
+      "id": 120,
+      "logical_id": 182,
+      "physical_id": 121,
+      "type": 0,
+      "logical": "ό",
+      "physical": "Ό"
+    },
+    {
+      "id": 121,
+      "logical_id": 183,
+      "physical_id": 122,
+      "type": 0,
+      "logical": "ύ",
+      "physical": "Ύ"
+    },
+    {
+      "id": 122,
+      "logical_id": 184,
+      "physical_id": 123,
+      "type": 0,
+      "logical": "ώ",
+      "physical": "Ώ"
+    },
+    {
+      "id": 123,
+      "logical_id": 123,
+      "physical_id": 124,
+      "type": 0,
+      "logical": "ΐ",
+      "physical": "ΐ"
+    },
+    {
+      "id": 124,
+      "logical_id": 155,
+      "physical_id": 125,
+      "type": 0,
+      "logical": "α",
+      "physical": "Α"
+    },
+    {
+      "id": 125,
+      "logical_id": 156,
+      "physical_id": 126,
+      "type": 0,
+      "logical": "β",
+      "physical": "Β"
+    },
+    {
+      "id": 126,
+      "logical_id": 157,
+      "physical_id": 127,
+      "type": 0,
+      "logical": "γ",
+      "physical": "Γ"
+    },
+    {
+      "id": 127,
+      "logical_id": 158,
+      "physical_id": 128,
+      "type": 0,
+      "logical": "δ",
+      "physical": "Δ"
+    },
+    {
+      "id": 128,
+      "logical_id": 159,
+      "physical_id": 129,
+      "type": 0,
+      "logical": "ε",
+      "physical": "Ε"
+    },
+    {
+      "id": 129,
+      "logical_id": 160,
+      "physical_id": 130,
+      "type": 0,
+      "logical": "ζ",
+      "physical": "Ζ"
+    },
+    {
+      "id": 130,
+      "logical_id": 161,
+      "physical_id": 131,
+      "type": 0,
+      "logical": "η",
+      "physical": "Η"
+    },
+    {
+      "id": 131,
+      "logical_id": 162,
+      "physical_id": 132,
+      "type": 0,
+      "logical": "θ",
+      "physical": "Θ"
+    },
+    {
+      "id": 132,
+      "logical_id": 163,
+      "physical_id": 133,
+      "type": 0,
+      "logical": "ι",
+      "physical": "Ι"
+    },
+    {
+      "id": 133,
+      "logical_id": 164,
+      "physical_id": 134,
+      "type": 0,
+      "logical": "κ",
+      "physical": "Κ"
+    },
+    {
+      "id": 134,
+      "logical_id": 165,
+      "physical_id": 135,
+      "type": 0,
+      "logical": "λ",
+      "physical": "Λ"
+    },
+    {
+      "id": 135,
+      "logical_id": 166,
+      "physical_id": 136,
+      "type": 0,
+      "logical": "μ",
+      "physical": "Μ"
+    },
+    {
+      "id": 136,
+      "logical_id": 167,
+      "physical_id": 137,
+      "type": 0,
+      "logical": "ν",
+      "physical": "Ν"
+    },
+    {
+      "id": 137,
+      "logical_id": 168,
+      "physical_id": 138,
+      "type": 0,
+      "logical": "ξ",
+      "physical": "Ξ"
+    },
+    {
+      "id": 138,
+      "logical_id": 169,
+      "physical_id": 139,
+      "type": 0,
+      "logical": "ο",
+      "physical": "Ο"
+    },
+    {
+      "id": 139,
+      "logical_id": 170,
+      "physical_id": 140,
+      "type": 0,
+      "logical": "π",
+      "physical": "Π"
+    },
+    {
+      "id": 140,
+      "logical_id": 171,
+      "physical_id": 141,
+      "type": 0,
+      "logical": "ρ",
+      "physical": "Ρ"
+    },
+    {
+      "id": 141,
+      "logical_id": 173,
+      "physical_id": 142,
+      "type": 0,
+      "logical": "σ",
+      "physical": "Σ"
+    },
+    {
+      "id": 142,
+      "logical_id": 174,
+      "physical_id": 143,
+      "type": 0,
+      "logical": "τ",
+      "physical": "Τ"
+    },
+    {
+      "id": 143,
+      "logical_id": 175,
+      "physical_id": 144,
+      "type": 0,
+      "logical": "υ",
+      "physical": "Υ"
+    },
+    {
+      "id": 144,
+      "logical_id": 176,
+      "physical_id": 145,
+      "type": 0,
+      "logical": "φ",
+      "physical": "Φ"
+    },
+    {
+      "id": 145,
+      "logical_id": 177,
+      "physical_id": 146,
+      "type": 0,
+      "logical": "χ",
+      "physical": "Χ"
+    },
+    {
+      "id": 146,
+      "logical_id": 178,
+      "physical_id": 147,
+      "type": 0,
+      "logical": "ψ",
+      "physical": "Ψ"
+    },
+    {
+      "id": 147,
+      "logical_id": 179,
+      "physical_id": 148,
+      "type": 0,
+      "logical": "ω",
+      "physical": "Ω"
+    },
+    {
+      "id": 148,
+      "logical_id": 180,
+      "physical_id": 149,
+      "type": 0,
+      "logical": "ϊ",
+      "physical": "Ϊ"
+    },
+    {
+      "id": 149,
+      "logical_id": 181,
+      "physical_id": 150,
+      "type": 0,
+      "logical": "ϋ",
+      "physical": "Ϋ"
+    },
+    {
+      "id": 150,
+      "logical_id": 150,
+      "physical_id": 151,
+      "type": 0,
+      "logical": "ά",
+      "physical": "ά"
+    },
+    {
+      "id": 151,
+      "logical_id": 151,
+      "physical_id": 152,
+      "type": 0,
+      "logical": "έ",
+      "physical": "έ"
+    },
+    {
+      "id": 152,
+      "logical_id": 152,
+      "physical_id": 153,
+      "type": 0,
+      "logical": "ή",
+      "physical": "ή"
+    },
+    {
+      "id": 153,
+      "logical_id": 153,
+      "physical_id": 154,
+      "type": 0,
+      "logical": "ί",
+      "physical": "ί"
+    },
+    {
+      "id": 154,
+      "logical_id": 154,
+      "physical_id": 155,
+      "type": 0,
+      "logical": "ΰ",
+      "physical": "ΰ"
+    },
+    {
+      "id": 155,
+      "logical_id": 155,
+      "physical_id": 156,
+      "type": 0,
+      "logical": "α",
+      "physical": "α"
+    },
+    {
+      "id": 156,
+      "logical_id": 156,
+      "physical_id": 157,
+      "type": 0,
+      "logical": "β",
+      "physical": "β"
+    },
+    {
+      "id": 157,
+      "logical_id": 157,
+      "physical_id": 158,
+      "type": 0,
+      "logical": "γ",
+      "physical": "γ"
+    },
+    {
+      "id": 158,
+      "logical_id": 158,
+      "physical_id": 159,
+      "type": 0,
+      "logical": "δ",
+      "physical": "δ"
+    },
+    {
+      "id": 159,
+      "logical_id": 159,
+      "physical_id": 160,
+      "type": 0,
+      "logical": "ε",
+      "physical": "ε"
+    },
+    {
+      "id": 160,
+      "logical_id": 160,
+      "physical_id": 161,
+      "type": 0,
+      "logical": "ζ",
+      "physical": "ζ"
+    },
+    {
+      "id": 161,
+      "logical_id": 161,
+      "physical_id": 162,
+      "type": 0,
+      "logical": "η",
+      "physical": "η"
+    },
+    {
+      "id": 162,
+      "logical_id": 162,
+      "physical_id": 163,
+      "type": 0,
+      "logical": "θ",
+      "physical": "θ"
+    },
+    {
+      "id": 163,
+      "logical_id": 163,
+      "physical_id": 164,
+      "type": 0,
+      "logical": "ι",
+      "physical": "ι"
+    },
+    {
+      "id": 164,
+      "logical_id": 164,
+      "physical_id": 165,
+      "type": 0,
+      "logical": "κ",
+      "physical": "κ"
+    },
+    {
+      "id": 165,
+      "logical_id": 165,
+      "physical_id": 166,
+      "type": 0,
+      "logical": "λ",
+      "physical": "λ"
+    },
+    {
+      "id": 166,
+      "logical_id": 166,
+      "physical_id": 167,
+      "type": 0,
+      "logical": "μ",
+      "physical": "μ"
+    },
+    {
+      "id": 167,
+      "logical_id": 167,
+      "physical_id": 168,
+      "type": 0,
+      "logical": "ν",
+      "physical": "ν"
+    },
+    {
+      "id": 168,
+      "logical_id": 168,
+      "physical_id": 169,
+      "type": 0,
+      "logical": "ξ",
+      "physical": "ξ"
+    },
+    {
+      "id": 169,
+      "logical_id": 169,
+      "physical_id": 170,
+      "type": 0,
+      "logical": "ο",
+      "physical": "ο"
+    },
+    {
+      "id": 170,
+      "logical_id": 170,
+      "physical_id": 171,
+      "type": 0,
+      "logical": "π",
+      "physical": "π"
+    },
+    {
+      "id": 171,
+      "logical_id": 171,
+      "physical_id": 172,
+      "type": 0,
+      "logical": "ρ",
+      "physical": "ρ"
+    },
+    {
+      "id": 172,
+      "logical_id": 172,
+      "physical_id": 173,
+      "type": 0,
+      "logical": "ς",
+      "physical": "ς"
+    },
+    {
+      "id": 173,
+      "logical_id": 173,
+      "physical_id": 174,
+      "type": 0,
+      "logical": "σ",
+      "physical": "σ"
+    },
+    {
+      "id": 174,
+      "logical_id": 174,
+      "physical_id": 175,
+      "type": 0,
+      "logical": "τ",
+      "physical": "τ"
+    },
+    {
+      "id": 175,
+      "logical_id": 175,
+      "physical_id": 176,
+      "type": 0,
+      "logical": "υ",
+      "physical": "υ"
+    },
+    {
+      "id": 176,
+      "logical_id": 176,
+      "physical_id": 177,
+      "type": 0,
+      "logical": "φ",
+      "physical": "φ"
+    },
+    {
+      "id": 177,
+      "logical_id": 177,
+      "physical_id": 178,
+      "type": 0,
+      "logical": "χ",
+      "physical": "χ"
+    },
+    {
+      "id": 178,
+      "logical_id": 178,
+      "physical_id": 179,
+      "type": 0,
+      "logical": "ψ",
+      "physical": "ψ"
+    },
+    {
+      "id": 179,
+      "logical_id": 179,
+      "physical_id": 180,
+      "type": 0,
+      "logical": "ω",
+      "physical": "ω"
+    },
+    {
+      "id": 180,
+      "logical_id": 180,
+      "physical_id": 181,
+      "type": 0,
+      "logical": "ϊ",
+      "physical": "ϊ"
+    },
+    {
+      "id": 181,
+      "logical_id": 181,
+      "physical_id": 182,
+      "type": 0,
+      "logical": "ϋ",
+      "physical": "ϋ"
+    },
+    {
+      "id": 182,
+      "logical_id": 182,
+      "physical_id": 183,
+      "type": 0,
+      "logical": "ό",
+      "physical": "ό"
+    },
+    {
+      "id": 183,
+      "logical_id": 183,
+      "physical_id": 184,
+      "type": 0,
+      "logical": "ύ",
+      "physical": "ύ"
+    },
+    {
+      "id": 184,
+      "logical_id": 184,
+      "physical_id": 185,
+      "type": 0,
+      "logical": "ώ",
+      "physical": "ώ"
+    },
+    {
+      "id": 185,
+      "logical_id": 193,
+      "physical_id": 186,
+      "type": 0,
+      "logical": "ϗ",
+      "physical": "Ϗ"
+    },
+    {
+      "id": 186,
+      "logical_id": 186,
+      "physical_id": 187,
+      "type": 0,
+      "logical": "ϐ",
+      "physical": "ϐ"
+    },
+    {
+      "id": 187,
+      "logical_id": 187,
+      "physical_id": 188,
+      "type": 0,
+      "logical": "ϑ",
+      "physical": "ϑ"
+    },
+    {
+      "id": 188,
+      "logical_id": 188,
+      "physical_id": 189,
+      "type": 0,
+      "logical": "ϒ",
+      "physical": "ϒ"
+    },
+    {
+      "id": 189,
+      "logical_id": 189,
+      "physical_id": 190,
+      "type": 0,
+      "logical": "ϓ",
+      "physical": "ϓ"
+    },
+    {
+      "id": 190,
+      "logical_id": 190,
+      "physical_id": 191,
+      "type": 0,
+      "logical": "ϔ",
+      "physical": "ϔ"
+    },
+    {
+      "id": 191,
+      "logical_id": 191,
+      "physical_id": 192,
+      "type": 0,
+      "logical": "ϕ",
+      "physical": "ϕ"
+    },
+    {
+      "id": 192,
+      "logical_id": 192,
+      "physical_id": 193,
+      "type": 0,
+      "logical": "ϖ",
+      "physical": "ϖ"
+    },
+    {
+      "id": 193,
+      "logical_id": 193,
+      "physical_id": 194,
+      "type": 0,
+      "logical": "ϗ",
+      "physical": "ϗ"
+    },
+    {
+      "id": 194,
+      "logical_id": 195,
+      "physical_id": 195,
+      "type": 0,
+      "logical": "ϙ",
+      "physical": "Ϙ"
+    },
+    {
+      "id": 195,
+      "logical_id": 195,
+      "physical_id": 196,
+      "type": 0,
+      "logical": "ϙ",
+      "physical": "ϙ"
+    },
+    {
+      "id": 196,
+      "logical_id": 197,
+      "physical_id": 197,
+      "type": 0,
+      "logical": "ϛ",
+      "physical": "Ϛ"
+    },
+    {
+      "id": 197,
+      "logical_id": 197,
+      "physical_id": 198,
+      "type": 0,
+      "logical": "ϛ",
+      "physical": "ϛ"
+    },
+    {
+      "id": 198,
+      "logical_id": 199,
+      "physical_id": 199,
+      "type": 0,
+      "logical": "ϝ",
+      "physical": "Ϝ"
+    },
+    {
+      "id": 199,
+      "logical_id": 199,
+      "physical_id": 200,
+      "type": 0,
+      "logical": "ϝ",
+      "physical": "ϝ"
+    },
+    {
+      "id": 200,
+      "logical_id": 201,
+      "physical_id": 201,
+      "type": 0,
+      "logical": "ϟ",
+      "physical": "Ϟ"
+    },
+    {
+      "id": 201,
+      "logical_id": 201,
+      "physical_id": 202,
+      "type": 0,
+      "logical": "ϟ",
+      "physical": "ϟ"
+    },
+    {
+      "id": 202,
+      "logical_id": 203,
+      "physical_id": 203,
+      "type": 0,
+      "logical": "ϡ",
+      "physical": "Ϡ"
+    },
+    {
+      "id": 203,
+      "logical_id": 203,
+      "physical_id": 204,
+      "type": 0,
+      "logical": "ϡ",
+      "physical": "ϡ"
+    },
+    {
+      "id": 204,
+      "logical_id": 205,
+      "physical_id": 205,
+      "type": 0,
+      "logical": "ϣ",
+      "physical": "Ϣ"
+    },
+    {
+      "id": 205,
+      "logical_id": 205,
+      "physical_id": 206,
+      "type": 0,
+      "logical": "ϣ",
+      "physical": "ϣ"
+    },
+    {
+      "id": 206,
+      "logical_id": 207,
+      "physical_id": 207,
+      "type": 0,
+      "logical": "ϥ",
+      "physical": "Ϥ"
+    },
+    {
+      "id": 207,
+      "logical_id": 207,
+      "physical_id": 208,
+      "type": 0,
+      "logical": "ϥ",
+      "physical": "ϥ"
+    },
+    {
+      "id": 208,
+      "logical_id": 209,
+      "physical_id": 209,
+      "type": 0,
+      "logical": "ϧ",
+      "physical": "Ϧ"
+    },
+    {
+      "id": 209,
+      "logical_id": 209,
+      "physical_id": 210,
+      "type": 0,
+      "logical": "ϧ",
+      "physical": "ϧ"
+    },
+    {
+      "id": 210,
+      "logical_id": 211,
+      "physical_id": 211,
+      "type": 0,
+      "logical": "ϩ",
+      "physical": "Ϩ"
+    },
+    {
+      "id": 211,
+      "logical_id": 211,
+      "physical_id": 212,
+      "type": 0,
+      "logical": "ϩ",
+      "physical": "ϩ"
+    },
+    {
+      "id": 212,
+      "logical_id": 213,
+      "physical_id": 213,
+      "type": 0,
+      "logical": "ϫ",
+      "physical": "Ϫ"
+    },
+    {
+      "id": 213,
+      "logical_id": 213,
+      "physical_id": 214,
+      "type": 0,
+      "logical": "ϫ",
+      "physical": "ϫ"
+    },
+    {
+      "id": 214,
+      "logical_id": 215,
+      "physical_id": 215,
+      "type": 0,
+      "logical": "ϭ",
+      "physical": "Ϭ"
+    },
+    {
+      "id": 215,
+      "logical_id": 215,
+      "physical_id": 216,
+      "type": 0,
+      "logical": "ϭ",
+      "physical": "ϭ"
+    },
+    {
+      "id": 216,
+      "logical_id": 217,
+      "physical_id": 217,
+      "type": 0,
+      "logical": "ϯ",
+      "physical": "Ϯ"
+    },
+    {
+      "id": 217,
+      "logical_id": 217,
+      "physical_id": 218,
+      "type": 0,
+      "logical": "ϯ",
+      "physical": "ϯ"
+    },
+    {
+      "id": 218,
+      "logical_id": 218,
+      "physical_id": 219,
+      "type": 0,
+      "logical": "ϰ",
+      "physical": "ϰ"
+    },
+    {
+      "id": 219,
+      "logical_id": 219,
+      "physical_id": 220,
+      "type": 0,
+      "logical": "ϱ",
+      "physical": "ϱ"
+    },
+    {
+      "id": 220,
+      "logical_id": 220,
+      "physical_id": 221,
+      "type": 0,
+      "logical": "ϲ",
+      "physical": "ϲ"
+    },
+    {
+      "id": 221,
+      "logical_id": 221,
+      "physical_id": 222,
+      "type": 0,
+      "logical": "ϳ",
+      "physical": "ϳ"
+    },
+    {
+      "id": 222,
+      "logical_id": 162,
+      "physical_id": 223,
+      "type": 0,
+      "logical": "θ",
+      "physical": "ϴ"
+    },
+    {
+      "id": 223,
+      "logical_id": 223,
+      "physical_id": 224,
+      "type": 0,
+      "logical": "ϵ",
+      "physical": "ϵ"
+    },
+    {
+      "id": 224,
+      "logical_id": 224,
+      "physical_id": 225,
+      "type": 0,
+      "logical": "϶",
+      "physical": "϶"
+    },
+    {
+      "id": 225,
+      "logical_id": 226,
+      "physical_id": 226,
+      "type": 0,
+      "logical": "ϸ",
+      "physical": "Ϸ"
+    },
+    {
+      "id": 226,
+      "logical_id": 226,
+      "physical_id": 227,
+      "type": 0,
+      "logical": "ϸ",
+      "physical": "ϸ"
+    },
+    {
+      "id": 227,
+      "logical_id": 220,
+      "physical_id": 228,
+      "type": 0,
+      "logical": "ϲ",
+      "physical": "Ϲ"
+    },
+    {
+      "id": 228,
+      "logical_id": 229,
+      "physical_id": 229,
+      "type": 0,
+      "logical": "ϻ",
+      "physical": "Ϻ"
+    },
+    {
+      "id": 229,
+      "logical_id": 229,
+      "physical_id": 230,
+      "type": 0,
+      "logical": "ϻ",
+      "physical": "ϻ"
+    },
+    {
+      "id": 230,
+      "logical_id": 230,
+      "physical_id": 231,
+      "type": 0,
+      "logical": "ϼ",
+      "physical": "ϼ"
+    },
+    {
+      "id": 231,
+      "logical_id": 110,
+      "physical_id": 232,
+      "type": 0,
+      "logical": "ͻ",
+      "physical": "Ͻ"
+    },
+    {
+      "id": 232,
+      "logical_id": 111,
+      "physical_id": 233,
+      "type": 0,
+      "logical": "ͼ",
+      "physical": "Ͼ"
+    },
+    {
+      "id": 233,
+      "logical_id": 112,
+      "physical_id": 234,
+      "type": 0,
+      "logical": "ͽ",
+      "physical": "Ͽ"
+    },
+    {
+      "id": 234,
+      "logical_id": 234,
+      "physical_id": 235,
+      "type": 0,
+      "logical": "‘",
+      "physical": "‘"
+    },
+    {
+      "id": 235,
+      "logical_id": 235,
+      "physical_id": 236,
+      "type": 0,
+      "logical": "’",
+      "physical": "’"
+    },
+    {
+      "id": 236,
+      "logical_id": 236,
+      "physical_id": 237,
+      "type": 0,
+      "logical": "“",
+      "physical": "“"
+    },
+    {
+      "id": 237,
+      "logical_id": 237,
+      "physical_id": 238,
+      "type": 0,
+      "logical": "”",
+      "physical": "”"
+    },
+    {
+      "id": 238,
+      "logical_id": 238,
+      "physical_id": 239,
+      "type": 0,
+      "logical": "€",
+      "physical": "€"
+    },
+    {
+      "id": 239,
+      "logical_id": 239,
+      "physical_id": 240,
+      "type": 0,
+      "logical": "⑆",
+      "physical": "⑆"
+    },
+    {
+      "id": 240,
+      "logical_id": 240,
+      "physical_id": 241,
+      "type": 0,
+      "logical": "⑇",
+      "physical": "⑇"
+    },
+    {
+      "id": 241,
+      "logical_id": 241,
+      "physical_id": 242,
+      "type": 0,
+      "logical": "⑈",
+      "physical": "⑈"
+    },
+    {
+      "id": 242,
+      "logical_id": 242,
+      "physical_id": 243,
+      "type": 0,
+      "logical": "⑉",
+      "physical": "⑉"
+    },
+    {
+      "id": 243,
+      "logical_id": 243,
+      "physical_id": 0,
+      "type": 4,
+      "logical": "<blank>",
+      "physical": "<blank>"
+    }
+  ]
+}

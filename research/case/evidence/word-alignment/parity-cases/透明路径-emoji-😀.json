@@ -1,0 +1,35 @@
+{
+  "passed": false,
+  "expected_lines": 1,
+  "actual_lines": 1,
+  "same_position_text_matches": 1,
+  "failure_count": 4,
+  "failures": [
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.984575092792511,
+      "actual": 0.9917604327201843
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.9926614761352539,
+      "actual": 0.997693657875061
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.9882414937019348,
+      "actual": 0.9974170923233032
+    },
+    {
+      "field": "lines[0].words[3].confidence",
+      "expected": 0.9780166745185852,
+      "actual": 0.9727090001106262
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "透明路径-emoji-😀"
+}

@@ -1,0 +1,100 @@
+{
+  "passed": false,
+  "expected_lines": 2,
+  "actual_lines": 2,
+  "same_position_text_matches": 2,
+  "failure_count": 17,
+  "failures": [
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.996553361415863,
+      "actual": 0.9996823072433472
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.9961553812026978,
+      "actual": 0.9991569519042969
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.9965245127677917,
+      "actual": 0.9996359348297119
+    },
+    {
+      "field": "lines[0].words[3].confidence",
+      "expected": 0.9961380362510681,
+      "actual": 0.999126136302948
+    },
+    {
+      "field": "lines[0].words[4].confidence",
+      "expected": 0.9946603775024414,
+      "actual": 0.9965537786483765
+    },
+    {
+      "field": "lines[0].words[5].confidence",
+      "expected": 0.9963951706886292,
+      "actual": 0.9995176792144775
+    },
+    {
+      "field": "lines[0].words[6].confidence",
+      "expected": 0.9961201548576355,
+      "actual": 0.9990794658660889
+    },
+    {
+      "field": "lines[0].words[7].confidence",
+      "expected": 0.9967308044433594,
+      "actual": 0.9998254179954529
+    },
+    {
+      "field": "lines[0].words[8].confidence",
+      "expected": 0.9965665340423584,
+      "actual": 0.9996742010116577
+    },
+    {
+      "field": "lines[0].words[9].confidence",
+      "expected": 0.996822714805603,
+      "actual": 0.9999113082885742
+    },
+    {
+      "field": "lines[1].words[0].confidence",
+      "expected": 0.9963110685348511,
+      "actual": 0.9994818568229675
+    },
+    {
+      "field": "lines[1].words[1].confidence",
+      "expected": 0.9962199330329895,
+      "actual": 0.9993101358413696
+    },
+    {
+      "field": "lines[1].words[2].confidence",
+      "expected": 0.9960528612136841,
+      "actual": 0.9988909363746643
+    },
+    {
+      "field": "lines[1].words[3].confidence",
+      "expected": 0.9962736964225769,
+      "actual": 0.999437153339386
+    },
+    {
+      "field": "lines[1].words[4].confidence",
+      "expected": 0.9968234896659851,
+      "actual": 0.9999120235443115
+    },
+    {
+      "field": "lines[1].words[5].confidence",
+      "expected": 0.9962612390518188,
+      "actual": 0.9993950128555298
+    },
+    {
+      "field": "lines[1].words[6].confidence",
+      "expected": 0.9890120029449463,
+      "actual": 0.9939900636672974
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "cjk-18"
+}

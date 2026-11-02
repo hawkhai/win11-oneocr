@@ -1,0 +1,20 @@
+Internal ctest changing into directory: F:/pythonx/myocr/win11-oneocr/build/source-runtime
+Test project F:/pythonx/myocr/win11-oneocr/build/source-runtime
+    Start 1: portable_api
+1/7 Test #1: portable_api .....................   Passed    0.04 sec
+    Start 2: portable_math
+2/7 Test #2: portable_math ....................   Passed    0.03 sec
+    Start 3: portable_reading_order
+3/7 Test #3: portable_reading_order ...........   Passed    0.04 sec
+    Start 4: portable_detector_geometry
+4/7 Test #4: portable_detector_geometry .......   Passed    0.03 sec
+    Start 5: portable_word_alignment
+5/7 Test #5: portable_word_alignment ..........   Passed    0.04 sec
+    Start 6: portable_confidence_features
+6/7 Test #6: portable_confidence_features .....   Passed    0.04 sec
+    Start 7: portable_polygon_nms
+7/7 Test #7: portable_polygon_nms .............   Passed    0.11 sec
+
+100% tests passed, 0 tests failed out of 7
+
+Total Test time (real) =   0.37 sec

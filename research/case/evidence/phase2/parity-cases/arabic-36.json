@@ -1,0 +1,170 @@
+{
+  "passed": false,
+  "expected_lines": 1,
+  "actual_lines": 1,
+  "same_position_text_matches": 0,
+  "failure_count": 31,
+  "failures": [
+    {
+      "field": "image_angle",
+      "expected": 359.03875732421875,
+      "actual": 358.738525390625
+    },
+    {
+      "field": "lines[0].text",
+      "expected": "2026 ملاعلاب ابحرم",
+      "actual": "مرحبا بالعالم 2026"
+    },
+    {
+      "field": "lines[0].bounding_box[3]",
+      "expected": 42.0,
+      "actual": 40.0
+    },
+    {
+      "field": "lines[0].words[0].text",
+      "expected": "2026",
+      "actual": "مرحبا"
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[0]",
+      "expected": 241.8118896484375,
+      "actual": 37.63908386230469
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[1]",
+      "expected": 42.46889114379883,
+      "actual": 49.73145294189453
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[2]",
+      "expected": 324.0,
+      "actual": 114.45223999023438
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[3]",
+      "expected": 43.472808837890625,
+      "actual": 48.04001235961914
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[4]",
+      "expected": 324.0,
+      "actual": 115.05625915527344
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[5]",
+      "expected": 80.44955444335938,
+      "actual": 83.66397094726562
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[6]",
+      "expected": 241.70884704589844,
+      "actual": 38.66634750366211
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[7]",
+      "expected": 79.88153076171875,
+      "actual": 85.08451843261719
+    },
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.9918025135993958,
+      "actual": 0.9968166351318359
+    },
+    {
+      "field": "lines[0].words[1].text",
+      "expected": "ملاعلاب",
+      "actual": "بالعالم"
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[0]",
+      "expected": 123.06392669677734,
+      "actual": 145.65757751464844
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[1]",
+      "expected": 44.82094955444336,
+      "actual": 47.35286331176758
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[3]",
+      "expected": 42.509002685546875,
+      "actual": 45.449989318847656
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[5]",
+      "expected": 79.936279296875,
+      "actual": 81.48876190185547
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[6]",
+      "expected": 123.62712097167969,
+      "actual": 146.0896453857422
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[7]",
+      "expected": 81.88294982910156,
+      "actual": 83.08687591552734
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.8336277604103088,
+      "actual": 0.8724964261054993
+    },
+    {
+      "field": "lines[0].words[2].text",
+      "expected": "ابحرم",
+      "actual": "2026"
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[0]",
+      "expected": 25.637027740478516,
+      "actual": 253.6760711669922
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[1]",
+      "expected": 49.99574279785156,
+      "actual": 44.97426986694336
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[2]",
+      "expected": 112.16252899169922,
+      "actual": 316.0867614746094
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[3]",
+      "expected": 45.207786560058594,
+      "actual": 43.599971771240234
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[4]",
+      "expected": 112.78579711914062,
+      "actual": 315.5797424316406
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[5]",
+      "expected": 82.1932373046875,
+      "actual": 79.93504333496094
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[6]",
+      "expected": 26.74498748779297,
+      "actual": 253.512939453125
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[7]",
+      "expected": 85.91506958007812,
+      "actual": 81.0892333984375
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.764661431312561,
+      "actual": 0.9997390508651733
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "arabic-36"
+}

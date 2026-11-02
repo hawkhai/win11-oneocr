@@ -1,0 +1,106 @@
+Internal ctest changing into directory: F:/pythonx/myocr/win11-oneocr/build/source-runtime
+Test project F:/pythonx/myocr/win11-oneocr/build/source-runtime
+    Start 1: portable_classification
+1/8 Test #1: portable_classification ..........   Passed    0.08 sec
+    Start 2: portable_api
+2/8 Test #2: portable_api .....................   Passed    0.04 sec
+    Start 3: portable_math
+3/8 Test #3: portable_math ....................   Passed    0.03 sec
+    Start 4: portable_reading_order
+4/8 Test #4: portable_reading_order ...........   Passed    0.04 sec
+    Start 5: portable_detector_geometry
+5/8 Test #5: portable_detector_geometry .......   Passed    0.06 sec
+    Start 6: portable_word_alignment
+6/8 Test #6: portable_word_alignment ..........   Passed    0.04 sec
+    Start 7: portable_confidence_features
+7/8 Test #7: portable_confidence_features .....   Passed    0.05 sec
+    Start 8: portable_polygon_nms
+8/8 Test #8: portable_polygon_nms .............***Failed    0.07 sec
+Intersection mismatch 1,21: 159.27 versus 159.172
+Intersection mismatch 2,3: 54.9974 versus 54.892
+Intersection mismatch 3,2: 54.9974 versus 54.8723
+Intersection mismatch 4,9: 23.179 versus 23.191
+Intersection mismatch 4,10: 185.509 versus 185.46
+Intersection mismatch 4,14: 129.966 versus 129.994
+Intersection mismatch 4,15: 311.705 versus 311.79
+Intersection mismatch 5,8: 44.8679 versus 44.9973
+Intersection mismatch 5,20: 43.5118 versus 43.6179
+Intersection mismatch 5,23: 65.5664 versus 65.6826
+Intersection mismatch 6,9: 172.966 versus 172.979
+Intersection mismatch 6,26: 246.025 versus 245.937
+Intersection mismatch 7,1: 53.6955 versus 53.7061
+Intersection mismatch 7,4: 209.046 versus 209.086
+Intersection mismatch 7,14: 296.721 versus 296.756
+Intersection mismatch 7,15: 101.942 versus 102.017
+Intersection mismatch 7,21: 38.755 versus 38.6589
+Intersection mismatch 8,5: 44.8679 versus 44.9528
+Intersection mismatch 8,20: 195.124 versus 195.156
+Intersection mismatch 8,23: 216.644 versus 216.717
+Intersection mismatch 9,6: 172.966 versus 172.981
+Intersection mismatch 9,10: 208.427 versus 208.409
+Intersection mismatch 9,15: 112.895 versus 112.958
+Intersection mismatch 10,4: 185.509 versus 185.43
+Intersection mismatch 10,6: 209.664 versus 209.649
+Intersection mismatch 10,9: 208.427 versus 208.4
+Intersection mismatch 10,15: 174.96 versus 174.867
+Intersection mismatch 11,12: 25.8109 versus 25.8417
+Intersection mismatch 12,1: 114.627 versus 114.519
+Intersection mismatch 12,11: 25.8109 versus 25.852
+Intersection mismatch 12,21: 241.767 versus 241.813
+Intersection mismatch 13,22: 302.931 versus 303.123
+Intersection mismatch 13,25: 92.2236 versus 92.3092
+Intersection mismatch 13,30: 168.623 versus 168.67
+Intersection mismatch 14,1: 93.0182 versus 92.9662
+Intersection mismatch 14,4: 129.966 versus 130.031
+Intersection mismatch 14,7: 296.721 versus 296.816
+Intersection mismatch 14,15: 156.027 versus 156.072
+Intersection mismatch 14,21: 14.0463 versus 13.9802
+Intersection mismatch 15,7: 101.942 versus 102.009
+Intersection mismatch 15,9: 112.895 versus 112.915
+Intersection mismatch 15,10: 174.96 versus 174.895
+Intersection mismatch 15,14: 156.027 versus 156.146
+Intersection mismatch 16,28: 33.2243 versus 33.2853
+Intersection mismatch 16,29: 201.145 versus 201.128
+Intersection mismatch 17,18: 31.252 versus 31.2706
+Intersection mismatch 18,17: 31.252 versus 31.2846
+Intersection mismatch 19,6: 66.7923 versus 66.871
+Intersection mismatch 19,26: 150.345 versus 150.44
+Intersection mismatch 20,5: 43.5118 versus 43.6238
+Intersection mismatch 20,8: 195.124 versus 195.219
+Intersection mismatch 20,23: 256.897 versus 257.04
+Intersection mismatch 20,24: 40.6341 versus 40.5771
+Intersection mismatch 21,1: 159.27 versus 159.133
+Intersection mismatch 21,7: 38.755 versus 38.6733
+Intersection mismatch 21,12: 241.767 versus 241.746
+Intersection mismatch 21,14: 14.0463 versus 14.0011
+Intersection mismatch 22,13: 302.931 versus 303.048
+Intersection mismatch 22,25: 90.6608 versus 90.6897
+Intersection mismatch 22,30: 159.484 versus 159.501
+Intersection mismatch 23,5: 65.5664 versus 65.6473
+Intersection mismatch 23,8: 216.644 versus 216.671
+Intersection mismatch 23,20: 256.897 versus 256.955
+Intersection mismatch 23,24: 24.7429 versus 24.7047
+Intersection mismatch 24,3: 101.587 versus 101.559
+Intersection mismatch 24,8: 34.1513 versus 34.1074
+Intersection mismatch 24,20: 40.6341 versus 40.5807
+Intersection mismatch 24,23: 24.7429 versus 24.7104
+Intersection mismatch 25,13: 92.2236 versus 92.3558
+Intersection mismatch 25,22: 90.6608 versus 90.7407
+Intersection mismatch 26,6: 246.025 versus 245.893
+Intersection mismatch 26,9: 15.7082 versus 15.756
+Intersection mismatch 26,19: 150.345 versus 150.384
+Intersection mismatch 27,18: 31.3736 versus 31.3836
+Intersection mismatch 27,28: 9.65493 versus 9.61798
+Intersection mismatch 28,16: 33.2243 versus 33.2723
+Intersection mismatch 28,27: 9.65493 versus 9.63209
+Intersection mismatch 29,16: 201.145 versus 201.085
+Intersection mismatch 30,22: 159.484 versus 159.43
+2112 native polygon probes and 72 recognition NMS cases; maximum area error 0.191559
+
+
+88% tests passed, 1 tests failed out of 8
+
+Total Test time (real) =   0.44 sec
+
+The following tests FAILED:
+	  8 - portable_polygon_nms (Failed)

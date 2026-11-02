@@ -1,0 +1,421 @@
+{
+  "detector_outputs_exact": false,
+  "tensors": [
+    {
+      "name": "data",
+      "kind": "inputs",
+      "expected_shape": [
+        1,
+        3,
+        768,
+        1120
+      ],
+      "actual_shape": [
+        1,
+        3,
+        768,
+        1120
+      ],
+      "same_shape": true,
+      "max_absolute_error": 2.707113265991211,
+      "mean_absolute_error": 0.011242088861763477,
+      "changed_elements": 73341,
+      "exact": false
+    },
+    {
+      "name": "im_info",
+      "kind": "inputs",
+      "expected_shape": [
+        1,
+        3
+      ],
+      "actual_shape": [
+        1,
+        3
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "scores_hori_fpn2",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        1,
+        192,
+        280
+      ],
+      "actual_shape": [
+        1,
+        1,
+        192,
+        280
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0980384349822998,
+      "mean_absolute_error": 0.004934017080813646,
+      "changed_elements": 17814,
+      "exact": false
+    },
+    {
+      "name": "bbox_deltas_hori_fpn2",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        192,
+        280
+      ],
+      "actual_shape": [
+        1,
+        8,
+        192,
+        280
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.12189619243144989,
+      "mean_absolute_error": 0.010428877547383308,
+      "changed_elements": 190635,
+      "exact": false
+    },
+    {
+      "name": "link_scores_hori_fpn2",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        192,
+        280
+      ],
+      "actual_shape": [
+        1,
+        8,
+        192,
+        280
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.19999375939369202,
+      "mean_absolute_error": 0.017111944034695625,
+      "changed_elements": 285016,
+      "exact": false
+    },
+    {
+      "name": "scores_vert_fpn2",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        1,
+        192,
+        280
+      ],
+      "actual_shape": [
+        1,
+        1,
+        192,
+        280
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.09803879261016846,
+      "mean_absolute_error": 0.002535441657528281,
+      "changed_elements": 10261,
+      "exact": false
+    },
+    {
+      "name": "bbox_deltas_vert_fpn2",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        192,
+        280
+      ],
+      "actual_shape": [
+        1,
+        8,
+        192,
+        280
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.09184154868125916,
+      "mean_absolute_error": 0.010528490878641605,
+      "changed_elements": 243293,
+      "exact": false
+    },
+    {
+      "name": "link_scores_vert_fpn2",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        192,
+        280
+      ],
+      "actual_shape": [
+        1,
+        8,
+        192,
+        280
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.17645880579948425,
+      "mean_absolute_error": 0.017003357410430908,
+      "changed_elements": 297839,
+      "exact": false
+    },
+    {
+      "name": "scores_hori_fpn3",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        1,
+        96,
+        140
+      ],
+      "actual_shape": [
+        1,
+        1,
+        96,
+        140
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.14117500185966492,
+      "mean_absolute_error": 0.0021731797605752945,
+      "changed_elements": 2504,
+      "exact": false
+    },
+    {
+      "name": "bbox_deltas_hori_fpn3",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        96,
+        140
+      ],
+      "actual_shape": [
+        1,
+        8,
+        96,
+        140
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.06997528672218323,
+      "mean_absolute_error": 0.008957254700362682,
+      "changed_elements": 57866,
+      "exact": false
+    },
+    {
+      "name": "link_scores_hori_fpn3",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        96,
+        140
+      ],
+      "actual_shape": [
+        1,
+        8,
+        96,
+        140
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.14901676774024963,
+      "mean_absolute_error": 0.015759646892547607,
+      "changed_elements": 68515,
+      "exact": false
+    },
+    {
+      "name": "scores_vert_fpn3",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        1,
+        96,
+        140
+      ],
+      "actual_shape": [
+        1,
+        1,
+        96,
+        140
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0392146036028862,
+      "mean_absolute_error": 0.0007396505097858608,
+      "changed_elements": 1593,
+      "exact": false
+    },
+    {
+      "name": "bbox_deltas_vert_fpn3",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        96,
+        140
+      ],
+      "actual_shape": [
+        1,
+        8,
+        96,
+        140
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.05780106782913208,
+      "mean_absolute_error": 0.00850099790841341,
+      "changed_elements": 69839,
+      "exact": false
+    },
+    {
+      "name": "link_scores_vert_fpn3",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        96,
+        140
+      ],
+      "actual_shape": [
+        1,
+        8,
+        96,
+        140
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.11764076352119446,
+      "mean_absolute_error": 0.012527557089924812,
+      "changed_elements": 60501,
+      "exact": false
+    },
+    {
+      "name": "scores_hori_fpn4",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        1,
+        48,
+        70
+      ],
+      "actual_shape": [
+        1,
+        1,
+        48,
+        70
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.007842985913157463,
+      "mean_absolute_error": 0.0001272150839213282,
+      "changed_elements": 108,
+      "exact": false
+    },
+    {
+      "name": "bbox_deltas_hori_fpn4",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        48,
+        70
+      ],
+      "actual_shape": [
+        1,
+        8,
+        48,
+        70
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.09755444526672363,
+      "mean_absolute_error": 0.01310978177934885,
+      "changed_elements": 12479,
+      "exact": false
+    },
+    {
+      "name": "link_scores_hori_fpn4",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        48,
+        70
+      ],
+      "actual_shape": [
+        1,
+        8,
+        48,
+        70
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.10195693373680115,
+      "mean_absolute_error": 0.014294952154159546,
+      "changed_elements": 16073,
+      "exact": false
+    },
+    {
+      "name": "scores_vert_fpn4",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        1,
+        48,
+        70
+      ],
+      "actual_shape": [
+        1,
+        1,
+        48,
+        70
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.003921443596482277,
+      "mean_absolute_error": 0.00011787669791374356,
+      "changed_elements": 101,
+      "exact": false
+    },
+    {
+      "name": "bbox_deltas_vert_fpn4",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        48,
+        70
+      ],
+      "actual_shape": [
+        1,
+        8,
+        48,
+        70
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.06864503026008606,
+      "mean_absolute_error": 0.010640870779752731,
+      "changed_elements": 13944,
+      "exact": false
+    },
+    {
+      "name": "link_scores_vert_fpn4",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        48,
+        70
+      ],
+      "actual_shape": [
+        1,
+        8,
+        48,
+        70
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.07450306415557861,
+      "mean_absolute_error": 0.010564809665083885,
+      "changed_elements": 14758,
+      "exact": false
+    }
+  ]
+}

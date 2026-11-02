@@ -1,0 +1,125 @@
+{
+  "passed": false,
+  "expected_lines": 1,
+  "actual_lines": 1,
+  "same_position_text_matches": 1,
+  "failure_count": 22,
+  "failures": [
+    {
+      "field": "lines[0].words[0].bounding_box[0]",
+      "expected": 26.280094146728516,
+      "actual": 33.60094451904297
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[2]",
+      "expected": 121.52112579345703,
+      "actual": 106.80943298339844
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[4]",
+      "expected": 120.7427978515625,
+      "actual": 106.04407501220703
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[5]",
+      "expected": 81.77315521240234,
+      "actual": 79.25025177001953
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[6]",
+      "expected": 25.501768112182617,
+      "actual": 32.83558654785156
+    },
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.984575092792511,
+      "actual": 0.9969074130058289
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[2]",
+      "expected": 314.4463806152344,
+      "actual": 306.9126281738281
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[4]",
+      "expected": 313.6680603027344,
+      "actual": 306.14727783203125
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[5]",
+      "expected": 80.47114562988281,
+      "actual": 77.14476013183594
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[7]",
+      "expected": 81.82929992675781,
+      "actual": 78.99348449707031
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.9926614761352539,
+      "actual": 0.9964236617088318
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[2]",
+      "expected": 382.8249206542969,
+      "actual": 375.24053955078125
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[4]",
+      "expected": 382.0466003417969,
+      "actual": 374.4751892089844
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[5]",
+      "expected": 78.87684631347656,
+      "actual": 76.42581939697266
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[7]",
+      "expected": 80.30183410644531,
+      "actual": 76.96502685546875
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.9882414937019348,
+      "actual": 0.9974590539932251
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[0]",
+      "expected": 392.59326171875,
+      "actual": 397.2030944824219
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[2]",
+      "expected": 473.0,
+      "actual": 458.2101745605469
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[4]",
+      "expected": 473.0,
+      "actual": 457.44482421875
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[6]",
+      "expected": 391.81494140625,
+      "actual": 396.437744140625
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[7]",
+      "expected": 78.61843872070312,
+      "actual": 76.1947250366211
+    },
+    {
+      "field": "lines[0].words[3].confidence",
+      "expected": 0.9780166745185852,
+      "actual": 0.9882563948631287
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "透明路径-emoji-😀"
+}

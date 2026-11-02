@@ -1,0 +1,12 @@
+{
+  "file": "vocab/vocab_devanagari.json",
+  "sha256": "66d6c88247a40171ffaf2fe0c6dc8cba24e907c694abfb16bf0f76f03d981e98",
+  "entries": 237,
+  "source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+  "source_resource": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\DevanagariMixed\\char2ind.txt",
+  "dictionary_sha256": "3100670486be41ad032c002fc274cb5ea0b9e53e5e2514580c2d28ec1561312b",
+  "empty_indices": [
+    236
+  ],
+  "method": "complete original char2ind.txt plus composite_chars_map; preserves special token metadata"
+}

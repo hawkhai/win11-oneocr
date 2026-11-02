@@ -1,0 +1,7 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting opencv-python-headless==4.10.0.84
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/26/d0/22f68eb23eea053a31655960f133c0be9726c6a881547e6e9e7e2a946c4f/opencv_python_headless-4.10.0.84-cp37-abi3-win_amd64.whl (38.8 MB)
+     ---------------------------------------- 38.8/38.8 MB 7.0 MB/s  0:00:05
+Requirement already satisfied: numpy>=1.21.2 in f:\pythonx\myocr\win11-oneocr\.research-python\lib\site-packages (from opencv-python-headless==4.10.0.84) (2.2.6)
+Installing collected packages: opencv-python-headless
+Successfully installed opencv-python-headless-4.10.0.84

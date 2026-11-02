@@ -1,0 +1,12 @@
+{
+  "file": "vocab/vocab_tamil.json",
+  "sha256": "53c08b7dc40f65ba0d37725dbd6a497230e8bda7b49f54a9b2925c649b7e82ef",
+  "entries": 179,
+  "source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+  "source_resource": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\TamilPrinted\\char2ind.txt",
+  "dictionary_sha256": "a007131e089f83d8965b26a510da515dd6a427795c39102f9419e59d1c66f1bc",
+  "empty_indices": [
+    178
+  ],
+  "method": "complete original char2ind.txt plus composite_chars_map; preserves special token metadata"
+}

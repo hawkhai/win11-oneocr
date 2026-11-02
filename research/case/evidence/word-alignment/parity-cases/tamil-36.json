@@ -1,0 +1,30 @@
+{
+  "passed": false,
+  "expected_lines": 1,
+  "actual_lines": 1,
+  "same_position_text_matches": 1,
+  "failure_count": 3,
+  "failures": [
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.9276630878448486,
+      "actual": 0.9883071780204773
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.951664924621582,
+      "actual": 0.989140510559082
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.9847301244735718,
+      "actual": 0.9910833239555359
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "tamil-36"
+}

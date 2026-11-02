@@ -1,0 +1,80 @@
+{
+  "passed": false,
+  "expected_lines": 1,
+  "actual_lines": 1,
+  "same_position_text_matches": 1,
+  "failure_count": 13,
+  "failures": [
+    {
+      "field": "lines[0].word_count",
+      "expected": 4,
+      "actual": 2
+    },
+    {
+      "field": "lines[0].words[0].text",
+      "expected": "สวัสดี",
+      "actual": "สวัสดีชาวโลก"
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[2]",
+      "expected": 108.13859558105469,
+      "actual": 200.904052734375
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[4]",
+      "expected": 107.59228515625,
+      "actual": 200.625
+    },
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.9862058758735657,
+      "actual": 0.9983893036842346
+    },
+    {
+      "field": "lines[0].words[1].text",
+      "expected": "ชาว",
+      "actual": "2026"
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[0]",
+      "expected": 108.84375,
+      "actual": 229.40545654296875
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[1]",
+      "expected": 42.48399353027344,
+      "actual": 41.27163314819336
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[2]",
+      "expected": 161.02474975585938,
+      "actual": 289.2583923339844
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[3]",
+      "expected": 42.124725341796875,
+      "actual": 40.799049377441406
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[4]",
+      "expected": 160.62896728515625,
+      "actual": 289.22650146484375
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[6]",
+      "expected": 108.2994155883789,
+      "actual": 229.2061309814453
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.9926918148994446,
+      "actual": 0.9953581094741821
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "thai-36"
+}

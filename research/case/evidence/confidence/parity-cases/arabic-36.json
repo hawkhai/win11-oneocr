@@ -1,0 +1,125 @@
+{
+  "passed": false,
+  "expected_lines": 1,
+  "actual_lines": 1,
+  "same_position_text_matches": 0,
+  "failure_count": 22,
+  "failures": [
+    {
+      "field": "lines[0].text",
+      "expected": "2026 ملاعلاب ابحرم",
+      "actual": "مرحبا بالعالم 2026"
+    },
+    {
+      "field": "lines[0].words[0].text",
+      "expected": "2026",
+      "actual": "مرحبا"
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[0]",
+      "expected": 241.8118896484375,
+      "actual": 25.637027740478516
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[1]",
+      "expected": 42.46889114379883,
+      "actual": 49.99574279785156
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[2]",
+      "expected": 324.0,
+      "actual": 112.16252899169922
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[3]",
+      "expected": 43.472808837890625,
+      "actual": 45.207786560058594
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[4]",
+      "expected": 324.0,
+      "actual": 112.78579711914062
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[5]",
+      "expected": 80.44955444335938,
+      "actual": 82.19322967529297
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[6]",
+      "expected": 241.70884704589844,
+      "actual": 26.74498748779297
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[7]",
+      "expected": 79.88153076171875,
+      "actual": 85.91506958007812
+    },
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.9918025135993958,
+      "actual": 0.764661431312561
+    },
+    {
+      "field": "lines[0].words[1].text",
+      "expected": "ملاعلاب",
+      "actual": "بالعالم"
+    },
+    {
+      "field": "lines[0].words[2].text",
+      "expected": "ابحرم",
+      "actual": "2026"
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[0]",
+      "expected": 25.637027740478516,
+      "actual": 241.8118896484375
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[1]",
+      "expected": 49.99574279785156,
+      "actual": 42.468894958496094
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[2]",
+      "expected": 112.16252899169922,
+      "actual": 324.0
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[3]",
+      "expected": 45.207786560058594,
+      "actual": 43.472808837890625
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[4]",
+      "expected": 112.78579711914062,
+      "actual": 324.0
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[5]",
+      "expected": 82.1932373046875,
+      "actual": 80.44955444335938
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[6]",
+      "expected": 26.74498748779297,
+      "actual": 241.7088623046875
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[7]",
+      "expected": 85.91506958007812,
+      "actual": 79.88153076171875
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.764661431312561,
+      "actual": 0.9918025135993958
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "arabic-36"
+}

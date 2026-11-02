@@ -1,0 +1,191 @@
+[
+  {
+    "exit_code": 0,
+    "seconds": 1.0107472999952734,
+    "peak_working_set_bytes": 165806080,
+    "stderr": "",
+    "name": "latin-18"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.8756348000024445,
+    "peak_working_set_bytes": 165904384,
+    "stderr": "",
+    "name": "latin-36"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.8323046999867074,
+    "peak_working_set_bytes": 170950656,
+    "stderr": "",
+    "name": "latin-rotate-0.5"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 1.182251299964264,
+    "peak_working_set_bytes": 175763456,
+    "stderr": "",
+    "name": "latin-rotate-3"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 1.0040249999728985,
+    "peak_working_set_bytes": 197345280,
+    "stderr": "",
+    "name": "latin-rotate-10"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 1.0029581999988295,
+    "peak_working_set_bytes": 165748736,
+    "stderr": "",
+    "name": "latin-rotate-90"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.9474903999944218,
+    "peak_working_set_bytes": 165675008,
+    "stderr": "",
+    "name": "latin-rotate-180"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.9778602999867871,
+    "peak_working_set_bytes": 165900288,
+    "stderr": "",
+    "name": "latin-rotate-270"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.9433107000077143,
+    "peak_working_set_bytes": 165842944,
+    "stderr": "",
+    "name": "cjk-18"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.9226156999939121,
+    "peak_working_set_bytes": 165892096,
+    "stderr": "",
+    "name": "cjk-36"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.8767319999751635,
+    "peak_working_set_bytes": 171155456,
+    "stderr": "",
+    "name": "cjk-rotate-0.5"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.8657858000369743,
+    "peak_working_set_bytes": 175640576,
+    "stderr": "",
+    "name": "cjk-rotate-3"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.8667867000331171,
+    "peak_working_set_bytes": 197595136,
+    "stderr": "",
+    "name": "cjk-rotate-10"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.8193298000260256,
+    "peak_working_set_bytes": 166014976,
+    "stderr": "",
+    "name": "cjk-rotate-90"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.8199633000185713,
+    "peak_working_set_bytes": 165699584,
+    "stderr": "",
+    "name": "cjk-rotate-180"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 1.0163211000035517,
+    "peak_working_set_bytes": 165572608,
+    "stderr": "",
+    "name": "cjk-rotate-270"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.8431247999542393,
+    "peak_working_set_bytes": 165879808,
+    "stderr": "",
+    "name": "cyrillic-36"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7976768999942578,
+    "peak_working_set_bytes": 165920768,
+    "stderr": "",
+    "name": "arabic-36"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.904302800016012,
+    "peak_working_set_bytes": 165859328,
+    "stderr": "",
+    "name": "devanagari-36"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 1.0735237000044435,
+    "peak_working_set_bytes": 165941248,
+    "stderr": "",
+    "name": "hebrew-36"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 1.391770699992776,
+    "peak_working_set_bytes": 165789696,
+    "stderr": "",
+    "name": "thai-36"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.8226320999674499,
+    "peak_working_set_bytes": 165515264,
+    "stderr": "",
+    "name": "bengali-36"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.802394500002265,
+    "peak_working_set_bytes": 165974016,
+    "stderr": "",
+    "name": "greek-36"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.9850092999986373,
+    "peak_working_set_bytes": 140763136,
+    "stderr": "",
+    "name": "blank"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 1.0311112999916077,
+    "peak_working_set_bytes": 120016896,
+    "stderr": "ERROR: can't read image: F:\\pythonx\\myocr\\win11-oneocr\\work\\oneocr-portable\\corpus\\͸��·��-emoji-??.png\r\n",
+    "name": "透明路径-emoji-😀"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 1.1277918000123464,
+    "peak_working_set_bytes": 181104640,
+    "stderr": "",
+    "name": "multi-column"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.8852140000090003,
+    "peak_working_set_bytes": 168570880,
+    "stderr": "",
+    "name": "vertical-cjk"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "version": "1.23.2",
+  "commit": "a83fc4d58cb48eb68890dd689f94f28288cf2278",
+  "cxx_flags": "-ffp-contract=off",
+  "compiler": "c++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+  "platform": "Linux x86_64",
+  "library": "work/ort-linux-install/lib/libonnxruntime.so.1.23.2",
+  "library_sha256": "49c78b3bb1c401e77fbdbb6460bb55a3c610413770f17c977fdf4e86af054f75",
+  "source_adjustment": "semver.h explicit cstdint include for GCC 15",
+  "adjusted_header_sha256": "5e4467c8c9401ae5a6eecd745e223b30fcb5477a41882ddd1a8b48c220e4a33b",
+  "detector_intermediate_tensors_byte_exact": 96,
+  "build_logs": [
+    "evidence/phase2-linux-ort-persistent.log",
+    "evidence/phase2-linux-ort-all-targets.log",
+    "evidence/phase2-linux-ort-install-complete.log"
+  ]
+}

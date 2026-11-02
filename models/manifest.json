@@ -1,0 +1,3276 @@
+{
+  "schema_version": 1,
+  "source_assets": {
+    "oneocr.onemodel": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1"
+  },
+  "preparation": "static container extraction; no Microsoft DLL loaded",
+  "models": [
+    {
+      "file": "detector/text_detector.onnx",
+      "sha256": "c242d98c8ef41a8f5f623801bf6dd24969076de33cd24f72b57b9dcb7e9527c3",
+      "size": 11553663,
+      "role": "detector",
+      "source_resource": "Detector\\Universal\\ONNX\\b512-SyncBN-x4_rpn_batch_quant_if.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            "n",
+            3,
+            "h",
+            "w"
+          ]
+        },
+        {
+          "name": "im_info",
+          "dtype": 1,
+          "shape": [
+            "n",
+            3
+          ]
+        },
+        {
+          "name": "featuremap_cond",
+          "dtype": 9,
+          "shape": [
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "scores_hori_fpn2",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "bbox_deltas_hori_fpn2",
+          "dtype": 1,
+          "shape": [
+            "",
+            8,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "scores_vert_fpn2",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "bbox_deltas_vert_fpn2",
+          "dtype": 1,
+          "shape": [
+            "",
+            8,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "link_scores_hori_fpn2",
+          "dtype": 1,
+          "shape": [
+            "",
+            8,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "link_scores_vert_fpn2",
+          "dtype": 1,
+          "shape": [
+            "",
+            8,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "scores_hori_fpn3",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "bbox_deltas_hori_fpn3",
+          "dtype": 1,
+          "shape": [
+            "",
+            8,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "scores_vert_fpn3",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "bbox_deltas_vert_fpn3",
+          "dtype": 1,
+          "shape": [
+            "",
+            8,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "link_scores_hori_fpn3",
+          "dtype": 1,
+          "shape": [
+            "",
+            8,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "link_scores_vert_fpn3",
+          "dtype": 1,
+          "shape": [
+            "",
+            8,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "scores_hori_fpn4",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "bbox_deltas_hori_fpn4",
+          "dtype": 1,
+          "shape": [
+            "",
+            8,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "scores_vert_fpn4",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "bbox_deltas_vert_fpn4",
+          "dtype": 1,
+          "shape": [
+            "",
+            8,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "link_scores_hori_fpn4",
+          "dtype": 1,
+          "shape": [
+            "",
+            8,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "link_scores_vert_fpn4",
+          "dtype": 1,
+          "shape": [
+            "",
+            8,
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "feature_p2",
+          "dtype": 1,
+          "shape": [
+            "",
+            64,
+            "",
+            ""
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1,
+        "com.microsoft": 1,
+        "com.microsoft.mlfeaturizers": 1,
+        "com.microsoft.nchwc": 1,
+        "ai.onnx.training": 1,
+        "ai.onnx.preview.training": 1,
+        "com.microsoft.experimental": 1,
+        "ai.onnx.ml": 2
+      },
+      "operators": [
+        "::DequantizeLinear",
+        "::Div",
+        "::If",
+        "::MaxPool",
+        "::QLinearConv",
+        "::QuantizeLinear",
+        "::Resize",
+        "::Sub",
+        "com.microsoft::QLinearAdd",
+        "com.microsoft::QLinearSigmoid"
+      ]
+    },
+    {
+      "file": "classifier/script_classifier.onnx",
+      "sha256": "c7ed7237e6d3aa920f094c7c843dcc1d62e485f62f359847a8ed16d5933c9cf5",
+      "size": 3456873,
+      "role": "classifier",
+      "source_resource": "AuxMltCls\\ONNX\\checkpoint.040.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            3,
+            60,
+            ""
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "script_id_perframe_predict",
+          "dtype": 1,
+          "shape": [
+            "",
+            "",
+            10
+          ]
+        },
+        {
+          "name": "hwpc_perframe_predict",
+          "dtype": 1,
+          "shape": [
+            "",
+            "",
+            2
+          ]
+        },
+        {
+          "name": "flip_perframe_predict",
+          "dtype": 1,
+          "shape": [
+            "",
+            "",
+            2
+          ]
+        },
+        {
+          "name": "script_id_score",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            10
+          ]
+        },
+        {
+          "name": "hwpc_score",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            1
+          ]
+        },
+        {
+          "name": "flip_score",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            1
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13
+      },
+      "operators": [
+        "::Add",
+        "::Concat",
+        "::Conv",
+        "::Expand",
+        "::Identity",
+        "::MatMul",
+        "::MaxPool",
+        "::ReduceMean",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Split",
+        "::Sub",
+        "::Transpose"
+      ]
+    },
+    {
+      "file": "recognizers/recognizer_arabic.onnx",
+      "sha256": "34d9e1b38368332ea7266a510555302fc7707610de16c11e1d3b0c8eaa705e08",
+      "size": 3474686,
+      "role": "recognizer",
+      "source_resource": "Character\\ArabicMixed\\ONNX\\checkpoint.075_quant.onnx",
+      "vocab_size": 221,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            3,
+            60,
+            "width"
+          ]
+        },
+        {
+          "name": "seq_lengths",
+          "dtype": 6,
+          "shape": [
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            221
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "ai.onnx.ml": 2,
+        "ai.onnx.training": 1,
+        "ai.onnx.preview.training": 1,
+        "com.microsoft": 1,
+        "com.microsoft.experimental": 1,
+        "com.microsoft.nchwc": 1,
+        "com.microsoft.mlfeaturizers": 1
+      },
+      "operators": [
+        "::Conv",
+        "::LogSoftmax",
+        "::MaxPool",
+        "::QuantizeLinear",
+        "::Relu",
+        "::Reshape",
+        "::Transpose",
+        "com.microsoft::DynamicQuantizeLSTM",
+        "com.microsoft::MatMulIntegerToFloat"
+      ]
+    },
+    {
+      "file": "recognizers/recognizer_cjk.onnx",
+      "sha256": "fdbdebd3f600340649822a817cf9bf3d2acebaab67c08b784458cd0eb3236f05",
+      "size": 13433511,
+      "role": "recognizer",
+      "source_resource": "Character\\CJKPrinted\\ONNX\\checkpoint.075_quant.onnx",
+      "vocab_size": 32632,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            3,
+            60,
+            "width"
+          ]
+        },
+        {
+          "name": "seq_lengths",
+          "dtype": 6,
+          "shape": [
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            32632
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "ai.onnx.ml": 2,
+        "ai.onnx.training": 1,
+        "ai.onnx.preview.training": 1,
+        "com.microsoft": 1,
+        "com.microsoft.experimental": 1,
+        "com.microsoft.nchwc": 1,
+        "com.microsoft.mlfeaturizers": 1
+      },
+      "operators": [
+        "::Conv",
+        "::LogSoftmax",
+        "::MaxPool",
+        "::QuantizeLinear",
+        "::Relu",
+        "::Reshape",
+        "::Transpose",
+        "com.microsoft::DynamicQuantizeLSTM",
+        "com.microsoft::MatMulIntegerToFloat"
+      ]
+    },
+    {
+      "file": "recognizers/recognizer_cyrillic.onnx",
+      "sha256": "d95e2ad42ea71bb269bd15754e8cc5a2f0a72c3e634fb9874174a7f42d6aebf0",
+      "size": 6579127,
+      "role": "recognizer",
+      "source_resource": "Character\\CyrillicMixed\\ONNX\\checkpoint.075_quant.onnx",
+      "vocab_size": 415,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            3,
+            60,
+            "width"
+          ]
+        },
+        {
+          "name": "seq_lengths",
+          "dtype": 6,
+          "shape": [
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            415
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "ai.onnx.ml": 2,
+        "ai.onnx.training": 1,
+        "ai.onnx.preview.training": 1,
+        "com.microsoft": 1,
+        "com.microsoft.experimental": 1,
+        "com.microsoft.nchwc": 1,
+        "com.microsoft.mlfeaturizers": 1
+      },
+      "operators": [
+        "::Conv",
+        "::LogSoftmax",
+        "::MaxPool",
+        "::QuantizeLinear",
+        "::Relu",
+        "::Reshape",
+        "::Transpose",
+        "com.microsoft::DynamicQuantizeLSTM",
+        "com.microsoft::MatMulIntegerToFloat"
+      ]
+    },
+    {
+      "file": "recognizers/recognizer_devanagari.onnx",
+      "sha256": "ccca63cccf14110a5d06b2d524c3dd4ea0a950c2535898ced838e7f36b73b36e",
+      "size": 3726743,
+      "role": "recognizer",
+      "source_resource": "Character\\DevanagariMixed\\ONNX\\checkpoint.075_quant.onnx",
+      "vocab_size": 237,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            3,
+            60,
+            "width"
+          ]
+        },
+        {
+          "name": "seq_lengths",
+          "dtype": 6,
+          "shape": [
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            237
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "ai.onnx.ml": 2,
+        "ai.onnx.training": 1,
+        "ai.onnx.preview.training": 1,
+        "com.microsoft": 1,
+        "com.microsoft.experimental": 1,
+        "com.microsoft.nchwc": 1,
+        "com.microsoft.mlfeaturizers": 1
+      },
+      "operators": [
+        "::Conv",
+        "::LogSoftmax",
+        "::MaxPool",
+        "::QuantizeLinear",
+        "::Relu",
+        "::Reshape",
+        "::Transpose",
+        "com.microsoft::DynamicQuantizeLSTM",
+        "com.microsoft::MatMulIntegerToFloat"
+      ]
+    },
+    {
+      "file": "recognizers/recognizer_greek.onnx",
+      "sha256": "4a279c5b50dfa28019ee089515612df66aecb96c1c9cb03218b26d0d0835b848",
+      "size": 3730390,
+      "role": "recognizer",
+      "source_resource": "Character\\GreekMixed\\ONNX\\checkpoint.075_quant.onnx",
+      "vocab_size": 244,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            3,
+            60,
+            "width"
+          ]
+        },
+        {
+          "name": "seq_lengths",
+          "dtype": 6,
+          "shape": [
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            244
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "ai.onnx.ml": 2,
+        "ai.onnx.training": 1,
+        "ai.onnx.preview.training": 1,
+        "com.microsoft": 1,
+        "com.microsoft.experimental": 1,
+        "com.microsoft.nchwc": 1,
+        "com.microsoft.mlfeaturizers": 1
+      },
+      "operators": [
+        "::Conv",
+        "::LogSoftmax",
+        "::MaxPool",
+        "::QuantizeLinear",
+        "::Relu",
+        "::Reshape",
+        "::Transpose",
+        "com.microsoft::DynamicQuantizeLSTM",
+        "com.microsoft::MatMulIntegerToFloat"
+      ]
+    },
+    {
+      "file": "recognizers/recognizer_hebrew.onnx",
+      "sha256": "d5f49fbcf5566904906702a22ae10d0446ae102acd9d6c37b82085842476ece4",
+      "size": 1737542,
+      "role": "recognizer",
+      "source_resource": "Character\\HebrewPrinted\\ONNX\\checkpoint.075_quant.onnx",
+      "vocab_size": 201,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            3,
+            60,
+            "width"
+          ]
+        },
+        {
+          "name": "seq_lengths",
+          "dtype": 6,
+          "shape": [
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            201
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "ai.onnx.ml": 2,
+        "ai.onnx.training": 1,
+        "ai.onnx.preview.training": 1,
+        "com.microsoft": 1,
+        "com.microsoft.experimental": 1,
+        "com.microsoft.nchwc": 1,
+        "com.microsoft.mlfeaturizers": 1
+      },
+      "operators": [
+        "::Conv",
+        "::LogSoftmax",
+        "::MaxPool",
+        "::QuantizeLinear",
+        "::Relu",
+        "::Reshape",
+        "::Transpose",
+        "com.microsoft::DynamicQuantizeLSTM",
+        "com.microsoft::MatMulIntegerToFloat"
+      ]
+    },
+    {
+      "file": "recognizers/recognizer_latin.onnx",
+      "sha256": "4e79a3e71ce0b8385028f9053f9948bd10c2ea51bd77221e43af08bb2f18989f",
+      "size": 2073217,
+      "role": "recognizer",
+      "source_resource": "Character\\LatinPrintedV2\\ONNX\\checkpoint.075_quant.onnx",
+      "vocab_size": 548,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            3,
+            60,
+            "width"
+          ]
+        },
+        {
+          "name": "seq_lengths",
+          "dtype": 6,
+          "shape": [
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            548
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "ai.onnx.ml": 2,
+        "ai.onnx.training": 1,
+        "ai.onnx.preview.training": 1,
+        "com.microsoft": 1,
+        "com.microsoft.experimental": 1,
+        "com.microsoft.nchwc": 1,
+        "com.microsoft.mlfeaturizers": 1
+      },
+      "operators": [
+        "::Conv",
+        "::LogSoftmax",
+        "::MaxPool",
+        "::QuantizeLinear",
+        "::Relu",
+        "::Reshape",
+        "::Transpose",
+        "com.microsoft::DynamicQuantizeLSTM",
+        "com.microsoft::MatMulIntegerToFloat"
+      ]
+    },
+    {
+      "file": "recognizers/recognizer_tamil.onnx",
+      "sha256": "e88fa0e78d8c346f7ca6a3ba9ec24eafd06801aabe640c9a10c9fe32158f0844",
+      "size": 1975431,
+      "role": "recognizer",
+      "source_resource": "Character\\TamilPrinted\\ONNX\\checkpoint.075_quant.onnx",
+      "vocab_size": 179,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            3,
+            60,
+            "width"
+          ]
+        },
+        {
+          "name": "seq_lengths",
+          "dtype": 6,
+          "shape": [
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            179
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "ai.onnx.ml": 2,
+        "ai.onnx.training": 1,
+        "ai.onnx.preview.training": 1,
+        "com.microsoft": 1,
+        "com.microsoft.experimental": 1,
+        "com.microsoft.nchwc": 1,
+        "com.microsoft.mlfeaturizers": 1
+      },
+      "operators": [
+        "::Conv",
+        "::LogSoftmax",
+        "::MaxPool",
+        "::QuantizeLinear",
+        "::Relu",
+        "::Reshape",
+        "::Transpose",
+        "com.microsoft::DynamicQuantizeLSTM",
+        "com.microsoft::MatMulIntegerToFloat"
+      ]
+    },
+    {
+      "file": "recognizers/recognizer_thai.onnx",
+      "sha256": "11acded0952bfe60cc31aba6cd9a51c8b96dc9facf679b7a73c3d308dd4ec7de",
+      "size": 3706944,
+      "role": "recognizer",
+      "source_resource": "Character\\ThaiMixed\\ONNX\\checkpoint.075_quant.onnx",
+      "vocab_size": 199,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            3,
+            60,
+            "width"
+          ]
+        },
+        {
+          "name": "seq_lengths",
+          "dtype": 6,
+          "shape": [
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            199
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "ai.onnx.ml": 2,
+        "ai.onnx.training": 1,
+        "ai.onnx.preview.training": 1,
+        "com.microsoft": 1,
+        "com.microsoft.experimental": 1,
+        "com.microsoft.nchwc": 1,
+        "com.microsoft.mlfeaturizers": 1
+      },
+      "operators": [
+        "::Conv",
+        "::LogSoftmax",
+        "::MaxPool",
+        "::QuantizeLinear",
+        "::Relu",
+        "::Reshape",
+        "::Transpose",
+        "com.microsoft::DynamicQuantizeLSTM",
+        "com.microsoft::MatMulIntegerToFloat"
+      ]
+    },
+    {
+      "file": "auxiliary/a984730f53a863c6e1373d23a2cf38bc47c9e9dba1f5b043d108ceceea9c32a6.onnx",
+      "sha256": "a984730f53a863c6e1373d23a2cf38bc47c9e9dba1f5b043d108ceceea9c32a6",
+      "size": 27248,
+      "role": "rejection",
+      "source_resource": "Rejection\\ArabicMixedDummy\\ONNX\\rejection_model_2023_11_07_17_52_40.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            1,
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Add",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Slice",
+        "::Softmax",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/b3d95f7cd7a9279472b56af1695faf99ba1757f8512b4d87131b51b6f8e7bc95.onnx",
+      "sha256": "b3d95f7cd7a9279472b56af1695faf99ba1757f8512b4d87131b51b6f8e7bc95",
+      "size": 27248,
+      "role": "rejection",
+      "source_resource": "Rejection\\CJKMixedDummy\\ONNX\\rejection_model_2023_09_01_14_00_33.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            1,
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Add",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Slice",
+        "::Softmax",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/1cc5440a95085227dbd32bea8e9cd8745c6942920066489f20a3a0d0ddcdf8f0.onnx",
+      "sha256": "1cc5440a95085227dbd32bea8e9cd8745c6942920066489f20a3a0d0ddcdf8f0",
+      "size": 27248,
+      "role": "rejection",
+      "source_resource": "Rejection\\CJKPrintedDummy\\ONNX\\rejection_model_2023_10_13_22_18_19.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            1,
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Add",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Slice",
+        "::Softmax",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/b07947558c78c350ebdabd5338dd9d5aadb5f7d89fb9de87595b60d585b1135a.onnx",
+      "sha256": "b07947558c78c350ebdabd5338dd9d5aadb5f7d89fb9de87595b60d585b1135a",
+      "size": 27248,
+      "role": "rejection",
+      "source_resource": "Rejection\\CyrillicMixedDummy\\ONNX\\rejection_model_2023_12_20_08_37_34.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            1,
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Add",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Slice",
+        "::Softmax",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/33e007562e48fd91329a15bd3194929b8103789cab9c4849288c81dd8bd2fb17.onnx",
+      "sha256": "33e007562e48fd91329a15bd3194929b8103789cab9c4849288c81dd8bd2fb17",
+      "size": 27248,
+      "role": "rejection",
+      "source_resource": "Rejection\\DevanagariMixedDummy\\ONNX\\rejection_model_2023_11_09_11_20_46.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            1,
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Add",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Slice",
+        "::Softmax",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/4579fe1fedceb79545cfdcee7ad240ce5c4dd52c1caf056a2134fd796e495c08.onnx",
+      "sha256": "4579fe1fedceb79545cfdcee7ad240ce5c4dd52c1caf056a2134fd796e495c08",
+      "size": 27248,
+      "role": "rejection",
+      "source_resource": "Rejection\\GreekMixedDummy\\ONNX\\rejection_model_2023_10_17_00_59_30.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            1,
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Add",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Slice",
+        "::Softmax",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/67638266acf04dc7838befd6a610e103dceb679dacde925c7bb87422a61728f2.onnx",
+      "sha256": "67638266acf04dc7838befd6a610e103dceb679dacde925c7bb87422a61728f2",
+      "size": 27248,
+      "role": "rejection",
+      "source_resource": "Rejection\\HebrewPrintedDummy\\ONNX\\rejection_model_2023_09_19_13_43_18.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            1,
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Add",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Slice",
+        "::Softmax",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/8a7b13bbc4bc87b1b095c2510e9fadc4ec57af96ae4049473c1c2b9deaeea22b.onnx",
+      "sha256": "8a7b13bbc4bc87b1b095c2510e9fadc4ec57af96ae4049473c1c2b9deaeea22b",
+      "size": 27248,
+      "role": "rejection",
+      "source_resource": "Rejection\\LatinMixedV2Dummy\\ONNX\\rejection_model_2024_05_22_15_26_18.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            1,
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Add",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Slice",
+        "::Softmax",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/92952d075a5ab53639e0413c7e99baee6b701eac02e5d3676ac5d7107bdd303a.onnx",
+      "sha256": "92952d075a5ab53639e0413c7e99baee6b701eac02e5d3676ac5d7107bdd303a",
+      "size": 27248,
+      "role": "rejection",
+      "source_resource": "Rejection\\LatinPrintedV2Dummy\\ONNX\\rejection_model_2024_09_15_08_20_06.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            1,
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Add",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Slice",
+        "::Softmax",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/359a347ac03397c3779e91c9290e60d7b02f979bd0278e1c145aa51d2bd37933.onnx",
+      "sha256": "359a347ac03397c3779e91c9290e60d7b02f979bd0278e1c145aa51d2bd37933",
+      "size": 27248,
+      "role": "rejection",
+      "source_resource": "Rejection\\TamilPrintedDummy\\ONNX\\rejection_model_2023_09_23_03_16_05.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            1,
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Add",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Slice",
+        "::Softmax",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/c27a07e870c27fa8f57ba00c8b215a762c86bf90bb5e1ffa061727893548cdbb.onnx",
+      "sha256": "c27a07e870c27fa8f57ba00c8b215a762c86bf90bb5e1ffa061727893548cdbb",
+      "size": 27248,
+      "role": "rejection",
+      "source_resource": "Rejection\\ThaiMixedDummy\\ONNX\\rejection_model_2023_12_20_02_48_57.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            1,
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Add",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Slice",
+        "::Softmax",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/032d40c7aa17364504a07cde2c061ee1080abde36bc94a807d086334a49c947a.onnx",
+      "sha256": "032d40c7aa17364504a07cde2c061ee1080abde36bc94a807d086334a49c947a",
+      "size": 29370,
+      "role": "confidence",
+      "source_resource": "Confidence\\ArabicMixedDummy\\confidence_model_calibrated_2023_11_08_01_38_34.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Abs",
+        "::Add",
+        "::Cast",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Mul",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Softmax",
+        "::Squeeze",
+        "::Sub",
+        "::TopK",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/7887683eb094b3df2aa701b9f5fbcf8f3869aca479f19eb4c9b4aa9b8e24d71d.onnx",
+      "sha256": "7887683eb094b3df2aa701b9f5fbcf8f3869aca479f19eb4c9b4aa9b8e24d71d",
+      "size": 29370,
+      "role": "confidence",
+      "source_resource": "Confidence\\CJKMixedDummy\\confidence_model_calibrated_2023_09_03_02_20_39.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Abs",
+        "::Add",
+        "::Cast",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Mul",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Softmax",
+        "::Squeeze",
+        "::Sub",
+        "::TopK",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/eb8dc24dbb949eb6d483fddca77b1387e98a05d59c025418dde50addaa21d039.onnx",
+      "sha256": "eb8dc24dbb949eb6d483fddca77b1387e98a05d59c025418dde50addaa21d039",
+      "size": 29370,
+      "role": "confidence",
+      "source_resource": "Confidence\\CJKPrintedDummy\\confidence_model_calibrated_2023_10_14_08_04_58.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Abs",
+        "::Add",
+        "::Cast",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Mul",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Softmax",
+        "::Squeeze",
+        "::Sub",
+        "::TopK",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/d1034fd16b872ec6227a65fb0dbcdf4ffae9f763be3814c849902f43eee4c65b.onnx",
+      "sha256": "d1034fd16b872ec6227a65fb0dbcdf4ffae9f763be3814c849902f43eee4c65b",
+      "size": 29370,
+      "role": "confidence",
+      "source_resource": "Confidence\\CyrillicMixedDummy\\confidence_model_calibrated_2023_12_20_16_40_47.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Abs",
+        "::Add",
+        "::Cast",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Mul",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Softmax",
+        "::Squeeze",
+        "::Sub",
+        "::TopK",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/504b89966924e31b52762149398c438c8bf3208305043a218ee378c163da0ad9.onnx",
+      "sha256": "504b89966924e31b52762149398c438c8bf3208305043a218ee378c163da0ad9",
+      "size": 29370,
+      "role": "confidence",
+      "source_resource": "Confidence\\DevanagariMixedDummy\\confidence_model_calibrated_2023_11_09_19_08_44.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Abs",
+        "::Add",
+        "::Cast",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Mul",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Softmax",
+        "::Squeeze",
+        "::Sub",
+        "::TopK",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/9fbfec65247f0872ebaa6454f5e5b9ebacfe23c1c1966a026e57b25e02682973.onnx",
+      "sha256": "9fbfec65247f0872ebaa6454f5e5b9ebacfe23c1c1966a026e57b25e02682973",
+      "size": 29370,
+      "role": "confidence",
+      "source_resource": "Confidence\\GreekMixedDummy\\confidence_model_calibrated_2023_10_17_08_51_21.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Abs",
+        "::Add",
+        "::Cast",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Mul",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Softmax",
+        "::Squeeze",
+        "::Sub",
+        "::TopK",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/e9ccab44d59a1e395cab36fa5efa97e714f6c04e29c21abee9f8dbc958536f41.onnx",
+      "sha256": "e9ccab44d59a1e395cab36fa5efa97e714f6c04e29c21abee9f8dbc958536f41",
+      "size": 29370,
+      "role": "confidence",
+      "source_resource": "Confidence\\HebrewPrintedDummy\\confidence_model_calibrated_2023_09_19_21_37_42.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Abs",
+        "::Add",
+        "::Cast",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Mul",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Softmax",
+        "::Squeeze",
+        "::Sub",
+        "::TopK",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/33740bb3ab0cf328965e7b0cbe2339fb69bf3dbe1f7128ea2546309a3b3e4bda.onnx",
+      "sha256": "33740bb3ab0cf328965e7b0cbe2339fb69bf3dbe1f7128ea2546309a3b3e4bda",
+      "size": 29370,
+      "role": "confidence",
+      "source_resource": "Confidence\\LatinMixedV2Dummy\\confidence_model_calibrated_2024_05_22_21_36_00.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Abs",
+        "::Add",
+        "::Cast",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Mul",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Softmax",
+        "::Squeeze",
+        "::Sub",
+        "::TopK",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/a8a540fa983a6cfdbd114a7a0647928984e9decc6893d25df2e0e02df9731394.onnx",
+      "sha256": "a8a540fa983a6cfdbd114a7a0647928984e9decc6893d25df2e0e02df9731394",
+      "size": 29370,
+      "role": "confidence",
+      "source_resource": "Confidence\\LatinPrintedV2Dummy\\confidence_model_calibrated_2024_09_15_16_34_38.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Abs",
+        "::Add",
+        "::Cast",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Mul",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Softmax",
+        "::Squeeze",
+        "::Sub",
+        "::TopK",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/059f63960782c0107655ac4e8ef9d8c68e31e5779a1b1884857856043719a0ef.onnx",
+      "sha256": "059f63960782c0107655ac4e8ef9d8c68e31e5779a1b1884857856043719a0ef",
+      "size": 29370,
+      "role": "confidence",
+      "source_resource": "Confidence\\TamilPrintedDummy\\confidence_model_calibrated_2023_09_23_11_04_27.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Abs",
+        "::Add",
+        "::Cast",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Mul",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Softmax",
+        "::Squeeze",
+        "::Sub",
+        "::TopK",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "auxiliary/6994639d1f9fc149df22a220f7f3c6c63ed3289546ee3ee046ef1235186d1eb4.onnx",
+      "sha256": "6994639d1f9fc149df22a220f7f3c6c63ed3289546ee3ee046ef1235186d1eb4",
+      "size": 29370,
+      "role": "confidence",
+      "source_resource": "Confidence\\ThaiMixedDummy\\confidence_model_calibrated_2023_12_20_11_14_35.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            21,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax",
+          "dtype": 1,
+          "shape": [
+            2
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Abs",
+        "::Add",
+        "::Cast",
+        "::Concat",
+        "::Constant",
+        "::Div",
+        "::Gather",
+        "::Gemm",
+        "::Mul",
+        "::Relu",
+        "::Reshape",
+        "::Shape",
+        "::Softmax",
+        "::Squeeze",
+        "::Sub",
+        "::TopK",
+        "::Unsqueeze",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    },
+    {
+      "file": "layout/line_layout.onnx",
+      "sha256": "3fa89852fee4f3061e17ab40e85708639c4bc3aea3c8735dc2068098be9f5dd7",
+      "size": 878394,
+      "role": "layout",
+      "source_resource": "LineLayout\\CJK\\ONNX\\checkpoint.040.onnx",
+      "vocab_size": null,
+      "inputs": [
+        {
+          "name": "data",
+          "dtype": 1,
+          "shape": [
+            1,
+            3,
+            60,
+            ""
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "line_layout_perframe_predict",
+          "dtype": 1,
+          "shape": [
+            "",
+            "",
+            2
+          ]
+        },
+        {
+          "name": "line_layout_score",
+          "dtype": 1,
+          "shape": [
+            "",
+            1,
+            1
+          ]
+        }
+      ],
+      "opsets": {
+        "": 13,
+        "com.microsoft.oneocr": 1
+      },
+      "operators": [
+        "::Add",
+        "::Conv",
+        "::Identity",
+        "::MatMul",
+        "::MaxPool",
+        "::ReduceMean",
+        "::Relu",
+        "::Reshape",
+        "::Split",
+        "::Sub",
+        "::Transpose",
+        "com.microsoft.oneocr::OneOCRFeatureExtract"
+      ]
+    }
+  ],
+  "vocabularies": [
+    {
+      "file": "vocab/vocab_arabic.json",
+      "sha256": "95a9267e21512cd0f0a1b32218a552dafddd64a454682319b0fcade57691e38e",
+      "entries": 221,
+      "source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+      "source_resource": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\ArabicMixed\\char2ind.txt",
+      "dictionary_sha256": "42d70ba893469bd58387d25403fbde6ca860ded529d77c20a1187c6b1482ced5",
+      "empty_indices": [
+        220
+      ],
+      "method": "complete original char2ind.txt plus composite_chars_map; preserves special token metadata"
+    },
+    {
+      "file": "vocab/vocab_cjk.json",
+      "sha256": "993e775be93aae112f2af670f373e34b7cb57e5accea706f05898cfd2b51aea8",
+      "entries": 32632,
+      "source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+      "source_resource": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\CJKPrinted\\char2ind.txt",
+      "dictionary_sha256": "5b6f6e3420105aa964d5b638501652bb5243c77928a4a950b03c9005a7de0768",
+      "empty_indices": [
+        32631
+      ],
+      "method": "complete original char2ind.txt plus composite_chars_map; preserves special token metadata"
+    },
+    {
+      "file": "vocab/vocab_cyrillic.json",
+      "sha256": "08f1a44cbe31ebee5f63c7d0b14e0a0a243725be6d98adb09e13d72642472da2",
+      "entries": 415,
+      "source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+      "source_resource": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\CyrillicMixed\\char2ind.txt",
+      "dictionary_sha256": "06a6ebed386801802802a15c49cfdd480877380131e525efce0ddedcaa748552",
+      "empty_indices": [
+        414
+      ],
+      "method": "complete original char2ind.txt plus composite_chars_map; preserves special token metadata"
+    },
+    {
+      "file": "vocab/vocab_devanagari.json",
+      "sha256": "66d6c88247a40171ffaf2fe0c6dc8cba24e907c694abfb16bf0f76f03d981e98",
+      "entries": 237,
+      "source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+      "source_resource": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\DevanagariMixed\\char2ind.txt",
+      "dictionary_sha256": "3100670486be41ad032c002fc274cb5ea0b9e53e5e2514580c2d28ec1561312b",
+      "empty_indices": [
+        236
+      ],
+      "method": "complete original char2ind.txt plus composite_chars_map; preserves special token metadata"
+    },
+    {
+      "file": "vocab/vocab_greek.json",
+      "sha256": "fc2bae03822956f490eab8e6d3f81f182f1c8ae9b601552026f6d5eab10b6fec",
+      "entries": 244,
+      "source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+      "source_resource": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\GreekMixed\\char2ind.txt",
+      "dictionary_sha256": "75ab97960eb7b56ba4e392cc4780c6c72d54d6e96f566cdc8182ce04f7a17b25",
+      "empty_indices": [
+        243
+      ],
+      "method": "complete original char2ind.txt plus composite_chars_map; preserves special token metadata"
+    },
+    {
+      "file": "vocab/vocab_hebrew.json",
+      "sha256": "cf4239d30de1ab79840b5244fa787b6928cb4e7d775b3df79e2e1f35e2a48708",
+      "entries": 201,
+      "source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+      "source_resource": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\HebrewPrinted\\char2ind.txt",
+      "dictionary_sha256": "17ff6c00b06c3b2b6f93fac019cb021a7ffe8938d16d13a831c0dfb9374cdabe",
+      "empty_indices": [
+        200
+      ],
+      "method": "complete original char2ind.txt plus composite_chars_map; preserves special token metadata"
+    },
+    {
+      "file": "vocab/vocab_latin.json",
+      "sha256": "db155fa47657d83ab4a7bcc4ef3f303fd7bbf636de1a9691ea3d7ea5691f64ca",
+      "entries": 548,
+      "source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+      "source_resource": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\LatinPrintedV2\\char2ind.txt",
+      "dictionary_sha256": "1e770e8c8452f7fa26bf82029f356e6a6caeec2ccc378855825d177c10d25fa8",
+      "empty_indices": [
+        547
+      ],
+      "method": "complete original char2ind.txt plus composite_chars_map; preserves special token metadata"
+    },
+    {
+      "file": "vocab/vocab_tamil.json",
+      "sha256": "53c08b7dc40f65ba0d37725dbd6a497230e8bda7b49f54a9b2925c649b7e82ef",
+      "entries": 179,
+      "source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+      "source_resource": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\TamilPrinted\\char2ind.txt",
+      "dictionary_sha256": "a007131e089f83d8965b26a510da515dd6a427795c39102f9419e59d1c66f1bc",
+      "empty_indices": [
+        178
+      ],
+      "method": "complete original char2ind.txt plus composite_chars_map; preserves special token metadata"
+    },
+    {
+      "file": "vocab/vocab_thai.json",
+      "sha256": "eefd7ec9ae686ff7228291af4288e84eab1e71966c9c9fd2960e11bbe7aa859f",
+      "entries": 199,
+      "source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+      "source_resource": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\ThaiMixed\\char2ind.txt",
+      "dictionary_sha256": "45074a7f091ccea0ea420e54f46d54d814a32bfaeeae6b2fd4582f2c34df231c",
+      "empty_indices": [
+        198
+      ],
+      "method": "complete original char2ind.txt plus composite_chars_map; preserves special token metadata"
+    }
+  ],
+  "resources": [
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Detector\\Universal\\ONNX\\b512-SyncBN-x4_rpn_batch_quant_if.onnx",
+      "file": "resources/0000-c242d98c8ef41a8f5f623801bf6dd24969076de33cd24f72b57b9dcb7e9527c3.bin",
+      "size": 11553663,
+      "sha256": "c242d98c8ef41a8f5f623801bf6dd24969076de33cd24f72b57b9dcb7e9527c3"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\AuxMltCls\\ONNX\\checkpoint.040.onnx",
+      "file": "resources/0001-c7ed7237e6d3aa920f094c7c843dcc1d62e485f62f359847a8ed16d5933c9cf5.bin",
+      "size": 3456873,
+      "sha256": "c7ed7237e6d3aa920f094c7c843dcc1d62e485f62f359847a8ed16d5933c9cf5"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\ArabicMixed\\ONNX\\checkpoint.075_quant.onnx",
+      "file": "resources/0002-34d9e1b38368332ea7266a510555302fc7707610de16c11e1d3b0c8eaa705e08.bin",
+      "size": 3474686,
+      "sha256": "34d9e1b38368332ea7266a510555302fc7707610de16c11e1d3b0c8eaa705e08"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\CJKPrinted\\ONNX\\checkpoint.075_quant.onnx",
+      "file": "resources/0003-fdbdebd3f600340649822a817cf9bf3d2acebaab67c08b784458cd0eb3236f05.bin",
+      "size": 13433511,
+      "sha256": "fdbdebd3f600340649822a817cf9bf3d2acebaab67c08b784458cd0eb3236f05"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\CyrillicMixed\\ONNX\\checkpoint.075_quant.onnx",
+      "file": "resources/0004-d95e2ad42ea71bb269bd15754e8cc5a2f0a72c3e634fb9874174a7f42d6aebf0.bin",
+      "size": 6579127,
+      "sha256": "d95e2ad42ea71bb269bd15754e8cc5a2f0a72c3e634fb9874174a7f42d6aebf0"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\DevanagariMixed\\ONNX\\checkpoint.075_quant.onnx",
+      "file": "resources/0005-ccca63cccf14110a5d06b2d524c3dd4ea0a950c2535898ced838e7f36b73b36e.bin",
+      "size": 3726743,
+      "sha256": "ccca63cccf14110a5d06b2d524c3dd4ea0a950c2535898ced838e7f36b73b36e"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\GreekMixed\\ONNX\\checkpoint.075_quant.onnx",
+      "file": "resources/0006-4a279c5b50dfa28019ee089515612df66aecb96c1c9cb03218b26d0d0835b848.bin",
+      "size": 3730390,
+      "sha256": "4a279c5b50dfa28019ee089515612df66aecb96c1c9cb03218b26d0d0835b848"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\HebrewPrinted\\ONNX\\checkpoint.075_quant.onnx",
+      "file": "resources/0007-d5f49fbcf5566904906702a22ae10d0446ae102acd9d6c37b82085842476ece4.bin",
+      "size": 1737542,
+      "sha256": "d5f49fbcf5566904906702a22ae10d0446ae102acd9d6c37b82085842476ece4"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\LatinPrintedV2\\ONNX\\checkpoint.075_quant.onnx",
+      "file": "resources/0008-4e79a3e71ce0b8385028f9053f9948bd10c2ea51bd77221e43af08bb2f18989f.bin",
+      "size": 2073217,
+      "sha256": "4e79a3e71ce0b8385028f9053f9948bd10c2ea51bd77221e43af08bb2f18989f"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\TamilPrinted\\ONNX\\checkpoint.075_quant.onnx",
+      "file": "resources/0009-e88fa0e78d8c346f7ca6a3ba9ec24eafd06801aabe640c9a10c9fe32158f0844.bin",
+      "size": 1975431,
+      "sha256": "e88fa0e78d8c346f7ca6a3ba9ec24eafd06801aabe640c9a10c9fe32158f0844"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\ThaiMixed\\ONNX\\checkpoint.075_quant.onnx",
+      "file": "resources/0010-11acded0952bfe60cc31aba6cd9a51c8b96dc9facf679b7a73c3d308dd4ec7de.bin",
+      "size": 3706944,
+      "sha256": "11acded0952bfe60cc31aba6cd9a51c8b96dc9facf679b7a73c3d308dd4ec7de"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Rejection\\ArabicMixedDummy\\ONNX\\rejection_model_2023_11_07_17_52_40.onnx",
+      "file": "resources/0011-a984730f53a863c6e1373d23a2cf38bc47c9e9dba1f5b043d108ceceea9c32a6.bin",
+      "size": 27248,
+      "sha256": "a984730f53a863c6e1373d23a2cf38bc47c9e9dba1f5b043d108ceceea9c32a6"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Rejection\\CJKMixedDummy\\ONNX\\rejection_model_2023_09_01_14_00_33.onnx",
+      "file": "resources/0012-b3d95f7cd7a9279472b56af1695faf99ba1757f8512b4d87131b51b6f8e7bc95.bin",
+      "size": 27248,
+      "sha256": "b3d95f7cd7a9279472b56af1695faf99ba1757f8512b4d87131b51b6f8e7bc95"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Rejection\\CJKPrintedDummy\\ONNX\\rejection_model_2023_10_13_22_18_19.onnx",
+      "file": "resources/0013-1cc5440a95085227dbd32bea8e9cd8745c6942920066489f20a3a0d0ddcdf8f0.bin",
+      "size": 27248,
+      "sha256": "1cc5440a95085227dbd32bea8e9cd8745c6942920066489f20a3a0d0ddcdf8f0"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Rejection\\CyrillicMixedDummy\\ONNX\\rejection_model_2023_12_20_08_37_34.onnx",
+      "file": "resources/0014-b07947558c78c350ebdabd5338dd9d5aadb5f7d89fb9de87595b60d585b1135a.bin",
+      "size": 27248,
+      "sha256": "b07947558c78c350ebdabd5338dd9d5aadb5f7d89fb9de87595b60d585b1135a"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Rejection\\DevanagariMixedDummy\\ONNX\\rejection_model_2023_11_09_11_20_46.onnx",
+      "file": "resources/0015-33e007562e48fd91329a15bd3194929b8103789cab9c4849288c81dd8bd2fb17.bin",
+      "size": 27248,
+      "sha256": "33e007562e48fd91329a15bd3194929b8103789cab9c4849288c81dd8bd2fb17"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Rejection\\GreekMixedDummy\\ONNX\\rejection_model_2023_10_17_00_59_30.onnx",
+      "file": "resources/0016-4579fe1fedceb79545cfdcee7ad240ce5c4dd52c1caf056a2134fd796e495c08.bin",
+      "size": 27248,
+      "sha256": "4579fe1fedceb79545cfdcee7ad240ce5c4dd52c1caf056a2134fd796e495c08"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Rejection\\HebrewPrintedDummy\\ONNX\\rejection_model_2023_09_19_13_43_18.onnx",
+      "file": "resources/0017-67638266acf04dc7838befd6a610e103dceb679dacde925c7bb87422a61728f2.bin",
+      "size": 27248,
+      "sha256": "67638266acf04dc7838befd6a610e103dceb679dacde925c7bb87422a61728f2"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Rejection\\LatinMixedV2Dummy\\ONNX\\rejection_model_2024_05_22_15_26_18.onnx",
+      "file": "resources/0018-8a7b13bbc4bc87b1b095c2510e9fadc4ec57af96ae4049473c1c2b9deaeea22b.bin",
+      "size": 27248,
+      "sha256": "8a7b13bbc4bc87b1b095c2510e9fadc4ec57af96ae4049473c1c2b9deaeea22b"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Rejection\\LatinPrintedV2Dummy\\ONNX\\rejection_model_2024_09_15_08_20_06.onnx",
+      "file": "resources/0019-92952d075a5ab53639e0413c7e99baee6b701eac02e5d3676ac5d7107bdd303a.bin",
+      "size": 27248,
+      "sha256": "92952d075a5ab53639e0413c7e99baee6b701eac02e5d3676ac5d7107bdd303a"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Rejection\\TamilPrintedDummy\\ONNX\\rejection_model_2023_09_23_03_16_05.onnx",
+      "file": "resources/0020-359a347ac03397c3779e91c9290e60d7b02f979bd0278e1c145aa51d2bd37933.bin",
+      "size": 27248,
+      "sha256": "359a347ac03397c3779e91c9290e60d7b02f979bd0278e1c145aa51d2bd37933"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Rejection\\ThaiMixedDummy\\ONNX\\rejection_model_2023_12_20_02_48_57.onnx",
+      "file": "resources/0021-c27a07e870c27fa8f57ba00c8b215a762c86bf90bb5e1ffa061727893548cdbb.bin",
+      "size": 27248,
+      "sha256": "c27a07e870c27fa8f57ba00c8b215a762c86bf90bb5e1ffa061727893548cdbb"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Confidence\\ArabicMixedDummy\\confidence_model_calibrated_2023_11_08_01_38_34.onnx",
+      "file": "resources/0022-032d40c7aa17364504a07cde2c061ee1080abde36bc94a807d086334a49c947a.bin",
+      "size": 29370,
+      "sha256": "032d40c7aa17364504a07cde2c061ee1080abde36bc94a807d086334a49c947a"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Confidence\\CJKMixedDummy\\confidence_model_calibrated_2023_09_03_02_20_39.onnx",
+      "file": "resources/0023-7887683eb094b3df2aa701b9f5fbcf8f3869aca479f19eb4c9b4aa9b8e24d71d.bin",
+      "size": 29370,
+      "sha256": "7887683eb094b3df2aa701b9f5fbcf8f3869aca479f19eb4c9b4aa9b8e24d71d"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Confidence\\CJKPrintedDummy\\confidence_model_calibrated_2023_10_14_08_04_58.onnx",
+      "file": "resources/0024-eb8dc24dbb949eb6d483fddca77b1387e98a05d59c025418dde50addaa21d039.bin",
+      "size": 29370,
+      "sha256": "eb8dc24dbb949eb6d483fddca77b1387e98a05d59c025418dde50addaa21d039"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Confidence\\CyrillicMixedDummy\\confidence_model_calibrated_2023_12_20_16_40_47.onnx",
+      "file": "resources/0025-d1034fd16b872ec6227a65fb0dbcdf4ffae9f763be3814c849902f43eee4c65b.bin",
+      "size": 29370,
+      "sha256": "d1034fd16b872ec6227a65fb0dbcdf4ffae9f763be3814c849902f43eee4c65b"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Confidence\\DevanagariMixedDummy\\confidence_model_calibrated_2023_11_09_19_08_44.onnx",
+      "file": "resources/0026-504b89966924e31b52762149398c438c8bf3208305043a218ee378c163da0ad9.bin",
+      "size": 29370,
+      "sha256": "504b89966924e31b52762149398c438c8bf3208305043a218ee378c163da0ad9"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Confidence\\GreekMixedDummy\\confidence_model_calibrated_2023_10_17_08_51_21.onnx",
+      "file": "resources/0027-9fbfec65247f0872ebaa6454f5e5b9ebacfe23c1c1966a026e57b25e02682973.bin",
+      "size": 29370,
+      "sha256": "9fbfec65247f0872ebaa6454f5e5b9ebacfe23c1c1966a026e57b25e02682973"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Confidence\\HebrewPrintedDummy\\confidence_model_calibrated_2023_09_19_21_37_42.onnx",
+      "file": "resources/0028-e9ccab44d59a1e395cab36fa5efa97e714f6c04e29c21abee9f8dbc958536f41.bin",
+      "size": 29370,
+      "sha256": "e9ccab44d59a1e395cab36fa5efa97e714f6c04e29c21abee9f8dbc958536f41"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Confidence\\LatinMixedV2Dummy\\confidence_model_calibrated_2024_05_22_21_36_00.onnx",
+      "file": "resources/0029-33740bb3ab0cf328965e7b0cbe2339fb69bf3dbe1f7128ea2546309a3b3e4bda.bin",
+      "size": 29370,
+      "sha256": "33740bb3ab0cf328965e7b0cbe2339fb69bf3dbe1f7128ea2546309a3b3e4bda"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Confidence\\LatinPrintedV2Dummy\\confidence_model_calibrated_2024_09_15_16_34_38.onnx",
+      "file": "resources/0030-a8a540fa983a6cfdbd114a7a0647928984e9decc6893d25df2e0e02df9731394.bin",
+      "size": 29370,
+      "sha256": "a8a540fa983a6cfdbd114a7a0647928984e9decc6893d25df2e0e02df9731394"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Confidence\\TamilPrintedDummy\\confidence_model_calibrated_2023_09_23_11_04_27.onnx",
+      "file": "resources/0031-059f63960782c0107655ac4e8ef9d8c68e31e5779a1b1884857856043719a0ef.bin",
+      "size": 29370,
+      "sha256": "059f63960782c0107655ac4e8ef9d8c68e31e5779a1b1884857856043719a0ef"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Confidence\\ThaiMixedDummy\\confidence_model_calibrated_2023_12_20_11_14_35.onnx",
+      "file": "resources/0032-6994639d1f9fc149df22a220f7f3c6c63ed3289546ee3ee046ef1235186d1eb4.bin",
+      "size": 29370,
+      "sha256": "6994639d1f9fc149df22a220f7f3c6c63ed3289546ee3ee046ef1235186d1eb4"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\LineLayout\\CJK\\ONNX\\checkpoint.040.onnx",
+      "file": "resources/0033-3fa89852fee4f3061e17ab40e85708639c4bc3aea3c8735dc2068098be9f5dd7.bin",
+      "size": 878394,
+      "sha256": "3fa89852fee4f3061e17ab40e85708639c4bc3aea3c8735dc2068098be9f5dd7"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Detector\\Universal\\checkbox_cal.txt",
+      "file": "resources/0034-a32e378e644d4030320dc21ce3bbe1d09be7b74b2bc24cac4e32ee0a35f32f2c.bin",
+      "size": 1151,
+      "sha256": "a32e378e644d4030320dc21ce3bbe1d09be7b74b2bc24cac4e32ee0a35f32f2c"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\AuxMltCls\\handwritten_calibration_map.txt",
+      "file": "resources/0035-a57cfa44e00cf40423fdb137710f4a607c537a5beccb9fbb05a157c4c7302f74.bin",
+      "size": 589,
+      "sha256": "a57cfa44e00cf40423fdb137710f4a607c537a5beccb9fbb05a157c4c7302f74"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\ArabicMixed\\rnn.info",
+      "file": "resources/0036-9bd2d51da8be757d41cad94913ab84f851d1cc1b0b614770e0d29b01f315022d.bin",
+      "size": 5051,
+      "sha256": "9bd2d51da8be757d41cad94913ab84f851d1cc1b0b614770e0d29b01f315022d"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\ArabicMixed\\char2ind.txt",
+      "file": "resources/0037-42d70ba893469bd58387d25403fbde6ca860ded529d77c20a1187c6b1482ced5.bin",
+      "size": 1363,
+      "sha256": "42d70ba893469bd58387d25403fbde6ca860ded529d77c20a1187c6b1482ced5"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\ArabicMixed\\char2inschar.txt",
+      "file": "resources/0038-2a146a26e02c2ef1235c468e26ebd8122697223da596faa93cdb642a35d8c6f9.bin",
+      "size": 1178,
+      "sha256": "2a146a26e02c2ef1235c468e26ebd8122697223da596faa93cdb642a35d8c6f9"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\CJKPrinted\\rnn.info",
+      "file": "resources/0039-3de57692b7a79187d74fd0338e15e30e27c2dce098bdfd94f0b284477f8c30f6.bin",
+      "size": 803340,
+      "sha256": "3de57692b7a79187d74fd0338e15e30e27c2dce098bdfd94f0b284477f8c30f6"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\CJKPrinted\\char2ind.txt",
+      "file": "resources/0040-5b6f6e3420105aa964d5b638501652bb5243c77928a4a950b03c9005a7de0768.bin",
+      "size": 314989,
+      "sha256": "5b6f6e3420105aa964d5b638501652bb5243c77928a4a950b03c9005a7de0768"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\CJKPrinted\\char2inschar.txt",
+      "file": "resources/0041-72cb1fa3784216af9bf3a4716e95ed617389fdb9a6e57ec426935f19da7e0503.bin",
+      "size": 260614,
+      "sha256": "72cb1fa3784216af9bf3a4716e95ed617389fdb9a6e57ec426935f19da7e0503"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\CyrillicMixed\\rnn.info",
+      "file": "resources/0042-f1983bf298592cd64697ad44cfa9b3a33ddca3699915db07d6bf438d3ec94924.bin",
+      "size": 9528,
+      "sha256": "f1983bf298592cd64697ad44cfa9b3a33ddca3699915db07d6bf438d3ec94924"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\CyrillicMixed\\char2ind.txt",
+      "file": "resources/0043-06a6ebed386801802802a15c49cfdd480877380131e525efce0ddedcaa748552.bin",
+      "size": 2787,
+      "sha256": "06a6ebed386801802802a15c49cfdd480877380131e525efce0ddedcaa748552"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\CyrillicMixed\\char2inschar.txt",
+      "file": "resources/0044-012a8ee6f10d5476c5c3e80943989ed4cb7fcb9b2008979f5c4e3a2d6dd10986.bin",
+      "size": 2474,
+      "sha256": "012a8ee6f10d5476c5c3e80943989ed4cb7fcb9b2008979f5c4e3a2d6dd10986"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\CyrillicMixed\\composite_chars_map",
+      "file": "resources/0045-2a362edc458b08a2cf8b12d14e02726b1e277b256f49395e938e9d2650df94f8.bin",
+      "size": 333,
+      "sha256": "2a362edc458b08a2cf8b12d14e02726b1e277b256f49395e938e9d2650df94f8"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\DevanagariMixed\\rnn.info",
+      "file": "resources/0046-383fbe8f9764278855f1e0ce867772cb8d570e2798eec8e29164a368620716b0.bin",
+      "size": 5447,
+      "sha256": "383fbe8f9764278855f1e0ce867772cb8d570e2798eec8e29164a368620716b0"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\DevanagariMixed\\char2ind.txt",
+      "file": "resources/0047-3100670486be41ad032c002fc274cb5ea0b9e53e5e2514580c2d28ec1561312b.bin",
+      "size": 1603,
+      "sha256": "3100670486be41ad032c002fc274cb5ea0b9e53e5e2514580c2d28ec1561312b"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\DevanagariMixed\\char2inschar.txt",
+      "file": "resources/0048-ad114af19c0037da426bfd9dff1b5ba4d3ed61a6bc88248187c2f840dbfc4a38.bin",
+      "size": 1530,
+      "sha256": "ad114af19c0037da426bfd9dff1b5ba4d3ed61a6bc88248187c2f840dbfc4a38"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\GreekMixed\\rnn.info",
+      "file": "resources/0049-9c66d3ed2693c73d13b154604878935c8220e10b4016b358f700b1c9c1e63e76.bin",
+      "size": 5601,
+      "sha256": "9c66d3ed2693c73d13b154604878935c8220e10b4016b358f700b1c9c1e63e76"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\GreekMixed\\char2ind.txt",
+      "file": "resources/0050-75ab97960eb7b56ba4e392cc4780c6c72d54d6e96f566cdc8182ce04f7a17b25.bin",
+      "size": 1523,
+      "sha256": "75ab97960eb7b56ba4e392cc4780c6c72d54d6e96f566cdc8182ce04f7a17b25"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\GreekMixed\\char2inschar.txt",
+      "file": "resources/0051-1a69200dd811e8f16cc4c1f051d1c1447337d061a77ae6a4ddce1a8ab3d13dd3.bin",
+      "size": 1314,
+      "sha256": "1a69200dd811e8f16cc4c1f051d1c1447337d061a77ae6a4ddce1a8ab3d13dd3"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\HebrewPrinted\\rnn.info",
+      "file": "resources/0052-0728ac2add0efec9766aac1771b11ae9d97a72ce8f5e70671455fd089f209b15.bin",
+      "size": 4609,
+      "sha256": "0728ac2add0efec9766aac1771b11ae9d97a72ce8f5e70671455fd089f209b15"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\HebrewPrinted\\char2ind.txt",
+      "file": "resources/0053-17ff6c00b06c3b2b6f93fac019cb021a7ffe8938d16d13a831c0dfb9374cdabe.bin",
+      "size": 1237,
+      "sha256": "17ff6c00b06c3b2b6f93fac019cb021a7ffe8938d16d13a831c0dfb9374cdabe"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\HebrewPrinted\\char2inschar.txt",
+      "file": "resources/0054-c5f4305d0713baa4dfbc4260779fcb8dc445c864b43317962ea04c4361067454.bin",
+      "size": 1086,
+      "sha256": "c5f4305d0713baa4dfbc4260779fcb8dc445c864b43317962ea04c4361067454"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\HebrewPrinted\\composite_chars_map",
+      "file": "resources/0055-c3b112c76fd1b7f3521a165df9738f13ec656ad2de3bb66a66b93cd868335a9b.bin",
+      "size": 111,
+      "sha256": "c3b112c76fd1b7f3521a165df9738f13ec656ad2de3bb66a66b93cd868335a9b"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\LatinPrintedV2\\rnn.info",
+      "file": "resources/0056-d1f7a6841f03132bf4c28d507ebfcd43d8c2445ac1a583fdb2d899f250b65ac6.bin",
+      "size": 12560,
+      "sha256": "d1f7a6841f03132bf4c28d507ebfcd43d8c2445ac1a583fdb2d899f250b65ac6"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\LatinPrintedV2\\char2ind.txt",
+      "file": "resources/0057-1e770e8c8452f7fa26bf82029f356e6a6caeec2ccc378855825d177c10d25fa8.bin",
+      "size": 3907,
+      "sha256": "1e770e8c8452f7fa26bf82029f356e6a6caeec2ccc378855825d177c10d25fa8"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\LatinPrintedV2\\char2inschar.txt",
+      "file": "resources/0058-79ee30053780597e6a33971f595d5eeb57baead5bde73f9c8e90b31916c3f68f.bin",
+      "size": 3650,
+      "sha256": "79ee30053780597e6a33971f595d5eeb57baead5bde73f9c8e90b31916c3f68f"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\LatinPrintedV2\\composite_chars_map",
+      "file": "resources/0059-26e709bb8f0f6db5a391b8064eace91fad3411af4cc66b81a546df8d55b45457.bin",
+      "size": 488,
+      "sha256": "26e709bb8f0f6db5a391b8064eace91fad3411af4cc66b81a546df8d55b45457"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\TamilPrinted\\rnn.info",
+      "file": "resources/0060-4e9976b53fd80b07634f5a1ad89e8dc6a6f9c176e2782ac0d4b24ec137bf6697.bin",
+      "size": 4090,
+      "sha256": "4e9976b53fd80b07634f5a1ad89e8dc6a6f9c176e2782ac0d4b24ec137bf6697"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\TamilPrinted\\char2ind.txt",
+      "file": "resources/0061-a007131e089f83d8965b26a510da515dd6a427795c39102f9419e59d1c66f1bc.bin",
+      "size": 1140,
+      "sha256": "a007131e089f83d8965b26a510da515dd6a427795c39102f9419e59d1c66f1bc"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\TamilPrinted\\char2inschar.txt",
+      "file": "resources/0062-cd64d160a739d7c3a57e012170b10ad09d10e57b107b09bf864a78e8f36a6b3c.bin",
+      "size": 1068,
+      "sha256": "cd64d160a739d7c3a57e012170b10ad09d10e57b107b09bf864a78e8f36a6b3c"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\ThaiMixed\\rnn.info",
+      "file": "resources/0063-10d36f9b748f84eb7aadc27817ad1bea918056891412ce64add3be86305686a6.bin",
+      "size": 4554,
+      "sha256": "10d36f9b748f84eb7aadc27817ad1bea918056891412ce64add3be86305686a6"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\ThaiMixed\\char2ind.txt",
+      "file": "resources/0064-45074a7f091ccea0ea420e54f46d54d814a32bfaeeae6b2fd4582f2c34df231c.bin",
+      "size": 1298,
+      "sha256": "45074a7f091ccea0ea420e54f46d54d814a32bfaeeae6b2fd4582f2c34df231c"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\ThaiMixed\\char2inschar.txt",
+      "file": "resources/0065-2d4c9f6439005e0034536fed2b730d548e69346ce99087c8748c5bb0c27e5ef7.bin",
+      "size": 1224,
+      "sha256": "2d4c9f6439005e0034536fed2b730d548e69346ce99087c8748c5bb0c27e5ef7"
+    },
+    {
+      "name": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Enums\\enums.edge.prototxt",
+      "file": "resources/0066-ea0e0fccd3a40443bc3471e9e4a2e1d5615d5397c6c42e3ad91e2cd709c08bfb.bin",
+      "size": 17697,
+      "sha256": "ea0e0fccd3a40443bc3471e9e4a2e1d5615d5397c6c42e3ad91e2cd709c08bfb"
+    }
+  ],
+  "script_ids": [
+    "unknown",
+    "cjk",
+    "latin",
+    "cyrillic",
+    "arabic",
+    "devanagari",
+    "greek",
+    "thai",
+    "hebrew",
+    "tamil"
+  ],
+  "character_settings": {
+    "arabic": {
+      "name": "ArabicMixed",
+      "stride": 4,
+      "pixels_per_space": 12,
+      "start_shift": -22,
+      "end_shift": 11,
+      "top_k": 30,
+      "keep_continuous_peak_blanks": 0,
+      "minimum_probability": 9.999999747378752e-05,
+      "blank_threshold": 0.9900000095367432,
+      "character_threshold": 0.05000000074505806
+    },
+    "cjk": {
+      "name": "CJKPrinted",
+      "stride": 8,
+      "pixels_per_space": 1,
+      "start_shift": -6,
+      "end_shift": 33,
+      "top_k": 30,
+      "keep_continuous_peak_blanks": 0,
+      "minimum_probability": 9.999999747378752e-05,
+      "blank_threshold": 0.9900000095367432,
+      "character_threshold": 0.05000000074505806
+    },
+    "cyrillic": {
+      "name": "CyrillicMixed",
+      "stride": 8,
+      "pixels_per_space": 12,
+      "start_shift": -14,
+      "end_shift": 14,
+      "top_k": 30,
+      "keep_continuous_peak_blanks": 0,
+      "minimum_probability": 9.999999747378752e-05,
+      "blank_threshold": 0.9900000095367432,
+      "character_threshold": 0.05000000074505806
+    },
+    "devanagari": {
+      "name": "DevanagariMixed",
+      "stride": 4,
+      "pixels_per_space": 12,
+      "start_shift": -8,
+      "end_shift": 19,
+      "top_k": 30,
+      "keep_continuous_peak_blanks": 0,
+      "minimum_probability": 9.999999747378752e-05,
+      "blank_threshold": 0.9900000095367432,
+      "character_threshold": 0.05000000074505806
+    },
+    "greek": {
+      "name": "GreekMixed",
+      "stride": 4,
+      "pixels_per_space": 12,
+      "start_shift": -15,
+      "end_shift": 18,
+      "top_k": 30,
+      "keep_continuous_peak_blanks": 0,
+      "minimum_probability": 9.999999747378752e-05,
+      "blank_threshold": 0.9900000095367432,
+      "character_threshold": 0.05000000074505806
+    },
+    "hebrew": {
+      "name": "HebrewPrinted",
+      "stride": 4,
+      "pixels_per_space": 12,
+      "start_shift": -28,
+      "end_shift": 8,
+      "top_k": 30,
+      "keep_continuous_peak_blanks": 0,
+      "minimum_probability": 9.999999747378752e-05,
+      "blank_threshold": 0.9900000095367432,
+      "character_threshold": 0.05000000074505806
+    },
+    "latin": {
+      "name": "LatinPrintedV2",
+      "stride": 4,
+      "pixels_per_space": 12,
+      "start_shift": -8,
+      "end_shift": 23,
+      "top_k": 30,
+      "keep_continuous_peak_blanks": 0,
+      "minimum_probability": 9.999999747378752e-05,
+      "blank_threshold": 0.9900000095367432,
+      "character_threshold": 0.05000000074505806
+    },
+    "tamil": {
+      "name": "TamilPrinted",
+      "stride": 4,
+      "pixels_per_space": 12,
+      "start_shift": -8,
+      "end_shift": 13,
+      "top_k": 30,
+      "keep_continuous_peak_blanks": 0,
+      "minimum_probability": 9.999999747378752e-05,
+      "blank_threshold": 0.9900000095367432,
+      "character_threshold": 0.05000000074505806
+    },
+    "thai": {
+      "name": "ThaiMixed",
+      "stride": 4,
+      "pixels_per_space": 1,
+      "start_shift": 0,
+      "end_shift": 18,
+      "top_k": 30,
+      "keep_continuous_peak_blanks": 0,
+      "minimum_probability": 9.999999747378752e-05,
+      "blank_threshold": 0.9900000095367432,
+      "character_threshold": 0.05000000074505806
+    }
+  },
+  "rejection_settings": {
+    "ArabicMixedDummy": {
+      "threshold": 0.2911,
+      "single_threshold": 0.2911
+    },
+    "CJKMixedDummy": {
+      "threshold": 0.2548,
+      "single_threshold": 0.2548
+    },
+    "CJKPrintedDummy": {
+      "threshold": 0.3136,
+      "single_threshold": 0.3136
+    },
+    "CyrillicMixedDummy": {
+      "threshold": 0.2088,
+      "single_threshold": 0.2088
+    },
+    "DevanagariMixedDummy": {
+      "threshold": 0.228,
+      "single_threshold": 0.228
+    },
+    "GreekMixedDummy": {
+      "threshold": 0.3124,
+      "single_threshold": 0.3124
+    },
+    "HebrewPrintedDummy": {
+      "threshold": 0.1042,
+      "single_threshold": 0.1042
+    },
+    "LatinMixedV2Dummy": {
+      "threshold": 0.161,
+      "single_threshold": 0.0881
+    },
+    "LatinPrintedV2Dummy": {
+      "threshold": 0.3002,
+      "single_threshold": 0.0374
+    },
+    "TamilPrintedDummy": {
+      "threshold": 0.0443,
+      "single_threshold": 0.0443
+    },
+    "ThaiMixedDummy": {
+      "threshold": 0.3371,
+      "single_threshold": 0.3371
+    }
+  },
+  "layout_settings": {
+    "name": "CJK",
+    "vertical_threshold": 2.85,
+    "horizontal_threshold": 3.1
+  },
+  "character_metadata": [
+    {
+      "file": "vocab/metadata_arabic.json",
+      "sha256": "78b1f9443dd4ac32c95b576b2efaf7f0719d59a9afb209ffd893fe4b997fd777",
+      "language": "arabic",
+      "entries": 221
+    },
+    {
+      "file": "vocab/metadata_cjk.json",
+      "sha256": "b776aca13a7ba101da69890e57ce4e28ddc1ad54fe99497d99da10cc9efcd7be",
+      "language": "cjk",
+      "entries": 32632
+    },
+    {
+      "file": "vocab/metadata_cyrillic.json",
+      "sha256": "d05e15529f59c3b463f884d9c8163540b51ba5e4e6004c26a3af45d6f351bef4",
+      "language": "cyrillic",
+      "entries": 415
+    },
+    {
+      "file": "vocab/metadata_devanagari.json",
+      "sha256": "1c4e4d7421a2aadcad8632634ded66fabbc825997d29690a33bc5233a529f2a6",
+      "language": "devanagari",
+      "entries": 237
+    },
+    {
+      "file": "vocab/metadata_greek.json",
+      "sha256": "2c72360731f8da4caa65ddbdba16dce4fb130c736aa116f54008ede69901403a",
+      "language": "greek",
+      "entries": 244
+    },
+    {
+      "file": "vocab/metadata_hebrew.json",
+      "sha256": "ac0ffb757682211827084795987333df7b07a7ac1c756ba46b5a2fe38b0270ae",
+      "language": "hebrew",
+      "entries": 201
+    },
+    {
+      "file": "vocab/metadata_latin.json",
+      "sha256": "b5dcf085b833dd5850cf69bf0a4cd8dc8979ba2eab857f979edfc61ea765362f",
+      "language": "latin",
+      "entries": 548
+    },
+    {
+      "file": "vocab/metadata_tamil.json",
+      "sha256": "94f2988f055db9ff52f9cfad2ad8a63e14f08f203787bc323176463ef8c920b4",
+      "language": "tamil",
+      "entries": 179
+    },
+    {
+      "file": "vocab/metadata_thai.json",
+      "sha256": "2a4168077b3bb2791d8953de8c3c481553350c7a98df2f41c116f7b78c6aef67",
+      "language": "thai",
+      "entries": 199
+    }
+  ],
+  "handwritten_calibration": {
+    "file": "calibration/handwritten.json",
+    "sha256": "fa2dd41c2a9fdb860e812f4cfb710ff53daf4d36067a18fc459c836b2b3967e7",
+    "source_resource": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\AuxMltCls\\handwritten_calibration_map.txt"
+  },
+  "portable_detector": {
+    "file": "detector/text_detector.portable.onnx",
+    "sha256": "21425f36343c149a460bf5876da438da9200593c09725759e262db489ade2665",
+    "source_sha256": "c242d98c8ef41a8f5f623801bf6dd24969076de33cd24f72b57b9dcb7e9527c3",
+    "transformation": "backward graph slice for the 18 FPN outputs; optional feature_p2 branch removed",
+    "outputs": [
+      "scores_hori_fpn2",
+      "bbox_deltas_hori_fpn2",
+      "scores_vert_fpn2",
+      "bbox_deltas_vert_fpn2",
+      "link_scores_hori_fpn2",
+      "link_scores_vert_fpn2",
+      "scores_hori_fpn3",
+      "bbox_deltas_hori_fpn3",
+      "scores_vert_fpn3",
+      "bbox_deltas_vert_fpn3",
+      "link_scores_hori_fpn3",
+      "link_scores_vert_fpn3",
+      "scores_hori_fpn4",
+      "bbox_deltas_hori_fpn4",
+      "scores_vert_fpn4",
+      "bbox_deltas_vert_fpn4",
+      "link_scores_hori_fpn4",
+      "link_scores_vert_fpn4"
+    ],
+    "replay": {
+      "scores_hori_fpn2": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          1,
+          192,
+          280
+        ]
+      },
+      "bbox_deltas_hori_fpn2": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          8,
+          192,
+          280
+        ]
+      },
+      "scores_vert_fpn2": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          1,
+          192,
+          280
+        ]
+      },
+      "bbox_deltas_vert_fpn2": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          8,
+          192,
+          280
+        ]
+      },
+      "link_scores_hori_fpn2": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          8,
+          192,
+          280
+        ]
+      },
+      "link_scores_vert_fpn2": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          8,
+          192,
+          280
+        ]
+      },
+      "scores_hori_fpn3": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          1,
+          96,
+          140
+        ]
+      },
+      "bbox_deltas_hori_fpn3": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          8,
+          96,
+          140
+        ]
+      },
+      "scores_vert_fpn3": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          1,
+          96,
+          140
+        ]
+      },
+      "bbox_deltas_vert_fpn3": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          8,
+          96,
+          140
+        ]
+      },
+      "link_scores_hori_fpn3": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          8,
+          96,
+          140
+        ]
+      },
+      "link_scores_vert_fpn3": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          8,
+          96,
+          140
+        ]
+      },
+      "scores_hori_fpn4": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          1,
+          48,
+          70
+        ]
+      },
+      "bbox_deltas_hori_fpn4": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          8,
+          48,
+          70
+        ]
+      },
+      "scores_vert_fpn4": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          1,
+          48,
+          70
+        ]
+      },
+      "bbox_deltas_vert_fpn4": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          8,
+          48,
+          70
+        ]
+      },
+      "link_scores_hori_fpn4": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          8,
+          48,
+          70
+        ]
+      },
+      "link_scores_vert_fpn4": {
+        "max_absolute_error": 0.0,
+        "shape": [
+          1,
+          8,
+          48,
+          70
+        ]
+      }
+    }
+  },
+  "portable_auxiliary": [
+    {
+      "source": "auxiliary/a984730f53a863c6e1373d23a2cf38bc47c9e9dba1f5b043d108ceceea9c32a6.onnx",
+      "file": "portable_auxiliary/a984730f53a863c6e1373d23a2cf38bc47c9e9dba1f5b043d108ceceea9c32a6.onnx",
+      "source_sha256": "a984730f53a863c6e1373d23a2cf38bc47c9e9dba1f5b043d108ceceea9c32a6",
+      "sha256": "ed0c7de20119d757e3ba283d8368b37e09f2674aafefeadb076c7e6dbc447d16",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 1.341104507446289e-06,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/b3d95f7cd7a9279472b56af1695faf99ba1757f8512b4d87131b51b6f8e7bc95.onnx",
+      "file": "portable_auxiliary/b3d95f7cd7a9279472b56af1695faf99ba1757f8512b4d87131b51b6f8e7bc95.onnx",
+      "source_sha256": "b3d95f7cd7a9279472b56af1695faf99ba1757f8512b4d87131b51b6f8e7bc95",
+      "sha256": "4b83a62d098ab7209ae75caacd1b266de7c3692ca5345668cac86be6c7802a2c",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 1.7881393432617188e-07,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/1cc5440a95085227dbd32bea8e9cd8745c6942920066489f20a3a0d0ddcdf8f0.onnx",
+      "file": "portable_auxiliary/1cc5440a95085227dbd32bea8e9cd8745c6942920066489f20a3a0d0ddcdf8f0.onnx",
+      "source_sha256": "1cc5440a95085227dbd32bea8e9cd8745c6942920066489f20a3a0d0ddcdf8f0",
+      "sha256": "735f773beac0d974932909afe7b5d2ab41d38b1850c6db47bce704dc9aa53e82",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 7.450580596923828e-07,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/b07947558c78c350ebdabd5338dd9d5aadb5f7d89fb9de87595b60d585b1135a.onnx",
+      "file": "portable_auxiliary/b07947558c78c350ebdabd5338dd9d5aadb5f7d89fb9de87595b60d585b1135a.onnx",
+      "source_sha256": "b07947558c78c350ebdabd5338dd9d5aadb5f7d89fb9de87595b60d585b1135a",
+      "sha256": "a7546f6c64dc4209b92e501b2e0d3e3c49b9ccb528a4be5640c6ffdbe612a628",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 6.854534149169922e-07,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/33e007562e48fd91329a15bd3194929b8103789cab9c4849288c81dd8bd2fb17.onnx",
+      "file": "portable_auxiliary/33e007562e48fd91329a15bd3194929b8103789cab9c4849288c81dd8bd2fb17.onnx",
+      "source_sha256": "33e007562e48fd91329a15bd3194929b8103789cab9c4849288c81dd8bd2fb17",
+      "sha256": "5c8fff4b21c0eaccfad55e66fcf6b04435164bb31c86b3e1642a858347cac002",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 9.08970832824707e-07,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/4579fe1fedceb79545cfdcee7ad240ce5c4dd52c1caf056a2134fd796e495c08.onnx",
+      "file": "portable_auxiliary/4579fe1fedceb79545cfdcee7ad240ce5c4dd52c1caf056a2134fd796e495c08.onnx",
+      "source_sha256": "4579fe1fedceb79545cfdcee7ad240ce5c4dd52c1caf056a2134fd796e495c08",
+      "sha256": "6e2bd322e2abdbef3cff4838f127ef9072de467e460c36c036fb29f703b56c9f",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 3.5762786865234375e-07,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/67638266acf04dc7838befd6a610e103dceb679dacde925c7bb87422a61728f2.onnx",
+      "file": "portable_auxiliary/67638266acf04dc7838befd6a610e103dceb679dacde925c7bb87422a61728f2.onnx",
+      "source_sha256": "67638266acf04dc7838befd6a610e103dceb679dacde925c7bb87422a61728f2",
+      "sha256": "4798ac37e19635f8fff81a449d39febe001434c8d99dd82260a21641a9b84e1f",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 4.76837158203125e-07,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/8a7b13bbc4bc87b1b095c2510e9fadc4ec57af96ae4049473c1c2b9deaeea22b.onnx",
+      "file": "portable_auxiliary/8a7b13bbc4bc87b1b095c2510e9fadc4ec57af96ae4049473c1c2b9deaeea22b.onnx",
+      "source_sha256": "8a7b13bbc4bc87b1b095c2510e9fadc4ec57af96ae4049473c1c2b9deaeea22b",
+      "sha256": "2a880d408c3241930e1619c98d41260e1a7cbb559456fd7c0a8322c1720d76a7",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 8.498318493366241e-09,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/92952d075a5ab53639e0413c7e99baee6b701eac02e5d3676ac5d7107bdd303a.onnx",
+      "file": "portable_auxiliary/92952d075a5ab53639e0413c7e99baee6b701eac02e5d3676ac5d7107bdd303a.onnx",
+      "source_sha256": "92952d075a5ab53639e0413c7e99baee6b701eac02e5d3676ac5d7107bdd303a",
+      "sha256": "f4d382b0581f88e8c8f2e9128ac571e4d8f01580f82123f977ecb078b8145f62",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 1.767277717590332e-05,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/359a347ac03397c3779e91c9290e60d7b02f979bd0278e1c145aa51d2bd37933.onnx",
+      "file": "portable_auxiliary/359a347ac03397c3779e91c9290e60d7b02f979bd0278e1c145aa51d2bd37933.onnx",
+      "source_sha256": "359a347ac03397c3779e91c9290e60d7b02f979bd0278e1c145aa51d2bd37933",
+      "sha256": "2b99fb23c07498c3d151d0e128b156000a506e0017380913fe02f2ac02cb9504",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 1.2516975402832031e-06,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/c27a07e870c27fa8f57ba00c8b215a762c86bf90bb5e1ffa061727893548cdbb.onnx",
+      "file": "portable_auxiliary/c27a07e870c27fa8f57ba00c8b215a762c86bf90bb5e1ffa061727893548cdbb.onnx",
+      "source_sha256": "c27a07e870c27fa8f57ba00c8b215a762c86bf90bb5e1ffa061727893548cdbb",
+      "sha256": "dadd25e7c7c039a67c44f588fdce14dab1c3265335ec09bed482aa230a649672",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 5.066394805908203e-07,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/032d40c7aa17364504a07cde2c061ee1080abde36bc94a807d086334a49c947a.onnx",
+      "file": "portable_auxiliary/032d40c7aa17364504a07cde2c061ee1080abde36bc94a807d086334a49c947a.onnx",
+      "source_sha256": "032d40c7aa17364504a07cde2c061ee1080abde36bc94a807d086334a49c947a",
+      "sha256": "01af13048fc110b6d39cb716cfd29b2e5e7f87d9203679de97f7990ae5d4a17d",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 7.152557373046875e-07,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/7887683eb094b3df2aa701b9f5fbcf8f3869aca479f19eb4c9b4aa9b8e24d71d.onnx",
+      "file": "portable_auxiliary/7887683eb094b3df2aa701b9f5fbcf8f3869aca479f19eb4c9b4aa9b8e24d71d.onnx",
+      "source_sha256": "7887683eb094b3df2aa701b9f5fbcf8f3869aca479f19eb4c9b4aa9b8e24d71d",
+      "sha256": "461b6af6ddce28674d241654472274eddcdface2d417465c843a5db6dd89f58d",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 4.6193599700927734e-07,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/eb8dc24dbb949eb6d483fddca77b1387e98a05d59c025418dde50addaa21d039.onnx",
+      "file": "portable_auxiliary/eb8dc24dbb949eb6d483fddca77b1387e98a05d59c025418dde50addaa21d039.onnx",
+      "source_sha256": "eb8dc24dbb949eb6d483fddca77b1387e98a05d59c025418dde50addaa21d039",
+      "sha256": "8dc072fdc34d348424c4e3f60c9d3558f30530d957fe4090356167bc763d56b9",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 4.917383193969727e-07,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/d1034fd16b872ec6227a65fb0dbcdf4ffae9f763be3814c849902f43eee4c65b.onnx",
+      "file": "portable_auxiliary/d1034fd16b872ec6227a65fb0dbcdf4ffae9f763be3814c849902f43eee4c65b.onnx",
+      "source_sha256": "d1034fd16b872ec6227a65fb0dbcdf4ffae9f763be3814c849902f43eee4c65b",
+      "sha256": "96b67de6508098caa097172a5a9827b8e66738e67c78cca98dfa1a11fd22813d",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 4.917383193969727e-07,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/504b89966924e31b52762149398c438c8bf3208305043a218ee378c163da0ad9.onnx",
+      "file": "portable_auxiliary/504b89966924e31b52762149398c438c8bf3208305043a218ee378c163da0ad9.onnx",
+      "source_sha256": "504b89966924e31b52762149398c438c8bf3208305043a218ee378c163da0ad9",
+      "sha256": "d71ae41832d160960d29c1d7e83482fbeaaf6f0989762b271b6d0854e0b0efe7",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 4.76837158203125e-07,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/9fbfec65247f0872ebaa6454f5e5b9ebacfe23c1c1966a026e57b25e02682973.onnx",
+      "file": "portable_auxiliary/9fbfec65247f0872ebaa6454f5e5b9ebacfe23c1c1966a026e57b25e02682973.onnx",
+      "source_sha256": "9fbfec65247f0872ebaa6454f5e5b9ebacfe23c1c1966a026e57b25e02682973",
+      "sha256": "abb4eb20d4a960786326a79661bc032d7b8e8e13b4cb430f29f044b047c81d77",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 1.1920928955078125e-06,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/e9ccab44d59a1e395cab36fa5efa97e714f6c04e29c21abee9f8dbc958536f41.onnx",
+      "file": "portable_auxiliary/e9ccab44d59a1e395cab36fa5efa97e714f6c04e29c21abee9f8dbc958536f41.onnx",
+      "source_sha256": "e9ccab44d59a1e395cab36fa5efa97e714f6c04e29c21abee9f8dbc958536f41",
+      "sha256": "852a4f74c87156060ae16d0d83737b6d27120968ff7f7bf88fec661a1eec8360",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 4.3213367462158203e-07,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/33740bb3ab0cf328965e7b0cbe2339fb69bf3dbe1f7128ea2546309a3b3e4bda.onnx",
+      "file": "portable_auxiliary/33740bb3ab0cf328965e7b0cbe2339fb69bf3dbe1f7128ea2546309a3b3e4bda.onnx",
+      "source_sha256": "33740bb3ab0cf328965e7b0cbe2339fb69bf3dbe1f7128ea2546309a3b3e4bda",
+      "sha256": "ceaacfb33f00cd5e10163cd51d7015fe73e524db468a6da3c027e173ddf329da",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 1.3113021850585938e-06,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/a8a540fa983a6cfdbd114a7a0647928984e9decc6893d25df2e0e02df9731394.onnx",
+      "file": "portable_auxiliary/a8a540fa983a6cfdbd114a7a0647928984e9decc6893d25df2e0e02df9731394.onnx",
+      "source_sha256": "a8a540fa983a6cfdbd114a7a0647928984e9decc6893d25df2e0e02df9731394",
+      "sha256": "5b405d11469935761b612c4631f250b9039d44a9ea6d309c291ccc18fc6447fd",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 5.960464477539063e-08,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/059f63960782c0107655ac4e8ef9d8c68e31e5779a1b1884857856043719a0ef.onnx",
+      "file": "portable_auxiliary/059f63960782c0107655ac4e8ef9d8c68e31e5779a1b1884857856043719a0ef.onnx",
+      "source_sha256": "059f63960782c0107655ac4e8ef9d8c68e31e5779a1b1884857856043719a0ef",
+      "sha256": "026fad7bf144812bd826c46ae2b73e519685bfc54a94f380c67abd3cee2e6575",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 8.940696716308594e-07,
+      "accepted": true
+    },
+    {
+      "source": "auxiliary/6994639d1f9fc149df22a220f7f3c6c63ed3289546ee3ee046ef1235186d1eb4.onnx",
+      "file": "portable_auxiliary/6994639d1f9fc149df22a220f7f3c6c63ed3289546ee3ee046ef1235186d1eb4.onnx",
+      "source_sha256": "6994639d1f9fc149df22a220f7f3c6c63ed3289546ee3ee046ef1235186d1eb4",
+      "sha256": "4be45c0b2d7d1e6a28edb2dd5dec3b3bbe8cc8fb840a68f2ea598c145da01679",
+      "kind": "dense-21x50",
+      "activation": "Relu",
+      "native_samples": 64,
+      "max_absolute_error": 3.5762786865234375e-07,
+      "accepted": true
+    },
+    {
+      "source": "layout/line_layout.onnx",
+      "file": "portable_auxiliary/3fa89852fee4f3061e17ab40e85708639c4bc3aea3c8735dc2068098be9f5dd7.onnx",
+      "source_sha256": "3fa89852fee4f3061e17ab40e85708639c4bc3aea3c8735dc2068098be9f5dd7",
+      "sha256": "cdb45fb05e54b6b0ec8685721f0c0e3df424507f0c42b19ae811fbdd845de2f8",
+      "kind": "conv-256x16-1x1",
+      "activation": "Identity",
+      "native_samples": 12,
+      "max_absolute_error": 0.0,
+      "accepted": true
+    }
+  ],
+  "classifier_settings": {
+    "script_margin": 4.1,
+    "handwriting_min": -2.0,
+    "handwriting_max": 0.0,
+    "flip_min": -5.0,
+    "flip_max": 5.0,
+    "nontext_margin": 5.0,
+    "handwriting_consecutive": 3,
+    "script_consecutive": {
+      "Devanagari": 2,
+      "Cyrillic": 1,
+      "Hebrew": 3,
+      "Tamil": 3,
+      "Greek": 3,
+      "CJK": 3,
+      "Thai": 3
+    }
+  }
+}

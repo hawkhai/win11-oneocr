@@ -1,0 +1,55 @@
+{
+  "passed": false,
+  "expected_lines": 2,
+  "actual_lines": 2,
+  "same_position_text_matches": 2,
+  "failure_count": 8,
+  "failures": [
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.9890507459640503,
+      "actual": 0.9942867159843445
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.9909935593605042,
+      "actual": 0.9959971308708191
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.9945971965789795,
+      "actual": 0.9969173073768616
+    },
+    {
+      "field": "lines[0].words[3].confidence",
+      "expected": 0.9760404229164124,
+      "actual": 0.9964503049850464
+    },
+    {
+      "field": "lines[1].words[0].confidence",
+      "expected": 0.9943408966064453,
+      "actual": 0.9967554211616516
+    },
+    {
+      "field": "lines[1].words[1].confidence",
+      "expected": 0.9932453036308289,
+      "actual": 0.9965782761573792
+    },
+    {
+      "field": "lines[1].words[2].confidence",
+      "expected": 0.9938927292823792,
+      "actual": 0.9960524439811707
+    },
+    {
+      "field": "lines[1].words[3].confidence",
+      "expected": 0.9889187216758728,
+      "actual": 0.9952445030212402
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "latin-rotate-180"
+}

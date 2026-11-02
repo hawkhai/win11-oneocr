@@ -1,0 +1,199 @@
+export CPP= CC=gcc CXX=g++ CPPFLAGS= CFLAGS=-O3  CXXFLAGS=-O3  LDFLAGS= MAKE=
+Running ./configure  --enable-static --disable-shared --disable-tests --disable-samples --with-data-packaging=static --prefix=/mnt/f/pythonx/myocr/win11-oneocr/work/icu-install for Linux using the GNU C++ compiler
+
+checking for ICU version numbers... release 74.2, library 74.2, unicode version 15.1
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking whether to build debug libraries... no
+checking whether to build release libraries... yes
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for pkg-config... no
+checking for ICULEHB... no
+checking how to run the C preprocessor... gcc -E
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for python3... python3
+checking for gmake... no
+checking for gnumake... no
+checking for doxygen... no
+checking checking for executable suffix... 
+checking whether strict compiling is on... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking size of void *... 8
+checking whether runnable 64 bit binaries are built by default... yes
+checking which Makefile fragment to use for x86_64-pc-linux-gnu... mh-linux
+checking for floor in -lm... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking whether we can use static library optimization option... yes
+checking whether to enable auto cleanup of libraries... no
+checking whether to enable draft APIs... yes
+checking for ranlib... ranlib
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for ar... ar
+checking whether to enable renaming of symbols... yes
+checking whether to enable function and data tracing... no
+checking elf.h usability... yes
+checking elf.h presence... yes
+checking for elf.h... yes
+checking whether to enable dynamic loading of plugins. Ignored if plugins disabled.... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking for library containing dlopen... none required
+checking for dlopen... yes
+checking for gettimeofday... yes
+checking if we have a C++ compiler... Good
+checking if we have a C++11 compiler... yes
+configure: Adding CXXFLAGS option -std=c++11
+checking for pthread_attr_init in -lpthread... yes
+checking for mmap... yes
+checking for genccode assembly... -a gcc
+checking for inttypes.h... (cached) yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking whether byte ordering is bigendian... no
+checking for nl_langinfo... yes
+checking for nl_langinfo's argument to obtain the codeset... CODESET
+checking for namespace support... yes
+checking for properly overriding new and delete... yes
+checking for placement new and delete... yes
+checking for popen... yes
+checking for tzset... yes
+checking for tzname... yes
+checking for timezone... yes
+checking for strtod_l... yes
+checking xlocale.h usability... no
+checking xlocale.h presence... no
+checking for xlocale.h... no
+checking for std::string_view... no
+checking for int8_t... yes
+checking for uint8_t... yes
+checking for int16_t... yes
+checking for uint16_t... yes
+checking for int32_t... yes
+checking for uint32_t... yes
+checking for int64_t... yes
+checking for uint64_t... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking for library containing wcscpy... none required
+checking size of wchar_t... 4
+checking for UTF-16 string literal support... available
+checking for a library suffix to use... none
+checking whether C++ compiler accepts -Wambiguous-reversed-operator... no
+CPPFLAGS= -ffunction-sections -fdata-sections $(THREADSCPPFLAGS)  -DU_HAVE_ELF_H=1 -DU_HAVE_STRTOD_L=1 -DU_HAVE_XLOCALE_H=0 
+CFLAGS=-O3  -std=c11 -Wall -pedantic -Wshadow -Wpointer-arith -Wmissing-prototypes -Wwrite-strings $(THREADSCFLAGS) 
+CXXFLAGS=-O3  -W -Wall -pedantic -Wpointer-arith -Wwrite-strings -Wno-long-long -std=c++11 $(THREADSCXXFLAGS) 
+configure: creating ./config.status
+config.status: creating icudefs.mk
+config.status: creating Makefile
+config.status: creating data/pkgdataMakefile
+config.status: creating config/Makefile.inc
+config.status: creating config/icu.pc
+config.status: creating config/pkgdataMakefile
+config.status: creating data/Makefile
+config.status: creating stubdata/Makefile
+config.status: creating common/Makefile
+config.status: creating i18n/Makefile
+config.status: creating layoutex/Makefile
+config.status: creating io/Makefile
+config.status: creating extra/Makefile
+config.status: creating extra/uconv/Makefile
+config.status: creating extra/uconv/pkgdataMakefile
+config.status: creating extra/scrptrun/Makefile
+config.status: creating tools/Makefile
+config.status: creating tools/ctestfw/Makefile
+config.status: creating tools/toolutil/Makefile
+config.status: creating tools/makeconv/Makefile
+config.status: creating tools/genrb/Makefile
+config.status: creating tools/genccode/Makefile
+config.status: creating tools/gencmn/Makefile
+config.status: creating tools/gencnval/Makefile
+config.status: creating tools/gendict/Makefile
+config.status: creating tools/gentest/Makefile
+config.status: creating tools/gennorm2/Makefile
+config.status: creating tools/genbrk/Makefile
+config.status: creating tools/gensprep/Makefile
+config.status: creating tools/icuinfo/Makefile
+config.status: creating tools/icupkg/Makefile
+config.status: creating tools/icuswap/Makefile
+config.status: creating tools/pkgdata/Makefile
+config.status: creating tools/icuexportdata/Makefile
+config.status: creating tools/tzcode/Makefile
+config.status: creating tools/gencfu/Makefile
+config.status: creating tools/escapesrc/Makefile
+config.status: creating test/Makefile
+config.status: creating test/compat/Makefile
+config.status: creating test/testdata/Makefile
+config.status: creating test/testdata/pkgdataMakefile
+config.status: creating test/hdrtst/Makefile
+config.status: creating test/intltest/Makefile
+config.status: creating test/cintltst/Makefile
+config.status: creating test/iotest/Makefile
+config.status: creating test/letest/Makefile
+config.status: creating test/perf/Makefile
+config.status: creating test/perf/collationperf/Makefile
+config.status: creating test/perf/collperf/Makefile
+config.status: creating test/perf/collperf2/Makefile
+config.status: creating test/perf/dicttrieperf/Makefile
+config.status: creating test/perf/ubrkperf/Makefile
+config.status: creating test/perf/charperf/Makefile
+config.status: creating test/perf/convperf/Makefile
+config.status: creating test/perf/localecanperf/Makefile
+config.status: creating test/perf/normperf/Makefile
+config.status: creating test/perf/DateFmtPerf/Makefile
+config.status: creating test/perf/howExpensiveIs/Makefile
+config.status: creating test/perf/strsrchperf/Makefile
+config.status: creating test/perf/unisetperf/Makefile
+config.status: creating test/perf/usetperf/Makefile
+config.status: creating test/perf/ustrperf/Makefile
+config.status: creating test/perf/utfperf/Makefile
+config.status: creating test/perf/utrie2perf/Makefile
+config.status: creating test/perf/leperf/Makefile
+config.status: creating test/fuzzer/Makefile
+config.status: creating samples/Makefile
+config.status: creating samples/date/Makefile
+config.status: creating samples/cal/Makefile
+config.status: creating samples/layout/Makefile
+Spawning Python to generate data/rules.mk...
+Warning: Unable to find target lstm_res, a dependency of brkitr_brk
+Warning: Unable to find target adaboost_res, a dependency of brkitr_brk
+Spawning Python to generate test/testdata/rules.mk...
+
+ICU for C/C++ 74.2 is ready to be built.
+=== Important Notes: ===
+Data Packaging: static
+ This means: ICU data will be stored in a static library.
+ To locate data: ICU will use the linked data library. If linked with the stub library located in stubdata/, the application can use udata_setCommonData() or set a data path to override.
+** WARNING: make may not be GNU make.
+This may cause ICU to fail to build. Please make sure that GNU make
+is in your PATH so that the configure script can detect its location.
+checking the version of "make"... ../vendor/icu-linux/icu4c/source//configure: line 9353: make: command not found
+too old or test failed - try upgrading GNU Make
+C++ apps may want to build with CXXFLAGS =  -std=c++11
+
+If the result of the above commands looks okay to you, go to the directory
+source in the ICU distribution to build ICU. Please remember that ICU needs
+GNU make to build properly...

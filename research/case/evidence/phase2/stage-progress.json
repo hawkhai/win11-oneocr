@@ -1,0 +1,200 @@
+{
+  "total": 27,
+  "totals": {
+    "line_count": 26,
+    "line_text_order": 19,
+    "line_boxes": 15,
+    "word_segmentation": 18
+  },
+  "cases": [
+    {
+      "name": "latin-18",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": true,
+      "word_segmentation": true
+    },
+    {
+      "name": "latin-36",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": true,
+      "word_segmentation": true
+    },
+    {
+      "name": "latin-rotate-0.5",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": true,
+      "word_segmentation": true
+    },
+    {
+      "name": "latin-rotate-3",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": true,
+      "word_segmentation": true
+    },
+    {
+      "name": "latin-rotate-10",
+      "line_count": false,
+      "line_text_order": false,
+      "line_boxes": false,
+      "word_segmentation": false
+    },
+    {
+      "name": "latin-rotate-90",
+      "line_count": true,
+      "line_text_order": false,
+      "line_boxes": false,
+      "word_segmentation": false
+    },
+    {
+      "name": "latin-rotate-180",
+      "line_count": true,
+      "line_text_order": false,
+      "line_boxes": false,
+      "word_segmentation": false
+    },
+    {
+      "name": "latin-rotate-270",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": false,
+      "word_segmentation": true
+    },
+    {
+      "name": "cjk-18",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": true,
+      "word_segmentation": true
+    },
+    {
+      "name": "cjk-36",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": true,
+      "word_segmentation": true
+    },
+    {
+      "name": "cjk-rotate-0.5",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": true,
+      "word_segmentation": true
+    },
+    {
+      "name": "cjk-rotate-3",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": false,
+      "word_segmentation": true
+    },
+    {
+      "name": "cjk-rotate-10",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": false,
+      "word_segmentation": true
+    },
+    {
+      "name": "cjk-rotate-90",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": false,
+      "word_segmentation": true
+    },
+    {
+      "name": "cjk-rotate-180",
+      "line_count": true,
+      "line_text_order": false,
+      "line_boxes": false,
+      "word_segmentation": false
+    },
+    {
+      "name": "cjk-rotate-270",
+      "line_count": true,
+      "line_text_order": false,
+      "line_boxes": false,
+      "word_segmentation": false
+    },
+    {
+      "name": "cyrillic-36",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": false,
+      "word_segmentation": true
+    },
+    {
+      "name": "arabic-36",
+      "line_count": true,
+      "line_text_order": false,
+      "line_boxes": false,
+      "word_segmentation": false
+    },
+    {
+      "name": "devanagari-36",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": true,
+      "word_segmentation": true
+    },
+    {
+      "name": "hebrew-36",
+      "line_count": true,
+      "line_text_order": false,
+      "line_boxes": true,
+      "word_segmentation": false
+    },
+    {
+      "name": "thai-36",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": true,
+      "word_segmentation": false
+    },
+    {
+      "name": "tamil-36",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": true,
+      "word_segmentation": true
+    },
+    {
+      "name": "greek-36",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": true,
+      "word_segmentation": true
+    },
+    {
+      "name": "blank",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": true,
+      "word_segmentation": true
+    },
+    {
+      "name": "\u900f\u660e\u8def\u5f84-emoji-\ud83d\ude00",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": true,
+      "word_segmentation": true
+    },
+    {
+      "name": "multi-column",
+      "line_count": true,
+      "line_text_order": false,
+      "line_boxes": false,
+      "word_segmentation": false
+    },
+    {
+      "name": "vertical-cjk",
+      "line_count": true,
+      "line_text_order": true,
+      "line_boxes": true,
+      "word_segmentation": true
+    }
+  ]
+}

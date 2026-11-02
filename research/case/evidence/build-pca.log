@@ -1,0 +1,20 @@
+适用于 .NET Framework MSBuild 版本 17.14.40+3e7442088
+
+  detector.cpp
+  engine.cpp
+F:\pythonx\myocr\win11-oneocr\native\src\trace.hpp(19,31): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+  (编译源文件“../../../native/src/engine.cpp”)
+  
+F:\pythonx\myocr\win11-oneocr\native\src\trace.hpp(22,36): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+  (编译源文件“../../../native/src/engine.cpp”)
+  
+F:\pythonx\myocr\win11-oneocr\native\src\engine.cpp(28,20): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+F:\pythonx\myocr\win11-oneocr\native\src\engine.cpp(94,61): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+  正在生成代码...
+    正在创建库 F:/pythonx/myocr/win11-oneocr/build/source-runtime/native/Release/oneocr_portable.lib 和对象 F:/pythonx/myocr/win11-oneocr/build/source-runtime/native/Release/oneocr_portable.exp
+  oneocr_portable.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_portable.dll
+  ocr.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\ocr.exe
+  oneocr_api_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_api_test.exe
+  oneocr_math_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_math_test.exe
+  oneocr_ordering_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_ordering_test.exe
+  oneocr_wrapper_compat.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_wrapper.dll

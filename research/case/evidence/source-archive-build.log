@@ -1,0 +1,48 @@
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.19045.
+-- The CXX compiler identification is MSVC 19.44.35227.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: F:/pythonx/myocr/win11-oneocr/build/source-archive-check
+适用于 .NET Framework MSBuild 版本 17.14.40+3e7442088
+
+  1>Checking Build System
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-archive-check/native/CMakeLists.txt
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-archive-check/native/CMakeLists.txt
+  engine.cpp
+  math_test.cpp
+F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\source-archive-check\native\src\engine.cpp(25,20): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-archive-check\native\oneocr_portable.vcxproj]
+F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\source-archive-check\native\src\engine.cpp(98,61): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-archive-check\native\oneocr_portable.vcxproj]
+  image.cpp
+  image.cpp
+  正在生成代码...
+F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\source-archive-check\native\src\image.cpp(18,38): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-archive-check\native\oneocr_portable.vcxproj]
+  oneocr_math_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-archive-check\native\Release\oneocr_math_test.exe
+  正在生成代码...
+    正在创建库 F:/pythonx/myocr/win11-oneocr/build/source-archive-check/native/Release/oneocr_portable.lib 和对象 F:/pythonx/myocr/win11-oneocr/build/source-archive-check/native/Release/oneocr_portable.exp
+  oneocr_portable.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-archive-check\native\Release\oneocr_portable.dll
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-archive-check/native/CMakeLists.txt
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-archive-check/native/CMakeLists.txt
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-archive-check/native/CMakeLists.txt
+  api_test.cpp
+  cli.cpp
+  windows_compat.cpp
+  oneocr_api_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-archive-check\native\Release\oneocr_api_test.exe
+    正在创建库 F:/pythonx/myocr/win11-oneocr/build/source-archive-check/native/Release/oneocr_wrapper.lib 和对象 F:/pythonx/myocr/win11-oneocr/build/source-archive-check/native/Release/oneocr_wrapper.exp
+  oneocr_wrapper_compat.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-archive-check\native\Release\oneocr_wrapper.dll
+  ocr.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-archive-check\native\Release\ocr.exe
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-archive-check/CMakeLists.txt
+Internal ctest changing into directory: F:/pythonx/myocr/win11-oneocr/build/source-archive-check
+Test project F:/pythonx/myocr/win11-oneocr/build/source-archive-check
+    Start 1: portable_api
+1/2 Test #1: portable_api .....................   Passed    0.13 sec
+    Start 2: portable_math
+2/2 Test #2: portable_math ....................   Passed    0.06 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.20 sec

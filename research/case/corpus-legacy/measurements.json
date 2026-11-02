@@ -1,0 +1,218 @@
+[
+  {
+    "exit_code": 0,
+    "seconds": 0.7520340000046417,
+    "peak_working_set_bytes": 175771648,
+    "stderr": "",
+    "name": "latin-18",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7530982000171207,
+    "peak_working_set_bytes": 176107520,
+    "stderr": "",
+    "name": "latin-36",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7723969000508077,
+    "peak_working_set_bytes": 181231616,
+    "stderr": "",
+    "name": "latin-rotate-0.5",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.8517289999872446,
+    "peak_working_set_bytes": 185896960,
+    "stderr": "",
+    "name": "latin-rotate-3",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.9000029999879189,
+    "peak_working_set_bytes": 207880192,
+    "stderr": "",
+    "name": "latin-rotate-10",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.9651935000438243,
+    "peak_working_set_bytes": 175910912,
+    "stderr": "",
+    "name": "latin-rotate-90",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.8689062000485137,
+    "peak_working_set_bytes": 175878144,
+    "stderr": "",
+    "name": "latin-rotate-180",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.8493554000160657,
+    "peak_working_set_bytes": 176054272,
+    "stderr": "",
+    "name": "latin-rotate-270",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.836247600032948,
+    "peak_working_set_bytes": 175972352,
+    "stderr": "",
+    "name": "cjk-18",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7922271000570618,
+    "peak_working_set_bytes": 175718400,
+    "stderr": "",
+    "name": "cjk-36",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7532970000174828,
+    "peak_working_set_bytes": 180752384,
+    "stderr": "",
+    "name": "cjk-rotate-0.5",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7925455999793485,
+    "peak_working_set_bytes": 186257408,
+    "stderr": "",
+    "name": "cjk-rotate-3",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7948708000476472,
+    "peak_working_set_bytes": 207441920,
+    "stderr": "",
+    "name": "cjk-rotate-10",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.8150507000391372,
+    "peak_working_set_bytes": 176074752,
+    "stderr": "",
+    "name": "cjk-rotate-90",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7498720000148751,
+    "peak_working_set_bytes": 176300032,
+    "stderr": "",
+    "name": "cjk-rotate-180",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7523442999809049,
+    "peak_working_set_bytes": 175968256,
+    "stderr": "",
+    "name": "cjk-rotate-270",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7917926999507472,
+    "peak_working_set_bytes": 175861760,
+    "stderr": "",
+    "name": "cyrillic-36",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7728665999602526,
+    "peak_working_set_bytes": 176115712,
+    "stderr": "",
+    "name": "arabic-36",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7721725000301376,
+    "peak_working_set_bytes": 175972352,
+    "stderr": "",
+    "name": "devanagari-36",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7742261000094004,
+    "peak_working_set_bytes": 176111616,
+    "stderr": "",
+    "name": "hebrew-36",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.844753600016702,
+    "peak_working_set_bytes": 175861760,
+    "stderr": "",
+    "name": "thai-36",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7539446000009775,
+    "peak_working_set_bytes": 176046080,
+    "stderr": "",
+    "name": "tamil-36",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7736078000161797,
+    "peak_working_set_bytes": 175513600,
+    "stderr": "",
+    "name": "greek-36",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7942099000210874,
+    "peak_working_set_bytes": 151134208,
+    "stderr": "",
+    "name": "blank",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7564960999879986,
+    "peak_working_set_bytes": 176013312,
+    "stderr": "",
+    "name": "透明路径-emoji-😀",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7760030999779701,
+    "peak_working_set_bytes": 191225856,
+    "stderr": "",
+    "name": "multi-column",
+    "runner": "original-wrapper-python-process"
+  },
+  {
+    "exit_code": 0,
+    "seconds": 0.7962027000030503,
+    "peak_working_set_bytes": 178147328,
+    "stderr": "",
+    "name": "vertical-cjk",
+    "runner": "original-wrapper-python-process"
+  }
+]

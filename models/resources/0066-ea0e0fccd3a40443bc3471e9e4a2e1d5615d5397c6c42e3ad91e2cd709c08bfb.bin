@@ -1,0 +1,976 @@
+text_script_to_ocr_mode {
+  mode: LatinAutoV2
+}
+text_script_to_ocr_mode {
+  script: Latin
+  mode: LatinAutoV2
+}
+text_script_to_ocr_mode {
+  script: CJK
+  mode: CJKAuto
+}
+text_script_to_ocr_mode {
+  script: Cyrillic
+  mode: CyrillicAuto
+}
+text_script_to_ocr_mode {
+  script: Arabic
+  mode: ArabicAuto
+}
+text_script_to_ocr_mode {
+  script: Devanagari
+  mode: DevanagariAuto
+}
+text_script_to_ocr_mode {
+  script: Greek
+  mode: GreekAuto
+}
+text_script_to_ocr_mode {
+  script: Thai
+  mode: ThaiAuto
+}
+text_script_to_ocr_mode {
+  script: Hebrew
+  mode: HebrewAuto
+}
+text_script_to_ocr_mode {
+  script: Tamil
+  mode: TamilAuto
+}
+text_script_category_to_ocr_mode {
+  script: Latin
+  category: Handwritten
+  mode: LatinMixedV2
+}
+text_script_category_to_ocr_mode {
+  script: Latin
+  category: Printed
+  mode: LatinPrintedV2
+}
+text_script_category_to_ocr_mode {
+  script: Latin
+  mode: LatinMixedV2
+}
+text_script_category_to_ocr_mode {
+  script: CJK
+  category: Handwritten
+  mode: CJKMixed
+}
+text_script_category_to_ocr_mode {
+  script: CJK
+  category: Printed
+  mode: CJKPrinted
+}
+text_script_category_to_ocr_mode {
+  script: CJK
+  mode: CJKMixed
+}
+text_script_category_to_ocr_mode {
+  script: Cyrillic
+  category: Handwritten
+  mode: CyrillicMixed
+}
+text_script_category_to_ocr_mode {
+  script: Cyrillic
+  category: Printed
+  mode: CyrillicMixed
+}
+text_script_category_to_ocr_mode {
+  script: Cyrillic
+  mode: CyrillicMixed
+}
+text_script_category_to_ocr_mode {
+  script: Arabic
+  category: Handwritten
+  mode: ArabicMixed
+}
+text_script_category_to_ocr_mode {
+  script: Arabic
+  category: Printed
+  mode: ArabicMixed
+}
+text_script_category_to_ocr_mode {
+  script: Arabic
+  mode: ArabicMixed
+}
+text_script_category_to_ocr_mode {
+  script: Devanagari
+  category: Handwritten
+  mode: DevanagariMixed
+}
+text_script_category_to_ocr_mode {
+  script: Devanagari
+  category: Printed
+  mode: DevanagariMixed
+}
+text_script_category_to_ocr_mode {
+  script: Devanagari
+  mode: DevanagariMixed
+}
+text_script_category_to_ocr_mode {
+  script: Greek
+  category: Handwritten
+  mode: GreekMixed
+}
+text_script_category_to_ocr_mode {
+  script: Greek
+  category: Printed
+  mode: GreekMixed
+}
+text_script_category_to_ocr_mode {
+  script: Greek
+  mode: GreekMixed
+}
+text_script_category_to_ocr_mode {
+  script: Thai
+  category: Handwritten
+  mode: ThaiMixed
+}
+text_script_category_to_ocr_mode {
+  script: Thai
+  category: Printed
+  mode: ThaiMixed
+}
+text_script_category_to_ocr_mode {
+  script: Thai
+  mode: ThaiMixed
+}
+text_script_category_to_ocr_mode {
+  script: Hebrew
+  category: Handwritten
+  mode: HebrewPrinted
+}
+text_script_category_to_ocr_mode {
+  script: Hebrew
+  category: Printed
+  mode: HebrewPrinted
+}
+text_script_category_to_ocr_mode {
+  script: Hebrew
+  mode: HebrewPrinted
+}
+text_script_category_to_ocr_mode {
+  script: Tamil
+  category: Handwritten
+  mode: TamilPrinted
+}
+text_script_category_to_ocr_mode {
+  script: Tamil
+  category: Printed
+  mode: TamilPrinted
+}
+text_script_category_to_ocr_mode {
+  script: Tamil
+  mode: TamilPrinted
+}
+ocr_mode_to_text_category {
+  mode: Auto
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: LatinPrintedV2
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: LatinMixedV2
+}
+ocr_mode_to_text_category {
+  mode: LatinPrintedV2Dummy
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: LatinAutoV2
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: CJKPrinted
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: CJKMixed
+}
+ocr_mode_to_text_category {
+  mode: CJKAuto
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: CyrillicAuto
+  category: Mixed
+}
+ocr_mode_to_text_category {
+  mode: CyrillicPrinted
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: CyrillicMixed
+}
+ocr_mode_to_text_category {
+  mode: CyrillicPrintedDummy
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: CyrillicMixedDummy
+  category: Mixed
+}
+ocr_mode_to_text_category {
+  mode: ArabicAuto
+  category: Mixed
+}
+ocr_mode_to_text_category {
+  mode: ArabicPrinted
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: ArabicMixed
+}
+ocr_mode_to_text_category {
+  mode: ArabicPrintedDummy
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: ArabicMixedDummy
+  category: Mixed
+}
+ocr_mode_to_text_category {
+  mode: DevanagariAuto
+  category: Mixed
+}
+ocr_mode_to_text_category {
+  mode: DevanagariPrinted
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: DevanagariMixed
+}
+ocr_mode_to_text_category {
+  mode: DevanagariPrintedDummy
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: DevanagariMixedDummy
+  category: Mixed
+}
+ocr_mode_to_text_category {
+  mode: GreekAuto
+  category: Mixed
+}
+ocr_mode_to_text_category {
+  mode: GreekPrinted
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: GreekMixed
+}
+ocr_mode_to_text_category {
+  mode: GreekPrintedDummy
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: GreekMixedDummy
+  category: Mixed
+}
+ocr_mode_to_text_category {
+  mode: ThaiAuto
+  category: Mixed
+}
+ocr_mode_to_text_category {
+  mode: ThaiPrinted
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: ThaiMixed
+}
+ocr_mode_to_text_category {
+  mode: ThaiPrintedDummy
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: ThaiMixedDummy
+  category: Mixed
+}
+ocr_mode_to_text_category {
+  mode: HebrewAuto
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: HebrewPrinted
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: HebrewMixed
+}
+ocr_mode_to_text_category {
+  mode: HebrewPrintedDummy
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: TamilAuto
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: TamilPrinted
+  category: Printed
+}
+ocr_mode_to_text_category {
+  mode: TamilMixed
+}
+ocr_mode_to_text_category {
+  mode: TamilPrintedDummy
+  category: Printed
+}
+ocr_mode_to_text_script {
+  mode: Auto
+  script: Latin
+}
+ocr_mode_to_text_script {
+  mode: LatinPrintedV2
+  script: Latin
+}
+ocr_mode_to_text_script {
+  mode: LatinMixedV2
+  script: Latin
+}
+ocr_mode_to_text_script {
+  mode: LatinAutoV2
+  script: Latin
+}
+ocr_mode_to_text_script {
+  mode: LatinPrintedV2Dummy
+  script: Latin
+}
+ocr_mode_to_text_script {
+  mode: CJKPrinted
+  script: CJK
+}
+ocr_mode_to_text_script {
+  mode: CJKMixed
+  script: CJK
+}
+ocr_mode_to_text_script {
+  mode: CJKAuto
+  script: CJK
+}
+ocr_mode_to_text_script {
+  mode: CyrillicPrinted
+  script: Cyrillic
+}
+ocr_mode_to_text_script {
+  mode: CyrillicMixed
+  script: Cyrillic
+}
+ocr_mode_to_text_script {
+  mode: CyrillicAuto
+  script: Cyrillic
+}
+ocr_mode_to_text_script {
+  mode: CyrillicPrintedDummy
+  script: Cyrillic
+}
+ocr_mode_to_text_script {
+  mode: CyrillicMixedDummy
+  script: Cyrillic
+}
+ocr_mode_to_text_script {
+  mode: ArabicPrinted
+  script: Arabic
+}
+ocr_mode_to_text_script {
+  mode: ArabicMixed
+  script: Arabic
+}
+ocr_mode_to_text_script {
+  mode: ArabicAuto
+  script: Arabic
+}
+ocr_mode_to_text_script {
+  mode: ArabicPrintedDummy
+  script: Arabic
+}
+ocr_mode_to_text_script {
+  mode: ArabicMixedDummy
+  script: Arabic
+}
+ocr_mode_to_text_script {
+  mode: DevanagariPrinted
+  script: Devanagari
+}
+ocr_mode_to_text_script {
+  mode: DevanagariMixed
+  script: Devanagari
+}
+ocr_mode_to_text_script {
+  mode: DevanagariAuto
+  script: Devanagari
+}
+ocr_mode_to_text_script {
+  mode: DevanagariPrintedDummy
+  script: Devanagari
+}
+ocr_mode_to_text_script {
+  mode: DevanagariMixedDummy
+  script: Devanagari
+}
+ocr_mode_to_text_script {
+  mode: GreekPrinted
+  script: Greek
+}
+ocr_mode_to_text_script {
+  mode: GreekMixed
+  script: Greek
+}
+ocr_mode_to_text_script {
+  mode: GreekAuto
+  script: Greek
+}
+ocr_mode_to_text_script {
+  mode: GreekPrintedDummy
+  script: Greek
+}
+ocr_mode_to_text_script {
+  mode: GreekMixedDummy
+  script: Greek
+}
+ocr_mode_to_text_script {
+  mode: ThaiPrinted
+  script: Thai
+}
+ocr_mode_to_text_script {
+  mode: ThaiMixed
+  script: Thai
+}
+ocr_mode_to_text_script {
+  mode: ThaiAuto
+  script: Thai
+}
+ocr_mode_to_text_script {
+  mode: ThaiPrintedDummy
+  script: Thai
+}
+ocr_mode_to_text_script {
+  mode: ThaiMixedDummy
+  script: Thai
+}
+ocr_mode_to_text_script {
+  mode: HebrewPrinted
+  script: Hebrew
+}
+ocr_mode_to_text_script {
+  mode: HebrewMixed
+  script: Hebrew
+}
+ocr_mode_to_text_script {
+  mode: HebrewAuto
+  script: Hebrew
+}
+ocr_mode_to_text_script {
+  mode: HebrewPrintedDummy
+  script: Hebrew
+}
+ocr_mode_to_text_script {
+  mode: TamilPrinted
+  script: Tamil
+}
+ocr_mode_to_text_script {
+  mode: TamilMixed
+  script: Tamil
+}
+ocr_mode_to_text_script {
+  mode: TamilAuto
+  script: Tamil
+}
+ocr_mode_to_text_script {
+  mode: TamilPrintedDummy
+  script: Tamil
+}
+ocr_mode_to_char_model_path {
+  mode: Auto
+  path: LatinPrintedV2
+}
+ocr_mode_to_char_model_path {
+  mode: LatinPrintedV2
+  path: LatinPrintedV2
+}
+ocr_mode_to_char_model_path {
+  mode: LatinMixedV2
+  path: LatinPrintedV2
+}
+ocr_mode_to_char_model_path {
+  mode: LatinPrintedV2Dummy
+  path: LatinPrintedV2
+}
+ocr_mode_to_char_model_path {
+  mode: LatinAutoV2
+  path: LatinPrintedV2
+}
+ocr_mode_to_char_model_path {
+  mode: CJKPrinted
+  path: CJKPrinted
+}
+ocr_mode_to_char_model_path {
+  mode: CJKMixed
+  path: CJKPrinted
+}
+ocr_mode_to_char_model_path {
+  mode: CJKAuto
+  path: CJKPrinted
+}
+ocr_mode_to_char_model_path {
+  mode: CyrillicAuto
+  path: CyrillicMixed
+}
+ocr_mode_to_char_model_path {
+  mode: CyrillicPrinted
+  path: CyrillicMixed
+}
+ocr_mode_to_char_model_path {
+  mode: CyrillicMixed
+  path: CyrillicMixed
+}
+ocr_mode_to_char_model_path {
+  mode: CyrillicPrintedDummy
+  path: CyrillicMixed
+}
+ocr_mode_to_char_model_path {
+  mode: CyrillicMixedDummy
+  path: CyrillicMixed
+}
+ocr_mode_to_char_model_path {
+  mode: ArabicAuto
+  path: ArabicMixed
+}
+ocr_mode_to_char_model_path {
+  mode: ArabicPrinted
+  path: ArabicMixed
+}
+ocr_mode_to_char_model_path {
+  mode: ArabicMixed
+  path: ArabicMixed
+}
+ocr_mode_to_char_model_path {
+  mode: ArabicPrintedDummy
+  path: ArabicMixed
+}
+ocr_mode_to_char_model_path {
+  mode: ArabicMixedDummy
+  path: ArabicMixed
+}
+ocr_mode_to_char_model_path {
+  mode: DevanagariAuto
+  path: DevanagariMixed
+}
+ocr_mode_to_char_model_path {
+  mode: DevanagariPrinted
+  path: DevanagariMixed
+}
+ocr_mode_to_char_model_path {
+  mode: DevanagariMixed
+  path: DevanagariMixed
+}
+ocr_mode_to_char_model_path {
+  mode: DevanagariPrintedDummy
+  path: DevanagariMixed
+}
+ocr_mode_to_char_model_path {
+  mode: DevanagariMixedDummy
+  path: DevanagariMixed
+}
+ocr_mode_to_char_model_path {
+  mode: GreekAuto
+  path: GreekMixed
+}
+ocr_mode_to_char_model_path {
+  mode: GreekPrinted
+  path: GreekMixed
+}
+ocr_mode_to_char_model_path {
+  mode: GreekMixed
+  path: GreekMixed
+}
+ocr_mode_to_char_model_path {
+  mode: GreekPrintedDummy
+  path: GreekMixed
+}
+ocr_mode_to_char_model_path {
+  mode: GreekMixedDummy
+  path: GreekMixed
+}
+ocr_mode_to_char_model_path {
+  mode: ThaiAuto
+  path: ThaiMixed
+}
+ocr_mode_to_char_model_path {
+  mode: ThaiPrinted
+  path: ThaiMixed
+}
+ocr_mode_to_char_model_path {
+  mode: ThaiMixed
+  path: ThaiMixed
+}
+ocr_mode_to_char_model_path {
+  mode: ThaiPrintedDummy
+  path: ThaiMixed
+}
+ocr_mode_to_char_model_path {
+  mode: ThaiMixedDummy
+  path: ThaiMixed
+}
+ocr_mode_to_char_model_path {
+  mode: HebrewAuto
+  path: HebrewPrinted
+}
+ocr_mode_to_char_model_path {
+  mode: HebrewPrinted
+  path: HebrewPrinted
+}
+ocr_mode_to_char_model_path {
+  mode: HebrewMixed
+  path: HebrewPrinted
+}
+ocr_mode_to_char_model_path {
+  mode: HebrewPrintedDummy
+  path: HebrewPrinted
+}
+ocr_mode_to_char_model_path {
+  mode: TamilAuto
+  path: TamilPrinted
+}
+ocr_mode_to_char_model_path {
+  mode: TamilPrinted
+  path: TamilPrinted
+}
+ocr_mode_to_char_model_path {
+  mode: TamilMixed
+  path: TamilPrinted
+}
+ocr_mode_to_char_model_path {
+  mode: TamilPrintedDummy
+  path: TamilPrinted
+}
+ocr_mode_to_decoder_path {
+  mode: Auto
+  path: LatinPrintedV2
+}
+ocr_mode_to_decoder_path {
+  mode: LatinPrintedV2
+  path: LatinPrintedV2
+}
+ocr_mode_to_decoder_path {
+  mode: LatinMixedV2
+  path: LatinMixedV2
+}
+ocr_mode_to_decoder_path {
+  mode: LatinPrintedV2Dummy
+  path: LatinPrintedV2Dummy
+}
+ocr_mode_to_decoder_path {
+  mode: LatinAutoV2
+  path: LatinPrintedV2
+}
+ocr_mode_to_decoder_path {
+  mode: CJKPrinted
+  path: CJKPrinted
+}
+ocr_mode_to_decoder_path {
+  mode: CJKMixed
+  path: CJKMixed
+}
+ocr_mode_to_decoder_path {
+  mode: CJKAuto
+  path: CJKPrinted
+}
+ocr_mode_to_decoder_path {
+  mode: CyrillicAuto
+  path: CyrillicMixed
+}
+ocr_mode_to_decoder_path {
+  mode: CyrillicPrinted
+  path: CyrillicMixed
+}
+ocr_mode_to_decoder_path {
+  mode: CyrillicMixed
+  path: CyrillicMixed
+}
+ocr_mode_to_decoder_path {
+  mode: CyrillicPrintedDummy
+  path: CyrillicMixedDummy
+}
+ocr_mode_to_decoder_path {
+  mode: CyrillicMixedDummy
+  path: CyrillicMixedDummy
+}
+ocr_mode_to_decoder_path {
+  mode: ArabicAuto
+  path: ArabicMixed
+}
+ocr_mode_to_decoder_path {
+  mode: ArabicPrinted
+  path: ArabicMixed
+}
+ocr_mode_to_decoder_path {
+  mode: ArabicMixed
+  path: ArabicMixed
+}
+ocr_mode_to_decoder_path {
+  mode: ArabicPrintedDummy
+  path: ArabicMixedDummy
+}
+ocr_mode_to_decoder_path {
+  mode: ArabicMixedDummy
+  path: ArabicMixedDummy
+}
+ocr_mode_to_decoder_path {
+  mode: DevanagariAuto
+  path: DevanagariMixed
+}
+ocr_mode_to_decoder_path {
+  mode: DevanagariPrinted
+  path: DevanagariMixed
+}
+ocr_mode_to_decoder_path {
+  mode: DevanagariMixed
+  path: DevanagariMixed
+}
+ocr_mode_to_decoder_path {
+  mode: DevanagariPrintedDummy
+  path: DevanagariMixedDummy
+}
+ocr_mode_to_decoder_path {
+  mode: DevanagariMixedDummy
+  path: DevanagariMixedDummy
+}
+ocr_mode_to_decoder_path {
+  mode: GreekAuto
+  path: GreekMixed
+}
+ocr_mode_to_decoder_path {
+  mode: GreekPrinted
+  path: GreekMixed
+}
+ocr_mode_to_decoder_path {
+  mode: GreekMixed
+  path: GreekMixed
+}
+ocr_mode_to_decoder_path {
+  mode: GreekPrintedDummy
+  path: GreekMixedDummy
+}
+ocr_mode_to_decoder_path {
+  mode: GreekMixedDummy
+  path: GreekMixedDummy
+}
+ocr_mode_to_decoder_path {
+  mode: ThaiAuto
+  path: ThaiMixed
+}
+ocr_mode_to_decoder_path {
+  mode: ThaiPrinted
+  path: ThaiMixed
+}
+ocr_mode_to_decoder_path {
+  mode: ThaiMixed
+  path: ThaiMixed
+}
+ocr_mode_to_decoder_path {
+  mode: ThaiPrintedDummy
+  path: ThaiMixedDummy
+}
+ocr_mode_to_decoder_path {
+  mode: ThaiMixedDummy
+  path: ThaiMixedDummy
+}
+ocr_mode_to_decoder_path {
+  mode: HebrewAuto
+  path: HebrewPrinted
+}
+ocr_mode_to_decoder_path {
+  mode: HebrewPrinted
+  path: HebrewPrinted
+}
+ocr_mode_to_decoder_path {
+  mode: HebrewMixed
+  path: HebrewPrinted
+}
+ocr_mode_to_decoder_path {
+  mode: HebrewPrintedDummy
+  path: HebrewPrintedDummy
+}
+ocr_mode_to_decoder_path {
+  mode: TamilAuto
+  path: TamilPrinted
+}
+ocr_mode_to_decoder_path {
+  mode: TamilPrinted
+  path: TamilPrinted
+}
+ocr_mode_to_decoder_path {
+  mode: TamilMixed
+  path: TamilPrinted
+}
+ocr_mode_to_decoder_path {
+  mode: TamilPrintedDummy
+  path: TamilPrintedDummy
+}
+ocr_mode_to_conf_rej_path {
+  mode: Auto
+  path: LatinPrintedV2
+}
+ocr_mode_to_conf_rej_path {
+  mode: LatinPrintedV2
+  path: LatinPrintedV2
+}
+ocr_mode_to_conf_rej_path {
+  mode: LatinMixedV2
+  path: LatinPrintedV2
+}
+ocr_mode_to_conf_rej_path {
+  mode: LatinPrintedV2Dummy
+  path: LatinPrintedV2Dummy
+}
+ocr_mode_to_conf_rej_path {
+  mode: LatinAutoV2
+  path: LatinPrintedV2
+}
+ocr_mode_to_conf_rej_path {
+  mode: CJKPrinted
+  path: CJKPrinted
+}
+ocr_mode_to_conf_rej_path {
+  mode: CJKMixed
+  path: CJKPrinted
+}
+ocr_mode_to_conf_rej_path {
+  mode: CJKAuto
+  path: CJKPrinted
+}
+ocr_mode_to_conf_rej_path {
+  mode: CyrillicAuto
+  path: CyrillicMixed
+}
+ocr_mode_to_conf_rej_path {
+  mode: CyrillicPrinted
+  path: CyrillicMixed
+}
+ocr_mode_to_conf_rej_path {
+  mode: CyrillicMixed
+  path: CyrillicMixed
+}
+ocr_mode_to_conf_rej_path {
+  mode: CyrillicPrintedDummy
+  path: CyrillicMixedDummy
+}
+ocr_mode_to_conf_rej_path {
+  mode: CyrillicMixedDummy
+  path: CyrillicMixedDummy
+}
+ocr_mode_to_conf_rej_path {
+  mode: ArabicAuto
+  path: ArabicMixed
+}
+ocr_mode_to_conf_rej_path {
+  mode: ArabicPrinted
+  path: ArabicMixed
+}
+ocr_mode_to_conf_rej_path {
+  mode: ArabicMixed
+  path: ArabicMixed
+}
+ocr_mode_to_conf_rej_path {
+  mode: ArabicPrintedDummy
+  path: ArabicMixedDummy
+}
+ocr_mode_to_conf_rej_path {
+  mode: ArabicMixedDummy
+  path: ArabicMixedDummy
+}
+ocr_mode_to_conf_rej_path {
+  mode: DevanagariAuto
+  path: DevanagariMixed
+}
+ocr_mode_to_conf_rej_path {
+  mode: DevanagariPrinted
+  path: DevanagariMixed
+}
+ocr_mode_to_conf_rej_path {
+  mode: DevanagariMixed
+  path: DevanagariMixed
+}
+ocr_mode_to_conf_rej_path {
+  mode: DevanagariPrintedDummy
+  path: DevanagariMixedDummy
+}
+ocr_mode_to_conf_rej_path {
+  mode: DevanagariMixedDummy
+  path: DevanagariMixedDummy
+}
+ocr_mode_to_conf_rej_path {
+  mode: GreekAuto
+  path: GreekMixed
+}
+ocr_mode_to_conf_rej_path {
+  mode: GreekPrinted
+  path: GreekMixed
+}
+ocr_mode_to_conf_rej_path {
+  mode: GreekMixed
+  path: GreekMixed
+}
+ocr_mode_to_conf_rej_path {
+  mode: GreekPrintedDummy
+  path: GreekMixedDummy
+}
+ocr_mode_to_conf_rej_path {
+  mode: GreekMixedDummy
+  path: GreekMixedDummy
+}
+ocr_mode_to_conf_rej_path {
+  mode: ThaiAuto
+  path: ThaiMixed
+}
+ocr_mode_to_conf_rej_path {
+  mode: ThaiPrinted
+  path: ThaiMixed
+}
+ocr_mode_to_conf_rej_path {
+  mode: ThaiMixed
+  path: ThaiMixed
+}
+ocr_mode_to_conf_rej_path {
+  mode: ThaiPrintedDummy
+  path: ThaiMixedDummy
+}
+ocr_mode_to_conf_rej_path {
+  mode: ThaiMixedDummy
+  path: ThaiMixedDummy
+}
+ocr_mode_to_conf_rej_path {
+  mode: HebrewAuto
+  path: HebrewPrinted
+}
+ocr_mode_to_conf_rej_path {
+  mode: HebrewPrinted
+  path: HebrewPrinted
+}
+ocr_mode_to_conf_rej_path {
+  mode: HebrewMixed
+  path: HebrewPrinted
+}
+ocr_mode_to_conf_rej_path {
+  mode: HebrewPrintedDummy
+  path: HebrewPrintedDummy
+}
+ocr_mode_to_conf_rej_path {
+  mode: TamilAuto
+  path: TamilPrinted
+}
+ocr_mode_to_conf_rej_path {
+  mode: TamilPrinted
+  path: TamilPrinted
+}
+ocr_mode_to_conf_rej_path {
+  mode: TamilMixed
+  path: TamilPrinted
+}
+ocr_mode_to_conf_rej_path {
+  mode: TamilPrintedDummy
+  path: TamilPrintedDummy
+}

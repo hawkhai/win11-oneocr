@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "library": "F:\\pythonx\\myocr\\win11-oneocr\\build\\source-runtime\\native\\Release\\oneocr_portable.dll",
+  "checks": [
+    "file versus padded BGRA exact result equivalence",
+    "six concurrent calls on one context",
+    "two concurrent independent contexts",
+    "missing image leaves JSON null with image error",
+    "max_lines=1",
+    "existing invalid image leaves JSON null with image error",
+    "corrupt vocabulary rejected before inference; source assets unchanged"
+  ]
+}

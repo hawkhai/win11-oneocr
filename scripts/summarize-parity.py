@@ -10,11 +10,13 @@ module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--baseline',type=Path,default=ROOT/'work/oneocr-portable/corpus-legacy')
+    p.add_argument('--baseline',type=Path,default=(ROOT/'work/oneocr-portable/corpus-legacy' if (ROOT/'work/oneocr-portable/corpus-legacy').is_dir() else ROOT/'research/case/corpus-legacy'))
     p.add_argument('--actual',type=Path,default=ROOT/'work/oneocr-portable/corpus-native')
     p.add_argument('--output',type=Path,default=ROOT/'work/oneocr-portable/evidence/corpus-parity.json')
     args=p.parse_args();results=[]
-    fixtures=json.loads((ROOT/'work/oneocr-portable/corpus/manifest.json').read_text(encoding='utf8'))['cases']
+    corpus=ROOT/'work/oneocr-portable/corpus'
+    if not (corpus/'manifest.json').is_file():corpus=ROOT/'research/case/corpus'
+    fixtures=json.loads((corpus/'manifest.json').read_text(encoding='utf8'))['cases']
     measurements={}
     for kind,directory in [('baseline',args.baseline),('actual',args.actual)]:
         path=directory/'measurements.json'

@@ -1,0 +1,195 @@
+{
+  "passed": false,
+  "expected_lines": 1,
+  "actual_lines": 1,
+  "same_position_text_matches": 0,
+  "failure_count": 36,
+  "failures": [
+    {
+      "field": "image_angle",
+      "expected": 359.8204040527344,
+      "actual": 359.3898010253906
+    },
+    {
+      "field": "lines[0].text",
+      "expected": "नयमकान बशिव 2026",
+      "actual": "नयमकान बशित 2026"
+    },
+    {
+      "field": "lines[0].bounding_box[0]",
+      "expected": 25.0,
+      "actual": 19.003873825073242
+    },
+    {
+      "field": "lines[0].bounding_box[2]",
+      "expected": 344.0,
+      "actual": 342.7047119140625
+    },
+    {
+      "field": "lines[0].bounding_box[3]",
+      "expected": 38.0,
+      "actual": 35.4559326171875
+    },
+    {
+      "field": "lines[0].bounding_box[5]",
+      "expected": 88.0,
+      "actual": 83.10499572753906
+    },
+    {
+      "field": "lines[0].bounding_box[6]",
+      "expected": 25.0,
+      "actual": 19.511348724365234
+    },
+    {
+      "field": "lines[0].bounding_box[7]",
+      "expected": 89.0,
+      "actual": 86.55249786376953
+    },
+    {
+      "field": "lines[0].style.confidence",
+      "expected": 0.8639000058174133,
+      "actual": 0.9340999722480774
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[0]",
+      "expected": 25.57098960876465,
+      "actual": 31.69802474975586
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[1]",
+      "expected": 41.59831619262695,
+      "actual": 38.76823425292969
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[2]",
+      "expected": 167.0930633544922,
+      "actual": 152.29244995117188
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[3]",
+      "expected": 39.0893669128418,
+      "actual": 37.48387145996094
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[4]",
+      "expected": 167.8713836669922,
+      "actual": 152.7999267578125
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[5]",
+      "expected": 89.79456329345703,
+      "actual": 85.1329345703125
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[6]",
+      "expected": 26.34931755065918,
+      "actual": 32.20549774169922
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[7]",
+      "expected": 90.0,
+      "actual": 86.41730499267578
+    },
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.39393648505210876,
+      "actual": 0.7246139049530029
+    },
+    {
+      "field": "lines[0].words[1].text",
+      "expected": "बशिव",
+      "actual": "बशित"
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[0]",
+      "expected": 177.60800170898438,
+      "actual": 184.02784729003906
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[1]",
+      "expected": 39.0567741394043,
+      "actual": 37.14588165283203
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[2]",
+      "expected": 260.10870361328125,
+      "actual": 244.32504272460938
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[3]",
+      "expected": 39.27153778076172,
+      "actual": 36.503700256347656
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[4]",
+      "expected": 260.88702392578125,
+      "actual": 244.83251953125
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[5]",
+      "expected": 88.92457580566406,
+      "actual": 84.15276336669922
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[6]",
+      "expected": 178.38632202148438,
+      "actual": 184.5353240966797
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[7]",
+      "expected": 89.718505859375,
+      "actual": 84.7949447631836
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.39758628606796265,
+      "actual": 0.659122109413147
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[0]",
+      "expected": 269.8145446777344,
+      "actual": 272.8868713378906
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[1]",
+      "expected": 39.34659957885742,
+      "actual": 36.19950866699219
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[2]",
+      "expected": 345.0,
+      "actual": 330.01055908203125
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[3]",
+      "expected": 40.584075927734375,
+      "actual": 35.591129302978516
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[4]",
+      "expected": 345.0,
+      "actual": 330.5180358886719
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[5]",
+      "expected": 87.65299987792969,
+      "actual": 83.24018859863281
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[6]",
+      "expected": 270.5928649902344,
+      "actual": 273.39434814453125
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[7]",
+      "expected": 88.81490325927734,
+      "actual": 83.84857177734375
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "bengali-36"
+}

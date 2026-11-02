@@ -1,0 +1,25 @@
+{
+  "passed": false,
+  "expected_lines": 1,
+  "actual_lines": 1,
+  "same_position_text_matches": 1,
+  "failure_count": 2,
+  "failures": [
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.9005042910575867,
+      "actual": 0.8648583889007568
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.8347744941711426,
+      "actual": 0.8328529596328735
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "hebrew-36"
+}

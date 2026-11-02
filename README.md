@@ -1,5 +1,19 @@
 # Windows 11 Snipping Tool OCR (OneOCR)
 
+## Clone and run / 拉取即用
+
+完整 Git 检出已包含独立模型与验证过的 Windows x64、Linux x64 原生运行文件，无需 Python、编译器、账号或激活服务即可识别。
+
+```powershell
+.\ocr.cmd .\ocr-book.jpg --text
+```
+
+```sh
+./ocr.sh ./ocr-book.jpg --text
+```
+
+Linux 现有预编译包要求 **glibc 2.43+**（在 Ubuntu 26.04 x64 验证），不满足时需在目标系统从源码构建。macOS、Android、ARM64 仍需目标平台构建验证。模型与运行库均使用普通 Git 文件，未使用 Git LFS；首次克隆会下载较多二进制资源。完整资产范围、来源声明和标准库校验命令见 [交付说明](docs/checkout-ready.md)。本次仅本地 commit，未 push 或发布模型。
+
 ## Native source runtime — experimental
 
 The repository now contains a C++20/CMake backend that runs independently of
@@ -36,7 +50,7 @@ dsh plugin add github:hawkhai/win11-oneocr
 
 It registers `oneocr_recognize`, a model-facing tool that accepts a local image path and returns recognized text together with OneOCR's structured line/word polygons, confidence values, image angle, and handwriting style. The tool runs locally on Windows 11; image bytes are not sent to an external OCR service.
 
-The bundle defaults to the prebuilt `bin/ocr.exe` and its adjacent runtime files. Override `ocrBin`, `timeoutMs`, or `maxOutputBytes` in the plugin row if needed.
+The plugin defaults to the native CLI under `artifacts/<platform>-<arch>/bin/` and the shared `models/` directory. The legacy `bin/ocr.exe` requires `backend: legacy`. Override `ocrBin`, `modelDir`, `timeoutMs`, or `maxOutputBytes` if needed. Installing as an npm package does not include the Microsoft models; the complete Git checkout does.
 
 ## Features
 

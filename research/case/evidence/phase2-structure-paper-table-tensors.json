@@ -1,0 +1,4149 @@
+{
+  "exact": false,
+  "calls": [
+    {
+      "native_call": 1,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        64
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-28"
+    },
+    {
+      "native_call": 2,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        68
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-3"
+    },
+    {
+      "native_call": 3,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        94
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-13"
+    },
+    {
+      "native_call": 4,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        124
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-7"
+    },
+    {
+      "native_call": 5,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-22"
+    },
+    {
+      "native_call": 6,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        124
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-19"
+    },
+    {
+      "native_call": 7,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        124
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-26"
+    },
+    {
+      "native_call": 8,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        164
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-17"
+    },
+    {
+      "native_call": 9,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-1"
+    },
+    {
+      "native_call": 10,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-9"
+    },
+    {
+      "native_call": 11,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-24"
+    },
+    {
+      "native_call": 12,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        239
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-21"
+    },
+    {
+      "native_call": 13,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-5"
+    },
+    {
+      "native_call": 14,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        276
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-12"
+    },
+    {
+      "native_call": 15,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        186
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-11"
+    },
+    {
+      "native_call": 16,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        124
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-15"
+    },
+    {
+      "native_call": 17,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        354
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-30"
+    },
+    {
+      "native_call": 18,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        243
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-31"
+    },
+    {
+      "native_call": 19,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        254
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-33"
+    },
+    {
+      "native_call": 20,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        112
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-39"
+    },
+    {
+      "native_call": 21,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        326
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-34"
+    },
+    {
+      "native_call": 22,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        138
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-35"
+    },
+    {
+      "native_call": 23,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        322
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-32"
+    },
+    {
+      "native_call": 24,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        124
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-37"
+    },
+    {
+      "native_call": 25,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        124
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-41"
+    },
+    {
+      "native_call": 26,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        124
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-45"
+    },
+    {
+      "native_call": 27,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-47"
+    },
+    {
+      "native_call": 28,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-43"
+    },
+    {
+      "native_call": 29,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        96
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-51"
+    },
+    {
+      "native_call": 30,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        241
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-49"
+    },
+    {
+      "native_call": 31,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        162
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-53"
+    },
+    {
+      "native_call": 32,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        263
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-50"
+    },
+    {
+      "native_call": 33,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        124
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-57"
+    },
+    {
+      "native_call": 34,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-59"
+    },
+    {
+      "native_call": 35,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-69"
+    },
+    {
+      "native_call": 36,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-55"
+    },
+    {
+      "native_call": 37,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-65"
+    },
+    {
+      "native_call": 38,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-71"
+    },
+    {
+      "native_call": 39,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        124
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-61"
+    },
+    {
+      "native_call": 40,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-67"
+    },
+    {
+      "native_call": 41,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-63"
+    },
+    {
+      "native_call": 42,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        152
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-73"
+    },
+    {
+      "native_call": 43,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        158
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-77"
+    },
+    {
+      "native_call": 44,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        124
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-75"
+    },
+    {
+      "native_call": 45,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        88
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-89"
+    },
+    {
+      "native_call": 46,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        124
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-79"
+    },
+    {
+      "native_call": 47,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        51
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-87"
+    },
+    {
+      "native_call": 48,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-81"
+    },
+    {
+      "native_call": 49,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        44
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-85"
+    },
+    {
+      "native_call": 50,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        55
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-83"
+    },
+    {
+      "native_call": 51,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-91"
+    },
+    {
+      "native_call": 52,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        219
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-93"
+    },
+    {
+      "native_call": 53,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        92
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-95"
+    },
+    {
+      "native_call": 54,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": false,
+      "outputs": []
+    },
+    {
+      "native_call": 55,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        153
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-97"
+    },
+    {
+      "native_call": 56,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-100"
+    },
+    {
+      "native_call": 57,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        398
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-94"
+    },
+    {
+      "native_call": 58,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        137
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-103"
+    },
+    {
+      "native_call": 59,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        231
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-102"
+    },
+    {
+      "native_call": 60,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        69
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-106"
+    },
+    {
+      "native_call": 61,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        366
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-99"
+    },
+    {
+      "native_call": 62,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        408
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-105"
+    },
+    {
+      "native_call": 63,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        277
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-108"
+    },
+    {
+      "native_call": 64,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        143
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-109"
+    },
+    {
+      "native_call": 65,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        167
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-111"
+    },
+    {
+      "native_call": 66,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        172
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-113"
+    },
+    {
+      "native_call": 67,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-115"
+    },
+    {
+      "native_call": 68,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        120
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-117"
+    },
+    {
+      "native_call": 69,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        124
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-119"
+    },
+    {
+      "native_call": 70,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        75
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-121"
+    },
+    {
+      "native_call": 71,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        54
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-123"
+    },
+    {
+      "native_call": 72,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        167
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-127"
+    },
+    {
+      "native_call": 73,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        156
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-125"
+    },
+    {
+      "native_call": 74,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        156
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-129"
+    },
+    {
+      "native_call": 75,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        87
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-135"
+    },
+    {
+      "native_call": 76,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        175
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-133"
+    },
+    {
+      "native_call": 77,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        45
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-139"
+    },
+    {
+      "native_call": 78,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        87
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-137"
+    },
+    {
+      "native_call": 79,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        43
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-141"
+    },
+    {
+      "native_call": 80,
+      "model": "classifier/script_classifier.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        52
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "script_id_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "hwpc_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        {
+          "name": "flip_score",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-143"
+    },
+    {
+      "model": "classifier/",
+      "cpp_line": "line-131",
+      "input_exact": false,
+      "error": "Unmatched C++ input"
+    },
+    {
+      "native_call": 81,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        68
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-28"
+    },
+    {
+      "native_call": 82,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        96
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-13"
+    },
+    {
+      "native_call": 83,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-24"
+    },
+    {
+      "native_call": 84,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-7"
+    },
+    {
+      "native_call": 85,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-9"
+    },
+    {
+      "native_call": 86,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        72
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-3"
+    },
+    {
+      "native_call": 87,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-1"
+    },
+    {
+      "native_call": 88,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-19"
+    },
+    {
+      "native_call": 89,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        136
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-5"
+    },
+    {
+      "native_call": 90,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        168
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-17"
+    },
+    {
+      "native_call": 91,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-22"
+    },
+    {
+      "native_call": 92,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        188
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-11"
+    },
+    {
+      "native_call": 93,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-26"
+    },
+    {
+      "native_call": 94,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-15"
+    },
+    {
+      "native_call": 95,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        240
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-21"
+    },
+    {
+      "native_call": 96,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        280
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-12"
+    },
+    {
+      "native_call": 129,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        244
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-31"
+    },
+    {
+      "native_call": 130,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        356
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-30"
+    },
+    {
+      "native_call": 131,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        324
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-32"
+    },
+    {
+      "native_call": 132,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-41"
+    },
+    {
+      "native_call": 133,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-37"
+    },
+    {
+      "native_call": 134,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        140
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-35"
+    },
+    {
+      "native_call": 135,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        116
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-39"
+    },
+    {
+      "native_call": 136,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        256
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-33"
+    },
+    {
+      "native_call": 138,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-45"
+    },
+    {
+      "native_call": 139,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-47"
+    },
+    {
+      "native_call": 140,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        328
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-34"
+    },
+    {
+      "native_call": 141,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        136
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-43"
+    },
+    {
+      "native_call": 142,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        264
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-50"
+    },
+    {
+      "native_call": 143,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        244
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-49"
+    },
+    {
+      "native_call": 144,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        100
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-51"
+    },
+    {
+      "native_call": 168,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        164
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-53"
+    },
+    {
+      "native_call": 179,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-57"
+    },
+    {
+      "native_call": 180,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-69"
+    },
+    {
+      "native_call": 181,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-59"
+    },
+    {
+      "native_call": 182,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-65"
+    },
+    {
+      "native_call": 186,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        136
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-55"
+    },
+    {
+      "native_call": 187,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-63"
+    },
+    {
+      "native_call": 188,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-61"
+    },
+    {
+      "native_call": 189,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        136
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-71"
+    },
+    {
+      "native_call": 192,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-67"
+    },
+    {
+      "native_call": 195,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        156
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-73"
+    },
+    {
+      "native_call": 196,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        160
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-77"
+    },
+    {
+      "native_call": 202,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-79"
+    },
+    {
+      "native_call": 206,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-75"
+    },
+    {
+      "native_call": 213,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-81"
+    },
+    {
+      "native_call": 215,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        92
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-89"
+    },
+    {
+      "native_call": 220,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        52
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-87"
+    },
+    {
+      "native_call": 221,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        48
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-85"
+    },
+    {
+      "native_call": 225,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        56
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-83"
+    },
+    {
+      "native_call": 228,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-91"
+    },
+    {
+      "native_call": 230,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": false,
+      "outputs": []
+    },
+    {
+      "native_call": 233,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        220
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-93"
+    },
+    {
+      "native_call": 235,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        96
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-95"
+    },
+    {
+      "native_call": 238,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        400
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-94"
+    },
+    {
+      "native_call": 241,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        156
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-97"
+    },
+    {
+      "native_call": 244,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        132
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-100"
+    },
+    {
+      "native_call": 246,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        368
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-99"
+    },
+    {
+      "native_call": 252,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        232
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-102"
+    },
+    {
+      "native_call": 254,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        140
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-103"
+    },
+    {
+      "native_call": 260,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        72
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-106"
+    },
+    {
+      "native_call": 262,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        144
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-109"
+    },
+    {
+      "native_call": 264,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        412
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-105"
+    },
+    {
+      "native_call": 266,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        280
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-108"
+    },
+    {
+      "native_call": 267,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        168
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-111"
+    },
+    {
+      "native_call": 273,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        136
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-115"
+    },
+    {
+      "native_call": 274,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        176
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-113"
+    },
+    {
+      "native_call": 278,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        124
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-117"
+    },
+    {
+      "native_call": 283,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        128
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-119"
+    },
+    {
+      "native_call": 284,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        76
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-121"
+    },
+    {
+      "native_call": 290,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        56
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-123"
+    },
+    {
+      "native_call": 293,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        168
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-127"
+    },
+    {
+      "native_call": 296,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        160
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-125"
+    },
+    {
+      "native_call": 304,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        160
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-129"
+    },
+    {
+      "native_call": 307,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        176
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-133"
+    },
+    {
+      "native_call": 316,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        88
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-137"
+    },
+    {
+      "native_call": 317,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        88
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-135"
+    },
+    {
+      "native_call": 318,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        44
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-141"
+    },
+    {
+      "native_call": 320,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        48
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-139"
+    },
+    {
+      "native_call": 321,
+      "model": "recognizers/recognizer_latin.onnx",
+      "shape": [
+        1,
+        3,
+        60,
+        56
+      ],
+      "input_exact": true,
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "same_shape": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      ],
+      "cpp_line": "line-143"
+    },
+    {
+      "model": "recognizers/",
+      "cpp_line": "line-131",
+      "input_exact": false,
+      "error": "Unmatched C++ input"
+    }
+  ]
+}

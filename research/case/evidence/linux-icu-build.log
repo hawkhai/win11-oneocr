@@ -1,0 +1,731 @@
+[1/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/appendable.cpp.o
+[2/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/bytestream.cpp.o
+[3/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/bytesinkutil.cpp.o
+[4/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/bmpset.cpp.o
+[5/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/brkeng.cpp.o
+[6/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/brkiter.cpp.o
+[7/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/bytestrie.cpp.o
+[8/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/bytestriebuilder.cpp.o
+[9/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/bytestrieiterator.cpp.o
+[10/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/chariter.cpp.o
+[11/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/characterproperties.cpp.o
+[12/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/charstr.cpp.o
+[13/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/caniter.cpp.o
+[14/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/cmemory.cpp.o
+[15/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/cwchar.cpp.o
+[16/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/dtintrv.cpp.o
+[17/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/cstr.cpp.o
+[18/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/cstring.cpp.o
+[19/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/errorcode.cpp.o
+[20/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/dictionarydata.cpp.o
+[21/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/edits.cpp.o
+[22/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/emojiprops.cpp.o
+[23/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/dictbe.cpp.o
+[24/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/icuplug.cpp.o
+[25/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/filterednormalizer2.cpp.o
+[26/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/icudataver.cpp.o
+[27/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/filteredbrk.cpp.o
+[28/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/loadednormalizer2impl.cpp.o
+[29/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/localebuilder.cpp.o
+[30/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/localeprioritylist.cpp.o
+[31/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/localematcher.cpp.o
+[32/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/locavailable.cpp.o
+[33/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/locbased.cpp.o
+[34/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/locdispnames.cpp.o
+[35/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/locdistance.cpp.o
+[36/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/loclikely.cpp.o
+[37/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/locdspnm.cpp.o
+[38/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/locmap.cpp.o
+[39/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/locid.cpp.o
+[40/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/locresdata.cpp.o
+[41/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/loclikelysubtags.cpp.o
+[42/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/locutil.cpp.o
+[43/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/lsr.cpp.o
+[44/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/messagepattern.cpp.o
+[45/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/mlbe.cpp.o
+[46/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/parsepos.cpp.o
+[47/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/lstmbe.cpp.o
+[48/226] Building C object CMakeFiles/oneocr_icu_data.dir/work/icu-generated/icudt74l_dat.c.o
+[49/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/patternprops.cpp.o
+[50/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/normalizer2.cpp.o
+[51/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/normlzr.cpp.o
+[52/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/pluralmap.cpp.o
+[53/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/propsvec.cpp.o
+[54/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/propname.cpp.o
+[55/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/normalizer2impl.cpp.o
+[56/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/punycode.cpp.o
+[57/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/putil.cpp.o
+[58/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/rbbidata.cpp.o
+[59/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/rbbi_cache.cpp.o
+[60/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/rbbi.cpp.o
+[61/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/rbbinode.cpp.o
+[62/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/rbbisetb.cpp.o
+[63/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/rbbirb.cpp.o
+[64/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/rbbiscan.cpp.o
+[65/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/rbbistbl.cpp.o
+[66/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/restrace.cpp.o
+[67/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/resbund_cnv.cpp.o
+[68/226] Linking C static library liboneocr_icu_data.a
+[69/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/resbund.cpp.o
+[70/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/resource.cpp.o
+[71/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/rbbitblb.cpp.o
+[72/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ruleiter.cpp.o
+[73/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/schriter.cpp.o
+[74/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/servlkf.cpp.o
+[75/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/servlk.cpp.o
+[76/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/serv.cpp.o
+[77/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/servls.cpp.o
+[78/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/servnotf.cpp.o
+[79/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/servrbf.cpp.o
+[80/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/simpleformatter.cpp.o
+[81/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/stringpiece.cpp.o
+[82/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/sharedobject.cpp.o
+[83/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/servslkf.cpp.o
+[84/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/static_unicode_sets.cpp.o
+[85/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uarrsort.cpp.o
+[86/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/stringtriebuilder.cpp.o
+[87/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ubidi_props.cpp.o
+[88/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ubiditransform.cpp.o
+[89/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ubidiln.cpp.o
+[90/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ubidiwrt.cpp.o
+[91/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ubidi.cpp.o
+[92/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ubrk.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ubrk.cpp: In function ‘UBreakIterator* ubrk_clone_74(const UBreakIterator*, UErrorCode*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ubrk.cpp:179:26: warning: ‘UBreakIterator* ubrk_safeClone_74(const UBreakIterator*, void*, int32_t*, UErrorCode*)’ is deprecated [-Wdeprecated-declarations]
+  179 |     return ubrk_safeClone(bi, nullptr, nullptr, status);
+In file included from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/platform.h:25,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/ptypes.h:52,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/umachine.h:46,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/utypes.h:38,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ubrk.cpp:10:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:512:49: note: declared here
+  512 | #define ubrk_safeClone U_ICU_ENTRY_POINT_RENAME(ubrk_safeClone)
+      |                                                 ^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:121:50: note: in definition of macro ‘U_DEF_ICU_ENTRY_POINT_RENAME’
+  121 | #       define U_DEF_ICU_ENTRY_POINT_RENAME(x,y) x ## y
+      |                                                  ^
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:123:47: note: in expansion of macro ‘U_DEF2_ICU_ENTRY_POINT_RENAME’
+  123 | #       define U_ICU_ENTRY_POINT_RENAME(x)    U_DEF2_ICU_ENTRY_POINT_RENAME(x,U_ICU_VERSION_SUFFIX)
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:512:24: note: in expansion of macro ‘U_ICU_ENTRY_POINT_RENAME’
+  512 | #define ubrk_safeClone U_ICU_ENTRY_POINT_RENAME(ubrk_safeClone)
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ubrk.cpp:148:1: note: in expansion of macro ‘ubrk_safeClone’
+  148 | ubrk_safeClone(
+      | ^~~~~~~~~~~~~~
+[93/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucasemap_titlecase_brkiter.cpp.o
+[94/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucat.cpp.o
+[95/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucase.cpp.o
+[96/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucharstrie.cpp.o
+[97/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucasemap.cpp.o
+[98/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uchar.cpp.o
+[99/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucharstrieiterator.cpp.o
+[100/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uchriter.cpp.o
+[101/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucharstriebuilder.cpp.o
+[102/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucmndata.cpp.o
+[103/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucln_cmn.cpp.o
+[104/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnv_cb.cpp.o
+[105/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.cpp.o
+[106/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnv_cnv.cpp.o
+[107/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnv.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv.cpp: In function ‘UConverter* ucnv_clone_74(const UConverter*, UErrorCode*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv.cpp:326:26: warning: ‘UConverter* ucnv_safeClone_74(const UConverter*, void*, int32_t*, UErrorCode*)’ is deprecated [-Wdeprecated-declarations]
+  326 |     return ucnv_safeClone(cnv, nullptr, nullptr, status);
+In file included from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/platform.h:25,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/ptypes.h:52,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/umachine.h:46,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/utypes.h:38,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv.cpp:24:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:707:49: note: declared here
+  707 | #define ucnv_safeClone U_ICU_ENTRY_POINT_RENAME(ucnv_safeClone)
+      |                                                 ^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:121:50: note: in definition of macro ‘U_DEF_ICU_ENTRY_POINT_RENAME’
+  121 | #       define U_DEF_ICU_ENTRY_POINT_RENAME(x,y) x ## y
+      |                                                  ^
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:123:47: note: in expansion of macro ‘U_DEF2_ICU_ENTRY_POINT_RENAME’
+  123 | #       define U_ICU_ENTRY_POINT_RENAME(x)    U_DEF2_ICU_ENTRY_POINT_RENAME(x,U_ICU_VERSION_SUFFIX)
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:707:24: note: in expansion of macro ‘U_ICU_ENTRY_POINT_RENAME’
+  707 | #define ucnv_safeClone U_ICU_ENTRY_POINT_RENAME(ucnv_safeClone)
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv.cpp:158:1: note: in expansion of macro ‘ucnv_safeClone’
+  158 | ucnv_safeClone(const UConverter* cnv, void *stackBuffer, int32_t *pBufferSize, UErrorCode *status)
+      | ^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv.cpp: In function ‘void ucnv_setSubstString_74(UConverter*, const char16_t*, int32_t, UErrorCode*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv.cpp:494:27: warning: ‘UConverter* ucnv_safeClone_74(const UConverter*, void*, int32_t*, UErrorCode*)’ is deprecated [-Wdeprecated-declarations]
+  494 |     clone = ucnv_safeClone(cnv, cloneBuffer, &cloneSize, err);
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:707:49: note: declared here
+  707 | #define ucnv_safeClone U_ICU_ENTRY_POINT_RENAME(ucnv_safeClone)
+      |                                                 ^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:121:50: note: in definition of macro ‘U_DEF_ICU_ENTRY_POINT_RENAME’
+  121 | #       define U_DEF_ICU_ENTRY_POINT_RENAME(x,y) x ## y
+      |                                                  ^
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:123:47: note: in expansion of macro ‘U_DEF2_ICU_ENTRY_POINT_RENAME’
+  123 | #       define U_ICU_ENTRY_POINT_RENAME(x)    U_DEF2_ICU_ENTRY_POINT_RENAME(x,U_ICU_VERSION_SUFFIX)
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:707:24: note: in expansion of macro ‘U_ICU_ENTRY_POINT_RENAME’
+  707 | #define ucnv_safeClone U_ICU_ENTRY_POINT_RENAME(ucnv_safeClone)
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv.cpp:158:1: note: in expansion of macro ‘ucnv_safeClone’
+  158 | ucnv_safeClone(const UConverter* cnv, void *stackBuffer, int32_t *pBufferSize, UErrorCode *status)
+      | ^~~~~~~~~~~~~~
+[108/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnv_ct.cpp.o
+[109/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnv2022.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv2022.cpp: In function ‘UConverter* _ISO_2022_SafeClone(const UConverter*, void*, int32_t*, UErrorCode*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv2022.cpp:3619:27: warning: ‘UConverter* ucnv_safeClone_74(const UConverter*, void*, int32_t*, UErrorCode*)’ is deprecated [-Wdeprecated-declarations]
+ 3619 |             ucnv_safeClone(cnvData->currentConverter,
+In file included from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/platform.h:25,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/ptypes.h:52,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/umachine.h:46,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/utypes.h:38,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv2022.cpp:31:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:707:49: note: declared here
+  707 | #define ucnv_safeClone U_ICU_ENTRY_POINT_RENAME(ucnv_safeClone)
+      |                                                 ^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:121:50: note: in definition of macro ‘U_DEF_ICU_ENTRY_POINT_RENAME’
+  121 | #       define U_DEF_ICU_ENTRY_POINT_RENAME(x,y) x ## y
+      |                                                  ^
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:123:47: note: in expansion of macro ‘U_DEF2_ICU_ENTRY_POINT_RENAME’
+  123 | #       define U_ICU_ENTRY_POINT_RENAME(x)    U_DEF2_ICU_ENTRY_POINT_RENAME(x,U_ICU_VERSION_SUFFIX)
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:707:24: note: in expansion of macro ‘U_ICU_ENTRY_POINT_RENAME’
+  707 | #define ucnv_safeClone U_ICU_ENTRY_POINT_RENAME(ucnv_safeClone)
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/ucnv.h:557:1: note: in expansion of macro ‘ucnv_safeClone’
+  557 | ucnv_safeClone(const UConverter *cnv,
+      | ^~~~~~~~~~~~~~
+[110/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnv_err.cpp.o
+[111/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnv_set.cpp.o
+[112/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnv_ext.cpp.o
+[113/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnv_lmb.cpp.o
+[114/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnv_io.cpp.o
+[115/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnv_u16.cpp.o
+[116/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnv_u32.cpp.o
+[117/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnvbocu.cpp.o
+[118/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnv_u7.cpp.o
+[119/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnv_u8.cpp.o
+[120/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnvdisp.cpp.o
+[121/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnvhz.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnvhz.cpp: In function ‘UConverter* _HZ_SafeClone(const UConverter*, void*, int32_t*, UErrorCode*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnvhz.cpp:558:23: warning: ‘UConverter* ucnv_safeClone_74(const UConverter*, void*, int32_t*, UErrorCode*)’ is deprecated [-Wdeprecated-declarations]
+  558 |         ucnv_safeClone(((UConverterDataHZ*)cnv->extraInfo)->gbConverter, &localClone->subCnv, &size, status);
+In file included from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/platform.h:25,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/ptypes.h:52,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/umachine.h:46,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/utypes.h:38,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnvhz.cpp:19:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:707:49: note: declared here
+  707 | #define ucnv_safeClone U_ICU_ENTRY_POINT_RENAME(ucnv_safeClone)
+      |                                                 ^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:121:50: note: in definition of macro ‘U_DEF_ICU_ENTRY_POINT_RENAME’
+  121 | #       define U_DEF_ICU_ENTRY_POINT_RENAME(x,y) x ## y
+      |                                                  ^
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:123:47: note: in expansion of macro ‘U_DEF2_ICU_ENTRY_POINT_RENAME’
+  123 | #       define U_ICU_ENTRY_POINT_RENAME(x)    U_DEF2_ICU_ENTRY_POINT_RENAME(x,U_ICU_VERSION_SUFFIX)
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:707:24: note: in expansion of macro ‘U_ICU_ENTRY_POINT_RENAME’
+  707 | #define ucnv_safeClone U_ICU_ENTRY_POINT_RENAME(ucnv_safeClone)
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/ucnv.h:557:1: note: in expansion of macro ‘ucnv_safeClone’
+  557 | ucnv_safeClone(const UConverter *cnv,
+      | ^~~~~~~~~~~~~~
+[122/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnvisci.cpp.o
+[123/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnvlat1.cpp.o
+[124/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnvsel.cpp.o
+[125/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucol_swp.cpp.o
+[126/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnvscsu.cpp.o
+[127/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucptrie.cpp.o
+[128/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/udatamem.cpp.o
+[129/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucnvmbcs.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnvmbcs.cpp: In function ‘UChar32 ucnv_MBCSGetNextUChar(UConverterToUnicodeArgs*, UErrorCode*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnvmbcs.cpp:3152:25: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+ 3152 |                 *bytes++=*lastSource++;
+      |                 ~~~~~~~~^~~~~~~~~~~~~~
+In file included from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnvmbcs.cpp:55:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset 16 into destination object ‘UConverter::toUBytes’ of size 7
+  190 |     uint8_t toUBytes[UCNV_MAX_CHAR_LEN-1];/* more "toU status"; keeps the bytes of the current character */
+      |             ^~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: destination object ‘UConverter::toUBytes’ of size 7
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset 16 into destination object ‘UConverter::toUBytes’ of size 7
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnvmbcs.cpp:3152:25: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+ 3152 |                 *bytes++=*lastSource++;
+      |                 ~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset 17 into destination object ‘UConverter::toUBytes’ of size 7
+  190 |     uint8_t toUBytes[UCNV_MAX_CHAR_LEN-1];/* more "toU status"; keeps the bytes of the current character */
+      |             ^~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset [1, 7] into destination object ‘UConverter::toUBytes’ of size 7
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset 17 into destination object ‘UConverter::toUBytes’ of size 7
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnvmbcs.cpp:3152:25: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+ 3152 |                 *bytes++=*lastSource++;
+      |                 ~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset 18 into destination object ‘UConverter::toUBytes’ of size 7
+  190 |     uint8_t toUBytes[UCNV_MAX_CHAR_LEN-1];/* more "toU status"; keeps the bytes of the current character */
+      |             ^~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset [2, 7] into destination object ‘UConverter::toUBytes’ of size 7
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset 18 into destination object ‘UConverter::toUBytes’ of size 7
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnvmbcs.cpp:3152:25: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+ 3152 |                 *bytes++=*lastSource++;
+      |                 ~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset 19 into destination object ‘UConverter::toUBytes’ of size 7
+  190 |     uint8_t toUBytes[UCNV_MAX_CHAR_LEN-1];/* more "toU status"; keeps the bytes of the current character */
+      |             ^~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset [3, 7] into destination object ‘UConverter::toUBytes’ of size 7
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset 19 into destination object ‘UConverter::toUBytes’ of size 7
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnvmbcs.cpp:3152:25: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+ 3152 |                 *bytes++=*lastSource++;
+      |                 ~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset 20 into destination object ‘UConverter::toUBytes’ of size 7
+  190 |     uint8_t toUBytes[UCNV_MAX_CHAR_LEN-1];/* more "toU status"; keeps the bytes of the current character */
+      |             ^~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset [4, 7] into destination object ‘UConverter::toUBytes’ of size 7
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset 20 into destination object ‘UConverter::toUBytes’ of size 7
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnvmbcs.cpp:3152:25: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+ 3152 |                 *bytes++=*lastSource++;
+      |                 ~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset 21 into destination object ‘UConverter::toUBytes’ of size 7
+  190 |     uint8_t toUBytes[UCNV_MAX_CHAR_LEN-1];/* more "toU status"; keeps the bytes of the current character */
+      |             ^~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset [5, 7] into destination object ‘UConverter::toUBytes’ of size 7
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset 21 into destination object ‘UConverter::toUBytes’ of size 7
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnvmbcs.cpp:3152:25: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+ 3152 |                 *bytes++=*lastSource++;
+      |                 ~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset 22 into destination object ‘UConverter::toUBytes’ of size 7
+  190 |     uint8_t toUBytes[UCNV_MAX_CHAR_LEN-1];/* more "toU status"; keeps the bytes of the current character */
+      |             ^~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset [6, 7] into destination object ‘UConverter::toUBytes’ of size 7
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/ucnv_bld.h:190:13: note: at offset 22 into destination object ‘UConverter::toUBytes’ of size 7
+[130/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uenum.cpp.o
+[131/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/udataswp.cpp.o
+[132/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/udata.cpp.o
+[133/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ucurr.cpp.o
+[134/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uhash_us.cpp.o
+[135/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uhash.cpp.o
+[136/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uinit.cpp.o
+[137/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uidna.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/uidna.cpp: In function ‘int32_t _internal_toUnicode(const char16_t*, int32_t, char16_t*, int32_t, int32_t, UStringPrepProfile*, UParseError*, UErrorCode*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/uidna.cpp:514:30: warning: ‘int32_t uidna_toASCII_74(const UChar*, int32_t, UChar*, int32_t, int32_t, UParseError*, UErrorCode*)’ is deprecated [-Wdeprecated-declarations]
+  514 |         b3Len = uidna_toASCII(b2, b2Len, b3, b3Capacity, options, parseError, status);
+In file included from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/platform.h:25,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/ptypes.h:52,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/umachine.h:46,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/utypes.h:38,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/uidna.cpp:19:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:1053:48: note: declared here
+ 1053 | #define uidna_toASCII U_ICU_ENTRY_POINT_RENAME(uidna_toASCII)
+      |                                                ^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:121:50: note: in definition of macro ‘U_DEF_ICU_ENTRY_POINT_RENAME’
+  121 | #       define U_DEF_ICU_ENTRY_POINT_RENAME(x,y) x ## y
+      |                                                  ^
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:123:47: note: in expansion of macro ‘U_DEF2_ICU_ENTRY_POINT_RENAME’
+  123 | #       define U_ICU_ENTRY_POINT_RENAME(x)    U_DEF2_ICU_ENTRY_POINT_RENAME(x,U_ICU_VERSION_SUFFIX)
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:1053:23: note: in expansion of macro ‘U_ICU_ENTRY_POINT_RENAME’
+ 1053 | #define uidna_toASCII U_ICU_ENTRY_POINT_RENAME(uidna_toASCII)
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uidna.h:580:1: note: in expansion of macro ‘uidna_toASCII’
+  580 | uidna_toASCII(const UChar* src, int32_t srcLength,
+      | ^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/uidna.cpp:527:35: warning: ‘int32_t uidna_toASCII_74(const UChar*, int32_t, UChar*, int32_t, int32_t, UParseError*, UErrorCode*)’ is deprecated [-Wdeprecated-declarations]
+  527 |             b3Len =  uidna_toASCII(b2,b2Len,b3,b3Len,options,parseError, status);
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:1053:48: note: declared here
+ 1053 | #define uidna_toASCII U_ICU_ENTRY_POINT_RENAME(uidna_toASCII)
+      |                                                ^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:121:50: note: in definition of macro ‘U_DEF_ICU_ENTRY_POINT_RENAME’
+  121 | #       define U_DEF_ICU_ENTRY_POINT_RENAME(x,y) x ## y
+      |                                                  ^
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:123:47: note: in expansion of macro ‘U_DEF2_ICU_ENTRY_POINT_RENAME’
+  123 | #       define U_ICU_ENTRY_POINT_RENAME(x)    U_DEF2_ICU_ENTRY_POINT_RENAME(x,U_ICU_VERSION_SUFFIX)
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:1053:23: note: in expansion of macro ‘U_ICU_ENTRY_POINT_RENAME’
+ 1053 | #define uidna_toASCII U_ICU_ENTRY_POINT_RENAME(uidna_toASCII)
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uidna.h:580:1: note: in expansion of macro ‘uidna_toASCII’
+  580 | uidna_toASCII(const UChar* src, int32_t srcLength,
+      | ^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/uidna.cpp: In function ‘int32_t uidna_compare_74(const char16_t*, int32_t, const char16_t*, int32_t, int32_t, UErrorCode*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/uidna.cpp:877:29: warning: ‘int32_t uidna_IDNToASCII_74(const char16_t*, int32_t, char16_t*, int32_t, int32_t, UParseError*, UErrorCode*)’ is deprecated [-Wdeprecated-declarations]
+  877 |     b1Len = uidna_IDNToASCII(s1, length1, b1, b1Capacity, options, &parseError, status);
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:1040:51: note: declared here
+ 1040 | #define uidna_IDNToASCII U_ICU_ENTRY_POINT_RENAME(uidna_IDNToASCII)
+      |                                                   ^~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:121:50: note: in definition of macro ‘U_DEF_ICU_ENTRY_POINT_RENAME’
+  121 | #       define U_DEF_ICU_ENTRY_POINT_RENAME(x,y) x ## y
+      |                                                  ^
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:123:47: note: in expansion of macro ‘U_DEF2_ICU_ENTRY_POINT_RENAME’
+  123 | #       define U_ICU_ENTRY_POINT_RENAME(x)    U_DEF2_ICU_ENTRY_POINT_RENAME(x,U_ICU_VERSION_SUFFIX)
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:1040:26: note: in expansion of macro ‘U_ICU_ENTRY_POINT_RENAME’
+ 1040 | #define uidna_IDNToASCII U_ICU_ENTRY_POINT_RENAME(uidna_IDNToASCII)
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/uidna.cpp:669:1: note: in expansion of macro ‘uidna_IDNToASCII’
+  669 | uidna_IDNToASCII(  const char16_t *src, int32_t srcLength,
+      | ^~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/uidna.cpp:888:33: warning: ‘int32_t uidna_IDNToASCII_74(const char16_t*, int32_t, char16_t*, int32_t, int32_t, UParseError*, UErrorCode*)’ is deprecated [-Wdeprecated-declarations]
+  888 |         b1Len = uidna_IDNToASCII(s1,length1,b1,b1Len, options, &parseError, status);
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:1040:51: note: declared here
+ 1040 | #define uidna_IDNToASCII U_ICU_ENTRY_POINT_RENAME(uidna_IDNToASCII)
+      |                                                   ^~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:121:50: note: in definition of macro ‘U_DEF_ICU_ENTRY_POINT_RENAME’
+  121 | #       define U_DEF_ICU_ENTRY_POINT_RENAME(x,y) x ## y
+      |                                                  ^
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:123:47: note: in expansion of macro ‘U_DEF2_ICU_ENTRY_POINT_RENAME’
+  123 | #       define U_ICU_ENTRY_POINT_RENAME(x)    U_DEF2_ICU_ENTRY_POINT_RENAME(x,U_ICU_VERSION_SUFFIX)
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:1040:26: note: in expansion of macro ‘U_ICU_ENTRY_POINT_RENAME’
+ 1040 | #define uidna_IDNToASCII U_ICU_ENTRY_POINT_RENAME(uidna_IDNToASCII)
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/uidna.cpp:669:1: note: in expansion of macro ‘uidna_IDNToASCII’
+  669 | uidna_IDNToASCII(  const char16_t *src, int32_t srcLength,
+      | ^~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/uidna.cpp:892:29: warning: ‘int32_t uidna_IDNToASCII_74(const char16_t*, int32_t, char16_t*, int32_t, int32_t, UParseError*, UErrorCode*)’ is deprecated [-Wdeprecated-declarations]
+  892 |     b2Len = uidna_IDNToASCII(s2,length2, b2,b2Capacity, options, &parseError, status);
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:1040:51: note: declared here
+ 1040 | #define uidna_IDNToASCII U_ICU_ENTRY_POINT_RENAME(uidna_IDNToASCII)
+      |                                                   ^~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:121:50: note: in definition of macro ‘U_DEF_ICU_ENTRY_POINT_RENAME’
+  121 | #       define U_DEF_ICU_ENTRY_POINT_RENAME(x,y) x ## y
+      |                                                  ^
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:123:47: note: in expansion of macro ‘U_DEF2_ICU_ENTRY_POINT_RENAME’
+  123 | #       define U_ICU_ENTRY_POINT_RENAME(x)    U_DEF2_ICU_ENTRY_POINT_RENAME(x,U_ICU_VERSION_SUFFIX)
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:1040:26: note: in expansion of macro ‘U_ICU_ENTRY_POINT_RENAME’
+ 1040 | #define uidna_IDNToASCII U_ICU_ENTRY_POINT_RENAME(uidna_IDNToASCII)
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/uidna.cpp:669:1: note: in expansion of macro ‘uidna_IDNToASCII’
+  669 | uidna_IDNToASCII(  const char16_t *src, int32_t srcLength,
+      | ^~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/uidna.cpp:903:33: warning: ‘int32_t uidna_IDNToASCII_74(const char16_t*, int32_t, char16_t*, int32_t, int32_t, UParseError*, UErrorCode*)’ is deprecated [-Wdeprecated-declarations]
+  903 |         b2Len = uidna_IDNToASCII(s2, length2, b2, b2Len, options, &parseError, status);
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:1040:51: note: declared here
+ 1040 | #define uidna_IDNToASCII U_ICU_ENTRY_POINT_RENAME(uidna_IDNToASCII)
+      |                                                   ^~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:121:50: note: in definition of macro ‘U_DEF_ICU_ENTRY_POINT_RENAME’
+  121 | #       define U_DEF_ICU_ENTRY_POINT_RENAME(x,y) x ## y
+      |                                                  ^
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/uvernum.h:123:47: note: in expansion of macro ‘U_DEF2_ICU_ENTRY_POINT_RENAME’
+  123 | #       define U_ICU_ENTRY_POINT_RENAME(x)    U_DEF2_ICU_ENTRY_POINT_RENAME(x,U_ICU_VERSION_SUFFIX)
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/unicode/urename.h:1040:26: note: in expansion of macro ‘U_ICU_ENTRY_POINT_RENAME’
+ 1040 | #define uidna_IDNToASCII U_ICU_ENTRY_POINT_RENAME(uidna_IDNToASCII)
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common/uidna.cpp:669:1: note: in expansion of macro ‘uidna_IDNToASCII’
+  669 | uidna_IDNToASCII(  const char16_t *src, int32_t srcLength,
+      | ^~~~~~~~~~~~~~~~
+[138/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uinvchar.cpp.o
+[139/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ulist.cpp.o
+[140/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uiter.cpp.o
+[141/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ulocale.cpp.o
+[142/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ulocbuilder.cpp.o
+[143/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uloc_keytype.cpp.o
+[144/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/umath.cpp.o
+[145/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uloc.cpp.o
+[146/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/umapfile.cpp.o
+[147/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/unifilt.cpp.o
+[148/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/unifunct.cpp.o
+[149/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/umutex.cpp.o
+[150/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uloc_tag.cpp.o
+[151/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/unifiedcache.cpp.o
+[152/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/unames.cpp.o
+[153/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uniset_closure.cpp.o
+[154/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/umutablecptrie.cpp.o
+[155/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uniset.cpp.o
+[156/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uniset_props.cpp.o
+[157/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/unisetspan.cpp.o
+[158/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/unistr_case_locale.cpp.o
+[159/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/unistr_case.cpp.o
+[160/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/unistr_props.cpp.o
+[161/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/unistr.cpp.o
+[162/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/unistr_cnv.cpp.o
+[163/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/unistr_titlecase_brkiter.cpp.o
+[164/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uobject.cpp.o
+[165/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/unorm.cpp.o
+[166/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/unormcmp.cpp.o
+[167/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ures_cnv.cpp.o
+[168/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/usc_impl.cpp.o
+[169/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uprops.cpp.o
+[170/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uresdata.cpp.o
+[171/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uscript.cpp.o
+[172/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uscript_props.cpp.o
+[173/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uset_props.cpp.o
+[174/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uset.cpp.o
+[175/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uresbund.cpp.o
+[176/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/usetiter.cpp.o
+[177/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ustack.cpp.o
+[178/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ushape.cpp.o
+[179/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/usprep.cpp.o
+[180/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ustr_cnv.cpp.o
+[181/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ustr_titlecase_brkiter.cpp.o
+[182/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ustr_wcs.cpp.o
+[183/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ustrfmt.cpp.o
+[184/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ustrcase_locale.cpp.o
+[185/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ustrenum.cpp.o
+[186/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/utf_impl.cpp.o
+[187/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ustring.cpp.o
+[188/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ustrcase.cpp.o
+[189/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/ustrtrns.cpp.o
+[190/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/util.cpp.o
+[191/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/util_props.cpp.o
+[192/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/utext.cpp.o
+[193/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/utrie.cpp.o
+[194/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/utrie2.cpp.o
+[195/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/utypes.cpp.o
+[196/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/utrie_swap.cpp.o
+[197/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/utrie2_builder.cpp.o
+[198/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/utrace.cpp.o
+[199/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/wintz.cpp.o
+[200/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uvector.cpp.o
+[201/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uvectr32.cpp.o
+[202/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uvectr64.cpp.o
+[203/226] Building CXX object CMakeFiles/oneocr_icu_common.dir/work/vendor/icu-linux/icu4c/source/common/uts46.cpp.o
+[204/226] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/ordering.cpp.o
+[205/226] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/detector.cpp.o
+[206/226] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/alignment.cpp.o
+[207/226] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/confidence.cpp.o
+FAILED: [code=1] native/CMakeFiles/oneocr_portable.dir/src/confidence.cpp.o 
+/usr/bin/c++ -DONEOCR_BUILDING -DONEOCR_SHARED -DU_STATIC_IMPLEMENTATION -Doneocr_portable_EXPORTS -I/mnt/f/pythonx/myocr/win11-oneocr/native/include -I/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/ort-linux/onnxruntime-linux-x64-1.23.2/include -I/mnt/f/pythonx/myocr/win11-oneocr -I/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include -I/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/imgproc/include -I/mnt/f/pythonx/myocr/win11-oneocr/build/linux-x64 -I/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux/icu4c/source/common -O3 -DNDEBUG -std=gnu++20 -fPIC -Wall -Wextra -Wpedantic -MD -MT native/CMakeFiles/oneocr_portable.dir/src/confidence.cpp.o -MF native/CMakeFiles/oneocr_portable.dir/src/confidence.cpp.o.d -o native/CMakeFiles/oneocr_portable.dir/src/confidence.cpp.o -c /mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:76:20: error: ‘uint32_t’ was not declared in this scope
+   76 | static std::vector<uint32_t> codepoints(const std::string& text) {
+      |                    ^~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:8:1: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+    7 | #include <stdexcept>
+  +++ |+#include <cstdint>
+    8 | 
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:76:28: error: template argument 1 is invalid
+   76 | static std::vector<uint32_t> codepoints(const std::string& text) {
+      |                            ^
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:76:28: error: template argument 2 is invalid
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp: In function ‘int oneocr_native::codepoints(const std::string&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:77:17: error: ‘uint32_t’ was not declared in this scope
+   77 |     std::vector<uint32_t> result;
+      |                 ^~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:77:17: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:77:25: error: template argument 1 is invalid
+   77 |     std::vector<uint32_t> result;
+      |                         ^
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:77:25: error: template argument 2 is invalid
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:79:17: error: expected ‘;’ before ‘value’
+   79 |         uint32_t value=static_cast<unsigned char>(text[i++]);int continuation=0;
+      |                 ^~~~~~
+      |                 ;
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:80:12: error: ‘value’ was not declared in this scope
+   80 |         if(value>=0xf0){value&=7;continuation=3;}else if(value>=0xe0){value&=15;continuation=2;}else if(value>=0xc0){value&=31;continuation=1;}
+      |            ^~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:81:105: error: ‘value’ was not declared in this scope
+   81 |         while(continuation--){if(i>=text.size())throw std::invalid_argument("Invalid vocabulary UTF-8");value=(value<<6)|(static_cast<unsigned char>(text[i++])&63);}
+      |                                                                                                         ^~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:82:16: error: request for member ‘push_back’ in ‘result’, which is of non-class type ‘int’
+   82 |         result.push_back(value);
+      |                ^~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:82:26: error: ‘value’ was not declared in this scope
+   82 |         result.push_back(value);
+      |                          ^~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp: In function ‘int oneocr_native::edit_distance(const std::string&, const std::string&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:87:74: error: request for member ‘size’ in ‘b’, which is of non-class type ‘int’
+   87 |     auto a=codepoints(first),b=codepoints(second);std::vector<int> row(b.size()+1);std::iota(row.begin(),row.end(),0);
+      |                                                                          ^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:88:24: error: request for member ‘size’ in ‘a’, which is of non-class type ‘int’
+   88 |     for(size_t i=0;i<a.size();i++) {
+      |                        ^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:90:28: error: request for member ‘size’ in ‘b’, which is of non-class type ‘int’
+   90 |         for(size_t j=0;j<b.size();j++){int previous=row[j+1];row[j+1]=std::min({row[j+1]+1,row[j]+1,diagonal+(a[i]!=b[j])});diagonal=previous;}
+      |                            ^~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:90:112: error: invalid types ‘int[size_t {aka long unsigned int}]’ for array subscript
+   90 |         for(size_t j=0;j<b.size();j++){int previous=row[j+1];row[j+1]=std::min({row[j+1]+1,row[j]+1,diagonal+(a[i]!=b[j])});diagonal=previous;}
+      |                                                                                                                ^
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:90:118: error: invalid types ‘int[size_t {aka long unsigned int}]’ for array subscript
+   90 |         for(size_t j=0;j<b.size();j++){int previous=row[j+1];row[j+1]=std::min({row[j+1]+1,row[j]+1,diagonal+(a[i]!=b[j])});diagonal=previous;}
+      |                                                                                                                      ^
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:90:79: error: no matching function for call to ‘min(<brace-enclosed initializer list>)’
+   90 |         for(size_t j=0;j<b.size();j++){int previous=row[j+1];row[j+1]=std::min({row[j+1]+1,row[j]+1,diagonal+(a[i]!=b[j])});diagonal=previous;}
+      |                                                                       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:90:79: note: there are 4 candidates
+In file included from /usr/include/c++/15/array:45,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.hpp:2,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:1:
+/usr/include/c++/15/bits/stl_algobase.h:234:5: note: candidate 1: ‘template<class _Tp> constexpr const _Tp& std::min(const _Tp&, const _Tp&)’
+  234 |     min(const _Tp& __a, const _Tp& __b)
+      |     ^~~
+/usr/include/c++/15/bits/stl_algobase.h:234:5: note: candidate expects 2 arguments, 1 provided
+/usr/include/c++/15/bits/stl_algobase.h:282:5: note: candidate 2: ‘template<class _Tp, class _Compare> constexpr const _Tp& std::min(const _Tp&, const _Tp&, _Compare)’
+  282 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/usr/include/c++/15/bits/stl_algobase.h:282:5: note: candidate expects 3 arguments, 1 provided
+In file included from /usr/include/c++/15/algorithm:63,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/confidence.cpp:2:
+/usr/include/c++/15/bits/stl_algo.h:5764:5: note: candidate 3: ‘template<class _Tp> constexpr _Tp std::min(initializer_list<_Tp>)’
+ 5764 |     min(initializer_list<_Tp> __l)
+      |     ^~~
+/usr/include/c++/15/bits/stl_algo.h:5764:5: note: template argument deduction/substitution failed:
+/usr/include/c++/15/bits/stl_algo.h:5774:5: note: candidate 4: ‘template<class _Tp, class _Compare> constexpr _Tp std::min(initializer_list<_Tp>, _Compare)’
+ 5774 |     min(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+/usr/include/c++/15/bits/stl_algo.h:5774:5: note: candidate expects 2 arguments, 1 provided
+[208/226] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/normalizer.cpp.o
+In file included from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.hpp:3795,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core.hpp:58,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/normalizer.cpp:2:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const cv::Mat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:103:57: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  103 | inline _InputArray::_InputArray(const Mat& m) { init(MAT+ACCESS_READ, &m); }
+      |                                                      ~~~^~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const std::vector<cv::Mat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:104:83: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  104 | inline _InputArray::_InputArray(const std::vector<Mat>& vec) { init(STD_VECTOR_MAT+ACCESS_READ, &vec); }
+      |                                                                     ~~~~~~~~~~~~~~^~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const cv::UMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:105:59: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  105 | inline _InputArray::_InputArray(const UMat& m) { init(UMAT+ACCESS_READ, &m); }
+      |                                                       ~~~~^~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const std::vector<cv::UMat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:106:85: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  106 | inline _InputArray::_InputArray(const std::vector<UMat>& vec) { init(STD_VECTOR_UMAT+ACCESS_READ, &vec); }
+      |                                                                      ~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const std::array<cv::Mat, _Nm>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:118:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  118 | { init(STD_ARRAY_MAT + ACCESS_READ, arr.data(), Size(1, _Nm)); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const cv::cuda::GpuMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:148:21: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  148 | { init(CUDA_GPU_MAT + ACCESS_READ, &d_mat); }
+      |        ~~~~~~~~~~~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const std::vector<cv::cuda::GpuMat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:151:38: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  151 | {       init(STD_VECTOR_CUDA_GPU_MAT + ACCESS_READ, &d_mat);}
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const cv::ogl::Buffer&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:154:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  154 | { init(OPENGL_BUFFER + ACCESS_READ, &buf); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputArray::_InputArray(const cv::cuda::HostMem&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:157:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  157 | { init(CUDA_HOST_MEM + ACCESS_READ, &cuda_mem); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray()’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:200:49: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  200 | inline _OutputArray::_OutputArray() { init(NONE + ACCESS_WRITE, 0); }
+      |                                            ~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(cv::Mat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:202:53: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  202 | inline _OutputArray::_OutputArray(Mat& m) { init(MAT+ACCESS_WRITE, &m); }
+      |                                                  ~~~^~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(std::vector<cv::Mat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:203:80: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  203 | inline _OutputArray::_OutputArray(std::vector<Mat>& vec) { init(STD_VECTOR_MAT + ACCESS_WRITE, &vec); }
+      |                                                                 ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(cv::UMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:204:56: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  204 | inline _OutputArray::_OutputArray(UMat& m) { init(UMAT + ACCESS_WRITE, &m); }
+      |                                                   ~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(std::vector<cv::UMat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:205:82: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  205 | inline _OutputArray::_OutputArray(std::vector<UMat>& vec) { init(STD_VECTOR_UMAT + ACCESS_WRITE, &vec); }
+      |                                                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(std::array<cv::Mat, _Nm>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:217:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  217 | { init(STD_ARRAY_MAT + ACCESS_WRITE, arr.data(), Size(1, _Nm)); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(cv::cuda::GpuMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:272:21: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  272 | { init(CUDA_GPU_MAT + ACCESS_WRITE, &d_mat); }
+      |        ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(std::vector<cv::cuda::GpuMat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:275:38: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  275 | {       init(STD_VECTOR_CUDA_GPU_MAT + ACCESS_WRITE, &d_mat);}
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(cv::ogl::Buffer&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:278:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  278 | { init(OPENGL_BUFFER + ACCESS_WRITE, &buf); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_OutputArray::_OutputArray(cv::cuda::HostMem&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:281:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  281 | { init(CUDA_HOST_MEM + ACCESS_WRITE, &cuda_mem); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(cv::Mat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:328:63: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  328 | inline _InputOutputArray::_InputOutputArray(Mat& m) { init(MAT+ACCESS_RW, &m); }
+      |                                                            ~~~^~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(std::vector<cv::Mat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:329:89: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  329 | inline _InputOutputArray::_InputOutputArray(std::vector<Mat>& vec) { init(STD_VECTOR_MAT+ACCESS_RW, &vec); }
+      |                                                                           ~~~~~~~~~~~~~~^~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(cv::UMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:330:65: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  330 | inline _InputOutputArray::_InputOutputArray(UMat& m) { init(UMAT+ACCESS_RW, &m); }
+      |                                                             ~~~~^~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(std::vector<cv::UMat>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:331:91: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  331 | inline _InputOutputArray::_InputOutputArray(std::vector<UMat>& vec) { init(STD_VECTOR_UMAT+ACCESS_RW, &vec); }
+      |                                                                            ~~~~~~~~~~~~~~~^~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(std::array<cv::Mat, _Nm>&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:343:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  343 | { init(STD_ARRAY_MAT + ACCESS_RW, arr.data(), Size(1, _Nm)); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(cv::cuda::GpuMat&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:398:21: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  398 | { init(CUDA_GPU_MAT + ACCESS_RW, &d_mat); }
+      |        ~~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(cv::ogl::Buffer&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:401:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  401 | { init(OPENGL_BUFFER + ACCESS_RW, &buf); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::_InputOutputArray::_InputOutputArray(cv::cuda::HostMem&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:404:22: warning: arithmetic between different enumeration types ‘cv::_InputArray::KindFlag’ and ‘cv::AccessFlag’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  404 | { init(CUDA_HOST_MEM + ACCESS_RW, &cuda_mem); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp: In instantiation of ‘cv::Mat::Mat(const cv::Matx<_Tp, m, n>&, bool) [with _Tp = double; int m = 2; int n = 3]’:
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/imgproc/include/opencv2/imgproc.hpp:2584:64:   required from here
+ 2584 |     return Mat(getRotationMatrix2D_(center, angle, scale), true);
+      |                                                                ^
+/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/include/opencv2/core/mat.inl.hpp:533:23: warning: arithmetic between different enumeration types ‘cv::Mat::<unnamed enum>’ and ‘cv::traits::Type<double>::<unnamed enum>’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  533 |     : flags(MAGIC_VAL + traits::Type<_Tp>::value + CV_MAT_CONT_FLAG), dims(2), rows(m), cols(n), data(0),
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+[209/226] Linking CXX static library liboneocr_icu_common.a
+[210/226] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/unicode.cpp.o
+[211/226] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/image.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp: In function ‘oneocr_native::Image oneocr_native::load_image(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp:18:44: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = const char*; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   18 |     std::ifstream f(std::filesystem::u8path(path),std::ios::binary|std::ios::ate);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/c++/15/filesystem:54,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp:4:
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+[212/226] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/engine.cpp.o
+In file included from /mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:4:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/trace.hpp: In constructor ‘oneocr_native::TensorTrace::TensorTrace(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/trace.hpp:22:42: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = const char*; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   22 |         directory=std::filesystem::u8path(path)/(std::string(role)+"-"+std::to_string(sequence.fetch_add(1)));
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/c++/15/filesystem:54,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/sha256.hpp:6,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:3:
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp: In function ‘std::filesystem::__cxx11::path {anonymous}::asset(const std::filesystem::__cxx11::path&, const std::string&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:33:26: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   33 |     fs::path p=fs::u8path(relative);
+      |                ~~~~~~~~~~^~~~~~~~~~
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp: In constructor ‘oneocr_context::oneocr_context(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:105:67: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = const char*; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+  105 |     explicit oneocr_context(const char* directory):root(fs::u8path(directory)) {
+      |                                                         ~~~~~~~~~~^~~~~~~~~~~
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:146:17: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  146 |                 if(info.types[i]==4)info.blank=int(i);if(info.types[i]==5)info.space=int(i);if(info.types[i]==8)info.trash=int(i);
+      |                 ^~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:146:55: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  146 |                 if(info.types[i]==4)info.blank=int(i);if(info.types[i]==5)info.space=int(i);if(info.types[i]==8)info.trash=int(i);
+      |                                                       ^~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp: At global scope:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:59:6: warning: ‘oneocr_native::Quad {anonymous}::span(const oneocr_native::Quad&, float, float)’ defined but not used [-Wunused-function]
+   59 | Quad span(const Quad& q,float start,float end) {return {interpolate(q[0],q[1],start),interpolate(q[0],q[1],end),interpolate(q[3],q[2],end),interpolate(q[3],q[2],start)};}
+      |      ^~~~
+ninja: build stopped: subcommand failed.

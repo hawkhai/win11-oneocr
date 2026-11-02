@@ -1,0 +1,12 @@
+{
+  "file": "vocab/vocab_cyrillic.json",
+  "sha256": "08f1a44cbe31ebee5f63c7d0b14e0a0a243725be6d98adb09e13d72642472da2",
+  "entries": 415,
+  "source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+  "source_resource": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\CyrillicMixed\\char2ind.txt",
+  "dictionary_sha256": "06a6ebed386801802802a15c49cfdd480877380131e525efce0ddedcaa748552",
+  "empty_indices": [
+    414
+  ],
+  "method": "complete original char2ind.txt plus composite_chars_map; preserves special token metadata"
+}

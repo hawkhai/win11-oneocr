@@ -1,0 +1,3326 @@
+{
+  "source_sha256": "0dbbec98e5e33de0be9b12d5f286011a6ea8f18e40baae092542b38ff00e7c7b",
+  "model": "CyrillicMixed",
+  "characters": [
+    {
+      "id": 0,
+      "logical_id": 0,
+      "physical_id": 1,
+      "type": 5,
+      "logical": "<space>",
+      "physical": "<space>"
+    },
+    {
+      "id": 1,
+      "logical_id": 1,
+      "physical_id": 2,
+      "type": 7,
+      "logical": "!",
+      "physical": "!"
+    },
+    {
+      "id": 2,
+      "logical_id": 2,
+      "physical_id": 3,
+      "type": 0,
+      "logical": "\"",
+      "physical": "\""
+    },
+    {
+      "id": 3,
+      "logical_id": 3,
+      "physical_id": 61,
+      "type": 0,
+      "logical": "#",
+      "physical": "#"
+    },
+    {
+      "id": 4,
+      "logical_id": 4,
+      "physical_id": 4,
+      "type": 0,
+      "logical": "$",
+      "physical": "$"
+    },
+    {
+      "id": 5,
+      "logical_id": 5,
+      "physical_id": 5,
+      "type": 0,
+      "logical": "%",
+      "physical": "%"
+    },
+    {
+      "id": 6,
+      "logical_id": 6,
+      "physical_id": 6,
+      "type": 0,
+      "logical": "&",
+      "physical": "&"
+    },
+    {
+      "id": 7,
+      "logical_id": 7,
+      "physical_id": 7,
+      "type": 6,
+      "logical": "'",
+      "physical": "'"
+    },
+    {
+      "id": 8,
+      "logical_id": 8,
+      "physical_id": 8,
+      "type": 0,
+      "logical": "(",
+      "physical": "("
+    },
+    {
+      "id": 9,
+      "logical_id": 9,
+      "physical_id": 9,
+      "type": 0,
+      "logical": ")",
+      "physical": ")"
+    },
+    {
+      "id": 10,
+      "logical_id": 10,
+      "physical_id": 10,
+      "type": 7,
+      "logical": "*",
+      "physical": "*"
+    },
+    {
+      "id": 11,
+      "logical_id": 11,
+      "physical_id": 11,
+      "type": 0,
+      "logical": "+",
+      "physical": "+"
+    },
+    {
+      "id": 12,
+      "logical_id": 12,
+      "physical_id": 12,
+      "type": 0,
+      "logical": ",",
+      "physical": ","
+    },
+    {
+      "id": 13,
+      "logical_id": 13,
+      "physical_id": 13,
+      "type": 7,
+      "logical": "-",
+      "physical": "-"
+    },
+    {
+      "id": 14,
+      "logical_id": 14,
+      "physical_id": 14,
+      "type": 7,
+      "logical": ".",
+      "physical": "."
+    },
+    {
+      "id": 15,
+      "logical_id": 15,
+      "physical_id": 15,
+      "type": 0,
+      "logical": "/",
+      "physical": "/"
+    },
+    {
+      "id": 16,
+      "logical_id": 16,
+      "physical_id": 16,
+      "type": 0,
+      "logical": "0",
+      "physical": "0"
+    },
+    {
+      "id": 17,
+      "logical_id": 17,
+      "physical_id": 17,
+      "type": 0,
+      "logical": "1",
+      "physical": "1"
+    },
+    {
+      "id": 18,
+      "logical_id": 18,
+      "physical_id": 18,
+      "type": 0,
+      "logical": "2",
+      "physical": "2"
+    },
+    {
+      "id": 19,
+      "logical_id": 19,
+      "physical_id": 19,
+      "type": 0,
+      "logical": "3",
+      "physical": "3"
+    },
+    {
+      "id": 20,
+      "logical_id": 20,
+      "physical_id": 20,
+      "type": 0,
+      "logical": "4",
+      "physical": "4"
+    },
+    {
+      "id": 21,
+      "logical_id": 21,
+      "physical_id": 21,
+      "type": 0,
+      "logical": "5",
+      "physical": "5"
+    },
+    {
+      "id": 22,
+      "logical_id": 22,
+      "physical_id": 22,
+      "type": 0,
+      "logical": "6",
+      "physical": "6"
+    },
+    {
+      "id": 23,
+      "logical_id": 23,
+      "physical_id": 23,
+      "type": 0,
+      "logical": "7",
+      "physical": "7"
+    },
+    {
+      "id": 24,
+      "logical_id": 24,
+      "physical_id": 24,
+      "type": 0,
+      "logical": "8",
+      "physical": "8"
+    },
+    {
+      "id": 25,
+      "logical_id": 25,
+      "physical_id": 25,
+      "type": 0,
+      "logical": "9",
+      "physical": "9"
+    },
+    {
+      "id": 26,
+      "logical_id": 26,
+      "physical_id": 26,
+      "type": 7,
+      "logical": ":",
+      "physical": ":"
+    },
+    {
+      "id": 27,
+      "logical_id": 27,
+      "physical_id": 27,
+      "type": 7,
+      "logical": ";",
+      "physical": ";"
+    },
+    {
+      "id": 28,
+      "logical_id": 28,
+      "physical_id": 28,
+      "type": 7,
+      "logical": "<",
+      "physical": "<"
+    },
+    {
+      "id": 29,
+      "logical_id": 29,
+      "physical_id": 29,
+      "type": 7,
+      "logical": "=",
+      "physical": "="
+    },
+    {
+      "id": 30,
+      "logical_id": 30,
+      "physical_id": 30,
+      "type": 0,
+      "logical": ">",
+      "physical": ">"
+    },
+    {
+      "id": 31,
+      "logical_id": 31,
+      "physical_id": 31,
+      "type": 7,
+      "logical": "?",
+      "physical": "?"
+    },
+    {
+      "id": 32,
+      "logical_id": 32,
+      "physical_id": 32,
+      "type": 0,
+      "logical": "@",
+      "physical": "@"
+    },
+    {
+      "id": 33,
+      "logical_id": 65,
+      "physical_id": 33,
+      "type": 1,
+      "logical": "a",
+      "physical": "A"
+    },
+    {
+      "id": 34,
+      "logical_id": 66,
+      "physical_id": 34,
+      "type": 1,
+      "logical": "b",
+      "physical": "B"
+    },
+    {
+      "id": 35,
+      "logical_id": 67,
+      "physical_id": 35,
+      "type": 1,
+      "logical": "c",
+      "physical": "C"
+    },
+    {
+      "id": 36,
+      "logical_id": 68,
+      "physical_id": 36,
+      "type": 1,
+      "logical": "d",
+      "physical": "D"
+    },
+    {
+      "id": 37,
+      "logical_id": 69,
+      "physical_id": 37,
+      "type": 1,
+      "logical": "e",
+      "physical": "E"
+    },
+    {
+      "id": 38,
+      "logical_id": 70,
+      "physical_id": 38,
+      "type": 1,
+      "logical": "f",
+      "physical": "F"
+    },
+    {
+      "id": 39,
+      "logical_id": 71,
+      "physical_id": 39,
+      "type": 1,
+      "logical": "g",
+      "physical": "G"
+    },
+    {
+      "id": 40,
+      "logical_id": 72,
+      "physical_id": 40,
+      "type": 1,
+      "logical": "h",
+      "physical": "H"
+    },
+    {
+      "id": 41,
+      "logical_id": 73,
+      "physical_id": 41,
+      "type": 1,
+      "logical": "i",
+      "physical": "I"
+    },
+    {
+      "id": 42,
+      "logical_id": 74,
+      "physical_id": 42,
+      "type": 1,
+      "logical": "j",
+      "physical": "J"
+    },
+    {
+      "id": 43,
+      "logical_id": 75,
+      "physical_id": 43,
+      "type": 1,
+      "logical": "k",
+      "physical": "K"
+    },
+    {
+      "id": 44,
+      "logical_id": 76,
+      "physical_id": 44,
+      "type": 1,
+      "logical": "l",
+      "physical": "L"
+    },
+    {
+      "id": 45,
+      "logical_id": 77,
+      "physical_id": 45,
+      "type": 1,
+      "logical": "m",
+      "physical": "M"
+    },
+    {
+      "id": 46,
+      "logical_id": 78,
+      "physical_id": 46,
+      "type": 1,
+      "logical": "n",
+      "physical": "N"
+    },
+    {
+      "id": 47,
+      "logical_id": 79,
+      "physical_id": 47,
+      "type": 1,
+      "logical": "o",
+      "physical": "O"
+    },
+    {
+      "id": 48,
+      "logical_id": 80,
+      "physical_id": 48,
+      "type": 1,
+      "logical": "p",
+      "physical": "P"
+    },
+    {
+      "id": 49,
+      "logical_id": 81,
+      "physical_id": 49,
+      "type": 1,
+      "logical": "q",
+      "physical": "Q"
+    },
+    {
+      "id": 50,
+      "logical_id": 82,
+      "physical_id": 50,
+      "type": 1,
+      "logical": "r",
+      "physical": "R"
+    },
+    {
+      "id": 51,
+      "logical_id": 83,
+      "physical_id": 51,
+      "type": 1,
+      "logical": "s",
+      "physical": "S"
+    },
+    {
+      "id": 52,
+      "logical_id": 84,
+      "physical_id": 52,
+      "type": 1,
+      "logical": "t",
+      "physical": "T"
+    },
+    {
+      "id": 53,
+      "logical_id": 85,
+      "physical_id": 53,
+      "type": 1,
+      "logical": "u",
+      "physical": "U"
+    },
+    {
+      "id": 54,
+      "logical_id": 86,
+      "physical_id": 54,
+      "type": 1,
+      "logical": "v",
+      "physical": "V"
+    },
+    {
+      "id": 55,
+      "logical_id": 87,
+      "physical_id": 55,
+      "type": 1,
+      "logical": "w",
+      "physical": "W"
+    },
+    {
+      "id": 56,
+      "logical_id": 88,
+      "physical_id": 56,
+      "type": 1,
+      "logical": "x",
+      "physical": "X"
+    },
+    {
+      "id": 57,
+      "logical_id": 89,
+      "physical_id": 57,
+      "type": 1,
+      "logical": "y",
+      "physical": "Y"
+    },
+    {
+      "id": 58,
+      "logical_id": 90,
+      "physical_id": 58,
+      "type": 1,
+      "logical": "z",
+      "physical": "Z"
+    },
+    {
+      "id": 59,
+      "logical_id": 59,
+      "physical_id": 59,
+      "type": 0,
+      "logical": "[",
+      "physical": "["
+    },
+    {
+      "id": 60,
+      "logical_id": 60,
+      "physical_id": 60,
+      "type": 0,
+      "logical": "\\",
+      "physical": "\\"
+    },
+    {
+      "id": 61,
+      "logical_id": 61,
+      "physical_id": 62,
+      "type": 0,
+      "logical": "]",
+      "physical": "]"
+    },
+    {
+      "id": 62,
+      "logical_id": 62,
+      "physical_id": 63,
+      "type": 0,
+      "logical": "^",
+      "physical": "^"
+    },
+    {
+      "id": 63,
+      "logical_id": 63,
+      "physical_id": 64,
+      "type": 7,
+      "logical": "_",
+      "physical": "_"
+    },
+    {
+      "id": 64,
+      "logical_id": 64,
+      "physical_id": 65,
+      "type": 0,
+      "logical": "`",
+      "physical": "`"
+    },
+    {
+      "id": 65,
+      "logical_id": 65,
+      "physical_id": 66,
+      "type": 1,
+      "logical": "a",
+      "physical": "a"
+    },
+    {
+      "id": 66,
+      "logical_id": 66,
+      "physical_id": 67,
+      "type": 1,
+      "logical": "b",
+      "physical": "b"
+    },
+    {
+      "id": 67,
+      "logical_id": 67,
+      "physical_id": 68,
+      "type": 1,
+      "logical": "c",
+      "physical": "c"
+    },
+    {
+      "id": 68,
+      "logical_id": 68,
+      "physical_id": 69,
+      "type": 1,
+      "logical": "d",
+      "physical": "d"
+    },
+    {
+      "id": 69,
+      "logical_id": 69,
+      "physical_id": 70,
+      "type": 1,
+      "logical": "e",
+      "physical": "e"
+    },
+    {
+      "id": 70,
+      "logical_id": 70,
+      "physical_id": 71,
+      "type": 1,
+      "logical": "f",
+      "physical": "f"
+    },
+    {
+      "id": 71,
+      "logical_id": 71,
+      "physical_id": 72,
+      "type": 1,
+      "logical": "g",
+      "physical": "g"
+    },
+    {
+      "id": 72,
+      "logical_id": 72,
+      "physical_id": 73,
+      "type": 1,
+      "logical": "h",
+      "physical": "h"
+    },
+    {
+      "id": 73,
+      "logical_id": 73,
+      "physical_id": 74,
+      "type": 1,
+      "logical": "i",
+      "physical": "i"
+    },
+    {
+      "id": 74,
+      "logical_id": 74,
+      "physical_id": 75,
+      "type": 1,
+      "logical": "j",
+      "physical": "j"
+    },
+    {
+      "id": 75,
+      "logical_id": 75,
+      "physical_id": 76,
+      "type": 1,
+      "logical": "k",
+      "physical": "k"
+    },
+    {
+      "id": 76,
+      "logical_id": 76,
+      "physical_id": 77,
+      "type": 1,
+      "logical": "l",
+      "physical": "l"
+    },
+    {
+      "id": 77,
+      "logical_id": 77,
+      "physical_id": 78,
+      "type": 1,
+      "logical": "m",
+      "physical": "m"
+    },
+    {
+      "id": 78,
+      "logical_id": 78,
+      "physical_id": 79,
+      "type": 1,
+      "logical": "n",
+      "physical": "n"
+    },
+    {
+      "id": 79,
+      "logical_id": 79,
+      "physical_id": 80,
+      "type": 1,
+      "logical": "o",
+      "physical": "o"
+    },
+    {
+      "id": 80,
+      "logical_id": 80,
+      "physical_id": 81,
+      "type": 1,
+      "logical": "p",
+      "physical": "p"
+    },
+    {
+      "id": 81,
+      "logical_id": 81,
+      "physical_id": 82,
+      "type": 1,
+      "logical": "q",
+      "physical": "q"
+    },
+    {
+      "id": 82,
+      "logical_id": 82,
+      "physical_id": 83,
+      "type": 1,
+      "logical": "r",
+      "physical": "r"
+    },
+    {
+      "id": 83,
+      "logical_id": 83,
+      "physical_id": 84,
+      "type": 1,
+      "logical": "s",
+      "physical": "s"
+    },
+    {
+      "id": 84,
+      "logical_id": 84,
+      "physical_id": 85,
+      "type": 1,
+      "logical": "t",
+      "physical": "t"
+    },
+    {
+      "id": 85,
+      "logical_id": 85,
+      "physical_id": 86,
+      "type": 1,
+      "logical": "u",
+      "physical": "u"
+    },
+    {
+      "id": 86,
+      "logical_id": 86,
+      "physical_id": 87,
+      "type": 1,
+      "logical": "v",
+      "physical": "v"
+    },
+    {
+      "id": 87,
+      "logical_id": 87,
+      "physical_id": 88,
+      "type": 1,
+      "logical": "w",
+      "physical": "w"
+    },
+    {
+      "id": 88,
+      "logical_id": 88,
+      "physical_id": 89,
+      "type": 1,
+      "logical": "x",
+      "physical": "x"
+    },
+    {
+      "id": 89,
+      "logical_id": 89,
+      "physical_id": 90,
+      "type": 1,
+      "logical": "y",
+      "physical": "y"
+    },
+    {
+      "id": 90,
+      "logical_id": 90,
+      "physical_id": 91,
+      "type": 1,
+      "logical": "z",
+      "physical": "z"
+    },
+    {
+      "id": 91,
+      "logical_id": 91,
+      "physical_id": 92,
+      "type": 0,
+      "logical": "{",
+      "physical": "{"
+    },
+    {
+      "id": 92,
+      "logical_id": 92,
+      "physical_id": 93,
+      "type": 0,
+      "logical": "|",
+      "physical": "|"
+    },
+    {
+      "id": 93,
+      "logical_id": 93,
+      "physical_id": 94,
+      "type": 0,
+      "logical": "}",
+      "physical": "}"
+    },
+    {
+      "id": 94,
+      "logical_id": 94,
+      "physical_id": 95,
+      "type": 7,
+      "logical": "~",
+      "physical": "~"
+    },
+    {
+      "id": 95,
+      "logical_id": 95,
+      "physical_id": 96,
+      "type": 0,
+      "logical": "©",
+      "physical": "©"
+    },
+    {
+      "id": 96,
+      "logical_id": 96,
+      "physical_id": 97,
+      "type": 0,
+      "logical": "«",
+      "physical": "«"
+    },
+    {
+      "id": 97,
+      "logical_id": 97,
+      "physical_id": 98,
+      "type": 0,
+      "logical": "®",
+      "physical": "®"
+    },
+    {
+      "id": 98,
+      "logical_id": 98,
+      "physical_id": 99,
+      "type": 0,
+      "logical": "°",
+      "physical": "°"
+    },
+    {
+      "id": 99,
+      "logical_id": 99,
+      "physical_id": 100,
+      "type": 7,
+      "logical": "·",
+      "physical": "·"
+    },
+    {
+      "id": 100,
+      "logical_id": 100,
+      "physical_id": 101,
+      "type": 0,
+      "logical": "»",
+      "physical": "»"
+    },
+    {
+      "id": 101,
+      "logical_id": 105,
+      "physical_id": 102,
+      "type": 0,
+      "logical": "ä",
+      "physical": "Ä"
+    },
+    {
+      "id": 102,
+      "logical_id": 106,
+      "physical_id": 103,
+      "type": 0,
+      "logical": "å",
+      "physical": "Å"
+    },
+    {
+      "id": 103,
+      "logical_id": 107,
+      "physical_id": 104,
+      "type": 0,
+      "logical": "æ",
+      "physical": "Æ"
+    },
+    {
+      "id": 104,
+      "logical_id": 104,
+      "physical_id": 105,
+      "type": 0,
+      "logical": "á",
+      "physical": "á"
+    },
+    {
+      "id": 105,
+      "logical_id": 105,
+      "physical_id": 106,
+      "type": 0,
+      "logical": "ä",
+      "physical": "ä"
+    },
+    {
+      "id": 106,
+      "logical_id": 106,
+      "physical_id": 107,
+      "type": 0,
+      "logical": "å",
+      "physical": "å"
+    },
+    {
+      "id": 107,
+      "logical_id": 107,
+      "physical_id": 108,
+      "type": 0,
+      "logical": "æ",
+      "physical": "æ"
+    },
+    {
+      "id": 108,
+      "logical_id": 108,
+      "physical_id": 109,
+      "type": 0,
+      "logical": "é",
+      "physical": "é"
+    },
+    {
+      "id": 109,
+      "logical_id": 109,
+      "physical_id": 110,
+      "type": 0,
+      "logical": "ö",
+      "physical": "ö"
+    },
+    {
+      "id": 110,
+      "logical_id": 111,
+      "physical_id": 111,
+      "type": 0,
+      "logical": "ć",
+      "physical": "Ć"
+    },
+    {
+      "id": 111,
+      "logical_id": 111,
+      "physical_id": 112,
+      "type": 0,
+      "logical": "ć",
+      "physical": "ć"
+    },
+    {
+      "id": 112,
+      "logical_id": 113,
+      "physical_id": 113,
+      "type": 0,
+      "logical": "œ",
+      "physical": "Œ"
+    },
+    {
+      "id": 113,
+      "logical_id": 113,
+      "physical_id": 114,
+      "type": 0,
+      "logical": "œ",
+      "physical": "œ"
+    },
+    {
+      "id": 114,
+      "logical_id": 115,
+      "physical_id": 115,
+      "type": 0,
+      "logical": "ǟ",
+      "physical": "Ǟ"
+    },
+    {
+      "id": 115,
+      "logical_id": 115,
+      "physical_id": 116,
+      "type": 0,
+      "logical": "ǟ",
+      "physical": "ǟ"
+    },
+    {
+      "id": 116,
+      "logical_id": 196,
+      "physical_id": 117,
+      "type": 0,
+      "logical": "ѐ",
+      "physical": "Ѐ"
+    },
+    {
+      "id": 117,
+      "logical_id": 197,
+      "physical_id": 118,
+      "type": 0,
+      "logical": "ё",
+      "physical": "Ё"
+    },
+    {
+      "id": 118,
+      "logical_id": 198,
+      "physical_id": 119,
+      "type": 0,
+      "logical": "ђ",
+      "physical": "Ђ"
+    },
+    {
+      "id": 119,
+      "logical_id": 199,
+      "physical_id": 120,
+      "type": 0,
+      "logical": "ѓ",
+      "physical": "Ѓ"
+    },
+    {
+      "id": 120,
+      "logical_id": 200,
+      "physical_id": 121,
+      "type": 0,
+      "logical": "є",
+      "physical": "Є"
+    },
+    {
+      "id": 121,
+      "logical_id": 201,
+      "physical_id": 122,
+      "type": 0,
+      "logical": "ѕ",
+      "physical": "Ѕ"
+    },
+    {
+      "id": 122,
+      "logical_id": 202,
+      "physical_id": 123,
+      "type": 0,
+      "logical": "і",
+      "physical": "І"
+    },
+    {
+      "id": 123,
+      "logical_id": 203,
+      "physical_id": 124,
+      "type": 0,
+      "logical": "ї",
+      "physical": "Ї"
+    },
+    {
+      "id": 124,
+      "logical_id": 204,
+      "physical_id": 125,
+      "type": 0,
+      "logical": "ј",
+      "physical": "Ј"
+    },
+    {
+      "id": 125,
+      "logical_id": 205,
+      "physical_id": 126,
+      "type": 0,
+      "logical": "љ",
+      "physical": "Љ"
+    },
+    {
+      "id": 126,
+      "logical_id": 206,
+      "physical_id": 127,
+      "type": 0,
+      "logical": "њ",
+      "physical": "Њ"
+    },
+    {
+      "id": 127,
+      "logical_id": 207,
+      "physical_id": 128,
+      "type": 0,
+      "logical": "ћ",
+      "physical": "Ћ"
+    },
+    {
+      "id": 128,
+      "logical_id": 208,
+      "physical_id": 129,
+      "type": 0,
+      "logical": "ќ",
+      "physical": "Ќ"
+    },
+    {
+      "id": 129,
+      "logical_id": 209,
+      "physical_id": 130,
+      "type": 0,
+      "logical": "ѝ",
+      "physical": "Ѝ"
+    },
+    {
+      "id": 130,
+      "logical_id": 210,
+      "physical_id": 131,
+      "type": 0,
+      "logical": "ў",
+      "physical": "Ў"
+    },
+    {
+      "id": 131,
+      "logical_id": 211,
+      "physical_id": 132,
+      "type": 0,
+      "logical": "џ",
+      "physical": "Џ"
+    },
+    {
+      "id": 132,
+      "logical_id": 164,
+      "physical_id": 133,
+      "type": 0,
+      "logical": "а",
+      "physical": "А"
+    },
+    {
+      "id": 133,
+      "logical_id": 165,
+      "physical_id": 134,
+      "type": 0,
+      "logical": "б",
+      "physical": "Б"
+    },
+    {
+      "id": 134,
+      "logical_id": 166,
+      "physical_id": 135,
+      "type": 0,
+      "logical": "в",
+      "physical": "В"
+    },
+    {
+      "id": 135,
+      "logical_id": 167,
+      "physical_id": 136,
+      "type": 0,
+      "logical": "г",
+      "physical": "Г"
+    },
+    {
+      "id": 136,
+      "logical_id": 168,
+      "physical_id": 137,
+      "type": 0,
+      "logical": "д",
+      "physical": "Д"
+    },
+    {
+      "id": 137,
+      "logical_id": 169,
+      "physical_id": 138,
+      "type": 0,
+      "logical": "е",
+      "physical": "Е"
+    },
+    {
+      "id": 138,
+      "logical_id": 170,
+      "physical_id": 139,
+      "type": 0,
+      "logical": "ж",
+      "physical": "Ж"
+    },
+    {
+      "id": 139,
+      "logical_id": 171,
+      "physical_id": 140,
+      "type": 0,
+      "logical": "з",
+      "physical": "З"
+    },
+    {
+      "id": 140,
+      "logical_id": 172,
+      "physical_id": 141,
+      "type": 0,
+      "logical": "и",
+      "physical": "И"
+    },
+    {
+      "id": 141,
+      "logical_id": 173,
+      "physical_id": 142,
+      "type": 0,
+      "logical": "й",
+      "physical": "Й"
+    },
+    {
+      "id": 142,
+      "logical_id": 174,
+      "physical_id": 143,
+      "type": 0,
+      "logical": "к",
+      "physical": "К"
+    },
+    {
+      "id": 143,
+      "logical_id": 175,
+      "physical_id": 144,
+      "type": 0,
+      "logical": "л",
+      "physical": "Л"
+    },
+    {
+      "id": 144,
+      "logical_id": 176,
+      "physical_id": 145,
+      "type": 0,
+      "logical": "м",
+      "physical": "М"
+    },
+    {
+      "id": 145,
+      "logical_id": 177,
+      "physical_id": 146,
+      "type": 0,
+      "logical": "н",
+      "physical": "Н"
+    },
+    {
+      "id": 146,
+      "logical_id": 178,
+      "physical_id": 147,
+      "type": 0,
+      "logical": "о",
+      "physical": "О"
+    },
+    {
+      "id": 147,
+      "logical_id": 179,
+      "physical_id": 148,
+      "type": 0,
+      "logical": "п",
+      "physical": "П"
+    },
+    {
+      "id": 148,
+      "logical_id": 180,
+      "physical_id": 149,
+      "type": 0,
+      "logical": "р",
+      "physical": "Р"
+    },
+    {
+      "id": 149,
+      "logical_id": 181,
+      "physical_id": 150,
+      "type": 0,
+      "logical": "с",
+      "physical": "С"
+    },
+    {
+      "id": 150,
+      "logical_id": 182,
+      "physical_id": 151,
+      "type": 0,
+      "logical": "т",
+      "physical": "Т"
+    },
+    {
+      "id": 151,
+      "logical_id": 183,
+      "physical_id": 152,
+      "type": 0,
+      "logical": "у",
+      "physical": "У"
+    },
+    {
+      "id": 152,
+      "logical_id": 184,
+      "physical_id": 153,
+      "type": 0,
+      "logical": "ф",
+      "physical": "Ф"
+    },
+    {
+      "id": 153,
+      "logical_id": 185,
+      "physical_id": 154,
+      "type": 0,
+      "logical": "х",
+      "physical": "Х"
+    },
+    {
+      "id": 154,
+      "logical_id": 186,
+      "physical_id": 155,
+      "type": 0,
+      "logical": "ц",
+      "physical": "Ц"
+    },
+    {
+      "id": 155,
+      "logical_id": 187,
+      "physical_id": 156,
+      "type": 0,
+      "logical": "ч",
+      "physical": "Ч"
+    },
+    {
+      "id": 156,
+      "logical_id": 188,
+      "physical_id": 157,
+      "type": 0,
+      "logical": "ш",
+      "physical": "Ш"
+    },
+    {
+      "id": 157,
+      "logical_id": 189,
+      "physical_id": 158,
+      "type": 0,
+      "logical": "щ",
+      "physical": "Щ"
+    },
+    {
+      "id": 158,
+      "logical_id": 190,
+      "physical_id": 159,
+      "type": 0,
+      "logical": "ъ",
+      "physical": "Ъ"
+    },
+    {
+      "id": 159,
+      "logical_id": 191,
+      "physical_id": 160,
+      "type": 0,
+      "logical": "ы",
+      "physical": "Ы"
+    },
+    {
+      "id": 160,
+      "logical_id": 192,
+      "physical_id": 161,
+      "type": 0,
+      "logical": "ь",
+      "physical": "Ь"
+    },
+    {
+      "id": 161,
+      "logical_id": 193,
+      "physical_id": 162,
+      "type": 0,
+      "logical": "э",
+      "physical": "Э"
+    },
+    {
+      "id": 162,
+      "logical_id": 194,
+      "physical_id": 163,
+      "type": 0,
+      "logical": "ю",
+      "physical": "Ю"
+    },
+    {
+      "id": 163,
+      "logical_id": 195,
+      "physical_id": 164,
+      "type": 0,
+      "logical": "я",
+      "physical": "Я"
+    },
+    {
+      "id": 164,
+      "logical_id": 164,
+      "physical_id": 165,
+      "type": 0,
+      "logical": "а",
+      "physical": "а"
+    },
+    {
+      "id": 165,
+      "logical_id": 165,
+      "physical_id": 166,
+      "type": 0,
+      "logical": "б",
+      "physical": "б"
+    },
+    {
+      "id": 166,
+      "logical_id": 166,
+      "physical_id": 167,
+      "type": 0,
+      "logical": "в",
+      "physical": "в"
+    },
+    {
+      "id": 167,
+      "logical_id": 167,
+      "physical_id": 168,
+      "type": 0,
+      "logical": "г",
+      "physical": "г"
+    },
+    {
+      "id": 168,
+      "logical_id": 168,
+      "physical_id": 169,
+      "type": 0,
+      "logical": "д",
+      "physical": "д"
+    },
+    {
+      "id": 169,
+      "logical_id": 169,
+      "physical_id": 170,
+      "type": 0,
+      "logical": "е",
+      "physical": "е"
+    },
+    {
+      "id": 170,
+      "logical_id": 170,
+      "physical_id": 171,
+      "type": 0,
+      "logical": "ж",
+      "physical": "ж"
+    },
+    {
+      "id": 171,
+      "logical_id": 171,
+      "physical_id": 172,
+      "type": 0,
+      "logical": "з",
+      "physical": "з"
+    },
+    {
+      "id": 172,
+      "logical_id": 172,
+      "physical_id": 173,
+      "type": 0,
+      "logical": "и",
+      "physical": "и"
+    },
+    {
+      "id": 173,
+      "logical_id": 173,
+      "physical_id": 174,
+      "type": 0,
+      "logical": "й",
+      "physical": "й"
+    },
+    {
+      "id": 174,
+      "logical_id": 174,
+      "physical_id": 175,
+      "type": 0,
+      "logical": "к",
+      "physical": "к"
+    },
+    {
+      "id": 175,
+      "logical_id": 175,
+      "physical_id": 176,
+      "type": 0,
+      "logical": "л",
+      "physical": "л"
+    },
+    {
+      "id": 176,
+      "logical_id": 176,
+      "physical_id": 177,
+      "type": 0,
+      "logical": "м",
+      "physical": "м"
+    },
+    {
+      "id": 177,
+      "logical_id": 177,
+      "physical_id": 178,
+      "type": 0,
+      "logical": "н",
+      "physical": "н"
+    },
+    {
+      "id": 178,
+      "logical_id": 178,
+      "physical_id": 179,
+      "type": 0,
+      "logical": "о",
+      "physical": "о"
+    },
+    {
+      "id": 179,
+      "logical_id": 179,
+      "physical_id": 180,
+      "type": 0,
+      "logical": "п",
+      "physical": "п"
+    },
+    {
+      "id": 180,
+      "logical_id": 180,
+      "physical_id": 181,
+      "type": 0,
+      "logical": "р",
+      "physical": "р"
+    },
+    {
+      "id": 181,
+      "logical_id": 181,
+      "physical_id": 182,
+      "type": 0,
+      "logical": "с",
+      "physical": "с"
+    },
+    {
+      "id": 182,
+      "logical_id": 182,
+      "physical_id": 183,
+      "type": 0,
+      "logical": "т",
+      "physical": "т"
+    },
+    {
+      "id": 183,
+      "logical_id": 183,
+      "physical_id": 184,
+      "type": 0,
+      "logical": "у",
+      "physical": "у"
+    },
+    {
+      "id": 184,
+      "logical_id": 184,
+      "physical_id": 185,
+      "type": 0,
+      "logical": "ф",
+      "physical": "ф"
+    },
+    {
+      "id": 185,
+      "logical_id": 185,
+      "physical_id": 186,
+      "type": 0,
+      "logical": "х",
+      "physical": "х"
+    },
+    {
+      "id": 186,
+      "logical_id": 186,
+      "physical_id": 187,
+      "type": 0,
+      "logical": "ц",
+      "physical": "ц"
+    },
+    {
+      "id": 187,
+      "logical_id": 187,
+      "physical_id": 188,
+      "type": 0,
+      "logical": "ч",
+      "physical": "ч"
+    },
+    {
+      "id": 188,
+      "logical_id": 188,
+      "physical_id": 189,
+      "type": 0,
+      "logical": "ш",
+      "physical": "ш"
+    },
+    {
+      "id": 189,
+      "logical_id": 189,
+      "physical_id": 190,
+      "type": 0,
+      "logical": "щ",
+      "physical": "щ"
+    },
+    {
+      "id": 190,
+      "logical_id": 190,
+      "physical_id": 191,
+      "type": 0,
+      "logical": "ъ",
+      "physical": "ъ"
+    },
+    {
+      "id": 191,
+      "logical_id": 191,
+      "physical_id": 192,
+      "type": 0,
+      "logical": "ы",
+      "physical": "ы"
+    },
+    {
+      "id": 192,
+      "logical_id": 192,
+      "physical_id": 193,
+      "type": 0,
+      "logical": "ь",
+      "physical": "ь"
+    },
+    {
+      "id": 193,
+      "logical_id": 193,
+      "physical_id": 194,
+      "type": 0,
+      "logical": "э",
+      "physical": "э"
+    },
+    {
+      "id": 194,
+      "logical_id": 194,
+      "physical_id": 195,
+      "type": 0,
+      "logical": "ю",
+      "physical": "ю"
+    },
+    {
+      "id": 195,
+      "logical_id": 195,
+      "physical_id": 196,
+      "type": 0,
+      "logical": "я",
+      "physical": "я"
+    },
+    {
+      "id": 196,
+      "logical_id": 196,
+      "physical_id": 197,
+      "type": 0,
+      "logical": "ѐ",
+      "physical": "ѐ"
+    },
+    {
+      "id": 197,
+      "logical_id": 197,
+      "physical_id": 198,
+      "type": 0,
+      "logical": "ё",
+      "physical": "ё"
+    },
+    {
+      "id": 198,
+      "logical_id": 198,
+      "physical_id": 199,
+      "type": 0,
+      "logical": "ђ",
+      "physical": "ђ"
+    },
+    {
+      "id": 199,
+      "logical_id": 199,
+      "physical_id": 200,
+      "type": 0,
+      "logical": "ѓ",
+      "physical": "ѓ"
+    },
+    {
+      "id": 200,
+      "logical_id": 200,
+      "physical_id": 201,
+      "type": 0,
+      "logical": "є",
+      "physical": "є"
+    },
+    {
+      "id": 201,
+      "logical_id": 201,
+      "physical_id": 202,
+      "type": 0,
+      "logical": "ѕ",
+      "physical": "ѕ"
+    },
+    {
+      "id": 202,
+      "logical_id": 202,
+      "physical_id": 203,
+      "type": 0,
+      "logical": "і",
+      "physical": "і"
+    },
+    {
+      "id": 203,
+      "logical_id": 203,
+      "physical_id": 204,
+      "type": 0,
+      "logical": "ї",
+      "physical": "ї"
+    },
+    {
+      "id": 204,
+      "logical_id": 204,
+      "physical_id": 205,
+      "type": 0,
+      "logical": "ј",
+      "physical": "ј"
+    },
+    {
+      "id": 205,
+      "logical_id": 205,
+      "physical_id": 206,
+      "type": 0,
+      "logical": "љ",
+      "physical": "љ"
+    },
+    {
+      "id": 206,
+      "logical_id": 206,
+      "physical_id": 207,
+      "type": 0,
+      "logical": "њ",
+      "physical": "њ"
+    },
+    {
+      "id": 207,
+      "logical_id": 207,
+      "physical_id": 208,
+      "type": 0,
+      "logical": "ћ",
+      "physical": "ћ"
+    },
+    {
+      "id": 208,
+      "logical_id": 208,
+      "physical_id": 209,
+      "type": 0,
+      "logical": "ќ",
+      "physical": "ќ"
+    },
+    {
+      "id": 209,
+      "logical_id": 209,
+      "physical_id": 210,
+      "type": 0,
+      "logical": "ѝ",
+      "physical": "ѝ"
+    },
+    {
+      "id": 210,
+      "logical_id": 210,
+      "physical_id": 211,
+      "type": 0,
+      "logical": "ў",
+      "physical": "ў"
+    },
+    {
+      "id": 211,
+      "logical_id": 211,
+      "physical_id": 212,
+      "type": 0,
+      "logical": "џ",
+      "physical": "џ"
+    },
+    {
+      "id": 212,
+      "logical_id": 213,
+      "physical_id": 213,
+      "type": 0,
+      "logical": "ѡ",
+      "physical": "Ѡ"
+    },
+    {
+      "id": 213,
+      "logical_id": 213,
+      "physical_id": 214,
+      "type": 0,
+      "logical": "ѡ",
+      "physical": "ѡ"
+    },
+    {
+      "id": 214,
+      "logical_id": 215,
+      "physical_id": 215,
+      "type": 0,
+      "logical": "ѣ",
+      "physical": "Ѣ"
+    },
+    {
+      "id": 215,
+      "logical_id": 215,
+      "physical_id": 216,
+      "type": 0,
+      "logical": "ѣ",
+      "physical": "ѣ"
+    },
+    {
+      "id": 216,
+      "logical_id": 217,
+      "physical_id": 217,
+      "type": 0,
+      "logical": "ѥ",
+      "physical": "Ѥ"
+    },
+    {
+      "id": 217,
+      "logical_id": 217,
+      "physical_id": 218,
+      "type": 0,
+      "logical": "ѥ",
+      "physical": "ѥ"
+    },
+    {
+      "id": 218,
+      "logical_id": 219,
+      "physical_id": 219,
+      "type": 0,
+      "logical": "ѧ",
+      "physical": "Ѧ"
+    },
+    {
+      "id": 219,
+      "logical_id": 219,
+      "physical_id": 220,
+      "type": 0,
+      "logical": "ѧ",
+      "physical": "ѧ"
+    },
+    {
+      "id": 220,
+      "logical_id": 221,
+      "physical_id": 221,
+      "type": 0,
+      "logical": "ѩ",
+      "physical": "Ѩ"
+    },
+    {
+      "id": 221,
+      "logical_id": 221,
+      "physical_id": 222,
+      "type": 0,
+      "logical": "ѩ",
+      "physical": "ѩ"
+    },
+    {
+      "id": 222,
+      "logical_id": 223,
+      "physical_id": 223,
+      "type": 0,
+      "logical": "ѫ",
+      "physical": "Ѫ"
+    },
+    {
+      "id": 223,
+      "logical_id": 223,
+      "physical_id": 224,
+      "type": 0,
+      "logical": "ѫ",
+      "physical": "ѫ"
+    },
+    {
+      "id": 224,
+      "logical_id": 225,
+      "physical_id": 225,
+      "type": 0,
+      "logical": "ѭ",
+      "physical": "Ѭ"
+    },
+    {
+      "id": 225,
+      "logical_id": 225,
+      "physical_id": 226,
+      "type": 0,
+      "logical": "ѭ",
+      "physical": "ѭ"
+    },
+    {
+      "id": 226,
+      "logical_id": 227,
+      "physical_id": 227,
+      "type": 0,
+      "logical": "ѯ",
+      "physical": "Ѯ"
+    },
+    {
+      "id": 227,
+      "logical_id": 227,
+      "physical_id": 228,
+      "type": 0,
+      "logical": "ѯ",
+      "physical": "ѯ"
+    },
+    {
+      "id": 228,
+      "logical_id": 229,
+      "physical_id": 229,
+      "type": 0,
+      "logical": "ѱ",
+      "physical": "Ѱ"
+    },
+    {
+      "id": 229,
+      "logical_id": 229,
+      "physical_id": 230,
+      "type": 0,
+      "logical": "ѱ",
+      "physical": "ѱ"
+    },
+    {
+      "id": 230,
+      "logical_id": 231,
+      "physical_id": 231,
+      "type": 0,
+      "logical": "ѳ",
+      "physical": "Ѳ"
+    },
+    {
+      "id": 231,
+      "logical_id": 231,
+      "physical_id": 232,
+      "type": 0,
+      "logical": "ѳ",
+      "physical": "ѳ"
+    },
+    {
+      "id": 232,
+      "logical_id": 233,
+      "physical_id": 233,
+      "type": 0,
+      "logical": "ѵ",
+      "physical": "Ѵ"
+    },
+    {
+      "id": 233,
+      "logical_id": 233,
+      "physical_id": 234,
+      "type": 0,
+      "logical": "ѵ",
+      "physical": "ѵ"
+    },
+    {
+      "id": 234,
+      "logical_id": 235,
+      "physical_id": 235,
+      "type": 0,
+      "logical": "ѷ",
+      "physical": "Ѷ"
+    },
+    {
+      "id": 235,
+      "logical_id": 235,
+      "physical_id": 236,
+      "type": 0,
+      "logical": "ѷ",
+      "physical": "ѷ"
+    },
+    {
+      "id": 236,
+      "logical_id": 237,
+      "physical_id": 237,
+      "type": 0,
+      "logical": "ѹ",
+      "physical": "Ѹ"
+    },
+    {
+      "id": 237,
+      "logical_id": 237,
+      "physical_id": 238,
+      "type": 0,
+      "logical": "ѹ",
+      "physical": "ѹ"
+    },
+    {
+      "id": 238,
+      "logical_id": 239,
+      "physical_id": 239,
+      "type": 0,
+      "logical": "ѻ",
+      "physical": "Ѻ"
+    },
+    {
+      "id": 239,
+      "logical_id": 239,
+      "physical_id": 240,
+      "type": 0,
+      "logical": "ѻ",
+      "physical": "ѻ"
+    },
+    {
+      "id": 240,
+      "logical_id": 241,
+      "physical_id": 241,
+      "type": 0,
+      "logical": "ѽ",
+      "physical": "Ѽ"
+    },
+    {
+      "id": 241,
+      "logical_id": 241,
+      "physical_id": 242,
+      "type": 0,
+      "logical": "ѽ",
+      "physical": "ѽ"
+    },
+    {
+      "id": 242,
+      "logical_id": 243,
+      "physical_id": 243,
+      "type": 0,
+      "logical": "ѿ",
+      "physical": "Ѿ"
+    },
+    {
+      "id": 243,
+      "logical_id": 243,
+      "physical_id": 244,
+      "type": 0,
+      "logical": "ѿ",
+      "physical": "ѿ"
+    },
+    {
+      "id": 244,
+      "logical_id": 245,
+      "physical_id": 245,
+      "type": 0,
+      "logical": "ҁ",
+      "physical": "Ҁ"
+    },
+    {
+      "id": 245,
+      "logical_id": 245,
+      "physical_id": 246,
+      "type": 0,
+      "logical": "ҁ",
+      "physical": "ҁ"
+    },
+    {
+      "id": 246,
+      "logical_id": 246,
+      "physical_id": 247,
+      "type": 0,
+      "logical": "҂",
+      "physical": "҂"
+    },
+    {
+      "id": 247,
+      "logical_id": 248,
+      "physical_id": 248,
+      "type": 0,
+      "logical": "ҋ",
+      "physical": "Ҋ"
+    },
+    {
+      "id": 248,
+      "logical_id": 248,
+      "physical_id": 249,
+      "type": 0,
+      "logical": "ҋ",
+      "physical": "ҋ"
+    },
+    {
+      "id": 249,
+      "logical_id": 250,
+      "physical_id": 250,
+      "type": 0,
+      "logical": "ҍ",
+      "physical": "Ҍ"
+    },
+    {
+      "id": 250,
+      "logical_id": 250,
+      "physical_id": 251,
+      "type": 0,
+      "logical": "ҍ",
+      "physical": "ҍ"
+    },
+    {
+      "id": 251,
+      "logical_id": 252,
+      "physical_id": 252,
+      "type": 0,
+      "logical": "ҏ",
+      "physical": "Ҏ"
+    },
+    {
+      "id": 252,
+      "logical_id": 252,
+      "physical_id": 253,
+      "type": 0,
+      "logical": "ҏ",
+      "physical": "ҏ"
+    },
+    {
+      "id": 253,
+      "logical_id": 254,
+      "physical_id": 254,
+      "type": 0,
+      "logical": "ґ",
+      "physical": "Ґ"
+    },
+    {
+      "id": 254,
+      "logical_id": 254,
+      "physical_id": 255,
+      "type": 0,
+      "logical": "ґ",
+      "physical": "ґ"
+    },
+    {
+      "id": 255,
+      "logical_id": 256,
+      "physical_id": 256,
+      "type": 0,
+      "logical": "ғ",
+      "physical": "Ғ"
+    },
+    {
+      "id": 256,
+      "logical_id": 256,
+      "physical_id": 257,
+      "type": 0,
+      "logical": "ғ",
+      "physical": "ғ"
+    },
+    {
+      "id": 257,
+      "logical_id": 258,
+      "physical_id": 258,
+      "type": 0,
+      "logical": "ҕ",
+      "physical": "Ҕ"
+    },
+    {
+      "id": 258,
+      "logical_id": 258,
+      "physical_id": 259,
+      "type": 0,
+      "logical": "ҕ",
+      "physical": "ҕ"
+    },
+    {
+      "id": 259,
+      "logical_id": 260,
+      "physical_id": 260,
+      "type": 0,
+      "logical": "җ",
+      "physical": "Җ"
+    },
+    {
+      "id": 260,
+      "logical_id": 260,
+      "physical_id": 261,
+      "type": 0,
+      "logical": "җ",
+      "physical": "җ"
+    },
+    {
+      "id": 261,
+      "logical_id": 262,
+      "physical_id": 262,
+      "type": 0,
+      "logical": "ҙ",
+      "physical": "Ҙ"
+    },
+    {
+      "id": 262,
+      "logical_id": 262,
+      "physical_id": 263,
+      "type": 0,
+      "logical": "ҙ",
+      "physical": "ҙ"
+    },
+    {
+      "id": 263,
+      "logical_id": 264,
+      "physical_id": 264,
+      "type": 0,
+      "logical": "қ",
+      "physical": "Қ"
+    },
+    {
+      "id": 264,
+      "logical_id": 264,
+      "physical_id": 265,
+      "type": 0,
+      "logical": "қ",
+      "physical": "қ"
+    },
+    {
+      "id": 265,
+      "logical_id": 266,
+      "physical_id": 266,
+      "type": 0,
+      "logical": "ҝ",
+      "physical": "Ҝ"
+    },
+    {
+      "id": 266,
+      "logical_id": 266,
+      "physical_id": 267,
+      "type": 0,
+      "logical": "ҝ",
+      "physical": "ҝ"
+    },
+    {
+      "id": 267,
+      "logical_id": 268,
+      "physical_id": 268,
+      "type": 0,
+      "logical": "ҟ",
+      "physical": "Ҟ"
+    },
+    {
+      "id": 268,
+      "logical_id": 268,
+      "physical_id": 269,
+      "type": 0,
+      "logical": "ҟ",
+      "physical": "ҟ"
+    },
+    {
+      "id": 269,
+      "logical_id": 270,
+      "physical_id": 270,
+      "type": 0,
+      "logical": "ҡ",
+      "physical": "Ҡ"
+    },
+    {
+      "id": 270,
+      "logical_id": 270,
+      "physical_id": 271,
+      "type": 0,
+      "logical": "ҡ",
+      "physical": "ҡ"
+    },
+    {
+      "id": 271,
+      "logical_id": 272,
+      "physical_id": 272,
+      "type": 0,
+      "logical": "ң",
+      "physical": "Ң"
+    },
+    {
+      "id": 272,
+      "logical_id": 272,
+      "physical_id": 273,
+      "type": 0,
+      "logical": "ң",
+      "physical": "ң"
+    },
+    {
+      "id": 273,
+      "logical_id": 274,
+      "physical_id": 274,
+      "type": 0,
+      "logical": "ҥ",
+      "physical": "Ҥ"
+    },
+    {
+      "id": 274,
+      "logical_id": 274,
+      "physical_id": 275,
+      "type": 0,
+      "logical": "ҥ",
+      "physical": "ҥ"
+    },
+    {
+      "id": 275,
+      "logical_id": 276,
+      "physical_id": 276,
+      "type": 0,
+      "logical": "ҧ",
+      "physical": "Ҧ"
+    },
+    {
+      "id": 276,
+      "logical_id": 276,
+      "physical_id": 277,
+      "type": 0,
+      "logical": "ҧ",
+      "physical": "ҧ"
+    },
+    {
+      "id": 277,
+      "logical_id": 278,
+      "physical_id": 278,
+      "type": 0,
+      "logical": "ҩ",
+      "physical": "Ҩ"
+    },
+    {
+      "id": 278,
+      "logical_id": 278,
+      "physical_id": 279,
+      "type": 0,
+      "logical": "ҩ",
+      "physical": "ҩ"
+    },
+    {
+      "id": 279,
+      "logical_id": 280,
+      "physical_id": 280,
+      "type": 0,
+      "logical": "ҫ",
+      "physical": "Ҫ"
+    },
+    {
+      "id": 280,
+      "logical_id": 280,
+      "physical_id": 281,
+      "type": 0,
+      "logical": "ҫ",
+      "physical": "ҫ"
+    },
+    {
+      "id": 281,
+      "logical_id": 282,
+      "physical_id": 282,
+      "type": 0,
+      "logical": "ҭ",
+      "physical": "Ҭ"
+    },
+    {
+      "id": 282,
+      "logical_id": 282,
+      "physical_id": 283,
+      "type": 0,
+      "logical": "ҭ",
+      "physical": "ҭ"
+    },
+    {
+      "id": 283,
+      "logical_id": 284,
+      "physical_id": 284,
+      "type": 0,
+      "logical": "ү",
+      "physical": "Ү"
+    },
+    {
+      "id": 284,
+      "logical_id": 284,
+      "physical_id": 285,
+      "type": 0,
+      "logical": "ү",
+      "physical": "ү"
+    },
+    {
+      "id": 285,
+      "logical_id": 286,
+      "physical_id": 286,
+      "type": 0,
+      "logical": "ұ",
+      "physical": "Ұ"
+    },
+    {
+      "id": 286,
+      "logical_id": 286,
+      "physical_id": 287,
+      "type": 0,
+      "logical": "ұ",
+      "physical": "ұ"
+    },
+    {
+      "id": 287,
+      "logical_id": 288,
+      "physical_id": 288,
+      "type": 0,
+      "logical": "ҳ",
+      "physical": "Ҳ"
+    },
+    {
+      "id": 288,
+      "logical_id": 288,
+      "physical_id": 289,
+      "type": 0,
+      "logical": "ҳ",
+      "physical": "ҳ"
+    },
+    {
+      "id": 289,
+      "logical_id": 290,
+      "physical_id": 290,
+      "type": 0,
+      "logical": "ҵ",
+      "physical": "Ҵ"
+    },
+    {
+      "id": 290,
+      "logical_id": 290,
+      "physical_id": 291,
+      "type": 0,
+      "logical": "ҵ",
+      "physical": "ҵ"
+    },
+    {
+      "id": 291,
+      "logical_id": 292,
+      "physical_id": 292,
+      "type": 0,
+      "logical": "ҷ",
+      "physical": "Ҷ"
+    },
+    {
+      "id": 292,
+      "logical_id": 292,
+      "physical_id": 293,
+      "type": 0,
+      "logical": "ҷ",
+      "physical": "ҷ"
+    },
+    {
+      "id": 293,
+      "logical_id": 294,
+      "physical_id": 294,
+      "type": 0,
+      "logical": "ҹ",
+      "physical": "Ҹ"
+    },
+    {
+      "id": 294,
+      "logical_id": 294,
+      "physical_id": 295,
+      "type": 0,
+      "logical": "ҹ",
+      "physical": "ҹ"
+    },
+    {
+      "id": 295,
+      "logical_id": 296,
+      "physical_id": 296,
+      "type": 0,
+      "logical": "һ",
+      "physical": "Һ"
+    },
+    {
+      "id": 296,
+      "logical_id": 296,
+      "physical_id": 297,
+      "type": 0,
+      "logical": "һ",
+      "physical": "һ"
+    },
+    {
+      "id": 297,
+      "logical_id": 298,
+      "physical_id": 298,
+      "type": 0,
+      "logical": "ҽ",
+      "physical": "Ҽ"
+    },
+    {
+      "id": 298,
+      "logical_id": 298,
+      "physical_id": 299,
+      "type": 0,
+      "logical": "ҽ",
+      "physical": "ҽ"
+    },
+    {
+      "id": 299,
+      "logical_id": 300,
+      "physical_id": 300,
+      "type": 0,
+      "logical": "ҿ",
+      "physical": "Ҿ"
+    },
+    {
+      "id": 300,
+      "logical_id": 300,
+      "physical_id": 301,
+      "type": 0,
+      "logical": "ҿ",
+      "physical": "ҿ"
+    },
+    {
+      "id": 301,
+      "logical_id": 316,
+      "physical_id": 302,
+      "type": 0,
+      "logical": "ӏ",
+      "physical": "Ӏ"
+    },
+    {
+      "id": 302,
+      "logical_id": 303,
+      "physical_id": 303,
+      "type": 0,
+      "logical": "ӂ",
+      "physical": "Ӂ"
+    },
+    {
+      "id": 303,
+      "logical_id": 303,
+      "physical_id": 304,
+      "type": 0,
+      "logical": "ӂ",
+      "physical": "ӂ"
+    },
+    {
+      "id": 304,
+      "logical_id": 305,
+      "physical_id": 305,
+      "type": 0,
+      "logical": "ӄ",
+      "physical": "Ӄ"
+    },
+    {
+      "id": 305,
+      "logical_id": 305,
+      "physical_id": 306,
+      "type": 0,
+      "logical": "ӄ",
+      "physical": "ӄ"
+    },
+    {
+      "id": 306,
+      "logical_id": 307,
+      "physical_id": 307,
+      "type": 0,
+      "logical": "ӆ",
+      "physical": "Ӆ"
+    },
+    {
+      "id": 307,
+      "logical_id": 307,
+      "physical_id": 308,
+      "type": 0,
+      "logical": "ӆ",
+      "physical": "ӆ"
+    },
+    {
+      "id": 308,
+      "logical_id": 309,
+      "physical_id": 309,
+      "type": 0,
+      "logical": "ӈ",
+      "physical": "Ӈ"
+    },
+    {
+      "id": 309,
+      "logical_id": 309,
+      "physical_id": 310,
+      "type": 0,
+      "logical": "ӈ",
+      "physical": "ӈ"
+    },
+    {
+      "id": 310,
+      "logical_id": 311,
+      "physical_id": 311,
+      "type": 0,
+      "logical": "ӊ",
+      "physical": "Ӊ"
+    },
+    {
+      "id": 311,
+      "logical_id": 311,
+      "physical_id": 312,
+      "type": 0,
+      "logical": "ӊ",
+      "physical": "ӊ"
+    },
+    {
+      "id": 312,
+      "logical_id": 313,
+      "physical_id": 313,
+      "type": 0,
+      "logical": "ӌ",
+      "physical": "Ӌ"
+    },
+    {
+      "id": 313,
+      "logical_id": 313,
+      "physical_id": 314,
+      "type": 0,
+      "logical": "ӌ",
+      "physical": "ӌ"
+    },
+    {
+      "id": 314,
+      "logical_id": 315,
+      "physical_id": 315,
+      "type": 0,
+      "logical": "ӎ",
+      "physical": "Ӎ"
+    },
+    {
+      "id": 315,
+      "logical_id": 315,
+      "physical_id": 316,
+      "type": 0,
+      "logical": "ӎ",
+      "physical": "ӎ"
+    },
+    {
+      "id": 316,
+      "logical_id": 316,
+      "physical_id": 317,
+      "type": 0,
+      "logical": "ӏ",
+      "physical": "ӏ"
+    },
+    {
+      "id": 317,
+      "logical_id": 318,
+      "physical_id": 318,
+      "type": 0,
+      "logical": "ӑ",
+      "physical": "Ӑ"
+    },
+    {
+      "id": 318,
+      "logical_id": 318,
+      "physical_id": 319,
+      "type": 0,
+      "logical": "ӑ",
+      "physical": "ӑ"
+    },
+    {
+      "id": 319,
+      "logical_id": 320,
+      "physical_id": 320,
+      "type": 0,
+      "logical": "ӓ",
+      "physical": "Ӓ"
+    },
+    {
+      "id": 320,
+      "logical_id": 320,
+      "physical_id": 321,
+      "type": 0,
+      "logical": "ӓ",
+      "physical": "ӓ"
+    },
+    {
+      "id": 321,
+      "logical_id": 322,
+      "physical_id": 322,
+      "type": 0,
+      "logical": "ӕ",
+      "physical": "Ӕ"
+    },
+    {
+      "id": 322,
+      "logical_id": 322,
+      "physical_id": 323,
+      "type": 0,
+      "logical": "ӕ",
+      "physical": "ӕ"
+    },
+    {
+      "id": 323,
+      "logical_id": 324,
+      "physical_id": 324,
+      "type": 0,
+      "logical": "ӗ",
+      "physical": "Ӗ"
+    },
+    {
+      "id": 324,
+      "logical_id": 324,
+      "physical_id": 325,
+      "type": 0,
+      "logical": "ӗ",
+      "physical": "ӗ"
+    },
+    {
+      "id": 325,
+      "logical_id": 326,
+      "physical_id": 326,
+      "type": 0,
+      "logical": "ә",
+      "physical": "Ә"
+    },
+    {
+      "id": 326,
+      "logical_id": 326,
+      "physical_id": 327,
+      "type": 0,
+      "logical": "ә",
+      "physical": "ә"
+    },
+    {
+      "id": 327,
+      "logical_id": 328,
+      "physical_id": 328,
+      "type": 0,
+      "logical": "ӛ",
+      "physical": "Ӛ"
+    },
+    {
+      "id": 328,
+      "logical_id": 328,
+      "physical_id": 329,
+      "type": 0,
+      "logical": "ӛ",
+      "physical": "ӛ"
+    },
+    {
+      "id": 329,
+      "logical_id": 330,
+      "physical_id": 330,
+      "type": 0,
+      "logical": "ӝ",
+      "physical": "Ӝ"
+    },
+    {
+      "id": 330,
+      "logical_id": 330,
+      "physical_id": 331,
+      "type": 0,
+      "logical": "ӝ",
+      "physical": "ӝ"
+    },
+    {
+      "id": 331,
+      "logical_id": 332,
+      "physical_id": 332,
+      "type": 0,
+      "logical": "ӟ",
+      "physical": "Ӟ"
+    },
+    {
+      "id": 332,
+      "logical_id": 332,
+      "physical_id": 333,
+      "type": 0,
+      "logical": "ӟ",
+      "physical": "ӟ"
+    },
+    {
+      "id": 333,
+      "logical_id": 334,
+      "physical_id": 334,
+      "type": 0,
+      "logical": "ӡ",
+      "physical": "Ӡ"
+    },
+    {
+      "id": 334,
+      "logical_id": 334,
+      "physical_id": 335,
+      "type": 0,
+      "logical": "ӡ",
+      "physical": "ӡ"
+    },
+    {
+      "id": 335,
+      "logical_id": 336,
+      "physical_id": 336,
+      "type": 0,
+      "logical": "ӣ",
+      "physical": "Ӣ"
+    },
+    {
+      "id": 336,
+      "logical_id": 336,
+      "physical_id": 337,
+      "type": 0,
+      "logical": "ӣ",
+      "physical": "ӣ"
+    },
+    {
+      "id": 337,
+      "logical_id": 338,
+      "physical_id": 338,
+      "type": 0,
+      "logical": "ӥ",
+      "physical": "Ӥ"
+    },
+    {
+      "id": 338,
+      "logical_id": 338,
+      "physical_id": 339,
+      "type": 0,
+      "logical": "ӥ",
+      "physical": "ӥ"
+    },
+    {
+      "id": 339,
+      "logical_id": 340,
+      "physical_id": 340,
+      "type": 0,
+      "logical": "ӧ",
+      "physical": "Ӧ"
+    },
+    {
+      "id": 340,
+      "logical_id": 340,
+      "physical_id": 341,
+      "type": 0,
+      "logical": "ӧ",
+      "physical": "ӧ"
+    },
+    {
+      "id": 341,
+      "logical_id": 342,
+      "physical_id": 342,
+      "type": 0,
+      "logical": "ө",
+      "physical": "Ө"
+    },
+    {
+      "id": 342,
+      "logical_id": 342,
+      "physical_id": 343,
+      "type": 0,
+      "logical": "ө",
+      "physical": "ө"
+    },
+    {
+      "id": 343,
+      "logical_id": 344,
+      "physical_id": 344,
+      "type": 0,
+      "logical": "ӫ",
+      "physical": "Ӫ"
+    },
+    {
+      "id": 344,
+      "logical_id": 344,
+      "physical_id": 345,
+      "type": 0,
+      "logical": "ӫ",
+      "physical": "ӫ"
+    },
+    {
+      "id": 345,
+      "logical_id": 346,
+      "physical_id": 346,
+      "type": 0,
+      "logical": "ӭ",
+      "physical": "Ӭ"
+    },
+    {
+      "id": 346,
+      "logical_id": 346,
+      "physical_id": 347,
+      "type": 0,
+      "logical": "ӭ",
+      "physical": "ӭ"
+    },
+    {
+      "id": 347,
+      "logical_id": 348,
+      "physical_id": 348,
+      "type": 0,
+      "logical": "ӯ",
+      "physical": "Ӯ"
+    },
+    {
+      "id": 348,
+      "logical_id": 348,
+      "physical_id": 349,
+      "type": 0,
+      "logical": "ӯ",
+      "physical": "ӯ"
+    },
+    {
+      "id": 349,
+      "logical_id": 350,
+      "physical_id": 350,
+      "type": 0,
+      "logical": "ӱ",
+      "physical": "Ӱ"
+    },
+    {
+      "id": 350,
+      "logical_id": 350,
+      "physical_id": 351,
+      "type": 0,
+      "logical": "ӱ",
+      "physical": "ӱ"
+    },
+    {
+      "id": 351,
+      "logical_id": 352,
+      "physical_id": 352,
+      "type": 0,
+      "logical": "ӳ",
+      "physical": "Ӳ"
+    },
+    {
+      "id": 352,
+      "logical_id": 352,
+      "physical_id": 353,
+      "type": 0,
+      "logical": "ӳ",
+      "physical": "ӳ"
+    },
+    {
+      "id": 353,
+      "logical_id": 354,
+      "physical_id": 354,
+      "type": 0,
+      "logical": "ӵ",
+      "physical": "Ӵ"
+    },
+    {
+      "id": 354,
+      "logical_id": 354,
+      "physical_id": 355,
+      "type": 0,
+      "logical": "ӵ",
+      "physical": "ӵ"
+    },
+    {
+      "id": 355,
+      "logical_id": 356,
+      "physical_id": 356,
+      "type": 0,
+      "logical": "ӷ",
+      "physical": "Ӷ"
+    },
+    {
+      "id": 356,
+      "logical_id": 356,
+      "physical_id": 357,
+      "type": 0,
+      "logical": "ӷ",
+      "physical": "ӷ"
+    },
+    {
+      "id": 357,
+      "logical_id": 358,
+      "physical_id": 358,
+      "type": 0,
+      "logical": "ӹ",
+      "physical": "Ӹ"
+    },
+    {
+      "id": 358,
+      "logical_id": 358,
+      "physical_id": 359,
+      "type": 0,
+      "logical": "ӹ",
+      "physical": "ӹ"
+    },
+    {
+      "id": 359,
+      "logical_id": 360,
+      "physical_id": 360,
+      "type": 0,
+      "logical": "ӻ",
+      "physical": "Ӻ"
+    },
+    {
+      "id": 360,
+      "logical_id": 360,
+      "physical_id": 361,
+      "type": 0,
+      "logical": "ӻ",
+      "physical": "ӻ"
+    },
+    {
+      "id": 361,
+      "logical_id": 362,
+      "physical_id": 362,
+      "type": 0,
+      "logical": "ӽ",
+      "physical": "Ӽ"
+    },
+    {
+      "id": 362,
+      "logical_id": 362,
+      "physical_id": 363,
+      "type": 0,
+      "logical": "ӽ",
+      "physical": "ӽ"
+    },
+    {
+      "id": 363,
+      "logical_id": 364,
+      "physical_id": 364,
+      "type": 0,
+      "logical": "ӿ",
+      "physical": "Ӿ"
+    },
+    {
+      "id": 364,
+      "logical_id": 364,
+      "physical_id": 365,
+      "type": 0,
+      "logical": "ӿ",
+      "physical": "ӿ"
+    },
+    {
+      "id": 365,
+      "logical_id": 366,
+      "physical_id": 366,
+      "type": 0,
+      "logical": "ԓ",
+      "physical": "Ԓ"
+    },
+    {
+      "id": 366,
+      "logical_id": 366,
+      "physical_id": 367,
+      "type": 0,
+      "logical": "ԓ",
+      "physical": "ԓ"
+    },
+    {
+      "id": 367,
+      "logical_id": 367,
+      "physical_id": 368,
+      "type": 0,
+      "logical": "ԥ",
+      "physical": "ԥ"
+    },
+    {
+      "id": 368,
+      "logical_id": 368,
+      "physical_id": 369,
+      "type": 0,
+      "logical": "‘",
+      "physical": "‘"
+    },
+    {
+      "id": 369,
+      "logical_id": 369,
+      "physical_id": 370,
+      "type": 0,
+      "logical": "’",
+      "physical": "’"
+    },
+    {
+      "id": 370,
+      "logical_id": 370,
+      "physical_id": 371,
+      "type": 0,
+      "logical": "“",
+      "physical": "“"
+    },
+    {
+      "id": 371,
+      "logical_id": 371,
+      "physical_id": 372,
+      "type": 0,
+      "logical": "”",
+      "physical": "”"
+    },
+    {
+      "id": 372,
+      "logical_id": 372,
+      "physical_id": 373,
+      "type": 0,
+      "logical": "„",
+      "physical": "„"
+    },
+    {
+      "id": 373,
+      "logical_id": 373,
+      "physical_id": 374,
+      "type": 7,
+      "logical": "•",
+      "physical": "•"
+    },
+    {
+      "id": 374,
+      "logical_id": 374,
+      "physical_id": 375,
+      "type": 7,
+      "logical": "…",
+      "physical": "…"
+    },
+    {
+      "id": 375,
+      "logical_id": 375,
+      "physical_id": 376,
+      "type": 0,
+      "logical": "₽",
+      "physical": "₽"
+    },
+    {
+      "id": 376,
+      "logical_id": 376,
+      "physical_id": 377,
+      "type": 0,
+      "logical": "℃",
+      "physical": "℃"
+    },
+    {
+      "id": 377,
+      "logical_id": 377,
+      "physical_id": 378,
+      "type": 0,
+      "logical": "№",
+      "physical": "№"
+    },
+    {
+      "id": 378,
+      "logical_id": 378,
+      "physical_id": 379,
+      "type": 0,
+      "logical": "™",
+      "physical": "™"
+    },
+    {
+      "id": 379,
+      "logical_id": 379,
+      "physical_id": 380,
+      "type": 0,
+      "logical": "≡",
+      "physical": "≡"
+    },
+    {
+      "id": 380,
+      "logical_id": 380,
+      "physical_id": 381,
+      "type": 0,
+      "logical": "⑆",
+      "physical": "⑆"
+    },
+    {
+      "id": 381,
+      "logical_id": 381,
+      "physical_id": 382,
+      "type": 0,
+      "logical": "⑇",
+      "physical": "⑇"
+    },
+    {
+      "id": 382,
+      "logical_id": 382,
+      "physical_id": 383,
+      "type": 0,
+      "logical": "⑈",
+      "physical": "⑈"
+    },
+    {
+      "id": 383,
+      "logical_id": 383,
+      "physical_id": 384,
+      "type": 0,
+      "logical": "⑉",
+      "physical": "⑉"
+    },
+    {
+      "id": 384,
+      "logical_id": 384,
+      "physical_id": 385,
+      "type": 0,
+      "logical": "󰀀",
+      "physical": "Ё̄"
+    },
+    {
+      "id": 385,
+      "logical_id": 385,
+      "physical_id": 386,
+      "type": 0,
+      "logical": "󰀁",
+      "physical": "Є̈"
+    },
+    {
+      "id": 386,
+      "logical_id": 386,
+      "physical_id": 387,
+      "type": 0,
+      "logical": "󰀂",
+      "physical": "А̄"
+    },
+    {
+      "id": 387,
+      "logical_id": 387,
+      "physical_id": 388,
+      "type": 0,
+      "logical": "󰀃",
+      "physical": "Е̄"
+    },
+    {
+      "id": 388,
+      "logical_id": 388,
+      "physical_id": 389,
+      "type": 0,
+      "logical": "󰀄",
+      "physical": "З́"
+    },
+    {
+      "id": 389,
+      "logical_id": 389,
+      "physical_id": 390,
+      "type": 0,
+      "logical": "󰀅",
+      "physical": "О̄"
+    },
+    {
+      "id": 390,
+      "logical_id": 390,
+      "physical_id": 391,
+      "type": 0,
+      "logical": "󰀆",
+      "physical": "Ы̄"
+    },
+    {
+      "id": 391,
+      "logical_id": 391,
+      "physical_id": 392,
+      "type": 0,
+      "logical": "󰀇",
+      "physical": "Э̄"
+    },
+    {
+      "id": 392,
+      "logical_id": 392,
+      "physical_id": 393,
+      "type": 0,
+      "logical": "󰀈",
+      "physical": "Ю̄"
+    },
+    {
+      "id": 393,
+      "logical_id": 393,
+      "physical_id": 394,
+      "type": 0,
+      "logical": "󰀉",
+      "physical": "Ю̆"
+    },
+    {
+      "id": 394,
+      "logical_id": 394,
+      "physical_id": 395,
+      "type": 0,
+      "logical": "󰀊",
+      "physical": "Я̄"
+    },
+    {
+      "id": 395,
+      "logical_id": 395,
+      "physical_id": 396,
+      "type": 0,
+      "logical": "󰀋",
+      "physical": "Я̆"
+    },
+    {
+      "id": 396,
+      "logical_id": 396,
+      "physical_id": 397,
+      "type": 0,
+      "logical": "󰀌",
+      "physical": "а̄"
+    },
+    {
+      "id": 397,
+      "logical_id": 397,
+      "physical_id": 398,
+      "type": 0,
+      "logical": "󰀍",
+      "physical": "е̄"
+    },
+    {
+      "id": 398,
+      "logical_id": 398,
+      "physical_id": 399,
+      "type": 0,
+      "logical": "󰀎",
+      "physical": "з́"
+    },
+    {
+      "id": 399,
+      "logical_id": 399,
+      "physical_id": 400,
+      "type": 0,
+      "logical": "󰀏",
+      "physical": "о̄"
+    },
+    {
+      "id": 400,
+      "logical_id": 400,
+      "physical_id": 401,
+      "type": 0,
+      "logical": "󰀐",
+      "physical": "ы̄"
+    },
+    {
+      "id": 401,
+      "logical_id": 401,
+      "physical_id": 402,
+      "type": 0,
+      "logical": "󰀑",
+      "physical": "э̄"
+    },
+    {
+      "id": 402,
+      "logical_id": 402,
+      "physical_id": 403,
+      "type": 0,
+      "logical": "󰀒",
+      "physical": "ю̄"
+    },
+    {
+      "id": 403,
+      "logical_id": 403,
+      "physical_id": 404,
+      "type": 0,
+      "logical": "󰀓",
+      "physical": "ю̆"
+    },
+    {
+      "id": 404,
+      "logical_id": 404,
+      "physical_id": 405,
+      "type": 0,
+      "logical": "󰀔",
+      "physical": "я̄"
+    },
+    {
+      "id": 405,
+      "logical_id": 405,
+      "physical_id": 406,
+      "type": 0,
+      "logical": "󰀕",
+      "physical": "я̆"
+    },
+    {
+      "id": 406,
+      "logical_id": 406,
+      "physical_id": 407,
+      "type": 0,
+      "logical": "󰀖",
+      "physical": "ё̄"
+    },
+    {
+      "id": 407,
+      "logical_id": 407,
+      "physical_id": 408,
+      "type": 0,
+      "logical": "󰀗",
+      "physical": "є̈"
+    },
+    {
+      "id": 408,
+      "logical_id": 408,
+      "physical_id": 409,
+      "type": 0,
+      "logical": "󰀘",
+      "physical": "Ө̄"
+    },
+    {
+      "id": 409,
+      "logical_id": 409,
+      "physical_id": 410,
+      "type": 0,
+      "logical": "󰀙",
+      "physical": "ө̄"
+    },
+    {
+      "id": 410,
+      "logical_id": 410,
+      "physical_id": 411,
+      "type": 0,
+      "logical": "󰀚",
+      "physical": "Ӫ̄"
+    },
+    {
+      "id": 411,
+      "logical_id": 411,
+      "physical_id": 412,
+      "type": 0,
+      "logical": "󰀛",
+      "physical": "ӫ̄"
+    },
+    {
+      "id": 412,
+      "logical_id": 412,
+      "physical_id": 413,
+      "type": 0,
+      "logical": "󰀜",
+      "physical": "Ӭ̄"
+    },
+    {
+      "id": 413,
+      "logical_id": 413,
+      "physical_id": 414,
+      "type": 0,
+      "logical": "󰀝",
+      "physical": "ӭ̄"
+    },
+    {
+      "id": 414,
+      "logical_id": 414,
+      "physical_id": 0,
+      "type": 4,
+      "logical": "<blank>",
+      "physical": "<blank>"
+    }
+  ]
+}

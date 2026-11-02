@@ -1,0 +1,60 @@
+{
+  "passed": false,
+  "expected_lines": 2,
+  "actual_lines": 2,
+  "same_position_text_matches": 2,
+  "failure_count": 9,
+  "failures": [
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.9846401810646057,
+      "actual": 0.990523636341095
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.9871540665626526,
+      "actual": 0.9939399361610413
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.9928857088088989,
+      "actual": 0.9964408278465271
+    },
+    {
+      "field": "lines[0].words[3].confidence",
+      "expected": 0.9722626805305481,
+      "actual": 0.9958502650260925
+    },
+    {
+      "field": "lines[1].words[0].confidence",
+      "expected": 0.9939708709716797,
+      "actual": 0.9966088533401489
+    },
+    {
+      "field": "lines[1].words[1].confidence",
+      "expected": 0.9870252013206482,
+      "actual": 0.9938192367553711
+    },
+    {
+      "field": "lines[1].words[2].confidence",
+      "expected": 0.9898923635482788,
+      "actual": 0.9952986836433411
+    },
+    {
+      "field": "lines[1].words[3].confidence",
+      "expected": 0.9704371690750122,
+      "actual": 0.992009699344635
+    },
+    {
+      "field": "lines[1].words[4].confidence",
+      "expected": 0.9847233891487122,
+      "actual": 0.9812802076339722
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "latin-rotate-270"
+}

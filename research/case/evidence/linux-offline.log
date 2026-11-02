@@ -1,0 +1,74 @@
+[0/1] Re-running CMake...
+-- Configuring done (1.4s)
+-- Generating done (0.3s)
+-- Build files have been written to: /mnt/f/pythonx/myocr/win11-oneocr/build/linux-x64
+[1/10] Building CXX object native/CMakeFiles/oneocr_math_test.dir/tests/math_test.cpp.o
+[2/10] Building CXX object native/CMakeFiles/ocr.dir/src/cli.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/cli.cpp: In function ‘std::filesystem::__cxx11::path executable_path(const std::string&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/cli.cpp:28:35: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   28 |     return fs::absolute(fs::u8path(fallback));
+      |                         ~~~~~~~~~~^~~~~~~~~~
+In file included from /usr/include/c++/15/filesystem:54,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/cli.cpp:4:
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/cli.cpp: In function ‘int command(const std::vector<std::__cxx11::basic_string<char> >&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/cli.cpp:80:43: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   80 |                 std::ofstream f(fs::u8path(destination),std::ios::binary);
+      |                                 ~~~~~~~~~~^~~~~~~~~~~~~
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+[3/10] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/image.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp: In function ‘oneocr_native::Image oneocr_native::load_image(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp:18:44: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = const char*; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   18 |     std::ifstream f(std::filesystem::u8path(path),std::ios::binary|std::ios::ate);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/c++/15/filesystem:54,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp:4:
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+[4/10] Building CXX object native/CMakeFiles/oneocr_math_test.dir/src/image.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp: In function ‘oneocr_native::Image oneocr_native::load_image(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp:18:44: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = const char*; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   18 |     std::ifstream f(std::filesystem::u8path(path),std::ios::binary|std::ios::ate);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/c++/15/filesystem:54,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/image.cpp:4:
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+[5/10] Linking CXX executable native/oneocr_math_test
+[6/10] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/engine.cpp.o
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp: In function ‘std::filesystem::__cxx11::path {anonymous}::asset(const std::filesystem::__cxx11::path&, const std::string&)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:25:26: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   25 |     fs::path p=fs::u8path(relative);
+      |                ~~~~~~~~~~^~~~~~~~~~
+In file included from /usr/include/c++/15/filesystem:54,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/sha256.hpp:6,
+                 from /mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:3:
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp: In constructor ‘oneocr_context::oneocr_context(const char*)’:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:98:67: warning: ‘std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = const char*; _Require = path; _CharT = char]’ is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]
+   98 |     explicit oneocr_context(const char* directory):root(fs::u8path(directory)) {
+      |                                                         ~~~~~~~~~~^~~~~~~~~~~
+/usr/include/c++/15/bits/fs_path.h:843:5: note: declared here
+  843 |     u8path(const _Source& __source)
+      |     ^~~~~~
+[7/10] Linking CXX shared library native/liboneocr_portable.so
+[8/10] Linking CXX executable native/oneocr_api_test
+[9/10] Linking CXX executable native/ocr
+Test project /mnt/f/pythonx/myocr/win11-oneocr/build/linux-x64
+    Start 1: portable_api
+1/2 Test #1: portable_api .....................   Passed    0.04 sec
+    Start 2: portable_math
+2/2 Test #2: portable_math ....................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.07 sec
+{"passed": true, "exit_code": 0, "network_error": "[Errno 101] Network is unreachable", "forbidden_modules": [], "seconds": 3.119277677999996, "stderr": "", "note": "Only source-built native OCR plus Linux ORT are executed; Python is the test harness, not the OCR backend.", "line_count": 123, "parity": "incomplete"}

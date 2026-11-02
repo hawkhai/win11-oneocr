@@ -1,0 +1,421 @@
+{
+  "detector_outputs_exact": true,
+  "tensors": [
+    {
+      "name": "data",
+      "kind": "inputs",
+      "expected_shape": [
+        1,
+        3,
+        256,
+        1152
+      ],
+      "actual_shape": [
+        1,
+        3,
+        256,
+        1152
+      ],
+      "same_shape": true,
+      "max_absolute_error": 3.0517578125e-05,
+      "mean_absolute_error": 6.7229848355054855e-09,
+      "changed_elements": 567,
+      "exact": false
+    },
+    {
+      "name": "im_info",
+      "kind": "inputs",
+      "expected_shape": [
+        1,
+        3
+      ],
+      "actual_shape": [
+        1,
+        3
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "scores_hori_fpn2",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        1,
+        64,
+        288
+      ],
+      "actual_shape": [
+        1,
+        1,
+        64,
+        288
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "bbox_deltas_hori_fpn2",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        64,
+        288
+      ],
+      "actual_shape": [
+        1,
+        8,
+        64,
+        288
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "link_scores_hori_fpn2",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        64,
+        288
+      ],
+      "actual_shape": [
+        1,
+        8,
+        64,
+        288
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "scores_vert_fpn2",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        1,
+        64,
+        288
+      ],
+      "actual_shape": [
+        1,
+        1,
+        64,
+        288
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "bbox_deltas_vert_fpn2",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        64,
+        288
+      ],
+      "actual_shape": [
+        1,
+        8,
+        64,
+        288
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "link_scores_vert_fpn2",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        64,
+        288
+      ],
+      "actual_shape": [
+        1,
+        8,
+        64,
+        288
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "scores_hori_fpn3",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        1,
+        32,
+        144
+      ],
+      "actual_shape": [
+        1,
+        1,
+        32,
+        144
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "bbox_deltas_hori_fpn3",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        32,
+        144
+      ],
+      "actual_shape": [
+        1,
+        8,
+        32,
+        144
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "link_scores_hori_fpn3",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        32,
+        144
+      ],
+      "actual_shape": [
+        1,
+        8,
+        32,
+        144
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "scores_vert_fpn3",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        1,
+        32,
+        144
+      ],
+      "actual_shape": [
+        1,
+        1,
+        32,
+        144
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "bbox_deltas_vert_fpn3",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        32,
+        144
+      ],
+      "actual_shape": [
+        1,
+        8,
+        32,
+        144
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "link_scores_vert_fpn3",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        32,
+        144
+      ],
+      "actual_shape": [
+        1,
+        8,
+        32,
+        144
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "scores_hori_fpn4",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        1,
+        16,
+        72
+      ],
+      "actual_shape": [
+        1,
+        1,
+        16,
+        72
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "bbox_deltas_hori_fpn4",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        16,
+        72
+      ],
+      "actual_shape": [
+        1,
+        8,
+        16,
+        72
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "link_scores_hori_fpn4",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        16,
+        72
+      ],
+      "actual_shape": [
+        1,
+        8,
+        16,
+        72
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "scores_vert_fpn4",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        1,
+        16,
+        72
+      ],
+      "actual_shape": [
+        1,
+        1,
+        16,
+        72
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "bbox_deltas_vert_fpn4",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        16,
+        72
+      ],
+      "actual_shape": [
+        1,
+        8,
+        16,
+        72
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    },
+    {
+      "name": "link_scores_vert_fpn4",
+      "kind": "outputs",
+      "expected_shape": [
+        1,
+        8,
+        16,
+        72
+      ],
+      "actual_shape": [
+        1,
+        8,
+        16,
+        72
+      ],
+      "same_shape": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_elements": 0,
+      "exact": true
+    }
+  ]
+}

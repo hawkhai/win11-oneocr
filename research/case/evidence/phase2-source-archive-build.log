@@ -1,0 +1,659 @@
+适用于 .NET Framework MSBuild 版本 17.14.40+3e7442088
+
+  1>Checking Build System
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-phase2-check/CMakeLists.txt
+  icudt74l_dat.c
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-phase2-check/native/CMakeLists.txt
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-phase2-check/native/CMakeLists.txt
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-phase2-check/native/CMakeLists.txt
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-phase2-check/native/CMakeLists.txt
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/vendor/opencv/3rdparty/zlib/CMakeLists.txt
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-phase2-check/native/CMakeLists.txt
+  ordering_test.cpp
+  decode_image.cpp
+  confidence_test.cpp
+  classification_test.cpp
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-phase2-check/native/CMakeLists.txt
+  math_test.cpp
+  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  gzclose.c
+  gzlib.c
+  gzread.c
+  gzwrite.c
+  inflate.c
+  infback.c
+  inftrees.c
+  inffast.c
+  trees.c
+  uncompr.c
+  zutil.c
+  tensor_probe.cpp
+  zlib.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\opencv\3rdparty\lib\Release\zlib.lib
+  Processing OpenCL kernels (core)
+  image.cpp
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/core/CMakeLists.txt
+  cmake_pch.cxx
+  confidence.cpp
+  ordering.cpp
+  image.cpp
+  classification.cpp
+  正在生成代码...
+  正在生成代码...
+  正在生成代码...
+  正在生成代码...
+  algorithm.cpp
+  arithm.cpp
+  arithm.dispatch.cpp
+  array.cpp
+  async.cpp
+  batch_distance.cpp
+  bindings_utils.cpp
+  buffer_area.cpp
+  channels.cpp
+  check.cpp
+  command_line_parser.cpp
+  conjugate_gradient.cpp
+  convert.dispatch.cpp
+  convert_c.cpp
+  convert_scale.dispatch.cpp
+  copy.cpp
+  count_non_zero.dispatch.cpp
+  cuda_gpu_mat.cpp
+  cuda_gpu_mat_nd.cpp
+  cuda_host_mem.cpp
+  cuda_info.cpp
+  cuda_stream.cpp
+  datastructs.cpp
+  directx.cpp
+  downhill_simplex.cpp
+  dxt.cpp
+  gl_core_3_1.cpp
+  glob.cpp
+  hal_internal.cpp
+  has_non_zero.dispatch.cpp
+  kmeans.cpp
+  lapack.cpp
+  lda.cpp
+  logger.cpp
+  正在生成代码...
+  lpsolver.cpp
+  lut.cpp
+  mathfuncs.cpp
+  mathfuncs_core.dispatch.cpp
+  matmul.dispatch.cpp
+  matrix.cpp
+  matrix_c.cpp
+  matrix_decomp.cpp
+  matrix_expressions.cpp
+  matrix_iterator.cpp
+  matrix_operations.cpp
+  matrix_sparse.cpp
+  matrix_transform.cpp
+  matrix_wrap.cpp
+  mean.dispatch.cpp
+  merge.dispatch.cpp
+  minmax.cpp
+  norm.cpp
+  ocl.cpp
+  opencl_clblas.cpp
+  opencl_clfft.cpp
+  opencl_core.cpp
+  opengl.cpp
+  out.cpp
+  ovx.cpp
+  parallel_openmp.cpp
+  parallel_tbb.cpp
+  parallel_impl.cpp
+  pca.cpp
+  persistence.cpp
+  persistence_base64_encoding.cpp
+  persistence_json.cpp
+  oneocr_decode_image.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\Release\oneocr_decode_image.exe
+  persistence_types.cpp
+  persistence_xml.cpp
+  persistence_yml.cpp
+  rand.cpp
+  softfloat.cpp
+  split.dispatch.cpp
+  stat.dispatch.cpp
+  stat_c.cpp
+  stl.cpp
+  sum.dispatch.cpp
+  system.cpp
+  tables.cpp
+  trace.cpp
+  oneocr_classification_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\bin\Release\oneocr_classification_test.exe
+  types.cpp
+  umatrix.cpp
+  datafile.cpp
+  filesystem.cpp
+  logtagconfigparser.cpp
+  logtagmanager.cpp
+  samples.cpp
+  va_intel.cpp
+  opencl_kernels_core.cpp
+  oneocr_math_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\bin\Release\oneocr_math_test.exe
+  oneocr_ordering_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\bin\Release\oneocr_ordering_test.exe
+  oneocr_confidence_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\bin\Release\oneocr_confidence_test.exe
+  alloc.cpp
+  parallel.cpp
+  oneocr_tensor_probe.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\Release\oneocr_tensor_probe.exe
+  parallel.cpp
+  opencv_core.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\opencv\lib\Release\opencv_core4100.lib
+  Processing OpenCL kernels (imgproc)
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/vendor/opencv/modules/imgproc/CMakeLists.txt
+  cmake_pch.cxx
+  accum.cpp
+  accum.dispatch.cpp
+  approx.cpp
+  bilateral_filter.dispatch.cpp
+  blend.cpp
+  box_filter.dispatch.cpp
+  canny.cpp
+  clahe.cpp
+  color.cpp
+  color_hsv.dispatch.cpp
+  color_lab.cpp
+  color_rgb.dispatch.cpp
+  color_yuv.dispatch.cpp
+  colormap.cpp
+  connectedcomponents.cpp
+  contours.cpp
+  contours_approx.cpp
+  contours_common.cpp
+  contours_link.cpp
+  contours_new.cpp
+  convhull.cpp
+  corner.cpp
+  cornersubpix.cpp
+  demosaicing.cpp
+  deriv.cpp
+  distransform.cpp
+  drawing.cpp
+  emd.cpp
+  emd_new.cpp
+  featureselect.cpp
+  filter.dispatch.cpp
+  floodfill.cpp
+  gabor.cpp
+  generalized_hough.cpp
+  geometry.cpp
+  grabcut.cpp
+  hershey_fonts.cpp
+  histogram.cpp
+  hough.cpp
+  imgwarp.cpp
+  intelligent_scissors.cpp
+  intersection.cpp
+  linefit.cpp
+  lsd.cpp
+  main.cpp
+  matchcontours.cpp
+  median_blur.dispatch.cpp
+  min_enclosing_triangle.cpp
+  moments.cpp
+  morph.dispatch.cpp
+  phasecorr.cpp
+  pyramids.cpp
+  resize.cpp
+  rotcalipers.cpp
+  samplers.cpp
+  segmentation.cpp
+  shapedescr.cpp
+  smooth.dispatch.cpp
+  spatialgradient.cpp
+  stackblur.cpp
+  subdivision2d.cpp
+  sumpixels.dispatch.cpp
+  tables.cpp
+  templmatch.cpp
+  thresh.cpp
+  utils.cpp
+  opencl_kernels_imgproc.cpp
+  oneocr_icu_data.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\Release\oneocr_icu_data.lib
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-phase2-check/CMakeLists.txt
+  appendable.cpp
+  bmpset.cpp
+  opencv_imgproc.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\opencv\lib\Release\opencv_imgproc4100.lib
+  brkeng.cpp
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-phase2-check/native/CMakeLists.txt
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-phase2-check/native/CMakeLists.txt
+  detector_test.cpp
+  alignment_test.cpp
+  brkiter.cpp
+  bytesinkutil.cpp
+  detector.cpp
+  alignment.cpp
+  bytestream.cpp
+  normalizer.cpp
+  bytestrie.cpp
+  fragment.cpp
+  bytestriebuilder.cpp
+  bytestrieiterator.cpp
+  image.cpp
+  caniter.cpp
+  characterproperties.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244: “参数”: 从“_Ty”转换到“_Tp”，可能丢失数据 [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244:         with [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244:         [ [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244:             _Ty=int [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244:         ] [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244:         and [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244:         [ [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244:             _Tp=float [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244:         ] [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+  (编译源文件“../../../work/oneocr-portable/source-phase2-check/native/src/normalizer.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85):
+      模板实例化上下文(最早的实例化上下文)为
+          F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\source-phase2-check\native\src\normalizer.cpp(148,34):
+          查看对正在编译的函数 模板 实例化“cv::Point_<float> &std::vector<cv::Point2f,std::allocator<cv::Point2f>>::emplace_back<float&,int>(float &,int &&)”的引用
+              F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\source-phase2-check\native\src\normalizer.cpp(148,46):
+              请参阅 "oneocr_native::normalize_polygon" 中对 "std::vector<cv::Point2f,std::allocator<cv::Point2f>>::emplace_back" 的第一个引用
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(924,24):
+          查看对正在编译的函数 模板 实例化“_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_one_at_back<float&,int>(float &,int &&)”的引用
+          with
+          [
+              _Ty=cv::Point2f
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(845,20):
+          查看对正在编译的函数 模板 实例化“_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<float&,int>(float &,int &&)”的引用
+          with
+          [
+              _Ty=cv::Point2f
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(863,27):
+          查看对正在编译的函数 模板 实例化“void std::_Default_allocator_traits<_Alloc>::construct<_Ty,float&,int>(_Alloc &,_Objty *const ,float &,int &&)”的引用
+          with
+          [
+              _Alloc=std::allocator<cv::Point2f>,
+              _Ty=cv::Point_<float>,
+              _Objty=cv::Point_<float>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory(730,14):
+          查看对正在编译的函数 模板 实例化“_Ty *std::construct_at<_Objty,float&,int>(_Ty *const ,float &,int &&) noexcept(<expr>)”的引用
+          with
+          [
+              _Ty=cv::Point_<float>,
+              _Objty=cv::Point_<float>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244: “参数”: 从“_Ty”转换到“_Tp”，可能丢失数据 [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244:         with [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244:         [ [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244:             _Ty=int [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244:         ] [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244:         and [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244:         [ [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244:             _Tp=float [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244:         ] [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_alignment_test.vcxproj]
+  (编译源文件“../../../work/oneocr-portable/source-phase2-check/native/src/normalizer.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90):
+      模板实例化上下文(最早的实例化上下文)为
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(863,27):
+          查看对正在编译的函数 模板 实例化“void std::_Default_allocator_traits<_Alloc>::construct<_Ty,float&,int>(_Alloc &,_Objty *const ,float &,int &&)”的引用
+          with
+          [
+              _Alloc=std::allocator<cv::Point2f>,
+              _Ty=cv::Point_<float>,
+              _Objty=cv::Point_<float>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory(730,14):
+          查看对正在编译的函数 模板 实例化“_Ty *std::construct_at<_Objty,float&,int>(_Ty *const ,float &,int &&) noexcept(false)”的引用
+          with
+          [
+              _Ty=cv::Point_<float>,
+              _Objty=cv::Point_<float>
+          ]
+  
+  chariter.cpp
+  正在生成代码...
+  正在生成代码...
+  charstr.cpp
+  cmemory.cpp
+  cstr.cpp
+  cstring.cpp
+  cwchar.cpp
+  dictbe.cpp
+  oneocr_alignment_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\bin\Release\oneocr_alignment_test.exe
+  dictionarydata.cpp
+  oneocr_detector_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\bin\Release\oneocr_detector_test.exe
+  dtintrv.cpp
+  正在生成代码...
+  正在编译...
+  edits.cpp
+  emojiprops.cpp
+  errorcode.cpp
+  filteredbrk.cpp
+  filterednormalizer2.cpp
+  icudataver.cpp
+  icuplug.cpp
+  loadednormalizer2impl.cpp
+  localebuilder.cpp
+  localematcher.cpp
+  localeprioritylist.cpp
+  locavailable.cpp
+  locbased.cpp
+  locdispnames.cpp
+  locdistance.cpp
+  locdspnm.cpp
+  locid.cpp
+  loclikely.cpp
+  loclikelysubtags.cpp
+  locmap.cpp
+  正在生成代码...
+  正在编译...
+  locresdata.cpp
+  locutil.cpp
+  lsr.cpp
+  lstmbe.cpp
+  messagepattern.cpp
+  mlbe.cpp
+  normalizer2.cpp
+  normalizer2impl.cpp
+  normlzr.cpp
+  parsepos.cpp
+  patternprops.cpp
+  pluralmap.cpp
+  propname.cpp
+  propsvec.cpp
+  punycode.cpp
+  putil.cpp
+  rbbi.cpp
+  rbbi_cache.cpp
+  rbbidata.cpp
+  rbbinode.cpp
+  正在生成代码...
+  正在编译...
+  rbbirb.cpp
+  rbbiscan.cpp
+  rbbisetb.cpp
+  rbbistbl.cpp
+  rbbitblb.cpp
+  resbund.cpp
+  resbund_cnv.cpp
+  resource.cpp
+  restrace.cpp
+  ruleiter.cpp
+  schriter.cpp
+  serv.cpp
+  servlk.cpp
+  servlkf.cpp
+  servls.cpp
+  servnotf.cpp
+  servrbf.cpp
+  servslkf.cpp
+  sharedobject.cpp
+  simpleformatter.cpp
+  正在生成代码...
+  正在编译...
+  static_unicode_sets.cpp
+  stringpiece.cpp
+  stringtriebuilder.cpp
+  uarrsort.cpp
+  ubidi.cpp
+  ubidi_props.cpp
+  ubidiln.cpp
+  ubiditransform.cpp
+  ubidiwrt.cpp
+  ubrk.cpp
+  ucase.cpp
+  ucasemap.cpp
+  ucasemap_titlecase_brkiter.cpp
+  ucat.cpp
+  uchar.cpp
+  ucharstrie.cpp
+  ucharstriebuilder.cpp
+  ucharstrieiterator.cpp
+  uchriter.cpp
+  ucln_cmn.cpp
+  正在生成代码...
+  正在编译...
+  ucmndata.cpp
+  ucnv.cpp
+  ucnv2022.cpp
+  ucnv_bld.cpp
+  ucnv_cb.cpp
+  ucnv_cnv.cpp
+  ucnv_ct.cpp
+  ucnv_err.cpp
+  ucnv_ext.cpp
+  ucnv_io.cpp
+  ucnv_lmb.cpp
+  ucnv_set.cpp
+  ucnv_u16.cpp
+  ucnv_u32.cpp
+  ucnv_u7.cpp
+  ucnv_u8.cpp
+  ucnvbocu.cpp
+  ucnvdisp.cpp
+  ucnvhz.cpp
+  ucnvisci.cpp
+  正在生成代码...
+  正在编译...
+  ucnvlat1.cpp
+  ucnvmbcs.cpp
+  ucnvscsu.cpp
+  ucnvsel.cpp
+  ucol_swp.cpp
+  ucptrie.cpp
+  ucurr.cpp
+  udata.cpp
+  udatamem.cpp
+  udataswp.cpp
+  uenum.cpp
+  uhash.cpp
+  uhash_us.cpp
+  uidna.cpp
+  uinit.cpp
+  uinvchar.cpp
+  uiter.cpp
+  ulist.cpp
+  uloc.cpp
+  uloc_keytype.cpp
+  正在生成代码...
+  正在编译...
+  uloc_tag.cpp
+  ulocale.cpp
+  ulocbuilder.cpp
+  umapfile.cpp
+  umath.cpp
+  umutablecptrie.cpp
+  umutex.cpp
+  unames.cpp
+  unifiedcache.cpp
+  unifilt.cpp
+  unifunct.cpp
+  uniset.cpp
+  uniset_closure.cpp
+  uniset_props.cpp
+  unisetspan.cpp
+  unistr.cpp
+  unistr_case.cpp
+  unistr_case_locale.cpp
+  unistr_cnv.cpp
+  unistr_props.cpp
+  正在生成代码...
+  正在编译...
+  unistr_titlecase_brkiter.cpp
+  unorm.cpp
+  unormcmp.cpp
+  uobject.cpp
+  uprops.cpp
+  ures_cnv.cpp
+  uresbund.cpp
+  uresdata.cpp
+  usc_impl.cpp
+  uscript.cpp
+  uscript_props.cpp
+  uset.cpp
+  uset_props.cpp
+  usetiter.cpp
+  ushape.cpp
+  usprep.cpp
+  ustack.cpp
+  ustr_cnv.cpp
+  ustr_titlecase_brkiter.cpp
+  ustr_wcs.cpp
+  正在生成代码...
+  正在编译...
+  ustrcase.cpp
+  ustrcase_locale.cpp
+  ustrenum.cpp
+  ustrfmt.cpp
+  ustring.cpp
+  ustrtrns.cpp
+  utext.cpp
+  utf_impl.cpp
+  util.cpp
+  util_props.cpp
+  utrace.cpp
+  utrie.cpp
+  utrie2.cpp
+  utrie2_builder.cpp
+  utrie_swap.cpp
+  uts46.cpp
+  utypes.cpp
+  uvector.cpp
+  uvectr32.cpp
+  uvectr64.cpp
+  正在生成代码...
+  正在编译...
+  wintz.cpp
+  正在生成代码...
+  oneocr_icu_common.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\Release\oneocr_icu_common.lib
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-phase2-check/native/CMakeLists.txt
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-phase2-check/native/CMakeLists.txt
+  engine.cpp
+  nms_test.cpp
+F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\source-phase2-check\native\src\trace.hpp(19,31): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+  (编译源文件“../../../work/oneocr-portable/source-phase2-check/native/src/engine.cpp”)
+  
+F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\source-phase2-check\native\src\trace.hpp(22,36): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+  (编译源文件“../../../work/oneocr-portable/source-phase2-check/native/src/engine.cpp”)
+  
+  nms.cpp
+F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\source-phase2-check\native\src\engine.cpp(35,20): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\source-phase2-check\native\src\engine.cpp(109,61): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\source-phase2-check\native\src\engine.cpp(466,60): warning C4456: “item”的声明隐藏了上一个本地声明 [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+      F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\source-phase2-check\native\src\engine.cpp(339,19):
+      参见“item”的声明
+  
+  image.cpp
+  image.cpp
+  unicode.cpp
+F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\source-phase2-check\native\src\image.cpp(18,38): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+F:\pythonx\myocr\win11-oneocr\work\vendor\icu\icu4c\source\common\unicode\stringoptions.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_nms_test.vcxproj]
+  (编译源文件“../../../work/oneocr-portable/source-phase2-check/native/src/unicode.cpp”)
+  
+F:\pythonx\myocr\win11-oneocr\work\vendor\icu\icu4c\source\common\unicode\uchar.h(3162,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_nms_test.vcxproj]
+  (编译源文件“../../../work/oneocr-portable/source-phase2-check/native/src/unicode.cpp”)
+  
+F:\pythonx\myocr\win11-oneocr\work\vendor\icu\icu4c\source\common\unicode\uloc.h(703,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_nms_test.vcxproj]
+  (编译源文件“../../../work/oneocr-portable/source-phase2-check/native/src/unicode.cpp”)
+  
+  正在生成代码...
+  detector.cpp
+  fragment.cpp
+  ordering.cpp
+  oneocr_nms_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\bin\Release\oneocr_nms_test.exe
+  normalizer.cpp
+F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\source-phase2-check\native\src\trace.hpp(19,31): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+  (编译源文件“../../../work/oneocr-portable/source-phase2-check/native/src/normalizer.cpp”)
+  
+F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\source-phase2-check\native\src\trace.hpp(22,36): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+  (编译源文件“../../../work/oneocr-portable/source-phase2-check/native/src/normalizer.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244: “参数”: 从“_Ty”转换到“_Tp”，可能丢失数据 [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244:         with [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244:         [ [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244:             _Ty=int [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244:         ] [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244:         and [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244:         [ [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244:             _Tp=float [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85): warning C4244:         ] [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+  (编译源文件“../../../work/oneocr-portable/source-phase2-check/native/src/normalizer.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(462,85):
+      模板实例化上下文(最早的实例化上下文)为
+          F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\source-phase2-check\native\src\normalizer.cpp(148,34):
+          查看对正在编译的函数 模板 实例化“cv::Point_<float> &std::vector<cv::Point2f,std::allocator<cv::Point2f>>::emplace_back<float&,int>(float &,int &&)”的引用
+              F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\source-phase2-check\native\src\normalizer.cpp(148,46):
+              请参阅 "oneocr_native::normalize_polygon" 中对 "std::vector<cv::Point2f,std::allocator<cv::Point2f>>::emplace_back" 的第一个引用
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(924,24):
+          查看对正在编译的函数 模板 实例化“_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_one_at_back<float&,int>(float &,int &&)”的引用
+          with
+          [
+              _Ty=cv::Point2f
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(845,20):
+          查看对正在编译的函数 模板 实例化“_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<float&,int>(float &,int &&)”的引用
+          with
+          [
+              _Ty=cv::Point2f
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(863,27):
+          查看对正在编译的函数 模板 实例化“void std::_Default_allocator_traits<_Alloc>::construct<_Ty,float&,int>(_Alloc &,_Objty *const ,float &,int &&)”的引用
+          with
+          [
+              _Alloc=std::allocator<cv::Point2f>,
+              _Ty=cv::Point_<float>,
+              _Objty=cv::Point_<float>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory(730,14):
+          查看对正在编译的函数 模板 实例化“_Ty *std::construct_at<_Objty,float&,int>(_Ty *const ,float &,int &&) noexcept(<expr>)”的引用
+          with
+          [
+              _Ty=cv::Point_<float>,
+              _Objty=cv::Point_<float>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244: “参数”: 从“_Ty”转换到“_Tp”，可能丢失数据 [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244:         with [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244:         [ [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244:             _Ty=int [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244:         ] [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244:         and [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244:         [ [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244:             _Tp=float [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90): warning C4244:         ] [F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\oneocr_portable.vcxproj]
+  (编译源文件“../../../work/oneocr-portable/source-phase2-check/native/src/normalizer.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(463,90):
+      模板实例化上下文(最早的实例化上下文)为
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(863,27):
+          查看对正在编译的函数 模板 实例化“void std::_Default_allocator_traits<_Alloc>::construct<_Ty,float&,int>(_Alloc &,_Objty *const ,float &,int &&)”的引用
+          with
+          [
+              _Alloc=std::allocator<cv::Point2f>,
+              _Ty=cv::Point_<float>,
+              _Objty=cv::Point_<float>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory(730,14):
+          查看对正在编译的函数 模板 实例化“_Ty *std::construct_at<_Objty,float&,int>(_Ty *const ,float &,int &&) noexcept(false)”的引用
+          with
+          [
+              _Ty=cv::Point_<float>,
+              _Objty=cv::Point_<float>
+          ]
+  
+  alignment.cpp
+  confidence.cpp
+  unicode.cpp
+  nms.cpp
+  classification.cpp
+  正在生成代码...
+    正在创建库 F:/pythonx/myocr/win11-oneocr/build/source-phase2-check/native/Release/oneocr_portable.lib 和对象 F:/pythonx/myocr/win11-oneocr/build/source-phase2-check/native/Release/oneocr_portable.exp
+  oneocr_portable.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\Release\oneocr_portable.dll
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-phase2-check/native/CMakeLists.txt
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-phase2-check/native/CMakeLists.txt
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-phase2-check/native/CMakeLists.txt
+  cli.cpp
+  api_test.cpp
+  windows_compat.cpp
+  oneocr_api_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\Release\oneocr_api_test.exe
+    正在创建库 F:/pythonx/myocr/win11-oneocr/build/source-phase2-check/native/Release/oneocr_wrapper.lib 和对象 F:/pythonx/myocr/win11-oneocr/build/source-phase2-check/native/Release/oneocr_wrapper.exp
+  oneocr_wrapper_compat.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\Release\oneocr_wrapper.dll
+  ocr.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-phase2-check\native\Release\ocr.exe
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/work/oneocr-portable/source-phase2-check/CMakeLists.txt

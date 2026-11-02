@@ -1,0 +1,18 @@
+{
+  "image_sha256": "337533e2e614050c484797420f080a9b251a61a01acb22d42fb997900a921570",
+  "image_dimensions": [
+    256,
+    32
+  ],
+  "original_dll_sha256": "0dbbec98e5e33de0be9b12d5f286011a6ea8f18e40baae092542b38ff00e7c7b",
+  "original_dll_status": 3,
+  "original_wrapper_status": -18,
+  "native_api_status": -18,
+  "native_cli_exit_code": 1,
+  "native_cli_stderr": "ERROR: Image dimensions must be 50..10000 pixels\n",
+  "evidence": [
+    "evidence/extraction-trace-phase2-singleline.log",
+    "decompiled-input-boundary/180029960.c"
+  ],
+  "boundary": "width and height must each be within [50,10000]; no replacement or padding of the original image"
+}

@@ -3,3 +3,8 @@
 # Preformatted OCR excerpts retain spaces from the recognizer output.
 /reports/oneocr-classics-2026-11-02/report.html whitespace=cr-at-eol,-blank-at-eol
 /reports/oneocr-all-samples-2026-11-02/** -text whitespace=cr-at-eol
+/models/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/artifacts/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/research/case/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/ocr.sh text eol=lf
+/licenses/gcc-runtime-copyright.txt -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof

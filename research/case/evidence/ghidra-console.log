@@ -1,0 +1,179 @@
+INFO  Using log config file: jar:file:/F:/pythonx/myocr/win11-oneocr/work/vendor/ghidra/ghidra_11.3.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\evidence\ghidra.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\CF\AppData\Roaming\ghidra\ghidra_11.3.2_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (744 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (SSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (ApplicationTrustManagerFactory)  
+INFO  Starting cache cleanup: C:\Users\CF\AppData\Local\ghidra\fscache2 (FileCacheMaintenanceDaemon)  
+INFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)  
+INFO  Headless startup complete (2020 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 57 extension points (18 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\scripts\ghidra
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Features\Jython\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    F:\pythonx\myocr\win11-oneocr\work\vendor\ghidra\ghidra_11.3.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Creating project: F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\ghidra\OneOCR (HeadlessAnalyzer)  
+INFO  Creating project: F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\ghidra\OneOCR (DefaultProject)  
+INFO  REPORT: Processing input files:  (HeadlessAnalyzer)  
+INFO       project: F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\ghidra\OneOCR (HeadlessAnalyzer)  
+INFO  IMPORTING: file:///F:/pythonx/myocr/win11-oneocr/bin/oneocr.dll (HeadlessAnalyzer)  
+INFO  Using Loader: Portable Executable (PE) (AutoImporter)  
+INFO  Using Language/Compiler: x86:LE:64:default:windows (AutoImporter)  
+INFO  Using Library Search Path: [., C:\WINDOWS\SysWOW64, F:\pythonx\myocr\win11-oneocr\work\vendor\jdk21\jdk-21.0.8+9\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\CF\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\CF\.codex\tmp\arg0-windows\codex-arg0fapt1z, D:\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, D:\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, D:\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\CF\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, H:\VMware\VMware Workstation\bin\, C:\Program Files\ImageMagick-7.1.2-Q16-HDRI, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, D:\Program Files\nodejs\, C:\Program Files\TortoiseGit\bin, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Git\cmd, C:\Users\CF\AppData\Local\easyclawg\ai\tool_cache\resources\tools\win\node-24.13.0, C:\Users\CF\AppData\Local\easyclawg\ai\tool_cache\resources\tools\win\node-24.13.0\node_modules\corepack\shims, C:\Users\CF\AppData\Local\easyclawg\ai\tool_cache\resources\tools\win\ripgrep-15.1.0, C:\Users\CF\AppData\Local\easyclawg\ai\tool_cache\resources\tools\win\python-3.11.9, C:\Program Files\WSL\, C:\Users\CF\.cargo\bin, F:\pythonx\decode\pyenv\Python37\Scripts\, F:\pythonx\decode\pyenv\Python37\, C:\Users\CF\AppData\Local\Microsoft\WindowsApps, C:\Users\CF\AppData\Roaming\npm, C:\Users\CF\AppData\Local\Programs\Microsoft VS Code\bin, C:\Users\CF\AppData\Local\Programs\GLab, C:\Users\CF\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\CF\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\CF\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\CF\AppData\Local\OpenAI\Codex\bin\0354bc6c584f210c, C:\Users\CF\AppData\Local\OpenAI\Codex\bin\0ab0e7a8f3779036] (AutoImporter)  
+INFO  TLS callbacks at 1806c9978 (TLSDirectory)  
+INFO  TLS callbacks at 180b901c8 (TLSDirectory)  
+INFO  Additional info:
+Loading file:///F:/pythonx/myocr/win11-oneocr/bin/oneocr.dll?MD5=e23951010570fb1773738d4e206d1572...
+------------------------------------------------
+
+Searching 37 paths for library ADVAPI32.DLL...
+Skipping library which is the wrong architecture: file:///C:/Windows/SysWOW64/advapi32.dll
+Loading file:///C:/Windows/System32/advapi32.dll?MD5=c472e0c047db3281795f68d7753ab881...
+Created exports file: C:\Users\CF\AppData\Roaming\ghidra\ghidra_11.3.2_PUBLIC\symbols\win64\advapi32.exports
+------------------------------------------------
+
+Searching 37 paths for library BCRYPT.DLL...
+Skipping library which is the wrong architecture: file:///C:/Windows/SysWOW64/bcrypt.dll
+Loading file:///C:/Windows/System32/bcrypt.dll?MD5=bc7808e9d88ff96ea8581d88fb5803bc...
+[bcrypt.dll]: failed to create WEVTResource at 1800254d0: Failed to resolve data length for WEVTResource
+Created exports file: C:\Users\CF\AppData\Roaming\ghidra\ghidra_11.3.2_PUBLIC\symbols\win64\bcrypt.exports
+------------------------------------------------
+
+Searching 37 paths for library DBGHELP.DLL...
+Skipping library which is the wrong architecture: file:///C:/Windows/SysWOW64/dbghelp.dll
+Loading file:///C:/Windows/System32/dbghelp.dll?MD5=419fd01aeca981023fbdb83b63647ea2...
+Created exports file: C:\Users\CF\AppData\Roaming\ghidra\ghidra_11.3.2_PUBLIC\symbols\win64\dbghelp.exports
+------------------------------------------------
+
+Searching 37 paths for library KERNEL32.DLL...
+Skipping library which is the wrong architecture: file:///C:/Windows/SysWOW64/kernel32.dll
+Loading file:///C:/Windows/System32/kernel32.dll?MD5=0a5960b161f98d6e85c108c0247f9da7...
+Created exports file: C:\Users\CF\AppData\Roaming\ghidra\ghidra_11.3.2_PUBLIC\symbols\win64\kernel32.exports
+------------------------------------------------
+
+Searching 37 paths for library ONNXRUNTIME.DLL...
+Loading file:///F:/pythonx/myocr/win11-oneocr/bin/onnxruntime.dll?MD5=48d5a505350a5d91c302dd8015ed7020...
+Created exports file: C:\Users\CF\AppData\Roaming\ghidra\ghidra_11.3.2_PUBLIC\symbols\win64\onnxruntime.exports
+------------------------------------------------
+
+Applying cached symbols from ONNXRUNTIME.DLL
+Applying cached symbols from BCRYPT.DLL
+Applying cached symbols from DBGHELP.DLL
+Applying cached symbols from KERNEL32.DLL
+Applying cached symbols from ADVAPI32.DLL
+Linking the External Programs of 'oneocr.dll' to imported libraries...
+  [ONNXRUNTIME.DLL] -> not found in project
+  [BCRYPT.DLL] -> not found in project
+  [DBGHELP.DLL] -> not found in project
+  [KERNEL32.DLL] -> not found in project
+  [ADVAPI32.DLL] -> not found in project
+------------------------------------------------
+
+ (AutoImporter)  
+INFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: file:///F:/pythonx/myocr/win11-oneocr/bin/oneocr.dll (HeadlessAnalyzer)  
+INFO  Skipping PDB processing: failed to locate PDB file in configured locations (PdbUniversalAnalyzer)  
+INFO  Use a script to set the PDB file location. I.e.,
+    PdbAnalyzer.setPdbFileOption(currentProgram, new File("/path/to/pdb/file.pdb")); or
+    PdbUniversalAnalyzer.setPdbFileOption(currentProgram, new File("/path/to/pdb/file.pdb"));
+Or set the symbol server search configuration using:    PdbPlugin.saveSymbolServerServiceConfig(...);
+ This must be done using a pre-script (prior to analysis). (PdbUniversalAnalyzer)  
+INFO  Packed database cache: C:\Users\CF\AppData\Local\ghidra\packed-db-cache (PackedDatabaseCache)  
+ERROR Invalid PNG data at 1806e4040 (PngDataType)  
+ERROR Invalid PNG data at 180756550 (PngDataType)  
+WARN  Decompiling 180066740, pcode error at 180066788: Unable to resolve constructor at 180066788 (DecompileCallback)  
+WARN  Decompiling 18006e940, pcode error at 18006e9aa: Unable to resolve constructor at 18006e9aa (DecompileCallback)  
+WARN  Decompiling 1800976d0, pcode error at 180097844: Unable to resolve constructor at 180097844 (DecompileCallback)  
+WARN  Decompiling 180090670, pcode error at 180090851: Unable to resolve constructor at 180090851 (DecompileCallback)  
+WARN  Decompiling 18025f2b0, pcode error at 18025f604: Failed to resolve varnode <Sreg>, index=6 (DecompileCallback)  
+WARN  Decompiling 18025f2b0, pcode error at 18025f604: Failed to resolve varnode <Sreg>, index=6 (DecompileCallback)  
+WARN  Decompiling 18025f6b0, pcode error at 18025fa04: Failed to resolve varnode <Sreg>, index=6 (DecompileCallback)  
+WARN  Decompiling 18025f6b0, pcode error at 18025fa04: Failed to resolve varnode <Sreg>, index=6 (DecompileCallback)  
+WARN  Decompiling 180271730, pcode error at 180271a86: Unable to resolve constructor at 180271a86 (DecompileCallback)  
+WARN  Decompiling 180271730, pcode error at 180271a86: Unable to resolve constructor at 180271a86 (DecompileCallback)  
+WARN  Decompiling 1802721b0, pcode error at 18027248e: Unable to resolve constructor at 18027248e (DecompileCallback)  
+WARN  Decompiling 180271ab0, pcode error at 180271e06: Unable to resolve constructor at 180271e06 (DecompileCallback)  
+WARN  Decompiling 1802721b0, pcode error at 18027248e: Unable to resolve constructor at 18027248e (DecompileCallback)  
+WARN  Decompiling 180271ab0, pcode error at 180271e06: Unable to resolve constructor at 180271e06 (DecompileCallback)  
+INFO  Evicting 37 filesystems from cache (FileSystemInstanceManager)  
+INFO  Unprocessed TypeDescriptor: int (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: __int64 (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: unsigned int (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: unsigned __int64 (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: double (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: float (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: bool (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: char (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: void (__cdecl *)(void * __ptr64) (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: unsigned char (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: void * __ptr64 (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: void * __ptr64 (TypeDescriptorModel)  
+INFO  Applied data type archive: windows_vs12_64 (ApplyDataArchiveAnalyzer)  
+INFO  Applied data type archive: windows_vs12_64 (ApplyDataArchiveAnalyzer)  
+INFO  -----------------------------------------------------
+    ASCII Strings                             10.720 secs
+    Apply Data Archives                        0.304 secs
+    Call Convention ID                         0.089 secs
+    Call-Fixup Installer                       0.250 secs
+    Create Address Tables                      1.604 secs
+    Create Address Tables - One Time           3.999 secs
+    Create Function                            3.311 secs
+    Data Reference                             2.900 secs
+    Decompiler Switch Analysis                45.788 secs
+    Demangler Microsoft                        0.200 secs
+    Disassemble                                0.481 secs
+    Disassemble Entry Points                  21.902 secs
+    Embedded Media                             0.204 secs
+    External Entry References                  0.000 secs
+    Function ID                                9.253 secs
+    Function Start Search                      0.155 secs
+    Non-Returning Functions - Discovered       4.182 secs
+    Non-Returning Functions - Known            0.017 secs
+    PDB Universal                              0.012 secs
+    Reference                                  3.425 secs
+    Scalar Operand References                 10.301 secs
+    Shared Return Calls                        2.261 secs
+    Stack                                     99.046 secs
+    Subroutine References                      1.874 secs
+    Subroutine References - One Time           0.015 secs
+    Windows x86 PE Exception Handling          1.680 secs
+    Windows x86 PE RTTI Analyzer              12.558 secs
+    Windows x86 Thread Environment Block (TEB) Analyzer     0.014 secs
+    WindowsResourceReference                   3.565 secs
+    x86 Constant Reference Analyzer           48.555 secs
+-----------------------------------------------------
+     Total Time   288 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: file:///F:/pythonx/myocr/win11-oneocr/bin/oneocr.dll (HeadlessAnalyzer)  
+INFO  SCRIPT: F:\pythonx\myocr\win11-oneocr\scripts\ghidra\ExportPipeline.java (HeadlessAnalyzer)  
+INFO  ExportPipeline.java> Exported 400 reachable functions to F:\pythonx\myocr\win11-oneocr\work\oneocr-portable\decompiled (GhidraScript)  
+INFO  ANALYZING changes made by post scripts: file:///F:/pythonx/myocr/win11-oneocr/bin/oneocr.dll (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: file:///F:/pythonx/myocr/win11-oneocr/bin/oneocr.dll (HeadlessAnalyzer)  
+INFO  REPORT: Save succeeded for: /oneocr.dll (OneOCR:/oneocr.dll) (HeadlessAnalyzer)  
+INFO  REPORT: Import succeeded (HeadlessAnalyzer)  

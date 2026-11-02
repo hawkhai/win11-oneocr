@@ -1,0 +1,16 @@
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/linux-x64/lib/libonnxruntime.so
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/linux-x64/lib/libonnxruntime.so.1
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/linux-x64/lib/libonnxruntime.so.1.23.2
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/linux-x64/bin/ocr
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/linux-x64/lib/liboneocr_portable.so
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/linux-x64/include/oneocr_portable.h
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/linux-x64/include/oneocr_portable.hpp
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/linux-x64/share/oneocr/THIRD_PARTY_NOTICES.md
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/linux-x64/share/oneocr/portable.md
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/linux-x64/share/oneocr/licenses
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/linux-x64/share/oneocr/licenses/nlohmann-json-MIT.txt
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/linux-x64/share/oneocr/licenses/oneocr-native-AGPL-3.0.txt
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/linux-x64/share/oneocr/licenses/onnxruntime-LICENSE.txt
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/linux-x64/share/oneocr/licenses/onnxruntime-ThirdPartyNotices.txt
+Staged local runtime: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/linux-x64
+{"passed": true, "exit_code": 0, "network_error": "[Errno 101] Network is unreachable", "forbidden_modules": [], "seconds": 3.190846099999998, "stderr": "", "note": "Only source-built native OCR plus Linux ORT are executed; Python is the test harness, not the OCR backend.", "line_count": 123, "parity": "incomplete"}

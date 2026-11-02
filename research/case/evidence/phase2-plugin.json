@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "line_count": 105,
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  }
+}

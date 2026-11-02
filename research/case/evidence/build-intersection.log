@@ -1,0 +1,19 @@
+适用于 .NET Framework MSBuild 版本 17.14.40+3e7442088
+
+  oneocr_classification_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_classification_test.exe
+  oneocr_math_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_math_test.exe
+  oneocr_decode_image.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_decode_image.exe
+  oneocr_confidence_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_confidence_test.exe
+  oneocr_ordering_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_ordering_test.exe
+  oneocr_icu_data.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\Release\oneocr_icu_data.lib
+  zlib.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\3rdparty\lib\Release\zlib.lib
+  oneocr_tensor_probe.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_tensor_probe.exe
+  opencv_core.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\lib\Release\opencv_core4100.lib
+  oneocr_icu_common.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\Release\oneocr_icu_common.lib
+  opencv_imgproc.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\lib\Release\opencv_imgproc4100.lib
+  oneocr_detector_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_detector_test.exe
+  oneocr_alignment_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_alignment_test.exe
+  nms.cpp
+  nms.cpp
+LINK : fatal error LNK1104: 无法打开文件“F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_portable.dll” [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+  oneocr_nms_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_nms_test.exe

@@ -1,0 +1,20 @@
+CMake is re-running because F:/pythonx/myocr/win11-oneocr/build/source-runtime/native/CMakeFiles/generate.stamp is out-of-date.
+  the file 'F:/pythonx/myocr/win11-oneocr/native/CMakeLists.txt'
+  is newer than 'F:/pythonx/myocr/win11-oneocr/build/source-runtime/native/CMakeFiles/generate.stamp.depend'
+  result='-1'
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.19045.
+-- Configuring done (0.2s)
+-- Generating done (0.2s)
+-- Build files have been written to: F:/pythonx/myocr/win11-oneocr/build/source-runtime
+适用于 .NET Framework MSBuild 版本 17.14.40+3e7442088
+
+  oneocr_math_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_math_test.exe
+  Building Custom Rule F:/pythonx/myocr/win11-oneocr/native/CMakeLists.txt
+  oneocr_portable.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_portable.dll
+  ordering_test.cpp
+  ocr.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\ocr.exe
+  oneocr_wrapper_compat.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_wrapper.dll
+  oneocr_api_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_api_test.exe
+  ordering.cpp
+  正在生成代码...
+  oneocr_ordering_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_ordering_test.exe

@@ -1,0 +1,315 @@
+{
+  "passed": false,
+  "expected_lines": 1,
+  "actual_lines": 12,
+  "same_position_text_matches": 1,
+  "failure_count": 60,
+  "failures": [
+    {
+      "field": "line_count",
+      "expected": 1,
+      "actual": 12
+    },
+    {
+      "field": "image_angle",
+      "expected": 0.0,
+      "actual": 90.0
+    },
+    {
+      "field": "lines[0].bounding_box[0]",
+      "expected": 80.0,
+      "actual": 119.0
+    },
+    {
+      "field": "lines[0].bounding_box[3]",
+      "expected": 10.0,
+      "actual": 480.0
+    },
+    {
+      "field": "lines[0].bounding_box[4]",
+      "expected": 120.0,
+      "actual": 80.0
+    },
+    {
+      "field": "lines[0].bounding_box[7]",
+      "expected": 480.0,
+      "actual": 10.0
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[0]",
+      "expected": 80.0,
+      "actual": 119.8537368774414
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[1]",
+      "expected": 23.423017501831055,
+      "actual": 26.362651824951172
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[3]",
+      "expected": 22.624927520751953,
+      "actual": 31.5778751373291
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[4]",
+      "expected": 119.86279296875,
+      "actual": 80.53533935546875
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[5]",
+      "expected": 59.010311126708984,
+      "actual": 32.362674713134766
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[7]",
+      "expected": 59.808372497558594,
+      "actual": 27.147451400756836
+    },
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.9968308210372925,
+      "actual": 0.9999203681945801
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[0]",
+      "expected": 80.0,
+      "actual": 119.88423156738281
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[3]",
+      "expected": 82.1646499633789,
+      "actual": 88.94532775878906
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[4]",
+      "expected": 119.88654327392578,
+      "actual": 80.54808807373047
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[5]",
+      "expected": 118.5500259399414,
+      "actual": 89.7301254272461
+    },
+    {
+      "field": "lines[0].words[1].bounding_box[7]",
+      "expected": 119.34809112548828,
+      "actual": 84.51490020751953
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.9966841340065002,
+      "actual": 0.9998544454574585
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[0]",
+      "expected": 80.0,
+      "actual": 119.91749572753906
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[1]",
+      "expected": 141.84088134765625,
+      "actual": 146.31277465820312
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[3]",
+      "expected": 141.04281616210938,
+      "actual": 151.5279998779297
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[4]",
+      "expected": 119.9129638671875,
+      "actual": 80.5619888305664
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[5]",
+      "expected": 177.42819213867188,
+      "actual": 152.31280517578125
+    },
+    {
+      "field": "lines[0].words[2].bounding_box[7]",
+      "expected": 178.22625732421875,
+      "actual": 147.0975799560547
+    },
+    {
+      "field": "lines[0].words[2].confidence",
+      "expected": 0.9931324124336243,
+      "actual": 0.9827961921691895
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[0]",
+      "expected": 80.0,
+      "actual": 119.95076751708984
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[1]",
+      "expected": 201.38058471679688,
+      "actual": 208.8954315185547
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[3]",
+      "expected": 200.58251953125,
+      "actual": 214.11065673828125
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[4]",
+      "expected": 119.94369506835938,
+      "actual": 80.57589721679688
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[5]",
+      "expected": 238.95254516601562,
+      "actual": 214.8954620361328
+    },
+    {
+      "field": "lines[0].words[3].bounding_box[7]",
+      "expected": 239.7506103515625,
+      "actual": 209.68023681640625
+    },
+    {
+      "field": "lines[0].words[3].confidence",
+      "expected": 0.9949216246604919,
+      "actual": 0.9985589385032654
+    },
+    {
+      "field": "lines[0].words[4].bounding_box[0]",
+      "expected": 80.0,
+      "actual": 119.98125457763672
+    },
+    {
+      "field": "lines[0].words[4].bounding_box[1]",
+      "expected": 263.5664978027344,
+      "actual": 266.26287841796875
+    },
+    {
+      "field": "lines[0].words[4].bounding_box[3]",
+      "expected": 262.7684326171875,
+      "actual": 271.4781188964844
+    },
+    {
+      "field": "lines[0].words[4].bounding_box[4]",
+      "expected": 119.97607421875,
+      "actual": 80.58863830566406
+    },
+    {
+      "field": "lines[0].words[4].bounding_box[5]",
+      "expected": 297.8307189941406,
+      "actual": 272.2629089355469
+    },
+    {
+      "field": "lines[0].words[4].bounding_box[7]",
+      "expected": 298.6287841796875,
+      "actual": 267.04766845703125
+    },
+    {
+      "field": "lines[0].words[4].confidence",
+      "expected": 0.9919418692588806,
+      "actual": 0.9997039437294006
+    },
+    {
+      "field": "lines[0].words[5].bounding_box[0]",
+      "expected": 80.0,
+      "actual": 120.01174926757812
+    },
+    {
+      "field": "lines[0].words[5].bounding_box[3]",
+      "expected": 322.3081359863281,
+      "actual": 328.8455505371094
+    },
+    {
+      "field": "lines[0].words[5].bounding_box[4]",
+      "expected": 120.01264190673828,
+      "actual": 80.60138702392578
+    },
+    {
+      "field": "lines[0].words[5].bounding_box[5]",
+      "expected": 358.6935119628906,
+      "actual": 329.6303405761719
+    },
+    {
+      "field": "lines[0].words[5].bounding_box[7]",
+      "expected": 359.4915771484375,
+      "actual": 324.4151306152344
+    },
+    {
+      "field": "lines[0].words[5].confidence",
+      "expected": 0.9917886853218079,
+      "actual": 0.9983150959014893
+    },
+    {
+      "field": "lines[0].words[6].bounding_box[0]",
+      "expected": 80.0,
+      "actual": 120.0450210571289
+    },
+    {
+      "field": "lines[0].words[6].bounding_box[1]",
+      "expected": 382.64593505859375,
+      "actual": 386.2130126953125
+    },
+    {
+      "field": "lines[0].words[6].bounding_box[3]",
+      "expected": 381.8478698730469,
+      "actual": 391.42822265625
+    },
+    {
+      "field": "lines[0].words[6].bounding_box[4]",
+      "expected": 120.0518798828125,
+      "actual": 80.61528778076172
+    },
+    {
+      "field": "lines[0].words[6].bounding_box[5]",
+      "expected": 418.8948059082031,
+      "actual": 392.2130126953125
+    },
+    {
+      "field": "lines[0].words[6].bounding_box[7]",
+      "expected": 419.69287109375,
+      "actual": 386.997802734375
+    },
+    {
+      "field": "lines[0].words[6].confidence",
+      "expected": 0.9948065876960754,
+      "actual": 0.9987043142318726
+    },
+    {
+      "field": "lines[0].words[7].bounding_box[0]",
+      "expected": 80.0,
+      "actual": 120.07828521728516
+    },
+    {
+      "field": "lines[0].words[7].bounding_box[1]",
+      "expected": 442.8471984863281,
+      "actual": 448.7956848144531
+    },
+    {
+      "field": "lines[0].words[7].bounding_box[3]",
+      "expected": 442.04913330078125,
+      "actual": 454.0108947753906
+    },
+    {
+      "field": "lines[0].words[7].bounding_box[4]",
+      "expected": 120.10188293457031,
+      "actual": 80.62919616699219
+    },
+    {
+      "field": "lines[0].words[7].bounding_box[5]",
+      "expected": 481.0,
+      "actual": 454.7956848144531
+    },
+    {
+      "field": "lines[0].words[7].bounding_box[7]",
+      "expected": 481.0,
+      "actual": 449.5804748535156
+    },
+    {
+      "field": "lines[0].words[7].confidence",
+      "expected": 0.9949275851249695,
+      "actual": 0.9997507929801941
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "vertical-cjk"
+}

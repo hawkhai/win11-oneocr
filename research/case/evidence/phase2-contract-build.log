@@ -1,0 +1,160 @@
+CMake is re-running because F:/pythonx/myocr/win11-oneocr/build/source-runtime/native/CMakeFiles/generate.stamp is out-of-date.
+  the file 'F:/pythonx/myocr/win11-oneocr/native/CMakeLists.txt'
+  is newer than 'F:/pythonx/myocr/win11-oneocr/build/source-runtime/native/CMakeFiles/generate.stamp.depend'
+  result='-1'
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.19045.
+CMake Deprecation Warning at work/vendor/opencv/CMakeLists.txt:25 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Detected processor: AMD64
+-- Using whitelist: opencv_core;opencv_imgproc
+-- Module opencv_calib3d disabled by whitelist
+-- Module opencv_dnn disabled by whitelist
+-- Module opencv_features2d disabled by whitelist
+-- Module opencv_flann disabled by whitelist
+-- Module opencv_highgui disabled by whitelist
+-- Module opencv_imgcodecs disabled by whitelist
+-- Module opencv_java_bindings_generator disabled by whitelist
+-- Module opencv_js_bindings_generator disabled by whitelist
+-- Module opencv_ml disabled by whitelist
+-- Module opencv_objc_bindings_generator disabled by whitelist
+-- Module opencv_objdetect disabled by whitelist
+-- Module opencv_photo disabled by whitelist
+-- Module opencv_python_bindings_generator disabled by whitelist
+-- Module opencv_python_tests disabled by whitelist
+-- Module opencv_stitching disabled by whitelist
+-- Module opencv_video disabled by whitelist
+-- Allocator metrics storage type: 'long long'
+-- Excluding from source files list: modules/imgproc/src/corner.avx.cpp
+-- Excluding from source files list: modules/imgproc/src/imgwarp.avx2.cpp
+-- Excluding from source files list: modules/imgproc/src/imgwarp.lasx.cpp
+-- Excluding from source files list: modules/imgproc/src/imgwarp.sse4_1.cpp
+-- Excluding from source files list: modules/imgproc/src/resize.avx2.cpp
+-- Excluding from source files list: modules/imgproc/src/resize.lasx.cpp
+-- Excluding from source files list: modules/imgproc/src/resize.sse4_1.cpp
+CMake Warning (dev) at work/vendor/opencv/CMakeLists.txt:1155 (install):
+  Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+  "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- 
+-- General configuration for OpenCV 4.10.0 =====================================
+--   Version control:               4.10.0
+-- 
+--   Platform:
+--     Timestamp:                   2026-11-02T05:54:42Z
+--     Host:                        Windows 10.0.19045 AMD64
+--     CMake:                       3.31.6-msvc6
+--     CMake generator:             Visual Studio 17 2022
+--     CMake build tool:            C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe
+--     MSVC:                        1944
+--     Configuration:               Debug Release MinSizeRel RelWithDebInfo
+-- 
+--   CPU/HW features:
+--     Baseline:                    SSE SSE2 SSE3
+--       requested:                 SSE3
+-- 
+--   C/C++:
+--     Built as dynamic libs?:      NO
+--     C++ standard:                20
+--     C++ Compiler:                C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe  (ver 19.44.35227.0)
+--     C++ flags (Release):         /DWIN32 /D_WINDOWS /GR  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:precise     /EHa /wd4127 /wd4251 /wd4324 /wd4275 /wd4512 /wd4589 /wd4819 /MP  /O2 /Ob2 /DNDEBUG 
+--     C++ flags (Debug):           /DWIN32 /D_WINDOWS /GR  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:precise     /EHa /wd4127 /wd4251 /wd4324 /wd4275 /wd4512 /wd4589 /wd4819 /MP  /Zi /Ob0 /Od /RTC1 
+--     C Compiler:                  C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+--     C flags (Release):           /DWIN32 /D_WINDOWS  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:precise     /MP   /O2 /Ob2 /DNDEBUG 
+--     C flags (Debug):             /DWIN32 /D_WINDOWS  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:precise     /MP /Zi /Ob0 /Od /RTC1 
+--     Linker flags (Release):      /machine:x64  /INCREMENTAL:NO 
+--     Linker flags (Debug):        /machine:x64  /debug /INCREMENTAL 
+--     ccache:                      NO
+--     Precompiled headers:         YES
+--     Extra dependencies:
+--     3rdparty dependencies:       zlib
+-- 
+--   OpenCV modules:
+--     To be built:                 core imgproc
+--     Disabled:                    gapi videoio world
+--     Disabled by dependency:      calib3d dnn features2d flann highgui imgcodecs java_bindings_generator js_bindings_generator ml objc_bindings_generator objdetect photo python_bindings_generator python_tests stitching video
+--     Unavailable:                 java python2 python3 ts
+--     Applications:                -
+--     Documentation:               NO
+--     Non-free algorithms:         NO
+-- 
+--   Windows RT support:            NO
+-- 
+--   GUI: 
+--     Win32 UI:                    YES
+-- 
+--   Media I/O: 
+--     ZLib:                        build (ver 1.3.1)
+--     HDR:                         YES
+--     SUNRASTER:                   YES
+--     PXM:                         YES
+--     PFM:                         YES
+-- 
+--   Video I/O:
+--     DC1394:                      NO
+--     DirectShow:                  YES
+--     Media Foundation:            YES
+--       DXVA:                      YES
+-- 
+--   Parallel framework:            Concurrency
+-- 
+--   Trace:                         YES (built-in)
+-- 
+--   Other third-party libraries:
+--     Custom HAL:                  NO
+--     Flatbuffers:                 builtin/3rdparty (23.5.9)
+-- 
+--   Python (for build):            C:/Users/CF/AppData/Local/easyclawg/ai/tool_cache/resources/tools/win/python-3.11.9/python3.exe
+-- 
+--   Install to:                    C:/Program Files/win11-oneocr
+-- -----------------------------------------------------------------
+-- 
+-- Configuring done (9.1s)
+-- Generating done (7.0s)
+-- Build files have been written to: F:/pythonx/myocr/win11-oneocr/build/source-runtime
+适用于 .NET Framework MSBuild 版本 17.14.40+3e7442088
+
+  oneocr_icu_data.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\Release\oneocr_icu_data.lib
+  oneocr_decode_image.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_decode_image.exe
+  oneocr_classification_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_classification_test.exe
+  oneocr_ordering_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_ordering_test.exe
+  zlib.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\3rdparty\lib\Release\zlib.lib
+  oneocr_math_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_math_test.exe
+  confidence_test.cpp
+  opencv_core.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\lib\Release\opencv_core4100.lib
+  oneocr_icu_common.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\Release\oneocr_icu_common.lib
+  opencv_imgproc.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\opencv\lib\Release\opencv_imgproc4100.lib
+  oneocr_nms_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_nms_test.exe
+  oneocr_detector_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_detector_test.exe
+  oneocr_alignment_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_alignment_test.exe
+  confidence.cpp
+  engine.cpp
+  confidence.cpp
+  正在生成代码...
+F:\pythonx\myocr\win11-oneocr\native\src\trace.hpp(19,31): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+  (编译源文件“../../../native/src/engine.cpp”)
+  
+F:\pythonx\myocr\win11-oneocr\native\src\trace.hpp(22,36): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+  (编译源文件“../../../native/src/engine.cpp”)
+  
+F:\pythonx\myocr\win11-oneocr\native\src\engine.cpp(35,20): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+F:\pythonx\myocr\win11-oneocr\native\src\engine.cpp(109,61): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+F:\pythonx\myocr\win11-oneocr\native\src\engine.cpp(456,60): warning C4456: “item”的声明隐藏了上一个本地声明 [F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\oneocr_portable.vcxproj]
+      F:\pythonx\myocr\win11-oneocr\native\src\engine.cpp(329,19):
+      参见“item”的声明
+  
+  oneocr_confidence_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\bin\Release\oneocr_confidence_test.exe
+  正在生成代码...
+    正在创建库 F:/pythonx/myocr/win11-oneocr/build/source-runtime/native/Release/oneocr_portable.lib 和对象 F:/pythonx/myocr/win11-oneocr/build/source-runtime/native/Release/oneocr_portable.exp
+  oneocr_portable.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_portable.dll
+  ocr.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\ocr.exe
+  oneocr_api_test.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_api_test.exe
+  oneocr_wrapper_compat.vcxproj -> F:\pythonx\myocr\win11-oneocr\build\source-runtime\native\Release\oneocr_wrapper.dll

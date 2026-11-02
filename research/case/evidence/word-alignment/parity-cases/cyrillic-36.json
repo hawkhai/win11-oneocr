@@ -1,0 +1,35 @@
+{
+  "passed": false,
+  "expected_lines": 1,
+  "actual_lines": 1,
+  "same_position_text_matches": 1,
+  "failure_count": 4,
+  "failures": [
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.9977561235427856,
+      "actual": 0.992476761341095
+    },
+    {
+      "field": "lines[0].words[1].confidence",
+      "expected": 0.9980437755584717,
+      "actual": 0.9912184476852417
+    },
+    {
+      "field": "lines[0].words[3].confidence",
+      "expected": 0.9956350922584534,
+      "actual": 0.9882515072822571
+    },
+    {
+      "field": "lines[0].words[4].confidence",
+      "expected": 0.9976963996887207,
+      "actual": 0.9917315244674683
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "name": "cyrillic-36"
+}

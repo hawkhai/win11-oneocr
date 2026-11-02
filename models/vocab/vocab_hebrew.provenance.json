@@ -1,0 +1,12 @@
+{
+  "file": "vocab/vocab_hebrew.json",
+  "sha256": "cf4239d30de1ab79840b5244fa787b6928cb4e7d775b3df79e2e1f35e2a48708",
+  "entries": 201,
+  "source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+  "source_resource": "\\\\?\\C:\\__w\\1\\s\\CoreEngine\\build\\Models\\Package\\Model_Edge\\Character\\HebrewPrinted\\char2ind.txt",
+  "dictionary_sha256": "17ff6c00b06c3b2b6f93fac019cb021a7ffe8938d16d13a831c0dfb9374cdabe",
+  "empty_indices": [
+    200
+  ],
+  "method": "complete original char2ind.txt plus composite_chars_map; preserves special token metadata"
+}

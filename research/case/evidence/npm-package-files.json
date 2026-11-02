@@ -1,0 +1,126 @@
+[
+  {
+    "id": "dsh-win11-oneocr@0.1.1",
+    "name": "dsh-win11-oneocr",
+    "version": "0.1.1",
+    "size": 30812102,
+    "unpackedSize": 82963634,
+    "shasum": "57581d6a8284d1b3f21fc45a56fda5f0632386ca",
+    "integrity": "sha512-2wO1EPbyyeZPG4E/7ya7tj/9hglO0Ot9sruUs2+V3UA94U7WA/azbrmVBoBhcPGaXM4zKEtGnWjgpmCuQbb9NA==",
+    "filename": "dsh-win11-oneocr-0.1.1.tgz",
+    "files": [
+      {
+        "path": "README.md",
+        "size": 8401,
+        "mode": 420
+      },
+      {
+        "path": "THIRD_PARTY_NOTICES.md",
+        "size": 2875,
+        "mode": 420
+      },
+      {
+        "path": "artifacts/linux-x64/bin/ocr",
+        "size": 147912,
+        "mode": 420
+      },
+      {
+        "path": "artifacts/linux-x64/lib/liboneocr_portable.so",
+        "size": 538648,
+        "mode": 420
+      },
+      {
+        "path": "artifacts/linux-x64/lib/libonnxruntime.so",
+        "size": 22326072,
+        "mode": 420
+      },
+      {
+        "path": "artifacts/linux-x64/lib/libonnxruntime.so.1",
+        "size": 22326072,
+        "mode": 420
+      },
+      {
+        "path": "artifacts/linux-x64/lib/libonnxruntime.so.1.23.2",
+        "size": 22326072,
+        "mode": 420
+      },
+      {
+        "path": "artifacts/win32-x64/bin/ocr.exe",
+        "size": 147968,
+        "mode": 420
+      },
+      {
+        "path": "artifacts/win32-x64/bin/oneocr_portable.dll",
+        "size": 336896,
+        "mode": 420
+      },
+      {
+        "path": "artifacts/win32-x64/bin/oneocr_wrapper.dll",
+        "size": 18432,
+        "mode": 420
+      },
+      {
+        "path": "artifacts/win32-x64/bin/onnxruntime.dll",
+        "size": 14422528,
+        "mode": 420
+      },
+      {
+        "path": "artifacts/win32-x64/lib/oneocr_portable.lib",
+        "size": 2998,
+        "mode": 420
+      },
+      {
+        "path": "artifacts/win32-x64/lib/oneocr_wrapper.lib",
+        "size": 2606,
+        "mode": 420
+      },
+      {
+        "path": "cordis.patch.yml",
+        "size": 152,
+        "mode": 420
+      },
+      {
+        "path": "docs/portable.md",
+        "size": 9199,
+        "mode": 420
+      },
+      {
+        "path": "licenses/nlohmann-json-MIT.txt",
+        "size": 1145,
+        "mode": 420
+      },
+      {
+        "path": "licenses/onnxruntime-LICENSE.txt",
+        "size": 1094,
+        "mode": 420
+      },
+      {
+        "path": "licenses/onnxruntime-ThirdPartyNotices.txt",
+        "size": 333022,
+        "mode": 420
+      },
+      {
+        "path": "native/include/oneocr_portable.h",
+        "size": 1711,
+        "mode": 420
+      },
+      {
+        "path": "native/include/oneocr_portable.hpp",
+        "size": 1533,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 1278,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 7020,
+        "mode": 420
+      }
+    ],
+    "entryCount": 22,
+    "bundled": []
+  }
+]
