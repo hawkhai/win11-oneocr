@@ -21,6 +21,17 @@ Linux x64，glibc 2.43 或更新（实测 Ubuntu 26.04）：
 
 现有预编译文件只覆盖 Windows x64 和 Linux x64。macOS、Android、ARM64 的源码配置和示例已提交，但不能把它们视作拉取后已可直接执行的平台。
 
+干净 Git 克隆的最终结果见 [换机验收](../reports/checkout-ready-2026-11-02/README.md)：两端各通过 110 张样本、原 27 项及 105 行书页，未使用原机器构建目录或研究环境。
+
+本次没有 push。如通过离线 Git 包转移，在新电脑执行：
+
+```sh
+git clone -b research win11-oneocr-offline.bundle oneocr
+cd oneocr
+```
+
+然后使用上述 Windows 或 Linux 入口。Git 包是包含这些提交和完整历史的可再生成交付物，不嵌套提交到仓库本身。
+
 ## 提交了哪些资产
 
 | 路径 | 内容 |

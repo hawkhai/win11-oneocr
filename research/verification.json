@@ -277,5 +277,53 @@
       "Degenerate curve fallback, very long line clipping and additional ambiguity/option configurations remain incomplete",
       "Real handwriting outside the existing English source remains a coverage gap"
     ]
+  },
+  "checkout_ready": {
+    "verified_date": "2026-11-02",
+    "asset_commit": "cf3d643",
+    "windows_checkout_commit": "3d6c3d0",
+    "linux_checkout_commit": "cf3d643",
+    "verified_assets": 222,
+    "asset_bytes": 316741510,
+    "model_files": 168,
+    "windows_runtime_files": 31,
+    "linux_runtime_files": 23,
+    "delivery_manifest_sha256": "693224627acf65c701583f1d47f4049d26429f734ffdc3db36dc8017e7b65cca",
+    "platforms": {
+      "windows-x64": {
+        "all_samples": 110,
+        "recognition_passes": 107,
+        "error_contract_passes": 3,
+        "book_lines": 105,
+        "original_corpus_passes": 27,
+        "runtime_bindings": {
+          "ocr.exe": "abaa054a76c8dd299e457c07dcbfcc9e29c41e33a394694950517b3865e39af2",
+          "oneocr_portable.dll": "e9c6a3c4c1a31f7452dc48e316323dcd66ff1e65c8106a85a5c1819fbc18b74f",
+          "onnxruntime.dll": "f91839182f99548847810c9d4c5a9655dc85b3b7321d540b9ba1b25db34e48e9"
+        }
+      },
+      "linux-x64": {
+        "all_samples": 110,
+        "recognition_passes": 107,
+        "error_contract_passes": 3,
+        "book_lines": 105,
+        "original_corpus_passes": 27,
+        "runtime_bindings": {
+          "ocr": "5e9d7b3594bd9d84ebb1f9356610a57687101f64239318c540cdc98dfc6a09d3"
+        }
+      }
+    },
+    "windows_path": "System32 only for module/launcher audit",
+    "linux_network": "isolated unshare -n; outbound probe failed",
+    "initial_windows_issue": "Inherited GBK in the regression subprocess could not print an emoji path; fixed explicit UTF-8 and replayed all 110 cases in a new clone",
+    "no_build_or_research_environment_in_checkout": true,
+    "no_model_or_acceptance_threshold_changes": true,
+    "unverified_targets": [
+      "macOS",
+      "Android",
+      "ARM64"
+    ],
+    "linux_minimum_glibc": "2.43",
+    "pushed_or_published": false
   }
 }
