@@ -1,0 +1,86 @@
+{
+  "engine": {
+    "backend": "wasm-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\research\\case\\corpus\\hebrew-36.png",
+  "image": {
+    "height": 220,
+    "step": 4000,
+    "width": 1000
+  },
+  "image_angle": 359.7656555175781,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        27,
+        43,
+        271,
+        42,
+        272,
+        77,
+        27,
+        78
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "2026 םלוע םולש",
+      "word_count": 3,
+      "words": [
+        {
+          "bounding_box": [
+            190.46495056152344,
+            43.46592712402344,
+            272,
+            42.755001068115234,
+            272,
+            77.71316528320312,
+            190.4649658203125,
+            76.55679321289062
+          ],
+          "confidence": 0.9791944026947021,
+          "index": 0,
+          "text": "2026"
+        },
+        {
+          "bounding_box": [
+            112.94562530517578,
+            43.89086151123047,
+            177.27023315429688,
+            43.54964828491211,
+            177.270263671875,
+            76.52044677734375,
+            112.94563293457031,
+            76.69050598144531
+          ],
+          "confidence": 0.8645249605178833,
+          "index": 1,
+          "text": "םלוע"
+        },
+        {
+          "bounding_box": [
+            27.178434371948242,
+            44.05795669555664,
+            100.3005142211914,
+            43.93278503417969,
+            100.30052185058594,
+            76.836181640625,
+            27.178434371948242,
+            78
+          ],
+          "confidence": 0.8397039175033569,
+          "index": 2,
+          "text": "םולש"
+        }
+      ]
+    }
+  ]
+}

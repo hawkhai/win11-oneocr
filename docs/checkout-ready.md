@@ -19,9 +19,9 @@ Linux x64，glibc 2.43 或更新（实测 Ubuntu 26.04）：
 
 路径中可以包含空格和 Unicode；加引号即可。入口始终使用仓库中的统一 `models/`，不依赖当前工作目录。Windows 的 VC 14.44 release CRT 与 Linux 的 GCC 运行库已随程序保存，原始文件保持不变。Linux 的系统 glibc 不随包替换，旧系统应按 [源码构建说明](portable.md) 在目标系统构建。
 
-现有预编译文件只覆盖 Windows x64 和 Linux x64。macOS、Android、ARM64 的源码配置和示例已提交，但不能把它们视作拉取后已可直接执行的平台。
+现有原生预编译文件覆盖 Windows x64 和 Linux x64。macOS、Android、ARM64 的源码配置和示例已提交，但不能把它们视作拉取后已可直接执行的平台。
 
-另有 [JavaScript + WebAssembly 交付](wasm.md)：`artifacts/wasm32/` 与同一份 `models/` 可供 Node 和支持 SIMD128 的浏览器加载。Node 入口为 `node web/cli.mjs ...`，可用 `python scripts/verify-delivery.py --wasm` 校验；浏览器及 JS 引擎的一致性状态须分别查看实测报告。
+另有 [JavaScript + WebAssembly 交付](wasm.md)：`artifacts/wasm32/` 与同一份 `models/` 可供 Node 和支持 SIMD128 的浏览器加载。Node 入口为 `node web/cli.mjs ...`，可用 `python scripts/verify-delivery.py --wasm` 校验；Node 24.14.0 与 Chrome 156 各通过全量 138 项，见 [Wasm 实测报告](../reports/wasm-2026-11-03/README.md)。
 
 干净 Git 克隆的最终结果见 [换机验收](../reports/checkout-ready-2026-11-02/README.md)：两端各通过 110 张样本、原 27 项及 105 行书页，未使用原机器构建目录或研究环境。
 
@@ -41,6 +41,7 @@ cd oneocr
 | `native/`、`cmake/`、`scripts/`、`research/*contracts.json` | 引擎源码、ABI/JNI、依赖获取和构建脚本、固定原生行为合约 |
 | `models/` | 当前版本全部准备资源：图、原始序列化资源、字表与映射、校准及模型清单；保留 SHA-256 与微软来源 |
 | `artifacts/win32-x64/`、`artifacts/linux-x64/` | 已验证的原生程序、动态库、系统编译器运行库、开发头文件/导入库、第三方声明与构建指纹 |
+| `artifacts/wasm32/`、`web/`、`examples/wasm/` | 同一引擎的 Wasm 运行文件、JS/Worker/类型声明、CLI、浏览器示例及源码构建入口 |
 | `samples/` | 全部 110 张输入、缩略图、参考图、来源与许可 |
 | `reports/` | 各轮报告；全目录逐图冻结 DLL 基准、严格比较结果、耗时和内存 |
 | `research/case/` | 会话 scope、workitems、timeline、field journal、证据目录、原 27 项回归图片与基准、书页基准及早期结论 |

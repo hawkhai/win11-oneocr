@@ -1,0 +1,225 @@
+{
+  "browser": "156.0.8078.79",
+  "initializationMs": 3935.199999988079,
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+  "capabilities": {
+    "backend": "wasm-onnx-cpu",
+    "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+    "parity": "incomplete",
+    "word_confidence": "native_21_features_mlp",
+    "style_confidence": "native_classifier_calibrated",
+    "geometry": "native_curve_polygons"
+  },
+  "cases": [
+    {
+      "name": "sample-df2560f7906cab6d",
+      "milliseconds": 15606.900000035763,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-426c4c4b4327f07c",
+      "milliseconds": 41602.39999997616,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-3aabaeed287f6784",
+      "milliseconds": 110880.39999997616,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-946c5faeaa0f2ec5",
+      "milliseconds": 9308.199999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-2db7bd9b6595c479",
+      "milliseconds": 21949.100000023842,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-6a86cb9011438813",
+      "milliseconds": 4141,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-1460619f37acbd0c",
+      "milliseconds": 26983.900000035763,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-c323ed4e5eccd42e",
+      "milliseconds": 28479.700000047684,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-c9a092125962e322",
+      "milliseconds": 51072.30000001192,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-640bb28cd64c2e5b",
+      "milliseconds": 7897.899999976158,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-e4d10781d3be6992",
+      "milliseconds": 1.5,
+      "status": "error",
+      "code": -15
+    },
+    {
+      "name": "sample-c8cde51505833347",
+      "milliseconds": 81900.89999997616,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-440f10edac8d7c0b",
+      "milliseconds": 1.2000000476837158,
+      "status": "error",
+      "code": -18
+    },
+    {
+      "name": "sample-44d499f3f15ffc62",
+      "milliseconds": 16979.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-8229419c872341b9",
+      "milliseconds": 1695.6000000238419,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-c9b8504f28656bb2",
+      "milliseconds": 3627,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-7d60dfc27e54a03b",
+      "milliseconds": 9225.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-eae7f502cfea5855",
+      "milliseconds": 4536.899999976158,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-2f4730c5e82e18ff",
+      "milliseconds": 1478.199999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-cc615a3e5cb1499e",
+      "milliseconds": 4508.800000011921,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-c777a45d62cce90a",
+      "milliseconds": 17129.099999964237,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-4f4c989c97595b6e",
+      "milliseconds": 1030.3999999761581,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-9a0e9586ac3fe4e2",
+      "milliseconds": 9764.199999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-55932e69942ed683",
+      "milliseconds": 1256.5999999642372,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-0676d3f4ef6c5e2a",
+      "milliseconds": 1630.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-203573ceb1873d5c",
+      "milliseconds": 1365.699999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-5f9d77976f578583",
+      "milliseconds": 3992.099999964237,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-728b694ae01441a4",
+      "milliseconds": 4981.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-latin-rotate-3",
+      "milliseconds": 4967.899999976158,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-latin-rotate-270",
+      "milliseconds": 4461.199999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-cjk-rotate-3",
+      "milliseconds": 3645.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-cjk-rotate-270",
+      "milliseconds": 3627.900000035763,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-hebrew-36",
+      "milliseconds": 1300.8999999761581,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-blank",
+      "milliseconds": 201.69999998807907,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "book",
+      "milliseconds": 193617.19999998808,
+      "status": "success",
+      "code": 0
+    }
+  ]
+}

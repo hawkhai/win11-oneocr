@@ -1,0 +1,887 @@
+{
+  "jobs": 4,
+  "workers": [
+    {
+      "browser": "156.0.8078.79",
+      "initializationMs": 4134.300000011921,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "capabilities": {
+        "backend": "wasm-onnx-cpu",
+        "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+        "parity": "incomplete",
+        "word_confidence": "native_21_features_mlp",
+        "style_confidence": "native_classifier_calibrated",
+        "geometry": "native_curve_polygons"
+      }
+    },
+    {
+      "browser": "156.0.8078.79",
+      "initializationMs": 3935.199999988079,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "capabilities": {
+        "backend": "wasm-onnx-cpu",
+        "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+        "parity": "incomplete",
+        "word_confidence": "native_21_features_mlp",
+        "style_confidence": "native_classifier_calibrated",
+        "geometry": "native_curve_polygons"
+      }
+    },
+    {
+      "browser": "156.0.8078.79",
+      "initializationMs": 4127.899999976158,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "capabilities": {
+        "backend": "wasm-onnx-cpu",
+        "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+        "parity": "incomplete",
+        "word_confidence": "native_21_features_mlp",
+        "style_confidence": "native_classifier_calibrated",
+        "geometry": "native_curve_polygons"
+      }
+    },
+    {
+      "browser": "156.0.8078.79",
+      "initializationMs": 4156.899999976158,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "capabilities": {
+        "backend": "wasm-onnx-cpu",
+        "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+        "parity": "incomplete",
+        "word_confidence": "native_21_features_mlp",
+        "style_confidence": "native_classifier_calibrated",
+        "geometry": "native_curve_polygons"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "name": "sample-903c40f10a92c762",
+      "milliseconds": 13162.800000011921,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-df2560f7906cab6d",
+      "milliseconds": 15606.900000035763,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-4169c134c6189ae6",
+      "milliseconds": 11.600000023841858,
+      "status": "error",
+      "code": -18
+    },
+    {
+      "name": "sample-7750735bcbce34ec",
+      "milliseconds": 39779.80000001192,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-39a29be9779394c5",
+      "milliseconds": 98889.89999997616,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-426c4c4b4327f07c",
+      "milliseconds": 41602.39999997616,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-35b9cf211491fc5b",
+      "milliseconds": 22622.099999964237,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-be771810db2def78",
+      "milliseconds": 117697.19999998808,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-eb1b381667716066",
+      "milliseconds": 33659.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-3aabaeed287f6784",
+      "milliseconds": 110880.39999997616,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-e2147debb746e953",
+      "milliseconds": 5631.699999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-a9819bb8f9e9f5ef",
+      "milliseconds": 21199.399999976158,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-ab902c56bd93d342",
+      "milliseconds": 7627.200000047684,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-946c5faeaa0f2ec5",
+      "milliseconds": 9308.199999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-9e131b7b56e565db",
+      "milliseconds": 6020.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-a87dd8607e0fda5f",
+      "milliseconds": 10946.800000011921,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-e56ebcbad4b3ec61",
+      "milliseconds": 33103.30000001192,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-2db7bd9b6595c479",
+      "milliseconds": 21949.100000023842,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-9d80e98d12d362b3",
+      "milliseconds": 33793.80000001192,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-f9dcd81f8ca741ba",
+      "milliseconds": 7727,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-f06b8315200c1abb",
+      "milliseconds": 18775,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-6a86cb9011438813",
+      "milliseconds": 4141,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-5fa29af9e63fefc2",
+      "milliseconds": 2583.900000035763,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-60f7669b6fa86751",
+      "milliseconds": 1937.199999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-abad7ae0707ac749",
+      "milliseconds": 66781.39999997616,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-1460619f37acbd0c",
+      "milliseconds": 26983.900000035763,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-9b462fed1772311b",
+      "milliseconds": 38211.10000002384,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-14f564d2b7d2e446",
+      "milliseconds": 4675.899999976158,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-fd9577ef8f62f6a7",
+      "milliseconds": 118610.59999996424,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-c323ed4e5eccd42e",
+      "milliseconds": 28479.700000047684,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-cb5009e20bb1123a",
+      "milliseconds": 22165,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-2c2835cf707a4fe6",
+      "milliseconds": 42060.19999998808,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-4cb3c7f3a7eae8bb",
+      "milliseconds": 61658.60000002384,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-c9a092125962e322",
+      "milliseconds": 51072.30000001192,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-a744c24e96808cb4",
+      "milliseconds": 213976.30000001192,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-4f45cf0e51f46a54",
+      "milliseconds": 60609.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-b0d25177b1a8480c",
+      "milliseconds": 199727.89999997616,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-640bb28cd64c2e5b",
+      "milliseconds": 7897.899999976158,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-e8417890fea95361",
+      "milliseconds": 1433,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-a24e31eb0aa23b4f",
+      "milliseconds": 92759.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-28e79bff204857cf",
+      "milliseconds": 89496.59999996424,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-e4d10781d3be6992",
+      "milliseconds": 1.5,
+      "status": "error",
+      "code": -15
+    },
+    {
+      "name": "sample-de900bc558f2dca8",
+      "milliseconds": 5064.099999964237,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-0486f0c2e5664aed",
+      "milliseconds": 166057.80000001192,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-913b6e2fbe4c0d3b",
+      "milliseconds": 71811.69999998808,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-c8cde51505833347",
+      "milliseconds": 81900.89999997616,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-9d004236328aca8f",
+      "milliseconds": 6822.899999976158,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-db4b91782dd3efb7",
+      "milliseconds": 137298.79999995232,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-bbbd4ae8468a6451",
+      "milliseconds": 8133.900000035763,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-440f10edac8d7c0b",
+      "milliseconds": 1.2000000476837158,
+      "status": "error",
+      "code": -18
+    },
+    {
+      "name": "sample-86a7ffe5513e5633",
+      "milliseconds": 35477.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-a99b928ceb0f443e",
+      "milliseconds": 17007.69999998808,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-da00952f9e92b062",
+      "milliseconds": 13832,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-44d499f3f15ffc62",
+      "milliseconds": 16979.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-914953ff8fb9b879",
+      "milliseconds": 58644.80000001192,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-4070a7afd9a7184b",
+      "milliseconds": 8152.599999964237,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-e6c08e3cc9b0eb2f",
+      "milliseconds": 66788.80000001192,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-8229419c872341b9",
+      "milliseconds": 1695.6000000238419,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-b3edaa47ba780e0c",
+      "milliseconds": 16789.200000047684,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-c45a727514fb8982",
+      "milliseconds": 6416.600000023842,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-024e54a6c8e3ba17",
+      "milliseconds": 4686.599999964237,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-c9b8504f28656bb2",
+      "milliseconds": 3627,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-512b352f18af3f4f",
+      "milliseconds": 57359.30000001192,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-0582df7394486480",
+      "milliseconds": 123158.09999996424,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-4a2cab3fdba7faea",
+      "milliseconds": 351644.40000003576,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-7d60dfc27e54a03b",
+      "milliseconds": 9225.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-eb6e81323fe050ef",
+      "milliseconds": 29822.80000001192,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-e3d262776302832f",
+      "milliseconds": 17749.69999998808,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-a83d2bf9aa769ebd",
+      "milliseconds": 25020.399999976158,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-eae7f502cfea5855",
+      "milliseconds": 4536.899999976158,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-de744546e5b8a0e6",
+      "milliseconds": 18835.80000001192,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-058949810e7c76d3",
+      "milliseconds": 1059.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-a45fc642aa130558",
+      "milliseconds": 753.4000000357628,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-2f4730c5e82e18ff",
+      "milliseconds": 1478.199999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-133a8c148862ce3a",
+      "milliseconds": 48589.60000002384,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-0b6fd6de5d12d93c",
+      "milliseconds": 17279.899999976158,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-9e2ab94f59cf15f8",
+      "milliseconds": 23893.799999952316,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-cc615a3e5cb1499e",
+      "milliseconds": 4508.800000011921,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-0f2b4483dc0e1c98",
+      "milliseconds": 65556.30000001192,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-3c6e7c7ab6144e27",
+      "milliseconds": 41030.09999996424,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-3255119646d641ba",
+      "milliseconds": 68023.30000001192,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-c777a45d62cce90a",
+      "milliseconds": 17129.099999964237,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-ed5b69a9711e3f53",
+      "milliseconds": 25761.399999976158,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-0e06c211cb4a4831",
+      "milliseconds": 54199,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-6692328598e9c3a8",
+      "milliseconds": 97579.59999996424,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-4f4c989c97595b6e",
+      "milliseconds": 1030.3999999761581,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-83a365509f1cc2b7",
+      "milliseconds": 14102.899999976158,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-c062c4f8b726c822",
+      "milliseconds": 15820.299999952316,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-9f735a010e88a648",
+      "milliseconds": 667.4000000357628,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-9a0e9586ac3fe4e2",
+      "milliseconds": 9764.199999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-0fc39af69da4cfed",
+      "milliseconds": 3681.800000011921,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-b563bb5b3e206ad7",
+      "milliseconds": 12898.599999964237,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-3295ba0789edc763",
+      "milliseconds": 4959.100000023842,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-55932e69942ed683",
+      "milliseconds": 1256.5999999642372,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-41b45e5a7c1f065c",
+      "milliseconds": 2956.399999976158,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-cc5c505c9a91f65a",
+      "milliseconds": 2582.900000035763,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-c159f2e4564feb4f",
+      "milliseconds": 1073.3999999761581,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-0676d3f4ef6c5e2a",
+      "milliseconds": 1630.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-4fceece9f2d76a6e",
+      "milliseconds": 1330.699999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-1ea42cacfd82f6c0",
+      "milliseconds": 2445.600000023842,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-71fe5f6e6888b73b",
+      "milliseconds": 1549.0999999642372,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-203573ceb1873d5c",
+      "milliseconds": 1365.699999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-a2446851712be525",
+      "milliseconds": 7635.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-280528b4b1cb14b3",
+      "milliseconds": 3591.100000023842,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-224ffeac6e0cd92d",
+      "milliseconds": 3350.399999976158,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-5f9d77976f578583",
+      "milliseconds": 3992.099999964237,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-1aad6147b578f344",
+      "milliseconds": 4307.699999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-8d1e2d06c5f24990",
+      "milliseconds": 3663.599999964237,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-ab78d5d64fd48439",
+      "milliseconds": 3174,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "sample-728b694ae01441a4",
+      "milliseconds": 4981.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-latin-18",
+      "milliseconds": 4240.199999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-latin-36",
+      "milliseconds": 3632.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-latin-rotate-0.5",
+      "milliseconds": 3758.400000035763,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-latin-rotate-3",
+      "milliseconds": 4967.899999976158,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-latin-rotate-10",
+      "milliseconds": 4472.800000011921,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-latin-rotate-90",
+      "milliseconds": 3623.300000011921,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-latin-rotate-180",
+      "milliseconds": 3490.2000000476837,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-latin-rotate-270",
+      "milliseconds": 4461.199999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-cjk-18",
+      "milliseconds": 3359.900000035763,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-cjk-36",
+      "milliseconds": 3070.199999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-cjk-rotate-0.5",
+      "milliseconds": 3057.800000011921,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-cjk-rotate-3",
+      "milliseconds": 3645.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-cjk-rotate-10",
+      "milliseconds": 3640.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-cjk-rotate-90",
+      "milliseconds": 3196.699999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-cjk-rotate-180",
+      "milliseconds": 3017.5,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-cjk-rotate-270",
+      "milliseconds": 3627.900000035763,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-cyrillic-36",
+      "milliseconds": 3350.800000011921,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-arabic-36",
+      "milliseconds": 1168.199999988079,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-devanagari-36",
+      "milliseconds": 971.1999999880791,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-hebrew-36",
+      "milliseconds": 1300.8999999761581,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-thai-36",
+      "milliseconds": 1339.3999999761581,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-tamil-36",
+      "milliseconds": 1689.3999999761581,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-greek-36",
+      "milliseconds": 1317.300000011921,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-blank",
+      "milliseconds": 201.69999998807907,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-透明路径-emoji-😀",
+      "milliseconds": 1836.7999999523163,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-multi-column",
+      "milliseconds": 3824.599999964237,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "corpus-vertical-cjk",
+      "milliseconds": 3081,
+      "status": "success",
+      "code": 0
+    },
+    {
+      "name": "book",
+      "milliseconds": 193617.19999998808,
+      "status": "success",
+      "code": 0
+    }
+  ]
+}

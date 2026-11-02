@@ -1,0 +1,107 @@
+{
+  "engine": {
+    "backend": "wasm-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\thumbnails\\psm-sherlock-page.jpg",
+  "image": {
+    "height": 230,
+    "step": 624,
+    "width": 156
+  },
+  "image_angle": 2.0428082942962646,
+  "line_count": 2,
+  "lines": [
+    {
+      "bounding_box": [
+        47,
+        6,
+        111,
+        6,
+        111,
+        15,
+        47,
+        15
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "CHAPTER ONE",
+      "word_count": 2,
+      "words": [
+        {
+          "bounding_box": [
+            48.220436096191406,
+            6.442147731781006,
+            88.70770263671875,
+            6.27541446685791,
+            88.56468200683594,
+            15.207198143005371,
+            47.82684326171875,
+            15.351973533630371
+          ],
+          "confidence": 0.9891490340232849,
+          "index": 0,
+          "text": "CHAPTER"
+        },
+        {
+          "bounding_box": [
+            91.34817504882812,
+            6.267319679260254,
+            112,
+            6.222263813018799,
+            112,
+            15.352591514587402,
+            91.22239685058594,
+            15.215054512023926
+          ],
+          "confidence": 0.989543616771698,
+          "index": 1,
+          "text": "ONE"
+        }
+      ]
+    },
+    {
+      "bounding_box": [
+        8,
+        63,
+        22,
+        64,
+        22,
+        75,
+        8,
+        75
+      ],
+      "index": 1,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "M",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            8.002189636230469,
+            63,
+            14.99774169921875,
+            63,
+            14.569987297058105,
+            74.68942260742188,
+            8,
+            74.43990325927734
+          ],
+          "confidence": 0.9741116762161255,
+          "index": 0,
+          "text": "M"
+        }
+      ]
+    }
+  ]
+}

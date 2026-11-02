@@ -40,7 +40,7 @@ implementation documented below remains available as the optional legacy
 backend. The plugin now defaults to the portable backend; use `backend: legacy`
 explicitly for the old Windows executable.
 
-JavaScript/浏览器接入使用同一引擎的 [WebAssembly 版本](docs/wasm.md)，或运行 `node web/cli.mjs ocr-book.jpg --text`。插件配置 `backend: wasm` 可选择该后端；模型仍使用根目录 `models/`。
+JavaScript/浏览器接入使用同一引擎的 [WebAssembly 版本](docs/wasm.md)，或运行 `node web/cli.mjs ocr-book.jpg --text`。Node 24.14.0 和 Chrome 156 各通过全部 138 项原阈值回归，两端 JSON 逐字节相同，见[实测报告](reports/wasm-2026-11-03/README.md)。插件配置 `backend: wasm` 可选择该后端；模型仍使用根目录 `models/`。
 
 Offline OCR engine extracted from the Windows 11 Snipping Tool, with full-featured C++ CLI, reusable DLL wrapper, and Python visualization.
 
