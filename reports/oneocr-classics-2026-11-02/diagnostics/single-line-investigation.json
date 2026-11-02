@@ -1,0 +1,77 @@
+[
+  {
+    "name": "same-pixels-png",
+    "size": [
+      256,
+      32
+    ],
+    "exit_code": 1,
+    "seconds": 0.7040139000164345,
+    "stderr": "Traceback (most recent call last):\r\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\scripts\\run-classics-oneocr.py\", line 174, in <module>\r\n    raise SystemExit(main())\r\n                     ^^^^^^\r\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\scripts\\run-classics-oneocr.py\", line 84, in main\r\n    legacy_image(args.legacy_image.resolve(), args.legacy_output.resolve(), args.legacy_dir.resolve())\r\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\scripts\\run-classics-oneocr.py\", line 62, in legacy_image\r\n    raise RuntimeError(f'Original wrapper OCR failed: {code}')\r\nRuntimeError: Original wrapper OCR failed: -18\r\n",
+    "preprocessing": "diagnostic only; not part of the 30-image main run"
+  },
+  {
+    "name": "white-padding-64px",
+    "size": [
+      256,
+      64
+    ],
+    "exit_code": 0,
+    "seconds": 0.8409405999700539,
+    "stderr": "",
+    "preprocessing": "diagnostic only; not part of the 30-image main run",
+    "text": "Hello world!你好世界"
+  },
+  {
+    "name": "upscale-2x",
+    "size": [
+      512,
+      64
+    ],
+    "exit_code": 0,
+    "seconds": 0.7730624999967404,
+    "stderr": "",
+    "preprocessing": "diagnostic only; not part of the 30-image main run",
+    "text": "Hello world!你好世界"
+  },
+  {
+    "name": "white-padding-64px-native",
+    "backend": "native",
+    "exit_code": 0,
+    "seconds": 0.4544698999961838,
+    "command": [
+      "F:\\pythonx\\myocr\\win11-oneocr\\artifacts\\win32-x64\\bin\\ocr.exe",
+      "F:\\pythonx\\myocr\\win11-oneocr\\reports\\oneocr-classics-2026-11-02\\diagnostics\\white-padding-64px.png",
+      "--model-dir",
+      "F:\\pythonx\\myocr\\win11-oneocr\\models",
+      "--output",
+      "F:\\pythonx\\myocr\\win11-oneocr\\reports\\oneocr-classics-2026-11-02\\diagnostics\\white-padding-64px-native.json",
+      "--resize",
+      "1152x768",
+      "--max-lines",
+      "1000",
+      "--quiet"
+    ],
+    "text": "Hello world!你好世界"
+  },
+  {
+    "name": "upscale-2x-native",
+    "backend": "native",
+    "exit_code": 0,
+    "seconds": 0.4650466999737546,
+    "command": [
+      "F:\\pythonx\\myocr\\win11-oneocr\\artifacts\\win32-x64\\bin\\ocr.exe",
+      "F:\\pythonx\\myocr\\win11-oneocr\\reports\\oneocr-classics-2026-11-02\\diagnostics\\upscale-2x.png",
+      "--model-dir",
+      "F:\\pythonx\\myocr\\win11-oneocr\\models",
+      "--output",
+      "F:\\pythonx\\myocr\\win11-oneocr\\reports\\oneocr-classics-2026-11-02\\diagnostics\\upscale-2x-native.json",
+      "--resize",
+      "1152x768",
+      "--max-lines",
+      "1000",
+      "--quiet"
+    ],
+    "text": "Hello world!你好世界"
+  }
+]

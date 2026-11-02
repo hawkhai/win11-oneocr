@@ -1,0 +1,85 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "experimental_fpn_quadrilaterals",
+    "parity": "incomplete",
+    "style_confidence": "experimental_classifier_calibrated",
+    "word_confidence": "uncalibrated_ctc"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\images\\psm-old-engine-title.png",
+  "image": {
+    "height": 200,
+    "step": 4000,
+    "width": 1000
+  },
+  "image_angle": 0.097686767578125,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        59.10359191894531,
+        56.02631759643555,
+        934.976806640625,
+        57.51975631713867,
+        934.8555297851563,
+        128.6307830810547,
+        58.98234176635742,
+        127.13734436035156
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03530000150203705,
+        "type": "printed"
+      },
+      "text": "THE OLD ENGINE.",
+      "word_count": 3,
+      "words": [
+        {
+          "bounding_box": [
+            87.51029205322266,
+            56.07475280761719,
+            215.34043884277344,
+            56.2927131652832,
+            215.21917724609375,
+            127.40373992919922,
+            87.3890380859375,
+            127.18578338623047
+          ],
+          "confidence": 0.9933937191963196,
+          "index": 0,
+          "text": "THE"
+        },
+        {
+          "bounding_box": [
+            310.0294189453125,
+            56.454166412353516,
+            442.59405517578125,
+            56.68020248413086,
+            442.4727478027344,
+            127.79122924804688,
+            309.90814208984375,
+            127.56519317626953
+          ],
+          "confidence": 0.9965999722480774,
+          "index": 1,
+          "text": "OLD"
+        },
+        {
+          "bounding_box": [
+            532.548583984375,
+            56.833580017089844,
+            916.0390014648438,
+            57.487464904785156,
+            915.917724609375,
+            128.59849548339844,
+            532.4273071289063,
+            127.94461059570313
+          ],
+          "confidence": 0.9893851280212402,
+          "index": 2,
+          "text": "ENGINE."
+        }
+      ]
+    }
+  ]
+}

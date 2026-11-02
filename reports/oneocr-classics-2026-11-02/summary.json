@@ -1,0 +1,454 @@
+{
+  "date": "2026-11-02",
+  "input_count": 30,
+  "review_method": "定性检查主要文字、明显错字、漏检/重复、阅读顺序和字段对应；局部转录仅是证据，不是整图精标。未计算 CER/WER 或总体准确率。",
+  "execution_successes": {
+    "native": 30,
+    "legacy": 29
+  },
+  "qualitative_counts": {
+    "native": {
+      "mixed": 13,
+      "problem": 10,
+      "good": 7
+    },
+    "legacy": {
+      "mixed": 16,
+      "good": 12,
+      "failed": 1,
+      "problem": 1
+    }
+  },
+  "dll_rated_better_cases": [
+    "cn-traditional-sutra",
+    "cn-english-book-cover",
+    "pp-wash-label",
+    "pp-lab-table",
+    "easy-yuyuan-road",
+    "easy-health-poster",
+    "dewarp-cooking-page",
+    "dewarp-thesis-table",
+    "dewarp-thesis-wordlist",
+    "psm-whole-foods-receipt",
+    "quality-heavy-ink"
+  ],
+  "parameters": {
+    "max_lines": 1000,
+    "resize_width": 1152,
+    "resize_height": 768,
+    "preprocessing": "none; original file passed unchanged to each backend",
+    "execution": "sequential, separate process per image/backend",
+    "timing": "end-to-end child wall time including startup/model load; not a latency benchmark"
+  },
+  "native_capabilities": {
+    "backend": "native-onnx-cpu",
+    "parity": "incomplete",
+    "word_confidence": "uncalibrated_ctc",
+    "style_confidence": "experimental_classifier_calibrated",
+    "geometry": "experimental_fpn_quadrilaterals"
+  },
+  "wall_time_seconds_including_startup": {
+    "native": {
+      "sum": 25.957,
+      "median": 0.806
+    },
+    "legacy": {
+      "sum": 29.221,
+      "median": 0.906
+    }
+  },
+  "reviews_sha256": "ad0b0023e72dbb6da23c33bceed2c372ab75f0ec85e2a51f7dcd2f31b46129f0",
+  "report_sha256": "2beaa0937a1fa7dc5b4d496611df8c9bf3253867836427eef194f5342a9aa1b4",
+  "cases": [
+    {
+      "number": 1,
+      "name": "cn-train-ticket",
+      "title": "火车票：多种字号与遮挡",
+      "native": {
+        "rating": "mixed",
+        "verdict": "日期、车次、座位和票价可读；站名被拆碎并乱序，遮挡区域还产生伪文字。"
+      },
+      "legacy": {
+        "rating": "mixed",
+        "verdict": "核心票务字段同样可读，站名仍拆成多个片段，遮挡处有单字符误检。"
+      }
+    },
+    {
+      "number": 2,
+      "name": "cn-vertical-ad",
+      "title": "商品广告：竖排与横排共存",
+      "native": {
+        "rating": "mixed",
+        "verdict": "大号横排与两侧竖排促销语基本读出，瓶身微小文字出现碎片和错字。"
+      },
+      "legacy": {
+        "rating": "mixed",
+        "verdict": "促销语更集中输出，但瓶身文字仍有多处不可靠片段。"
+      }
+    },
+    {
+      "number": 3,
+      "name": "cn-traditional-sutra",
+      "title": "金色底纹上的繁体经文",
+      "native": {
+        "rating": "problem",
+        "verdict": "多数繁体短语能识别，但段落顺序严重打散，不能直接复制成连贯经文。"
+      },
+      "legacy": {
+        "rating": "mixed",
+        "verdict": "短语较多且顺序相对连贯，仍有跨行拆句及个别标点问题。"
+      }
+    },
+    {
+      "number": 4,
+      "name": "cn-wrapped-paragraph",
+      "title": "小尺寸中文段落与断行",
+      "native": {
+        "rating": "good",
+        "verdict": "7 行正文连贯，主要文字完整，逗号和连字符的格式有变化。"
+      },
+      "legacy": {
+        "rating": "good",
+        "verdict": "正文与主测基本一致，连字符两侧多空格；整体可读。"
+      }
+    },
+    {
+      "number": 5,
+      "name": "cn-single-line-mixed",
+      "title": "Hello world!你好世界：单行混排",
+      "native": {
+        "rating": "problem",
+        "verdict": "单行被重复检测成两行，中文末字出现错识。"
+      },
+      "legacy": {
+        "rating": "failed",
+        "verdict": "原图调用返回 -18（RunOcrPipeline 失败）；默认接口及同像素 PNG 也失败。"
+      }
+    },
+    {
+      "number": 6,
+      "name": "cn-english-book-cover",
+      "title": "英文教材封面：装饰与小字",
+      "native": {
+        "rating": "mixed",
+        "verdict": "封面大标题和出版社可读，作者姓名被截断并重复切分。"
+      },
+      "legacy": {
+        "rating": "good",
+        "verdict": "标题及三位作者名基本完整；装饰图形产生一个无关符号。"
+      }
+    },
+    {
+      "number": 7,
+      "name": "pp-product-description",
+      "title": "护发素说明：密集小字与中英数字",
+      "native": {
+        "rating": "good",
+        "verdict": "品名、型号、容量及大段说明基本可读；细小字与括号仍值得核对。"
+      },
+      "legacy": {
+        "rating": "good",
+        "verdict": "主要内容与主测接近，少数小块顺序不同；可作为较好的密集中文案例。"
+      }
+    },
+    {
+      "number": 8,
+      "name": "pp-vertical-plaque",
+      "title": "户外竖排校牌",
+      "native": {
+        "rating": "mixed",
+        "verdict": "主竖牌完整读出，副竖牌末尾有错字；输出次序与 DLL 不同。"
+      },
+      "legacy": {
+        "rating": "mixed",
+        "verdict": "主牌同样完整，副牌也存在相同的末字混淆。"
+      }
+    },
+    {
+      "number": 9,
+      "name": "pp-garden-sign",
+      "title": "园林标牌：远处小字与复杂背景",
+      "native": {
+        "rating": "mixed",
+        "verdict": "酒店名、花园公寓名和地址大部可读，暗色小字及箭头有错识/拆分。"
+      },
+      "legacy": {
+        "rating": "mixed",
+        "verdict": "主要地名相似，地址数字间隔被压缩，仍不能直接作为导航字段。"
+      }
+    },
+    {
+      "number": 10,
+      "name": "pp-wash-label",
+      "title": "衣物洗涤标签：细字与图形符号",
+      "native": {
+        "rating": "problem",
+        "verdict": "品牌和温度部分可读，但晾干指令错识，图标变成伪文字，熨烫说明被乱序切开。"
+      },
+      "legacy": {
+        "rating": "mixed",
+        "verdict": "主要洗涤指令较完整，图标有误检，末段个别字仍错。"
+      }
+    },
+    {
+      "number": 11,
+      "name": "pp-math-exam",
+      "title": "小学数学试卷：运算符与留白",
+      "native": {
+        "rating": "mixed",
+        "verdict": "标题和大部分算式可读；部分算式被拆行，跨列顺序不稳定。"
+      },
+      "legacy": {
+        "rating": "mixed",
+        "verdict": "同样存在跨列及算式切分；有时把 × 写成 X。"
+      }
+    },
+    {
+      "number": 12,
+      "name": "pp-lab-table",
+      "title": "检验指标表：中英缩写与数值列",
+      "native": {
+        "rating": "problem",
+        "verdict": "表头和单元格严重乱序，部分数值截断，项目名与单位存在明显错识。"
+      },
+      "legacy": {
+        "rating": "mixed",
+        "verdict": "项目与数值较完整，顺序更接近行扫描，但仍非结构化表格，局部单位和符号需核对。"
+      }
+    },
+    {
+      "number": 13,
+      "name": "easy-yuyuan-road",
+      "title": "愚园路：中英路牌与方位",
+      "native": {
+        "rating": "problem",
+        "verdict": "英文和门牌号可读，主中文路名首字识别错误。"
+      },
+      "legacy": {
+        "rating": "good",
+        "verdict": "主路名、中英文、方位和门牌号均基本正确。"
+      }
+    },
+    {
+      "number": 14,
+      "name": "easy-health-poster",
+      "title": "英文健康海报：图标与多字号",
+      "native": {
+        "rating": "mixed",
+        "verdict": "英文说明基本完整，但一行文字重复检测，多出截断片段。"
+      },
+      "legacy": {
+        "rating": "good",
+        "verdict": "主要英文说明、行序和署名可读，没有主测的重复片段。"
+      }
+    },
+    {
+      "number": 15,
+      "name": "easy-paris-signposts",
+      "title": "巴黎多方向指示牌",
+      "native": {
+        "rating": "good",
+        "verdict": "多方向标牌主要法文基本读出，重音字母保留；个别 1/l 字形需核对。"
+      },
+      "legacy": {
+        "rating": "good",
+        "verdict": "主要内容与主测一致，法文重音字符可读。"
+      }
+    },
+    {
+      "number": 16,
+      "name": "easy-minato-sign",
+      "title": "港区告示牌：日英混排",
+      "native": {
+        "rating": "good",
+        "verdict": "日英主要告示完整，标志图形被误读成一个多余的“园”。"
+      },
+      "legacy": {
+        "rating": "good",
+        "verdict": "主要日文、英文和落款基本完整，未出现该额外字符。"
+      }
+    },
+    {
+      "number": 17,
+      "name": "dewarp-cooking-page",
+      "title": "旧食谱书页：倾斜与书脊弯曲",
+      "native": {
+        "rating": "problem",
+        "verdict": "大部分英文能读出，但按几何位置混排，标题、段首、段尾互相穿插。"
+      },
+      "legacy": {
+        "rating": "good",
+        "verdict": "原始方向下能恢复较连贯的标题和段落顺序，多数正文可读。"
+      }
+    },
+    {
+      "number": 18,
+      "name": "dewarp-thesis-table",
+      "title": "论文书页：阴影下的文字与表格",
+      "native": {
+        "rating": "problem",
+        "verdict": "阴影下的普通英文尚可，音标/词表条目被过度切碎，释义与条目错位。"
+      },
+      "legacy": {
+        "rating": "mixed",
+        "verdict": "大部分条目链接较合理，仍有特殊音标和末段顺序问题。"
+      }
+    },
+    {
+      "number": 19,
+      "name": "dewarp-thesis-wordlist",
+      "title": "论文词表：密集列与书脊形变",
+      "native": {
+        "rating": "problem",
+        "verdict": "单个词组大多可辨，但多列表格被横向交织，代词类别和例句对应关系难以直接使用。"
+      },
+      "legacy": {
+        "rating": "mixed",
+        "verdict": "较多按列组织，仍有句子顺序和符号问题；没有恢复成单元格结构。"
+      }
+    },
+    {
+      "number": 20,
+      "name": "psm-whole-foods-receipt",
+      "title": "Whole Foods 小票：商品与价格配行",
+      "native": {
+        "rating": "problem",
+        "verdict": "金额多能读到，但商品、价格及附加标记拆得很碎，几处价格先于商品，配对不可靠。"
+      },
+      "legacy": {
+        "rating": "mixed",
+        "verdict": "大体维持商品后接价格的次序，仍分成很多片段，并未生成结构化明细。"
+      }
+    },
+    {
+      "number": 21,
+      "name": "psm-sherlock-page",
+      "title": "小说单栏页：标题、首字下沉与正文",
+      "native": {
+        "rating": "good",
+        "verdict": "章节和大段英文正文整体连贯；首字下沉的 M 被放到残余首行之后。"
+      },
+      "legacy": {
+        "rating": "good",
+        "verdict": "正文整体可读；首字下沉也单列，但顺序更接近自然阅读。"
+      }
+    },
+    {
+      "number": 22,
+      "name": "psm-license-plate",
+      "title": "单行车牌：紧凑字母与数字",
+      "native": {
+        "rating": "mixed",
+        "verdict": "整行读出，输出 MHO4DW8351；牌号中的 0/O 歧义仍需精标确认。"
+      },
+      "legacy": {
+        "rating": "mixed",
+        "verdict": "与主测输出相同；不因两版一致就断言编号完全正确。"
+      }
+    },
+    {
+      "number": 23,
+      "name": "psm-designer-word",
+      "title": "Designer：透视背景上的单词",
+      "native": {
+        "rating": "good",
+        "verdict": "Designer 单词完整正确，倾斜牌面未造成明显识别问题。"
+      },
+      "legacy": {
+        "rating": "good",
+        "verdict": "同样正确输出 Designer。"
+      }
+    },
+    {
+      "number": 24,
+      "name": "psm-sparse-web-menu",
+      "title": "网页菜单：稀疏文字与项目符号",
+      "native": {
+        "rating": "mixed",
+        "verdict": "菜单条目基本找全，但 Working with Video 被拆开并倒序输出。"
+      },
+      "legacy": {
+        "rating": "mixed",
+        "verdict": "条目更完整，仍有 IoT 的 I/l 歧义及项目符号夹入。"
+      }
+    },
+    {
+      "number": 25,
+      "name": "psm-old-engine-title",
+      "title": "THE OLD ENGINE.：旧印刷体单行",
+      "native": {
+        "rating": "good",
+        "verdict": "完整输出标题与末尾句号。"
+      },
+      "legacy": {
+        "rating": "good",
+        "verdict": "与主测相同，完整输出标题。"
+      }
+    },
+    {
+      "number": 26,
+      "name": "quality-heavy-ink",
+      "title": "旧表单：粗笔画与引导点线",
+      "native": {
+        "rating": "mixed",
+        "verdict": "左侧项目名可读，右侧 No 与左侧项目的线性对应次序不稳定。"
+      },
+      "legacy": {
+        "rating": "good",
+        "verdict": "项目名和右侧 No 大体交替输出，引导点线没有造成大面积漏读。"
+      }
+    },
+    {
+      "number": 27,
+      "name": "quality-noisy-fraktur",
+      "title": "旧希腊文扫描：噪声与密集字形",
+      "native": {
+        "rating": "mixed",
+        "verdict": "希腊文标题及不少正文可辨，第一行正文漏掉，脚注区有明显碎片；未逐字校对古希腊文。"
+      },
+      "legacy": {
+        "rating": "mixed",
+        "verdict": "保留了更多开头正文，脚注小字仍混杂乱码及符号错误。"
+      }
+    },
+    {
+      "number": 28,
+      "name": "digits-thermostat",
+      "title": "恒温器：七段数码管读数",
+      "native": {
+        "rating": "problem",
+        "verdict": "核心温度数值错误：丢失小数点，单位附近还并入一个 0。"
+      },
+      "legacy": {
+        "rating": "problem",
+        "verdict": "核心数值也没有保留小数点；不能把 345 当作 34.5 使用。"
+      }
+    },
+    {
+      "number": 29,
+      "name": "cards-template-input",
+      "title": "演示卡号：OCR-A 模板匹配",
+      "native": {
+        "rating": "mixed",
+        "verdict": "主卡号、有效期和姓名可读，但细小英文标签有多处明显乱码。"
+      },
+      "legacy": {
+        "rating": "mixed",
+        "verdict": "主卡号同样正确，标签比主测完整，仍有细字错误。"
+      }
+    },
+    {
+      "number": 30,
+      "name": "structure-paper-table",
+      "title": "论文对比表：小数、行列与强调字体",
+      "native": {
+        "rating": "mixed",
+        "verdict": "多数方法名与数值可读，但丢失 R/P/F 等表头，部分数值错识，输出顺序破坏行列关系。"
+      },
+      "legacy": {
+        "rating": "mixed",
+        "verdict": "表头与首行数字更完整，多数顺序按行展开；仍没有单元格结构，个别符号需核对。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "reviewed_on": "2026-11-02",
+  "reviewer": "Codex；逐张查看原图、识别文本与行框，属于助手视觉审阅",
+  "method": "定性检查主要文字、明显错字、漏检/重复、阅读顺序和字段对应；局部转录仅是证据，不是整图精标。未计算 CER/WER 或总体准确率。",
+  "ratings": {
+    "good": "较好：主要内容可读且基本完整，允许少量标点、装饰图形误检或局部细节问题；不代表逐字全对。",
+    "mixed": "部分可用：有用文字较多，但关键字段、局部文字、分行或顺序需要复核。",
+    "problem": "明显问题：主名称/读数错误、明显重复，或顺序/切分使正文或字段关系难以直接使用。",
+    "failed": "执行失败：未得到可用 OCR JSON，不能按识别质量打分。"
+  },
+  "metadata_corrections": [
+    {
+      "name": "quality-noisy-fraktur",
+      "description": "第 27 张实际为希腊文古籍扫描，先前由本助手误标为德文。本次已将样本库标题、语言标签及索引改正；保留原稳定 ID 与图片字节。运行时的旧清单另存为 corpus-manifest-at-run.json。"
+    }
+  ],
+  "cases": {
+    "cn-train-ticket": {
+      "native": {"rating": "mixed", "verdict": "日期、车次、座位和票价可读；站名被拆碎并乱序，遮挡区域还产生伪文字。"},
+      "legacy": {"rating": "mixed", "verdict": "核心票务字段同样可读，站名仍拆成多个片段，遮挡处有单字符误检。"},
+      "tags": ["分行", "阅读顺序", "遮挡误检"],
+      "evidence": [
+        {"region": "站名", "original": "南丰站 → 南昌站", "native": "L1 丰站 / L2 昌站 / L3 南", "legacy": "L1 南 / L2 丰站 / L4 南 / L5 昌站", "note": "纯文本没有保留完整的出发与到达站名，需要结合位置重组。"},
+        {"region": "票价和座位", "original": "¥53.0元；07车12B号", "native": "¥53.0元；07车12B号", "legacy": "¥53.0元；07车12B号", "note": "这些清晰的核心字段识别较好；不推断被遮挡信息。"}
+      ]
+    },
+    "cn-vertical-ad": {
+      "native": {"rating": "mixed", "verdict": "大号横排与两侧竖排促销语基本读出，瓶身微小文字出现碎片和错字。"},
+      "legacy": {"rating": "mixed", "verdict": "促销语更集中输出，但瓶身文字仍有多处不可靠片段。"},
+      "tags": ["小字", "混合方向", "错字"],
+      "evidence": [
+        {"region": "标题与右侧竖排", "original": "植物医生官方唯一授权；旺旺咨询更优惠哟", "native": "两处均可读出", "legacy": "两处均可读出", "note": "竖排本身并未全面失效。"},
+        {"region": "瓶身小字", "original": "多处低分辨率的包装文字", "native": "工些测土醒肤活力；立心用士版秋活力", "legacy": "工些则土醒肤活力；立心河士版技活力", "note": "这些输出与可见文字形状不能稳定对应，不能当作可靠商品说明。"}
+      ]
+    },
+    "cn-traditional-sutra": {
+      "native": {"rating": "problem", "verdict": "多数繁体短语能识别，但段落顺序严重打散，不能直接复制成连贯经文。"},
+      "legacy": {"rating": "mixed", "verdict": "短语较多且顺序相对连贯，仍有跨行拆句及个别标点问题。"},
+      "tags": ["阅读顺序", "分行", "繁体"],
+      "evidence": [
+        {"region": "正文开头", "original": "觀自在菩薩 → 行深般若波羅蜜多時 → 照見五蘊", "native": "照見五蘊 → 觀自在菩薩 → 行深般若波羅蜜多時", "legacy": "觀自在菩薩 → 行深般若波羅蜜多時 → 照見五蘊", "note": "字形覆盖尚可，主差距在片段链接和排序。"}
+      ]
+    },
+    "cn-wrapped-paragraph": {
+      "native": {"rating": "good", "verdict": "7 行正文连贯，主要文字完整，逗号和连字符的格式有变化。"},
+      "legacy": {"rating": "good", "verdict": "正文与主测基本一致，连字符两侧多空格；整体可读。"},
+      "tags": ["表现较好", "标点格式"],
+      "evidence": [
+        {"region": "首行与末行", "original": "网络支付并无本质的区别，因为；等多种形式。", "native": "网络支付并无本质的区别,因为；等多种形式。", "legacy": "网络支付并无本质的区别,因为；等多种形式。", "note": "没有发现影响整体阅读的明显错误；未据此宣称逐字准确率。"}
+      ]
+    },
+    "cn-single-line-mixed": {
+      "native": {"rating": "problem", "verdict": "单行被重复检测成两行，中文末字出现错识。"},
+      "legacy": {"rating": "failed", "verdict": "原图调用返回 -18（RunOcrPipeline 失败）；默认接口及同像素 PNG 也失败。"},
+      "tags": ["重复检测", "错字", "极矮图", "执行失败"],
+      "evidence": [
+        {"region": "整张 256×32 输入", "original": "Hello world!你好世界", "native": "L0 世界 / L1 Hello world!你好世易", "legacy": "无结果；错误 -18", "note": "主测保留原图结果，不以诊断后的结果替换。"},
+        {"region": "额外诊断", "original": "上下各加 16 像素白边，或放大为 512×64", "native": "两种变体均输出 Hello world!你好世界", "legacy": "两种变体均输出 Hello world!你好世界", "note": "说明该例与极矮输入处理有关；尚未定位引擎内部根因，也不泛化为所有图片的修复方案。"}
+      ]
+    },
+    "cn-english-book-cover": {
+      "native": {"rating": "mixed", "verdict": "封面大标题和出版社可读，作者姓名被截断并重复切分。"},
+      "legacy": {"rating": "good", "verdict": "标题及三位作者名基本完整；装饰图形产生一个无关符号。"},
+      "tags": ["小字", "重复检测", "截断"],
+      "evidence": [
+        {"region": "作者姓名", "original": "Jill Carter；Annabel Charles", "native": "Jill Carte；I Charles；Annabel Cha", "legacy": "Jill Carter；Annabel Charles", "note": "这里不只是空格差异，而是字符丢失及重叠片段。"}
+      ]
+    },
+    "pp-product-description": {
+      "native": {"rating": "good", "verdict": "品名、型号、容量及大段说明基本可读；细小字与括号仍值得核对。"},
+      "legacy": {"rating": "good", "verdict": "主要内容与主测接近，少数小块顺序不同；可作为较好的密集中文案例。"},
+      "tags": ["表现较好", "中英数字"],
+      "evidence": [
+        {"region": "商品核心信息", "original": "纯臻营养护发素；YM-X-3011；220ml", "native": "三项均正确读出", "legacy": "三项均正确读出", "note": "判为较好不等于确认每个配方字或标点全对。"}
+      ]
+    },
+    "pp-vertical-plaque": {
+      "native": {"rating": "mixed", "verdict": "主竖牌完整读出，副竖牌末尾有错字；输出次序与 DLL 不同。"},
+      "legacy": {"rating": "mixed", "verdict": "主牌同样完整，副牌也存在相同的末字混淆。"},
+      "tags": ["竖排", "错字"],
+      "evidence": [
+        {"region": "主牌", "original": "土地整治与土壤修复研究中心", "native": "土地整治与土壤修复研究中心", "legacy": "土地整治与土壤修复研究中心", "note": "这是当前版本能处理竖排的正面例子。"},
+        {"region": "副牌末尾", "original": "东圃", "native": "东图", "legacy": "东图", "note": "原图较小，字形相近，仍需人工核对。"}
+      ]
+    },
+    "pp-garden-sign": {
+      "native": {"rating": "mixed", "verdict": "酒店名、花园公寓名和地址大部可读，暗色小字及箭头有错识/拆分。"},
+      "legacy": {"rating": "mixed", "verdict": "主要地名相似，地址数字间隔被压缩，仍不能直接作为导航字段。"},
+      "tags": ["低对比度", "错字", "地址分隔"],
+      "evidence": [
+        {"region": "酒店名", "original": "上海斯格威铂尔曼大酒店", "native": "上海斯格威铂尔受大酒店", "legacy": "上海斯格威铂尔受大酒店", "note": "两版都有同样的局部字形混淆。"},
+        {"region": "下方地址", "original": "打浦路25 29 35号，附箭头", "native": "打浦路2529 35号→", "legacy": "打浦路252935号", "note": "数字保留不等于门牌关系被保留。"}
+      ]
+    },
+    "pp-wash-label": {
+      "native": {"rating": "problem", "verdict": "品牌和温度部分可读，但晾干指令错识，图标变成伪文字，熨烫说明被乱序切开。"},
+      "legacy": {"rating": "mixed", "verdict": "主要洗涤指令较完整，图标有误检，末段个别字仍错。"},
+      "tags": ["关键指令错识", "图标误检", "阅读顺序"],
+      "evidence": [
+        {"region": "晾干指令", "original": "悬挂晾干", "native": "悬扫", "legacy": "悬挂晾干", "note": "属于具体指令丢失，不能只因标题正确就判为好。"},
+        {"region": "熨烫说明", "original": "熨斗底板最高温度110℃", "native": "高温度110℃ / 熨斗底板最高", "legacy": "熨斗底板最高温度110℃", "note": "主测的切分和次序改变了自然阅读。"}
+      ]
+    },
+    "pp-math-exam": {
+      "native": {"rating": "mixed", "verdict": "标题和大部分算式可读；部分算式被拆行，跨列顺序不稳定。"},
+      "legacy": {"rating": "mixed", "verdict": "同样存在跨列及算式切分；有时把 × 写成 X。"},
+      "tags": ["算式分行", "多列顺序", "符号"],
+      "evidence": [
+        {"region": "乘法算式", "original": "0.02×500=；8.07×1000=", "native": "0.02 / X500=；8.07 / X1000=", "legacy": "0.02 / X500=；8.07 / X1000=", "note": "读到字符不等于恢复出完整算式；本次不求解题目。"}
+      ]
+    },
+    "pp-lab-table": {
+      "native": {"rating": "problem", "verdict": "表头和单元格严重乱序，部分数值截断，项目名与单位存在明显错识。"},
+      "legacy": {"rating": "mixed", "verdict": "项目与数值较完整，顺序更接近行扫描，但仍非结构化表格，局部单位和符号需核对。"},
+      "tags": ["表格关系", "阅读顺序", "数值截断", "错字"],
+      "evidence": [
+        {"region": "总蛋白结果", "original": "58.9（旁有下降标记）", "native": "58.", "legacy": "58.9V", "note": "主测少了关键数值位；对照保留数值但把标记并入字符串。"},
+        {"region": "检测项目", "original": "谷氨酰转肽酶", "native": "谷氯酰转肽臨", "legacy": "谷氨酰转肽酶", "note": "通用 OCR JSON 不承诺单元格重建，但文字错识和乱序均需单列。"}
+      ]
+    },
+    "easy-yuyuan-road": {
+      "native": {"rating": "problem", "verdict": "英文和门牌号可读，主中文路名首字识别错误。"},
+      "legacy": {"rating": "good", "verdict": "主路名、中英文、方位和门牌号均基本正确。"},
+      "tags": ["主名称错字"],
+      "evidence": [
+        {"region": "中文路名", "original": "愚园路", "native": "馬园路", "legacy": "愚园路", "note": "这是当前版本与原 DLL 很直观的字符识别差距。"},
+        {"region": "英文路名", "original": "Yuyuan Rd.", "native": "Yuyuan Rd.", "legacy": "Yuyuan Rd.", "note": "同图英文正确，不能用它掩盖中文主名称的错误。"}
+      ]
+    },
+    "easy-health-poster": {
+      "native": {"rating": "mixed", "verdict": "英文说明基本完整，但一行文字重复检测，多出截断片段。"},
+      "legacy": {"rating": "good", "verdict": "主要英文说明、行序和署名可读，没有主测的重复片段。"},
+      "tags": ["重复检测"],
+      "evidence": [
+        {"region": "最后一条说明", "original": "No unprotected contact with live wild / or farm animals", "native": "No unprotect / No unprotected contact with live wild / or farm animals", "legacy": "No unprotected contact with live wild / or farm animals", "note": "多出来的短片段是重复框，不是原图额外一行。"}
+      ]
+    },
+    "easy-paris-signposts": {
+      "native": {"rating": "good", "verdict": "多方向标牌主要法文基本读出，重音字母保留；个别 1/l 字形需核对。"},
+      "legacy": {"rating": "good", "verdict": "主要内容与主测一致，法文重音字符可读。"},
+      "tags": ["表现较好", "多方向", "字符歧义"],
+      "evidence": [
+        {"region": "两块主要标牌", "original": "LES ARTS DÉCORATIFS；Musée du LOUVRE", "native": "两处均正确读出", "legacy": "两处均正确读出", "note": "较好表示主内容可用，不代表所有小写 l 与数字 1 都已精标确认。"}
+      ]
+    },
+    "easy-minato-sign": {
+      "native": {"rating": "good", "verdict": "日英主要告示完整，标志图形被误读成一个多余的“园”。"},
+      "legacy": {"rating": "good", "verdict": "主要日文、英文和落款基本完整，未出现该额外字符。"},
+      "tags": ["表现较好", "图标误检"],
+      "evidence": [
+        {"region": "主标题", "original": "ポイ捨て禁止!；NO LITTER", "native": "两项均正确读出", "legacy": "两项均正确读出", "note": "主要信息可读。"},
+        {"region": "左下标志与落款", "original": "图形标志；港 区 MINATO CITY", "native": "园港 区 MINATO CITY", "legacy": "港 区 MINATO CITY", "note": "这里的“园”是多余输出，已在较好等级中明确保留该问题。"}
+      ]
+    },
+    "dewarp-cooking-page": {
+      "native": {"rating": "problem", "verdict": "大部分英文能读出，但按几何位置混排，标题、段首、段尾互相穿插。"},
+      "legacy": {"rating": "good", "verdict": "原始方向下能恢复较连贯的标题和段落顺序，多数正文可读。"},
+      "tags": ["阅读顺序", "书页弯曲"],
+      "evidence": [
+        {"region": "书页开头和段落", "original": "页码/书名后进入 Gravy 段落，再到 Braised Chicken", "native": "L0 Serve with a sauce made from stock；L5 才出现书名；L26 才出现 Gravy", "legacy": "L0 页码；L1 书名；L2 Gravy；L12 Braised Chicken", "note": "主要差别是阅读顺序，并非英文全部识别失败。"}
+      ]
+    },
+    "dewarp-thesis-table": {
+      "native": {"rating": "problem", "verdict": "阴影下的普通英文尚可，音标/词表条目被过度切碎，释义与条目错位。"},
+      "legacy": {"rating": "mixed", "verdict": "大部分条目链接较合理，仍有特殊音标和末段顺序问题。"},
+      "tags": ["过度切分", "条目对应", "音标"],
+      "evidence": [
+        {"region": "词表后半段", "original": "Three syllable 等标签、词形、音标与释义依行对应", "native": "Three sy 与 syllable /embreva 分开；octopus 被拆为 'oct 与 ctopus'", "legacy": "Three syllable /embreva/；'octopus'", "note": "细长弯曲行的切分质量有明显差距。"}
+      ]
+    },
+    "dewarp-thesis-wordlist": {
+      "native": {"rating": "problem", "verdict": "单个词组大多可辨，但多列表格被横向交织，代词类别和例句对应关系难以直接使用。"},
+      "legacy": {"rating": "mixed", "verdict": "较多按列组织，仍有句子顺序和符号问题；没有恢复成单元格结构。"},
+      "tags": ["多列阅读顺序", "字段关系"],
+      "evidence": [
+        {"region": "首个词表区块", "original": "分别按 1.tl in、2.tl、3.tl 等列读取", "native": "开头 2.pl、1.pl in、3.tl、2.tl 等列标题先混排，再散列词组与例句", "legacy": "先输出 1.tl in 对应的多组词形及例句，再进入 2.tl", "note": "不把与参照版本的所有差异一律视为错字，重点核查原图列关系。"}
+      ]
+    },
+    "psm-whole-foods-receipt": {
+      "native": {"rating": "problem", "verdict": "金额多能读到，但商品、价格及附加标记拆得很碎，几处价格先于商品，配对不可靠。"},
+      "legacy": {"rating": "mixed", "verdict": "大体维持商品后接价格的次序，仍分成很多片段，并未生成结构化明细。"},
+      "tags": ["小票配行", "过度切分", "阅读顺序"],
+      "evidence": [
+        {"region": "首行商品与金额", "original": "365 BACON LS NP；4.99 F", "native": "F / 4.99 / BACON LS NP / 365", "legacy": "365 / BACON LS NP / 4.99 F", "note": "小票中本来有多条重复购买的 BACON，不能把合法重复商品误判成重复检测。"},
+        {"region": "合计", "original": "BAL 101.33", "native": "BAL；101.33", "legacy": "BAL；101.33", "note": "合计读对仍不足以证明整张小票可用。"}
+      ]
+    },
+    "psm-sherlock-page": {
+      "native": {"rating": "good", "verdict": "章节和大段英文正文整体连贯；首字下沉的 M 被放到残余首行之后。"},
+      "legacy": {"rating": "good", "verdict": "正文整体可读；首字下沉也单列，但顺序更接近自然阅读。"},
+      "tags": ["表现较好", "首字下沉"],
+      "evidence": [
+        {"region": "首句", "original": "Mr. Sherlock Holmes, who was usually very late ...", "native": "r. Sherlock Holmes... / M / ings, save...", "legacy": "M / r. Sherlock Holmes... / ings, save...", "note": "正文大部可用，首字下沉尚未与首行正确合并。"}
+      ]
+    },
+    "psm-license-plate": {
+      "native": {"rating": "mixed", "verdict": "整行读出，输出 MHO4DW8351；牌号中的 0/O 歧义仍需精标确认。"},
+      "legacy": {"rating": "mixed", "verdict": "与主测输出相同；不因两版一致就断言编号完全正确。"},
+      "tags": ["编号字符歧义", "需精标确认"],
+      "evidence": [
+        {"region": "整条牌号", "original": "紧凑的牌号字形；0 与 O 辨识需要单独确认", "native": "MHO4DW8351", "legacy": "MHO4DW8351", "note": "此处没有建立可靠的整串字符真值；不借用网上另一引擎的输出当作答案。"}
+      ]
+    },
+    "psm-designer-word": {
+      "native": {"rating": "good", "verdict": "Designer 单词完整正确，倾斜牌面未造成明显识别问题。"},
+      "legacy": {"rating": "good", "verdict": "同样正确输出 Designer。"},
+      "tags": ["表现较好"],
+      "evidence": [
+        {"region": "整词", "original": "Designer", "native": "Designer", "legacy": "Designer", "note": "可明确核对的正面样本。"}
+      ]
+    },
+    "psm-sparse-web-menu": {
+      "native": {"rating": "mixed", "verdict": "菜单条目基本找全，但 Working with Video 被拆开并倒序输出。"},
+      "legacy": {"rating": "mixed", "verdict": "条目更完整，仍有 IoT 的 I/l 歧义及项目符号夹入。"},
+      "tags": ["分行", "阅读顺序", "字符歧义"],
+      "evidence": [
+        {"region": "菜单条目", "original": "Working with Video", "native": "with Video / Working", "legacy": "Working with Video", "note": "即使总文字覆盖较好，也需要复核阅读顺序。"}
+      ]
+    },
+    "psm-old-engine-title": {
+      "native": {"rating": "good", "verdict": "完整输出标题与末尾句号。"},
+      "legacy": {"rating": "good", "verdict": "与主测相同，完整输出标题。"},
+      "tags": ["表现较好"],
+      "evidence": [
+        {"region": "整行", "original": "THE OLD ENGINE.", "native": "THE OLD ENGINE.", "legacy": "THE OLD ENGINE.", "note": "可明确核对的正面样本。"}
+      ]
+    },
+    "quality-heavy-ink": {
+      "native": {"rating": "mixed", "verdict": "左侧项目名可读，右侧 No 与左侧项目的线性对应次序不稳定。"},
+      "legacy": {"rating": "good", "verdict": "项目名和右侧 No 大体交替输出，引导点线没有造成大面积漏读。"},
+      "tags": ["列配对", "点线"],
+      "evidence": [
+        {"region": "前三个项目", "original": "Cattle / Horses / Sheep 各自对应右侧 No", "native": "Cattle / No.. / No.. / Horses / No.. / Sheep", "legacy": "Cattle / No.. / Horses / No.. / Sheep / No..", "note": "字符正确与字段对应正确分开评价。"}
+      ]
+    },
+    "quality-noisy-fraktur": {
+      "native": {"rating": "mixed", "verdict": "希腊文标题及不少正文可辨，第一行正文漏掉，脚注区有明显碎片；未逐字校对古希腊文。"},
+      "legacy": {"rating": "mixed", "verdict": "保留了更多开头正文，脚注小字仍混杂乱码及符号错误。"},
+      "tags": ["噪声", "漏行", "脚注小字", "元数据纠错"],
+      "evidence": [
+        {"region": "页眉", "original": "ΘΕΟΔΩΡΗΤΟΥ", "native": "ΘΕΟΔΩΡΗΤΟΥ", "legacy": "ΘΕΟΔΩΡΗΤΟΥ", "note": "可确认属于希腊文字母；原库的德文标签已纠正。"},
+        {"region": "正文第一行", "original": "页眉下第一条完整正文行", "native": "直接从下一条 ό της... 开始", "legacy": "保留以 θεών τον πλάνον... 开始的首行", "note": "此判断检查覆盖范围；没有对整页重音符号和语义做完整精标。"}
+      ]
+    },
+    "digits-thermostat": {
+      "native": {"rating": "problem", "verdict": "核心温度数值错误：丢失小数点，单位附近还并入一个 0。"},
+      "legacy": {"rating": "problem", "verdict": "核心数值也没有保留小数点；不能把 345 当作 34.5 使用。"},
+      "tags": ["核心读数错误", "小数点丢失", "单位"],
+      "evidence": [
+        {"region": "液晶读数", "original": "34.5 °C", "native": "3450", "legacy": "345", "note": "这是两版都明显不可靠的场景；原文的七段编码方法值得后续单独比较。"}
+      ]
+    },
+    "cards-template-input": {
+      "native": {"rating": "mixed", "verdict": "主卡号、有效期和姓名可读，但细小英文标签有多处明显乱码。"},
+      "legacy": {"rating": "mixed", "verdict": "主卡号同样正确，标签比主测完整，仍有细字错误。"},
+      "tags": ["主字段较好", "小字错识"],
+      "evidence": [
+        {"region": "主卡号", "original": "5476 7678 9876 5432", "native": "5476 7678 9876 5432", "legacy": "5476 7678 9876 5432", "note": "这是受约束主字段的正面结果；图片为原文演示卡截图。"},
+        {"region": "日期附近的小标签", "original": "MONTH YEAR 等细字", "native": "TEAR；BAHINEH；arTA", "legacy": "MONTH YEAR；另有 TÂU", "note": "不能把主卡号正确扩展成整图文字都正确。"}
+      ]
+    },
+    "structure-paper-table": {
+      "native": {"rating": "mixed", "verdict": "多数方法名与数值可读，但丢失 R/P/F 等表头，部分数值错识，输出顺序破坏行列关系。"},
+      "legacy": {"rating": "mixed", "verdict": "表头与首行数字更完整，多数顺序按行展开；仍没有单元格结构，个别符号需核对。"},
+      "tags": ["表头漏检", "数值错识", "表格关系"],
+      "evidence": [
+        {"region": "表头", "original": "Methods / R / P / F / FPS", "native": "FPS / Methods（没有独立读出 R/P/F）", "legacy": "Methods / R / P / F / FPS", "note": "缺表头使数字字段难以解释。"},
+        {"region": "SegLink 行 FPS", "original": "8.9", "native": "68", "legacy": "8.9", "note": "主测数值错识，不仅是字段排序差异。"}
+      ]
+    }
+  }
+}

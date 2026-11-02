@@ -375,9 +375,9 @@ python scripts/ocr-classics.py check-links
 
 辅助材料：[ 腐蚀处理后的旧表单 ](references/quality-erosion-comparison.png)（原文预处理结果，不计入输入）。
 
-#### 27 · 旧德文扫描：噪声与密集字形
+#### 27 · 旧希腊文扫描：噪声与密集字形
 
-[![旧德文扫描：噪声与密集字形](thumbnails/quality-noisy-fraktur.jpg)](images/quality-noisy-fraktur.png)
+[![旧希腊文扫描：噪声与密集字形](thumbnails/quality-noisy-fraktur.jpg)](images/quality-noisy-fraktur.png)
 
 [输入原图](images/quality-noisy-fraktur.png) · 370 × 600 · [原文：Improving the quality of the output](https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html)
 
@@ -385,7 +385,7 @@ python scripts/ocr-classics.py check-links
 - 原文方案：原文讨论去噪及二值化无法自动解决所有噪声问题。
 - 收录理由：把字体覆盖与图像噪声同时保留下来，避免将困难全部归因于模型。
 - 原文结果（非真值）：原文此处用于说明噪声，没有提供该图的逐字 OCR 真值。
-- 标签：德文、旧扫描、噪声、密集文字；标注：未精标。
+- 标签：希腊文、旧扫描、噪声、密集文字；标注：未精标。
 
 ### 专用数字识别
 
