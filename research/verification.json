@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-02",
+  "goal_complete": false,
+  "parity": "incomplete",
+  "model_source_sha256": "8ce0e666a3d78977152fe9676ae0636ea1c63c360442253aed3e90a9a0dc9cf1",
+  "model_resources": 67,
+  "onnx_graphs": 34,
+  "vocabularies": {
+    "arabic": 221,
+    "cjk": 32632,
+    "cyrillic": 415,
+    "devanagari": 237,
+    "greek": 244,
+    "hebrew": 201,
+    "latin": 548,
+    "tamil": 179,
+    "thai": 199
+  },
+  "private_layer_conversions": 23,
+  "private_layer_max_absolute_error": 1.767277717590332e-05,
+  "platforms": {
+    "windows-x64": {
+      "native_build": "passed",
+      "native_unit_tests": true,
+      "ort_source_build": true,
+      "ort_commit": "a83fc4d58cb48eb68890dd689f94f28288cf2278",
+      "ort_dll_sha256": "f91839182f99548847810c9d4c5a9655dc85b3b7321d540b9ba1b25db34e48e9",
+      "api_integration": [
+        "file versus padded BGRA exact result equivalence",
+        "six concurrent calls on one context",
+        "two concurrent independent contexts",
+        "missing image leaves JSON null with image error",
+        "max_lines=1",
+        "existing invalid image leaves JSON null with image error",
+        "corrupt vocabulary rejected before inference; source assets unchanged"
+      ],
+      "legacy_api_adapter": true
+    },
+    "linux-x64": {
+      "native_build": "passed",
+      "offline_run": true,
+      "network_probe": "[Errno 101] Network is unreachable",
+      "forbidden_modules": [],
+      "ort_origin": "checksum-verified official v1.23.2 CPU SDK; Linux ORT source build not executed",
+      "native_matches_windows": true
+    },
+    "linux-arm64": {
+      "native_build": "not_verified",
+      "native_run": "not_verified"
+    },
+    "macos-x64": {
+      "native_build": "not_verified",
+      "native_run": "not_verified"
+    },
+    "macos-arm64": {
+      "native_build": "not_verified",
+      "native_run": "not_verified"
+    },
+    "android-arm64": {
+      "native_build": "not_verified",
+      "native_run": "not_verified",
+      "java_example_compile": true
+    }
+  },
+  "corpus": {
+    "process_successes": 27,
+    "original_wrapper_successes": 27,
+    "total": 27,
+    "strict_parity_passes": 1,
+    "strict_parity_total": 27,
+    "mean_native_seconds_including_startup": 0.4962573926011963,
+    "max_native_peak_working_set_bytes": 152502272,
+    "coverage_gaps": [
+      "No independently sourced real handwriting fixture is present."
+    ]
+  },
+  "book_sample": {
+    "original_lines": 105,
+    "native_lines": 123,
+    "reference_lines": 58,
+    "native_strict_parity": false,
+    "reference_strict_parity": false
+  },
+  "default_plugin_native_integration": true,
+  "remaining": [
+    "Exact region linking, curved-line rectification and line suppression",
+    "Reading order, line/word segmentation and word quadrilateral alignment",
+    "Original 21-feature rejection/confidence extraction and integration",
+    "Complete handwritten and orientation decision logic",
+    "Real handwriting fixtures and target device verification"
+  ],
+  "case": "work/oneocr-portable"
+}

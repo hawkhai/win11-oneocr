@@ -1,0 +1,8 @@
+# The package.json allowlist includes staged native bin/lib directories.
+# Override .gitignore so locally staged runtimes can enter an explicit npm pack.
+/work/
+/models/
+/.research-python/
+/build/
+/node_modules/
+**/*.pdb

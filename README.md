@@ -1,5 +1,25 @@
 # Windows 11 Snipping Tool OCR (OneOCR)
 
+## Native source runtime — experimental
+
+The repository now contains a C++20/CMake backend that runs independently of
+the original OneOCR DLL. Windows x64 and Linux x64 builds have been tested;
+Linux inference also passed in a network namespace with no outbound route.
+Model preparation can unpack the existing local `.onemodel` without loading
+Microsoft DLLs. Android/macOS configurations and an Android JNI example are
+included but have not been verified on those targets.
+
+**Full DLL parity is not achieved:** the strict 27-case comparison currently
+passes 1 case. Text, geometry, ordering and calibrated word confidence still
+differ. Native results expose `engine.parity = "incomplete"`.
+
+See [native build and API instructions](docs/portable.md),
+[research report](docs/2026-11-02_oneocr-source-report.md) and
+[component/model notices](THIRD_PARTY_NOTICES.md). The Windows DLL-dependent
+implementation documented below remains available as the optional legacy
+backend. The plugin now defaults to the portable backend; use `backend: legacy`
+explicitly for the old Windows executable.
+
 Offline OCR engine extracted from the Windows 11 Snipping Tool, with full-featured C++ CLI, reusable DLL wrapper, and Python visualization.
 
 Based on: https://b1tg.github.io/post/win11-oneocr/
@@ -194,4 +214,7 @@ cl /EHsc /O2 oneocr_test.cpp /Fe:oneocr_test.exe
 
 ## License
 
-MIT
+Native runtime and plugin code retain this project's MIT designation.
+The standalone `scripts/unpack-onemodel.py` preparation utility is separately
+AGPL-3.0-only. Microsoft model assets are not covered by either code license.
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

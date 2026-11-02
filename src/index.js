@@ -9,6 +9,8 @@ export const name = 'win11-oneocr'
 export const inject = ['tools']
 
 const DEFAULT_OCR_BIN = fileURLToPath(new URL('../bin/ocr.exe', import.meta.url))
+const PORTABLE_OCR_BIN = fileURLToPath(new URL(`../artifacts/${process.platform}-${process.arch}/bin/ocr${process.platform === 'win32' ? '.exe' : ''}`, import.meta.url))
+const DEFAULT_MODEL_DIR = fileURLToPath(new URL('../models', import.meta.url))
 
 function positiveInteger(value, fallback, label) {
   const resolved = value === undefined ? fallback : value
@@ -78,13 +80,16 @@ function plainText(result) {
 }
 
 export function apply(ctx, config = {}) {
-  const ocrBin = typeof config.ocrBin === 'string' && config.ocrBin ? resolve(config.ocrBin) : DEFAULT_OCR_BIN
+  const backend = config.backend ?? 'portable'
+  if (!['portable', 'legacy'].includes(backend)) throw new Error('backend must be portable or legacy')
+  const ocrBin = typeof config.ocrBin === 'string' && config.ocrBin ? resolve(config.ocrBin) : backend === 'legacy' ? DEFAULT_OCR_BIN : PORTABLE_OCR_BIN
+  const modelDir = typeof config.modelDir === 'string' && config.modelDir ? resolve(config.modelDir) : DEFAULT_MODEL_DIR
   const timeoutMs = positiveInteger(config.timeoutMs, 60_000, 'timeoutMs')
   const maxOutputBytes = positiveInteger(config.maxOutputBytes, 4 * 1024 * 1024, 'maxOutputBytes')
 
   ctx.tools.register(defineTool({
     name: 'oneocr_recognize',
-    description: 'Recognize text in a local image with the offline Windows 11 OneOCR engine. Returns plain text plus the engine JSON with line/word polygons, confidence, rotation, and handwriting style.',
+    description: 'Recognize text in a local image with offline OneOCR. The portable native backend runs on supported desktop platforms; its JSON includes capability and parity status. Returns plain text and structured line/word results.',
     parameters: {
       image_path: { type: 'string', required: true, description: 'Absolute path, or a path relative to the current session workspace.' },
       max_lines: { type: 'integer', description: 'Maximum recognition lines (1-1000). Default: 1000.' },
@@ -105,7 +110,7 @@ export function apply(ctx, config = {}) {
     isConcurrencySafe: () => true,
     async execute(args, exec) {
       if (exec.signal?.aborted) throw new Error('OneOCR call aborted')
-      if (process.platform !== 'win32') throw new Error('OneOCR requires Windows 11')
+      if (backend === 'legacy' && process.platform !== 'win32') throw new Error('The legacy OneOCR backend requires Windows')
       if (typeof args.image_path !== 'string' || !args.image_path.trim()) throw new Error('image_path must be a non-empty string')
       const maxLines = positiveInteger(args.max_lines, 1000, 'max_lines')
       if (maxLines > 1000) throw new Error('max_lines must not exceed 1000')
@@ -115,6 +120,7 @@ export function apply(ctx, config = {}) {
       const tempDir = await fs.mkdtemp(join(tmpdir(), 'dsh-oneocr-'))
       const outputPath = join(tempDir, 'result.json')
       const argv = [sessionPath(args.image_path, exec), '--output', outputPath, '--max-lines', String(maxLines), '--quiet']
+      if (backend === 'portable') argv.push('--model-dir', modelDir)
       if (hasWidth) {
         argv.push('--resize', `${positiveInteger(args.resize_width, 0, 'resize_width')}x${positiveInteger(args.resize_height, 0, 'resize_height')}`)
       }
