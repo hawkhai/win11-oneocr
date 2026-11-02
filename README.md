@@ -32,6 +32,12 @@ The bundle defaults to the prebuilt `bin/ocr.exe` and its adjacent runtime files
 | **Raw Buffer OCR** | `ocrImageRaw()` for in-memory BGRA pixel buffers (no file I/O) |
 | **Visualization** | Python script with confidence-colored word boxes and style labels |
 
+## Classic OCR Sample Library
+
+The [Chinese case index](samples/ocr-classics/README.md) contains 30 independently sourced OCR inputs from 9 articles or official documents, plus 16 reference images. It covers OpenCV, Tesseract, PaddleOCR, EasyOCR, and CnOCR, with 12 Chinese or mixed Chinese/English inputs. Source attribution and image permissions are recorded separately in the corpus manifest; these materials do not inherit this repository's code license.
+
+Run `python scripts/ocr-classics.py verify` for offline validation, or `python scripts/ocr-classics.py fetch` to restore the frozen collection. The samples are unannotated research materials, not recognition ground truth.
+
 ## Prerequisites
 
 - Windows 11 (tested on 23H2+)

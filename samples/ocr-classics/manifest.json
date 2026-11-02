@@ -1,0 +1,1530 @@
+{
+  "schema_version": 1,
+  "title": "传统 OCR 经典案例样本库",
+  "curated_on": "2026-11-02",
+  "acceptance": {
+    "input_count": 30,
+    "min_chinese_inputs": 12,
+    "min_input_sources": 8,
+    "max_inputs_per_source": 6
+  },
+  "annotation_policy": "所有样本未精标；原文识别结果只作参考，不作为文字或阅读顺序真值。",
+  "groups": {
+    "chinese-layout": "中文排版与混排",
+    "scene-text": "路牌、封面与场景文字",
+    "receipts-labels": "票据与商品标签",
+    "warped-pages": "弯曲书页与阴影",
+    "layout-segmentation": "Tesseract 版面分割",
+    "image-quality": "旧扫描与图像质量",
+    "special-digits": "专用数字识别",
+    "tables": "表格与列关系"
+  },
+  "sources": {
+    "cnocr": {
+      "title": "CnOCR：不同场景的使用方法",
+      "author": "Breezedeus / CnOCR contributors",
+      "article_url": "https://github.com/breezedeus/CnOCR/blob/master/README.md",
+      "published_on": null,
+      "snapshot_url": "https://github.com/breezedeus/CnOCR/blob/4686db2e08952e7a7843d35b200d00f428efde7b/README.md",
+      "license": {
+        "repository_license": "Apache-2.0（仓库代码）",
+        "asset_license": "not_separately_specified",
+        "evidence_url": "https://github.com/breezedeus/CnOCR/blob/4686db2e08952e7a7843d35b200d00f428efde7b/LICENSE",
+        "note": "Apache-2.0（仓库代码）；未发现针对所选图片的单独许可声明，保留原来源权利信息。"
+      },
+      "note": null
+    },
+    "paddle": {
+      "title": "PaddleOCR 2.x 快速开始",
+      "author": "PaddleOCR contributors",
+      "article_url": "https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version2.x/ppocr/quick_start.md",
+      "published_on": null,
+      "snapshot_url": "https://github.com/PaddlePaddle/PaddleOCR/blob/dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf/docs/version2.x/ppocr/quick_start.md",
+      "license": {
+        "repository_license": "Apache-2.0（仓库代码）",
+        "asset_license": "not_separately_specified",
+        "evidence_url": "https://github.com/PaddlePaddle/PaddleOCR/blob/dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf/LICENSE",
+        "note": "Apache-2.0（仓库代码）；未发现针对所选图片的单独许可声明，保留原来源权利信息。"
+      },
+      "note": "输入来自原文链接的官方 ppocr_img.zip 测试图片包；原文重点演示 11.jpg，其余为配套样图。"
+    },
+    "easyocr": {
+      "title": "EasyOCR 官方使用与多语言示例",
+      "author": "JaidedAI / EasyOCR contributors",
+      "article_url": "https://github.com/JaidedAI/EasyOCR",
+      "published_on": null,
+      "snapshot_url": "https://github.com/JaidedAI/EasyOCR/blob/363afb184047ce452e436f4224f3098422df872e/README.md",
+      "license": {
+        "repository_license": "Apache-2.0（仓库代码）",
+        "asset_license": "not_separately_specified",
+        "evidence_url": "https://github.com/JaidedAI/EasyOCR/blob/363afb184047ce452e436f4224f3098422df872e/LICENSE",
+        "note": "Apache-2.0（仓库代码）；未发现针对所选图片的单独许可声明，保留原来源权利信息。"
+      },
+      "note": "chinese.jpg 是正文命令示例；其余为官方 examples 目录的配套输入。"
+    },
+    "dewarp": {
+      "title": "Page dewarping",
+      "author": "Matt Zucker",
+      "article_url": "https://mzucker.github.io/2016/08/15/page-dewarping.html",
+      "published_on": "2016-08-15",
+      "snapshot_url": null,
+      "license": {
+        "repository_license": "MIT（仓库代码）",
+        "asset_license": "not_separately_specified",
+        "evidence_url": "https://github.com/mzucker/page_dewarp/blob/d3257d7b564bff994187a872d00537bc2fda7d3d/LICENSE.txt",
+        "note": "MIT（仓库代码）；未发现针对所选图片的单独许可声明，保留原来源权利信息。"
+      },
+      "note": "输入固定到配套 GitHub 仓库提交；原文网站对照图另存为辅助材料。"
+    },
+    "psm": {
+      "title": "Tesseract Page Segmentation Modes (PSMs) Explained",
+      "author": "Adrian Rosebrock",
+      "article_url": "https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/",
+      "published_on": "2021-11-15",
+      "snapshot_url": null,
+      "license": {
+        "repository_license": "未发现素材复用许可；原网站版权信息",
+        "asset_license": "not_separately_specified",
+        "evidence_url": null,
+        "note": "未发现素材复用许可；原网站版权信息；未发现针对所选图片的单独许可声明，保留原来源权利信息。"
+      },
+      "note": null
+    },
+    "quality": {
+      "title": "Improving the quality of the output",
+      "author": "Tesseract documentation contributors",
+      "article_url": "https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html",
+      "published_on": null,
+      "snapshot_url": "https://github.com/tesseract-ocr/tessdoc/blob/11ab4f99a5c30f2769b33a8135e7b569ccb9c633/ImproveQuality.md",
+      "license": {
+        "repository_license": "未在所选文档中发现单独的图片许可",
+        "asset_license": "not_separately_specified",
+        "evidence_url": "https://github.com/tesseract-ocr/tessdoc/blob/11ab4f99a5c30f2769b33a8135e7b569ccb9c633/ImproveQuality.md",
+        "note": "未在所选文档中发现单独的图片许可；未发现针对所选图片的单独许可声明，保留原来源权利信息。"
+      },
+      "note": null
+    },
+    "digits": {
+      "title": "Recognizing digits with OpenCV and Python",
+      "author": "Adrian Rosebrock",
+      "article_url": "https://pyimagesearch.com/2017/02/13/recognizing-digits-with-opencv-and-python/",
+      "published_on": "2017-02-13",
+      "snapshot_url": null,
+      "license": {
+        "repository_license": "未发现素材复用许可；原网站版权信息",
+        "asset_license": "not_separately_specified",
+        "evidence_url": null,
+        "note": "未发现素材复用许可；原网站版权信息；未发现针对所选图片的单独许可声明，保留原来源权利信息。"
+      },
+      "note": null
+    },
+    "cards": {
+      "title": "Credit card OCR with OpenCV and Python",
+      "author": "Adrian Rosebrock",
+      "article_url": "https://pyimagesearch.com/2017/07/17/credit-card-ocr-with-opencv-and-python/",
+      "published_on": "2017-07-17",
+      "snapshot_url": null,
+      "license": {
+        "repository_license": "未发现素材复用许可；原网站版权信息",
+        "asset_license": "not_separately_specified",
+        "evidence_url": null,
+        "note": "未发现素材复用许可；原网站版权信息；未发现针对所选图片的单独许可声明，保留原来源权利信息。"
+      },
+      "note": "原文声明使用演示卡图片；所收录为输入示意窗口截图，不是识别结果图。"
+    },
+    "structure": {
+      "title": "PP-Structure 快速使用",
+      "author": "PaddleOCR contributors",
+      "article_url": "https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version2.x/ppstructure/quick_start.md",
+      "published_on": null,
+      "snapshot_url": "https://github.com/PaddlePaddle/PaddleOCR/blob/dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf/docs/version2.x/ppstructure/quick_start.md",
+      "license": {
+        "repository_license": "Apache-2.0（仓库代码）",
+        "asset_license": "not_separately_specified",
+        "evidence_url": "https://github.com/PaddlePaddle/PaddleOCR/blob/dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf/LICENSE",
+        "note": "Apache-2.0（仓库代码）；未发现针对所选图片的单独许可声明，保留原来源权利信息。"
+      },
+      "note": "使用 table.jpg 原始表格截图；不同时收录含有相同表格的整页论文。"
+    },
+    "receipt": {
+      "title": "Automatically OCR’ing Receipts and Scans",
+      "author": "Adrian Rosebrock",
+      "article_url": "https://pyimagesearch.com/2021/10/27/automatically-ocring-receipts-and-scans/",
+      "published_on": "2021-10-27",
+      "snapshot_url": null,
+      "license": {
+        "repository_license": "未发现素材复用许可；原网站版权信息",
+        "asset_license": "not_separately_specified",
+        "evidence_url": null,
+        "note": "未发现素材复用许可；原网站版权信息；未发现针对所选图片的单独许可声明，保留原来源权利信息。"
+      },
+      "note": "公开可获取的是输入与处理结果拼图，仅保存为辅助材料，不计独立输入。"
+    }
+  },
+  "downloads": {
+    "paddle-demo": {
+      "url": "https://paddleocr.bj.bcebos.com/dygraph_v2.1/ppocr_img.zip",
+      "sha256": "559330f48e00a7d3193fca130e8d20f8826a830c6c9bf777aa3863052edbd7b1",
+      "bytes": 28964647,
+      "note": "官方测试图片包；只按成员名读取所选图片，不释放字体或其他文件。"
+    }
+  },
+  "cases": [
+    {
+      "name": "cn-train-ticket",
+      "number": 1,
+      "title": "火车票：多种字号与遮挡",
+      "file": "images/cn-train-ticket.jpeg",
+      "source_id": "cnocr",
+      "source": "https://github.com/breezedeus/CnOCR/blob/master/README.md",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "tags": [
+        "中文",
+        "票据",
+        "多字号",
+        "遮挡"
+      ],
+      "group": "receipts-labels",
+      "challenge": "站名、车次、日期、价格分散排布，票面含纹理，部分信息被遮挡。",
+      "approach": "CnOCR 先检测文字区域，再逐区域识别。",
+      "why_classic": "真实票据同时考验定位与字符识别；遮挡内容不能靠上下文补写。",
+      "article_result": "原文给出车票识别效果图；本库未转录为真值。",
+      "references": [
+        "cn-ticket-result"
+      ],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://raw.githubusercontent.com/breezedeus/CnOCR/4686db2e08952e7a7843d35b200d00f428efde7b/docs/examples/huochepiao.jpeg",
+      "width": 1368,
+      "height": 930,
+      "format": "JPEG",
+      "bytes": 441320,
+      "sha256": "651a7be4afcfc53efb71e9a19521637fac002594919f945186830e76f16349ce"
+    },
+    {
+      "name": "cn-vertical-ad",
+      "number": 2,
+      "title": "商品广告：竖排与横排共存",
+      "file": "images/cn-vertical-ad.png",
+      "source_id": "cnocr",
+      "source": "https://github.com/breezedeus/CnOCR/blob/master/README.md",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "tags": [
+        "中文",
+        "竖排",
+        "广告",
+        "混合方向"
+      ],
+      "group": "chinese-layout",
+      "challenge": "包装瓶身、横排标题和左右竖排促销文字共存，字色接近背景。",
+      "approach": "原文使用支持竖排的专用识别模型处理该例。",
+      "why_classic": "竖排不只出现在古籍，电商广告也是典型场景。",
+      "article_result": "原文给出竖排识别展示；未将其认作阅读顺序真值。",
+      "references": [
+        "cn-vertical-result"
+      ],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://raw.githubusercontent.com/breezedeus/CnOCR/4686db2e08952e7a7843d35b200d00f428efde7b/docs/examples/shupai.png",
+      "width": 1001,
+      "height": 807,
+      "format": "PNG",
+      "bytes": 892327,
+      "sha256": "fa09ac67ef17238b740fb68e3a86e1b46ca5d1015a78d81a478a55a4621acf3a"
+    },
+    {
+      "name": "cn-traditional-sutra",
+      "number": 3,
+      "title": "金色底纹上的繁体经文",
+      "file": "images/cn-traditional-sutra.jpg",
+      "source_id": "cnocr",
+      "source": "https://github.com/breezedeus/CnOCR/blob/master/README.md",
+      "languages": [
+        "zh"
+      ],
+      "tags": [
+        "繁体中文",
+        "背景纹理",
+        "密集文字"
+      ],
+      "group": "chinese-layout",
+      "challenge": "繁体字笔画密集，文字落在有纹理的金色底图上。",
+      "approach": "原文为繁体中文选择相应语言与识别模型。",
+      "why_classic": "可以观察简繁字符覆盖与背景对细笔画的共同影响。",
+      "article_result": "原文展示繁体识别效果；本库未逐字核对。",
+      "references": [
+        "cn-traditional-result"
+      ],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://raw.githubusercontent.com/breezedeus/CnOCR/4686db2e08952e7a7843d35b200d00f428efde7b/docs/examples/fanti.jpg",
+      "width": 1270,
+      "height": 946,
+      "format": "JPEG",
+      "bytes": 342164,
+      "sha256": "558913b23995d15397bbb321248981cd85188ad9613a3005ecad9c875f367dec"
+    },
+    {
+      "name": "cn-wrapped-paragraph",
+      "number": 4,
+      "title": "小尺寸中文段落与断行",
+      "file": "images/cn-wrapped-paragraph.png",
+      "source_id": "cnocr",
+      "source": "https://github.com/breezedeus/CnOCR/blob/master/README.md",
+      "languages": [
+        "zh"
+      ],
+      "tags": [
+        "中文",
+        "小字",
+        "多行",
+        "断行"
+      ],
+      "group": "chinese-layout",
+      "challenge": "300 像素宽的文字块存在标点、连字符和跨行断词。",
+      "approach": "原文使用 naive_det 按简单排版规则切行，再识别。",
+      "why_classic": "朴素分行在干净截图上仍有价值，适合与复杂检测流程对照。",
+      "article_result": "原文列有逐行识别输出；本库保持未精标。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://raw.githubusercontent.com/breezedeus/CnOCR/4686db2e08952e7a7843d35b200d00f428efde7b/docs/examples/multi-line_cn1.png",
+      "width": 300,
+      "height": 187,
+      "format": "PNG",
+      "bytes": 44361,
+      "sha256": "0afff0fd508fa2224067f3c3fcdf1ce535147af9679d40c1e28911e372144dfe"
+    },
+    {
+      "name": "cn-single-line-mixed",
+      "number": 5,
+      "title": "Hello world!你好世界：单行混排",
+      "file": "images/cn-single-line-mixed.jpg",
+      "source_id": "cnocr",
+      "source": "https://github.com/breezedeus/CnOCR/blob/master/README.md",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "tags": [
+        "中英混排",
+        "单行",
+        "低高度"
+      ],
+      "group": "chinese-layout",
+      "challenge": "图像只有 32 像素高，拉丁字符、中文和标点紧邻。",
+      "approach": "原文使用 ocr_for_single_line，省去整图检测。",
+      "why_classic": "同一任务的单行接口与整图接口适用条件清晰，且容易观察中英切换。",
+      "article_result": "原文演示单行识别调用；本库未标注字符真值。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://raw.githubusercontent.com/breezedeus/CnOCR/4686db2e08952e7a7843d35b200d00f428efde7b/docs/examples/helloworld.jpg",
+      "width": 256,
+      "height": 32,
+      "format": "JPEG",
+      "bytes": 3925,
+      "sha256": "337533e2e614050c484797420f080a9b251a61a01acb22d42fb997900a921570"
+    },
+    {
+      "name": "cn-english-book-cover",
+      "number": 6,
+      "title": "英文教材封面：装饰与小字",
+      "file": "images/cn-english-book-cover.jpeg",
+      "source_id": "cnocr",
+      "source": "https://github.com/breezedeus/CnOCR/blob/master/README.md",
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "英文",
+        "封面",
+        "装饰背景",
+        "多字号"
+      ],
+      "group": "scene-text",
+      "challenge": "封面大标题、斜向装饰和低分辨率出版小字混在一起。",
+      "approach": "原文改用英文检测与识别模型。",
+      "why_classic": "文字不多却有明显层次，适合观察英文专用模型与通用模型差异。",
+      "article_result": "原文提供英文模型识别示例；未将输出转录为真值。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://raw.githubusercontent.com/breezedeus/CnOCR/4686db2e08952e7a7843d35b200d00f428efde7b/docs/examples/en_book1.jpeg",
+      "width": 396,
+      "height": 500,
+      "format": "JPEG",
+      "bytes": 44645,
+      "sha256": "13f3a759b7d9d7fc781943f2e192b35c65ea354c09969f6ba9944448fb99578a"
+    },
+    {
+      "name": "pp-product-description",
+      "number": 7,
+      "title": "护发素说明：密集小字与中英数字",
+      "file": "images/pp-product-description.jpg",
+      "source_id": "paddle",
+      "source": "https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version2.x/ppocr/quick_start.md",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "tags": [
+        "中文",
+        "商品说明",
+        "密集小字",
+        "中英数字"
+      ],
+      "group": "chinese-layout",
+      "challenge": "配方、净含量、保质期和型号密集排布，含括号、英文和数字。",
+      "approach": "PP-OCR 检测、方向分类和识别组成通用流水线。",
+      "why_classic": "PaddleOCR 快速开始的代表性输入，能集中呈现多种字符。",
+      "article_result": "原文列出文本框、文字与置信度示例；不作为本库真值。",
+      "references": [
+        "pp-product-result"
+      ],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://paddleocr.bj.bcebos.com/dygraph_v2.1/ppocr_img.zip",
+      "archive_id": "paddle-demo",
+      "archive_member": "ppocr_img/imgs/11.jpg",
+      "width": 500,
+      "height": 500,
+      "format": "JPEG",
+      "bytes": 48680,
+      "sha256": "2bb78629be3a6b29025d85db3677642c267d0ff176706ab963e8cb0c132df10b"
+    },
+    {
+      "name": "pp-vertical-plaque",
+      "number": 8,
+      "title": "户外竖排校牌",
+      "file": "images/pp-vertical-plaque.jpg",
+      "source_id": "paddle",
+      "source": "https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version2.x/ppocr/quick_start.md",
+      "languages": [
+        "zh"
+      ],
+      "tags": [
+        "中文",
+        "竖排",
+        "户外",
+        "透视"
+      ],
+      "group": "scene-text",
+      "challenge": "竖排文字位于窄长牌匾，背景含栅栏、树木和阴影。",
+      "approach": "使用原文提供的通用检测、方向分类和识别流程。",
+      "why_classic": "与商品竖排广告形成真实户外场景对照。",
+      "article_result": "该图属于原文官方配套测试包；未找到针对该图的逐字结果。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://paddleocr.bj.bcebos.com/dygraph_v2.1/ppocr_img.zip",
+      "archive_id": "paddle-demo",
+      "archive_member": "ppocr_img/imgs/1.jpg",
+      "width": 720,
+      "height": 1150,
+      "format": "JPEG",
+      "bytes": 312292,
+      "sha256": "1b3978f3708bc31e3acfe603b052531a480db87ebaa1460559ee7d3eb1160593"
+    },
+    {
+      "name": "pp-garden-sign",
+      "number": 9,
+      "title": "园林标牌：远处小字与复杂背景",
+      "file": "images/pp-garden-sign.jpg",
+      "source_id": "paddle",
+      "source": "https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version2.x/ppocr/quick_start.md",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "tags": [
+        "中文",
+        "户外",
+        "低对比度",
+        "复杂背景"
+      ],
+      "group": "scene-text",
+      "challenge": "深色标牌与树叶、建筑混在一起，字小且对比度低。",
+      "approach": "使用通用 PP-OCR 流程定位文本后识别。",
+      "why_classic": "检验自然场景中漏检文字的问题，避免样本全部来自干净纸面。",
+      "article_result": "该图为官方配套样图；本库没有该图的文字真值。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://paddleocr.bj.bcebos.com/dygraph_v2.1/ppocr_img.zip",
+      "archive_id": "paddle-demo",
+      "archive_member": "ppocr_img/imgs/12.jpg",
+      "width": 720,
+      "height": 1150,
+      "format": "JPEG",
+      "bytes": 398527,
+      "sha256": "3ac37804e4e292f68c8960d553485147516cdc2e4154afeec6ca742a70e71dca"
+    },
+    {
+      "name": "pp-wash-label",
+      "number": 10,
+      "title": "衣物洗涤标签：细字与图形符号",
+      "file": "images/pp-wash-label.jpg",
+      "source_id": "paddle",
+      "source": "https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version2.x/ppocr/quick_start.md",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "tags": [
+        "中文",
+        "标签",
+        "小字",
+        "图文混排"
+      ],
+      "group": "receipts-labels",
+      "challenge": "品牌英文、中文说明、温度数字与洗涤图标挤在小标签上。",
+      "approach": "按原文通用流程识别文字，图标不等同于可识别文字。",
+      "why_classic": "展示小字号和符号干扰，适合观察过检与漏检。",
+      "article_result": "官方配套测试图；没有转录图标或中文说明为真值。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://paddleocr.bj.bcebos.com/dygraph_v2.1/ppocr_img.zip",
+      "archive_id": "paddle-demo",
+      "archive_member": "ppocr_img/imgs/00009282.jpg",
+      "width": 350,
+      "height": 350,
+      "format": "JPEG",
+      "bytes": 43476,
+      "sha256": "957a9cc15da49312277796126be225e0ee653f3316578c12d626fa43fbe9561b"
+    },
+    {
+      "name": "pp-math-exam",
+      "number": 11,
+      "title": "小学数学试卷：运算符与留白",
+      "file": "images/pp-math-exam.jpg",
+      "source_id": "paddle",
+      "source": "https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version2.x/ppocr/quick_start.md",
+      "languages": [
+        "zh"
+      ],
+      "tags": [
+        "中文",
+        "试卷",
+        "运算符",
+        "稀疏排版"
+      ],
+      "group": "chinese-layout",
+      "challenge": "标题、题号、算式和大量答题留白造成不均匀布局。",
+      "approach": "使用通用 PP-OCR 文本检测与识别；不进行题目求解。",
+      "why_classic": "区分读出题面与理解算式的任务边界，覆盖点号和乘除符号。",
+      "article_result": "该图是官方配套试卷输入；本库未记录答案。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://paddleocr.bj.bcebos.com/dygraph_v2.1/ppocr_img.zip",
+      "archive_id": "paddle-demo",
+      "archive_member": "ppocr_img/imgs/00059985.jpg",
+      "width": 574,
+      "height": 528,
+      "format": "JPEG",
+      "bytes": 54907,
+      "sha256": "1294755b7db3d7c22daa31ed1995d1509aa385d5a54831774532716b4b26c330"
+    },
+    {
+      "name": "pp-lab-table",
+      "number": 12,
+      "title": "检验指标表：中英缩写与数值列",
+      "file": "images/pp-lab-table.jpg",
+      "source_id": "paddle",
+      "source": "https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version2.x/ppocr/quick_start.md",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "tags": [
+        "中文",
+        "表格",
+        "中英混排",
+        "小数",
+        "单位"
+      ],
+      "group": "tables",
+      "challenge": "缩写、中文项目名、结果、参考范围和单位依赖列关系。",
+      "approach": "通用 OCR 先获得文字与坐标，表格结构需要另行处理。",
+      "why_classic": "即使逐字正确，列错位也可能让结果失去意义。",
+      "article_result": "来自官方配套测试包；不推断检测含义或生成结构化真值。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://paddleocr.bj.bcebos.com/dygraph_v2.1/ppocr_img.zip",
+      "archive_id": "paddle-demo",
+      "archive_member": "ppocr_img/imgs/00018069.jpg",
+      "width": 430,
+      "height": 267,
+      "format": "JPEG",
+      "bytes": 68201,
+      "sha256": "769bce39ef8baccd4db0cd36cdf80952dca7a6fa041aac4763938ebf1b875b8b"
+    },
+    {
+      "name": "easy-yuyuan-road",
+      "number": 13,
+      "title": "愚园路：中英路牌与方位",
+      "file": "images/easy-yuyuan-road.jpg",
+      "source_id": "easyocr",
+      "source": "https://github.com/JaidedAI/EasyOCR",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "tags": [
+        "中英混排",
+        "路牌",
+        "透视",
+        "大小字"
+      ],
+      "group": "scene-text",
+      "challenge": "愚园路、Yuyuan Rd.、东西方位和门牌号分布在不同位置。",
+      "approach": "EasyOCR 使用中英文语言组合，检测后输出框、文本和置信度。",
+      "why_classic": "官方正文长期使用的辨识度很高的中英混排示例。",
+      "article_result": "原文给出该图的框、文字、置信度列表；未作为本库精标。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://raw.githubusercontent.com/JaidedAI/EasyOCR/363afb184047ce452e436f4224f3098422df872e/examples/chinese.jpg",
+      "width": 640,
+      "height": 339,
+      "format": "JPEG",
+      "bytes": 59898,
+      "sha256": "7d8f231016c6a35da879b7d79b39c45b694aef962ae30f64063d981e618fbf7f"
+    },
+    {
+      "name": "easy-health-poster",
+      "number": 14,
+      "title": "英文健康海报：图标与多字号",
+      "file": "images/easy-health-poster.png",
+      "source_id": "easyocr",
+      "source": "https://github.com/JaidedAI/EasyOCR",
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "英文",
+        "海报",
+        "多字号",
+        "图文混排"
+      ],
+      "group": "scene-text",
+      "challenge": "多条小字说明与图标交替排布，色彩背景不均一。",
+      "approach": "使用 EasyOCR 英文识别流程；该图来自官方 examples。",
+      "why_classic": "信息图既有主标题又有低像素小字，观察遗漏比只看大标题更有价值。",
+      "article_result": "官方配套输入；本库没有该图逐行核对的结果。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://raw.githubusercontent.com/JaidedAI/EasyOCR/363afb184047ce452e436f4224f3098422df872e/examples/english.png",
+      "width": 905,
+      "height": 480,
+      "format": "PNG",
+      "bytes": 1740957,
+      "sha256": "f9f8c82b6b15ac6c9367c7939129395d6c45a882a2dadde33aaa810da4d450d5"
+    },
+    {
+      "name": "easy-paris-signposts",
+      "number": 15,
+      "title": "巴黎多方向指示牌",
+      "file": "images/easy-paris-signposts.jpg",
+      "source_id": "easyocr",
+      "source": "https://github.com/JaidedAI/EasyOCR",
+      "languages": [
+        "fr"
+      ],
+      "tags": [
+        "法文",
+        "路牌",
+        "多方向",
+        "重音字符"
+      ],
+      "group": "scene-text",
+      "challenge": "多块箭头标牌朝向不同，细字含法语重音字符。",
+      "approach": "使用 EasyOCR 相应语言的检测与识别流程。",
+      "why_classic": "在少量多语样本中覆盖标牌方向变化和拉丁扩展字符。",
+      "article_result": "官方 examples 配套图；未转录为字符真值。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://raw.githubusercontent.com/JaidedAI/EasyOCR/363afb184047ce452e436f4224f3098422df872e/examples/french.jpg",
+      "width": 692,
+      "height": 1024,
+      "format": "JPEG",
+      "bytes": 168376,
+      "sha256": "549784c349af8a87d53e2fec897d03aa800ed73a64bb9d8de60485cdd71d1e98"
+    },
+    {
+      "name": "easy-minato-sign",
+      "number": 16,
+      "title": "港区告示牌：日英混排",
+      "file": "images/easy-minato-sign.jpg",
+      "source_id": "easyocr",
+      "source": "https://github.com/JaidedAI/EasyOCR",
+      "languages": [
+        "ja",
+        "en"
+      ],
+      "tags": [
+        "日英混排",
+        "告示牌",
+        "多字号"
+      ],
+      "group": "scene-text",
+      "challenge": "红、黑、绿、蓝四色文字混排，日文与英文层次不同。",
+      "approach": "使用 EasyOCR 日文与英文语言组合。",
+      "why_classic": "同一招牌包含假名、汉字和英文，补充非中文汉字场景。",
+      "article_result": "官方 examples 配套图；日文中的汉字不计为中文样本。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://raw.githubusercontent.com/JaidedAI/EasyOCR/363afb184047ce452e436f4224f3098422df872e/examples/japanese.jpg",
+      "width": 555,
+      "height": 418,
+      "format": "JPEG",
+      "bytes": 42159,
+      "sha256": "a636f5b3b497aba2f28862cdaadbeb0d0e542604cb0141670f8e0af66a639021"
+    },
+    {
+      "name": "dewarp-cooking-page",
+      "number": 17,
+      "title": "旧食谱书页：倾斜与书脊弯曲",
+      "file": "images/dewarp-cooking-page.jpg",
+      "source_id": "dewarp",
+      "source": "https://mzucker.github.io/2016/08/15/page-dewarping.html",
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "英文",
+        "书页",
+        "弯曲",
+        "旋转"
+      ],
+      "group": "warped-pages",
+      "challenge": "整页方向倾斜，靠近书脊处有弯曲、阴影及字号变化。",
+      "approach": "原文提取文字行轮廓，拟合三次曲面模型后重映射展平。",
+      "why_classic": "经典几何方法展示为什么仅做二维旋转无法解决书页弯曲。",
+      "article_result": "原文展示展平前后对照；这是几何预处理结果，不是 OCR 真值。",
+      "references": [
+        "dewarp-cooking-comparison"
+      ],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://raw.githubusercontent.com/mzucker/page_dewarp/d3257d7b564bff994187a872d00537bc2fda7d3d/example_input/boston_cooking_a.jpg",
+      "width": 3264,
+      "height": 2448,
+      "format": "JPEG",
+      "bytes": 2149723,
+      "sha256": "b7e3aac880412b7967c49b0b3271fb58a333a614fab0abf58e2bd137de3482f3"
+    },
+    {
+      "name": "dewarp-thesis-table",
+      "number": 18,
+      "title": "论文书页：阴影下的文字与表格",
+      "file": "images/dewarp-thesis-table.jpg",
+      "source_id": "dewarp",
+      "source": "https://mzucker.github.io/2016/08/15/page-dewarping.html",
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "英文",
+        "书页",
+        "阴影",
+        "表格"
+      ],
+      "group": "warped-pages",
+      "challenge": "纸页一侧偏暗，稀疏文字与表格线同时存在。",
+      "approach": "从符合文字行特征的轮廓中采样，优化页姿态和曲面参数。",
+      "why_classic": "把表格边线、文字行和弯曲同时纳入考察。",
+      "article_result": "原文有关键点拟合及展平对照；本库只保存原文参考图。",
+      "references": [
+        "dewarp-thesis-a-comparison"
+      ],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://raw.githubusercontent.com/mzucker/page_dewarp/d3257d7b564bff994187a872d00537bc2fda7d3d/example_input/linguistics_thesis_a.jpg",
+      "width": 3456,
+      "height": 4608,
+      "format": "JPEG",
+      "bytes": 2997679,
+      "sha256": "ca26ff9def88a52b9c64d7161036974fe6efd6843b4997e6415fc73f10fc3de8"
+    },
+    {
+      "name": "dewarp-thesis-wordlist",
+      "number": 19,
+      "title": "论文词表：密集列与书脊形变",
+      "file": "images/dewarp-thesis-wordlist.jpg",
+      "source_id": "dewarp",
+      "source": "https://mzucker.github.io/2016/08/15/page-dewarping.html",
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "英文",
+        "多列",
+        "书页",
+        "弯曲"
+      ],
+      "group": "warped-pages",
+      "challenge": "长词表紧密排列成列，弯曲造成不同行的形变不同。",
+      "approach": "原文沿多条文本跨度拟合页曲面并执行去畸变。",
+      "why_classic": "与稀疏表格页构成不同版面，避免把同页不同旋转重复计数。",
+      "article_result": "原文展示该页的展平前后图，未提供本库所需的精标文字。",
+      "references": [
+        "dewarp-thesis-b-comparison"
+      ],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://raw.githubusercontent.com/mzucker/page_dewarp/d3257d7b564bff994187a872d00537bc2fda7d3d/example_input/linguistics_thesis_b.jpg",
+      "width": 3456,
+      "height": 4608,
+      "format": "JPEG",
+      "bytes": 3604335,
+      "sha256": "445884e6fc2771527b42a0442dfeec7abb63e4df479d680e31f83e13c0ab3aac"
+    },
+    {
+      "name": "psm-whole-foods-receipt",
+      "number": 20,
+      "title": "Whole Foods 小票：商品与价格配行",
+      "file": "images/psm-whole-foods-receipt.png",
+      "source_id": "psm",
+      "source": "https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/",
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "英文",
+        "小票",
+        "列关系",
+        "PSM4"
+      ],
+      "group": "layout-segmentation",
+      "challenge": "商品名称与金额位于不同列，不能只按独立文字块阅读。",
+      "approach": "原文以 --psm 4 对按列排布的小票进行逐行识别。",
+      "why_classic": "PSM 选择改变的是版面假设，商品和价格关系是经典观察点。",
+      "article_result": "原文对比不同 PSM 的终端输出；不将其视作本库真值。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://b2633864.assetcdn.net/2633864/wp-content/uploads/2021/06/receipt.png",
+      "width": 1000,
+      "height": 1334,
+      "format": "PNG",
+      "bytes": 112411,
+      "sha256": "36dcce2f33f41f546d62e3c3d7877658469e166c78c9daf99df1895fac375cd6"
+    },
+    {
+      "name": "psm-sherlock-page",
+      "number": 21,
+      "title": "小说单栏页：标题、首字下沉与正文",
+      "file": "images/psm-sherlock-page.png",
+      "source_id": "psm",
+      "source": "https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/",
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "英文",
+        "单栏",
+        "首字下沉",
+        "PSM6"
+      ],
+      "group": "layout-segmentation",
+      "challenge": "章节标题与正文间留白较大，首字采用下沉排版。",
+      "approach": "原文用 --psm 6 设定为单个统一文本块。",
+      "why_classic": "版面先验合适时，通用引擎可以明显改变识别结果。",
+      "article_result": "原文给出该模式下的段落输出；本库未逐字符核对。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://b2633864.assetcdn.net/2633864/wp-content/uploads/2021/06/sherlock_holmes.png",
+      "width": 1000,
+      "height": 1471,
+      "format": "PNG",
+      "bytes": 143707,
+      "sha256": "0431ff40e12bacdba65adfc45f89bd15831a9327fbf628b43af1e474b9a95813"
+    },
+    {
+      "name": "psm-license-plate",
+      "number": 22,
+      "title": "单行车牌：紧凑字母与数字",
+      "file": "images/psm-license-plate.png",
+      "source_id": "psm",
+      "source": "https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/",
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "英文",
+        "数字",
+        "车牌",
+        "PSM7"
+      ],
+      "group": "layout-segmentation",
+      "challenge": "字符窄、相互贴近，图像为高对比度单行裁切。",
+      "approach": "原文使用 --psm 7，将输入视为单行文本。",
+      "why_classic": "为单行假设提供直接案例；车牌字符不是普通词典单词。",
+      "article_result": "原文展示车牌字符串结果；未升级为本库真值。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://b2633864.assetcdn.net/2633864/wp-content/uploads/2021/06/license_plate.png",
+      "width": 1000,
+      "height": 243,
+      "format": "PNG",
+      "bytes": 12558,
+      "sha256": "7a6c7235932620734e50f2390835aeff238f0b9b4dbac38399b36aede4956102"
+    },
+    {
+      "name": "psm-designer-word",
+      "number": 23,
+      "title": "Designer：透视背景上的单词",
+      "file": "images/psm-designer-word.png",
+      "source_id": "psm",
+      "source": "https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/",
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "英文",
+        "单词",
+        "透视",
+        "PSM8"
+      ],
+      "group": "layout-segmentation",
+      "challenge": "单词位于倾斜的彩色牌面，字符有衬线与阴影。",
+      "approach": "原文使用 --psm 8，把输入视为一个单词。",
+      "why_classic": "突出单词级输入与整页分割假设之间的差别。",
+      "article_result": "原文给出单词识别输出；没有人工精标。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://b2633864.assetcdn.net/2633864/wp-content/uploads/2021/06/designer.png",
+      "width": 1000,
+      "height": 379,
+      "format": "PNG",
+      "bytes": 82868,
+      "sha256": "5fee8c094f5aed6099025a4e9cb76ed39b9b7886acfb4f41ab5444c4014fbda0"
+    },
+    {
+      "name": "psm-sparse-web-menu",
+      "number": 24,
+      "title": "网页菜单：稀疏文字与项目符号",
+      "file": "images/psm-sparse-web-menu.png",
+      "source_id": "psm",
+      "source": "https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/",
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "英文",
+        "截图",
+        "稀疏文字",
+        "PSM11"
+      ],
+      "group": "layout-segmentation",
+      "challenge": "链接逐条分散在大块留白中，带下划线和项目符号。",
+      "approach": "原文用 --psm 11 尽量寻找稀疏文字。",
+      "why_classic": "能观察“找全所有文字”与“恢复正确阅读顺序”的区别。",
+      "article_result": "原文比较稀疏文字模式的输出；本库未定义阅读顺序真值。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://b2633864.assetcdn.net/2633864/wp-content/uploads/2021/06/website_menu.png",
+      "width": 1000,
+      "height": 1624,
+      "format": "PNG",
+      "bytes": 67096,
+      "sha256": "597ae805d8d2303acfcc4ec3913fb74d5854dfd9313abe34d05ecbcb32b1c980"
+    },
+    {
+      "name": "psm-old-engine-title",
+      "number": 25,
+      "title": "THE OLD ENGINE.：旧印刷体单行",
+      "file": "images/psm-old-engine-title.png",
+      "source_id": "psm",
+      "source": "https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/",
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "英文",
+        "旧印刷",
+        "单行",
+        "PSM13"
+      ],
+      "group": "layout-segmentation",
+      "challenge": "衬线字形、较大的字符间距和尾部标点影响普通分割。",
+      "approach": "原文使用 --psm 13 的 raw line 模式处理整行。",
+      "why_classic": "保留一个绕过部分常规分割处理的经典模式案例。",
+      "article_result": "原文给出该行结果；不是本库字符真值。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://b2633864.assetcdn.net/2633864/wp-content/uploads/2021/06/the_old_engine.png",
+      "width": 1000,
+      "height": 200,
+      "format": "PNG",
+      "bytes": 12836,
+      "sha256": "61b315d7443463a8786e5d89b2bce9c57a8dcba9dd20c457c7d5ed65fbd5a144"
+    },
+    {
+      "name": "quality-heavy-ink",
+      "number": 26,
+      "title": "旧表单：粗笔画与引导点线",
+      "file": "images/quality-heavy-ink.png",
+      "source_id": "quality",
+      "source": "https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html",
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "英文",
+        "旧扫描",
+        "粗笔画",
+        "点线"
+      ],
+      "group": "image-quality",
+      "challenge": "粗衬线笔画和连续引导点线挤在小尺寸扫描区域中。",
+      "approach": "原文以形态学腐蚀展示粗笔画的处理方式。",
+      "why_classic": "处理会改变笔画细节；对照图用于观察变化，不预设一定改善。",
+      "article_result": "原文提供腐蚀处理图，属于预处理对照，不是识别答案。",
+      "references": [
+        "quality-erosion-comparison"
+      ],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://raw.githubusercontent.com/tesseract-ocr/tessdoc/11ab4f99a5c30f2769b33a8135e7b569ccb9c633/images/Erosion_original.png",
+      "width": 403,
+      "height": 114,
+      "format": "PNG",
+      "bytes": 30421,
+      "sha256": "89b5654328c251f9d6ba989a3c45947f605562bc75fc9b7c19329014b9ed40ed"
+    },
+    {
+      "name": "quality-noisy-fraktur",
+      "number": 27,
+      "title": "旧德文扫描：噪声与密集字形",
+      "file": "images/quality-noisy-fraktur.png",
+      "source_id": "quality",
+      "source": "https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html",
+      "languages": [
+        "de"
+      ],
+      "tags": [
+        "德文",
+        "旧扫描",
+        "噪声",
+        "密集文字"
+      ],
+      "group": "image-quality",
+      "challenge": "整页字形细密、存在斑点与扫描噪声，字体与现代字形差异大。",
+      "approach": "原文讨论去噪及二值化无法自动解决所有噪声问题。",
+      "why_classic": "把字体覆盖与图像噪声同时保留下来，避免将困难全部归因于模型。",
+      "article_result": "原文此处用于说明噪声，没有提供该图的逐字 OCR 真值。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://raw.githubusercontent.com/tesseract-ocr/tessdoc/11ab4f99a5c30f2769b33a8135e7b569ccb9c633/images/noise.png",
+      "width": 370,
+      "height": 600,
+      "format": "PNG",
+      "bytes": 126001,
+      "sha256": "85c81c9fedece217a71669fa5a764c140060bc16182bd970f183cddad4ebc9cc"
+    },
+    {
+      "name": "digits-thermostat",
+      "number": 28,
+      "title": "恒温器：七段数码管读数",
+      "file": "images/digits-thermostat.jpg",
+      "source_id": "digits",
+      "source": "https://pyimagesearch.com/2017/02/13/recognizing-digits-with-opencv-and-python/",
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "数字",
+        "数码管",
+        "透视",
+        "七段编码"
+      ],
+      "group": "special-digits",
+      "challenge": "液晶数字由分离笔段组成，字符形状与普通印刷体不同。",
+      "approach": "原文依次定位液晶屏、透视矫正、阈值化，再判断七段亮灭编码。",
+      "why_classic": "不需要通用文字模型的经典专用识别方案。",
+      "article_result": "原文最终效果图显示读数；本库没有将显示结果转为真值。",
+      "references": [
+        "digits-warped",
+        "digits-result"
+      ],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://b2633864.assetcdn.net/2633864/wp-content/uploads/2017/02/example.jpg",
+      "width": 734,
+      "height": 882,
+      "format": "JPEG",
+      "bytes": 30522,
+      "sha256": "10f92e6502979e4708985dc6f694c1c181488b5f51667a13a12f606f93207fc0"
+    },
+    {
+      "name": "cards-template-input",
+      "number": 29,
+      "title": "演示卡号：OCR-A 模板匹配",
+      "file": "images/cards-template-input.jpg",
+      "source_id": "cards",
+      "source": "https://pyimagesearch.com/2017/07/17/credit-card-ocr-with-opencv-and-python/",
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "数字",
+        "卡片",
+        "模板匹配",
+        "输入示意"
+      ],
+      "group": "special-digits",
+      "challenge": "卡面数字带压印和背景色，需先定位成组数字。",
+      "approach": "原文使用形态学、梯度、轮廓分组与 OCR-A 数字模板匹配。",
+      "why_classic": "演示受约束字体下的传统识别方法，输入窗口边框完整保留。",
+      "article_result": "原文的识别效果图另存；演示数字不作为本库精标。",
+      "references": [
+        "cards-result"
+      ],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看原文公开的输入窗口截图，带 Input 窗口标题与外框；卡面没有识别答案叠加。不是裸卡片照片。"
+      },
+      "image_url": "https://b2633864.assetcdn.net/2633864/wp-content/uploads/2017/06/ocr_input.jpg",
+      "width": 600,
+      "height": 470,
+      "format": "JPEG",
+      "bytes": 30010,
+      "sha256": "48a135b426397c6c38888902e58f212a66ee24843c5d3224369fcf9bdcbe196e"
+    },
+    {
+      "name": "structure-paper-table",
+      "number": 30,
+      "title": "论文对比表：小数、行列与强调字体",
+      "file": "images/structure-paper-table.jpg",
+      "source_id": "structure",
+      "source": "https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version2.x/ppstructure/quick_start.md",
+      "languages": [
+        "en"
+      ],
+      "tags": [
+        "英文",
+        "表格",
+        "小数",
+        "粗体"
+      ],
+      "group": "tables",
+      "challenge": "方法名称、引用编号、小数及横线共同构成表格，部分值以粗体强调。",
+      "approach": "PP-Structure 使用表格结构模型与 OCR 结果组合恢复单元格。",
+      "why_classic": "与中文检验表对照，突出文字正确但结构仍可能错误的情况。",
+      "article_result": "原文演示表格识别调用；本库不将结构输出标作真值。",
+      "references": [],
+      "annotation_status": "unannotated",
+      "acquired_on": "2026-11-02",
+      "visual_review": {
+        "status": "reviewed_by_agent",
+        "reviewed_on": "2026-11-02",
+        "note": "已查看输入图；没有后加的 OCR 识别框或识别答案。"
+      },
+      "image_url": "https://paddleocr.bj.bcebos.com/dygraph_v2.1/ppocr_img.zip",
+      "archive_id": "paddle-demo",
+      "archive_member": "ppocr_img/table/table.jpg",
+      "width": 371,
+      "height": 293,
+      "format": "JPEG",
+      "bytes": 59389,
+      "sha256": "d754f91e263b0392708e48050971722f86a3a863c2497e73869802066b7dfc06"
+    }
+  ],
+  "references": [
+    {
+      "name": "cn-ticket-result",
+      "source_id": "cnocr",
+      "image_url": "https://raw.githubusercontent.com/breezedeus/CnOCR/4686db2e08952e7a7843d35b200d00f428efde7b/docs/predict-outputs/huochepiao.jpeg-result.jpg",
+      "file": "references/cn-ticket-result.jpg",
+      "caption": "车票原文识别效果",
+      "role": "原文识别结果，非真值",
+      "acquired_on": "2026-11-02",
+      "width": 2736,
+      "height": 930,
+      "format": "JPEG",
+      "bytes": 591863,
+      "sha256": "82c775acfc4ba81b4ed6c09606d78f53e536d94229e97c5109b71c0bbacd47a6"
+    },
+    {
+      "name": "cn-vertical-result",
+      "source_id": "cnocr",
+      "image_url": "https://raw.githubusercontent.com/breezedeus/CnOCR/4686db2e08952e7a7843d35b200d00f428efde7b/docs/predict-outputs/shupai.png-result.jpg",
+      "file": "references/cn-vertical-result.jpg",
+      "caption": "竖排广告原文识别效果",
+      "role": "原文识别结果，非真值",
+      "acquired_on": "2026-11-02",
+      "width": 2002,
+      "height": 807,
+      "format": "JPEG",
+      "bytes": 278580,
+      "sha256": "b7a9ac077469100c6602558c5ae606ca2adebf6d8eb317d1003aa0616323fc55"
+    },
+    {
+      "name": "cn-traditional-result",
+      "source_id": "cnocr",
+      "image_url": "https://raw.githubusercontent.com/breezedeus/CnOCR/4686db2e08952e7a7843d35b200d00f428efde7b/docs/predict-outputs/fanti.jpg-result.jpg",
+      "file": "references/cn-traditional-result.jpg",
+      "caption": "繁体经文原文识别效果",
+      "role": "原文识别结果，非真值",
+      "acquired_on": "2026-11-02",
+      "width": 2540,
+      "height": 946,
+      "format": "JPEG",
+      "bytes": 570964,
+      "sha256": "c84a1b2e9052328438abe3960e38c0ccd706a43a58782708a76a38253754fc4a"
+    },
+    {
+      "name": "pp-product-result",
+      "source_id": "paddle",
+      "image_url": "https://raw.githubusercontent.com/PaddlePaddle/PaddleOCR/dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf/docs/version2.x/ppocr/blog/images/11_det_rec.jpg",
+      "file": "references/pp-product-result.jpg",
+      "caption": "护发素说明原文框与识别效果",
+      "role": "原文识别结果，非真值",
+      "acquired_on": "2026-11-02",
+      "width": 1800,
+      "height": 600,
+      "format": "JPEG",
+      "bytes": 138201,
+      "sha256": "0480db6fe59b40e56ad5fe52543783ad63a3c11fb3499e34ffda3da0227f2214"
+    },
+    {
+      "name": "dewarp-cooking-comparison",
+      "source_id": "dewarp",
+      "image_url": "https://mzucker.github.io/images/page_dewarp/boston_cooking_a_before_after.png",
+      "file": "references/dewarp-cooking-comparison.png",
+      "caption": "食谱页展平前后",
+      "role": "原文预处理对照拼图",
+      "acquired_on": "2026-11-02",
+      "width": 912,
+      "height": 653,
+      "format": "PNG",
+      "bytes": 730026,
+      "sha256": "f103c5580f648265d284c8d6aa2e47df5d84f73b45161c8b489751bc84f4a0af"
+    },
+    {
+      "name": "dewarp-thesis-a-comparison",
+      "source_id": "dewarp",
+      "image_url": "https://mzucker.github.io/images/page_dewarp/linguistics_thesis_a_before_after.png",
+      "file": "references/dewarp-thesis-a-comparison.png",
+      "caption": "论文表格页展平前后",
+      "role": "原文预处理对照拼图",
+      "acquired_on": "2026-11-02",
+      "width": 925,
+      "height": 658,
+      "format": "PNG",
+      "bytes": 346978,
+      "sha256": "109acb72564d5d7191a002539dc05075300f0feeb41a8dc2b8b4a6292136b21c"
+    },
+    {
+      "name": "dewarp-thesis-b-comparison",
+      "source_id": "dewarp",
+      "image_url": "https://mzucker.github.io/images/page_dewarp/linguistics_thesis_b_before_after.png",
+      "file": "references/dewarp-thesis-b-comparison.png",
+      "caption": "论文词表页展平前后",
+      "role": "原文预处理对照拼图",
+      "acquired_on": "2026-11-02",
+      "width": 913,
+      "height": 658,
+      "format": "PNG",
+      "bytes": 573722,
+      "sha256": "233c13fee537b9d8329bce31c326962efa88980525ce40e482c84db16366ac20"
+    },
+    {
+      "name": "quality-erosion-comparison",
+      "source_id": "quality",
+      "image_url": "https://raw.githubusercontent.com/tesseract-ocr/tessdoc/11ab4f99a5c30f2769b33a8135e7b569ccb9c633/images/Erosion_applied.png",
+      "file": "references/quality-erosion-comparison.png",
+      "caption": "腐蚀处理后的旧表单",
+      "role": "原文预处理结果",
+      "acquired_on": "2026-11-02",
+      "width": 397,
+      "height": 114,
+      "format": "PNG",
+      "bytes": 23236,
+      "sha256": "92eacc878f864c4cc36f1c243a660700ba3a0848b7d6a4788218b7257edf0273"
+    },
+    {
+      "name": "quality-binarisation-comparison",
+      "source_id": "quality",
+      "image_url": "https://raw.githubusercontent.com/tesseract-ocr/tessdoc/11ab4f99a5c30f2769b33a8135e7b569ccb9c633/images/binarisation.png",
+      "file": "references/quality-binarisation-comparison.png",
+      "caption": "不均匀背景与二值化对照",
+      "role": "原文预处理对照拼图",
+      "acquired_on": "2026-11-02",
+      "width": 800,
+      "height": 644,
+      "format": "PNG",
+      "bytes": 728143,
+      "sha256": "855bcbb4505b90a8ef8544dfe76a118e168f744dfe6b7a2d099ff51d5c1a188e"
+    },
+    {
+      "name": "quality-skew-comparison",
+      "source_id": "quality",
+      "image_url": "https://raw.githubusercontent.com/tesseract-ocr/tessdoc/11ab4f99a5c30f2769b33a8135e7b569ccb9c633/images/skew-linedetection.png",
+      "file": "references/quality-skew-comparison.png",
+      "caption": "倾斜书页与行方向对照",
+      "role": "原文预处理对照拼图",
+      "acquired_on": "2026-11-02",
+      "width": 800,
+      "height": 658,
+      "format": "PNG",
+      "bytes": 522817,
+      "sha256": "07b7a503f54c9ffe133491a3a506dd609e344496f58d6d0e076cafc9e4d51426"
+    },
+    {
+      "name": "quality-border-comparison",
+      "source_id": "quality",
+      "image_url": "https://raw.githubusercontent.com/tesseract-ocr/tessdoc/11ab4f99a5c30f2769b33a8135e7b569ccb9c633/images/borders.png",
+      "file": "references/quality-border-comparison.png",
+      "caption": "扫描黑边处理对照",
+      "role": "原文预处理对照拼图",
+      "acquired_on": "2026-11-02",
+      "width": 695,
+      "height": 604,
+      "format": "PNG",
+      "bytes": 216531,
+      "sha256": "d6bb202fe300092bcd256b1545ff02c5a100844cd92110248da91518f0ee243f"
+    },
+    {
+      "name": "digits-warped",
+      "source_id": "digits",
+      "image_url": "https://b2633864.assetcdn.net/2633864/wp-content/uploads/2017/02/digit_reco_warped.png",
+      "file": "references/digits-warped.png",
+      "caption": "液晶屏透视矫正结果",
+      "role": "原文预处理结果",
+      "acquired_on": "2026-11-02",
+      "width": 500,
+      "height": 335,
+      "format": "PNG",
+      "bytes": 14245,
+      "sha256": "12daccbfaf0996d6a3ab03d4a62bed004d644d7c2bb44f9e533caa316d0e3890"
+    },
+    {
+      "name": "digits-result",
+      "source_id": "digits",
+      "image_url": "https://b2633864.assetcdn.net/2633864/wp-content/uploads/2017/02/digit_reco_complete.jpg",
+      "file": "references/digits-result.jpg",
+      "caption": "数码管最终识别效果",
+      "role": "原文识别结果，非真值",
+      "acquired_on": "2026-11-02",
+      "width": 600,
+      "height": 423,
+      "format": "JPEG",
+      "bytes": 15451,
+      "sha256": "6c216427c55a6b79e26cfaff51beedacf2e638e773e90c206fb84282fbf96403"
+    },
+    {
+      "name": "cards-result",
+      "source_id": "cards",
+      "image_url": "https://b2633864.assetcdn.net/2633864/wp-content/uploads/2017/06/ocr_result_05.jpg",
+      "file": "references/cards-result.jpg",
+      "caption": "卡号模板匹配原文效果",
+      "role": "原文识别结果，非真值",
+      "acquired_on": "2026-11-02",
+      "width": 600,
+      "height": 517,
+      "format": "JPEG",
+      "bytes": 57700,
+      "sha256": "db03b6571ced50e5dd2f128c46a4ec0effcd30beadd82df3e3b2479c321da1ce"
+    },
+    {
+      "name": "receipt-edges",
+      "source_id": "receipt",
+      "image_url": "https://b2633864.assetcdn.net/2633864/wp-content/uploads/2021/10/ocr_receipts_input_edge.png",
+      "file": "references/receipt-edges.png",
+      "caption": "小票输入与边缘检测拼图",
+      "role": "原文输入与预处理拼图",
+      "acquired_on": "2026-11-02",
+      "width": 2336,
+      "height": 1640,
+      "format": "PNG",
+      "bytes": 352556,
+      "sha256": "2418d74fd5d8dc0021d4ccb1f3ea51b475f66d0526754aa2e62db20a8ff86cfd"
+    },
+    {
+      "name": "receipt-perspective",
+      "source_id": "receipt",
+      "image_url": "https://b2633864.assetcdn.net/2633864/wp-content/uploads/2021/10/ocr_receipts_outline_transform.png",
+      "file": "references/receipt-perspective.png",
+      "caption": "小票轮廓与透视矫正拼图",
+      "role": "原文预处理对照拼图",
+      "acquired_on": "2026-11-02",
+      "width": 2208,
+      "height": 1640,
+      "format": "PNG",
+      "bytes": 796467,
+      "sha256": "6d576cea131563ac04cb417715df4b0aa7645bb2bf5bb8f83d197beed766c71b"
+    }
+  ],
+  "selection_notes": [
+    "不重复收录同一图的旋转、裁剪及处理版本。",
+    "Tesseract 二值化、黑边及倾斜配图为对照拼图，只进入 references。",
+    "PSM 的 circle_circular.png 为多图示例，此批不作为单张输入。",
+    "不同时收录 PP-Structure table.jpg 及含相同表格的整页论文 1.png。",
+    "CnOCR 六张输入均由所选 README 直接使用；PaddleOCR 和 EasyOCR 部分输入来自原文官方配套目录或图片包。",
+    "日文汉字不计入中文样本数量。"
+  ]
+}
