@@ -7,6 +7,8 @@ from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'scripts'))
+from regression_reference import active_reference
 EXTENSIONS = {'.png', '.jpg', '.jpeg', '.bmp', '.gif', '.tif', '.tiff', '.webp'}
 
 def module(name, filename):
@@ -32,7 +34,7 @@ def main():
     p.add_argument('--binary', type=Path, required=True)
     p.add_argument('--output', type=Path, required=True)
     p.add_argument('--models',type=Path,default=ROOT/'models')
-    p.add_argument('--legacy-binary-dir',type=Path,default=ROOT/'bin')
+    p.add_argument('--legacy-binary-dir',type=Path,default=ROOT/active_reference().get('legacy_binary_dir','bin'))
     args = p.parse_args()
     files = sorted(x for x in (ROOT/'samples').rglob('*') if x.suffix.lower() in EXTENSIONS)
     cases = [{'name': hashlib.sha256(x.relative_to(ROOT/'samples').as_posix().encode()).hexdigest()[:16],

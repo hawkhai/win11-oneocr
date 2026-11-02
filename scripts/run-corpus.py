@@ -9,6 +9,8 @@ import sys
 import time
 
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'scripts'))
+from regression_reference import active_reference
 CASE=ROOT/'work/oneocr-portable'
 
 def run(command,cwd):
@@ -49,7 +51,7 @@ if __name__=='__main__':
     p.add_argument('--limit',type=int)
     p.add_argument('--output-dir',type=Path,help='Keep a new phase separate from existing evidence')
     p.add_argument('--models',type=Path,default=ROOT/'models')
-    p.add_argument('--legacy-binary-dir',type=Path,default=ROOT/'bin')
+    p.add_argument('--legacy-binary-dir',type=Path,default=ROOT/active_reference().get('legacy_binary_dir','bin'))
     args=p.parse_args()
     corpus=CASE/'corpus'
     if not (corpus/'manifest.json').is_file():corpus=ROOT/'research/case/corpus'

@@ -55,7 +55,7 @@ def main():
         current=json.loads((ROOT/'models/manifest.json').read_text(encoding='utf8'))['source_assets']['oneocr.onemodel']
         if not summary['passed'] or summary['model_source_sha256']!=current:raise ValueError('Report is not a passed regression for the active model')
         base=report.relative_to(ROOT).as_posix()
-        manifest['reference']={'model_source_sha256':current,'book_baseline':base+'/book-legacy.json','all_samples_baseline':base+'/legacy','corpus_baseline':base+'/corpus-legacy','report':base+'/README.md'}
+        manifest['reference']={'model_source_sha256':current,'book_baseline':base+'/book-legacy.json','all_samples_baseline':base+'/legacy','corpus_baseline':base+'/corpus-legacy','legacy_binary_dir':summary['new_reference_assets'].rstrip('/'),'report':base+'/README.md'}
     elif previous.is_file():
         old=json.loads(previous.read_text(encoding='utf8'))
         if 'reference' in old:manifest['reference']=old['reference']

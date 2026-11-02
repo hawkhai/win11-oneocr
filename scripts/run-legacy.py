@@ -2,13 +2,16 @@
 import argparse
 import ctypes as C
 import json
+import sys
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'scripts'))
+from regression_reference import active_reference
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('image',type=Path);p.add_argument('output',type=Path)
-    p.add_argument('--binary-dir',type=Path,default=ROOT/'bin')
+    p.add_argument('--binary-dir',type=Path,default=ROOT/active_reference().get('legacy_binary_dir','bin'))
     p.add_argument('--model-dir',type=Path)
     args=p.parse_args();binary=args.binary_dir.resolve();model=(args.model_dir or binary).resolve()
     import os

@@ -2,15 +2,19 @@
 import argparse
 import importlib.util
 import json
+import sys
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'scripts'))
+from regression_reference import active_reference
 spec=importlib.util.spec_from_file_location('oneocr_comparison',ROOT/'scripts/compare-results.py')
 module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--baseline',type=Path,default=(ROOT/'work/oneocr-portable/corpus-legacy' if (ROOT/'work/oneocr-portable/corpus-legacy').is_dir() else ROOT/'research/case/corpus-legacy'))
+    fallback=ROOT/'work/oneocr-portable/corpus-legacy' if (ROOT/'work/oneocr-portable/corpus-legacy').is_dir() else ROOT/'research/case/corpus-legacy'
+    p.add_argument('--baseline',type=Path,default=ROOT/active_reference()['corpus_baseline'] if 'corpus_baseline' in active_reference() else fallback)
     p.add_argument('--actual',type=Path,default=ROOT/'work/oneocr-portable/corpus-native')
     p.add_argument('--output',type=Path,default=ROOT/'work/oneocr-portable/evidence/corpus-parity.json')
     args=p.parse_args();results=[]
