@@ -2,6 +2,8 @@
 
 **验收铁律（2026-11-03 用户确认）：C++ 原生版本必须按原 DLL 严格对齐；沿用坐标 1px、角度 0.1°、置信度 1e-3 的阈值，其余识别字段按既有契约一致。JS/WebAssembly 不要求绝对一致，其差异不阻塞 C++ 验收。** 详见 [AGENTS.md](AGENTS.md) 和[当前验收标准](docs/acceptance-standard.md)。下述五环境结果为历史实测记录。
 
+继续开发或换机接手请读[详细交接文档](docs/handoff-2026-11-03.md)：包含会话决策、当前资产/证据身份、代码地图、复现命令、已关闭问题和未验证范围。
+
 最新[Photos 交集测试 P2 修复](reports/photos-intersection-p2-2026-11-03/README.md)已使超差和非有限值触发失败，并补上 13 个负例、3 个边界正例。Windows/Linux CTest 各 **26/26**，两端原生全新严格回归各 **221/221**，合计 **442/442**（436 项识别、6 项预期拒绝）。Wasm 本轮仅作两项诊断，不是原生验收门槛。
 
 严格比较器的换机字节身份已通过 `.gitattributes` 固定，避免 Git CRLF 转换导致摘要漂移，见[补充校验](reports/photos-intersection-checkout-2026-11-03/README.md)。该修补不改比较器或阈值，历史封存报告保持原样。

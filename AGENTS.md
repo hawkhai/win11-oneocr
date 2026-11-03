@@ -12,3 +12,5 @@
 - 未实测平台继续标为未验证；有限样本通过不等于完整跨平台目标完成。历史封存报告与索引不得改写，过去五环境通过的记录不代表未来必须五环境一致。
 
 完整口径与执行入口：[docs/acceptance-standard.md](docs/acceptance-standard.md)。机器可读规则：[research/acceptance-policy.json](research/acceptance-policy.json)。
+
+接手项目先读[详细交接文档](docs/handoff-2026-11-03.md)，其中的历史快照与命令不取代本文件铁律；最终包身份始终以当前 Git HEAD 和 `artifacts/OFFLINE_PACKAGE.json` 核对。
