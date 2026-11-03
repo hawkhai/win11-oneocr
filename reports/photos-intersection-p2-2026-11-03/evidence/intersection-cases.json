@@ -1,0 +1,86 @@
+{
+  "existing_area_tolerance": ".01f",
+  "injection_target": "first real Photos scalar intersection assertion; frozen oracles and geometry unchanged",
+  "cases": [
+    {
+      "name": "at-positive-tolerance",
+      "expected_rejection": false,
+      "cpp_values": "{\"at-positive-tolerance\",.01f,0,false},"
+    },
+    {
+      "name": "at-negative-tolerance",
+      "expected_rejection": false,
+      "cpp_values": "{\"at-negative-tolerance\",-.01f,0,false},"
+    },
+    {
+      "name": "equal-large-finite",
+      "expected_rejection": false,
+      "cpp_values": "{\"equal-large-finite\",std::numeric_limits<float>::max(),std::numeric_limits<float>::max(),false},"
+    },
+    {
+      "name": "over-positive-tolerance",
+      "expected_rejection": true,
+      "cpp_values": "{\"over-positive-tolerance\",std::nextafter(.01f,std::numeric_limits<float>::infinity()),0,true},"
+    },
+    {
+      "name": "over-negative-tolerance",
+      "expected_rejection": true,
+      "cpp_values": "{\"over-negative-tolerance\",-std::nextafter(.01f,std::numeric_limits<float>::infinity()),0,true},"
+    },
+    {
+      "name": "review-large-delta",
+      "expected_rejection": true,
+      "cpp_values": "{\"review-large-delta\",0,1e9f,true},"
+    },
+    {
+      "name": "actual-nan",
+      "expected_rejection": true,
+      "cpp_values": "{\"actual-nan\",std::numeric_limits<float>::quiet_NaN(),0,true},"
+    },
+    {
+      "name": "actual-positive-infinity",
+      "expected_rejection": true,
+      "cpp_values": "{\"actual-positive-infinity\",std::numeric_limits<float>::infinity(),0,true},"
+    },
+    {
+      "name": "actual-negative-infinity",
+      "expected_rejection": true,
+      "cpp_values": "{\"actual-negative-infinity\",-std::numeric_limits<float>::infinity(),0,true},"
+    },
+    {
+      "name": "expected-nan",
+      "expected_rejection": true,
+      "cpp_values": "{\"expected-nan\",0,std::numeric_limits<float>::quiet_NaN(),true},"
+    },
+    {
+      "name": "expected-positive-infinity",
+      "expected_rejection": true,
+      "cpp_values": "{\"expected-positive-infinity\",0,std::numeric_limits<float>::infinity(),true},"
+    },
+    {
+      "name": "expected-negative-infinity",
+      "expected_rejection": true,
+      "cpp_values": "{\"expected-negative-infinity\",0,-std::numeric_limits<float>::infinity(),true},"
+    },
+    {
+      "name": "both-nan",
+      "expected_rejection": true,
+      "cpp_values": "{\"both-nan\",std::numeric_limits<float>::quiet_NaN(),std::numeric_limits<float>::quiet_NaN(),true},"
+    },
+    {
+      "name": "same-positive-infinity",
+      "expected_rejection": true,
+      "cpp_values": "{\"same-positive-infinity\",std::numeric_limits<float>::infinity(),std::numeric_limits<float>::infinity(),true},"
+    },
+    {
+      "name": "same-negative-infinity",
+      "expected_rejection": true,
+      "cpp_values": "{\"same-negative-infinity\",-std::numeric_limits<float>::infinity(),-std::numeric_limits<float>::infinity(),true},"
+    },
+    {
+      "name": "finite-subtraction-overflow",
+      "expected_rejection": true,
+      "cpp_values": "{\"finite-subtraction-overflow\",std::numeric_limits<float>::max(),std::numeric_limits<float>::lowest(),true}"
+    }
+  ]
+}

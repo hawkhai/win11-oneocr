@@ -1,0 +1,24 @@
+{
+  "windows": {
+    "passed": true,
+    "ctest_cases": 26,
+    "negative_cases": 13,
+    "boundary_controls": 3,
+    "polygon_probes": 54748,
+    "recognition_nms_cases": 79,
+    "baseline_maximum_area_error": 0,
+    "test_binary_sha256": "4dc444125ad2cb0304740588c13bd21dc6531f067557c9470402333265f192fa",
+    "detailed_log_encoding": "gb18030"
+  },
+  "linux": {
+    "passed": true,
+    "ctest_cases": 26,
+    "negative_cases": 13,
+    "boundary_controls": 3,
+    "polygon_probes": 54748,
+    "recognition_nms_cases": 79,
+    "baseline_maximum_area_error": 0,
+    "test_binary_sha256": "aa1454de9f815bf1389eac3134d9306959729fd03f5488440aa7c1f241b5d216",
+    "detailed_log_encoding": "utf8"
+  }
+}

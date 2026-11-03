@@ -1,0 +1,10 @@
+{
+  "hash_format": "SHA-256 after CRLF to LF normalization",
+  "source_files": {
+    "native/CMakeLists.txt": "524c14e488f01bab461d2c78560d50bcc5b66705509fad67162e7c1e57a7e8e1",
+    "native/tests/nms_test.cpp": "b8a2f6a516e110d47392a8b2cf27bf2d795027a57110d6ddffa3614ff61ba09b",
+    "scripts/compare-results.py": "06d137cc93680f766031d783da9526064808fea1135124348e180bb8607f4869",
+    "scripts/verify-native-results.py": "3ce7183c02f2473a5bc610b0f09678279a24479a90e05183cb13a593e82f3da2",
+    "test/native-results-test.py": "4d036d9737bf15b14b02e96fb62da0769418069d57eee993b88348f06146a588"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "windows-native": {
+    "case_count": 221,
+    "sum_case_seconds": 220.06455589982215,
+    "median_case_seconds": 0.8351505000027828,
+    "maximum_case_seconds": 6.935565799998585,
+    "maximum_case_peak_working_set_bytes": 395345920,
+    "note": "Actual process durations including startup; summed case time is not concurrent wall time"
+  },
+  "linux-native": {
+    "case_count": 221,
+    "sum_case_seconds": 347.2250232700001,
+    "median_case_seconds": 1.4396307439999987,
+    "maximum_case_seconds": 7.595176189,
+    "maximum_case_peak_working_set_bytes": 414146560,
+    "note": "Actual process durations including startup; summed case time is not concurrent wall time"
+  }
+}

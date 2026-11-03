@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "baseline_exit_code": 0,
+  "baseline_stdout": "54748 native polygon probes and 79 recognition NMS cases; maximum area error 0\n",
+  "mutation": {
+    "file": "calligraphy-270.json",
+    "expected_before": 0.0,
+    "expected_mutated": 1000000000.0
+  },
+  "mutated_exit_code": 1,
+  "mutated_stdout": "54748 native polygon probes and 79 recognition NMS cases; maximum area error 1e+09\n",
+  "mutated_stderr": "Intersection mismatch Photos calligraphy-270.json 0,1: 0 versus 1e+09\n",
+  "tracked_source_or_assets_modified": false,
+  "reproducer_normalized_sha256": "d37bf549a93c1ae6b77a9a0d929d2b21e566cc0380f97f9964e29c9d635c0405"
+}

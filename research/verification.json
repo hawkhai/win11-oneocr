@@ -39,7 +39,7 @@
       "legacy_api_adapter": true,
       "strict_regression_cases_passed": 221,
       "active_model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
-      "native_unit_test_count": 10
+      "native_unit_test_count": 26
     },
     "linux-x64": {
       "native_build": "passed",
@@ -51,7 +51,7 @@
       "ort_source_build": true,
       "strict_regression_cases_passed": 221,
       "active_model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
-      "native_unit_test_count": 10,
+      "native_unit_test_count": 26,
       "api_integration": [
         "file versus padded BGRA exact result equivalence",
         "six concurrent calls on one context",
@@ -424,7 +424,7 @@
       }
     }
   },
-  "active_regression_report": "reports/options-handwriting-2026-11-03/README.md",
+  "active_regression_report": "reports/photos-intersection-p2-2026-11-03/README.md",
   "history_before_curve_boundaries": {
     "date": "2026-11-02",
     "active_regression_report": "reports/photos-model-update-2026-11-02/README.md",
@@ -459,23 +459,21 @@
     "goal_complete": false
   },
   "latest_review": {
-    "report": "reports/options-handwriting-review-2026-11-03/README.md",
-    "passed": true,
-    "mode": "saved-results-verification",
+    "report": "reports/photos-intersection-review-2026-11-03/README.md",
+    "mode": "saved-native-results-verification",
     "fresh_inference": false,
-    "cases": 1105,
-    "python_tests": 62,
-    "native_ctest_per_platform": 10,
+    "passed": true,
+    "cases": 442,
+    "python_tests": 65,
+    "native_ctest_per_platform": 26,
+    "fresh_inference_report": "reports/photos-intersection-p2-2026-11-03/README.md",
+    "wasm_is_acceptance_gate": false,
     "goal_complete": false,
-    "fresh_inference_report": "reports/options-handwriting-2026-11-03/README.md",
     "fixes": [
-      "whole-component soft recognition budget",
-      "inclusive bbox gate before polygon IoU",
-      "CJK layout after flip",
-      "UTF-8 weighted final word confidence for direction suppression",
-      "option-bound execution identities and negative tests",
-      "real Chinese handwriting and rotations",
-      "native API soft-budget integration test"
+      "Photos intersection tolerance assertion",
+      "finite actual/expected/difference checks",
+      "13 negatives and three boundary controls through actual Photos assertion path",
+      "native-only acceptance verification independent of Wasm parity"
     ]
   },
   "options_handwriting": {
@@ -511,5 +509,36 @@
     ],
     "goal_complete": false,
     "fresh_inference_report": "reports/curve-boundaries-2026-11-03/README.md"
+  },
+  "previous_review_before_photos_intersection": {
+    "report": "reports/options-handwriting-review-2026-11-03/README.md",
+    "passed": true,
+    "mode": "saved-results-verification",
+    "fresh_inference": false,
+    "cases": 1105,
+    "python_tests": 62,
+    "native_ctest_per_platform": 10,
+    "goal_complete": false,
+    "fresh_inference_report": "reports/options-handwriting-2026-11-03/README.md",
+    "fixes": [
+      "whole-component soft recognition budget",
+      "inclusive bbox gate before polygon IoU",
+      "CJK layout after flip",
+      "UTF-8 weighted final word confidence for direction suppression",
+      "option-bound execution identities and negative tests",
+      "real Chinese handwriting and rotations",
+      "native API soft-budget integration test"
+    ]
+  },
+  "active_native_regression_report": "reports/photos-intersection-p2-2026-11-03/README.md",
+  "photos_intersection_p2": {
+    "passed": true,
+    "report": "reports/photos-intersection-p2-2026-11-03/README.md",
+    "fresh_native_cases": 442,
+    "native_ctest_per_platform": 26,
+    "negative_cases_per_platform": 13,
+    "boundary_controls_per_platform": 3,
+    "wasm_is_acceptance_gate": false,
+    "goal_complete": false
   }
 }

@@ -1,0 +1,85 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/devanagari-36.png",
+  "image": {
+    "height": 220,
+    "step": 4000,
+    "width": 1000
+  },
+  "image_angle": 359.6963195800781,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        23.0,
+        39.0,
+        306.0,
+        38.0,
+        306.0,
+        89.0,
+        23.0,
+        91.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "नमस्ते दुनया 2026",
+      "word_count": 3,
+      "words": [
+        {
+          "bounding_box": [
+            24.556241989135742,
+            39.52927017211914,
+            123.01825714111328,
+            39.01275634765625,
+            122.50625610351563,
+            91.01026916503906,
+            23.769655227661133,
+            92.0
+          ],
+          "confidence": 0.9817360043525696,
+          "index": 0,
+          "text": "नमस्ते"
+        },
+        {
+          "bounding_box": [
+            133.20404052734375,
+            38.973670959472656,
+            218.93479919433594,
+            38.749881744384766,
+            218.69036865234375,
+            89.98171997070313,
+            132.72012329101563,
+            90.87554931640625
+          ],
+          "confidence": 0.5116258263587952,
+          "index": 1,
+          "text": "दुनया"
+        },
+        {
+          "bounding_box": [
+            229.96946716308594,
+            38.72925567626953,
+            307.0,
+            38.71198654174805,
+            307.0,
+            89.53994750976563,
+            229.7554473876953,
+            89.88700866699219
+          ],
+          "confidence": 0.9954412579536438,
+          "index": 2,
+          "text": "2026"
+        }
+      ]
+    }
+  ]
+}

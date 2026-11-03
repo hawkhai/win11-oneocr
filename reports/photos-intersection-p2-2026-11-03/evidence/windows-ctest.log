@@ -1,0 +1,58 @@
+Internal ctest changing into directory: F:/pythonx/myocr/win11-oneocr/build/source-runtime
+Test project F:/pythonx/myocr/win11-oneocr/build/source-runtime
+      Start  1: portable_word_box_assertions
+ 1/26 Test  #1: portable_word_box_assertions ...............................   Passed    0.07 sec
+      Start  2: portable_curve_boundaries
+ 2/26 Test  #2: portable_curve_boundaries ..................................   Passed    0.11 sec
+      Start  3: portable_classification
+ 3/26 Test  #3: portable_classification ....................................   Passed    0.10 sec
+      Start  4: portable_api
+ 4/26 Test  #4: portable_api ...............................................   Passed    0.06 sec
+      Start  5: portable_math
+ 5/26 Test  #5: portable_math ..............................................   Passed    0.06 sec
+      Start  6: portable_reading_order
+ 6/26 Test  #6: portable_reading_order .....................................   Passed    0.21 sec
+      Start  7: portable_detector_geometry
+ 7/26 Test  #7: portable_detector_geometry .................................   Passed    0.09 sec
+      Start  8: portable_word_alignment
+ 8/26 Test  #8: portable_word_alignment ....................................   Passed    0.09 sec
+      Start  9: portable_confidence_features
+ 9/26 Test  #9: portable_confidence_features ...............................   Passed    0.08 sec
+      Start 10: portable_polygon_nms
+10/26 Test #10: portable_polygon_nms .......................................   Passed    0.48 sec
+      Start 11: portable_photos_intersection_at-positive-tolerance
+11/26 Test #11: portable_photos_intersection_at-positive-tolerance .........   Passed    0.48 sec
+      Start 12: portable_photos_intersection_at-negative-tolerance
+12/26 Test #12: portable_photos_intersection_at-negative-tolerance .........   Passed    0.59 sec
+      Start 13: portable_photos_intersection_equal-large-finite
+13/26 Test #13: portable_photos_intersection_equal-large-finite ............   Passed    0.45 sec
+      Start 14: portable_photos_intersection_over-positive-tolerance
+14/26 Test #14: portable_photos_intersection_over-positive-tolerance .......   Passed    0.43 sec
+      Start 15: portable_photos_intersection_over-negative-tolerance
+15/26 Test #15: portable_photos_intersection_over-negative-tolerance .......   Passed    0.41 sec
+      Start 16: portable_photos_intersection_review-large-delta
+16/26 Test #16: portable_photos_intersection_review-large-delta ............   Passed    0.41 sec
+      Start 17: portable_photos_intersection_actual-nan
+17/26 Test #17: portable_photos_intersection_actual-nan ....................   Passed    0.40 sec
+      Start 18: portable_photos_intersection_actual-positive-infinity
+18/26 Test #18: portable_photos_intersection_actual-positive-infinity ......   Passed    0.41 sec
+      Start 19: portable_photos_intersection_actual-negative-infinity
+19/26 Test #19: portable_photos_intersection_actual-negative-infinity ......   Passed    0.41 sec
+      Start 20: portable_photos_intersection_expected-nan
+20/26 Test #20: portable_photos_intersection_expected-nan ..................   Passed    0.41 sec
+      Start 21: portable_photos_intersection_expected-positive-infinity
+21/26 Test #21: portable_photos_intersection_expected-positive-infinity ....   Passed    0.40 sec
+      Start 22: portable_photos_intersection_expected-negative-infinity
+22/26 Test #22: portable_photos_intersection_expected-negative-infinity ....   Passed    0.40 sec
+      Start 23: portable_photos_intersection_both-nan
+23/26 Test #23: portable_photos_intersection_both-nan ......................   Passed    0.41 sec
+      Start 24: portable_photos_intersection_same-positive-infinity
+24/26 Test #24: portable_photos_intersection_same-positive-infinity ........   Passed    0.42 sec
+      Start 25: portable_photos_intersection_same-negative-infinity
+25/26 Test #25: portable_photos_intersection_same-negative-infinity ........   Passed    0.40 sec
+      Start 26: portable_photos_intersection_finite-subtraction-overflow
+26/26 Test #26: portable_photos_intersection_finite-subtraction-overflow ...   Passed    0.41 sec
+
+100% tests passed, 0 tests failed out of 26
+
+Total Test time (real) =   8.24 sec

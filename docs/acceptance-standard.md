@@ -13,7 +13,7 @@
 
 继续使用 `scripts/compare-results.py`，保留其对宿主文件路径及后端 engine 元数据的既有排除规则。不得换模型、放宽 C++ 阈值、漏跑登记样本/参数、伪造输出或把错误样本改计识别成功。原 DLL 的预期拒绝单独核对错误契约；共同有效参数范围之外的原生扩展不冒称 DLL 等价。
 
-当前登记范围仍为 126 张样本、27 项固定语料、书页和 67 组参数（66 非默认与一个默认对照），共 221 项/原生环境。此规则不减少 C++ 回归范围，也不豁免上一轮 Review 发现的 Photos 交集测试断言缺口。新增样本和参数须加入同一原生严格回归。
+当前登记范围仍为 126 张样本、27 项固定语料、书页和 67 组参数（66 非默认与一个默认对照），共 221 项/原生环境。此规则不减少 C++ 回归范围；Photos 交集测试必须断言超差与非有限值，并有对应负例，修复记录见[交集测试报告](../reports/photos-intersection-p2-2026-11-03/README.md)。新增样本和参数须加入同一原生严格回归。
 
 Windows 原生完整新推理：
 
@@ -28,6 +28,12 @@ python3 scripts/run-native-parity.py --binary artifacts/linux-x64/bin/ocr --outp
 ```
 
 每个平台分别报告构建与运行结果。现有已验证原生环境为 Windows x64 / Linux x64；Linux ARM64、macOS x64/arm64、Android arm64-v8a 仍未验证，不得因为 WebAssembly 能运行就标记对应原生平台通过。整体目标继续保留 incomplete，直到剩余目标有实测证据。
+
+封存后的原生结果可用以下独立入口重新严格核对；它只将 Windows/Linux 原生识别结果纳入通过判定，Wasm 差异不参与门槛。此模式读取保存输出，不执行新推理：
+
+```powershell
+python scripts/verify-native-results.py --report reports/photos-intersection-p2-2026-11-03 --output work/fresh-native-review
+```
 
 ## WebAssembly 与历史记录
 

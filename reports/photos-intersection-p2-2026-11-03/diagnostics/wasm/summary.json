@@ -1,0 +1,55 @@
+{
+  "diagnostic_only": true,
+  "wasm_is_acceptance_gate": false,
+  "fresh_inference": true,
+  "cases": 2,
+  "matched_under_historical_strict_comparator": 2,
+  "wasm_artifact_rebuilt": false,
+  "reason": "Only native test code/CMake changed; existing Wasm runtime retained. Its source manifest still records the earlier build, not this new test source.",
+  "node": "v24.14.0",
+  "wasm_sha256": "5ad0eedbc3d072c938d4cebf2d07cd1c136e1ae9a53d7ffbef0bf45e2894b7ec",
+  "results": [
+    {
+      "case": "sample-0cbc944c1fac881f",
+      "input_sha256": "6a98ffb9fb41e265fee47d0291db6336f31f49edc02918d2a35465f13f42b4dc",
+      "options": null,
+      "exit_code": 0,
+      "comparison": {
+        "passed": true,
+        "expected_lines": 15,
+        "actual_lines": 15,
+        "same_position_text_matches": 15,
+        "failure_count": 0,
+        "failures": [],
+        "tolerances": {
+          "coordinates_px": 1,
+          "angle_degrees": 0.1,
+          "confidence": 0.001
+        }
+      }
+    },
+    {
+      "case": "parameter-red-grid-jason-m5-r1152x768",
+      "input_sha256": "5320df1c5938033993e365a1ff9583df76ab42166ada23e68d79f1bd752b32d5",
+      "options": {
+        "max_lines": 5,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "exit_code": 0,
+      "comparison": {
+        "passed": true,
+        "expected_lines": 5,
+        "actual_lines": 5,
+        "same_position_text_matches": 5,
+        "failure_count": 0,
+        "failures": [],
+        "tolerances": {
+          "coordinates_px": 1,
+          "angle_degrees": 0.1,
+          "confidence": 0.001
+        }
+      }
+    }
+  ]
+}

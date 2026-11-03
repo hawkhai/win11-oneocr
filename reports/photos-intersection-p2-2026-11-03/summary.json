@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "fresh_inference": true,
+  "native_environments": 2,
+  "cases_per_environment": 221,
+  "passed_cases": 442,
+  "recognition_outputs": 436,
+  "expected_rejections": 6,
+  "native_ctest_per_platform": 26,
+  "wasm_is_acceptance_gate": false,
+  "wasm_diagnostic_cases": 2,
+  "goal_complete": false,
+  "implementation_commit": "75cc751dae63892eaba10ca28b4a42e7735591d6",
+  "unverified_native": [
+    "Linux ARM64",
+    "macOS x64/arm64",
+    "Android arm64-v8a"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\references\\digits-warped.png",
+  "image": {
+    "height": 335,
+    "step": 2000,
+    "width": 500
+  },
+  "image_angle": 0.836330771446228,
+  "line_count": 2,
+  "lines": [
+    {
+      "bounding_box": [
+        209.0,
+        60.0,
+        288.0,
+        59.0,
+        288.0,
+        81.0,
+        209.0,
+        81.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "Warped",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            210.07333374023438,
+            60.29836654663086,
+            289.0,
+            59.418983459472656,
+            289.0,
+            81.39775085449219,
+            209.65164184570313,
+            81.21058654785156
+          ],
+          "confidence": 0.9936503171920776,
+          "index": 0,
+          "text": "Warped"
+        }
+      ]
+    },
+    {
+      "bounding_box": [
+        134.0,
+        136.0,
+        271.0,
+        139.0,
+        271.0,
+        196.0,
+        134.0,
+        195.0
+      ],
+      "index": 1,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "34.5",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            134.0,
+            136.0,
+            271.64508056640625,
+            137.98779296875,
+            270.7839050292969,
+            196.98150634765625,
+            134.0,
+            194.9720916748047
+          ],
+          "confidence": 0.628436267375946,
+          "index": 0,
+          "text": "34.5"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "implementation_commit": "75cc751dae63892eaba10ca28b4a42e7735591d6",
+  "comparator_sha256": "06d137cc93680f766031d783da9526064808fea1135124348e180bb8607f4869",
+  "model_manifest_sha256": "8e6d5b973aad14590890ce78de39e5414b7297df4350d65e7a2990ab9b9c929a",
+  "original_assets": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155"
+  },
+  "scope": "126 samples + 27 corpus + book + 67 parameter cases = 221 per native host",
+  "dll_baseline": "existing version-bound Photos 11.0.15 outputs; no new DLL capture claimed",
+  "native_acceptance": "same strict comparator; coordinates 1px, angle 0.1deg, confidence 1e-3",
+  "wasm_is_acceptance_gate": false
+}
