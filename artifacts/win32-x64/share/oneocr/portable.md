@@ -39,6 +39,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-native.ps1 -So
 
 输出包含原资源名、SHA-256、图输入输出、算子、字表特殊 token、校准表和转换合约。未知私有特征层不会被猜测为已兼容。
 
+研究对照工具 `scripts/run-reference.py` 在启动参考实现前，按当前模型清单校验源图、字表及已有参考缓存；不一致时拒绝运行并保留缓存，可用 `--cache-dir work/reference-current` 选择全新目录。新建缓存使用独立副本，不与正式模型共享可写硬链接。输出旁的 `.inputs.json` 记录来源模型、清单及全部 20 个实际输入文件摘要。该工具只用于对照研究，参考实现缺失的手写等能力仍不标记为已对齐。
+
 `-SourceRuntime` 下载固定的 ORT 源码、构建 CPU 动态库并安装到 `work/ort-install`，再编译本项目。依赖源码下载需要网络；准备完成后的识别不需要网络。固定版本见 [dependencies.json](../research/dependencies.json)，研究 Python 的完整版本锁定在 `scripts/requirements-lock.txt`。
 
 已有 SDK 时可显式使用 `-SdkRoot`，这条路径不声称 SDK 是本机从源码构建的：

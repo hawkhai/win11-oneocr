@@ -1,0 +1,62 @@
+{
+  "base_commit": "263d5ff05bdebf1b78b329d64f61755871dca973",
+  "original_reports": {
+    "review-fixes-2026-11-03": {
+      "files": 1810,
+      "index_sha256": "55147f1ff1fbfeff053efde374198d6c71109fc16847c20952d22b92d4c23025",
+      "unchanged": true
+    },
+    "review-boundaries-2026-11-03": {
+      "files": 870,
+      "index_sha256": "d71e32a147f824827cce18508d316a908e12cbeee9ddd9fbffbcade5e1201e6b",
+      "unchanged": true
+    },
+    "evidence-binding-2026-11-03": {
+      "files": 444,
+      "index_sha256": "8cc273db5a0fca23ace4af0943034ee324450055681e3c8b959fe050e22fbd46",
+      "unchanged": true
+    }
+  },
+  "delivery_files_checked": 252,
+  "delivery_manifest_sha256": "cd888ca9250047d3a59b413a58d6badea5e7073ae84438c84274faba1293da37",
+  "model_files_checked": 155,
+  "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+  "model_manifest_sha256": "8e6d5b973aad14590890ce78de39e5414b7297df4350d65e7a2990ab9b9c929a",
+  "wasm_core_sha256": "70ad89615c37319c83e74935f8cf5dc9b039d503fc2328e22251ecb98a47739e",
+  "runtime_unchanged": true,
+  "source_metadata_current": true,
+  "frozen_sources_models_samples_comparator_unchanged": true,
+  "tests_passed": 40,
+  "saved_results_verified": 690,
+  "recorded_smoke_runs": {
+    "wasm_native_pipeline": 1,
+    "research_reference": 1
+  },
+  "reference_input_files_checked": 20,
+  "new_cache_uses_independent_files": true,
+  "unverified": [
+    "macOS native",
+    "Android native",
+    "Linux ARM64 native",
+    "Safari",
+    "Firefox",
+    "mobile devices",
+    "Node 20 full regression"
+  ],
+  "incomplete": [
+    "degenerate curve fallback solver",
+    "extreme-length polygon clipping",
+    "expanded nondefault option probes",
+    "independent real handwritten CJK and other scripts"
+  ],
+  "changed_code": {
+    "scripts/regression_inputs.py": "71a693111bcdc36b14aef771d5124a9af5e79aed8f1a6feb2aa74ac2e56b087c",
+    "scripts/reference_inputs.py": "7fb9f50785ce4acc3a8a18dfe826112f75cb88c64061ffbe909225303a519f80",
+    "scripts/run-reference.py": "3093b161f8a4a05ff5c885126060f2e7682fe14bcbd3d09580133b1b44709dc4",
+    "scripts/run-wasm-parity.py": "9c4b6fac63b00a900933947ec303c032bac1898c7c6b07e524dc8235a5aa9da5",
+    "scripts/verify-recorded-parity.py": "e210eeb010044fed4b17512c8bd072123c20ce40418d739f69466536b51f56e6",
+    "scripts/build-wasm.py": "971c560280072decf9c69f412216ad5132ad7ce6003e6483085bc4239358859d",
+    "test/reference-inputs-test.py": "2128547c2f8372bd56189e10296ce6cf63486aa60d4abe248bb3ed08a41923bd",
+    "test/archive-verification-test.py": "33ba473dc7dddeb00c3d7fdfce29f1eebc8f1e27a9a3a01194aa6dcbb2900701"
+  }
+}

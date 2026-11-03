@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+  "model_manifest_sha256": "8e6d5b973aad14590890ce78de39e5414b7297df4350d65e7a2990ab9b9c929a",
+  "assets": [
+    {
+      "file": "detector/text_detector.onnx",
+      "sha256": "035ce56dbf49553b72d081ef2b51659ebab919e596d903f5dd892f1a2777c92b",
+      "source_file": "detector/text_detector.onnx",
+      "source_sha256": "035ce56dbf49553b72d081ef2b51659ebab919e596d903f5dd892f1a2777c92b",
+      "transformation": "unchanged"
+    },
+    {
+      "file": "classifier/script_classifier.onnx",
+      "sha256": "20f7dfcdc33289aeb45c16fc7b349d7cd8e94d6d531cfe234d31dd637da97ef9",
+      "source_file": "classifier/script_classifier.onnx",
+      "source_sha256": "20f7dfcdc33289aeb45c16fc7b349d7cd8e94d6d531cfe234d31dd637da97ef9",
+      "transformation": "unchanged"
+    },
+    {
+      "file": "vocab/vocab_arabic.txt",
+      "sha256": "8edb7dfb49077f7ab0b2a0680e3ad2835411bad5d299dd6d333dd553ff9df6bd",
+      "source_file": "vocab/vocab_arabic.json",
+      "source_sha256": "95a9267e21512cd0f0a1b32218a552dafddd64a454682319b0fcade57691e38e",
+      "transformation": "reference indexed UTF-8 vocabulary"
+    },
+    {
+      "file": "recognizers/recognizer_arabic.onnx",
+      "sha256": "f5b75bf06ae7cafc971ec1a09a6f8d6e33932471087007b9b9da71567a96d8c2",
+      "source_file": "recognizers/recognizer_arabic.onnx",
+      "source_sha256": "f5b75bf06ae7cafc971ec1a09a6f8d6e33932471087007b9b9da71567a96d8c2",
+      "transformation": "unchanged"
+    },
+    {
+      "file": "vocab/vocab_cjk.txt",
+      "sha256": "4831ee1c0d421d9abb7aee398421996dedec35780eba15ee785edff5d4479ea5",
+      "source_file": "vocab/vocab_cjk.json",
+      "source_sha256": "993e775be93aae112f2af670f373e34b7cb57e5accea706f05898cfd2b51aea8",
+      "transformation": "reference indexed UTF-8 vocabulary"
+    },
+    {
+      "file": "recognizers/recognizer_cjk.onnx",
+      "sha256": "ff10bab34f2b1250e32e179aab21218cb05ad8fce972d089b5ccf8c02ab478d0",
+      "source_file": "recognizers/recognizer_cjk.onnx",
+      "source_sha256": "ff10bab34f2b1250e32e179aab21218cb05ad8fce972d089b5ccf8c02ab478d0",
+      "transformation": "unchanged"
+    },
+    {
+      "file": "vocab/vocab_latin.txt",
+      "sha256": "c24f51bd7c60f68629b72126fd618df88a7b277dd405e2802eea13193d3e706b",
+      "source_file": "vocab/vocab_cyrillic.json",
+      "source_sha256": "08f1a44cbe31ebee5f63c7d0b14e0a0a243725be6d98adb09e13d72642472da2",
+      "transformation": "reference indexed UTF-8 vocabulary"
+    },
+    {
+      "file": "recognizers/recognizer_latin.onnx",
+      "sha256": "4ad10b28e6f3d296b32f09f76f5cfc254b4c18bcec4a784d25009a5b81671df9",
+      "source_file": "recognizers/recognizer_cyrillic.onnx",
+      "source_sha256": "4ad10b28e6f3d296b32f09f76f5cfc254b4c18bcec4a784d25009a5b81671df9",
+      "transformation": "unchanged"
+    },
+    {
+      "file": "vocab/vocab_devanagari.txt",
+      "sha256": "70424e94bc65a6fd6047d8a92252a7dbb8cc9a582184bf0d4f0e311c21185279",
+      "source_file": "vocab/vocab_devanagari.json",
+      "source_sha256": "66d6c88247a40171ffaf2fe0c6dc8cba24e907c694abfb16bf0f76f03d981e98",
+      "transformation": "reference indexed UTF-8 vocabulary"
+    },
+    {
+      "file": "recognizers/recognizer_devanagari.onnx",
+      "sha256": "51702124827aba276fd5068cb71766c6f1a0008a5a4eb3eded0254921bff2784",
+      "source_file": "recognizers/recognizer_devanagari.onnx",
+      "source_sha256": "51702124827aba276fd5068cb71766c6f1a0008a5a4eb3eded0254921bff2784",
+      "transformation": "unchanged"
+    },
+    {
+      "file": "vocab/vocab_hebrew.txt",
+      "sha256": "2418d305e8960c92cfd16f4234b3d1a45db4fd1626f98931195fd2a0be112fcc",
+      "source_file": "vocab/vocab_greek.json",
+      "source_sha256": "fc2bae03822956f490eab8e6d3f81f182f1c8ae9b601552026f6d5eab10b6fec",
+      "transformation": "reference indexed UTF-8 vocabulary"
+    },
+    {
+      "file": "recognizers/recognizer_hebrew.onnx",
+      "sha256": "2e1deb29f14f68c6a03359bf41a956653279d1bce4f9b6d9d0058c94c1a3c1c2",
+      "source_file": "recognizers/recognizer_greek.onnx",
+      "source_sha256": "2e1deb29f14f68c6a03359bf41a956653279d1bce4f9b6d9d0058c94c1a3c1c2",
+      "transformation": "unchanged"
+    },
+    {
+      "file": "vocab/vocab_bengali.txt",
+      "sha256": "8105ea6a93d86456761826ee3b3bba63e6be70d73e673ad2e1c45b840bc21ff6",
+      "source_file": "vocab/vocab_hebrew.json",
+      "source_sha256": "cf4239d30de1ab79840b5244fa787b6928cb4e7d775b3df79e2e1f35e2a48708",
+      "transformation": "reference indexed UTF-8 vocabulary"
+    },
+    {
+      "file": "recognizers/recognizer_bengali.onnx",
+      "sha256": "07069ae041e43a9a9aa05699e224f01ac6945457fe4951ab9bb73d510e0a6045",
+      "source_file": "recognizers/recognizer_hebrew.onnx",
+      "source_sha256": "07069ae041e43a9a9aa05699e224f01ac6945457fe4951ab9bb73d510e0a6045",
+      "transformation": "unchanged"
+    },
+    {
+      "file": "vocab/vocab_cyrillic.txt",
+      "sha256": "5eec531b1220ef59e031c78595e02f4d310be457e871a64678a1834424972778",
+      "source_file": "vocab/vocab_latin.json",
+      "source_sha256": "db155fa47657d83ab4a7bcc4ef3f303fd7bbf636de1a9691ea3d7ea5691f64ca",
+      "transformation": "reference indexed UTF-8 vocabulary"
+    },
+    {
+      "file": "recognizers/recognizer_cyrillic.onnx",
+      "sha256": "d6c8c8cb894547225e32a46b91b4025b9e5e0d735b4e88402e9779ba65b55e06",
+      "source_file": "recognizers/recognizer_latin.onnx",
+      "source_sha256": "d6c8c8cb894547225e32a46b91b4025b9e5e0d735b4e88402e9779ba65b55e06",
+      "transformation": "unchanged"
+    },
+    {
+      "file": "vocab/vocab_greek.txt",
+      "sha256": "7003da1c8b9473ab69fd4a695168a857f1ae58df1e8e55bc0e337959477033a7",
+      "source_file": "vocab/vocab_tamil.json",
+      "source_sha256": "53c08b7dc40f65ba0d37725dbd6a497230e8bda7b49f54a9b2925c649b7e82ef",
+      "transformation": "reference indexed UTF-8 vocabulary"
+    },
+    {
+      "file": "recognizers/recognizer_greek.onnx",
+      "sha256": "f88f18d67aaac8f230b99859ad93acf00e0dae1ff0be410020ac7c7daa0db2b1",
+      "source_file": "recognizers/recognizer_tamil.onnx",
+      "source_sha256": "f88f18d67aaac8f230b99859ad93acf00e0dae1ff0be410020ac7c7daa0db2b1",
+      "transformation": "unchanged"
+    },
+    {
+      "file": "vocab/vocab_thai.txt",
+      "sha256": "598361060724cd12332f6e0a92ec96c69565cb242fa3133de858b002395c1e51",
+      "source_file": "vocab/vocab_thai.json",
+      "source_sha256": "eefd7ec9ae686ff7228291af4288e84eab1e71966c9c9fd2960e11bbe7aa859f",
+      "transformation": "reference indexed UTF-8 vocabulary"
+    },
+    {
+      "file": "recognizers/recognizer_thai.onnx",
+      "sha256": "52600bd18800814813cff1723b8ddede878850117e06c96b25f147cbe16561ed",
+      "source_file": "recognizers/recognizer_thai.onnx",
+      "source_sha256": "52600bd18800814813cff1723b8ddede878850117e06c96b25f147cbe16561ed",
+      "transformation": "unchanged"
+    }
+  ],
+  "bindings": [
+    {
+      "reference_label": "arabic",
+      "actual_resource": "Character\\ArabicMixed\\ONNX\\checkpoint.005_quant.onnx",
+      "vocab_size": 221,
+      "model_sha256": "f5b75bf06ae7cafc971ec1a09a6f8d6e33932471087007b9b9da71567a96d8c2",
+      "vocabulary_source_sha256": "95a9267e21512cd0f0a1b32218a552dafddd64a454682319b0fcade57691e38e"
+    },
+    {
+      "reference_label": "cjk",
+      "actual_resource": "Character\\CJKPrinted\\ONNX\\checkpoint.005_quant.onnx",
+      "vocab_size": 32632,
+      "model_sha256": "ff10bab34f2b1250e32e179aab21218cb05ad8fce972d089b5ccf8c02ab478d0",
+      "vocabulary_source_sha256": "993e775be93aae112f2af670f373e34b7cb57e5accea706f05898cfd2b51aea8"
+    },
+    {
+      "reference_label": "latin",
+      "actual_resource": "Character\\CyrillicMixed\\ONNX\\checkpoint.005_quant.onnx",
+      "vocab_size": 415,
+      "model_sha256": "4ad10b28e6f3d296b32f09f76f5cfc254b4c18bcec4a784d25009a5b81671df9",
+      "vocabulary_source_sha256": "08f1a44cbe31ebee5f63c7d0b14e0a0a243725be6d98adb09e13d72642472da2"
+    },
+    {
+      "reference_label": "devanagari",
+      "actual_resource": "Character\\DevanagariMixed\\ONNX\\checkpoint.005_quant.onnx",
+      "vocab_size": 237,
+      "model_sha256": "51702124827aba276fd5068cb71766c6f1a0008a5a4eb3eded0254921bff2784",
+      "vocabulary_source_sha256": "66d6c88247a40171ffaf2fe0c6dc8cba24e907c694abfb16bf0f76f03d981e98"
+    },
+    {
+      "reference_label": "hebrew",
+      "actual_resource": "Character\\GreekMixed\\ONNX\\checkpoint.005_quant.onnx",
+      "vocab_size": 244,
+      "model_sha256": "2e1deb29f14f68c6a03359bf41a956653279d1bce4f9b6d9d0058c94c1a3c1c2",
+      "vocabulary_source_sha256": "fc2bae03822956f490eab8e6d3f81f182f1c8ae9b601552026f6d5eab10b6fec"
+    },
+    {
+      "reference_label": "bengali",
+      "actual_resource": "Character\\HebrewPrinted\\ONNX\\checkpoint.005_quant.onnx",
+      "vocab_size": 201,
+      "model_sha256": "07069ae041e43a9a9aa05699e224f01ac6945457fe4951ab9bb73d510e0a6045",
+      "vocabulary_source_sha256": "cf4239d30de1ab79840b5244fa787b6928cb4e7d775b3df79e2e1f35e2a48708"
+    },
+    {
+      "reference_label": "cyrillic",
+      "actual_resource": "Character\\LatinPrintedV2\\ONNX\\checkpoint.005_quant.onnx",
+      "vocab_size": 548,
+      "model_sha256": "d6c8c8cb894547225e32a46b91b4025b9e5e0d735b4e88402e9779ba65b55e06",
+      "vocabulary_source_sha256": "db155fa47657d83ab4a7bcc4ef3f303fd7bbf636de1a9691ea3d7ea5691f64ca"
+    },
+    {
+      "reference_label": "greek",
+      "actual_resource": "Character\\TamilPrinted\\ONNX\\checkpoint.005_quant.onnx",
+      "vocab_size": 179,
+      "model_sha256": "f88f18d67aaac8f230b99859ad93acf00e0dae1ff0be410020ac7c7daa0db2b1",
+      "vocabulary_source_sha256": "53c08b7dc40f65ba0d37725dbd6a497230e8bda7b49f54a9b2925c649b7e82ef"
+    },
+    {
+      "reference_label": "thai",
+      "actual_resource": "Character\\ThaiMixed\\ONNX\\checkpoint.005_quant.onnx",
+      "vocab_size": 199,
+      "model_sha256": "52600bd18800814813cff1723b8ddede878850117e06c96b25f147cbe16561ed",
+      "vocabulary_source_sha256": "eefd7ec9ae686ff7228291af4288e84eab1e71966c9c9fd2960e11bbe7aa859f"
+    }
+  ]
+}

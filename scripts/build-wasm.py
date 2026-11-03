@@ -213,6 +213,7 @@ def main():
                                                     ROOT/'CMakeLists.txt', ROOT/'json.hpp', ROOT/'stb_image.h',
                                                     ROOT/'scripts/build-wasm.py', ROOT/'scripts/run-wasm-parity.py',
                                                     ROOT/'scripts/verification_state.py', ROOT/'test/verification-state-test.py',
+                                                    ROOT/'scripts/regression_inputs.py',
                                                     ROOT/'scripts/compare-results.py', ROOT/'scripts/browser-memory.ps1', ROOT/'test/compare-results-test.py',
                                                     ROOT/'test/wasm-test.mjs', ROOT/'research/dependencies.json']) if p.is_file()},
                   'files': {p.relative_to(output).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()

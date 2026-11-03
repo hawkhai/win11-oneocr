@@ -11,6 +11,8 @@ import sys
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from verification_state import contained,destination_for_verification,signatures,runtime_assets,check_result_files,load_execution,verify_execution
+from regression_inputs import current_cases
+from regression_reference import active_reference
 
 
 def read(p):return json.loads(p.read_text(encoding='utf8'))
@@ -26,8 +28,11 @@ def main():
     index=read(report/'FILES.sha256.json')
     for name,entry in index.items():
         if sha(contained(report,name))!=entry['sha256']:raise ValueError('Archived report changed: '+name)
-    cases=read(report/'windows-node/execution-cases.json');signatures(cases)
-    recorded=read(report/'windows-node/summary.json');reference=recorded['reference']
+    captured=read(report/'windows-node/execution-cases.json')
+    reference=active_reference();cases=current_cases(ROOT,reference)
+    if signatures(captured)!=signatures(cases):
+        raise ValueError('Verification input scope differs from the recorded execution')
+    recorded=read(report/'windows-node/summary.json')
     baselines={c['name']:c['baseline_sha256'] for c in recorded['results']}
     if sha(ROOT/'models/manifest.json')!=recorded['model_manifest_sha256']:raise ValueError('Model changed')
     for model in read(report/'evidence/model-preparation.json')['files']:
@@ -49,13 +54,6 @@ def main():
             raise ValueError('Wasm runtime changed: '+name)
     spec=importlib.util.spec_from_file_location('strict_compare',ROOT/'scripts/compare-results.py')
     comparator=importlib.util.module_from_spec(spec);spec.loader.exec_module(comparator)
-    selected=[]
-    for case in cases:
-        name=case['name'];entry=dict(case)
-        if not case.get('expected_error'):
-            golden=ROOT/reference['book_baseline'] if name=='book' else ROOT/reference['corpus_baseline']/(name.removeprefix('corpus-')+'.json') if name.startswith('corpus-') else ROOT/reference['all_samples_baseline']/(name.removeprefix('sample-')+'.json')
-            entry['baseline']=str(golden)
-        selected.append(entry)
     environments=[]
     for env in ['windows-native','linux-native','windows-node','chrome','linux-node']:
         directory=report/env;old=read(directory/'summary.json');results=[]
@@ -66,7 +64,7 @@ def main():
             if path.relative_to(report).as_posix() not in index:raise ValueError('Unindexed result file: '+str(path))
         if not native:
             execution=load_execution(directory)
-            verify_execution(execution,selected,build,ROOT/'models')
+            verify_execution(execution,cases,build,ROOT/'models')
         suite={c['name']:c for c in read(directory/'all-samples/suite.json')['cases']} if native else {}
         for case in cases:
             name=case['name']
@@ -83,7 +81,7 @@ def main():
                     passed=all(error.get(k)==v for k,v in expected.items()) and not actual.exists()
                 result={'passed':passed,'expected_error':expected}
             else:
-                golden=ROOT/reference['book_baseline'] if name=='book' else ROOT/reference['corpus_baseline']/(name.removeprefix('corpus-')+'.json') if name.startswith('corpus-') else ROOT/reference['all_samples_baseline']/(name.removeprefix('sample-')+'.json')
+                golden=Path(case['baseline'])
                 if sha(golden)!=baselines[name]:raise ValueError('Baseline changed: '+name)
                 result=comparator.compare(read(golden),read(actual))
             results.append({'case':name,**result})
@@ -93,6 +91,9 @@ def main():
              'cases':sum(e['cases'] for e in environments),'passed_cases':sum(e['passed_cases'] for e in environments),
              'execution_index_sha256':sha(report/'FILES.sha256.json'),'execution_commit':commit,
              'comparator_sha256':sha(ROOT/'scripts/compare-results.py'),'runtime_identity_checked':True,
+             'input_scope_checked':True,'verified_input_sha256':{c['name']:c['sha256'] for c in cases},
+             'input_inventory_sha256':{n:sha(ROOT/n) for n in ['samples/manifest.json','research/case/corpus/manifest.json']},
+             'verifier_source_sha256':{n:sha(ROOT/'scripts'/n) for n in ['verify-recorded-parity.py','verification_state.py','regression_inputs.py']},
              'tolerances':{'coordinates_px':1,'angle_degrees':.1,'confidence':1e-3},'environments':environments}
     output.mkdir(parents=True,exist_ok=True)
     (output/'verification.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf8')

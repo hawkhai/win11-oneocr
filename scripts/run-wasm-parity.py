@@ -15,6 +15,7 @@ from concurrent.futures import ThreadPoolExecutor
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'scripts'))
 from regression_reference import active_reference
+from regression_inputs import current_cases
 from verification_state import checkpoint, destination_for_verification, load_execution, verify_execution
 
 
@@ -67,41 +68,7 @@ def main():
             if hashlib.sha256((ROOT/name).read_bytes().replace(b'\r\n', b'\n')).hexdigest() != expected:
                 raise ValueError('Wasm build is stale for source: '+name)
     reference = active_reference()
-    model = read(ROOT/'models/manifest.json')
-    if reference['model_source_sha256'] != model['source_assets']['oneocr.onemodel']:
-        raise ValueError('Model and frozen reference differ')
-    cases = []
-    inventory = read(ROOT/'samples/manifest.json')
-    images = sorted(p.relative_to(ROOT/'samples').as_posix() for p in (ROOT/'samples').rglob('*')
-                    if p.suffix.lower() in {'.png', '.jpg', '.jpeg', '.bmp', '.gif', '.tif', '.tiff', '.webp'})
-    if images != [item['file'] for item in inventory['cases']]:
-        raise ValueError('Sample inventory changed; no omissions allowed')
-    for item in inventory['cases']:
-        contract = read(ROOT/reference['all_samples_baseline']/(item['name']+'.contract.json'))
-        golden = ROOT/reference['all_samples_baseline']/(item['name']+'.json')
-        path = ROOT/'samples'/item['file']
-        if sha(path) != item['sha256'] or contract['image_sha256'] != item['sha256']:
-            raise ValueError('Sample fingerprint changed: '+str(path))
-        if contract['result_sha256'] and sha(golden) != contract['result_sha256']:
-            raise ValueError('Baseline fingerprint changed: '+str(golden))
-        error = None
-        if contract['measurement']['exit_code']:
-            message = contract['measurement']['stderr']
-            if 'Original wrapper OCR failed: -18' in message and not (50 <= item['width'] <= 10000 and 50 <= item['height'] <= 10000):
-                error = {'code': -18, 'message': 'Image dimensions must be 50..10000 pixels'}
-            elif 'Original wrapper OCR failed: -15' in message and item['pixel_mode'] == 'LA':
-                error = {'code': -15, 'message': 'Unsupported image channel count'}
-            else:
-                raise ValueError('Unclassified original failure; cannot waive it: '+item['file'])
-        cases.append({'name': 'sample-'+item['name'], 'path': str(path.resolve()), 'sha256': item['sha256'],
-                      'baseline': str(golden.resolve()) if not error else None, 'expected_error': error})
-    corpus = ROOT/'research/case/corpus'
-    for item in read(corpus/'manifest.json')['cases']:
-        path = corpus/item['file']
-        cases.append({'name': 'corpus-'+item['name'], 'path': str(path.resolve()), 'sha256': sha(path),
-                      'baseline': str((ROOT/reference['corpus_baseline']/(item['name']+'.json')).resolve())})
-    cases.append({'name': 'book', 'path': str(ROOT/'ocr-book.jpg'), 'sha256': sha(ROOT/'ocr-book.jpg'),
-                  'baseline': str(ROOT/reference['book_baseline'])})
+    cases = current_cases(ROOT,reference)
     total = len(cases)
     if args.only:
         cases = [entry for entry in cases if entry['name'] == args.only]
@@ -207,7 +174,7 @@ def main():
                         'execution_integrity':recorded['integrity'],'execution_build':recorded['state']['build'],
                         'original_scheduling':recorded['state']['scheduling'],'original_execution':recorded['measurements'],
                         'original_browser_request_timeout_ms':recorded['state'].get('browser_request_timeout_ms'),
-                        'verifier_source_sha256':{p.name:sha(p) for p in [Path(__file__),ROOT/'scripts/verification_state.py',ROOT/'scripts/compare-results.py']},
+                        'verifier_source_sha256':{p.name:sha(p) for p in [Path(__file__),ROOT/'scripts/verification_state.py',ROOT/'scripts/regression_inputs.py',ROOT/'scripts/compare-results.py']},
                         'current_delivery_build':build,'runtime_identity_checked':True})
         write(output/'verification.json',summary)
     else:

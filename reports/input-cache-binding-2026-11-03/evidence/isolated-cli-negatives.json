@@ -1,0 +1,40 @@
+[
+  {
+    "scenario": "changed-image",
+    "entrypoint": "all",
+    "exit_code": 1,
+    "output_published": false,
+    "stderr": "Traceback (most recent call last):\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\work\\review4-checkout\\scripts\\verify-recorded-parity.py\", line 103, in <module>\n    if __name__=='__main__':sys.exit(main())\n                                     ^^^^^^\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\work\\review4-checkout\\scripts\\verify-recorded-parity.py\", line 34, in main\n    raise ValueError('Verification input scope differs from the recorded execution')\nValueError: Verification input scope differs from the recorded execution\n"
+  },
+  {
+    "scenario": "changed-image",
+    "entrypoint": "single",
+    "exit_code": 1,
+    "output_published": false,
+    "stderr": "Traceback (most recent call last):\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\work\\review4-checkout\\scripts\\run-wasm-parity.py\", line 189, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\work\\review4-checkout\\scripts\\run-wasm-parity.py\", line 97, in main\n    verify_execution(recorded,cases,build,ROOT/'models',subset=bool(args.only))\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\work\\review4-checkout\\scripts\\verification_state.py\", line 144, in verify_execution\n    raise ValueError('Verification input scope differs from the recorded execution')\nValueError: Verification input scope differs from the recorded execution\n"
+  },
+  {
+    "scenario": "extra-sample",
+    "entrypoint": "all",
+    "exit_code": 1,
+    "output_published": false,
+    "stderr": "Traceback (most recent call last):\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\work\\review4-checkout\\scripts\\verify-recorded-parity.py\", line 103, in <module>\n    if __name__=='__main__':sys.exit(main())\n                                     ^^^^^^\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\work\\review4-checkout\\scripts\\verify-recorded-parity.py\", line 32, in main\n    reference=active_reference();cases=current_cases(ROOT,reference)\n                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\work\\review4-checkout\\scripts\\regression_inputs.py\", line 21, in current_cases\n    raise ValueError('Sample inventory changed; no omissions allowed')\nValueError: Sample inventory changed; no omissions allowed\n"
+  },
+  {
+    "scenario": "extra-sample",
+    "entrypoint": "single",
+    "exit_code": 1,
+    "output_published": false,
+    "stderr": "Traceback (most recent call last):\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\work\\review4-checkout\\scripts\\run-wasm-parity.py\", line 189, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\work\\review4-checkout\\scripts\\run-wasm-parity.py\", line 71, in main\n    cases = current_cases(ROOT,reference)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\work\\review4-checkout\\scripts\\regression_inputs.py\", line 21, in current_cases\n    raise ValueError('Sample inventory changed; no omissions allowed')\nValueError: Sample inventory changed; no omissions allowed\n"
+  },
+  {
+    "scenario": "valid-onnx-with-different-classifier-weights",
+    "entrypoint": "reference",
+    "exit_code": 1,
+    "output_published": false,
+    "stderr": "Traceback (most recent call last):\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\work\\review4-checkout\\scripts\\run-reference.py\", line 30, in <module>\n    provenance=stage_reference_inputs(models,target)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\work\\review4-checkout\\scripts\\reference_inputs.py\", line 45, in stage_reference_inputs\n    add(record['file'],relative,record['sha256'])\n  File \"F:\\pythonx\\myocr\\win11-oneocr\\work\\review4-checkout\\scripts\\reference_inputs.py\", line 23, in add\n    if sha(destination)!=expected:raise ValueError('Reference cache checksum mismatch: '+relative)\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Reference cache checksum mismatch: classifier/script_classifier.onnx\n",
+    "onnx_checker": "passed",
+    "cached_model_sha256": "9f2191ce5e476caece933b5e6923225de120b778ecf11d418b6bcf00be84cb3f",
+    "source_model_sha256": "20f7dfcdc33289aeb45c16fc7b349d7cd8e94d6d531cfe234d31dd637da97ef9"
+  }
+]

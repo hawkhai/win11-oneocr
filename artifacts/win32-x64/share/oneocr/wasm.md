@@ -143,6 +143,8 @@ python scripts/run-wasm-parity.py --compare-only --output reports/review-fixes-2
 
 `execution.json` 中的构建、用例、基准摘要、调度和浏览器等待预算必须与其封存的原始文件逐项一致，实际复核使用原始文件中的值。有外层报告索引时，还会核验 `execution.json` 本身。单环境与五环境复核共用结果清单校验：成功项旁的 `.error.json`、拒绝项旁的成功结果、缺失或未登记的结果 JSON 均会使复核失败，不发布通过报告。相关修复与负例测试见[执行证据绑定报告](../reports/evidence-binding-2026-11-03/README.md)。
 
+两种复核入口也共用 `regression_inputs.py`，从当前文件重新生成输入范围并计算摘要，再与原执行绑定；不能将历史清单中的摘要直接当成当前输入。`samples/` 下所有图片必须登记且逐个核验；固定语料以其 `manifest.json` 登记项为范围，另含书页。修改图片、增删样本或固定语料登记项，都会拒绝复用旧结果。详情见[输入与参考缓存修复报告](../reports/input-cache-binding-2026-11-03/README.md)。
+
 可用 `--schedule-from` 指定同模型、同输入摘要的旧完整报告，仅利用耗时安排并行任务，不复用其识别结果。浏览器回归的单请求测试等待预算默认 30 分钟，可用 `--browser-timeout-ms` 调整，以容纳多进程 CPU 争用；这不会修改 Worker/插件的产品默认超时或任何数值验收阈值。Windows 浏览器回归在关闭前记录当前浏览器进程树的 OS 峰值工作集，各进程峰值之和只作为上界，不代表同时占用峰值。
 
 浏览器全量回归可使用本地 Chromium 和固定的 Playwright Core 1.55.0：
