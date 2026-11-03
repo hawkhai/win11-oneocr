@@ -444,5 +444,20 @@
     "detector_input_exact_floats": 110592,
     "report": "reports/curve-boundaries-2026-11-03/README.md",
     "goal_complete": false
+  },
+  "latest_review": {
+    "report": "reports/word-box-zip-p2-2026-11-03/README.md",
+    "passed": true,
+    "mode": "saved-results-verification",
+    "fresh_inference": false,
+    "cases": 710,
+    "python_tests": 58,
+    "native_ctest_per_platform": 10,
+    "fixes": [
+      "final word box finite assertion and negative tests",
+      "source ZIP sealed report evidence completeness"
+    ],
+    "goal_complete": false,
+    "fresh_inference_report": "reports/curve-boundaries-2026-11-03/README.md"
   }
 }

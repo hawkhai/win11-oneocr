@@ -38,6 +38,8 @@ cd oneocr
 
 更新全部提交后运行 `python scripts/package-offline.py` 可重建 `artifacts/win11-oneocr-offline.bundle` 和 `artifacts/oneocr-source.zip`，同时生成两份 `.sha256` 与绑定 HEAD 的 `OFFLINE_PACKAGE.json`。脚本要求工作树干净，检查 Git 包头与校验结果，不联网、不上传。源码 ZIP 包含当前回归输入、预言机和报告，排除模型和编译文件；构建所需独立模型另由 Git 包提供。
 
+源码打包按每份报告的 `FILES.sha256.json` 收齐证据，包含 `.log.gz` 及其他被索引的数据格式。缺少文件、长度或 SHA-256 不符会在写包前拒绝；生成后再次核验 ZIP 内全部报告索引。已有源码包可用 `python scripts/package-source.py --verify artifacts/oneocr-source.zip` 只读校验，不能仅凭 `SOURCE_BUILD.json` 自身一致就认定报告完整。词框有限性与源码包完整性修复见 [P2 复核报告](../reports/word-box-zip-p2-2026-11-03/README.md)。
+
 ## 提交了哪些资产
 
 | 路径 | 内容 |

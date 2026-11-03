@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "F:\pythonx\myocr\win11-oneocr\scripts\package-source.py", line 106, in <module>
+    if args.verify:print(json.dumps(verify_source_archive(args.verify)))
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\pythonx\myocr\win11-oneocr\scripts\package-source.py", line 64, in verify_source_archive
+    raise ValueError('Missing indexed report file in source archive: '+name)
+ValueError: Missing indexed report file in source archive: reports/evidence-binding-2026-11-03/evidence/wasm-build.log.gz

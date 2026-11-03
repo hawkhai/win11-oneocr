@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "mode": "saved-results-verification",
+  "fresh_inference": false,
+  "cases": 710,
+  "passed_cases": 710,
+  "recognition_outputs": 695,
+  "expected_rejections": 15,
+  "python_tests": 58,
+  "native_ctest": {
+    "Windows": 10,
+    "Linux": 10
+  },
+  "word_box_nonfinite_negatives": 48,
+  "word_box_finite_error_negatives": 8,
+  "model_changed": false,
+  "inference_binaries_changed": false,
+  "strict_tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "goal_complete": false,
+  "unverified": [
+    "Linux ARM64",
+    "macOS x64/arm64",
+    "Android arm64-v8a",
+    "Safari",
+    "Firefox",
+    "mobile browsers",
+    "Node 20 full scope"
+  ]
+}

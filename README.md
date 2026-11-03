@@ -20,6 +20,8 @@ Linux 现有预编译包要求 **glibc 2.43+**（在 Ubuntu 26.04 x64 验证）�
 
 ## Native source runtime — experimental
 
+[词框断言与源码包完整性修复](reports/word-box-zip-p2-2026-11-03/README.md)补齐最终词框 NaN/Infinity 拒绝负例，并按报告索引收齐源码 ZIP 的压缩日志。原五端 710 项结果按原严格比较器独立复核；执行记录和新复核分别保存，模型与推理运行文件保持原样。
+
 The repository now contains a C++20/CMake backend that runs independently of
 the original OneOCR DLL. Windows x64 and Linux x64 builds have been tested;
 Linux inference also passed in a network namespace with no outbound route.

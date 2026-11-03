@@ -1,5 +1,6 @@
 #include "detector.hpp"
 #include "normalizer.hpp"
+#include "word_box_assertions.hpp"
 #include "json.hpp"
 #include <filesystem>
 #include <fstream>
@@ -34,8 +35,9 @@ int main() {
             for(const auto& word:record.at("words")) {
                 auto box=mapping.triangles.empty()?map_line_word(polygon,word.at("start"),word.at("end"),word.at("flipped")):
                     map_clipped_polygon_word(mapping,polygon,word.at("start"),word.at("end"),word.at("flipped"));
-                for(int k=0;k<4;k++)if(std::abs(box[k].x-word.at("box")[k*2].get<float>())>1e-4f || std::abs(box[k].y-word.at("box")[k*2+1].get<float>())>1e-4f)
-                    throw std::runtime_error("Clipped inverse word mapping differs: case "+record.at("case").dump()+" word "+word.dump());
+                Quad expected_box;
+                for(int k=0;k<4;k++)expected_box[k]={word.at("box")[k*2].get<float>(),word.at("box")[k*2+1].get<float>()};
+                oneocr_test::require_word_box_equal(box,expected_box);
             }
         }
         auto long_image=load_image(ONEOCR_BOUNDARY_LONG_IMAGE);

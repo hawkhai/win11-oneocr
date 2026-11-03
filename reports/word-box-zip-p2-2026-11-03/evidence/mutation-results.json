@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "injected_nan_in_real_oracle_loop": {
+    "exit_code": 1,
+    "stderr": "Nonfinite final word box coordinate\n",
+    "expected_rejection": true
+  },
+  "before_fix_same_nan_injection": {
+    "source_commit": "912d0ac",
+    "exit_code": 0,
+    "stdout": "Curve fallback and clipped polygon DLL oracles: PASS\n",
+    "false_pass_reproduced": true
+  },
+  "removed_finite_guard_is_detected": {
+    "exit_code": 1,
+    "stderr": "Nonfinite word box was accepted\n",
+    "negative_suite_detected_regression": true
+  }
+}

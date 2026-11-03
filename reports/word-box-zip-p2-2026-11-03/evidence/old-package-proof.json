@@ -1,0 +1,21 @@
+{
+  "commit": "912d0accfc27d6f4384198a057bc9bbf248051cd",
+  "source_zip": {
+    "sha256": "50d3f60d87ebb66c43263293f065de890f3cd372fccb3dd3830589acacf8a75a",
+    "size": 92625224
+  },
+  "root_cause": "extension filter omitted indexed gzip logs",
+  "omitted_logs": [
+    "reports/evidence-binding-2026-11-03/evidence/wasm-build.log.gz",
+    "reports/input-cache-binding-2026-11-03/evidence/wasm-build.log.gz",
+    "reports/review-boundaries-2026-11-03/evidence/build.log.gz",
+    "reports/review-fixes-2026-11-03/evidence/review-wasm-build.log.gz",
+    "reports/review-fixes-2026-11-03/evidence/review-wasm-final-stage.log.gz",
+    "reports/wasm-2026-11-03/evidence/wasm-acceptance-stage.log.gz",
+    "reports/wasm-2026-11-03/evidence/wasm-build-activated.log.gz",
+    "reports/wasm-2026-11-03/evidence/wasm-convolution-profile-build.log.gz",
+    "reports/wasm-2026-11-03/evidence/wasm-engine-build-final.log.gz",
+    "reports/wasm-2026-11-03/evidence/wasm-profile-v2-build.log.gz"
+  ],
+  "expected_old_archive_rejection": "old-zip-rejected.log"
+}

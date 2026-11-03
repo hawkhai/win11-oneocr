@@ -182,7 +182,7 @@ def main():
          '-DCMAKE_BUILD_TYPE=Release', '-DBUILD_TESTING=OFF', '-DONNXRUNTIME_ROOT='+str(sdk),
          '-DONEOCR_OPENCV_SOURCE='+str(args.opencv_source.resolve()),
          '-DONEOCR_ICU_SOURCE='+str(args.icu_source.resolve())], env=environment)
-    run(['cmake', '--build', native, '--target', 'oneocr_wasm', 'oneocr_wasm_rounding_test', 'oneocr_wasm_fma_test', 'oneocr_wasm_boundary_test', '--parallel', args.jobs], env=environment)
+    run(['cmake', '--build', native, '--target', 'oneocr_wasm', 'oneocr_wasm_rounding_test', 'oneocr_wasm_fma_test', 'oneocr_wasm_boundary_test', 'oneocr_wasm_word_box_assertions_test', '--parallel', args.jobs], env=environment)
     node = environment['EMSDK_NODE']
     run([node, native/'bin/oneocr_wasm_rounding_test.js'], env=environment)
     run([node, native/'bin/oneocr_wasm_fma_test.js'], env=environment)
@@ -191,6 +191,7 @@ def main():
     boundary.check_returncode()
     if 'Curve fallback and clipped polygon DLL oracles: PASS' not in boundary.stdout:
         raise RuntimeError('Wasm boundary test did not complete its C++ assertions')
+    run([node, native/'bin/oneocr_wasm_word_box_assertions_test.js'], env=environment)
     output = args.output.resolve()
     run(['cmake', '--install', native, '--prefix', output], env=environment)
     emscripten = emsdk/'upstream/emscripten'
