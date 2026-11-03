@@ -180,6 +180,15 @@ if(BUILD_TESTING)
     target_compile_definitions(oneocr_nms_test PRIVATE ONEOCR_RECOGNITION_NMS_CONTRACT="${PROJECT_SOURCE_DIR}/research/recognition-nms-contracts.json")
     target_compile_definitions(oneocr_nms_test PRIVATE ONEOCR_OPTIONS_ORACLES="${PROJECT_SOURCE_DIR}/research/options-handwriting/oracles")
     add_test(NAME portable_polygon_nms COMMAND oneocr_nms_test)
+    foreach(intersection_case IN ITEMS
+            at-positive-tolerance at-negative-tolerance equal-large-finite
+            over-positive-tolerance over-negative-tolerance review-large-delta
+            actual-nan actual-positive-infinity actual-negative-infinity
+            expected-nan expected-positive-infinity expected-negative-infinity
+            both-nan same-positive-infinity same-negative-infinity finite-subtraction-overflow)
+        add_test(NAME portable_photos_intersection_${intersection_case}
+                 COMMAND oneocr_nms_test --photos-intersection-case ${intersection_case})
+    endforeach()
 endif()
 option(ONEOCR_BUILD_JNI "Build the Android JNI example" ${ANDROID})
 if(ONEOCR_BUILD_JNI)
