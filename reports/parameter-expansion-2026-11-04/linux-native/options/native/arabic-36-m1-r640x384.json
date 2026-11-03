@@ -1,0 +1,85 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/arabic-36.png",
+  "image": {
+    "height": 220,
+    "step": 4000,
+    "width": 1000
+  },
+  "image_angle": 358.9918518066406,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        15.0,
+        41.0,
+        327.0,
+        36.0,
+        328.0,
+        81.0,
+        15.0,
+        87.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "2026 ملاعلاب ابحرم",
+      "word_count": 3,
+      "words": [
+        {
+          "bounding_box": [
+            242.16439819335938,
+            37.9672966003418,
+            329.0,
+            36.074459075927734,
+            329.0,
+            82.50440979003906,
+            241.7744140625,
+            83.21165466308594
+          ],
+          "confidence": 0.9910960793495178,
+          "index": 0,
+          "text": "2026"
+        },
+        {
+          "bounding_box": [
+            128.58248901367188,
+            40.0897102355957,
+            231.70323181152344,
+            38.179908752441406,
+            231.26629638671875,
+            83.34162902832031,
+            127.67325592041016,
+            85.11659240722656
+          ],
+          "confidence": 0.6178761720657349,
+          "index": 1,
+          "text": "ملاعلاب"
+        },
+        {
+          "bounding_box": [
+            23.960939407348633,
+            41.653560638427734,
+            119.61506652832031,
+            40.2337646484375,
+            118.66559600830078,
+            85.33111572265625,
+            22.577430725097656,
+            87.94300079345703
+          ],
+          "confidence": 0.6968886256217957,
+          "index": 2,
+          "text": "ابحرم"
+        }
+      ]
+    }
+  ]
+}

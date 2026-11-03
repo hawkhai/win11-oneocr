@@ -1,0 +1,85 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\research\\case\\corpus\\devanagari-36.png",
+  "image": {
+    "height": 220,
+    "step": 4000,
+    "width": 1000
+  },
+  "image_angle": 359.7043151855469,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        22.0,
+        41.0,
+        312.0,
+        40.0,
+        313.0,
+        87.0,
+        22.0,
+        89.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "नमस्ते दुनया 2026",
+      "word_count": 3,
+      "words": [
+        {
+          "bounding_box": [
+            22.28428840637207,
+            43.412479400634766,
+            123.55592346191406,
+            41.54601287841797,
+            123.55593872070313,
+            89.0,
+            22.28428840637207,
+            87.60111999511719
+          ],
+          "confidence": 0.9741345643997192,
+          "index": 0,
+          "text": "नमस्ते"
+        },
+        {
+          "bounding_box": [
+            132.76304626464844,
+            41.410980224609375,
+            219.47032165527344,
+            40.81932067871094,
+            219.4703369140625,
+            88.9281005859375,
+            132.7630615234375,
+            89.0
+          ],
+          "confidence": 0.6726348400115967,
+          "index": 1,
+          "text": "दुनया"
+        },
+        {
+          "bounding_box": [
+            229.44577026367188,
+            40.80385208129883,
+            313.0,
+            41.03678894042969,
+            313.0,
+            87.25950622558594,
+            229.44578552246094,
+            88.81707763671875
+          ],
+          "confidence": 0.9961800575256348,
+          "index": 2,
+          "text": "2026"
+        }
+      ]
+    }
+  ]
+}

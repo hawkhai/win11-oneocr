@@ -24,12 +24,13 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--report',type=Path,required=True)
     parser.add_argument('--output',type=Path,required=True)
+    parser.add_argument('--reference',type=Path,help='Explicit historical reference snapshot; does not verify the current scope')
     args=parser.parse_args();report=args.report.resolve();output=destination_for_verification(report,args.output)
     index=read(report/'FILES.sha256.json')
     for name,entry in index.items():
         if sha(contained(report,name))!=entry['sha256']:raise ValueError('Archived report changed: '+name)
     captured=read(report/'windows-node/execution-cases.json')
-    reference=active_reference();cases=current_cases(ROOT,reference)
+    reference=active_reference(args.reference);cases=current_cases(ROOT,reference)
     if signatures(captured)!=signatures(cases):
         raise ValueError('Verification input scope differs from the recorded execution')
     recorded=read(report/'windows-node/summary.json')
@@ -66,7 +67,7 @@ def main():
             execution=load_execution(directory)
             verify_execution(execution,cases,build,ROOT/'models')
         suite={c['name']:c for c in read(directory/'all-samples/suite.json')['cases']} if native else {}
-        parameters={c['name']:c for c in read(directory/'options/suite.json')['cases']} if native and 'parameter_manifest' in active_reference() else {}
+        parameters={c['name']:c for c in read(directory/'options/suite.json')['cases']} if native and 'parameter_manifest' in reference else {}
         for case in cases:
             name=case['name']
             if native:
@@ -95,6 +96,7 @@ def main():
     summary={'mode':'saved-results-verification','fresh_inference':False,'passed':all(e['passed'] for e in environments),
              'cases':sum(e['cases'] for e in environments),'passed_cases':sum(e['passed_cases'] for e in environments),
              'execution_index_sha256':sha(report/'FILES.sha256.json'),'execution_commit':commit,
+             'current_scope':args.reference is None,'reference_snapshot_sha256':sha(args.reference) if args.reference else None,
              'comparator_sha256':sha(ROOT/'scripts/compare-results.py'),'runtime_identity_checked':True,
              'input_scope_checked':True,'verified_input_sha256':{c['name']:c['sha256'] for c in cases},
              'input_inventory_sha256':{n:sha(ROOT/n) for n in ['samples/manifest.json','research/case/corpus/manifest.json']},

@@ -7,9 +7,10 @@ import sys
 import tempfile
 import unittest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from regression_reference import active_archive
+from regression_reference import active_archive, active_reference
 
 ROOT=Path(__file__).resolve().parents[1]
+HISTORICAL_REFERENCE=ROOT/'research/references/options-handwriting-2026-11-03.json'
 
 
 class ArchiveVerification(unittest.TestCase):
@@ -27,8 +28,7 @@ class ArchiveVerification(unittest.TestCase):
         (cls.inputs/'models').mkdir()
         shutil.copyfile(ROOT/'models/manifest.json',cls.inputs/'models/manifest.json')
         shutil.copyfile(ROOT/'ocr-book.jpg',cls.inputs/'ocr-book.jpg')
-        manifest=json.loads((ROOT/'research/delivery-manifest.json').read_text(encoding='utf8'))
-        reference=manifest['reference']
+        reference=active_reference(HISTORICAL_REFERENCE)
         for name in {reference['all_samples_baseline'],reference['corpus_baseline']}:
             shutil.copytree(ROOT/name,cls.inputs/name)
         if 'parameter_manifest' in reference:
@@ -44,6 +44,7 @@ class ArchiveVerification(unittest.TestCase):
     def invoke(self,kind,output,inputs=False):
         if kind=='all':args=['scripts/verify-recorded-parity.py','--report',self.report,'--output',output]
         else:args=['scripts/run-wasm-parity.py','--compare-only','--output',self.report/'windows-node','--verification-output',output]
+        args.extend(['--reference',HISTORICAL_REFERENCE])
         if inputs:
             wrapper="""import importlib.util,sys
 from pathlib import Path
@@ -66,7 +67,7 @@ sys.exit(tool.main())
             self.assertEqual(result.returncode,0,result.stderr)
 
     def test_parameter_inventory_or_frozen_options_drift_is_rejected(self):
-        manifest=json.loads((ROOT/'research/delivery-manifest.json').read_text(encoding='utf8'));reference=manifest['reference']
+        reference=active_reference(HISTORICAL_REFERENCE)
         path=self.inputs/reference['parameter_manifest'];original=path.read_bytes();value=json.loads(original)
         value['cases'][0]['options']['max_lines']=2;path.write_text(json.dumps(value),encoding='utf8')
         try:
@@ -124,6 +125,7 @@ sys.exit(tool.main())
             self.assertEqual(result.returncode,0,result.stderr)
             data=json.loads((output/'verification.json').read_text(encoding='utf8'))
             self.assertEqual(data['passed_cases'],count);self.assertFalse(data['fresh_inference'])
+            self.assertFalse(data['current_scope'])
 
     def test_conflicting_and_extra_json_fail_without_publishing(self):
         for filename in ['corpus-latin-36.error.json','unregistered.json']:

@@ -13,7 +13,7 @@
 
 继续使用 `scripts/compare-results.py`，保留其对宿主文件路径及后端 engine 元数据的既有排除规则。不得换模型、放宽 C++ 阈值、漏跑登记样本/参数、伪造输出或把错误样本改计识别成功。原 DLL 的预期拒绝单独核对错误契约；共同有效参数范围之外的原生扩展不冒称 DLL 等价。
 
-当前登记范围仍为 126 张样本、27 项固定语料、书页和 67 组参数（66 非默认与一个默认对照），共 221 项/原生环境。此规则不减少 C++ 回归范围；Photos 交集测试必须断言超差与非有限值，并有对应负例，修复记录见[交集测试报告](../reports/photos-intersection-p2-2026-11-03/README.md)。新增样本和参数须加入同一原生严格回归。
+当前登记范围为 126 张样本、27 项固定语料、书页和 115 组参数（114 非默认与一个默认对照），共 269 项/原生环境。参数由 [2026-11-04 清单](../research/parameter-cases-2026-11-04.json) 登记，新增旋转手写、多语种及版式联合参数；原 67 组清单和旧报告保留原样。此规则不减少 C++ 回归范围；Photos 交集测试必须断言超差与非有限值，并有对应负例，修复记录见[交集测试报告](../reports/photos-intersection-p2-2026-11-03/README.md)。新增样本和参数须加入同一原生严格回归。
 
 Windows 原生完整新推理：
 
@@ -32,10 +32,18 @@ python3 scripts/run-native-parity.py --binary artifacts/linux-x64/bin/ocr --outp
 封存后的原生结果可用以下独立入口重新严格核对；它只将 Windows/Linux 原生识别结果纳入通过判定，Wasm 差异不参与门槛。此模式读取保存输出，不执行新推理：
 
 ```powershell
-python scripts/verify-native-results.py --report reports/photos-intersection-p2-2026-11-03 --output work/fresh-native-review
+python scripts/verify-native-results.py --report reports/parameter-expansion-2026-11-04 --output work/fresh-native-review
 ```
 
 ## WebAssembly 与历史记录
+
+历史保存结果复核必须显式指定旧范围快照，例如：
+
+```powershell
+python scripts/verify-native-results.py --report reports/photos-intersection-p2-2026-11-03 --reference research/references/options-handwriting-2026-11-03.json --output work/historical-native-review
+```
+
+该模式输出 `current_scope=false`，仅复核历史范围；默认入口仍要求当前全部 269 项，旧 221 项报告不能充当当前验收。`verify-recorded-parity.py` 与 `run-wasm-parity.py --compare-only` 也支持相同快照；新推理不能用该快照缩小范围。
 
 `scripts/run-wasm-parity.py` 和五环境 `scripts/verify-recorded-parity.py` 仍可用于严格诊断及历史封存复核。它们的 PASS/FAIL 描述该次比较结果；WebAssembly 部分 FAIL 不自动等于 C++ 验收失败。不得再要求先消除 Wasm 的所有数值差异才能完成原生 C++ 工作。
 

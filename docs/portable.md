@@ -2,11 +2,11 @@
 
 **当前验收铁律：原生 C++ 必须与原 DLL 严格对齐，沿用坐标 ≤1px、角度 ≤0.1°、置信度 ≤1e-3，其余识别字段按既有契约一致；WebAssembly 不要求绝对一致，也不阻塞 C++ 验收。** 用户于 2026-11-03 确认，权威说明见仓库 `AGENTS.md` 与 `docs/acceptance-standard.md`。历史五环境报告保持原貌。
 
-最新 Photos 交集测试断言修复后，Windows/Linux 原生各 **221/221** 新推理严格通过，CTest 各 **26/26**；13 个超差/非有限值负例与三个边界正例通过同一 Photos 断言路径，见[本轮报告](../reports/photos-intersection-p2-2026-11-03/README.md)。Wasm 仅作诊断。
+最新联合参数扩展后，Windows/Linux 原生各 **269/269** 新推理严格通过，合计 **538/538**；CTest 各 **26/26**，Python 完整套件 **67/67**，见[本轮报告](../reports/parameter-expansion-2026-11-04/README.md)。Photos 交集断言的 13 个负例与三个边界正例继续保留。本轮没有重建原生运行库或执行新的 Wasm 推理。
 
-本轮覆盖 126 张图片、27 项固定语料、书页及 67 个参数组合，共 221 项/环境。新增真实纸面中文手写照片及旋转派生图，并修复由其暴露的非默认行预算、区域粗筛、CJK 版式顺序和置信度汇总差异。验证状态与复跑命令见[参数与中文手写报告](../reports/options-handwriting-2026-11-03/README.md)；历史报告保留原执行范围。
+本轮保留 126 张图片、27 项固定语料、书页，将参数增为 115 组，共 269 项/环境。新增 48 组覆盖旋转手写、多语种和多栏/竖排的联合参数，未增加图片来源或书写者。当前范围及复跑命令见[联合参数报告](../reports/parameter-expansion-2026-11-04/README.md)；历史报告保留原执行范围，生产算法未改。
 
-当前独立模型为 Photos 2026.11090.22001.0（配套 DLL 11.0.15）。升级当时 Windows/Linux 的 110 张图片、原 27 项与新版 106 行书页均按原阈值通过，详见[历史模型报告](../reports/photos-model-update-2026-11-02/README.md)；本轮两套原生完整范围均为 **221/221**，见[最新报告](../reports/options-handwriting-2026-11-03/README.md)。原生 CPU 运行库仍固定为源码构建的 ORT 1.23.2，已实测兼容新版图；微软配套运行库为 1.24.20260504.1.7444c45，两者没有混为同一个构建。
+当前独立模型为 Photos 2026.11090.22001.0（配套 DLL 11.0.15）。升级当时 Windows/Linux 的 110 张图片、原 27 项与新版 106 行书页均按原阈值通过，详见[历史模型报告](../reports/photos-model-update-2026-11-02/README.md)；本轮两套原生完整范围均为 **269/269**，见[最新报告](../reports/parameter-expansion-2026-11-04/README.md)。原生 CPU 运行库仍固定为源码构建的 ORT 1.23.2，已实测兼容新版图；微软配套运行库为 1.24.20260504.1.7444c45，两者没有混为同一个构建。
 
 后续已按补齐计数、索引和类型检查的比较器重新执行 Windows/Linux 原生完整回归，各 **138/138**，见 [Review 修复报告](../reports/review-fixes-2026-11-03/README.md)。模型准备工具默认来源也已绑定当前 Photos 版本，并拒绝异版本覆盖。
 
@@ -143,7 +143,7 @@ JSON 继续使用 `file`、`image`、`image_angle`、`lines`、`words`、`boundi
 .\.research-python\python.exe scripts/summarize-parity.py
 ```
 
-固定语料 27 项与全目录 126 张图片（含缩略图、拼图、参考图、曲线/长行和新增真实手写）均纳入当前回归，另含书页和 67 个参数组合，共 221 项。最新结果与复跑命令见 [参数与中文手写报告](../reports/options-handwriting-2026-11-03/README.md)；使用 `scripts/run-all-samples.py` 检查，不允许遗漏图片。原始 CLI 不支持 Unicode 路径用例，基准工具使用原始 wrapper 的宽字符入口，并在独立子进程运行。`scripts/run-parity-suite.py` 可复放其他固定清单；所有失败项保留，不自动放宽阈值。`--error-baseline` 只用于已记录的原 DLL 错误契约，不能将识别差异当成预期错误。
+固定语料 27 项与全目录 126 张图片（含缩略图、拼图、参考图、曲线/长行和新增真实手写）均纳入当前回归，另含书页和 115 个参数组合，共 269 项。最新结果与复跑命令见 [联合参数报告](../reports/parameter-expansion-2026-11-04/README.md)；使用 `scripts/run-all-samples.py` 检查，不允许遗漏图片。原始 CLI 不支持 Unicode 路径用例，基准工具使用原始 wrapper 的宽字符入口，并在独立子进程运行。`scripts/run-parity-suite.py` 可复放其他固定清单；所有失败项保留，不自动放宽阈值。`--error-baseline` 只用于已记录的原 DLL 错误契约，不能将识别差异当成预期错误。
 
 退化曲线保留原 LU 路径，仅在零主元时使用原 DLL 对应的 SVD 正规方程备用解。超长多边形保留源顶点、零目标尾部及三角形覆盖顺序，并恢复裁剪后的词框逆映射。极长图缩小后的面积比例不超过 0.04 时使用 AREA 插值；这是还原的算法常量，不是验收阈值。内部几何、像素及张量预言机在 Windows、Linux、Wasm 共用，见 [分支证据](../research/curve-boundaries/README.md)。
 

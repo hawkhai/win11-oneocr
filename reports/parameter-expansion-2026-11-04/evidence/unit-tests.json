@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "rebuild_performed": false,
+  "tests_per_platform": 26,
+  "platforms": {
+    "windows": {
+      "passed": true,
+      "tests": 26,
+      "log": "windows-ctest.log",
+      "sha256": "633255acaf9ad3516e7972a9ce4e57990f649c690514215dc537dbd1c55e704d",
+      "encoding": "GB18030"
+    },
+    "linux": {
+      "passed": true,
+      "tests": 26,
+      "log": "linux-ctest.log",
+      "sha256": "f9c16551fc1fea61b9bc3efd1463084e7a4c2daefe940266b2f949bbda5282fe",
+      "encoding": "UTF-8"
+    }
+  }
+}

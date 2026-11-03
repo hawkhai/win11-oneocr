@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/references/pp-product-result.jpg",
+  "image_sha256": "0480db6fe59b40e56ad5fe52543783ad63a3c11fb3499e34ffda3da0227f2214",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.8424405999830924,
+    "peak_working_set_bytes": 302907392,
+    "stderr": ""
+  },
+  "result_sha256": "65ee6b18be6b5eb0be0b2e514a3dc0ec7c9e7a33e5cbff1e2e75217874cb8410"
+}

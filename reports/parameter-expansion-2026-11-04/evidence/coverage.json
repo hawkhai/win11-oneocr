@@ -1,0 +1,497 @@
+{
+  "previous_parameter_cases": 67,
+  "parameter_cases": 115,
+  "added_cases": 48,
+  "new_source_images": 0,
+  "new_writers": 0,
+  "added_groups": {
+    "rotated_handwriting": 32,
+    "printed_scripts": 12,
+    "layout": 4
+  },
+  "added_nonempty_outputs": 46,
+  "added_empty_outputs": 2,
+  "all_original_inputs_and_cases_retained": true,
+  "new_parameter_results": [
+    {
+      "case": "red-grid-jason-rotate-90-m1-r1152x768",
+      "original_lines": 2,
+      "options": {
+        "max_lines": 1,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "input_sha256": "000ecdc061c9102e800ae863f25473c2b445887feb4581000df45569313a98b8"
+    },
+    {
+      "case": "red-grid-jason-rotate-90-m5-r640x384",
+      "original_lines": 8,
+      "options": {
+        "max_lines": 5,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "input_sha256": "000ecdc061c9102e800ae863f25473c2b445887feb4581000df45569313a98b8"
+    },
+    {
+      "case": "red-grid-jason-rotate-90-m6-r768x512",
+      "original_lines": 6,
+      "options": {
+        "max_lines": 6,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "input_sha256": "000ecdc061c9102e800ae863f25473c2b445887feb4581000df45569313a98b8"
+    },
+    {
+      "case": "red-grid-jason-rotate-90-m1000-r33x65",
+      "original_lines": 5,
+      "options": {
+        "max_lines": 1000,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "input_sha256": "000ecdc061c9102e800ae863f25473c2b445887feb4581000df45569313a98b8"
+    },
+    {
+      "case": "red-grid-jason-rotate-180-m1-r1152x768",
+      "original_lines": 3,
+      "options": {
+        "max_lines": 1,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "input_sha256": "699c5d8bead1eed62d6c15dc070e88bc677a7919a432279bf72537c619412e5c"
+    },
+    {
+      "case": "red-grid-jason-rotate-180-m5-r640x384",
+      "original_lines": 8,
+      "options": {
+        "max_lines": 5,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "input_sha256": "699c5d8bead1eed62d6c15dc070e88bc677a7919a432279bf72537c619412e5c"
+    },
+    {
+      "case": "red-grid-jason-rotate-180-m6-r768x512",
+      "original_lines": 7,
+      "options": {
+        "max_lines": 6,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "input_sha256": "699c5d8bead1eed62d6c15dc070e88bc677a7919a432279bf72537c619412e5c"
+    },
+    {
+      "case": "red-grid-jason-rotate-180-m1000-r33x65",
+      "original_lines": 5,
+      "options": {
+        "max_lines": 1000,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "input_sha256": "699c5d8bead1eed62d6c15dc070e88bc677a7919a432279bf72537c619412e5c"
+    },
+    {
+      "case": "red-grid-jason-rotate-270-m1-r1152x768",
+      "original_lines": 2,
+      "options": {
+        "max_lines": 1,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "input_sha256": "17a21dd3e764cbc97edeffe8a524fbc9e53ccde453e6a5cdbc33629cb78a727e"
+    },
+    {
+      "case": "red-grid-jason-rotate-270-m5-r640x384",
+      "original_lines": 5,
+      "options": {
+        "max_lines": 5,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "input_sha256": "17a21dd3e764cbc97edeffe8a524fbc9e53ccde453e6a5cdbc33629cb78a727e"
+    },
+    {
+      "case": "red-grid-jason-rotate-270-m6-r768x512",
+      "original_lines": 6,
+      "options": {
+        "max_lines": 6,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "input_sha256": "17a21dd3e764cbc97edeffe8a524fbc9e53ccde453e6a5cdbc33629cb78a727e"
+    },
+    {
+      "case": "red-grid-jason-rotate-270-m1000-r33x65",
+      "original_lines": 7,
+      "options": {
+        "max_lines": 1000,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "input_sha256": "17a21dd3e764cbc97edeffe8a524fbc9e53ccde453e6a5cdbc33629cb78a727e"
+    },
+    {
+      "case": "red-grid-jason-rotate-10-m1-r1152x768",
+      "original_lines": 3,
+      "options": {
+        "max_lines": 1,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "input_sha256": "611c33683bfede5e139af848d6a7bd31c0b211e84b84d5ecbf6e138cd32225b3"
+    },
+    {
+      "case": "red-grid-jason-rotate-10-m5-r640x384",
+      "original_lines": 7,
+      "options": {
+        "max_lines": 5,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "input_sha256": "611c33683bfede5e139af848d6a7bd31c0b211e84b84d5ecbf6e138cd32225b3"
+    },
+    {
+      "case": "red-grid-jason-rotate-10-m6-r768x512",
+      "original_lines": 6,
+      "options": {
+        "max_lines": 6,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "input_sha256": "611c33683bfede5e139af848d6a7bd31c0b211e84b84d5ecbf6e138cd32225b3"
+    },
+    {
+      "case": "red-grid-jason-rotate-10-m1000-r33x65",
+      "original_lines": 0,
+      "options": {
+        "max_lines": 1000,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "input_sha256": "611c33683bfede5e139af848d6a7bd31c0b211e84b84d5ecbf6e138cd32225b3"
+    },
+    {
+      "case": "red-calligraphy-jason-rotate-90-m1-r1152x768",
+      "original_lines": 2,
+      "options": {
+        "max_lines": 1,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "input_sha256": "6a98ffb9fb41e265fee47d0291db6336f31f49edc02918d2a35465f13f42b4dc"
+    },
+    {
+      "case": "red-calligraphy-jason-rotate-90-m5-r640x384",
+      "original_lines": 8,
+      "options": {
+        "max_lines": 5,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "input_sha256": "6a98ffb9fb41e265fee47d0291db6336f31f49edc02918d2a35465f13f42b4dc"
+    },
+    {
+      "case": "red-calligraphy-jason-rotate-90-m6-r768x512",
+      "original_lines": 6,
+      "options": {
+        "max_lines": 6,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "input_sha256": "6a98ffb9fb41e265fee47d0291db6336f31f49edc02918d2a35465f13f42b4dc"
+    },
+    {
+      "case": "red-calligraphy-jason-rotate-90-m1000-r33x65",
+      "original_lines": 6,
+      "options": {
+        "max_lines": 1000,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "input_sha256": "6a98ffb9fb41e265fee47d0291db6336f31f49edc02918d2a35465f13f42b4dc"
+    },
+    {
+      "case": "red-calligraphy-jason-rotate-180-m1-r1152x768",
+      "original_lines": 1,
+      "options": {
+        "max_lines": 1,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "input_sha256": "0d17412b5c93f40600c731960ffb2ff0dc41026b34f0c2f8fc35b64cfca6682c"
+    },
+    {
+      "case": "red-calligraphy-jason-rotate-180-m5-r640x384",
+      "original_lines": 7,
+      "options": {
+        "max_lines": 5,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "input_sha256": "0d17412b5c93f40600c731960ffb2ff0dc41026b34f0c2f8fc35b64cfca6682c"
+    },
+    {
+      "case": "red-calligraphy-jason-rotate-180-m6-r768x512",
+      "original_lines": 9,
+      "options": {
+        "max_lines": 6,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "input_sha256": "0d17412b5c93f40600c731960ffb2ff0dc41026b34f0c2f8fc35b64cfca6682c"
+    },
+    {
+      "case": "red-calligraphy-jason-rotate-180-m1000-r33x65",
+      "original_lines": 3,
+      "options": {
+        "max_lines": 1000,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "input_sha256": "0d17412b5c93f40600c731960ffb2ff0dc41026b34f0c2f8fc35b64cfca6682c"
+    },
+    {
+      "case": "red-calligraphy-jason-rotate-270-m1-r1152x768",
+      "original_lines": 1,
+      "options": {
+        "max_lines": 1,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "input_sha256": "7f1203caf61d3eeaa50ed15c4361c1b12a4464f4f80a82b5786df6e02a836568"
+    },
+    {
+      "case": "red-calligraphy-jason-rotate-270-m5-r640x384",
+      "original_lines": 5,
+      "options": {
+        "max_lines": 5,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "input_sha256": "7f1203caf61d3eeaa50ed15c4361c1b12a4464f4f80a82b5786df6e02a836568"
+    },
+    {
+      "case": "red-calligraphy-jason-rotate-270-m6-r768x512",
+      "original_lines": 7,
+      "options": {
+        "max_lines": 6,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "input_sha256": "7f1203caf61d3eeaa50ed15c4361c1b12a4464f4f80a82b5786df6e02a836568"
+    },
+    {
+      "case": "red-calligraphy-jason-rotate-270-m1000-r33x65",
+      "original_lines": 0,
+      "options": {
+        "max_lines": 1000,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "input_sha256": "7f1203caf61d3eeaa50ed15c4361c1b12a4464f4f80a82b5786df6e02a836568"
+    },
+    {
+      "case": "red-calligraphy-jason-rotate-10-m1-r1152x768",
+      "original_lines": 2,
+      "options": {
+        "max_lines": 1,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "input_sha256": "14bb2e0f9dff76d949e85fca190b8d00a5e9cd5934dd954da892ae6c871b3a5c"
+    },
+    {
+      "case": "red-calligraphy-jason-rotate-10-m5-r640x384",
+      "original_lines": 6,
+      "options": {
+        "max_lines": 5,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "input_sha256": "14bb2e0f9dff76d949e85fca190b8d00a5e9cd5934dd954da892ae6c871b3a5c"
+    },
+    {
+      "case": "red-calligraphy-jason-rotate-10-m6-r768x512",
+      "original_lines": 6,
+      "options": {
+        "max_lines": 6,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "input_sha256": "14bb2e0f9dff76d949e85fca190b8d00a5e9cd5934dd954da892ae6c871b3a5c"
+    },
+    {
+      "case": "red-calligraphy-jason-rotate-10-m1000-r33x65",
+      "original_lines": 5,
+      "options": {
+        "max_lines": 1000,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "input_sha256": "14bb2e0f9dff76d949e85fca190b8d00a5e9cd5934dd954da892ae6c871b3a5c"
+    },
+    {
+      "case": "arabic-36-m1-r640x384",
+      "original_lines": 1,
+      "options": {
+        "max_lines": 1,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "input_sha256": "796c4585fc52ab1186e26dc19d82f8df758eb7e58aeb991de5f97bd66c3b7992"
+    },
+    {
+      "case": "arabic-36-m2-r1151x767",
+      "original_lines": 1,
+      "options": {
+        "max_lines": 2,
+        "resize_width": 1151,
+        "resize_height": 767
+      },
+      "input_sha256": "796c4585fc52ab1186e26dc19d82f8df758eb7e58aeb991de5f97bd66c3b7992"
+    },
+    {
+      "case": "arabic-36-m0-r320x192",
+      "original_lines": 1,
+      "options": {
+        "max_lines": 0,
+        "resize_width": 320,
+        "resize_height": 192
+      },
+      "input_sha256": "796c4585fc52ab1186e26dc19d82f8df758eb7e58aeb991de5f97bd66c3b7992"
+    },
+    {
+      "case": "hebrew-36-m1-r640x384",
+      "original_lines": 1,
+      "options": {
+        "max_lines": 1,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "input_sha256": "b06341d3189e9ece0ce4e2ab502fe06060e13135457dbacf64cd82d38b1e2cc6"
+    },
+    {
+      "case": "hebrew-36-m2-r1151x767",
+      "original_lines": 1,
+      "options": {
+        "max_lines": 2,
+        "resize_width": 1151,
+        "resize_height": 767
+      },
+      "input_sha256": "b06341d3189e9ece0ce4e2ab502fe06060e13135457dbacf64cd82d38b1e2cc6"
+    },
+    {
+      "case": "hebrew-36-m0-r320x192",
+      "original_lines": 1,
+      "options": {
+        "max_lines": 0,
+        "resize_width": 320,
+        "resize_height": 192
+      },
+      "input_sha256": "b06341d3189e9ece0ce4e2ab502fe06060e13135457dbacf64cd82d38b1e2cc6"
+    },
+    {
+      "case": "devanagari-36-m1-r640x384",
+      "original_lines": 1,
+      "options": {
+        "max_lines": 1,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "input_sha256": "cd2f7c298ba395ebdc43b038fbc5a960f57d0a32158d68591861a64cad0c9481"
+    },
+    {
+      "case": "devanagari-36-m2-r1151x767",
+      "original_lines": 1,
+      "options": {
+        "max_lines": 2,
+        "resize_width": 1151,
+        "resize_height": 767
+      },
+      "input_sha256": "cd2f7c298ba395ebdc43b038fbc5a960f57d0a32158d68591861a64cad0c9481"
+    },
+    {
+      "case": "devanagari-36-m0-r320x192",
+      "original_lines": 1,
+      "options": {
+        "max_lines": 0,
+        "resize_width": 320,
+        "resize_height": 192
+      },
+      "input_sha256": "cd2f7c298ba395ebdc43b038fbc5a960f57d0a32158d68591861a64cad0c9481"
+    },
+    {
+      "case": "thai-36-m1-r640x384",
+      "original_lines": 1,
+      "options": {
+        "max_lines": 1,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "input_sha256": "a0de4e62ae5fcd0648bb47aa3fcd2ff2bb2221d9bd3a0f3574836a90e555e8c4"
+    },
+    {
+      "case": "thai-36-m2-r1151x767",
+      "original_lines": 1,
+      "options": {
+        "max_lines": 2,
+        "resize_width": 1151,
+        "resize_height": 767
+      },
+      "input_sha256": "a0de4e62ae5fcd0648bb47aa3fcd2ff2bb2221d9bd3a0f3574836a90e555e8c4"
+    },
+    {
+      "case": "thai-36-m0-r320x192",
+      "original_lines": 1,
+      "options": {
+        "max_lines": 0,
+        "resize_width": 320,
+        "resize_height": 192
+      },
+      "input_sha256": "a0de4e62ae5fcd0648bb47aa3fcd2ff2bb2221d9bd3a0f3574836a90e555e8c4"
+    },
+    {
+      "case": "multi-column-m1-r640x384",
+      "original_lines": 4,
+      "options": {
+        "max_lines": 1,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "input_sha256": "cf3c28acbefbf8c7bea8d338e33441a34fb5fb477b1bff159c4cacc8ffd7b1b0"
+    },
+    {
+      "case": "multi-column-m5-r1151x767",
+      "original_lines": 5,
+      "options": {
+        "max_lines": 5,
+        "resize_width": 1151,
+        "resize_height": 767
+      },
+      "input_sha256": "cf3c28acbefbf8c7bea8d338e33441a34fb5fb477b1bff159c4cacc8ffd7b1b0"
+    },
+    {
+      "case": "vertical-cjk-m1-r640x384",
+      "original_lines": 1,
+      "options": {
+        "max_lines": 1,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "input_sha256": "a31698b7bb8305eadba26d4a12da50e2db7591266fa6822216b1e8eb86375c2f"
+    },
+    {
+      "case": "vertical-cjk-m5-r1151x767",
+      "original_lines": 1,
+      "options": {
+        "max_lines": 5,
+        "resize_width": 1151,
+        "resize_height": 767
+      },
+      "input_sha256": "a31698b7bb8305eadba26d4a12da50e2db7591266fa6822216b1e8eb86375c2f"
+    }
+  ]
+}

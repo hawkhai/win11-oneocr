@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/images/dewarp-thesis-table.jpg",
+  "image_sha256": "ca26ff9def88a52b9c64d7161036974fe6efd6843b4997e6415fc73f10fc3de8",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.6548611000180244,
+    "peak_working_set_bytes": 539402240,
+    "stderr": ""
+  },
+  "result_sha256": "b1640c22797f4c6ed377f9b29258ed8ac6afb3f5dcd92bdc2e9b84c8a3cbb5f4"
+}

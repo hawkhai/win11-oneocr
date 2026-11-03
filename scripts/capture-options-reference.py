@@ -8,6 +8,7 @@ from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from regression_options import effective_options, requested_options, FIELDS
+from regression_reference import active_reference
 
 ROOT=Path(__file__).resolve().parents[1]
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -16,17 +17,16 @@ def write(path,value):path.parent.mkdir(parents=True,exist_ok=True);path.write_t
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,required=True)
-    p.add_argument('--jobs',type=int,default=3);p.add_argument('--binary-dir',type=Path,default=ROOT/'bin/photos-2026.11090.22001.0');a=p.parse_args()
+    p.add_argument('--jobs',type=int,default=3);p.add_argument('--binary-dir',type=Path,default=ROOT/'bin/photos-2026.11090.22001.0')
+    p.add_argument('--parameter-manifest',type=Path,default=ROOT/active_reference()['parameter_manifest']);a=p.parse_args()
     out=a.output.resolve();binary=a.binary_dir.resolve()
     if out.exists() and any(out.iterdir()):raise ValueError('Use a fresh reference directory')
-    from PIL import Image
     from regression_inputs import image_files
-    inventory=[]
-    for name in image_files(ROOT/'samples'):
-        source=ROOT/'samples'/name
-        with Image.open(source) as image:w,h=image.size;mode=image.mode
-        inventory.append({'name':hashlib.sha256(name.encode()).hexdigest()[:16],'file':name,'sha256':sha(source),'width':w,'height':h,'pixel_mode':mode})
-    write(ROOT/'samples/manifest.json',{'schema_version':1,'scope':'Every image recursively below samples, including references and thumbnails','cases':inventory})
+    inventory=read(ROOT/'samples/manifest.json')['cases']
+    if image_files(ROOT/'samples')!=[item['file'] for item in inventory]:raise ValueError('Sample inventory changed; register inputs before capture')
+    parameters=read(a.parameter_manifest)['cases'];parameter_hash=sha(a.parameter_manifest)
+    for item,source in [(item,ROOT/'samples'/item['file']) for item in inventory]+[(item,ROOT/item['file']) for item in parameters]:
+        if sha(source)!=item['sha256']:raise ValueError('Input fingerprint changed before capture: '+str(source))
     spec=importlib.util.spec_from_file_location('runner',ROOT/'scripts/run-corpus.py');runner=importlib.util.module_from_spec(spec);spec.loader.exec_module(runner)
     bindings={name:sha(binary/name) for name in ['oneocr.dll','oneocr.onemodel','onnxruntime.dll','oneocr_wrapper.dll']}
     tasks=[]
@@ -34,7 +34,7 @@ def main():
     for item in read(ROOT/'research/case/corpus/manifest.json')['cases']:
         tasks.append(('corpus-'+item['name'],ROOT/'research/case/corpus'/item['file'],out/'corpus-legacy'/(item['name']+'.json'),item,None))
     tasks.append(('book',ROOT/'ocr-book.jpg',out/'book-legacy.json',{},None))
-    for item in read(ROOT/'research/parameter-cases.json')['cases']:
+    for item in parameters:
         tasks.append(('parameter-'+item['name'],ROOT/item['file'],out/'parameters'/(item['name']+'.json'),item,item['options']))
     def execute(task):
         name,source,result,item,options=task;result.parent.mkdir(parents=True,exist_ok=True)
@@ -54,10 +54,11 @@ def main():
         return {'name':name,'captured':bool(expected),'contract':result.with_name(result.stem+'.contract.json').relative_to(out).as_posix()}
     with ThreadPoolExecutor(max_workers=a.jobs) as pool:results=list(pool.map(execute,tasks))
     if bindings!={name:sha(binary/name) for name in bindings}:raise ValueError('Original assets changed during capture')
+    if sha(a.parameter_manifest)!=parameter_hash:raise ValueError('Parameter manifest changed during capture')
     summary={'reference_complete':all(x['captured'] for x in results),'mode':'original-DLL-capture; not a portable-engine parity claim',
              'model_source_sha256':bindings['oneocr.onemodel'],'new_reference_assets':binary.relative_to(ROOT).as_posix(),
              'sample_cases':len(inventory),'parameter_cases':len(tasks)-len(inventory)-28,'total_cases':len(tasks),'dll_bindings':bindings,'cases':results,
-             'parameter_manifest':'research/parameter-cases.json','parameter_manifest_sha256':sha(ROOT/'research/parameter-cases.json')}
+             'parameter_manifest':a.parameter_manifest.resolve().relative_to(ROOT).as_posix(),'parameter_manifest_sha256':parameter_hash}
     write(out/'summary.json',summary)
     (out/'README.md').write_text('Fresh isolated original DLL capture for every registered sample, corpus, book and parameter case. Capture completeness is separate from portable parity. Zero aliases use the explicitly recorded effective 1000 / 1152x768 defaults; raw wrapper zero-resize skips its resize setter.\n',encoding='utf8')
     return 0 if summary['reference_complete'] else 1

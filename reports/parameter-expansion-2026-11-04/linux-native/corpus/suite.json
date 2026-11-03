@@ -1,0 +1,551 @@
+{
+  "passed": true,
+  "passed_cases": 27,
+  "strict_recognition_passes": 27,
+  "expected_error_passes": 0,
+  "total_cases": 27,
+  "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/parameter-expansion-2026-11-04/reference/corpus-legacy",
+  "binary_sha256": "5e9d7b3594bd9d84ebb1f9356610a57687101f64239318c540cdc98dfc6a09d3",
+  "cases": [
+    {
+      "name": "latin-18",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3436115090000271,
+        "peak_working_set_bytes": 112406528,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "latin-36",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3443759049999926,
+        "peak_working_set_bytes": 114376704,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "latin-rotate-0.5",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3442708059999973,
+        "peak_working_set_bytes": 126197760,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "latin-rotate-3",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3446194059999925,
+        "peak_working_set_bytes": 128253952,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "latin-rotate-10",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3854978059999894,
+        "peak_working_set_bytes": 148033536,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "latin-rotate-90",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3239552050000043,
+        "peak_working_set_bytes": 113258496,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "latin-rotate-180",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3240108429999964,
+        "peak_working_set_bytes": 112959488,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "latin-rotate-270",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.2826992469999823,
+        "peak_working_set_bytes": 113840128,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "cjk-18",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.4057908519999955,
+        "peak_working_set_bytes": 154468352,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "cjk-36",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.4054565509999861,
+        "peak_working_set_bytes": 156274688,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "cjk-rotate-0.5",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.4460926530000506,
+        "peak_working_set_bytes": 165154816,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "cjk-rotate-3",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.4062381469999536,
+        "peak_working_set_bytes": 167534592,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "cjk-rotate-10",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.4258122220000473,
+        "peak_working_set_bytes": 188481536,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "cjk-rotate-90",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.4046497219999878,
+        "peak_working_set_bytes": 156807168,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "cjk-rotate-180",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.4050457230000006,
+        "peak_working_set_bytes": 157159424,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "cjk-rotate-270",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3220809210000084,
+        "peak_working_set_bytes": 158695424,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "cyrillic-36",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3435688210000194,
+        "peak_working_set_bytes": 125177856,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "arabic-36",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.1803935379999757,
+        "peak_working_set_bytes": 107388928,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "devanagari-36",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.2000720710000223,
+        "peak_working_set_bytes": 107106304,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "hebrew-36",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.1799666699999989,
+        "peak_working_set_bytes": 107204608,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "thai-36",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.2621115750000058,
+        "peak_working_set_bytes": 108683264,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "tamil-36",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.2005618709999908,
+        "peak_working_set_bytes": 108679168,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "greek-36",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3234195789999603,
+        "peak_working_set_bytes": 109379584,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "blank",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.1188718669999957,
+        "peak_working_set_bytes": 75939840,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 0,
+      "actual_lines": 0,
+      "same_position_text_matches": 0,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "透明路径-emoji-😀",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.2213356249999947,
+        "peak_working_set_bytes": 110526464,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "multi-column",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.2613390210000262,
+        "peak_working_set_bytes": 125333504,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 6,
+      "actual_lines": 6,
+      "same_position_text_matches": 6,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "name": "vertical-cjk",
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3426321219999977,
+        "peak_working_set_bytes": 164163584,
+        "stderr": ""
+      },
+      "passed": true,
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    }
+  ]
+}

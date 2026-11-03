@@ -14,7 +14,8 @@ from verification_state import read,sha,contained,signatures,same_json,native_re
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--report',type=Path,required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
+    p.add_argument('--report',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
+    p.add_argument('--reference',type=Path,help='Explicit historical reference snapshot; does not verify the current scope');a=p.parse_args()
     report=a.report.resolve();output=destination_for_verification(report,a.output)
     index=read(report/'FILES.sha256.json')
     files={f.relative_to(report).as_posix() for f in report.rglob('*') if f.is_file() and f!=report/'FILES.sha256.json'}
@@ -22,14 +23,15 @@ def main():
     for name,entry in index.items():
         file=contained(report,name)
         if sha(file)!=entry['sha256'] or file.stat().st_size!=entry['size']:raise ValueError('Archived file changed: '+name)
-    cases=current_cases(ROOT,active_reference());captured=read(report/'evidence/execution-cases.json')
+    reference=active_reference(a.reference)
+    cases=current_cases(ROOT,reference);captured=read(report/'evidence/execution-cases.json')
     if signatures(cases)!=signatures(captured):raise ValueError('Native input/option scope changed')
     for case,old in zip(cases,captured):
         if case['name']!=old['name'] or (sha(Path(case['baseline'])) if case.get('baseline') else None)!=old['baseline_sha256']:
             raise ValueError('Native baseline changed: '+case['name'])
     bindings=read(report/'evidence/bindings.json');model_hash=sha(ROOT/'models/manifest.json')
     for name,digest in bindings['original_assets'].items():
-        if sha(ROOT/active_reference()['legacy_binary_dir']/name)!=digest:raise ValueError('Original asset changed: '+name)
+        if sha(ROOT/reference['legacy_binary_dir']/name)!=digest:raise ValueError('Original asset changed: '+name)
     for name,entry in read(ROOT/'research/delivery-manifest.json')['files'].items():
         if name.startswith('models/') and sha(ROOT/name)!=entry['sha256']:raise ValueError('Model asset changed: '+name)
     for platform in ['win32-x64','linux-x64']:
@@ -65,6 +67,7 @@ def main():
     summary={'mode':'saved-native-results-verification','fresh_inference':False,'passed':all(e['passed'] for e in environments),
              'cases':sum(e['cases'] for e in environments),'passed_cases':sum(e['passed_cases'] for e in environments),
              'wasm_is_acceptance_gate':False,'execution_index_sha256':sha(report/'FILES.sha256.json'),
+             'current_scope':a.reference is None,'reference_snapshot_sha256':sha(a.reference) if a.reference else None,
              'comparator_sha256':bindings['comparator_sha256'],'environments':environments}
     output.mkdir(parents=True,exist_ok=True);(output/'verification.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
     print(json.dumps({k:summary[k] for k in ['passed','cases','passed_cases','wasm_is_acceptance_gate']}))

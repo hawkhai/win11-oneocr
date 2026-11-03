@@ -1,0 +1,17 @@
+{
+  "file": "oneocr-capabilities/script-arabic.png",
+  "image_sha256": "e48442631d86fa27962307a8032d269c763a57935ae745ef6e872f635594b0b2",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.486169699986931,
+    "peak_working_set_bytes": 165556224,
+    "stderr": ""
+  },
+  "result_sha256": "fb86639a198d1a9bb1cbd56c3e2d872b7420a01888992b563ffd91c931065176"
+}

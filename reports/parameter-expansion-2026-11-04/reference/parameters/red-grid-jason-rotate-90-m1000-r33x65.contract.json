@@ -1,0 +1,32 @@
+{
+  "file": "samples/options-handwriting/red-grid-jason-rotate-90.png",
+  "image_sha256": "000ecdc061c9102e800ae863f25473c2b445887feb4581000df45569313a98b8",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.2927534999907948,
+    "peak_working_set_bytes": 251502592,
+    "stderr": ""
+  },
+  "result_sha256": "7292ec83db564dc849d11ae77dc958fffd2ba8c6f12106417343019139122687",
+  "requested_options": {
+    "max_lines": 1000,
+    "resize_width": 33,
+    "resize_height": 65
+  },
+  "effective_options": {
+    "max_lines": 1000,
+    "resize_width": 33,
+    "resize_height": 65
+  },
+  "original_wrapper_arguments": {
+    "max_lines": 1000,
+    "resize_width": 33,
+    "resize_height": 65
+  }
+}

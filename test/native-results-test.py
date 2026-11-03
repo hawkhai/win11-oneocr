@@ -17,8 +17,13 @@ class NativeAcceptance(unittest.TestCase):
         cls.report=cls.work/'report';shutil.copytree(ROOT/'reports/photos-intersection-p2-2026-11-03',cls.report)
     @classmethod
     def tearDownClass(cls):cls.temp.cleanup()
-    def invoke(self,name):
-        return subprocess.run([sys.executable,'-X','utf8',ROOT/'scripts/verify-native-results.py','--report',self.report,'--output',self.work/name],cwd=ROOT,capture_output=True,text=True)
+    def invoke(self,name,current=False):
+        args=[] if current else ['--reference',ROOT/'research/references/options-handwriting-2026-11-03.json']
+        return subprocess.run([sys.executable,'-X','utf8',ROOT/'scripts/verify-native-results.py','--report',self.report,'--output',self.work/name,*args],cwd=ROOT,capture_output=True,text=True)
+    def test_historical_execution_cannot_pass_as_expanded_current_scope(self):
+        result=self.invoke('stale-current-scope',current=True)
+        self.assertNotEqual(result.returncode,0);self.assertIn('Native input/option scope changed',result.stderr)
+        self.assertFalse((self.work/'stale-current-scope').exists())
     def seal(self):
         index=self.report/'FILES.sha256.json'
         index.write_text(json.dumps({p.relative_to(self.report).as_posix():{'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'size':p.stat().st_size} for p in self.report.rglob('*') if p.is_file() and p!=index}),encoding='utf8')
@@ -29,6 +34,7 @@ class NativeAcceptance(unittest.TestCase):
             result=self.invoke('wasm-difference');self.assertEqual(result.returncode,0,result.stderr)
             value=json.loads((self.work/'wasm-difference/verification.json').read_text(encoding='utf8'))
             self.assertEqual(value['passed_cases'],442);self.assertFalse(value['wasm_is_acceptance_gate'])
+            self.assertFalse(value['current_scope'])
         finally:p.unlink();self.seal()
     def test_native_coordinate_deviation_remains_failure(self):
         p=self.report/'windows-native/book.json';original=p.read_bytes();value=json.loads(original)

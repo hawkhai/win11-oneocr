@@ -1,0 +1,85 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\research\\case\\corpus\\arabic-36.png",
+  "image": {
+    "height": 220,
+    "step": 4000,
+    "width": 1000
+  },
+  "image_angle": 359.1335754394531,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        25.0,
+        44.0,
+        322.0,
+        40.0,
+        323.0,
+        80.0,
+        25.0,
+        85.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "2026 ملاعلاب ابحرم",
+      "word_count": 3,
+      "words": [
+        {
+          "bounding_box": [
+            241.52719116210938,
+            41.49115753173828,
+            323.0,
+            40.993751525878906,
+            323.0,
+            80.64954376220703,
+            241.52716064453125,
+            81.3595962524414
+          ],
+          "confidence": 0.9906468987464905,
+          "index": 0,
+          "text": "2026"
+        },
+        {
+          "bounding_box": [
+            132.10238647460938,
+            43.020999908447266,
+            231.63876342773438,
+            41.57740020751953,
+            231.63873291015625,
+            81.47709655761719,
+            132.10238647460938,
+            83.36320495605469
+          ],
+          "confidence": 0.7415075898170471,
+          "index": 1,
+          "text": "ملاعلاب"
+        },
+        {
+          "bounding_box": [
+            25.332958221435547,
+            45.51689529418945,
+            119.5788803100586,
+            43.25926971435547,
+            119.57887268066406,
+            83.67256927490234,
+            25.332958221435547,
+            86.0
+          ],
+          "confidence": 0.8631840944290161,
+          "index": 2,
+          "text": "ابحرم"
+        }
+      ]
+    }
+  ]
+}

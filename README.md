@@ -2,9 +2,9 @@
 
 **验收铁律（2026-11-03 用户确认）：C++ 原生版本必须按原 DLL 严格对齐；沿用坐标 1px、角度 0.1°、置信度 1e-3 的阈值，其余识别字段按既有契约一致。JS/WebAssembly 不要求绝对一致，其差异不阻塞 C++ 验收。** 详见 [AGENTS.md](AGENTS.md) 和[当前验收标准](docs/acceptance-standard.md)。下述五环境结果为历史实测记录。
 
-继续开发或换机接手请读[详细交接文档](docs/handoff-2026-11-03.md)：包含会话决策、当前资产/证据身份、代码地图、复现命令、已关闭问题和未验证范围。
+继续开发或换机接手请先读[2026-11-04 续接状态](docs/2026-11-04_reverse-oneocr-parameter-expansion-report.md)，再读[详细交接文档](docs/handoff-2026-11-03.md)：包含会话决策、当前资产/证据身份、代码地图、复现命令、已关闭问题和未验证范围。
 
-最新[Photos 交集测试 P2 修复](reports/photos-intersection-p2-2026-11-03/README.md)已使超差和非有限值触发失败，并补上 13 个负例、3 个边界正例。Windows/Linux CTest 各 **26/26**，两端原生全新严格回归各 **221/221**，合计 **442/442**（436 项识别、6 项预期拒绝）。Wasm 本轮仅作两项诊断，不是原生验收门槛。
+最新[联合参数扩展](reports/parameter-expansion-2026-11-04/README.md)保留旧范围并增加 48 组旋转手写、多语种及版式参数。Windows/Linux 原生全新严格回归各 **269/269**，合计 **538/538**（532 项识别、6 项预期拒绝），保存结果独立复核亦为 538/538；CTest 各 **26/26**，Python 完整套件 **67/67**。生产算法、模型和阈值未改，本轮未执行新的 Wasm 推理。此前 [Photos 交集测试 P2 修复](reports/photos-intersection-p2-2026-11-03/README.md)的 13 个负例和 3 个边界正例继续保留。
 
 严格比较器的换机字节身份已通过 `.gitattributes` 固定，避免 Git CRLF 转换导致摘要漂移，见[补充校验](reports/photos-intersection-checkout-2026-11-03/README.md)。该修补不改比较器或阈值，历史封存报告保持原样。
 
@@ -12,7 +12,7 @@
 
 完整 Git 检出已包含独立模型与验证过的 Windows x64、Linux x64 原生运行文件，无需 Python、编译器、账号或激活服务即可识别。
 
-当前 `models/` 使用 Photos 2026.11090.22001.0 的模型，以配套 OneOCR 11.0.15 为基准。样本已扩展为 126 张，并注册 67 个参数组合（66 个非默认组合和一个默认对照）；新增两张真实纸面中文手写照片及八张旋转派生图，见 [参数与真实中文手写回归](reports/options-handwriting-2026-11-03/README.md)。曲线备用求解、极长行裁剪等既有能力继续纳入全量。原 9.0.103 DLL/模型仍保存在 `bin/` 作旧版对照；新版对照文件单独位于 `bin/photos-2026.11090.22001.0/`。
+当前 `models/` 使用 Photos 2026.11090.22001.0 的模型，以配套 OneOCR 11.0.15 为基准。样本已扩展为 126 张，并注册 115 个参数组合（114 个非默认组合和一个默认对照）；新增两张真实纸面中文手写照片及八张旋转派生图，见 [参数与真实中文手写回归](reports/options-handwriting-2026-11-03/README.md)。曲线备用求解、极长行裁剪等既有能力继续纳入全量。原 9.0.103 DLL/模型仍保存在 `bin/` 作旧版对照；新版对照文件单独位于 `bin/photos-2026.11090.22001.0/`。
 
 此前参数与真实手写一轮的 Windows／Linux 原生、Windows Node／Chrome／Linux Node 新推理均为 **221/221**，共 **1105/1105**（1090 项识别输出、15 项预期拒绝）。该历史记录不改变当前以 C++ 为门槛的铁律。模型与比较阈值保持不变；更多参数、书写者、文字类别和未实测平台仍未完成，整体状态继续为 incomplete。
 
@@ -54,7 +54,7 @@ implementation documented below remains available as the optional legacy
 backend. The plugin now defaults to the portable backend; use `backend: legacy`
 explicitly for the old Windows executable.
 
-JavaScript/浏览器接入使用同一引擎的 [WebAssembly 版本](docs/wasm.md)，或运行 `node web/cli.mjs ocr-book.jpg --text`。本轮 Windows/Linux Node 24.14.0 和 Chrome 156 各通过全部 **221 项**原阈值回归，见[实测报告](reports/options-handwriting-2026-11-03/README.md)。插件配置 `backend: wasm` 可选择该后端；模型仍使用根目录 `models/`。
+JavaScript/浏览器接入使用同一引擎的 [WebAssembly 版本](docs/wasm.md)，或运行 `node web/cli.mjs ocr-book.jpg --text`。历史一轮 Windows/Linux Node 24.14.0 和 Chrome 156 各通过当时全部 **221 项**原阈值回归；本轮新增 48 组的 Wasm 输出未验证，见[实测报告](reports/options-handwriting-2026-11-03/README.md)。插件配置 `backend: wasm` 可选择该后端；模型仍使用根目录 `models/`。
 
 [Review 修复后的增强回归](reports/review-fixes-2026-11-03/README.md)已用全新推理验证 Windows/Linux 原生、Windows/Linux Node 24 和 Chrome，五端各 **138/138**。新比较器额外检查计数、索引及字段类型；模型准备不会默认覆盖回旧版，自定义运行模块/Worker URL 的接入错误已修复。模型与数值阈值保持不变，未验证平台继续标注。
 

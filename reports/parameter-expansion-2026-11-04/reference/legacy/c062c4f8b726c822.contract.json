@@ -1,0 +1,17 @@
+{
+  "file": "oneocr-capabilities/azure-printed-photo.jpg",
+  "image_sha256": "144ba6545b0c43115f121acf107303ed7a687150c06e60f559d9965a88e2df29",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.5612366999848746,
+    "peak_working_set_bytes": 252379136,
+    "stderr": ""
+  },
+  "result_sha256": "323481173b2cfc56fd74080cf707d5b7819499122ccf57faa66d0a9935e8e437"
+}

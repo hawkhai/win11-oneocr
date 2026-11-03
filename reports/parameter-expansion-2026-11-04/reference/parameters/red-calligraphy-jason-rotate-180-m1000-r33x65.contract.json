@@ -1,0 +1,32 @@
+{
+  "file": "samples/options-handwriting/red-calligraphy-jason-rotate-180.png",
+  "image_sha256": "0d17412b5c93f40600c731960ffb2ff0dc41026b34f0c2f8fc35b64cfca6682c",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.2079643000033684,
+    "peak_working_set_bytes": 239636480,
+    "stderr": ""
+  },
+  "result_sha256": "dde57df2659403a5d2ae798c1f74b82457587d9566f2aed890a0df2e5441ac4e",
+  "requested_options": {
+    "max_lines": 1000,
+    "resize_width": 33,
+    "resize_height": 65
+  },
+  "effective_options": {
+    "max_lines": 1000,
+    "resize_width": 33,
+    "resize_height": 65
+  },
+  "original_wrapper_arguments": {
+    "max_lines": 1000,
+    "resize_width": 33,
+    "resize_height": 65
+  }
+}

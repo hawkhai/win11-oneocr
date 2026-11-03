@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/images/cn-wrapped-paragraph.png",
+  "image_sha256": "0afff0fd508fa2224067f3c3fcdf1ce535147af9679d40c1e28911e372144dfe",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.0561678999802098,
+    "peak_working_set_bytes": 293613568,
+    "stderr": ""
+  },
+  "result_sha256": "e0f67864f6cd4b3bd9e4691dde4a7b9d8f414daf5bd1d13d76cb1ab47f4398ce"
+}

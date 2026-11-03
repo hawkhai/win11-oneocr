@@ -1,0 +1,17 @@
+{
+  "file": "cyrillic-36.png",
+  "image_sha256": "253f957eef7b1e3f2ca2a64f07bbf68bbc5ab6f9c751a4524d50384a241b4749",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.4338701000087894,
+    "peak_working_set_bytes": 176128000,
+    "stderr": ""
+  },
+  "result_sha256": "e40a63bc6913b723caa018d6de1fad3718569f3b4aa6306bf3c428bb5dbf5d34"
+}

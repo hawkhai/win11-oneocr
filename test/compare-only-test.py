@@ -38,10 +38,11 @@ class CompareOnlyCli(unittest.TestCase):
 
     def test_separate_verification_preserves_all_execution_files(self):
         destination=self.root/'verification'
-        result=self.invoke('--verification-output',str(destination))
+        result=self.invoke('--verification-output',str(destination),'--reference',str(ROOT/'research/references/options-handwriting-2026-11-03.json'))
         self.assertEqual(result.returncode,0,result.stderr)
         data=json.loads((destination/'verification.json').read_text(encoding='utf8'))
         self.assertEqual(data['mode'],'saved-results-verification');self.assertFalse(data['fresh_inference'])
+        self.assertFalse(data['current_scope'])
         captured=json.loads((self.record/'summary.json').read_text(encoding='utf8'))
         self.assertEqual(data['passed_cases'],captured['cases'])
         self.assertEqual(data['original_scheduling'],captured['scheduling'])
@@ -57,6 +58,15 @@ class CompareOnlyCli(unittest.TestCase):
             self.assertNotEqual(result.returncode,0)
             self.assertEqual(tree(self.record),self.before)
         self.assertFalse((self.root/'bad-options').exists())
+
+    def test_historical_snapshot_cannot_redefine_fresh_inference_scope(self):
+        output=self.root/'historical-inference'
+        result=subprocess.run([sys.executable,'-X','utf8',ROOT/'scripts/run-wasm-parity.py',
+                               '--reference',ROOT/'research/references/options-handwriting-2026-11-03.json',
+                               '--output',output],cwd=ROOT,capture_output=True,text=True)
+        self.assertNotEqual(result.returncode,0)
+        self.assertIn('--reference is only for historical --compare-only',result.stderr)
+        self.assertFalse(output.exists())
 
 
 if __name__=='__main__':unittest.main()

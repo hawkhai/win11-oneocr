@@ -14,3 +14,5 @@
 完整口径与执行入口：[docs/acceptance-standard.md](docs/acceptance-standard.md)。机器可读规则：[research/acceptance-policy.json](research/acceptance-policy.json)。
 
 接手项目先读[详细交接文档](docs/handoff-2026-11-03.md)，其中的历史快照与命令不取代本文件铁律；最终包身份始终以当前 Git HEAD 和 `artifacts/OFFLINE_PACKAGE.json` 核对。
+
+2026-11-04 续接已将联合参数扩至 115 组，当前范围为 269 项/原生环境；先读[最新续接报告](docs/2026-11-04_reverse-oneocr-parameter-expansion-report.md)，再参照原交接的历史快照与工具入口。旧范围报告须显式使用历史参考快照复核，不能冒称当前全量通过。验收铁律不变。

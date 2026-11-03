@@ -1035,13 +1035,14 @@
   "verification_archive": "reports/options-handwriting-2026-11-03",
   "reference": {
     "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
-    "book_baseline": "reports/options-handwriting-2026-11-03/reference/book-legacy.json",
-    "all_samples_baseline": "reports/options-handwriting-2026-11-03/reference/legacy",
-    "corpus_baseline": "reports/options-handwriting-2026-11-03/reference/corpus-legacy",
+    "book_baseline": "reports/parameter-expansion-2026-11-04/reference/book-legacy.json",
+    "all_samples_baseline": "reports/parameter-expansion-2026-11-04/reference/legacy",
+    "corpus_baseline": "reports/parameter-expansion-2026-11-04/reference/corpus-legacy",
     "legacy_binary_dir": "bin/photos-2026.11090.22001.0",
-    "report": "reports/options-handwriting-2026-11-03/reference/README.md",
-    "parameter_manifest": "research/parameter-cases.json",
-    "parameter_manifest_sha256": "b9ccc9bdaad3c0037bd0384b586a800228ff61d99a2956e565447bbb07b0e326",
-    "parameter_baseline": "reports/options-handwriting-2026-11-03/reference/parameters"
-  }
+    "report": "reports/parameter-expansion-2026-11-04/reference/README.md",
+    "parameter_manifest": "research/parameter-cases-2026-11-04.json",
+    "parameter_manifest_sha256": "e88eb181285e4357e4e4af59d39ca657bf75e8001764aa34e3f17fe3cb922267",
+    "parameter_baseline": "reports/parameter-expansion-2026-11-04/reference/parameters"
+  },
+  "native_verification_archive": "reports/parameter-expansion-2026-11-04"
 }

@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "fresh_inference": true,
+  "fresh_original_dll_capture_cases": 269,
+  "native_environments": 2,
+  "cases_per_environment": 269,
+  "passed_cases": 538,
+  "recognition_outputs": 532,
+  "expected_rejections": 6,
+  "added_cases_per_environment": 48,
+  "native_ctest_per_platform": 26,
+  "python_tests": 67,
+  "wasm_is_acceptance_gate": false,
+  "wasm_inference_performed": false,
+  "native_runtime_rebuilt": false,
+  "production_source_changed": false,
+  "goal_complete": false,
+  "implementation_commit": "e0fc439150cc4f6ab3cfef4ab39f0fafd27daf25",
+  "unverified_native": [
+    "Linux ARM64",
+    "macOS x64/arm64",
+    "Android arm64-v8a"
+  ]
+}

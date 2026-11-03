@@ -1,0 +1,32 @@
+{
+  "file": "research/case/corpus/vertical-cjk.png",
+  "image_sha256": "a31698b7bb8305eadba26d4a12da50e2db7591266fa6822216b1e8eb86375c2f",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.0874836000148207,
+    "peak_working_set_bytes": 178933760,
+    "stderr": ""
+  },
+  "result_sha256": "02fc47d8a3f0d58b488033f878c2f54cf8f541b8746b364d13d1500f908f3c49",
+  "requested_options": {
+    "max_lines": 5,
+    "resize_width": 1151,
+    "resize_height": 767
+  },
+  "effective_options": {
+    "max_lines": 5,
+    "resize_width": 1151,
+    "resize_height": 767
+  },
+  "original_wrapper_arguments": {
+    "max_lines": 5,
+    "resize_width": 1151,
+    "resize_height": 767
+  }
+}

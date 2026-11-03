@@ -1,0 +1,17 @@
+{
+  "hash_format": "SHA-256 after CRLF to LF normalization",
+  "source_files": {
+    "scripts/prepare-parameter-expansion.py": "134c4b62e805162d3dbf69c0e04a98302405f770b7a54efa86e85de012a716a7",
+    "scripts/capture-options-reference.py": "7f163df25393fc67f0106b4688d8ade472fab73c03c7521abb119b88d6bf81ca",
+    "scripts/regression_reference.py": "81bab3a64fba3805d144bcf9aeb26e7a5dcabe89a2c3b638dcbd168904818542",
+    "scripts/regression_inputs.py": "2374a40c220c3505e42367f43760451e9992546ca015332b048a668b90b5e13b",
+    "scripts/run-native-parity.py": "81cf6c759987a212fb88da8b84ef7911ffb13dfd2ed7669f86819aaf9002b856",
+    "scripts/compare-results.py": "06d137cc93680f766031d783da9526064808fea1135124348e180bb8607f4869",
+    "scripts/verify-native-results.py": "63765ea12f7ea4ea9095f8eb8833ea3edf4b7bf83cb76f24b950ee9ed9c57af7",
+    "scripts/verify-recorded-parity.py": "54e586e29283c280bb8609eacabaf5fe46f7a68ee2f94426f138f7f6c04137d2",
+    "scripts/run-wasm-parity.py": "22d38900894d21e5e1a2a54fd6abd2cf9610d4d3b2b34dfee1d975c223afd81c",
+    "test/archive-verification-test.py": "cbbb870014b0ba81ed550ee0d1800c4495309c947a79760be2d89db99cabeca4",
+    "test/compare-only-test.py": "5e7d38bdb4dc47c9ba03c5697a0d29ce33c0682191967e0fbe902daae88afc70",
+    "test/native-results-test.py": "003ace8bfabfd7ab66665d6293d93fde8de2fdb45b7d9344f545c9ddc07c0a06"
+  }
+}

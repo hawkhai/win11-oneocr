@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/references/digits-result.jpg",
+  "image_sha256": "6c216427c55a6b79e26cfaff51beedacf2e638e773e90c206fb84282fbf96403",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 2.01625879999483,
+    "peak_working_set_bytes": 215945216,
+    "stderr": ""
+  },
+  "result_sha256": "6cc99af010c894d5902ec8b31ec0156c0f884989e8fe8f4fd0505c1fff88f345"
+}

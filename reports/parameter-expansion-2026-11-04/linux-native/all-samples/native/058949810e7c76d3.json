@@ -1,0 +1,55 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/psm-designer-word.jpg",
+  "image": {
+    "height": 136,
+    "step": 1440,
+    "width": 360
+  },
+  "image_angle": 2.824833869934082,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        35.0,
+        31.0,
+        338.0,
+        46.0,
+        337.0,
+        115.0,
+        32.0,
+        100.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "Designer",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            34.96684265136719,
+            31.18539810180664,
+            338.0,
+            46.644493103027344,
+            338.0,
+            115.0,
+            32.85804748535156,
+            100.3193588256836
+          ],
+          "confidence": 0.9889665246009827,
+          "index": 0,
+          "text": "Designer"
+        }
+      ]
+    }
+  ]
+}

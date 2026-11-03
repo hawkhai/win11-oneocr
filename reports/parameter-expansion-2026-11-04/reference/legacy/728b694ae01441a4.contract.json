@@ -1,0 +1,17 @@
+{
+  "file": "oneocr-parity/handwriting-rotate-90.png",
+  "image_sha256": "a93bceadbed021463485e12653adb02a22a645b5c76b8445fd4c034fcfa5b72d",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.4990650999825448,
+    "peak_working_set_bytes": 261496832,
+    "stderr": ""
+  },
+  "result_sha256": "af668aaec4139a2f58de9f682ae080c75c97ead2eb9efb5130e0e83c8391b040"
+}

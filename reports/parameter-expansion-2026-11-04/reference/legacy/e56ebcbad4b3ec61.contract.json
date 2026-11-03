@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/images/pp-lab-table.jpg",
+  "image_sha256": "769bce39ef8baccd4db0cd36cdf80952dca7a6fa041aac4763938ebf1b875b8b",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.5072373999864794,
+    "peak_working_set_bytes": 197234688,
+    "stderr": ""
+  },
+  "result_sha256": "1ec4ebf10caab7277c59eb8f1393e14d359d07133e3b65d455d576d3dda5a2c5"
+}

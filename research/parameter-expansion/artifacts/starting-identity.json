@@ -1,0 +1,21 @@
+{
+  "commit": "e0fc439150cc4f6ab3cfef4ab39f0fafd27daf25",
+  "files": {
+    "win11-oneocr-offline.bundle": {
+      "sha256": "b3aec1df082feb3e709989478f1d68ce04ca05a10bf22398462104a242fa26ea",
+      "size": 368870158
+    },
+    "oneocr-source.zip": {
+      "sha256": "c282fc6136f1465b60cc9ab415d9d81235bd4501b12b76aa1fdce9f25ba7c172",
+      "size": 134858640
+    }
+  },
+  "head_matched_before_work": true,
+  "package_hashes_verified_before_work": true,
+  "saved_native_review": {
+    "passed": true,
+    "cases": 442,
+    "fresh_inference": false
+  },
+  "reverse_skill_commit": "cab634bd855fc287f6e420c1f36fd1a6b9245960"
+}

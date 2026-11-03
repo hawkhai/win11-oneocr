@@ -42,10 +42,12 @@ def main():
     parser.add_argument('--only', help='Diagnostic subset: exact case name; never marked as a full regression')
     parser.add_argument('--compare-only', action='store_true', help='Compare already generated outputs')
     parser.add_argument('--verification-output',type=Path,help='Required with --compare-only; fresh directory outside the original execution')
+    parser.add_argument('--reference',type=Path,help='Historical reference snapshot; requires --compare-only')
     parser.add_argument('--browser', type=Path, help='Use headless Chromium at this executable path instead of Node Wasm')
     parser.add_argument('--browser-timeout-ms', type=int, help='Test-only request budget (default: 1800000); does not alter product defaults or comparison tolerances')
     parser.add_argument('--playwright-path', type=Path, help='Optional installed playwright-core index.mjs for browser tests')
     args = parser.parse_args()
+    if args.reference and not args.compare_only:parser.error('--reference is only for historical --compare-only verification')
     if args.compare_only:
         if not args.verification_output:parser.error('--compare-only requires a separate --verification-output')
         if any(x is not None for x in (args.node,args.jobs,args.schedule_from,args.browser,args.browser_timeout_ms,args.playwright_path)):
@@ -68,7 +70,7 @@ def main():
         for name, expected in build['source_files'].items():
             if hashlib.sha256((ROOT/name).read_bytes().replace(b'\r\n', b'\n')).hexdigest() != expected:
                 raise ValueError('Wasm build is stale for source: '+name)
-    reference = active_reference()
+    reference = active_reference(args.reference)
     cases = current_cases(ROOT,reference)
     total = len(cases)
     if args.only:
@@ -171,6 +173,7 @@ def main():
     if args.compare_only:
         summary.pop('wasm_build');summary.pop('scheduling');summary.pop('browser_request_timeout_ms');summary.pop('execution')
         summary.update({'mode':'saved-results-verification','fresh_inference':False,
+                        'current_scope':args.reference is None,'reference_snapshot_sha256':sha(args.reference) if args.reference else None,
                         'execution_directory':str(execution_directory),'execution_summary_sha256':sha(execution_directory/'summary.json'),
                         'execution_integrity':recorded['integrity'],'execution_build':recorded['state']['build'],
                         'original_scheduling':recorded['state']['scheduling'],'original_execution':recorded['measurements'],
