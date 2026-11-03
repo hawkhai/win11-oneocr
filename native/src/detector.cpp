@@ -1,4 +1,5 @@
 #include "detector.hpp"
+#include <opencv2/core.hpp>
 #include <algorithm>
 #include <array>
 #include <cstdint>
@@ -84,7 +85,8 @@ std::vector<SegmentGroup> detector_segments(const float* scores,const float* del
     }
     return groups;
 }
-static std::array<float,3> quadratic_fit(const std::vector<double>& x,const std::vector<double>& y) {
+std::array<float,3> fit_line_polynomial(const std::vector<double>& x,const std::vector<double>& y) {
+    if(x.empty() || x.size()!=y.size())throw std::invalid_argument("Invalid polynomial samples");
     // 1800e4ea0 -> e7000/e6a50/e7210/e74a0. Preserve the native
     // multiplication, LU factorization and triangular solve sequence.
     int degree=std::min(2,int(x.size())-1),count=degree+1;
@@ -100,7 +102,17 @@ static std::array<float,3> quadratic_fit(const std::vector<double>& x,const std:
     for(int column=0;column<count;column++) {
         int pivot=column;
         for(int row=column+1;row<count;row++)if(std::abs(system[row][column])>std::abs(system[pivot][column]))pivot=row;
-        if(system[pivot][column]==0)throw std::runtime_error("Rank-deficient line curve requires the original fallback solver");
+        if(system[pivot][column]==0) {
+            // 9.0.103: e61f0 -> e48d0; Photos 11.0.15: 58b070 -> 58b580.
+            // Only an exactly zero LU pivot triggers the SVD normal-equation
+            // solver. Near-singular systems retain the original LU result.
+            cv::Mat design(int(x.size()),count,CV_64F),samples(int(y.size()),1,CV_64F),a,b,solution;
+            for(size_t i=0;i<x.size();i++){double power=1;for(int j=0;j<count;j++){design.at<double>(int(i),j)=power;power*=x[i];}samples.at<double>(int(i))=y[i];}
+            cv::gemm(design,design,1,cv::Mat(),0,a,cv::GEMM_1_T);
+            cv::gemm(design,samples,1,cv::Mat(),0,b,cv::GEMM_1_T);
+            if(!cv::solve(a,b,solution,cv::DECOMP_SVD))throw std::runtime_error("Line curve SVD solve failed");
+            std::array<float,3> result{};for(int i=0;i<count;i++)result[i]=float(solution.at<double>(i));return result;
+        }
         pivots[column]=pivot;
         for(int k=0;k<count;k++)std::swap(system[column][k],system[pivot][k]);
         double reciprocal=1./system[column][column];
@@ -128,7 +140,7 @@ LineCurve refit_line_polygons(const std::vector<Point>& first,const std::vector<
         size_t n=polygon->size()/2;
         for(size_t i=0;i<polygon->size();i++){auto p=(*polygon)[i];auto& x=i<n?ux:lx;auto& y=i<n?uy:ly;x.push_back(horizontal?p.x:p.y);y.push_back(horizontal?p.y:p.x);}
     }
-    LineCurve curve{horizontal,quadratic_fit(ux,uy),quadratic_fit(lx,ly),{},score};
+    LineCurve curve{horizontal,fit_line_polynomial(ux,uy),fit_line_polynomial(lx,ly),{},score};
     auto upper=std::minmax_element(ux.begin(),ux.end()),lower=std::minmax_element(lx.begin(),lx.end());
     const float positions[]={float(*upper.first),float(*upper.second),float(*lower.second),float(*lower.first)};
     for(int i=0;i<4;i++){float dependent=evaluate_corner(i<2?curve.upper:curve.lower,positions[i]);curve.corners[i]=horizontal?Point{positions[i],dependent}:Point{dependent,positions[i]};}
@@ -146,7 +158,7 @@ LineCurve fit_line_curve(const std::vector<Segment>& segments,bool horizontal,fl
         for(int k:lower){lower_x.push_back(horizontal?quad[k].x:quad[k].y);lower_y.push_back(horizontal?quad[k].y:quad[k].x);}
         score+=segment.score;
     }
-    LineCurve curve{horizontal,quadratic_fit(upper_x,upper_y),quadratic_fit(lower_x,lower_y),{},score/float(segments.size())};
+    LineCurve curve{horizontal,fit_line_polynomial(upper_x,upper_y),fit_line_polynomial(lower_x,lower_y),{},score/float(segments.size())};
     auto upper=std::minmax_element(upper_x.begin(),upper_x.end()),lower=std::minmax_element(lower_x.begin(),lower_x.end());
     const float positions[]={float(*upper.first),float(*upper.second),float(*lower.second),float(*lower.first)};
     for(int i=0;i<4;i++) {

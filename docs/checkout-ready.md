@@ -23,7 +23,7 @@ Linux x64，glibc 2.43 或更新（实测 Ubuntu 26.04）：
 
 另有 [JavaScript + WebAssembly 交付](wasm.md)：`artifacts/wasm32/` 与同一份 `models/` 可供 Node 和支持 SIMD128 的浏览器加载。Node 入口为 `node web/cli.mjs ...`，可用 `python scripts/verify-delivery.py --wasm` 校验；Node 24.14.0 与 Chrome 156 各通过全量 138 项，见 [Wasm 实测报告](../reports/wasm-2026-11-03/README.md)。
 
-当前 [Review 修复验收](../reports/review-fixes-2026-11-03/README.md)还覆盖增强比较器下的 Windows/Linux 原生、Windows/Linux Node 24、Chrome，五端分别通过完整 138 项；源码、运行文件、模型和报告均纳入 Git。模型准备默认跟随活动模型版本，其他版本只能显式准备到独立目录。
+此前的 [Review 修复验收](../reports/review-fixes-2026-11-03/README.md)还覆盖增强比较器下的 Windows/Linux 原生、Windows/Linux Node 24、Chrome，五端分别通过完整 138 项；源码、运行文件、模型和报告均纳入 Git。模型准备默认跟随活动模型版本，其他版本只能显式准备到独立目录。
 
 干净 Git 克隆的最终结果见 [换机验收](../reports/checkout-ready-2026-11-02/README.md)：两端各通过 110 张样本、原 27 项及 105 行书页，未使用原机器构建目录或研究环境。
 
@@ -44,7 +44,7 @@ cd oneocr
 | `models/` | 当前版本全部准备资源：图、原始序列化资源、字表与映射、校准及模型清单；保留 SHA-256 与微软来源 |
 | `artifacts/win32-x64/`、`artifacts/linux-x64/` | 已验证的原生程序、动态库、系统编译器运行库、开发头文件/导入库、第三方声明与构建指纹 |
 | `artifacts/wasm32/`、`web/`、`examples/wasm/` | 同一引擎的 Wasm 运行文件、JS/Worker/类型声明、CLI、浏览器示例及源码构建入口 |
-| `samples/` | 全部 110 张输入、缩略图、参考图、来源与许可 |
+| `samples/` | 全部 114 张输入、缩略图、参考图、来源与许可 |
 | `reports/` | 各轮报告；全目录逐图冻结 DLL 基准、严格比较结果、耗时和内存 |
 | `research/case/` | 会话 scope、workitems、timeline、field journal、证据目录、原 27 项回归图片与基准、书页基准及早期结论 |
 | `research/delivery-manifest.json` | 所有模型/运行文件的逐文件长度与 SHA-256，平台条件和统一模型入口 |
@@ -62,7 +62,7 @@ python scripts/verify-delivery.py
 python scripts/verify-delivery.py --all-samples --output work/replay-checkout
 ```
 
-Linux 使用 `python3`。校验全部模型和运行文件 SHA-256，并从无关工作目录运行书页，与当前模型绑定的冻结 DLL 输出按原阈值比较（当前 Photos 版为 106 行，旧版为 105 行）；`--all-samples` 再检查全部 110 张图。`delivery-manifest.json` 的 `reference` 明确指向当前基准，模型与基准版本不符会报错。验收仍是文字、顺序、词切分及手写类别完全一致，坐标 1 px、角度 0.1 度、置信度 `1e-3`。
+Linux 使用 `python3`。校验全部模型和运行文件 SHA-256，并从无关工作目录运行书页，与当前模型绑定的冻结 DLL 输出按原阈值比较（当前 Photos 版为 106 行，旧版为 105 行）；`--all-samples` 再检查全部 114 张图。`delivery-manifest.json` 的 `reference` 明确指向当前基准，模型与基准版本不符会报错。验收仍是文字、顺序、词切分及手写类别完全一致，坐标 1 px、角度 0.1 度、置信度 `1e-3`。
 
 这是原生 CLI 的拉取即用流程。使用 DSH JavaScript 插件时，宿主仍需 Node.js 20+，按已有 `package-lock.json` 安装插件依赖；`node_modules` 不加入 Git。
 
@@ -71,3 +71,5 @@ Linux 使用 `python3`。校验全部模型和运行文件 SHA-256，并从无�
 ## 资产权利与交付边界
 
 模型不是 MIT。此次把准备资源加入用户授权的本地 Git 交付，不增加微软模型的再分发权，也没有 push、上传或公开发布模型。项目代码、来源图片及各运行库各自保留许可，见 [第三方声明](../THIRD_PARTY_NOTICES.md)。正式执行依赖的 VC release CRT 来源见 [微软官方列表](https://learn.microsoft.com/en-us/visualstudio/releases/2022/redistribution)；其权利不由项目 MIT 许可授予。
+
+当前范围已增加至 114 张图片、27 项固定语料和书页，共 142 项/环境。曲线备用求解、长行截断、检测缩放与最新执行记录见[本轮报告](../reports/curve-boundaries-2026-11-03/README.md)，内部预言机及静态证据见 `research/curve-boundaries/`。历史 138 项报告仍按原执行保留，不能作为当前运行文件的重新推理证明。

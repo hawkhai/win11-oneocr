@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/references/quality-skew-comparison.png",
+  "image_sha256": "07b7a503f54c9ffe133491a3a506dd609e344496f58d6d0e076cafc9e4d51426",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.6584769999608397,
+    "peak_working_set_bytes": 253153280,
+    "stderr": ""
+  },
+  "result_sha256": "83dfa7ab3d62a86e95b7ba27807cff6b20b29e3268debc9a3783f3f1c240079d"
+}

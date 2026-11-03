@@ -7,9 +7,11 @@ import subprocess
 import sys
 import tempfile
 import unittest
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
+from regression_reference import active_archive
 
 ROOT=Path(__file__).resolve().parents[1]
-REPORT=ROOT/'reports/review-fixes-2026-11-03'
+REPORT=ROOT/active_archive()
 
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -40,9 +42,9 @@ class CompareOnlyCli(unittest.TestCase):
         self.assertEqual(result.returncode,0,result.stderr)
         data=json.loads((destination/'verification.json').read_text(encoding='utf8'))
         self.assertEqual(data['mode'],'saved-results-verification');self.assertFalse(data['fresh_inference'])
-        self.assertEqual(data['passed_cases'],138)
-        self.assertEqual(data['original_scheduling']['jobs'],3)
-        self.assertIn('longest previous',data['original_scheduling']['method'])
+        captured=json.loads((self.record/'summary.json').read_text(encoding='utf8'))
+        self.assertEqual(data['passed_cases'],captured['cases'])
+        self.assertEqual(data['original_scheduling'],captured['scheduling'])
         original=json.loads((self.record/'cases.json').read_text(encoding='utf8'))
         self.assertTrue(original[0]['path'].startswith('/mnt/'))
         self.assertEqual(tree(self.record),self.before)

@@ -125,7 +125,7 @@ node test/wasm-test.mjs
 .research-python/python.exe -X utf8 scripts/run-wasm-parity.py --output work/wasm-parity-fresh
 ```
 
-默认以 4 个独立实例运行所有样本、固定 27 项及书页，不遗漏三个拒绝用例；每项保留原始 JSON/错误、摘要、测量及严格比较报告。内存较少时可用 `--jobs 1`。输出目录须为空，避免残留结果掩盖失败。`--only book` 等选项只做诊断，不标记全量通过。
+默认以 4 个独立实例运行当前 114 张图片、固定 27 项及书页，共 142 项，不遗漏三个拒绝用例；每项保留原始 JSON/错误、摘要、测量及严格比较报告。内存较少时可用 `--jobs 1`。输出目录须为空，避免残留结果掩盖失败。`--only book` 等选项只做诊断，不标记全量通过。
 
 比较器还检查 `line_count`、`word_count` 与数组长度一致，以及行/词 `index` 的整数类型和连续顺序；缺失字段、错误类型和非有限数值不能通过。主机文件路径与后端专属 `engine` 元数据不要求相等。坐标、角度和置信度阈值保持原值。
 
@@ -134,7 +134,7 @@ node test/wasm-test.mjs
 复核已保存结果必须使用独立的新目录：
 
 ```powershell
-python scripts/run-wasm-parity.py --compare-only --output reports/review-fixes-2026-11-03/linux-node --verification-output work/linux-record-verification
+python scripts/run-wasm-parity.py --compare-only --output reports/curve-boundaries-2026-11-03/linux-node --verification-output work/linux-record-verification
 ```
 
 此模式不执行推理，也不修改原来的清单、路径、调度、耗时、构建或结果；只输出新的 `verification.json` 和比较记录。不能传入 `--jobs`、`--browser` 等推理选项来改写历史。复核会检查执行文件摘要、输入和基准绑定，以及当前运行文件和模型是否仍与原执行一致；发生变化时须重新推理。新执行自动保存 `execution.json`，历史报告须保留完整的 `FILES.sha256.json` 索引。该模式不验证尚未编译的源码改动，不能用旧结果声称新引擎已通过。
@@ -155,3 +155,5 @@ npm install --prefix work/wasm-browser --no-package-lock --no-save playwright-co
 ```
 
 该流程启动仅监听 `127.0.0.1` 的临时静态服务器，并阻止测试上下文向其他 origin 请求；图像和模型字节保持原样。在不同浏览器、CPU 或 JS 引擎版本上，需要分别执行回归才能报告运行及一致性通过。
+
+曲线备用求解、裁剪像素与词框逆映射、长图 AREA 检测输入在 Wasm 构建阶段使用 DLL 预言机逐元素检验；执行未到达 C++ 成功标记时构建失败。详情见[本轮报告](../reports/curve-boundaries-2026-11-03/README.md)。

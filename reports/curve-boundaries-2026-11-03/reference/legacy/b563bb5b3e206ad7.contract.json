@@ -1,0 +1,17 @@
+{
+  "file": "oneocr-capabilities/mixed-nine-scripts.png",
+  "image_sha256": "ce409c9986860c21aa5588d8b7a9d6c7c4e5fb665169d70310b834f3c340da59",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.38431519997539,
+    "peak_working_set_bytes": 248541184,
+    "stderr": ""
+  },
+  "result_sha256": "aa0e29f86402819d5b6aa57213f12c67a41df901c6e8874ee3613a178e5eac1a"
+}

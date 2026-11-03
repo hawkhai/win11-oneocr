@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/references/quality-binarisation-comparison.png",
+  "image_sha256": "855bcbb4505b90a8ef8544dfe76a118e168f744dfe6b7a2d099ff51d5c1a188e",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.0949880999978632,
+    "peak_working_set_bytes": 246521856,
+    "stderr": ""
+  },
+  "result_sha256": "753b035c5013af7884d1a12bce0880283ea5e737063546e797b532a265df1a26"
+}

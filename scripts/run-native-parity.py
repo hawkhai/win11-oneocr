@@ -1,4 +1,4 @@
-"""Run all 138 native cases against the active DLL baseline with the current comparator."""
+"""Run the complete current native scope against the active DLL baseline."""
 import argparse
 import hashlib
 import importlib.util
@@ -40,8 +40,9 @@ def main():
     subprocess.run([sys.executable,'-X','utf8',ROOT/'scripts/compare-results.py',ROOT/reference['book_baseline'],book,'--output',output/'book.parity.json'],check=True,cwd=ROOT)
     samples=read(output/'all-samples/suite.json');corpus=read(output/'corpus/suite.json');book_report=read(output/'book.parity.json')
     if model_hash!=sha(ROOT/'models/manifest.json'):raise ValueError('Model manifest changed during regression')
-    passed=samples['passed'] and corpus['passed'] and book_report['passed'] and samples['completed_cases']==110 and corpus['total_cases']==27
-    summary={'passed':passed,'full_regression':True,'cases':138,'passed_cases':samples['passed_cases']+corpus['passed_cases']+int(book_report['passed']),
+    sample_count=len(read(ROOT/'samples/manifest.json')['cases']);corpus_count=len(read(ROOT/'research/case/corpus/manifest.json')['cases'])
+    passed=samples['passed'] and corpus['passed'] and book_report['passed'] and samples['completed_cases']==sample_count and corpus['total_cases']==corpus_count
+    summary={'passed':passed,'full_regression':True,'cases':sample_count+corpus_count+1,'passed_cases':samples['passed_cases']+corpus['passed_cases']+int(book_report['passed']),
              'recognition_output_cases':samples['recognition_passes']+corpus['strict_recognition_passes']+int(book_report['passed']),
              'expected_rejections':samples['passed_cases']-samples['recognition_passes'],
              'comparator_sha256':sha(ROOT/'scripts/compare-results.py'),'model_manifest_sha256':model_hash,

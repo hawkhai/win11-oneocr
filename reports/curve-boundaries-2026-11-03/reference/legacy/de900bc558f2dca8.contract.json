@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/references/quality-erosion-comparison.png",
+  "image_sha256": "92eacc878f864c4cc36f1c243a660700ba3a0848b7d6a4788218b7257edf0273",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.9258626999799162,
+    "peak_working_set_bytes": 147873792,
+    "stderr": ""
+  },
+  "result_sha256": "5fd746643a615d3819d5978f123d5213bf27e388800b09f5924f922a2601662c"
+}

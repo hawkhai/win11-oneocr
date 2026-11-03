@@ -1,0 +1,40 @@
+{
+  "generator": "scripts/make-boundary-samples.py",
+  "font": "arial.ttf",
+  "font_sha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+  "cases": [
+    {
+      "file": "normalizer-grid.png",
+      "sha256": "1b3f218a237c48ff0462148e8ae008aa32c697b7c416bbe94e45a179f88923ed",
+      "width": 420,
+      "height": 100,
+      "purpose": "RGB source used by the six exact clipped-normalization geometry oracles",
+      "source": "generated locally; not accuracy ground truth"
+    },
+    {
+      "file": "curved-line.png",
+      "sha256": "c32487b2e4388421c83f7647cb7ca9fcd536ff6f7968526f6abfee21034a476f",
+      "width": 2000,
+      "height": 350,
+      "purpose": "Naturally curved printed Latin line; branch reachability is reported separately from visual appearance",
+      "source": "generated locally; not accuracy ground truth"
+    },
+    {
+      "file": "very-long-line.png",
+      "sha256": "9fd05995a59b03685e1649c33d27cb79063cf1d171bd5ceb669774b54fa6a5c6",
+      "width": 10000,
+      "height": 140,
+      "purpose": "10000-pixel maximum legal image width; independent same-image DLL/native/Wasm comparison",
+      "source": "generated locally; not accuracy ground truth"
+    },
+    {
+      "file": "near-collinear-line.png",
+      "sha256": "ae9692f7f8fb2f99d88eec11990828509603b59ca2a336cadf477f51a376a7a3",
+      "width": 1600,
+      "height": 180,
+      "purpose": "Nearly horizontal small text; exact rank-deficient inputs are in the polynomial oracle contract",
+      "source": "generated locally; not accuracy ground truth"
+    }
+  ],
+  "coverage_note": "PNG scenes are end-to-end fixtures. Internal rank deficiency and width-limit transitions are proved by the separate synthetic geometry oracle tests."
+}

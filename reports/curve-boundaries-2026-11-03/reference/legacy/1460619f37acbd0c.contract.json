@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/images/psm-sparse-web-menu.png",
+  "image_sha256": "597ae805d8d2303acfcc4ec3913fb74d5854dfd9313abe34d05ecbcb32b1c980",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.9078647999558598,
+    "peak_working_set_bytes": 274903040,
+    "stderr": ""
+  },
+  "result_sha256": "dce353b9094a2020ad026e74e97f6debaf68b90b28076b1f5a7c1a381b088af1"
+}

@@ -14,6 +14,8 @@
 /artifacts/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 /bin/photos-2026.11090.22001.0/** -text
 /research/case/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/research/curve-boundaries/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/reports/curve-boundaries-2026-11-03/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 /ocr.sh text eol=lf
 /licenses/gcc-runtime-copyright.txt -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 /licenses/emscripten-LICENSE.txt -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof

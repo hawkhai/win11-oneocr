@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/images/cn-vertical-ad.png",
+  "image_sha256": "fa09ac67ef17238b740fb68e3a86e1b46ca5d1015a78d81a478a55a4621acf3a",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.9350553000112996,
+    "peak_working_set_bytes": 250925056,
+    "stderr": ""
+  },
+  "result_sha256": "073c0c429ac2f2525e07b814a520942481003511e00485c6e183724bc2a59126"
+}

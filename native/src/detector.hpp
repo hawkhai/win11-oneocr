@@ -18,6 +18,7 @@ struct LineCurve {
 // The later geometric splitting/joining of a component remains separate.
 std::vector<SegmentGroup> detector_segments(const float* scores,const float* deltas,const float* links,int width,int height,int level,bool horizontal);
 LineCurve fit_line_curve(const std::vector<Segment>& segments,bool horizontal,float scale_x,float scale_y);
+std::array<float,3> fit_line_polynomial(const std::vector<double>& x,const std::vector<double>& y);
 LineCurve refit_line_polygons(const std::vector<Point>& first,const std::vector<Point>& second,bool horizontal,float score);
 std::vector<Point> curve_polygon(const LineCurve& curve);
 // TextLine geometry uses a covariance eigenvector, then floor and AABB clamp.

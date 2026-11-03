@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/images/cn-traditional-sutra.jpg",
+  "image_sha256": "558913b23995d15397bbb321248981cd85188ad9613a3005ecad9c875f367dec",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.9931146999588236,
+    "peak_working_set_bytes": 262512640,
+    "stderr": ""
+  },
+  "result_sha256": "042c68fe167d424f7f7284e83d7e0efb42781626b65e1becedb7643eca750583"
+}

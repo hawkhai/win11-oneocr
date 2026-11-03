@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "native_source_commit": "58dcdc2",
+  "native_source_identity": "Per-platform BUILD.json source_files SHA-256 records",
   "model_ownership": "Microsoft; not MIT; no additional redistribution permission asserted",
   "platforms": {
     "win32-x64": {
@@ -24,8 +24,8 @@
   "source_build": "docs/portable.md",
   "files": {
     "artifacts/linux-x64/BUILD.json": {
-      "sha256": "6a7993ae190d0b71612677e98c0c56c9774d4090664a512bef70cef72cd8cd15",
-      "size": 7864
+      "sha256": "baa24d43e8daa88ba8827b6033c5f38355cd9f44a9a876231765926613a3163d",
+      "size": 8798
     },
     "artifacts/linux-x64/bin/ocr": {
       "sha256": "5e9d7b3594bd9d84ebb1f9356610a57687101f64239318c540cdc98dfc6a09d3",
@@ -44,8 +44,8 @@
       "size": 187120
     },
     "artifacts/linux-x64/lib/liboneocr_portable.so": {
-      "sha256": "e987852cf51cd7790e7cabc0cef3573b2304e7ca7fdc6af4ef3e2d2d46fa9c32",
-      "size": 40107600
+      "sha256": "7f20647d1a6cc171d221c597eb184215545b6262416c06bdfc92ed768ce2a2fb",
+      "size": 40112152
     },
     "artifacts/linux-x64/lib/libonnxruntime.so": {
       "sha256": "49c78b3bb1c401e77fbdbb6460bb55a3c610413770f17c977fdf4e86af054f75",
@@ -136,28 +136,28 @@
       "size": 1024
     },
     "artifacts/linux-x64/share/oneocr/portable.md": {
-      "sha256": "19399cbe8ba7f5d21f080964c7ce661bb75895f54f8329c93408d2f854b81ceb",
-      "size": 14561
+      "sha256": "eec8a388760127096eb9fe657529443cf6ec9a48a8e95410f18410f70ae3e267",
+      "size": 15095
     },
     "artifacts/linux-x64/share/oneocr/wasm.md": {
-      "sha256": "e8a10b7944be111d80c64fc871a143764a9af31851d688fe813febc24fb2e457",
-      "size": 13744
+      "sha256": "f7f4648c2bc72bf140c0746f31c7df643a6a2352154e3a0233f03f180dcd8444",
+      "size": 14194
     },
     "artifacts/wasm32/BUILD.json": {
-      "sha256": "1fe2bfc220c4fcd1e93481be28f6ea0b0e0f937cae7eaf875a36e40101c6984a",
-      "size": 12684
+      "sha256": "49377dbe80f7d4e50502dcdea3c65be9551845d27d6ce419a6df62cebccd22ce",
+      "size": 12791
     },
     "artifacts/wasm32/cli.mjs": {
       "sha256": "84b34ee2df1f99bf9111b88e3f0f531e902cf6951b0c43eb405abf4987d2c26f",
       "size": 2753
     },
     "artifacts/wasm32/oneocr-core.mjs": {
-      "sha256": "fbdfe39a899de3549822e747e105bf5ca6a16e8c87439b4d7ff1d2d3fe21e3c4",
+      "sha256": "29354d8dc134d9987a74bd38c90b267265ba76af0e3551636d289ffe35b360a7",
       "size": 129687
     },
     "artifacts/wasm32/oneocr-core.wasm": {
-      "sha256": "70ad89615c37319c83e74935f8cf5dc9b039d503fc2328e22251ecb98a47739e",
-      "size": 50524985
+      "sha256": "7b9cbe2fea6cb047e4386c02a7ed4b8a7fb6d3611447527232de70a57ccf01a7",
+      "size": 50528082
     },
     "artifacts/wasm32/oneocr.d.mts": {
       "sha256": "16f24369fc5e319187c69f66aa6cc85e8f9cd1b40baf9205ad7e6ec628eb67b9",
@@ -240,12 +240,12 @@
       "size": 1024
     },
     "artifacts/wasm32/share/oneocr/portable.md": {
-      "sha256": "19399cbe8ba7f5d21f080964c7ce661bb75895f54f8329c93408d2f854b81ceb",
-      "size": 14561
+      "sha256": "eec8a388760127096eb9fe657529443cf6ec9a48a8e95410f18410f70ae3e267",
+      "size": 15095
     },
     "artifacts/wasm32/share/oneocr/wasm.md": {
-      "sha256": "e8a10b7944be111d80c64fc871a143764a9af31851d688fe813febc24fb2e457",
-      "size": 13744
+      "sha256": "f7f4648c2bc72bf140c0746f31c7df643a6a2352154e3a0233f03f180dcd8444",
+      "size": 14194
     },
     "artifacts/wasm32/worker-client.d.mts": {
       "sha256": "68ebe35177142af88b554be9c4d7b8feedf4381485a00f25924e2429311ef10f",
@@ -260,8 +260,8 @@
       "size": 1419
     },
     "artifacts/win32-x64/BUILD.json": {
-      "sha256": "5b21a85cd1d4899fb79879c377327de928f57c44e450d3ffb375ca09395d2152",
-      "size": 8644
+      "sha256": "aec3b5a482c23b25dbc2ed01cfb29868bf06eca564c8cb3f64fc1c3166396914",
+      "size": 9578
     },
     "artifacts/win32-x64/bin/concrt140.dll": {
       "sha256": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
@@ -292,8 +292,8 @@
       "size": 147968
     },
     "artifacts/win32-x64/bin/oneocr_portable.dll": {
-      "sha256": "e9c6a3c4c1a31f7452dc48e316323dcd66ff1e65c8106a85a5c1819fbc18b74f",
-      "size": 34368000
+      "sha256": "9bea0096355e02bcea831b33e4a429290806a01c23403021b58b19745980ea01",
+      "size": 34375168
     },
     "artifacts/win32-x64/bin/oneocr_wrapper.dll": {
       "sha256": "bf9eebd5b10194983a0645f489dd731604be979fbfffb8d2c59f12d363ad3b19",
@@ -404,12 +404,12 @@
       "size": 1024
     },
     "artifacts/win32-x64/share/oneocr/portable.md": {
-      "sha256": "19399cbe8ba7f5d21f080964c7ce661bb75895f54f8329c93408d2f854b81ceb",
-      "size": 14561
+      "sha256": "eec8a388760127096eb9fe657529443cf6ec9a48a8e95410f18410f70ae3e267",
+      "size": 15095
     },
     "artifacts/win32-x64/share/oneocr/wasm.md": {
-      "sha256": "e8a10b7944be111d80c64fc871a143764a9af31851d688fe813febc24fb2e457",
-      "size": 13744
+      "sha256": "f7f4648c2bc72bf140c0746f31c7df643a6a2352154e3a0233f03f180dcd8444",
+      "size": 14194
     },
     "models/auxiliary/2e1f404d421766c7c36bbab20204e1e2aa40542b8bdd4be689ec538627c322dc.onnx": {
       "sha256": "2e1f404d421766c7c36bbab20204e1e2aa40542b8bdd4be689ec538627c322dc",
@@ -1032,12 +1032,13 @@
       "size": 581
     }
   },
+  "verification_archive": "reports/curve-boundaries-2026-11-03",
   "reference": {
     "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
-    "book_baseline": "reports/photos-model-update-2026-11-02/book-legacy.json",
-    "all_samples_baseline": "reports/photos-model-update-2026-11-02/legacy",
-    "corpus_baseline": "reports/photos-model-update-2026-11-02/corpus-legacy",
+    "book_baseline": "reports/curve-boundaries-2026-11-03/reference/book-legacy.json",
+    "all_samples_baseline": "reports/curve-boundaries-2026-11-03/reference/legacy",
+    "corpus_baseline": "reports/curve-boundaries-2026-11-03/reference/corpus-legacy",
     "legacy_binary_dir": "bin/photos-2026.11090.22001.0",
-    "report": "reports/photos-model-update-2026-11-02/README.md"
+    "report": "reports/curve-boundaries-2026-11-03/reference/README.md"
   }
 }

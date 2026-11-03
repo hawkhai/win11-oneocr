@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/images/pp-math-exam.jpg",
+  "image_sha256": "1294755b7db3d7c22daa31ed1995d1509aa385d5a54831774532716b4b26c330",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.843682800012175,
+    "peak_working_set_bytes": 225439744,
+    "stderr": ""
+  },
+  "result_sha256": "5a02a8f635395631bb31f1d2a4e518f2be543c9cca644d3ae6eaf60a1b9a9d79"
+}

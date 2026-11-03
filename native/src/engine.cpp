@@ -328,7 +328,7 @@ struct oneocr_context {
         constexpr const char* scripts[]={"latin","cjk","latin","cyrillic","arabic","devanagari","greek","thai","hebrew","tamil"};
         struct PreparedLine {
             Region region;Quad q,line_box;std::vector<Point> polygon;Image normalized;
-            QuadNormalization quad_normalized;TensorTrace trace;
+            QuadNormalization quad_normalized;PolygonMapping clipped_mapping;TensorTrace trace;
         };
         std::vector<PreparedLine> prepared;
         std::vector<LineClassification> classifications;
@@ -345,7 +345,8 @@ struct oneocr_context {
             for(auto& p:polygon){p.x=std::clamp(p.x,0.f,float(image.width-1));p.y=std::clamp(p.y,0.f,float(image.height-1));}
             int maximum_width=int(std::min(1000000.,std::sqrt(double(options.resize_width)*options.resize_width+double(options.resize_height)*options.resize_height)*210+1));
             QuadNormalization quad_normalized;
-            auto normalized=polygon.size()==4?(quad_normalized=normalize_quad(image,polygon,maximum_width)).image:normalize_polygon(image,polygon,maximum_width);
+            PolygonMapping clipped_mapping;
+            auto normalized=polygon.size()==4?(quad_normalized=normalize_quad(image,polygon,maximum_width)).image:normalize_polygon(image,polygon,maximum_width,&clipped_mapping);
             auto cls=run_image(*classifier,normalized,false,1.f/255,{std::begin(cls_outputs),std::end(cls_outputs)});
             if(line_trace.enabled()) {
                 auto pixels=chw(normalized,false,1.f/255);
@@ -358,7 +359,7 @@ struct oneocr_context {
             }
             auto frame_values=[&](size_t index){const auto* begin=cls[index].GetTensorData<float>();return std::vector<float>(begin,begin+cls[index].GetTensorTypeAndShapeInfo().GetElementCount());};
             classifications.push_back(classify_line(cls[0].GetTensorData<float>(),frame_values(3),cls[1].GetTensorData<float>()[0],frame_values(4),cls[2].GetTensorData<float>()[0],!region.vertical,classifier_settings));
-            prepared.push_back({region,q,line_box,std::move(polygon),std::move(normalized),std::move(quad_normalized),std::move(line_trace)});
+            prepared.push_back({region,q,line_box,std::move(polygon),std::move(normalized),std::move(quad_normalized),std::move(clipped_mapping),std::move(line_trace)});
         }
         resolve_classifications(classifications);
         for(size_t region_index=0;region_index<prepared.size();region_index++) {
@@ -481,7 +482,7 @@ struct oneocr_context {
             }
             line_trace.tensor("confidence_features",confidence_features.data(),confidence_features.size(),{int64_t(words.size()),21});
             align_word_frames(word_frames,frame_stride,settings.at("pixels_per_space"),settings.at("start_shift"),settings.at("end_shift"),steps,blank_intervals);
-            for(size_t i=0;i<words.size();i++)words[i]["bounding_box"]=quad_json(polygon.size()==4?map_quad_word(quad_normalized,word_frames[i].start,word_frames[i].end,flipped):map_line_word(polygon,word_frames[i].start,word_frames[i].end,flipped));
+            for(size_t i=0;i<words.size();i++)words[i]["bounding_box"]=quad_json(polygon.size()==4?map_quad_word(quad_normalized,word_frames[i].start,word_frames[i].end,flipped):item.clipped_mapping.triangles.empty()?map_line_word(polygon,word_frames[i].start,word_frames[i].end,flipped):map_clipped_polygon_word(item.clipped_mapping,polygon,word_frames[i].start,word_frames[i].end,flipped));
             while(!text.empty() && text.back()==' ') text.pop_back();
             if(text.empty()) continue;
             std::string joined_words;for(const auto& word:words)joined_words+=word.at("text").get<std::string>();

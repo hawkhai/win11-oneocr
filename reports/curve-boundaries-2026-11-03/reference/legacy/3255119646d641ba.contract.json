@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/thumbnails/scene-text.jpg",
+  "image_sha256": "827912802a25b701ddab8cb30e641d7b5e9fd5ed0daaabbc1c04dda53fbcabe7",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.4735108999884687,
+    "peak_working_set_bytes": 259555328,
+    "stderr": ""
+  },
+  "result_sha256": "7d231b743a720a49772ea89e33fe2622539137b44f791c20ee8ba5abfceeae40"
+}

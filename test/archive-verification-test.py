@@ -6,6 +6,8 @@ import subprocess
 import sys
 import tempfile
 import unittest
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
+from regression_reference import active_archive
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -15,7 +17,8 @@ class ArchiveVerification(unittest.TestCase):
     def setUpClass(cls):
         cls.temp=tempfile.TemporaryDirectory(prefix='oneocr-archive-test-')
         cls.root=Path(cls.temp.name);cls.report=cls.root/'report'
-        shutil.copytree(ROOT/'reports/review-fixes-2026-11-03',cls.report)
+        shutil.copytree(ROOT/active_archive(),cls.report)
+        cls.case_count=json.loads((cls.report/'windows-node/summary.json').read_text(encoding='utf8'))['cases']
         # Only inputs are redirected. Both real CLI entrypoints still use the
         # original sealed outputs, Git history, runtime assets and comparator.
         cls.inputs=cls.root/'inputs'
@@ -95,7 +98,7 @@ sys.exit(tool.main())
         finally:path.write_bytes(original)
 
     def test_unmodified_archive_passes_both_entrypoints(self):
-        for kind,count in [('all',690),('single',138)]:
+        for kind,count in [('all',self.case_count*5),('single',self.case_count)]:
             output=self.root/('valid-'+kind);result=self.invoke(kind,output)
             self.assertEqual(result.returncode,0,result.stderr)
             data=json.loads((output/'verification.json').read_text(encoding='utf8'))
