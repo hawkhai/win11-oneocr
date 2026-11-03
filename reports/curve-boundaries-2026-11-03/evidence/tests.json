@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "python_unit_tests": 47,
+  "suites": {
+    "compare-results-test": 8,
+    "verification-state-test": 10,
+    "model-preparation-test": 7,
+    "reference-inputs-test": 7,
+    "ocr-classics-test": 7,
+    "archive-verification-test": 6,
+    "compare-only-test": 2
+  },
+  "windows_ctest": {
+    "passed": 9,
+    "total": 9
+  },
+  "linux_ctest": {
+    "passed": 9,
+    "total": 9
+  },
+  "wasm_build_tests": [
+    "SIMD rounding and conversion boundaries",
+    "FMA boundary matrix and 1000000 random lanes",
+    "DLL curve/normalization/word/input oracles"
+  ],
+  "wasm_api_integration": "passed",
+  "plugin_contract": "passed",
+  "read_only_aggregate_verification": {
+    "passed": 710,
+    "total": 710,
+    "fresh_inference": false
+  }
+}

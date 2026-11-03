@@ -1,0 +1,123 @@
+{
+  "flavor": null,
+  "scope": "scope.md",
+  "timeline": "timeline.md",
+  "evidence": [
+    {
+      "id": "E-001",
+      "source_ref": "research/curve-boundaries/assets.json",
+      "repro_command": "pefile fixed local PE import/export/version inspection",
+      "content_hash": "269b8bc7f899f11b7fb0222ecb0178816c91d6ee658b6754593b0bf85f7c1d64"
+    },
+    {
+      "id": "E-002",
+      "source_ref": "research/curve-boundaries/static/photos/18058b070.c",
+      "repro_command": "Ghidra headless ExportFunctions.java; exact full command in technical report",
+      "content_hash": "261681367f23184c5ba998625ecfbe009ebc88e515ee95b30bcdf584871d8a8a"
+    },
+    {
+      "id": "E-003",
+      "source_ref": "research/curve-boundaries/contract.json",
+      "repro_command": "python scripts/probe-curve-boundaries.py --photos --output work/curve-oracle/photos.json",
+      "content_hash": "44c4aa0ff44c3a6d9d66b091784107b144077e10dbcd3c9d0f91247469c0d677"
+    },
+    {
+      "id": "E-004",
+      "source_ref": "research/curve-boundaries/long-detector-input.f32",
+      "repro_command": "research.py extract --trace; exact command in technical report",
+      "content_hash": "5010f001ef3d59cbba1c02661c4a2ed8968029756809d8c86cca429c65b6c11a"
+    },
+    {
+      "id": "E-005",
+      "source_ref": "reports/curve-boundaries-2026-11-03/evidence/wasm-build-final-oracles.log",
+      "repro_command": "scripts/build-wasm.py; CMake/CTest commands in build documentation",
+      "content_hash": "89c4620c5d00b446c2cf5906647f864c071da498ba064e8eb4355c011dbf019d"
+    },
+    {
+      "id": "E-006",
+      "source_ref": "reports/curve-boundaries-2026-11-03/summary.json",
+      "repro_command": "run-native-parity.py / run-wasm-parity.py; full commands in report",
+      "content_hash": "ab9bbf9d6aa642664dc443cc35d76d7574af6ea226a5f56af6955f880b5871fa"
+    },
+    {
+      "id": "E-007",
+      "source_ref": "reports/curve-boundaries-2026-11-03/evidence/tests.json",
+      "repro_command": "python test/archive-verification-test.py; python test/compare-only-test.py; remaining suites listed in tests.json",
+      "content_hash": "73d70933d72c52f69fe5e79d25cc8e86a56d1d8ebd21f7f5c06cd001f22e8b88"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F-001",
+      "severity": "n/a_re",
+      "evidence_ids": [
+        "E-002",
+        "E-003",
+        "E-005"
+      ],
+      "confidence": "high",
+      "location": "58b070 -> 58a380 / 58b580",
+      "status": "implemented_and_verified_in_fixed_scope"
+    },
+    {
+      "id": "F-002",
+      "severity": "n/a_re",
+      "evidence_ids": [
+        "E-002",
+        "E-003",
+        "E-005"
+      ],
+      "confidence": "high",
+      "location": "524d80 / 52ab40",
+      "status": "implemented_and_verified_in_fixed_scope"
+    },
+    {
+      "id": "F-003",
+      "severity": "n/a_re",
+      "evidence_ids": [
+        "E-002",
+        "E-003",
+        "E-005"
+      ],
+      "confidence": "high",
+      "location": "52fad0 / 52f770",
+      "status": "implemented_and_verified_in_fixed_scope"
+    },
+    {
+      "id": "F-004",
+      "severity": "n/a_re",
+      "evidence_ids": [
+        "E-004",
+        "E-005",
+        "E-006"
+      ],
+      "confidence": "high",
+      "location": "f9680 interpolation map / 1b2810 resize; current DLL actual input",
+      "status": "implemented_and_verified_in_fixed_scope"
+    }
+  ],
+  "paths": [
+    {
+      "id": "P-001",
+      "path_type": "callflow",
+      "steps": [
+        "zero-pivot LU decision",
+        "SVD only when required",
+        "width-cap target vertices",
+        "ordered triangle warps",
+        "clipped word inverse mapping"
+      ]
+    },
+    {
+      "id": "P-002",
+      "path_type": "solve",
+      "steps": [
+        "627 long-scene differences",
+        "detector tensor mismatch",
+        "native interpolation map",
+        "AREA input exact",
+        "142 x 5 strict fresh cases"
+      ]
+    }
+  ]
+}

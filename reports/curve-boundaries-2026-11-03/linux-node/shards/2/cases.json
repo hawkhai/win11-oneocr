@@ -1,0 +1,328 @@
+[
+  {
+    "name": "sample-4169c134c6189ae6",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/cn-single-line-mixed.jpg",
+    "sha256": "337533e2e614050c484797420f080a9b251a61a01acb22d42fb997900a921570",
+    "baseline": null,
+    "expected_error": {
+      "code": -18,
+      "message": "Image dimensions must be 50..10000 pixels"
+    }
+  },
+  {
+    "name": "sample-426c4c4b4327f07c",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/cn-vertical-ad.png",
+    "sha256": "fa09ac67ef17238b740fb68e3a86e1b46ca5d1015a78d81a478a55a4621acf3a",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/426c4c4b4327f07c.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-eb1b381667716066",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/dewarp-thesis-table.jpg",
+    "sha256": "ca26ff9def88a52b9c64d7161036974fe6efd6843b4997e6415fc73f10fc3de8",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/eb1b381667716066.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-a9819bb8f9e9f5ef",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/easy-health-poster.png",
+    "sha256": "f9f8c82b6b15ac6c9367c7939129395d6c45a882a2dadde33aaa810da4d450d5",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/a9819bb8f9e9f5ef.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-9e131b7b56e565db",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/easy-yuyuan-road.jpg",
+    "sha256": "7d8f231016c6a35da879b7d79b39c45b694aef962ae30f64063d981e618fbf7f",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/9e131b7b56e565db.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-2db7bd9b6595c479",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/pp-math-exam.jpg",
+    "sha256": "1294755b7db3d7c22daa31ed1995d1509aa385d5a54831774532716b4b26c330",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/2db7bd9b6595c479.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-f06b8315200c1abb",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/pp-wash-label.jpg",
+    "sha256": "957a9cc15da49312277796126be225e0ee653f3316578c12d626fa43fbe9561b",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/f06b8315200c1abb.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-60f7669b6fa86751",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/psm-old-engine-title.png",
+    "sha256": "61b315d7443463a8786e5d89b2bce9c57a8dcba9dd20c457c7d5ed65fbd5a144",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/60f7669b6fa86751.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-9b462fed1772311b",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/psm-whole-foods-receipt.png",
+    "sha256": "36dcce2f33f41f546d62e3c3d7877658469e166c78c9daf99df1895fac375cd6",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/9b462fed1772311b.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-c323ed4e5eccd42e",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/structure-paper-table.jpg",
+    "sha256": "d754f91e263b0392708e48050971722f86a3a863c2497e73869802066b7dfc06",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/c323ed4e5eccd42e.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-4cb3c7f3a7eae8bb",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/cn-traditional-result.jpg",
+    "sha256": "c84a1b2e9052328438abe3960e38c0ccd706a43a58782708a76a38253754fc4a",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/4cb3c7f3a7eae8bb.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-4f45cf0e51f46a54",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/dewarp-thesis-a-comparison.png",
+    "sha256": "109acb72564d5d7191a002539dc05075300f0feeb41a8dc2b8b4a6292136b21c",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/4f45cf0e51f46a54.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-e8417890fea95361",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/digits-warped.png",
+    "sha256": "12daccbfaf0996d6a3ab03d4a62bed004d644d7c2bb44f9e533caa316d0e3890",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/e8417890fea95361.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-e4d10781d3be6992",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/quality-border-comparison.png",
+    "sha256": "d6bb202fe300092bcd256b1545ff02c5a100844cd92110248da91518f0ee243f",
+    "baseline": null,
+    "expected_error": {
+      "code": -15,
+      "message": "Unsupported image channel count"
+    }
+  },
+  {
+    "name": "sample-913b6e2fbe4c0d3b",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/receipt-edges.png",
+    "sha256": "2418d74fd5d8dc0021d4ccb1f3ea51b475f66d0526754aa2e62db20a8ff86cfd",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/913b6e2fbe4c0d3b.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-db4b91782dd3efb7",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/chinese-layout.jpg",
+    "sha256": "106670fcacb14ee72517bc43172c0362c10bd1e89c66e7cada334f1488e851a3",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/db4b91782dd3efb7.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-86a7ffe5513e5633",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/cn-traditional-sutra.jpg",
+    "sha256": "c61aa101215b21b29061f62f9899a9bec1e30cd89332d857fcd56e450f835870",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/86a7ffe5513e5633.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-44d499f3f15ffc62",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/cn-wrapped-paragraph.jpg",
+    "sha256": "86fe8af3c34cc2423f8335151148614546cb4d29278e0eba76494cc1173f3495",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/44d499f3f15ffc62.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-e6c08e3cc9b0eb2f",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/dewarp-thesis-wordlist.jpg",
+    "sha256": "23cf1ae34268062942e62bb8df9af9074130c090158addaed83d9e30a764c59a",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/e6c08e3cc9b0eb2f.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-c45a727514fb8982",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/easy-minato-sign.jpg",
+    "sha256": "e74ee1b1757ad97a383b9ef048b81c9d999ff0a96d65cbd8cac6ea8bf14392d9",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/c45a727514fb8982.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-512b352f18af3f4f",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/image-quality.jpg",
+    "sha256": "dd0358f9f93981b7878a5debd734e15e82a54cc0747ddf3491d3eedf6fba9681",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/512b352f18af3f4f.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-7d60dfc27e54a03b",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/pp-garden-sign.jpg",
+    "sha256": "db5dd0412e7c3d0cb4ba1c8e9cbb9b95860841de75df4cb48473281d293d70df",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/7d60dfc27e54a03b.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-a83d2bf9aa769ebd",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/pp-product-description.jpg",
+    "sha256": "c373773f4bd6e772226061f4999a8a0263f3e6c2b5514c1a56e05c6c9c75062b",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/a83d2bf9aa769ebd.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-058949810e7c76d3",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/psm-designer-word.jpg",
+    "sha256": "8efe2f43c046fcbb7db47f43181953d78d73dc576fe01ba33aa27b038cf8fb18",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/058949810e7c76d3.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-133a8c148862ce3a",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/psm-sherlock-page.jpg",
+    "sha256": "23dfd4b428f2de8939a481c416ae5354a0af82c862bbf2a4e76299e5889e186a",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/133a8c148862ce3a.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-cc615a3e5cb1499e",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/quality-heavy-ink.jpg",
+    "sha256": "4e30d0737a81e8f6277733b06fef21fb15057cb15d5dbec103f410c25ade327e",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/cc615a3e5cb1499e.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-3255119646d641ba",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/scene-text.jpg",
+    "sha256": "827912802a25b701ddab8cb30e641d7b5e9fd5ed0daaabbc1c04dda53fbcabe7",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/3255119646d641ba.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-0e06c211cb4a4831",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/tables.jpg",
+    "sha256": "06afada074d5c7b3c36291d89463e6e5847b2b5047485f43f1008aefbf2a0549",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/0e06c211cb4a4831.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-493754a016f2232e",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-boundaries/near-collinear-line.png",
+    "sha256": "ae9692f7f8fb2f99d88eec11990828509603b59ca2a336cadf477f51a376a7a3",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/493754a016f2232e.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-4f4c989c97595b6e",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-capabilities/azure-dog-negative.jpg",
+    "sha256": "cc413070133fc9625b5dc6ce2c3dcedba98aedfb531f35046d03f750577a93f6",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/4f4c989c97595b6e.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-9f735a010e88a648",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-capabilities/blank-unicode-空白-😀.png",
+    "sha256": "4f276c6adf8852e89048c73a9c96922effec0893a48e394277a06e3ead39205f",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/9f735a010e88a648.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-b563bb5b3e206ad7",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-capabilities/mixed-nine-scripts.png",
+    "sha256": "ce409c9986860c21aa5588d8b7a9d6c7c4e5fb665169d70310b834f3c340da59",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/b563bb5b3e206ad7.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-41b45e5a7c1f065c",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-capabilities/script-cjk.png",
+    "sha256": "845a6747caa7ca3d7ac2371f02b2b3430bea21029df8cdb26c9e18e5bdc3fc92",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/41b45e5a7c1f065c.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-0676d3f4ef6c5e2a",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-capabilities/script-greek.png",
+    "sha256": "9f1dabf2c1b619e335c8f3997102123be05e73f716b4a2e3011380f521c0ca53",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/0676d3f4ef6c5e2a.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-71fe5f6e6888b73b",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-capabilities/script-tamil.png",
+    "sha256": "77b009b5c817155c5e1436b01ae0e0b3dedfbc7d66c06d2a71018e09032f432b",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/71fe5f6e6888b73b.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-280528b4b1cb14b3",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-parity/handwriting-azure.jpg",
+    "sha256": "cafe17111f6a496a5dc976804f33ecff2e66a2375a8e06f3c67f1ea7588a3e23",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/280528b4b1cb14b3.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-1aad6147b578f344",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-parity/handwriting-rotate-180.png",
+    "sha256": "1290b294eaac0416439a27dd56b555ff23c6c2662c7500e62c815437e5291aa6",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/1aad6147b578f344.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-728b694ae01441a4",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-parity/handwriting-rotate-90.png",
+    "sha256": "a93bceadbed021463485e12653adb02a22a645b5c76b8445fd4c034fcfa5b72d",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/legacy/728b694ae01441a4.json",
+    "expected_error": null
+  },
+  {
+    "name": "corpus-latin-rotate-0.5",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/latin-rotate-0.5.png",
+    "sha256": "519918dee63a62fc7bb9b57f9238c3ab6f16434abd91390a8033c6138b438204",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/corpus-legacy/latin-rotate-0.5.json"
+  },
+  {
+    "name": "corpus-latin-rotate-90",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/latin-rotate-90.png",
+    "sha256": "a776f82558945e22363e5e2947e38fa71852b45e0e084c302cc26202b17cdb49",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/corpus-legacy/latin-rotate-90.json"
+  },
+  {
+    "name": "corpus-cjk-18",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/cjk-18.png",
+    "sha256": "4ade3cc82ded9cab8c2d282b0f32f94b74feabbb6a263c08f557f4c4e5f0ef11",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/corpus-legacy/cjk-18.json"
+  },
+  {
+    "name": "corpus-cjk-rotate-3",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/cjk-rotate-3.png",
+    "sha256": "6a608f80302ea5a0c76063a90a2098c584ad2ff32a2fc97888bfa4ea5f6f295d",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/corpus-legacy/cjk-rotate-3.json"
+  },
+  {
+    "name": "corpus-cjk-rotate-180",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/cjk-rotate-180.png",
+    "sha256": "5b1e17e8a1e12faf24f12a232dd454ebd4e17f1fb7208cff2014a0c150402f85",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/corpus-legacy/cjk-rotate-180.json"
+  },
+  {
+    "name": "corpus-arabic-36",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/arabic-36.png",
+    "sha256": "796c4585fc52ab1186e26dc19d82f8df758eb7e58aeb991de5f97bd66c3b7992",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/corpus-legacy/arabic-36.json"
+  },
+  {
+    "name": "corpus-thai-36",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/thai-36.png",
+    "sha256": "a0de4e62ae5fcd0648bb47aa3fcd2ff2bb2221d9bd3a0f3574836a90e555e8c4",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/corpus-legacy/thai-36.json"
+  },
+  {
+    "name": "corpus-blank",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/blank.png",
+    "sha256": "e6c1b77f53191625cb96289940e11361f943997ad26799f95900659278d34a45",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/corpus-legacy/blank.json"
+  },
+  {
+    "name": "corpus-vertical-cjk",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/vertical-cjk.png",
+    "sha256": "a31698b7bb8305eadba26d4a12da50e2db7591266fa6822216b1e8eb86375c2f",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/curve-boundaries-2026-11-03/reference/corpus-legacy/vertical-cjk.json"
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "passed": true,
+  "mode": "fresh-inference",
+  "fresh_inference": true,
+  "cases": 710,
+  "passed_cases": 710,
+  "recognition_outputs": 695,
+  "expected_rejections": 15,
+  "input_scope": {
+    "sample_images": 114,
+    "corpus": 27,
+    "book": 1,
+    "per_environment": 142
+  },
+  "environments": [
+    {
+      "environment": "windows-native",
+      "passed": true,
+      "fresh_inference": true,
+      "cases": 142,
+      "recognition_outputs": 139,
+      "expected_rejections": 3,
+      "matched_lines": 2840,
+      "matched_words": 11687,
+      "maximum_observed_error": {
+        "coordinates_px": 0.0009765625,
+        "angle_degrees": 0.0,
+        "confidence": 1.7285346984863281e-06
+      },
+      "sum_case_wall_seconds": 164.41559809993487,
+      "memory": {
+        "max_process_peak_bytes": 396206080,
+        "method": "Recorded per CLI process OS peak working set/RSS"
+      }
+    },
+    {
+      "environment": "linux-native",
+      "passed": true,
+      "fresh_inference": true,
+      "cases": 142,
+      "recognition_outputs": 139,
+      "expected_rejections": 3,
+      "matched_lines": 2840,
+      "matched_words": 11687,
+      "maximum_observed_error": {
+        "coordinates_px": 0.0009765625,
+        "angle_degrees": 0.0,
+        "confidence": 1.7285346984863281e-06
+      },
+      "sum_case_wall_seconds": 260.90135750400026,
+      "memory": {
+        "max_process_peak_bytes": 415264768,
+        "method": "Recorded per CLI process OS peak working set/RSS"
+      }
+    },
+    {
+      "environment": "windows-node",
+      "passed": true,
+      "fresh_inference": true,
+      "cases": 142,
+      "recognition_outputs": 139,
+      "expected_rejections": 3,
+      "matched_lines": 2840,
+      "matched_words": 11687,
+      "maximum_observed_error": {
+        "coordinates_px": 0.0009765625,
+        "angle_degrees": 1.1920928955078125e-07,
+        "confidence": 0.0009335875511169434
+      },
+      "sum_case_wall_seconds": 7216.8447963,
+      "memory": {
+        "max_process_peak_bytes": 695582720,
+        "sum_of_worker_peaks_upper_bound_bytes": 2028773376,
+        "method": "Node process.resourceUsage maxRSS; peaks may occur at different times"
+      }
+    },
+    {
+      "environment": "chrome",
+      "passed": true,
+      "fresh_inference": true,
+      "cases": 142,
+      "recognition_outputs": 139,
+      "expected_rejections": 3,
+      "matched_lines": 2840,
+      "matched_words": 11687,
+      "maximum_observed_error": {
+        "coordinates_px": 0.0009765625,
+        "angle_degrees": 1.1920928955078125e-07,
+        "confidence": 0.0009335875511169434
+      },
+      "sum_case_wall_seconds": 6443.567200000167,
+      "memory": {
+        "max_process_peak_bytes": 955133952,
+        "sum_of_all_process_peaks_upper_bound_bytes": 4229222400,
+        "method": "Windows OS PeakWorkingSet64; sum of individual process peaks is an upper bound, not simultaneous peak"
+      }
+    },
+    {
+      "environment": "linux-node",
+      "passed": true,
+      "fresh_inference": true,
+      "cases": 142,
+      "recognition_outputs": 139,
+      "expected_rejections": 3,
+      "matched_lines": 2840,
+      "matched_words": 11687,
+      "maximum_observed_error": {
+        "coordinates_px": 0.0009765625,
+        "angle_degrees": 1.1920928955078125e-07,
+        "confidence": 0.0009335875511169434
+      },
+      "sum_case_wall_seconds": 7718.407229521,
+      "memory": {
+        "max_process_peak_bytes": 915546112,
+        "sum_of_worker_peaks_upper_bound_bytes": 2675654656,
+        "method": "Node process.resourceUsage maxRSS; peaks may occur at different times"
+      }
+    }
+  ],
+  "strict_tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "model_changed": false,
+  "comparator_changed": false,
+  "model_manifest_sha256": "8e6d5b973aad14590890ce78de39e5414b7297df4350d65e7a2990ab9b9c929a",
+  "source_model_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+  "goal_complete": false,
+  "engine_parity": "incomplete"
+}

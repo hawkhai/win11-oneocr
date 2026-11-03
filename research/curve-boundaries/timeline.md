@@ -25,3 +25,11 @@
 - action: native Windows/Linux CTest and Wasm C++ oracle tests; fresh full 142 cases per environment
 - result: branch tests passed on Windows, Linux and Wasm; full native Windows/Linux passed 142/142 each
 - next: finish Windows/Linux Node and Chrome fresh runs, seal reports, verify offline package and commit
+
+## 2026-11-03T16:39:57.500785+08:00 | lead | final validation
+- action: fresh five-environment strict regression, isolated offline runs and saved-output rejection tests
+- result_summary: 710/710 fresh cases; 710/710 read-only verification; 47 Python tests; Windows/Linux 9/9 CTest; Wasm branch assertions passed
+- evidence_ids: [E-005, E-006, E-007]
+- decision_delta: [curve_fallback=recovered, width_cap_mapping=recovered, long_image_area_resize=recovered, fixed_scope=142_per_environment]
+- carry_forward_refs: [scope.md, field-journal.md]
+- next: local report commit, regenerate exact-HEAD offline packages; unverified platforms remain unverified

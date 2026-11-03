@@ -1,0 +1,2385 @@
+{
+  "passed": false,
+  "completed_cases": 114,
+  "total_cases": 114,
+  "passed_cases": 113,
+  "recognition_passes": 110,
+  "error_contract_passes": 3,
+  "binary_sha256": "abaa054a76c8dd299e457c07dcbfcc9e29c41e33a394694950517b3865e39af2",
+  "runtime_bindings": {
+    "ocr.exe": "abaa054a76c8dd299e457c07dcbfcc9e29c41e33a394694950517b3865e39af2",
+    "oneocr_portable.dll": "7e09cf66ea0f4773765b865153d6359bbeebccf8ba40f1a500a64e8dc9d8a363",
+    "onnxruntime.dll": "f91839182f99548847810c9d4c5a9655dc85b3b7321d540b9ba1b25db34e48e9"
+  },
+  "model_manifest_sha256": "8e6d5b973aad14590890ce78de39e5414b7297df4350d65e7a2990ab9b9c929a",
+  "inventory_sha256": "e712ae97b352e6b389d1ff945f4232ed4071b5b4c565646af59a618930decd21",
+  "cases": [
+    {
+      "file": "ocr-classics/images/cards-template-input.jpg",
+      "name": "903c40f10a92c762",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.8310611000051722,
+        "peak_working_set_bytes": 160501760,
+        "stderr": ""
+      },
+      "expected_lines": 12,
+      "actual_lines": 12,
+      "same_position_text_matches": 12,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/cn-english-book-cover.jpeg",
+      "name": "df2560f7906cab6d",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.7116380999796093,
+        "peak_working_set_bytes": 143912960,
+        "stderr": ""
+      },
+      "expected_lines": 10,
+      "actual_lines": 10,
+      "same_position_text_matches": 10,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/cn-single-line-mixed.jpg",
+      "name": "4169c134c6189ae6",
+      "passed": true,
+      "measurement": {
+        "exit_code": 1,
+        "seconds": 0.47975850000511855,
+        "peak_working_set_bytes": 51384320,
+        "stderr": "ERROR: Image dimensions must be 50..10000 pixels\r\n"
+      },
+      "status": "expected_size_error"
+    },
+    {
+      "file": "ocr-classics/images/cn-traditional-sutra.jpg",
+      "name": "7750735bcbce34ec",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3228619000292383,
+        "peak_working_set_bytes": 248205312,
+        "stderr": ""
+      },
+      "expected_lines": 33,
+      "actual_lines": 33,
+      "same_position_text_matches": 33,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/cn-train-ticket.jpeg",
+      "name": "39a29be9779394c5",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 2.1264128999901004,
+        "peak_working_set_bytes": 315424768,
+        "stderr": ""
+      },
+      "expected_lines": 24,
+      "actual_lines": 24,
+      "same_position_text_matches": 24,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/cn-vertical-ad.png",
+      "name": "426c4c4b4327f07c",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3121532999794,
+        "peak_working_set_bytes": 226820096,
+        "stderr": ""
+      },
+      "expected_lines": 28,
+      "actual_lines": 28,
+      "same_position_text_matches": 28,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/cn-wrapped-paragraph.png",
+      "name": "35b9cf211491fc5b",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9212747000274248,
+        "peak_working_set_bytes": 134094848,
+        "stderr": ""
+      },
+      "expected_lines": 7,
+      "actual_lines": 7,
+      "same_position_text_matches": 7,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/dewarp-cooking-page.jpg",
+      "name": "be771810db2def78",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 2.0658355000196025,
+        "peak_working_set_bytes": 311558144,
+        "stderr": ""
+      },
+      "expected_lines": 38,
+      "actual_lines": 38,
+      "same_position_text_matches": 38,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/dewarp-thesis-table.jpg",
+      "name": "eb1b381667716066",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.1740943999611773,
+        "peak_working_set_bytes": 377204736,
+        "stderr": ""
+      },
+      "expected_lines": 47,
+      "actual_lines": 47,
+      "same_position_text_matches": 47,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/dewarp-thesis-wordlist.jpg",
+      "name": "3aabaeed287f6784",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 2.0860950999776833,
+        "peak_working_set_bytes": 389562368,
+        "stderr": ""
+      },
+      "expected_lines": 113,
+      "actual_lines": 113,
+      "same_position_text_matches": 113,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/digits-thermostat.jpg",
+      "name": "e2147debb746e953",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.7309724000515416,
+        "peak_working_set_bytes": 165515264,
+        "stderr": ""
+      },
+      "expected_lines": 7,
+      "actual_lines": 7,
+      "same_position_text_matches": 7,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/easy-health-poster.png",
+      "name": "a9819bb8f9e9f5ef",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9744893999886699,
+        "peak_working_set_bytes": 173395968,
+        "stderr": ""
+      },
+      "expected_lines": 12,
+      "actual_lines": 12,
+      "same_position_text_matches": 12,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/easy-minato-sign.jpg",
+      "name": "ab902c56bd93d342",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.8401594000170007,
+        "peak_working_set_bytes": 186531840,
+        "stderr": ""
+      },
+      "expected_lines": 4,
+      "actual_lines": 4,
+      "same_position_text_matches": 4,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/easy-paris-signposts.jpg",
+      "name": "946c5faeaa0f2ec5",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.8614270000252873,
+        "peak_working_set_bytes": 206069760,
+        "stderr": ""
+      },
+      "expected_lines": 6,
+      "actual_lines": 6,
+      "same_position_text_matches": 6,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/easy-yuyuan-road.jpg",
+      "name": "9e131b7b56e565db",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.7340441000415012,
+        "peak_working_set_bytes": 158334976,
+        "stderr": ""
+      },
+      "expected_lines": 8,
+      "actual_lines": 8,
+      "same_position_text_matches": 8,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/pp-garden-sign.jpg",
+      "name": "a87dd8607e0fda5f",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9446720000123605,
+        "peak_working_set_bytes": 228384768,
+        "stderr": ""
+      },
+      "expected_lines": 4,
+      "actual_lines": 4,
+      "same_position_text_matches": 4,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/pp-lab-table.jpg",
+      "name": "e56ebcbad4b3ec61",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9867806999827735,
+        "peak_working_set_bytes": 140226560,
+        "stderr": ""
+      },
+      "expected_lines": 69,
+      "actual_lines": 69,
+      "same_position_text_matches": 69,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/pp-math-exam.jpg",
+      "name": "2db7bd9b6595c479",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9813826999743469,
+        "peak_working_set_bytes": 218468352,
+        "stderr": ""
+      },
+      "expected_lines": 24,
+      "actual_lines": 24,
+      "same_position_text_matches": 24,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/pp-product-description.jpg",
+      "name": "9d80e98d12d362b3",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.1941655999980867,
+        "peak_working_set_bytes": 214863872,
+        "stderr": ""
+      },
+      "expected_lines": 16,
+      "actual_lines": 16,
+      "same_position_text_matches": 16,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/pp-vertical-plaque.jpg",
+      "name": "f9dcd81f8ca741ba",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.8201197000453249,
+        "peak_working_set_bytes": 235212800,
+        "stderr": ""
+      },
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/pp-wash-label.jpg",
+      "name": "f06b8315200c1abb",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9238038000185043,
+        "peak_working_set_bytes": 173240320,
+        "stderr": ""
+      },
+      "expected_lines": 13,
+      "actual_lines": 13,
+      "same_position_text_matches": 13,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/psm-designer-word.png",
+      "name": "6a86cb9011438813",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.672503300011158,
+        "peak_working_set_bytes": 136527872,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/psm-license-plate.png",
+      "name": "5fa29af9e63fefc2",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.6110569999436848,
+        "peak_working_set_bytes": 107974656,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/psm-old-engine-title.png",
+      "name": "60f7669b6fa86751",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.5890473999897949,
+        "peak_working_set_bytes": 103862272,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/psm-sherlock-page.png",
+      "name": "abad7ae0707ac749",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.4609659000416286,
+        "peak_working_set_bytes": 239161344,
+        "stderr": ""
+      },
+      "expected_lines": 26,
+      "actual_lines": 26,
+      "same_position_text_matches": 26,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/psm-sparse-web-menu.png",
+      "name": "1460619f37acbd0c",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.006001900008414,
+        "peak_working_set_bytes": 209891328,
+        "stderr": ""
+      },
+      "expected_lines": 15,
+      "actual_lines": 15,
+      "same_position_text_matches": 15,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/psm-whole-foods-receipt.png",
+      "name": "9b462fed1772311b",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.092010099964682,
+        "peak_working_set_bytes": 204836864,
+        "stderr": ""
+      },
+      "expected_lines": 47,
+      "actual_lines": 47,
+      "same_position_text_matches": 47,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/quality-heavy-ink.png",
+      "name": "14f564d2b7d2e446",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.6111968999612145,
+        "peak_working_set_bytes": 81399808,
+        "stderr": ""
+      },
+      "expected_lines": 8,
+      "actual_lines": 8,
+      "same_position_text_matches": 8,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/quality-noisy-fraktur.png",
+      "name": "fd9577ef8f62f6a7",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 2.1298263000207953,
+        "peak_working_set_bytes": 196845568,
+        "stderr": ""
+      },
+      "expected_lines": 41,
+      "actual_lines": 41,
+      "same_position_text_matches": 41,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/images/structure-paper-table.jpg",
+      "name": "c323ed4e5eccd42e",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.8595216000103392,
+        "peak_working_set_bytes": 108453888,
+        "stderr": ""
+      },
+      "expected_lines": 73,
+      "actual_lines": 73,
+      "same_position_text_matches": 73,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/references/cards-result.jpg",
+      "name": "cb5009e20bb1123a",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9187040000106208,
+        "peak_working_set_bytes": 179556352,
+        "stderr": ""
+      },
+      "expected_lines": 22,
+      "actual_lines": 22,
+      "same_position_text_matches": 22,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/references/cn-ticket-result.jpg",
+      "name": "2c2835cf707a4fe6",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3578873999649659,
+        "peak_working_set_bytes": 227745792,
+        "stderr": ""
+      },
+      "expected_lines": 36,
+      "actual_lines": 36,
+      "same_position_text_matches": 36,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/references/cn-traditional-result.jpg",
+      "name": "4cb3c7f3a7eae8bb",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.7089242999791168,
+        "peak_working_set_bytes": 258170880,
+        "stderr": ""
+      },
+      "expected_lines": 59,
+      "actual_lines": 59,
+      "same_position_text_matches": 59,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/references/cn-vertical-result.jpg",
+      "name": "c9a092125962e322",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3791093999752775,
+        "peak_working_set_bytes": 223784960,
+        "stderr": ""
+      },
+      "expected_lines": 43,
+      "actual_lines": 43,
+      "same_position_text_matches": 43,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/references/dewarp-cooking-comparison.png",
+      "name": "a744c24e96808cb4",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 3.108367599954363,
+        "peak_working_set_bytes": 255832064,
+        "stderr": ""
+      },
+      "expected_lines": 76,
+      "actual_lines": 76,
+      "same_position_text_matches": 76,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/references/dewarp-thesis-a-comparison.png",
+      "name": "4f45cf0e51f46a54",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.528255699959118,
+        "peak_working_set_bytes": 206483456,
+        "stderr": ""
+      },
+      "expected_lines": 88,
+      "actual_lines": 88,
+      "same_position_text_matches": 88,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/references/dewarp-thesis-b-comparison.png",
+      "name": "b0d25177b1a8480c",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 3.52852360001998,
+        "peak_working_set_bytes": 246226944,
+        "stderr": ""
+      },
+      "expected_lines": 222,
+      "actual_lines": 222,
+      "same_position_text_matches": 222,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/references/digits-result.jpg",
+      "name": "640bb28cd64c2e5b",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.245825199992396,
+        "peak_working_set_bytes": 157782016,
+        "stderr": ""
+      },
+      "expected_lines": 7,
+      "actual_lines": 7,
+      "same_position_text_matches": 7,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/references/digits-warped.png",
+      "name": "e8417890fea95361",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.267972900008317,
+        "peak_working_set_bytes": 115298304,
+        "stderr": ""
+      },
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/references/pp-product-result.jpg",
+      "name": "a24e31eb0aa23b4f",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 2.2482553999871016,
+        "peak_working_set_bytes": 251355136,
+        "stderr": ""
+      },
+      "expected_lines": 82,
+      "actual_lines": 82,
+      "same_position_text_matches": 82,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/references/quality-binarisation-comparison.png",
+      "name": "28e79bff204857cf",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.731993799970951,
+        "peak_working_set_bytes": 202752000,
+        "stderr": ""
+      },
+      "expected_lines": 41,
+      "actual_lines": 41,
+      "same_position_text_matches": 41,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/references/quality-border-comparison.png",
+      "name": "e4d10781d3be6992",
+      "passed": true,
+      "measurement": {
+        "exit_code": 1,
+        "seconds": 0.5483055000077002,
+        "peak_working_set_bytes": 51015680,
+        "stderr": "ERROR: Unsupported image channel count\r\n"
+      },
+      "status": "expected_channel_error"
+    },
+    {
+      "file": "ocr-classics/references/quality-erosion-comparison.png",
+      "name": "de900bc558f2dca8",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.6540380999795161,
+        "peak_working_set_bytes": 81948672,
+        "stderr": ""
+      },
+      "expected_lines": 8,
+      "actual_lines": 8,
+      "same_position_text_matches": 8,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/references/quality-skew-comparison.png",
+      "name": "0486f0c2e5664aed",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 2.8647693999810144,
+        "peak_working_set_bytes": 233385984,
+        "stderr": ""
+      },
+      "expected_lines": 73,
+      "actual_lines": 73,
+      "same_position_text_matches": 73,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/references/receipt-edges.png",
+      "name": "913b6e2fbe4c0d3b",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.610628499998711,
+        "peak_working_set_bytes": 286265344,
+        "stderr": ""
+      },
+      "expected_lines": 44,
+      "actual_lines": 44,
+      "same_position_text_matches": 44,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/references/receipt-perspective.png",
+      "name": "c8cde51505833347",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.9105342999682762,
+        "peak_working_set_bytes": 247443456,
+        "stderr": ""
+      },
+      "expected_lines": 86,
+      "actual_lines": 86,
+      "same_position_text_matches": 86,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/cards-template-input.jpg",
+      "name": "9d004236328aca8f",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.17485690000467,
+        "peak_working_set_bytes": 88301568,
+        "stderr": ""
+      },
+      "expected_lines": 10,
+      "actual_lines": 10,
+      "same_position_text_matches": 10,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/chinese-layout.jpg",
+      "name": "db4b91782dd3efb7",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 3.379155099974014,
+        "peak_working_set_bytes": 284565504,
+        "stderr": ""
+      },
+      "expected_lines": 74,
+      "actual_lines": 74,
+      "same_position_text_matches": 74,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/cn-english-book-cover.jpg",
+      "name": "bbbd4ae8468a6451",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.6309273000224493,
+        "peak_working_set_bytes": 89206784,
+        "stderr": ""
+      },
+      "expected_lines": 8,
+      "actual_lines": 8,
+      "same_position_text_matches": 8,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/cn-single-line-mixed.jpg",
+      "name": "440f10edac8d7c0b",
+      "passed": true,
+      "measurement": {
+        "exit_code": 1,
+        "seconds": 0.502891100011766,
+        "peak_working_set_bytes": 50425856,
+        "stderr": "ERROR: Image dimensions must be 50..10000 pixels\r\n"
+      },
+      "status": "expected_size_error"
+    },
+    {
+      "file": "ocr-classics/thumbnails/cn-traditional-sutra.jpg",
+      "name": "86a7ffe5513e5633",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.1963221000041813,
+        "peak_working_set_bytes": 165371904,
+        "stderr": ""
+      },
+      "expected_lines": 10,
+      "actual_lines": 10,
+      "same_position_text_matches": 10,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/cn-train-ticket.jpg",
+      "name": "a99b928ceb0f443e",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9446696000522934,
+        "peak_working_set_bytes": 149929984,
+        "stderr": ""
+      },
+      "expected_lines": 18,
+      "actual_lines": 18,
+      "same_position_text_matches": 18,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/cn-vertical-ad.jpg",
+      "name": "da00952f9e92b062",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9873017999925651,
+        "peak_working_set_bytes": 138358784,
+        "stderr": ""
+      },
+      "expected_lines": 11,
+      "actual_lines": 11,
+      "same_position_text_matches": 11,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/cn-wrapped-paragraph.jpg",
+      "name": "44d499f3f15ffc62",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.1662636999972165,
+        "peak_working_set_bytes": 141942784,
+        "stderr": ""
+      },
+      "expected_lines": 7,
+      "actual_lines": 7,
+      "same_position_text_matches": 7,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/dewarp-cooking-page.jpg",
+      "name": "914953ff8fb9b879",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.7115565999993123,
+        "peak_working_set_bytes": 126095360,
+        "stderr": ""
+      },
+      "expected_lines": 0,
+      "actual_lines": 0,
+      "same_position_text_matches": 0,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/dewarp-thesis-table.jpg",
+      "name": "4070a7afd9a7184b",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.0460510000120848,
+        "peak_working_set_bytes": 87277568,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/dewarp-thesis-wordlist.jpg",
+      "name": "e6c08e3cc9b0eb2f",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.809871400007978,
+        "peak_working_set_bytes": 167100416,
+        "stderr": ""
+      },
+      "expected_lines": 0,
+      "actual_lines": 0,
+      "same_position_text_matches": 0,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/digits-thermostat.jpg",
+      "name": "8229419c872341b9",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.8417363000335172,
+        "peak_working_set_bytes": 68370432,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/easy-health-poster.jpg",
+      "name": "b3edaa47ba780e0c",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.0304481000057422,
+        "peak_working_set_bytes": 94580736,
+        "stderr": ""
+      },
+      "expected_lines": 12,
+      "actual_lines": 12,
+      "same_position_text_matches": 12,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/easy-minato-sign.jpg",
+      "name": "c45a727514fb8982",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.096275199961383,
+        "peak_working_set_bytes": 142057472,
+        "stderr": ""
+      },
+      "expected_lines": 4,
+      "actual_lines": 4,
+      "same_position_text_matches": 4,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/easy-paris-signposts.jpg",
+      "name": "024e54a6c8e3ba17",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.8267066999687813,
+        "peak_working_set_bytes": 72990720,
+        "stderr": ""
+      },
+      "expected_lines": 5,
+      "actual_lines": 5,
+      "same_position_text_matches": 5,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/easy-yuyuan-road.jpg",
+      "name": "c9b8504f28656bb2",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.8217179999919608,
+        "peak_working_set_bytes": 109928448,
+        "stderr": ""
+      },
+      "expected_lines": 8,
+      "actual_lines": 8,
+      "same_position_text_matches": 8,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/image-quality.jpg",
+      "name": "512b352f18af3f4f",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.7774337999871932,
+        "peak_working_set_bytes": 224550912,
+        "stderr": ""
+      },
+      "expected_lines": 13,
+      "actual_lines": 13,
+      "same_position_text_matches": 13,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/layout-segmentation.jpg",
+      "name": "0582df7394486480",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 3.1939356999937445,
+        "peak_working_set_bytes": 304074752,
+        "stderr": ""
+      },
+      "expected_lines": 47,
+      "actual_lines": 47,
+      "same_position_text_matches": 47,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/overview.jpg",
+      "name": "4a2cab3fdba7faea",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 11.45128159999149,
+        "peak_working_set_bytes": 394473472,
+        "stderr": ""
+      },
+      "expected_lines": 281,
+      "actual_lines": 281,
+      "same_position_text_matches": 281,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/pp-garden-sign.jpg",
+      "name": "7d60dfc27e54a03b",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.010453199967742,
+        "peak_working_set_bytes": 119259136,
+        "stderr": ""
+      },
+      "expected_lines": 4,
+      "actual_lines": 4,
+      "same_position_text_matches": 4,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/pp-lab-table.jpg",
+      "name": "eb6e81323fe050ef",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.495782700018026,
+        "peak_working_set_bytes": 130912256,
+        "stderr": ""
+      },
+      "expected_lines": 69,
+      "actual_lines": 69,
+      "same_position_text_matches": 69,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/pp-math-exam.jpg",
+      "name": "e3d262776302832f",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.2287600000272505,
+        "peak_working_set_bytes": 145604608,
+        "stderr": ""
+      },
+      "expected_lines": 22,
+      "actual_lines": 22,
+      "same_position_text_matches": 22,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/pp-product-description.jpg",
+      "name": "a83d2bf9aa769ebd",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.5649682999937795,
+        "peak_working_set_bytes": 143679488,
+        "stderr": ""
+      },
+      "expected_lines": 16,
+      "actual_lines": 16,
+      "same_position_text_matches": 16,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/pp-vertical-plaque.jpg",
+      "name": "eae7f502cfea5855",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9453618000261486,
+        "peak_working_set_bytes": 123817984,
+        "stderr": ""
+      },
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/pp-wash-label.jpg",
+      "name": "de744546e5b8a0e6",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3465571000124328,
+        "peak_working_set_bytes": 147689472,
+        "stderr": ""
+      },
+      "expected_lines": 12,
+      "actual_lines": 12,
+      "same_position_text_matches": 12,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/psm-designer-word.jpg",
+      "name": "058949810e7c76d3",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.7814573000068776,
+        "peak_working_set_bytes": 71503872,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/psm-license-plate.jpg",
+      "name": "a45fc642aa130558",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.7164462999789976,
+        "peak_working_set_bytes": 67100672,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/psm-old-engine-title.jpg",
+      "name": "2f4730c5e82e18ff",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.721673300024122,
+        "peak_working_set_bytes": 68857856,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/psm-sherlock-page.jpg",
+      "name": "133a8c148862ce3a",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.4655417000176385,
+        "peak_working_set_bytes": 98381824,
+        "stderr": ""
+      },
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/psm-sparse-web-menu.jpg",
+      "name": "0b6fd6de5d12d93c",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.1397657999768853,
+        "peak_working_set_bytes": 80035840,
+        "stderr": ""
+      },
+      "expected_lines": 9,
+      "actual_lines": 9,
+      "same_position_text_matches": 9,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/psm-whole-foods-receipt.jpg",
+      "name": "9e2ab94f59cf15f8",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.2165827000280842,
+        "peak_working_set_bytes": 88997888,
+        "stderr": ""
+      },
+      "expected_lines": 34,
+      "actual_lines": 34,
+      "same_position_text_matches": 34,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/quality-heavy-ink.jpg",
+      "name": "cc615a3e5cb1499e",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.8006912999553606,
+        "peak_working_set_bytes": 76795904,
+        "stderr": ""
+      },
+      "expected_lines": 8,
+      "actual_lines": 8,
+      "same_position_text_matches": 8,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/quality-noisy-fraktur.jpg",
+      "name": "0f2b4483dc0e1c98",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 2.0329744000337087,
+        "peak_working_set_bytes": 146329600,
+        "stderr": ""
+      },
+      "expected_lines": 0,
+      "actual_lines": 0,
+      "same_position_text_matches": 0,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/receipts-labels.jpg",
+      "name": "3c6e7c7ab6144e27",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 2.0134159000008367,
+        "peak_working_set_bytes": 196202496,
+        "stderr": ""
+      },
+      "expected_lines": 35,
+      "actual_lines": 35,
+      "same_position_text_matches": 35,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/scene-text.jpg",
+      "name": "3255119646d641ba",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 2.4517284000176005,
+        "peak_working_set_bytes": 273141760,
+        "stderr": ""
+      },
+      "expected_lines": 48,
+      "actual_lines": 48,
+      "same_position_text_matches": 48,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/special-digits.jpg",
+      "name": "c777a45d62cce90a",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.199564400012605,
+        "peak_working_set_bytes": 187973632,
+        "stderr": ""
+      },
+      "expected_lines": 14,
+      "actual_lines": 14,
+      "same_position_text_matches": 14,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/structure-paper-table.jpg",
+      "name": "ed5b69a9711e3f53",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.2139821000164375,
+        "peak_working_set_bytes": 96522240,
+        "stderr": ""
+      },
+      "expected_lines": 74,
+      "actual_lines": 74,
+      "same_position_text_matches": 74,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/tables.jpg",
+      "name": "0e06c211cb4a4831",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 2.351235900016036,
+        "peak_working_set_bytes": 217571328,
+        "stderr": ""
+      },
+      "expected_lines": 148,
+      "actual_lines": 148,
+      "same_position_text_matches": 148,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "ocr-classics/thumbnails/warped-pages.jpg",
+      "name": "6692328598e9c3a8",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 2.9291429999866523,
+        "peak_working_set_bytes": 283799552,
+        "stderr": ""
+      },
+      "expected_lines": 10,
+      "actual_lines": 10,
+      "same_position_text_matches": 10,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-boundaries/curved-line.png",
+      "name": "92de0a88437e32a3",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.8447951000416651,
+        "peak_working_set_bytes": 115998720,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-boundaries/near-collinear-line.png",
+      "name": "493754a016f2232e",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9261079999851063,
+        "peak_working_set_bytes": 160559104,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-boundaries/normalizer-grid.png",
+      "name": "456fa06428e1e12f",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.7389130999799818,
+        "peak_working_set_bytes": 63197184,
+        "stderr": ""
+      },
+      "expected_lines": 0,
+      "actual_lines": 0,
+      "same_position_text_matches": 0,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-boundaries/very-long-line.png",
+      "name": "4b43a6f478545d70",
+      "passed": false,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.1361567999701947,
+        "peak_working_set_bytes": 298815488,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 627,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "mismatch"
+    },
+    {
+      "file": "oneocr-capabilities/azure-dog-negative.jpg",
+      "name": "4f4c989c97595b6e",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9188975999713875,
+        "peak_working_set_bytes": 155324416,
+        "stderr": ""
+      },
+      "expected_lines": 0,
+      "actual_lines": 0,
+      "same_position_text_matches": 0,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/azure-multilingual.png",
+      "name": "83a365509f1cc2b7",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.1165438000462018,
+        "peak_working_set_bytes": 189743104,
+        "stderr": ""
+      },
+      "expected_lines": 7,
+      "actual_lines": 7,
+      "same_position_text_matches": 7,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/azure-printed-photo.jpg",
+      "name": "c062c4f8b726c822",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.2186340999905951,
+        "peak_working_set_bytes": 177016832,
+        "stderr": ""
+      },
+      "expected_lines": 15,
+      "actual_lines": 15,
+      "same_position_text_matches": 15,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/blank-unicode-空白-😀.png",
+      "name": "9f735a010e88a648",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.8298133000498638,
+        "peak_working_set_bytes": 134451200,
+        "stderr": ""
+      },
+      "expected_lines": 0,
+      "actual_lines": 0,
+      "same_position_text_matches": 0,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/dark-contact-screenshot.png",
+      "name": "9a0e9586ac3fe4e2",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.064690800034441,
+        "peak_working_set_bytes": 150118400,
+        "stderr": ""
+      },
+      "expected_lines": 6,
+      "actual_lines": 6,
+      "same_position_text_matches": 6,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/low-contrast-small-blur.png",
+      "name": "0fc39af69da4cfed",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9032180999638513,
+        "peak_working_set_bytes": 108105728,
+        "stderr": ""
+      },
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/mixed-nine-scripts.png",
+      "name": "b563bb5b3e206ad7",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.3233228000462987,
+        "peak_working_set_bytes": 281423872,
+        "stderr": ""
+      },
+      "expected_lines": 10,
+      "actual_lines": 10,
+      "same_position_text_matches": 10,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/printed-and-real-handwriting.png",
+      "name": "3295ba0789edc763",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.0756044000154361,
+        "peak_working_set_bytes": 183320576,
+        "stderr": ""
+      },
+      "expected_lines": 3,
+      "actual_lines": 3,
+      "same_position_text_matches": 3,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/script-arabic.png",
+      "name": "55932e69942ed683",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.8294356999685988,
+        "peak_working_set_bytes": 91705344,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/script-cjk.png",
+      "name": "41b45e5a7c1f065c",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.8015802000300027,
+        "peak_working_set_bytes": 135516160,
+        "stderr": ""
+      },
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/script-cyrillic.png",
+      "name": "cc5c505c9a91f65a",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.8170855999924242,
+        "peak_working_set_bytes": 102899712,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/script-devanagari.png",
+      "name": "c159f2e4564feb4f",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.7382563999854028,
+        "peak_working_set_bytes": 91508736,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/script-greek.png",
+      "name": "0676d3f4ef6c5e2a",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.7351918999920599,
+        "peak_working_set_bytes": 94285824,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/script-hebrew.png",
+      "name": "4fceece9f2d76a6e",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.6533968999865465,
+        "peak_working_set_bytes": 89923584,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/script-latin.png",
+      "name": "1ea42cacfd82f6c0",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.7390121000353247,
+        "peak_working_set_bytes": 101052416,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/script-tamil.png",
+      "name": "71fe5f6e6888b73b",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.7375802000169642,
+        "peak_working_set_bytes": 94007296,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/script-thai.png",
+      "name": "203573ceb1873d5c",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.7831464000046253,
+        "peak_working_set_bytes": 92536832,
+        "stderr": ""
+      },
+      "expected_lines": 1,
+      "actual_lines": 1,
+      "same_position_text_matches": 1,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-capabilities/single-table.png",
+      "name": "a2446851712be525",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.02110840001842,
+        "peak_working_set_bytes": 149004288,
+        "stderr": ""
+      },
+      "expected_lines": 18,
+      "actual_lines": 18,
+      "same_position_text_matches": 18,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-parity/handwriting-azure.jpg",
+      "name": "280528b4b1cb14b3",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.0107024000026286,
+        "peak_working_set_bytes": 205778944,
+        "stderr": ""
+      },
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-parity/handwriting-rotate-0.5.png",
+      "name": "224ffeac6e0cd92d",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9991628999705426,
+        "peak_working_set_bytes": 206692352,
+        "stderr": ""
+      },
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-parity/handwriting-rotate-10.png",
+      "name": "5f9d77976f578583",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9702718000044115,
+        "peak_working_set_bytes": 178761728,
+        "stderr": ""
+      },
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-parity/handwriting-rotate-180.png",
+      "name": "1aad6147b578f344",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.0258790000225417,
+        "peak_working_set_bytes": 205922304,
+        "stderr": ""
+      },
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-parity/handwriting-rotate-270.png",
+      "name": "8d1e2d06c5f24990",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9854795999708585,
+        "peak_working_set_bytes": 205754368,
+        "stderr": ""
+      },
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-parity/handwriting-rotate-3.png",
+      "name": "ab78d5d64fd48439",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 1.0443258000304922,
+        "peak_working_set_bytes": 187478016,
+        "stderr": ""
+      },
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    },
+    {
+      "file": "oneocr-parity/handwriting-rotate-90.png",
+      "name": "728b694ae01441a4",
+      "passed": true,
+      "measurement": {
+        "exit_code": 0,
+        "seconds": 0.9474626000155695,
+        "peak_working_set_bytes": 205709312,
+        "stderr": ""
+      },
+      "expected_lines": 2,
+      "actual_lines": 2,
+      "same_position_text_matches": 2,
+      "failure_count": 0,
+      "tolerances": {
+        "coordinates_px": 1,
+        "angle_degrees": 0.1,
+        "confidence": 0.001
+      },
+      "status": "passed"
+    }
+  ]
+}

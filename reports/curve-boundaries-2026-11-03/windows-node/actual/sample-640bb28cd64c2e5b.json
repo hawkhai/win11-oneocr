@@ -1,0 +1,302 @@
+{
+  "engine": {
+    "backend": "wasm-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\references\\digits-result.jpg",
+  "image": {
+    "height": 423,
+    "step": 2400,
+    "width": 600
+  },
+  "image_angle": 0,
+  "line_count": 7,
+  "lines": [
+    {
+      "bounding_box": [
+        179,
+        24,
+        204,
+        24,
+        203,
+        34,
+        179,
+        34
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "Input",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            179,
+            24,
+            204.3333282470703,
+            24,
+            204.3333282470703,
+            34,
+            179,
+            34
+          ],
+          "confidence": 0.950552761554718,
+          "index": 0,
+          "text": "Input"
+        }
+      ]
+    },
+    {
+      "bounding_box": [
+        341,
+        68,
+        598,
+        68,
+        599,
+        83,
+        341,
+        83
+      ],
+      "index": 1,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "(cv)malcolm:recognize-digits adrianroseb",
+      "word_count": 2,
+      "words": [
+        {
+          "bounding_box": [
+            341.7565002441406,
+            69.84453582763672,
+            523.0189819335938,
+            68.2125244140625,
+            522.8948974609375,
+            83.43841552734375,
+            341.3387451171875,
+            82.4372787475586
+          ],
+          "confidence": 0.924812912940979,
+          "index": 0,
+          "text": "(cv)malcolm:recognize-digits"
+        },
+        {
+          "bounding_box": [
+            527.9820556640625,
+            68.24850463867188,
+            599,
+            69.25836944580078,
+            599,
+            82.94017028808594,
+            527.866943359375,
+            83.41483306884766
+          ],
+          "confidence": 0.9889253973960876,
+          "index": 1,
+          "text": "adrianroseb"
+        }
+      ]
+    },
+    {
+      "bounding_box": [
+        339,
+        83,
+        388,
+        83,
+        388,
+        95,
+        339,
+        95
+      ],
+      "index": 2,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "34.5 C",
+      "word_count": 2,
+      "words": [
+        {
+          "bounding_box": [
+            339.58209228515625,
+            83.04471588134766,
+            367.2124328613281,
+            83.22491455078125,
+            367.0323791503906,
+            95.66123962402344,
+            339.16680908203125,
+            95.95933532714844
+          ],
+          "confidence": 0.9889507293701172,
+          "index": 0,
+          "text": "34.5"
+        },
+        {
+          "bounding_box": [
+            380.51513671875,
+            83.3976821899414,
+            389,
+            83.4986801147461,
+            389,
+            95.5322265625,
+            380.44671630859375,
+            95.58430480957031
+          ],
+          "confidence": 0.389720618724823,
+          "index": 1,
+          "text": "C"
+        }
+      ]
+    },
+    {
+      "bounding_box": [
+        339,
+        127,
+        374,
+        128,
+        374,
+        137,
+        339,
+        137
+      ],
+      "index": 3,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "Output",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            342.404541015625,
+            127.91329956054688,
+            374.6169128417969,
+            128.5755157470703,
+            374.1981506347656,
+            137.95510864257812,
+            341.9857482910156,
+            137.7925567626953
+          ],
+          "confidence": 0.5734605193138123,
+          "index": 0,
+          "text": "Output"
+        }
+      ]
+    },
+    {
+      "bounding_box": [
+        175,
+        158,
+        234,
+        158,
+        233,
+        187,
+        174,
+        187
+      ],
+      "index": 4,
+      "style": {
+        "confidence": 0.06499999761581421,
+        "type": "printed"
+      },
+      "text": "345",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            174,
+            158,
+            235,
+            158,
+            235,
+            187,
+            174,
+            187
+          ],
+          "confidence": 0.7532479166984558,
+          "index": 0,
+          "text": "345"
+        }
+      ]
+    },
+    {
+      "bounding_box": [
+        292,
+        143,
+        349,
+        145,
+        349,
+        161,
+        292,
+        160
+      ],
+      "index": 5,
+      "style": {
+        "confidence": 0.06499999761581421,
+        "type": "printed"
+      },
+      "text": "345",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            292.9148864746094,
+            143.97999572753906,
+            350,
+            145.2269287109375,
+            350,
+            161.60638427734375,
+            292.9148864746094,
+            160.61566162109375
+          ],
+          "confidence": 0.8945345282554626,
+          "index": 0,
+          "text": "345"
+        }
+      ]
+    },
+    {
+      "bounding_box": [
+        229,
+        233,
+        240,
+        233,
+        240,
+        240,
+        229,
+        240
+      ],
+      "index": 6,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "gk",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            230.39999389648438,
+            233,
+            240.1999969482422,
+            233,
+            240.1999969482422,
+            240,
+            230.39999389648438,
+            240
+          ],
+          "confidence": 0.3304787874221802,
+          "index": 0,
+          "text": "gk"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "engine": {
+    "backend": "wasm-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\oneocr-capabilities\\script-arabic.png",
+  "image": {
+    "height": 170,
+    "step": 4400,
+    "width": 1100
+  },
+  "image_angle": 359.42449951171875,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        24,
+        57,
+        322,
+        55,
+        323,
+        96,
+        24,
+        100
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "2026 ملاعلاب ابحرم",
+      "word_count": 3,
+      "words": [
+        {
+          "bounding_box": [
+            241.38021850585938,
+            56.974124908447266,
+            323,
+            55.43846130371094,
+            323,
+            96.52409362792969,
+            241.38021850585938,
+            96.35174560546875
+          ],
+          "confidence": 0.9913776516914368,
+          "index": 0,
+          "text": "2026"
+        },
+        {
+          "bounding_box": [
+            132.22567749023438,
+            57.95459747314453,
+            231.39707946777344,
+            57.11470413208008,
+            231.39706420898438,
+            96.40640258789062,
+            132.22567749023438,
+            97.75347900390625
+          ],
+          "confidence": 0.7651218175888062,
+          "index": 1,
+          "text": "ملاعلاب"
+        },
+        {
+          "bounding_box": [
+            24.398101806640625,
+            57.61815643310547,
+            119.5791015625,
+            57.962276458740234,
+            119.5791015625,
+            98.06912231445312,
+            24.398101806640625,
+            101
+          ],
+          "confidence": 0.831410825252533,
+          "index": 2,
+          "text": "ابحرم"
+        }
+      ]
+    }
+  ]
+}

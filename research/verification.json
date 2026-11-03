@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "goal_complete": false,
   "parity": "incomplete",
   "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
@@ -35,8 +35,9 @@
         "corrupt vocabulary rejected before inference; source assets unchanged"
       ],
       "legacy_api_adapter": true,
-      "strict_regression_cases_passed": 138,
-      "active_model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155"
+      "strict_regression_cases_passed": 142,
+      "active_model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+      "native_unit_test_count": 9
     },
     "linux-x64": {
       "native_build": "passed",
@@ -46,8 +47,9 @@
       "ort_origin": "pinned v1.23.2 built from source with implicit FP contraction disabled",
       "native_matches_windows": true,
       "ort_source_build": true,
-      "strict_regression_cases_passed": 138,
-      "active_model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155"
+      "strict_regression_cases_passed": 142,
+      "active_model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+      "native_unit_test_count": 9
     },
     "linux-arm64": {
       "native_build": "not_verified",
@@ -65,6 +67,15 @@
       "native_build": "not_verified",
       "native_run": "not_verified",
       "java_example_compile": true
+    },
+    "wasm32": {
+      "build": "passed",
+      "windows_node_24_full_cases": 142,
+      "linux_node_24_full_cases": 142,
+      "chrome_156_full_cases": 142,
+      "other_browsers": "not_verified",
+      "node_20_full_scope": "not_verified",
+      "branch_oracle_tests": "passed"
     }
   },
   "corpus": {
@@ -88,12 +99,11 @@
   },
   "default_plugin_native_integration": true,
   "remaining": [
-    "Degenerate-curve fallback solver and extreme-length clipping paths",
-    "Nondefault detector/ambiguity options need expanded native probes",
-    "Real handwritten CJK and other scripts need independent fixtures",
-    "Linux arm64, macOS and Android target build/run validation"
+    "Nondefault parameter combinations and direction/linking ambiguity coverage",
+    "Independent real handwritten CJK and further scripts",
+    "Linux ARM64, macOS and Android target build/run verification; other JS engines"
   ],
-  "case": "work/oneocr-portable",
+  "case": "research/curve-boundaries",
   "phase1_measurements": {
     "corpus": {
       "process_successes": 27,
@@ -401,5 +411,38 @@
       }
     }
   },
-  "active_regression_report": "reports/photos-model-update-2026-11-02/README.md"
+  "active_regression_report": "reports/curve-boundaries-2026-11-03/README.md",
+  "history_before_curve_boundaries": {
+    "date": "2026-11-02",
+    "active_regression_report": "reports/photos-model-update-2026-11-02/README.md",
+    "remaining": [
+      "Degenerate-curve fallback solver and extreme-length clipping paths",
+      "Nondefault detector/ambiguity options need expanded native probes",
+      "Real handwritten CJK and other scripts need independent fixtures",
+      "Linux arm64, macOS and Android target build/run validation"
+    ],
+    "strict_cases": {
+      "windows-x64": 138,
+      "linux-x64": 138,
+      "linux-arm64": null,
+      "macos-x64": null,
+      "macos-arm64": null,
+      "android-arm64": null
+    }
+  },
+  "curve_boundary_recovery": {
+    "passed": true,
+    "fresh_inference": true,
+    "environments": 5,
+    "cases_per_environment": 142,
+    "passed_total": 710,
+    "recognition_outputs": 695,
+    "expected_rejections": 15,
+    "oracle_polynomials": 8,
+    "oracle_normalizations": 7,
+    "oracle_word_boxes": 56,
+    "detector_input_exact_floats": 110592,
+    "report": "reports/curve-boundaries-2026-11-03/README.md",
+    "goal_complete": false
+  }
 }

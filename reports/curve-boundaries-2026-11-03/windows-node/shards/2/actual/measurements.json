@@ -1,0 +1,337 @@
+{
+  "node": "v24.14.0",
+  "v8": "13.6.233.17-node.41",
+  "initializationMs": 1648.2076,
+  "peakRssBytes": 692633600,
+  "cases": [
+    {
+      "name": "sample-4169c134c6189ae6",
+      "status": "error",
+      "code": -18,
+      "milliseconds": 16.751400000000103,
+      "rssBytes": 324788224
+    },
+    {
+      "name": "sample-426c4c4b4327f07c",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 52693.725699999995,
+      "rssBytes": 457814016
+    },
+    {
+      "name": "sample-eb1b381667716066",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 45897.949799999995,
+      "rssBytes": 689250304
+    },
+    {
+      "name": "sample-a9819bb8f9e9f5ef",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 28748.448699999994,
+      "rssBytes": 681984000
+    },
+    {
+      "name": "sample-9e131b7b56e565db",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 7437.202900000004,
+      "rssBytes": 684089344
+    },
+    {
+      "name": "sample-2db7bd9b6595c479",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 40166.71530000001,
+      "rssBytes": 689422336
+    },
+    {
+      "name": "sample-f06b8315200c1abb",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 38706.4369,
+      "rssBytes": 689586176
+    },
+    {
+      "name": "sample-60f7669b6fa86751",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 4959.837300000014,
+      "rssBytes": 689590272
+    },
+    {
+      "name": "sample-9b462fed1772311b",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 80106.24010000002,
+      "rssBytes": 689786880
+    },
+    {
+      "name": "sample-c323ed4e5eccd42e",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 55189.01449999999,
+      "rssBytes": 689897472
+    },
+    {
+      "name": "sample-4cb3c7f3a7eae8bb",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 119535.31099999999,
+      "rssBytes": 690921472
+    },
+    {
+      "name": "sample-4f45cf0e51f46a54",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 114454.92960000003,
+      "rssBytes": 690245632
+    },
+    {
+      "name": "sample-e8417890fea95361",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 2346.0680999999167,
+      "rssBytes": 690245632
+    },
+    {
+      "name": "sample-e4d10781d3be6992",
+      "status": "error",
+      "code": -15,
+      "milliseconds": 1.7654000000329688,
+      "rssBytes": 690249728
+    },
+    {
+      "name": "sample-913b6e2fbe4c0d3b",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 147706.73289999994,
+      "rssBytes": 690294784
+    },
+    {
+      "name": "sample-db4b91782dd3efb7",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 253129.3887,
+      "rssBytes": 691466240
+    },
+    {
+      "name": "sample-86a7ffe5513e5633",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 61235.142599999905,
+      "rssBytes": 692117504
+    },
+    {
+      "name": "sample-44d499f3f15ffc62",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 29951.13959999988,
+      "rssBytes": 602206208
+    },
+    {
+      "name": "sample-e6c08e3cc9b0eb2f",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 130423.29370000004,
+      "rssBytes": 596189184
+    },
+    {
+      "name": "sample-c45a727514fb8982",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 11617.583300000057,
+      "rssBytes": 596533248
+    },
+    {
+      "name": "sample-512b352f18af3f4f",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 94710.29820000008,
+      "rssBytes": 597647360
+    },
+    {
+      "name": "sample-7d60dfc27e54a03b",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 14458.934200000018,
+      "rssBytes": 597708800
+    },
+    {
+      "name": "sample-a83d2bf9aa769ebd",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 48454.84930000012,
+      "rssBytes": 421392384
+    },
+    {
+      "name": "sample-058949810e7c76d3",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 1240.372899999842,
+      "rssBytes": 421412864
+    },
+    {
+      "name": "sample-133a8c148862ce3a",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 84963.57880000002,
+      "rssBytes": 421031936
+    },
+    {
+      "name": "sample-cc615a3e5cb1499e",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 7756.910900000017,
+      "rssBytes": 421101568
+    },
+    {
+      "name": "sample-3255119646d641ba",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 124118.71210000012,
+      "rssBytes": 422404096
+    },
+    {
+      "name": "sample-0e06c211cb4a4831",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 95963.95549999992,
+      "rssBytes": 327634944
+    },
+    {
+      "name": "sample-493754a016f2232e",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 18654.343600000022,
+      "rssBytes": 327704576
+    },
+    {
+      "name": "sample-4f4c989c97595b6e",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 1757.9920999999158,
+      "rssBytes": 327745536
+    },
+    {
+      "name": "sample-9f735a010e88a648",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 1197.717299999902,
+      "rssBytes": 327770112
+    },
+    {
+      "name": "sample-b563bb5b3e206ad7",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 21278.6875,
+      "rssBytes": 353869824
+    },
+    {
+      "name": "sample-41b45e5a7c1f065c",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 4294.711499999976,
+      "rssBytes": 353939456
+    },
+    {
+      "name": "sample-0676d3f4ef6c5e2a",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 2265.663200000068,
+      "rssBytes": 353943552
+    },
+    {
+      "name": "sample-71fe5f6e6888b73b",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 2810.623900000006,
+      "rssBytes": 353947648
+    },
+    {
+      "name": "sample-280528b4b1cb14b3",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 6241.242199999979,
+      "rssBytes": 353959936
+    },
+    {
+      "name": "sample-1aad6147b578f344",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 6143.7660000000615,
+      "rssBytes": 353984512
+    },
+    {
+      "name": "sample-728b694ae01441a4",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 6198.125500000082,
+      "rssBytes": 353984512
+    },
+    {
+      "name": "corpus-latin-rotate-0.5",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 7249.135500000091,
+      "rssBytes": 353992704
+    },
+    {
+      "name": "corpus-latin-rotate-90",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 6451.92929999996,
+      "rssBytes": 353992704
+    },
+    {
+      "name": "corpus-cjk-18",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 5587.629500000039,
+      "rssBytes": 354004992
+    },
+    {
+      "name": "corpus-cjk-rotate-3",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 6032.185100000119,
+      "rssBytes": 354029568
+    },
+    {
+      "name": "corpus-cjk-rotate-180",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 5382.540500000119,
+      "rssBytes": 354050048
+    },
+    {
+      "name": "corpus-arabic-36",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 1907.8042999999598,
+      "rssBytes": 354050048
+    },
+    {
+      "name": "corpus-thai-36",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 2010.4271000002045,
+      "rssBytes": 354062336
+    },
+    {
+      "name": "corpus-blank",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 327.78469999996014,
+      "rssBytes": 354062336
+    },
+    {
+      "name": "corpus-vertical-cjk",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 5506.378799999831,
+      "rssBytes": 354070528
+    }
+  ]
+}

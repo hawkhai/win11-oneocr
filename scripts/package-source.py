@@ -8,7 +8,7 @@ import zipfile
 ROOT=Path(__file__).resolve().parents[1]
 DIRECTORIES=('native','cmake','docs','licenses','research','scripts','src','web','test','examples','samples','reports')
 EXTENSIONS={'.c','.cpp','.h','.hpp','.asm','.cmake','.json','.md','.txt','.log','.tsv','.py','.ps1','.java','.js','.mjs','.cjs','.mts','.html','.yml','.yaml','.png','.jpg','.jpeg','.bmp','.gif','.tif','.tiff','.webp','.rgb','.f32'}
-ROOT_FILES=('.gitignore','.npmignore','CMakeLists.txt','CMakePresets.json','README.md','ocr.cmd','ocr.sh',
+ROOT_FILES=('.gitattributes','.gitignore','.npmignore','CMakeLists.txt','CMakePresets.json','README.md','ocr.cmd','ocr.sh',
             'THIRD_PARTY_NOTICES.md','package.json','package-lock.json','cordis.patch.yml',
             'ocr.cpp','oneocr_wrapper.cpp','oneocr_test.cpp','oneocr.h','json.hpp','stb_image.h',
             'ocr-book.jpg','test.png')

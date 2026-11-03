@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "expected_error": {
+    "code": -18,
+    "message": "Image dimensions must be 50..10000 pixels"
+  },
+  "actual_error": {
+    "code": -18,
+    "message": "Image dimensions must be 50..10000 pixels",
+    "stage": "recognize_file"
+  }
+}

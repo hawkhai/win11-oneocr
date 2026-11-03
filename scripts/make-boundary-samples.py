@@ -17,7 +17,7 @@ def main():
             'width':image.width,'height':image.height,'purpose':purpose,'source':'generated locally; not accuracy ground truth'})
     image=Image.new('RGB',(420,100))
     image.putdata([((x+y)%256,(x*3+y*2)%256,(x*7+y*5)%256) for y in range(100) for x in range(420)])
-    save('normalizer-grid',image,'RGB source used by the six exact clipped-normalization geometry oracles')
+    save('normalizer-grid',image,'RGB source used by the exact clipped-normalization geometry oracles')
     image=Image.new('RGB',(2000,350),'white');font=ImageFont.truetype(str(font_file),42)
     text='OneOCR curved text geometry 0123456789 SOURCE RECOVERY '
     x=50

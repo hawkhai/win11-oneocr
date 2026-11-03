@@ -16,6 +16,8 @@
 
 Linux 现有预编译包要求 **glibc 2.43+**（在 Ubuntu 26.04 x64 验证），不满足时需在目标系统从源码构建。macOS、Android、ARM64 仍需目标平台构建验证。模型与运行库均使用普通 Git 文件，未使用 Git LFS；首次克隆会下载较多二进制资源。完整资产范围、来源声明和标准库校验命令见 [交付说明](docs/checkout-ready.md)。本次仅本地 commit，未 push 或发布模型。
 
+[曲线与极长行补齐回归](reports/curve-boundaries-2026-11-03/README.md)已用全新推理完成五端各 **142/142**，共 **710/710**（695 项识别、15 项预期拒绝）。模型、原始图片和严格比较阈值均未改变；源码、四张新增样本、内部预言机、运行文件与报告均已提交。
+
 ## Native source runtime — experimental
 
 The repository now contains a C++20/CMake backend that runs independently of

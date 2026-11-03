@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "network_error": "[Errno 101] Network is unreachable",
+  "mapped_files": [
+    "/tmp/oneocr-native-isolated-7v4pli8v/artifacts/linux-x64/bin/ocr",
+    "/tmp/oneocr-native-isolated-7v4pli8v/artifacts/linux-x64/lib/libgcc_s.so.1",
+    "/tmp/oneocr-native-isolated-7v4pli8v/artifacts/linux-x64/lib/liboneocr_portable.so",
+    "/tmp/oneocr-native-isolated-7v4pli8v/artifacts/linux-x64/lib/libonnxruntime.so.1",
+    "/tmp/oneocr-native-isolated-7v4pli8v/artifacts/linux-x64/lib/libstdc++.so.6",
+    "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+    "/usr/lib/x86_64-linux-gnu/libc.so.6",
+    "/usr/lib/x86_64-linux-gnu/libm.so.6"
+  ],
+  "forbidden_modules": [],
+  "seconds": 6.374187819999861,
+  "peak_working_set_bytes": 404205568,
+  "stderr": "",
+  "note": "Only source-built native OCR plus Linux ORT are executed; Python is the test harness, not the OCR backend.",
+  "line_count": 106,
+  "parity": "incomplete"
+}

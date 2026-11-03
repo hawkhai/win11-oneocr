@@ -36,6 +36,8 @@ cd oneocr
 
 然后使用上述 Windows 或 Linux 入口。Git 包是包含这些提交和完整历史的可再生成交付物，不嵌套提交到仓库本身。
 
+更新全部提交后运行 `python scripts/package-offline.py` 可重建 `artifacts/win11-oneocr-offline.bundle` 和 `artifacts/oneocr-source.zip`，同时生成两份 `.sha256` 与绑定 HEAD 的 `OFFLINE_PACKAGE.json`。脚本要求工作树干净，检查 Git 包头与校验结果，不联网、不上传。源码 ZIP 包含当前回归输入、预言机和报告，排除模型和编译文件；构建所需独立模型另由 Git 包提供。
+
 ## 提交了哪些资产
 
 | 路径 | 内容 |

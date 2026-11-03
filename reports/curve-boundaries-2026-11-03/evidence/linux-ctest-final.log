@@ -1,0 +1,23 @@
+Test project /mnt/f/pythonx/myocr/win11-oneocr/build/linux-x64
+    Start 1: portable_curve_boundaries
+1/9 Test #1: portable_curve_boundaries ........   Passed    1.23 sec
+    Start 2: portable_classification
+2/9 Test #2: portable_classification ..........   Passed    1.62 sec
+    Start 3: portable_api
+3/9 Test #3: portable_api .....................   Passed    0.85 sec
+    Start 4: portable_math
+4/9 Test #4: portable_math ....................   Passed    0.05 sec
+    Start 5: portable_reading_order
+5/9 Test #5: portable_reading_order ...........   Passed    0.17 sec
+    Start 6: portable_detector_geometry
+6/9 Test #6: portable_detector_geometry .......   Passed    0.70 sec
+    Start 7: portable_word_alignment
+7/9 Test #7: portable_word_alignment ..........   Passed    0.89 sec
+    Start 8: portable_confidence_features
+8/9 Test #8: portable_confidence_features .....   Passed    0.21 sec
+    Start 9: portable_polygon_nms
+9/9 Test #9: portable_polygon_nms .............   Passed    0.78 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =  10.47 sec

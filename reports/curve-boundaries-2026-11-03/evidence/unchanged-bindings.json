@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "baseline_commit": "317e4f9312d1d9f1d69c644e362e351f2561f153",
+  "model_and_original_binary_git_diff": "empty",
+  "original_sample_images_unchanged": 110,
+  "comparator_sha256": "06d137cc93680f766031d783da9526064808fea1135124348e180bb8607f4869",
+  "model_manifest_sha256": "8e6d5b973aad14590890ce78de39e5414b7297df4350d65e7a2990ab9b9c929a",
+  "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+  "delivery_assets_verified": 252,
+  "current_source_bindings": {
+    "win32-x64": {
+      "source_files_verified": 50,
+      "build_sha256": "bbcb5cca354635d7c3bf07bbf7ca59afb261fadbabde851cfd8b96d8c4fbd899"
+    },
+    "linux-x64": {
+      "source_files_verified": 50,
+      "build_sha256": "795a54624605b4f4390ce81167bc7a272f06e1064a3cabed33276440be0f8545"
+    },
+    "wasm32": {
+      "source_files_verified": 73,
+      "build_sha256": "cc1ecee66f6bc4b55bccb531310d5699c88f6a82e90d9927ce832fd81c88c8f8"
+    }
+  },
+  "prior_sealed_archives": {
+    "reports/review-fixes-2026-11-03": {
+      "index_sha256": "55147f1ff1fbfeff053efde374198d6c71109fc16847c20952d22b92d4c23025",
+      "verified_files": 1810
+    },
+    "reports/review-boundaries-2026-11-03": {
+      "index_sha256": "d71e32a147f824827cce18508d316a908e12cbeee9ddd9fbffbcade5e1201e6b",
+      "verified_files": 870
+    },
+    "reports/evidence-binding-2026-11-03": {
+      "index_sha256": "8cc273db5a0fca23ace4af0943034ee324450055681e3c8b959fe050e22fbd46",
+      "verified_files": 444
+    },
+    "reports/input-cache-binding-2026-11-03": {
+      "index_sha256": "d93fe9ffc2aaf4190cdf49adadb837bc3691129f7227ab88136ae225c1552c29",
+      "verified_files": 876
+    }
+  }
+}

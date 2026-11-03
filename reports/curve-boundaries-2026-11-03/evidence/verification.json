@@ -1,0 +1,24 @@
+{
+  "implementation_commit": "076e85a030eab931c04d323f7f21f5bc9340dee2",
+  "comparison_scope": "fresh inference in each environment; 114 sample images, 27 fixed cases and book",
+  "strict_tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "goal_complete": false,
+  "engine_parity": "incomplete",
+  "unverified": [
+    "Linux ARM64 native build/run",
+    "macOS x64/arm64 native build/run",
+    "Android arm64-v8a native build/run",
+    "Safari",
+    "Firefox",
+    "mobile browsers",
+    "Node 20 full scope"
+  ],
+  "remaining": [
+    "nondefault option combinations and ambiguity coverage",
+    "independent real handwritten CJK and further scripts"
+  ]
+}
