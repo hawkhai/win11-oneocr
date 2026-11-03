@@ -46,6 +46,8 @@ JavaScript/浏览器接入使用同一引擎的 [WebAssembly 版本](docs/wasm.m
 
 [后续边界修复](reports/review-boundaries-2026-11-03/README.md)还补齐了数值合法范围、无清单非空目录保护和只读复核记录。原五端 690 项记录已按新规则全量复核通过；本轮未重新执行 690 次推理，也未修改原始执行记录、模型或数值引擎。
 
+[执行证据绑定修复](reports/evidence-binding-2026-11-03/README.md)将重复元数据与封存原件绑定，并统一拒绝冲突和未登记的结果。五端 690 项保存记录按修复后的规则复核通过；复核与新推理分别记录。
+
 Offline OCR engine extracted from the Windows 11 Snipping Tool, with full-featured C++ CLI, reusable DLL wrapper, and Python visualization.
 
 Based on: https://b1tg.github.io/post/win11-oneocr/

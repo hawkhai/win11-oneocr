@@ -10,7 +10,7 @@ import sys
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
-from verification_state import contained,destination_for_verification,signatures,runtime_assets
+from verification_state import contained,destination_for_verification,signatures,runtime_assets,check_result_files,load_execution,verify_execution
 
 
 def read(p):return json.loads(p.read_text(encoding='utf8'))
@@ -49,11 +49,24 @@ def main():
             raise ValueError('Wasm runtime changed: '+name)
     spec=importlib.util.spec_from_file_location('strict_compare',ROOT/'scripts/compare-results.py')
     comparator=importlib.util.module_from_spec(spec);spec.loader.exec_module(comparator)
+    selected=[]
+    for case in cases:
+        name=case['name'];entry=dict(case)
+        if not case.get('expected_error'):
+            golden=ROOT/reference['book_baseline'] if name=='book' else ROOT/reference['corpus_baseline']/(name.removeprefix('corpus-')+'.json') if name.startswith('corpus-') else ROOT/reference['all_samples_baseline']/(name.removeprefix('sample-')+'.json')
+            entry['baseline']=str(golden)
+        selected.append(entry)
     environments=[]
     for env in ['windows-native','linux-native','windows-node','chrome','linux-node']:
         directory=report/env;old=read(directory/'summary.json');results=[]
         if not old['passed'] or old['passed_cases']!=len(cases):raise ValueError('Original execution was incomplete: '+env)
         native=env.endswith('-native')
+        result_files=check_result_files(directory,cases,native=native)
+        for path in result_files:
+            if path.relative_to(report).as_posix() not in index:raise ValueError('Unindexed result file: '+str(path))
+        if not native:
+            execution=load_execution(directory)
+            verify_execution(execution,selected,build,ROOT/'models')
         suite={c['name']:c for c in read(directory/'all-samples/suite.json')['cases']} if native else {}
         for case in cases:
             name=case['name']

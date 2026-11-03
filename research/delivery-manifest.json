@@ -24,7 +24,7 @@
   "source_build": "docs/portable.md",
   "files": {
     "artifacts/linux-x64/BUILD.json": {
-      "sha256": "22d5c7f607a6d29f78dbb3423f375ae0a7c141d54a02e24dbf9bbc72d0d245ef",
+      "sha256": "79e23a4f4a5b34cb23d7b5ea4606f169b0a36dd8affc3e8b9bbd71e0dcada345",
       "size": 7864
     },
     "artifacts/linux-x64/bin/ocr": {
@@ -140,11 +140,11 @@
       "size": 14044
     },
     "artifacts/linux-x64/share/oneocr/wasm.md": {
-      "sha256": "1447a861a3839580a67e59f13b5b843494e0b0a6807c4191ba09f43734ad3dae",
-      "size": 12687
+      "sha256": "b0c242d91789e6466626eb515d6b971ba333f915797c8830636fd9440f747115",
+      "size": 13237
     },
     "artifacts/wasm32/BUILD.json": {
-      "sha256": "152eeacffda1953b8dd6d2be671778040921306915bee5778dcbf3ce2b00abab",
+      "sha256": "c0b874a549528f6930bd483d90711262acc940039a9f2de4958a021045b873dc",
       "size": 12579
     },
     "artifacts/wasm32/cli.mjs": {
@@ -244,8 +244,8 @@
       "size": 14044
     },
     "artifacts/wasm32/share/oneocr/wasm.md": {
-      "sha256": "1447a861a3839580a67e59f13b5b843494e0b0a6807c4191ba09f43734ad3dae",
-      "size": 12687
+      "sha256": "b0c242d91789e6466626eb515d6b971ba333f915797c8830636fd9440f747115",
+      "size": 13237
     },
     "artifacts/wasm32/worker-client.d.mts": {
       "sha256": "68ebe35177142af88b554be9c4d7b8feedf4381485a00f25924e2429311ef10f",
@@ -260,7 +260,7 @@
       "size": 1419
     },
     "artifacts/win32-x64/BUILD.json": {
-      "sha256": "516b3b887dad144779c627da5f5ee0f2ee5828e2bcd78db4d3eddd790604ed3a",
+      "sha256": "bd0b4c065122fa44fa9902f8528037b87934a141f179bfd35c3f3c9aa5e22912",
       "size": 8644
     },
     "artifacts/win32-x64/bin/concrt140.dll": {
@@ -408,8 +408,8 @@
       "size": 14044
     },
     "artifacts/win32-x64/share/oneocr/wasm.md": {
-      "sha256": "1447a861a3839580a67e59f13b5b843494e0b0a6807c4191ba09f43734ad3dae",
-      "size": 12687
+      "sha256": "b0c242d91789e6466626eb515d6b971ba333f915797c8830636fd9440f747115",
+      "size": 13237
     },
     "models/auxiliary/2e1f404d421766c7c36bbab20204e1e2aa40542b8bdd4be689ec538627c322dc.onnx": {
       "sha256": "2e1f404d421766c7c36bbab20204e1e2aa40542b8bdd4be689ec538627c322dc",

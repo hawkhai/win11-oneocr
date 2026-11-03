@@ -8,7 +8,7 @@ import tempfile
 import unittest
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from verification_state import checkpoint,destination_for_verification,load_execution,verify_execution,sha
+from verification_state import checkpoint,destination_for_verification,load_execution,verify_execution,sha,check_result_files
 
 
 def write(path,value):
@@ -29,7 +29,8 @@ class ExecutionRecords(unittest.TestCase):
         for name,value in [('cases.json',self.cases),('execution-cases.json',self.cases),('execution-build.json',self.build),
                            ('actual/measurements.json',{'jobs':3,'cases':[{'name':'one','milliseconds':123}]}),('actual/one.json',{'result':'original'})]:
             write(self.directory/name,value)
-        write(self.directory/'summary.json',{'model_manifest_sha256':self.build['model_manifest_sha256'],'wasm_build':self.build,
+        write(self.directory/'summary.json',{'mode':'fresh-inference','fresh_inference':True,
+                                           'model_manifest_sha256':self.build['model_manifest_sha256'],'wasm_build':self.build,
                                            'scheduling':self.schedule,'results':[{'name':'one','baseline_sha256':sha(self.golden)}]})
         write(self.directory/'execution.json',checkpoint(self.directory,self.build,self.cases,self.schedule,None))
 
@@ -68,6 +69,40 @@ class ExecutionRecords(unittest.TestCase):
         with self.assertRaises(ValueError):verify_execution(record,self.cases,self.build,self.models)
         changed=copy.deepcopy(self.cases);changed[0]['sha256']='different input'
         with self.assertRaises(ValueError):verify_execution(record,changed,self.build,self.models)
+
+    def test_execution_json_cannot_override_sealed_metadata(self):
+        path=self.directory/'execution.json';original=path.read_bytes()
+        changes=[lambda x:x['build']['files'].update({'oneocr-core.wasm':'never executed'}),
+                 lambda x:x['cases'][0].update(path='F:/rewritten.png'),
+                 lambda x:x['scheduling'].update(method='round-robin'),
+                 lambda x:x['scheduling'].update(jobs=3.0),
+                 lambda x:x['baselines'].update(one='different baseline'),
+                 lambda x:x.update(browser_request_timeout_ms=1),lambda x:x.update(mode='saved-results-verification')]
+        for change in changes:
+            with self.subTest(change=change):
+                state=json.loads(original);change(state);write(path,state)
+                with self.assertRaisesRegex(ValueError,'metadata disagree'):load_execution(self.directory)
+                path.write_bytes(original)
+
+    def test_conflicting_and_extra_results_are_rejected(self):
+        for name in ['one.error.json','unknown.json']:
+            path=self.directory/'actual'/name;write(path,{'code':-31})
+            with self.assertRaises(ValueError):check_result_files(self.directory,self.cases)
+            with self.assertRaises(ValueError):load_execution(self.directory)
+            path.unlink()
+
+    def test_schema_version_does_not_accept_boolean_or_float_aliases(self):
+        path=self.directory/'execution.json';original=path.read_bytes()
+        for version in [True,1.0,'1',2]:
+            state=json.loads(original);state['schema_version']=version;write(path,state)
+            with self.assertRaisesRegex(ValueError,'Unsupported execution record'):load_execution(self.directory)
+            path.write_bytes(original)
+
+    def test_native_result_inventory_uses_the_same_conflict_rule(self):
+        native=self.root/'native';write(native/'book.json',{'result':'ok'})
+        cases=[{'name':'book','sha256':'input'}];check_result_files(native,cases,native=True)
+        write(native/'book.error.json',{'code':-31})
+        with self.assertRaises(ValueError):check_result_files(native,cases,native=True)
 
     def test_verification_destination_must_be_separate_and_fresh(self):
         for destination in [self.directory,self.directory/'verify',self.root]:

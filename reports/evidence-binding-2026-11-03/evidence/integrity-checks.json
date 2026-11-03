@@ -1,0 +1,42 @@
+{
+  "base_commit": "21a65df8fa7f22609d7b9cf57a181007aaa3dd0c",
+  "original_reports": {
+    "review-fixes-2026-11-03": {
+      "files": 1810,
+      "index_sha256": "55147f1ff1fbfeff053efde374198d6c71109fc16847c20952d22b92d4c23025",
+      "unchanged": true
+    },
+    "review-boundaries-2026-11-03": {
+      "files": 870,
+      "index_sha256": "d71e32a147f824827cce18508d316a908e12cbeee9ddd9fbffbcade5e1201e6b",
+      "unchanged": true
+    }
+  },
+  "delivery_files_checked": 252,
+  "delivery_manifest_sha256": "2853bd1d2cdbe3d967beb5babf56601814bf744213704114481c89580aaea0b6",
+  "model_files_checked": 155,
+  "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+  "model_manifest_sha256": "8e6d5b973aad14590890ce78de39e5414b7297df4350d65e7a2990ab9b9c929a",
+  "wasm_core_sha256": "70ad89615c37319c83e74935f8cf5dc9b039d503fc2328e22251ecb98a47739e",
+  "runtime_unchanged": true,
+  "source_metadata_current": true,
+  "frozen_sources_models_samples_unchanged": true,
+  "tests_passed": 30,
+  "saved_results_verified": 690,
+  "fresh_inference_cases": 1,
+  "unverified": [
+    "macOS native",
+    "Android native",
+    "Linux ARM64 native",
+    "Safari",
+    "Firefox",
+    "mobile devices",
+    "Node 20 full regression"
+  ],
+  "changed_code": {
+    "scripts/verification_state.py": "1abee80293068cf07f54ee0a0daeb0730e60cfab96e556c7cdb15c979bc4f7d2",
+    "scripts/verify-recorded-parity.py": "e029bbf5cdd1f6b4fabcb2886141bc943f4bbb0c7704113e263a3525b1509662",
+    "test/verification-state-test.py": "dbd6d85d125eec6809ac062050c341132ef653fc1ca461591f043b3e3acd9634",
+    "test/archive-verification-test.py": "4de743ea78b5c911b85703adad50ab106b5e6eca130741d3f33af5e66739925f"
+  }
+}
