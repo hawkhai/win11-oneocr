@@ -10,6 +10,7 @@
 #include "unicode.hpp"
 #include "nms.hpp"
 #include "classification.hpp"
+#include "recognition_budget.hpp"
 #include "json.hpp"
 #include <onnxruntime_cxx_api.h>
 #include <algorithm>
@@ -281,7 +282,7 @@ struct oneocr_context {
         // 180103250 selects the active ambiguity configuration (.3, .4, .5,
         // .4), overriding the ordinary detector NMS threshold of .2.
         for(const auto& r:regions) if(std::none_of(kept.begin(),kept.end(),[&](const Region& k){
-            if(r.vertical!=k.vertical || r.bounds[0]>k.bounds[2] || k.bounds[0]>r.bounds[2] || r.bounds[1]>k.bounds[3] || k.bounds[1]>r.bounds[3])return false;
+            if(r.vertical!=k.vertical || !line_polygon_primary_possible(r.polygon,k.polygon,double(.3f)))return false;
             float intersection=line_polygon_intersection(r.polygon,k.polygon);
             return intersection/(line_polygon_area(r.polygon)+line_polygon_area(k.polygon)-intersection)>.3f;
         })) kept.push_back(r);
@@ -362,8 +363,43 @@ struct oneocr_context {
             prepared.push_back({region,q,line_box,std::move(polygon),std::move(normalized),std::move(quad_normalized),std::move(clipped_mapping),std::move(line_trace)});
         }
         resolve_classifications(classifications);
-        for(size_t region_index=0;region_index<prepared.size();region_index++) {
-            if(lines.size()>=size_t(options.max_lines))break;
+        std::vector<size_t> active,recognition_order;std::vector<std::vector<size_t>> budget_groups;
+        for(size_t i=0;i<prepared.size();i++)if(classifications[i].script!=11)active.push_back(i);
+        size_t group_cursor=0,batch_end=active.size();
+        bool limited=active.size()>size_t(options.max_lines);
+        size_t batch_begin=0;
+        auto prune_batch=[&]() {
+            std::vector<RecognitionCandidate> candidates(recognition_candidates.begin()+batch_begin,recognition_candidates.end());
+            auto suppressed=recognition_suppressed(candidates);
+            json selected=json::array();std::vector<Quad> boxes;std::vector<RecognitionCandidate> kept;
+            for(size_t i=0;i<lines.size();i++)if(i<batch_begin || !suppressed[i-batch_begin]) {
+                selected.push_back(std::move(lines[i]));boxes.push_back(line_boxes[i]);kept.push_back(std::move(recognition_candidates[i]));
+            }
+            lines=std::move(selected);line_boxes=std::move(boxes);recognition_candidates=std::move(kept);batch_begin=lines.size();
+        };
+        if(limited) {
+            std::vector<Quad> boxes;std::vector<bool> horizontal;
+            for(size_t index:active){const auto& item=prepared[index];boxes.push_back(item.region.line_box);horizontal.push_back(!item.region.vertical);}
+            budget_groups=recognition_budget_groups(boxes,horizontal,[&](size_t a,size_t b){return line_polygon_intersection(prepared[active[a]].region.polygon,prepared[active[b]].region.polygon)>0;});
+            TensorTrace budget_trace("budget");
+            if(budget_trace.enabled()) {
+                json metadata=json::array();for(size_t i=0;i<active.size();i++)metadata.push_back({{"box",quad_json(boxes[i])},{"horizontal",bool(horizontal[i])}});
+                budget_trace.document("selection",{{"regions",metadata},{"groups",budget_groups}});
+            }
+            for(auto& group:budget_groups)for(auto& index:group)index=active[index];
+            batch_end=0;
+        } else recognition_order=active;
+        for(size_t position=0;position<active.size();position++) {
+            if(limited && position==batch_end) {
+                if(position)prune_batch();
+                if(lines.size()>=size_t(options.max_lines))break;
+                size_t target=recognition_batch_target(size_t(options.max_lines)-lines.size());
+                while(group_cursor<budget_groups.size() && recognition_order.size()-position<target) {
+                    const auto& group=budget_groups[group_cursor++];recognition_order.insert(recognition_order.end(),group.begin(),group.end());
+                }
+                batch_end=recognition_order.size();if(position==batch_end)break;
+            }
+            size_t region_index=recognition_order[position];
             auto& classification=classifications[region_index];
             if(classification.script==11)continue;
             auto& item=prepared[region_index];auto& line_trace=item.trace;
@@ -374,14 +410,19 @@ struct oneocr_context {
             bool flipped=classification.flip==2;
             line_trace.document("classification",{{"script",classification.script},{"style",classification.style},{"flip",classification.flip},{"script_ambiguous",classification.script_ambiguous},{"flip_ambiguous",classification.flip_ambiguous},{"handwriting_probability",classification.handwriting_probability}});
             int layout=1;
+            // AuxMltCls resolves flips before the CJK layout network is run.
+            if(flipped) {normalized=rotate_quarter(normalized,2);q={q[2],q[3],q[0],q[1]};line_box={line_box[2],line_box[3],line_box[0],line_box[1]};}
             if(script==1) {
                 if(!layout_session)layout_session=session(layout_file);
                 auto output=run_image(*layout_session,normalized,false,1.f/255,{"line_layout_score"});
+                if(line_trace.enabled()) {
+                    auto layout_input=chw(normalized,false,1.f/255);line_trace.tensor("layout_input",layout_input.data(),layout_input.size(),{1,3,normalized.height,normalized.width});
+                    line_trace.tensor("line_layout_score",output[0].GetTensorData<float>(),output[0].GetTensorTypeAndShapeInfo().GetElementCount(),output[0].GetTensorTypeAndShapeInfo().GetShape());
+                }
                 float value=output[0].GetTensorData<float>()[0];
                 layout=double(value)<=layout_settings.at("vertical_threshold").get<double>()?2:double(value)<=layout_settings.at("horizontal_threshold").get<double>()?0:1;
                 line_trace.document("layout",{{"score",value},{"layout",layout}});
             }
-            if(flipped) {normalized=rotate_quarter(normalized,2);q={q[2],q[3],q[0],q[1]};line_box={line_box[2],line_box[3],line_box[0],line_box[1]};}
             auto blank_intervals=line_blank_intervals(normalized);
             std::string language=scripts[script];
             int frame_stride=(language=="cjk" || language=="cyrillic")?8:4;
@@ -463,8 +504,6 @@ struct oneocr_context {
                 if(weight>1 && character_info.at(language).types.at(coarse_words[i][0].id)==7 && character_info.at(language).types.at(coarse_words[i][1].id)==7)weight=1;
                 float probability=auxiliary_probability("rejection/"+route,features);
                 accepted_sum+=float(weight)*probability;accepted_weight+=float(weight);
-                size_t bytes=0;for(const auto& character:coarse_words[i])bytes+=vocab[character.id].size();
-                byte_weighted_sum+=double(float(bytes)*probability);byte_weight+=double(bytes);
             }
             const auto& rejection=rejection_settings.at(route);
             // Native default ProcessOption+0x6a disables the alternate
@@ -478,7 +517,10 @@ struct oneocr_context {
                 int last=i+1==words.size()?steps-1:(word_frames[i].last+word_frames[i+1].first)/2;
                 auto features=word_confidence_features(ctc,word_characters[i],first,last,character_info.at(language));
                 if(line_trace.enabled())confidence_features.insert(confidence_features.end(),features.begin(),features.end());
-                words[i]["confidence"]=auxiliary_probability("confidence/"+route,features);
+                float probability=auxiliary_probability("confidence/"+route,features);
+                words[i]["confidence"]=probability;
+                size_t bytes=words[i].at("text").get_ref<const std::string&>().size();
+                byte_weighted_sum+=double(float(bytes)*probability);byte_weight+=double(bytes);
             }
             line_trace.tensor("confidence_features",confidence_features.data(),confidence_features.size(),{int64_t(words.size()),21});
             align_word_frames(word_frames,frame_stride,settings.at("pixels_per_space"),settings.at("start_shift"),settings.at("end_shift"),steps,blank_intervals);
@@ -506,7 +548,18 @@ struct oneocr_context {
             line_boxes.push_back(line_box);rtl_lines+=script==4 || script==8;
             angles.push_back(line_quad_angle(line_box));
         }
-        auto suppressed=recognition_suppressed(recognition_candidates);
+        if(limited)prune_batch();
+        auto suppressed=limited?std::vector<bool>(recognition_candidates.size(),false):recognition_suppressed(recognition_candidates);
+        TensorTrace recognition_trace("recognition");
+        if(recognition_trace.enabled()) {
+            json candidates=json::array();
+            for(size_t i=0;i<recognition_candidates.size();i++) {
+                const auto& candidate=recognition_candidates[i];json polygon=json::array();for(auto p:candidate.polygon){polygon.push_back(p.x);polygon.push_back(p.y);}
+                std::string text;for(const auto& word:lines[i]["words"])text+=word.at("text").get<std::string>();
+                candidates.push_back({{"polygon",polygon},{"text",text},{"horizontal",candidate.horizontal},{"min_rectangle",candidate.min_rectangle},{"script",candidate.script},{"style",candidate.style},{"confidence_score",candidate.confidence_score},{"language_score",candidate.language_score},{"suppressed",bool(suppressed[i])}});
+            }
+            recognition_trace.document("candidates",candidates);
+        }
         json kept_lines=json::array();std::vector<Quad> kept_boxes;angles.clear();rtl_lines=0;
         for(size_t i=0;i<lines.size();i++)if(!suppressed[i]){kept_lines.push_back(std::move(lines[i]));kept_boxes.push_back(line_boxes[i]);angles.push_back(line_quad_angle(line_boxes[i]));rtl_lines+=recognition_candidates[i].script==5 || recognition_candidates[i].script==9;}
         lines=std::move(kept_lines);line_boxes=std::move(kept_boxes);

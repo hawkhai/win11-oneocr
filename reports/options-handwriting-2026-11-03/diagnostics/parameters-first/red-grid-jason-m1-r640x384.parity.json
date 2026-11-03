@@ -1,0 +1,24 @@
+{
+  "passed": false,
+  "expected_lines": 3,
+  "actual_lines": 2,
+  "same_position_text_matches": 2,
+  "failure_count": 2,
+  "failures": [
+    {
+      "field": "line_count",
+      "expected": 3,
+      "actual": 2
+    },
+    {
+      "field": "image_angle",
+      "expected": 335.60369873046875,
+      "actual": 337.9129638671875
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "file": "latin-rotate-3.png",
+  "image_sha256": "bb5f0dd58fad62ec19f772e325b24ce4c637e2c2427db9595e48b6f228d3cf35",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.779336100036744,
+    "peak_working_set_bytes": 186302464,
+    "stderr": ""
+  },
+  "result_sha256": "13b639d9913b0ce3155149d581d507508811705df20f4383c718015bd0b520b7"
+}

@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/thumbnails/cards-template-input.jpg",
+  "image_sha256": "c27a03dd863eea7ccdc948a2eaa9bdfa03e1757a7db21f2402f88576a5a17c14",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.0633387999841943,
+    "peak_working_set_bytes": 154165248,
+    "stderr": ""
+  },
+  "result_sha256": "2791efa275e70c640ad251d8465712a75459e45585ba5c33e0aeff7ce4db1a6b"
+}

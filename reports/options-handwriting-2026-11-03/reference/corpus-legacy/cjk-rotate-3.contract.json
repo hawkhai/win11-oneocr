@@ -1,0 +1,17 @@
+{
+  "file": "cjk-rotate-3.png",
+  "image_sha256": "6a608f80302ea5a0c76063a90a2098c584ad2ff32a2fc97888bfa4ea5f6f295d",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.8526916999835521,
+    "peak_working_set_bytes": 186699776,
+    "stderr": ""
+  },
+  "result_sha256": "b004dc1c340e9a3161f762b1bebe878073c7d9b14260b0fd78c9a90919727fc3"
+}

@@ -1,0 +1,32 @@
+{
+  "file": "samples/options-handwriting/twelve-printed-lines.png",
+  "image_sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.1171990999719128,
+    "peak_working_set_bytes": 476106752,
+    "stderr": ""
+  },
+  "result_sha256": "430af929547a84f84be69b80d20d986809a6673a66cff564cf98a394bb3c5868",
+  "requested_options": {
+    "max_lines": 32,
+    "resize_width": 768,
+    "resize_height": 512
+  },
+  "effective_options": {
+    "max_lines": 32,
+    "resize_width": 768,
+    "resize_height": 512
+  },
+  "original_wrapper_arguments": {
+    "max_lines": 32,
+    "resize_width": 768,
+    "resize_height": 512
+  }
+}

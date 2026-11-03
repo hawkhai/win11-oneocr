@@ -1,0 +1,17 @@
+{
+  "file": "oneocr-capabilities/blank-unicode-空白-😀.png",
+  "image_sha256": "4f276c6adf8852e89048c73a9c96922effec0893a48e394277a06e3ead39205f",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.9030976000358351,
+    "peak_working_set_bytes": 205348864,
+    "stderr": ""
+  },
+  "result_sha256": "65c7f6a973176e864f33e163025bc7456ad13a49452ede7bcac8a620c65e1752"
+}

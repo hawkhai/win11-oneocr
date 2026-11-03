@@ -1,0 +1,17 @@
+{
+  "file": "cjk-18.png",
+  "image_sha256": "4ade3cc82ded9cab8c2d282b0f32f94b74feabbb6a263c08f557f4c4e5f0ef11",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.7843493000254966,
+    "peak_working_set_bytes": 176402432,
+    "stderr": ""
+  },
+  "result_sha256": "d3207a56074bcacf5787e714216c61188d9c6c69d933c9ce3f1ffd1f0cc4e443"
+}

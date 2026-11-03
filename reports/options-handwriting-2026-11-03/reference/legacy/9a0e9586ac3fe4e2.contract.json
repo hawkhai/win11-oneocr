@@ -1,0 +1,17 @@
+{
+  "file": "oneocr-capabilities/dark-contact-screenshot.png",
+  "image_sha256": "1d006a3a0e2cc45827a0fe181c1d2f5bed74bf663b0d927b44fdfec135b18876",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.9113699999870732,
+    "peak_working_set_bytes": 214179840,
+    "stderr": ""
+  },
+  "result_sha256": "a0cd3b3cb8b679d3402778e38f5778598393fb79122d4ebf8bf32167636010e7"
+}

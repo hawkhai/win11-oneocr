@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/references/receipt-edges.png",
+  "image_sha256": "2418d74fd5d8dc0021d4ccb1f3ea51b475f66d0526754aa2e62db20a8ff86cfd",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.598656399990432,
+    "peak_working_set_bytes": 318627840,
+    "stderr": ""
+  },
+  "result_sha256": "2cb54e7aa1d4e6ebbf58f23937646a38f33013284d906727cf0824d02152a952"
+}

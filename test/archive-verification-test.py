@@ -31,6 +31,10 @@ class ArchiveVerification(unittest.TestCase):
         reference=manifest['reference']
         for name in {reference['all_samples_baseline'],reference['corpus_baseline']}:
             shutil.copytree(ROOT/name,cls.inputs/name)
+        if 'parameter_manifest' in reference:
+            shutil.copytree(ROOT/reference['parameter_baseline'],cls.inputs/reference['parameter_baseline'])
+            target=cls.inputs/reference['parameter_manifest'];target.parent.mkdir(parents=True,exist_ok=True)
+            shutil.copyfile(ROOT/reference['parameter_manifest'],target)
         target=cls.inputs/reference['book_baseline'];target.parent.mkdir(parents=True,exist_ok=True)
         shutil.copyfile(ROOT/reference['book_baseline'],target)
 
@@ -60,6 +64,23 @@ sys.exit(tool.main())
         for kind in ['all','single']:
             result=self.invoke(kind,self.root/('snapshot-'+kind),inputs=True)
             self.assertEqual(result.returncode,0,result.stderr)
+
+    def test_parameter_inventory_or_frozen_options_drift_is_rejected(self):
+        manifest=json.loads((ROOT/'research/delivery-manifest.json').read_text(encoding='utf8'));reference=manifest['reference']
+        path=self.inputs/reference['parameter_manifest'];original=path.read_bytes();value=json.loads(original)
+        value['cases'][0]['options']['max_lines']=2;path.write_text(json.dumps(value),encoding='utf8')
+        try:
+            for kind in ['all','single']:
+                output=self.root/('parameter-inventory-'+kind);result=self.invoke(kind,output,inputs=True)
+                self.assertNotEqual(result.returncode,0);self.assertIn('Parameter inventory fingerprint changed',result.stderr);self.assertFalse(output.exists())
+        finally:path.write_bytes(original)
+        first=json.loads(original)['cases'][0];path=self.inputs/reference['parameter_baseline']/(first['name']+'.contract.json');original=path.read_bytes()
+        value=json.loads(original);value['requested_options']['max_lines']=True;path.write_text(json.dumps(value),encoding='utf8')
+        try:
+            for kind in ['all','single']:
+                output=self.root/('parameter-options-'+kind);result=self.invoke(kind,output,inputs=True)
+                self.assertNotEqual(result.returncode,0);self.assertIn('Frozen parameter options changed',result.stderr);self.assertFalse(output.exists())
+        finally:path.write_bytes(original)
 
     def test_changed_current_images_fail_without_publishing(self):
         inventory=json.loads((self.inputs/'samples/manifest.json').read_text(encoding='utf8'))

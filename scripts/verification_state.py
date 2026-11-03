@@ -2,6 +2,7 @@
 import hashlib
 import json
 from pathlib import Path
+from regression_options import option_signature
 
 
 def read(path):return json.loads(Path(path).read_text(encoding='utf8'))
@@ -25,7 +26,7 @@ def signatures(cases):
         name=case['name']
         if not isinstance(name,str) or not name or name in ('.','..') or '/' in name or '\\' in name or name in result:
             raise ValueError('Invalid or duplicate case name')
-        result[name]=(case['sha256'],case.get('expected_error'))
+        result[name]=(case['sha256'],case.get('expected_error'),option_signature(case.get('options')))
     return result
 
 
@@ -49,13 +50,21 @@ def check_hashes(directory,files):
         if sha(contained(directory,name))!=expected:raise ValueError('Execution file changed: '+name)
 
 
+def native_result_path(directory,name):
+    directory=Path(directory)
+    if name=='book':return directory/'book.json'
+    for prefix,folder in [('sample-','all-samples/native'),('corpus-','corpus/native'),('parameter-','options/native')]:
+        if name.startswith(prefix):return directory/folder/(name.removeprefix(prefix)+'.json')
+    raise ValueError('Unknown native case: '+name)
+
+
 def check_result_files(directory,cases,native=False):
     """Require one unambiguous outcome per case, with no extra result JSON files."""
     directory=Path(directory).resolve();signatures(cases);expected=set()
     for case in cases:
         name=case['name']
         if native:
-            result=directory/'book.json' if name=='book' else directory/'corpus/native'/(name.removeprefix('corpus-')+'.json') if name.startswith('corpus-') else directory/'all-samples/native'/(name.removeprefix('sample-')+'.json')
+            result=native_result_path(directory,name)
         else:result=directory/'actual'/(name+'.json')
         error=result.with_name(result.stem+'.error.json')
         if case.get('expected_error'):
@@ -65,7 +74,7 @@ def check_result_files(directory,cases,native=False):
             if error.exists():raise ValueError('Conflicting error file for successful case: '+name)
             expected.add(result.resolve())
     if native:
-        found={p.resolve() for folder in ['all-samples/native','corpus/native'] for p in (directory/folder).glob('*.json')}
+        found={p.resolve() for folder in ['all-samples/native','corpus/native','options/native'] for p in (directory/folder).glob('*.json')}
         found.update(p.resolve() for p in [directory/'book.json',directory/'book.error.json'] if p.exists())
     else:found={p.resolve() for p in (directory/'actual').glob('*.json') if p.name!='measurements.json'}
     if found!=expected:raise ValueError('Missing or unexpected result JSON files')

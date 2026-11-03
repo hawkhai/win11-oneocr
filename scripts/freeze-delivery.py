@@ -68,9 +68,11 @@ def main():
             raise ValueError('Regression report must be inside the project and contain complete frozen DLL outputs')
         summary=json.loads((report/'summary.json').read_text(encoding='utf8'))
         current=json.loads((ROOT/'models/manifest.json').read_text(encoding='utf8'))['source_assets']['oneocr.onemodel']
-        if not summary['passed'] or summary['model_source_sha256']!=current:raise ValueError('Report is not a passed regression for the active model')
+        if not summary.get('reference_complete',summary.get('passed',False)) or summary['model_source_sha256']!=current:raise ValueError('Report is not a complete reference for the active model')
         base=report.relative_to(ROOT).as_posix()
         manifest['reference']={'model_source_sha256':current,'book_baseline':base+'/book-legacy.json','all_samples_baseline':base+'/legacy','corpus_baseline':base+'/corpus-legacy','legacy_binary_dir':summary['new_reference_assets'].rstrip('/'),'report':base+'/README.md'}
+        if 'parameter_manifest' in summary:
+            manifest['reference'].update(parameter_manifest=summary['parameter_manifest'],parameter_manifest_sha256=summary['parameter_manifest_sha256'],parameter_baseline=base+'/parameters')
     elif previous.is_file():
         old=json.loads(previous.read_text(encoding='utf8'))
         if 'reference' in old:manifest['reference']=old['reference']

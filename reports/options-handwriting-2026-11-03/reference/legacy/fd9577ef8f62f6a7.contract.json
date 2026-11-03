@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/images/quality-noisy-fraktur.png",
+  "image_sha256": "85c81c9fedece217a71669fa5a764c140060bc16182bd970f183cddad4ebc9cc",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.2931976999971084,
+    "peak_working_set_bytes": 260411392,
+    "stderr": ""
+  },
+  "result_sha256": "a85818556c36519769a1b8eaeca0cca9ea6d69c33ca4269b7fdf1cdf250dc571"
+}

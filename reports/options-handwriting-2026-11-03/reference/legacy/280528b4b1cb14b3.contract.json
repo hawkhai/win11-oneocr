@@ -1,0 +1,17 @@
+{
+  "file": "oneocr-parity/handwriting-azure.jpg",
+  "image_sha256": "cafe17111f6a496a5dc976804f33ecff2e66a2375a8e06f3c67f1ea7588a3e23",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.8830360000138171,
+    "peak_working_set_bytes": 262647808,
+    "stderr": ""
+  },
+  "result_sha256": "2f67b67e21cb0992ae636cdff15a4cf6ddd74b48b466879f836095a3fdb4049d"
+}

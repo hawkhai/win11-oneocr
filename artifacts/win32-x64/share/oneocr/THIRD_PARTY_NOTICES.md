@@ -23,6 +23,14 @@ weights or makes the extracted models MIT-licensed.
 | GCC runtime | Ubuntu `libstdc++6` and `libgcc-s1`, 16-20260322-1ubuntu1 | GPL-3.0 with GCC Runtime Library Exception; unmodified application-local libraries. See `licenses/gcc-runtime-copyright.txt` and `licenses/gcc-runtime-GPL-3.txt`. |
 | OneOCR assets | Local `oneocr.onemodel`, original DLLs, extracted graphs/dictionaries/calibration tables | Microsoft assets; retain ownership and source records. Prepared `models/` are now tracked for the user's local checkout handoff. Native npm packages still exclude model assets. No redistribution permission is inferred from this repository's code license. |
 
+The two Chinese handwriting photographs and eight deterministic rotations in
+`samples/options-handwriting/` are by jason hu (@hujason), under the
+[Unsplash License](https://unsplash.com/license). The exact photo pages,
+width-1600 rendition URLs, hashes and transformations are retained in
+`samples/options-handwriting/provenance.json`. Writer identities are unspecified;
+no endorsement or multi-writer coverage is claimed. The two generated controls
+are printed/blank fixtures, not handwriting. No font file is redistributed.
+
 The legacy implementation's upstream credits remain in README.md. New native
 packages exclude the original `oneocr.dll` and encrypted `oneocr.onemodel`.
 Their `onnxruntime.dll`/`libonnxruntime` is the open-source inference dependency,

@@ -1,0 +1,747 @@
+{
+  "schema_version": 1,
+  "scope": "67 finite reproducible combinations, not all possible options",
+  "dll_supported_resize": {
+    "maximum_width": 1152,
+    "maximum_height": 768
+  },
+  "cases": [
+    {
+      "name": "twelve-printed-lines-m1-r1152x768",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 1,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m1-r640x384",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 1,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m1-r320x192",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 1,
+        "resize_width": 320,
+        "resize_height": 192
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m1-r768x512",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 1,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m1-r33x65",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 1,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m2-r1152x768",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 2,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m2-r640x384",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 2,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m2-r320x192",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 2,
+        "resize_width": 320,
+        "resize_height": 192
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m2-r768x512",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 2,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m2-r33x65",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 2,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m3-r1152x768",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 3,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m3-r640x384",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 3,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m3-r320x192",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 3,
+        "resize_width": 320,
+        "resize_height": 192
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m3-r768x512",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 3,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m3-r33x65",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 3,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m4-r1152x768",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 4,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m4-r640x384",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 4,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m4-r320x192",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 4,
+        "resize_width": 320,
+        "resize_height": 192
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m4-r768x512",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 4,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m4-r33x65",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 4,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m5-r1152x768",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 5,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m5-r640x384",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 5,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m5-r320x192",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 5,
+        "resize_width": 320,
+        "resize_height": 192
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m5-r768x512",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 5,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m5-r33x65",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 5,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m7-r1152x768",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 7,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m7-r640x384",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 7,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m7-r320x192",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 7,
+        "resize_width": 320,
+        "resize_height": 192
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m7-r768x512",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 7,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m7-r33x65",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 7,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m9-r1152x768",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 9,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m9-r640x384",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 9,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m9-r320x192",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 9,
+        "resize_width": 320,
+        "resize_height": 192
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m9-r768x512",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 9,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m9-r33x65",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 9,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m11-r1152x768",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 11,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m11-r640x384",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 11,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m11-r320x192",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 11,
+        "resize_width": 320,
+        "resize_height": 192
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m11-r768x512",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 11,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m11-r33x65",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 11,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m32-r1152x768",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 32,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m32-r640x384",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 32,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m32-r320x192",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 32,
+        "resize_width": 320,
+        "resize_height": 192
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m32-r768x512",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 32,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m32-r33x65",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 32,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m999-r1152x768",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 999,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m999-r640x384",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 999,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m999-r320x192",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 999,
+        "resize_width": 320,
+        "resize_height": 192
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m999-r768x512",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 999,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m999-r33x65",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 999,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m1000-r1152x768",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 1000,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m1000-r640x384",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 1000,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m1000-r320x192",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 1000,
+        "resize_width": 320,
+        "resize_height": 192
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m1000-r768x512",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 1000,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "twelve-printed-lines-m1000-r33x65",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 1000,
+        "resize_width": 33,
+        "resize_height": 65
+      },
+      "purpose": "Cartesian coverage of line-budget batching and valid DLL resize settings"
+    },
+    {
+      "name": "red-grid-jason-m1-r640x384",
+      "file": "samples/options-handwriting/red-grid-jason.jpg",
+      "sha256": "5320df1c5938033993e365a1ff9583df76ab42166ada23e68d79f1bd752b32d5",
+      "options": {
+        "max_lines": 1,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "purpose": "Actual Chinese handwriting with nondefault options"
+    },
+    {
+      "name": "red-grid-jason-m5-r1152x768",
+      "file": "samples/options-handwriting/red-grid-jason.jpg",
+      "sha256": "5320df1c5938033993e365a1ff9583df76ab42166ada23e68d79f1bd752b32d5",
+      "options": {
+        "max_lines": 5,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "purpose": "Actual Chinese handwriting with nondefault options"
+    },
+    {
+      "name": "red-grid-jason-m7-r768x512",
+      "file": "samples/options-handwriting/red-grid-jason.jpg",
+      "sha256": "5320df1c5938033993e365a1ff9583df76ab42166ada23e68d79f1bd752b32d5",
+      "options": {
+        "max_lines": 7,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "purpose": "Actual Chinese handwriting with nondefault options"
+    },
+    {
+      "name": "red-calligraphy-jason-m1-r640x384",
+      "file": "samples/options-handwriting/red-calligraphy-jason.jpg",
+      "sha256": "f107e685f069226cea0f8b01a91e3800af0d48229596a44c836b124ac5d9b880",
+      "options": {
+        "max_lines": 1,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "purpose": "Actual Chinese handwriting with nondefault options"
+    },
+    {
+      "name": "red-calligraphy-jason-m5-r1152x768",
+      "file": "samples/options-handwriting/red-calligraphy-jason.jpg",
+      "sha256": "f107e685f069226cea0f8b01a91e3800af0d48229596a44c836b124ac5d9b880",
+      "options": {
+        "max_lines": 5,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "purpose": "Actual Chinese handwriting with nondefault options"
+    },
+    {
+      "name": "red-calligraphy-jason-m7-r768x512",
+      "file": "samples/options-handwriting/red-calligraphy-jason.jpg",
+      "sha256": "f107e685f069226cea0f8b01a91e3800af0d48229596a44c836b124ac5d9b880",
+      "options": {
+        "max_lines": 7,
+        "resize_width": 768,
+        "resize_height": 512
+      },
+      "purpose": "Actual Chinese handwriting with nondefault options"
+    },
+    {
+      "name": "twelve-printed-lines-m0-r640x384",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 0,
+        "resize_width": 640,
+        "resize_height": 384
+      },
+      "purpose": "Portable zero aliases; DLL baseline uses explicitly recorded effective defaults"
+    },
+    {
+      "name": "twelve-printed-lines-m2-r0x0",
+      "file": "samples/options-handwriting/twelve-printed-lines.png",
+      "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+      "options": {
+        "max_lines": 2,
+        "resize_width": 0,
+        "resize_height": 0
+      },
+      "purpose": "Portable zero aliases; DLL baseline uses explicitly recorded effective defaults"
+    },
+    {
+      "name": "parameter-blank-m1-r32x32",
+      "file": "samples/options-handwriting/parameter-blank.png",
+      "sha256": "50d0eb2090d595ab7f58147ae69a05e5f782f6bb6c99160c4e44b3173cb4f202",
+      "options": {
+        "max_lines": 1,
+        "resize_width": 32,
+        "resize_height": 32
+      },
+      "purpose": "Valid DLL resize boundary controls"
+    },
+    {
+      "name": "parameter-blank-m1-r1152x768",
+      "file": "samples/options-handwriting/parameter-blank.png",
+      "sha256": "50d0eb2090d595ab7f58147ae69a05e5f782f6bb6c99160c4e44b3173cb4f202",
+      "options": {
+        "max_lines": 1,
+        "resize_width": 1152,
+        "resize_height": 768
+      },
+      "purpose": "Valid DLL resize boundary controls"
+    },
+    {
+      "name": "parameter-blank-m1-r1152x767",
+      "file": "samples/options-handwriting/parameter-blank.png",
+      "sha256": "50d0eb2090d595ab7f58147ae69a05e5f782f6bb6c99160c4e44b3173cb4f202",
+      "options": {
+        "max_lines": 1,
+        "resize_width": 1152,
+        "resize_height": 767
+      },
+      "purpose": "Valid DLL resize boundary controls"
+    },
+    {
+      "name": "parameter-blank-m1-r1151x768",
+      "file": "samples/options-handwriting/parameter-blank.png",
+      "sha256": "50d0eb2090d595ab7f58147ae69a05e5f782f6bb6c99160c4e44b3173cb4f202",
+      "options": {
+        "max_lines": 1,
+        "resize_width": 1151,
+        "resize_height": 768
+      },
+      "purpose": "Valid DLL resize boundary controls"
+    }
+  ]
+}

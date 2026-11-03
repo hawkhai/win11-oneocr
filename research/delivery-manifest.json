@@ -24,8 +24,8 @@
   "source_build": "docs/portable.md",
   "files": {
     "artifacts/linux-x64/BUILD.json": {
-      "sha256": "afcfed4d2bbabef7b51fc0347d19cc541636178b88f494a5e1c7af2554949a6e",
-      "size": 9029
+      "sha256": "c1e7dbfe2be18c219dbbeb3c02c11cb654b46583590e207a5faeba12783bab57",
+      "size": 9139
     },
     "artifacts/linux-x64/bin/ocr": {
       "sha256": "5e9d7b3594bd9d84ebb1f9356610a57687101f64239318c540cdc98dfc6a09d3",
@@ -44,8 +44,8 @@
       "size": 187120
     },
     "artifacts/linux-x64/lib/liboneocr_portable.so": {
-      "sha256": "7f20647d1a6cc171d221c597eb184215545b6262416c06bdfc92ed768ce2a2fb",
-      "size": 40112152
+      "sha256": "d764c4360dec3675303d3f38183bc689dc183b2b6e710a9c11001c13efb66e3a",
+      "size": 40140232
     },
     "artifacts/linux-x64/lib/libonnxruntime.so": {
       "sha256": "49c78b3bb1c401e77fbdbb6460bb55a3c610413770f17c977fdf4e86af054f75",
@@ -64,8 +64,8 @@
       "size": 2735712
     },
     "artifacts/linux-x64/share/oneocr/THIRD_PARTY_NOTICES.md": {
-      "sha256": "da3ddebee72ad0c5d1d8c5f29870c58b52bd7cffe899876e10879a2e4feeb715",
-      "size": 5033
+      "sha256": "9b1d1e3a54be9675d704080e4255738af21ce00cedd2f3ab84f43a35a081802e",
+      "size": 5560
     },
     "artifacts/linux-x64/share/oneocr/error-codes.md": {
       "sha256": "5980ae721f3a9fe77c196603e96fb6454c2fc016e64cfaa5cbb0ac7eb8c31629",
@@ -136,28 +136,28 @@
       "size": 1024
     },
     "artifacts/linux-x64/share/oneocr/portable.md": {
-      "sha256": "d0a44f09bd69bbcff394f15afeef7075c7dd28b00aaa1416d0d8b03b07a8ac2c",
-      "size": 15695
+      "sha256": "f4bff77833ae1aa80b3c9485b42330446a8c4238402f885272b5646a64cb7b61",
+      "size": 15713
     },
     "artifacts/linux-x64/share/oneocr/wasm.md": {
-      "sha256": "daa78fddd8ca9010f8dbfd2b131c9504b58562fe750d8767f5f1ee5e74d50f45",
-      "size": 14636
+      "sha256": "afe91c80c8f308018adccbb8f4906dc8d94c80ee144290569c7291980734a301",
+      "size": 14633
     },
     "artifacts/wasm32/BUILD.json": {
-      "sha256": "6414c88de745405b4883792866d64f42e029dca15101a7e5fa1a1a60a750e55a",
-      "size": 13022
+      "sha256": "1b809eacb1195c64d0ef790224d293484fa1153b957ef3c7307c31bcfcf20bf0",
+      "size": 13132
     },
     "artifacts/wasm32/cli.mjs": {
       "sha256": "84b34ee2df1f99bf9111b88e3f0f531e902cf6951b0c43eb405abf4987d2c26f",
       "size": 2753
     },
     "artifacts/wasm32/oneocr-core.mjs": {
-      "sha256": "29354d8dc134d9987a74bd38c90b267265ba76af0e3551636d289ffe35b360a7",
-      "size": 129687
+      "sha256": "3759e807f4f5869746075b0e86e47e78a8956bbcc808552709014a022fec9460",
+      "size": 129865
     },
     "artifacts/wasm32/oneocr-core.wasm": {
-      "sha256": "7b9cbe2fea6cb047e4386c02a7ed4b8a7fb6d3611447527232de70a57ccf01a7",
-      "size": 50528082
+      "sha256": "5ad0eedbc3d072c938d4cebf2d07cd1c136e1ae9a53d7ffbef0bf45e2894b7ec",
+      "size": 50549480
     },
     "artifacts/wasm32/oneocr.d.mts": {
       "sha256": "16f24369fc5e319187c69f66aa6cc85e8f9cd1b40baf9205ad7e6ec628eb67b9",
@@ -168,8 +168,8 @@
       "size": 8967
     },
     "artifacts/wasm32/share/oneocr/THIRD_PARTY_NOTICES.md": {
-      "sha256": "da3ddebee72ad0c5d1d8c5f29870c58b52bd7cffe899876e10879a2e4feeb715",
-      "size": 5033
+      "sha256": "9b1d1e3a54be9675d704080e4255738af21ce00cedd2f3ab84f43a35a081802e",
+      "size": 5560
     },
     "artifacts/wasm32/share/oneocr/error-codes.md": {
       "sha256": "5980ae721f3a9fe77c196603e96fb6454c2fc016e64cfaa5cbb0ac7eb8c31629",
@@ -240,12 +240,12 @@
       "size": 1024
     },
     "artifacts/wasm32/share/oneocr/portable.md": {
-      "sha256": "d0a44f09bd69bbcff394f15afeef7075c7dd28b00aaa1416d0d8b03b07a8ac2c",
-      "size": 15695
+      "sha256": "f4bff77833ae1aa80b3c9485b42330446a8c4238402f885272b5646a64cb7b61",
+      "size": 15713
     },
     "artifacts/wasm32/share/oneocr/wasm.md": {
-      "sha256": "daa78fddd8ca9010f8dbfd2b131c9504b58562fe750d8767f5f1ee5e74d50f45",
-      "size": 14636
+      "sha256": "afe91c80c8f308018adccbb8f4906dc8d94c80ee144290569c7291980734a301",
+      "size": 14633
     },
     "artifacts/wasm32/worker-client.d.mts": {
       "sha256": "68ebe35177142af88b554be9c4d7b8feedf4381485a00f25924e2429311ef10f",
@@ -260,8 +260,8 @@
       "size": 1419
     },
     "artifacts/win32-x64/BUILD.json": {
-      "sha256": "149be580a3240345c444f9bb853662c9c37850f7ae839f8832de4653bbbb0c46",
-      "size": 9809
+      "sha256": "c7572cb43e40823a3e9cffdd29f0ad594f860c0799421582ea9f386443a5ef37",
+      "size": 9919
     },
     "artifacts/win32-x64/bin/concrt140.dll": {
       "sha256": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
@@ -292,8 +292,8 @@
       "size": 147968
     },
     "artifacts/win32-x64/bin/oneocr_portable.dll": {
-      "sha256": "9bea0096355e02bcea831b33e4a429290806a01c23403021b58b19745980ea01",
-      "size": 34375168
+      "sha256": "bd19a0996539fba40fa28328d56f118e51d9fea3fc17cb3659e0d56d948e90be",
+      "size": 34391552
     },
     "artifacts/win32-x64/bin/oneocr_wrapper.dll": {
       "sha256": "bf9eebd5b10194983a0645f489dd731604be979fbfffb8d2c59f12d363ad3b19",
@@ -332,8 +332,8 @@
       "size": 2606
     },
     "artifacts/win32-x64/share/oneocr/THIRD_PARTY_NOTICES.md": {
-      "sha256": "da3ddebee72ad0c5d1d8c5f29870c58b52bd7cffe899876e10879a2e4feeb715",
-      "size": 5033
+      "sha256": "9b1d1e3a54be9675d704080e4255738af21ce00cedd2f3ab84f43a35a081802e",
+      "size": 5560
     },
     "artifacts/win32-x64/share/oneocr/error-codes.md": {
       "sha256": "5980ae721f3a9fe77c196603e96fb6454c2fc016e64cfaa5cbb0ac7eb8c31629",
@@ -404,12 +404,12 @@
       "size": 1024
     },
     "artifacts/win32-x64/share/oneocr/portable.md": {
-      "sha256": "d0a44f09bd69bbcff394f15afeef7075c7dd28b00aaa1416d0d8b03b07a8ac2c",
-      "size": 15695
+      "sha256": "f4bff77833ae1aa80b3c9485b42330446a8c4238402f885272b5646a64cb7b61",
+      "size": 15713
     },
     "artifacts/win32-x64/share/oneocr/wasm.md": {
-      "sha256": "daa78fddd8ca9010f8dbfd2b131c9504b58562fe750d8767f5f1ee5e74d50f45",
-      "size": 14636
+      "sha256": "afe91c80c8f308018adccbb8f4906dc8d94c80ee144290569c7291980734a301",
+      "size": 14633
     },
     "models/auxiliary/2e1f404d421766c7c36bbab20204e1e2aa40542b8bdd4be689ec538627c322dc.onnx": {
       "sha256": "2e1f404d421766c7c36bbab20204e1e2aa40542b8bdd4be689ec538627c322dc",
@@ -1032,13 +1032,16 @@
       "size": 581
     }
   },
-  "verification_archive": "reports/curve-boundaries-2026-11-03",
+  "verification_archive": "reports/options-handwriting-2026-11-03",
   "reference": {
     "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
-    "book_baseline": "reports/curve-boundaries-2026-11-03/reference/book-legacy.json",
-    "all_samples_baseline": "reports/curve-boundaries-2026-11-03/reference/legacy",
-    "corpus_baseline": "reports/curve-boundaries-2026-11-03/reference/corpus-legacy",
+    "book_baseline": "reports/options-handwriting-2026-11-03/reference/book-legacy.json",
+    "all_samples_baseline": "reports/options-handwriting-2026-11-03/reference/legacy",
+    "corpus_baseline": "reports/options-handwriting-2026-11-03/reference/corpus-legacy",
     "legacy_binary_dir": "bin/photos-2026.11090.22001.0",
-    "report": "reports/curve-boundaries-2026-11-03/reference/README.md"
+    "report": "reports/options-handwriting-2026-11-03/reference/README.md",
+    "parameter_manifest": "research/parameter-cases.json",
+    "parameter_manifest_sha256": "b9ccc9bdaad3c0037bd0384b586a800228ff61d99a2956e565447bbb07b0e326",
+    "parameter_baseline": "reports/options-handwriting-2026-11-03/reference/parameters"
   }
 }

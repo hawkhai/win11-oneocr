@@ -17,10 +17,11 @@ def compare(native,cpp):
     records=[]
     for prefix,input_name,outputs in [
         ('classifier/','classifier_input',['script_id_score','hwpc_score','flip_score']),
-        ('recognizers/','recognizer_input',['logsoftmax'])]:
+        ('recognizers/','recognizer_input',['logsoftmax']),
+        ('layout-output/','layout_input',['line_layout_score'])]:
         available=[path for path in sorted(cpp.glob('line-*')) if (path/(input_name+'.json')).exists()]
         for index,entry in enumerate(trace):
-            if not entry['model'].startswith(prefix):continue
+            if not (('line_layout_score' in entry['outputs']) if prefix=='layout-output/' else entry['model'].startswith(prefix)):continue
             expected=np.load(native/entry['inputs']['data']['file'])
             match=next((path for path in available if np.array_equal(expected,read_cpp(path,input_name))),None)
             record={'native_call':index,'model':entry['model'],'shape':list(expected.shape),'input_exact':match is not None,'outputs':[]}

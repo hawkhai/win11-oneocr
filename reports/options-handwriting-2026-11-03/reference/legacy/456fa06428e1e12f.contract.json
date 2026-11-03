@@ -1,0 +1,17 @@
+{
+  "file": "oneocr-boundaries/normalizer-grid.png",
+  "image_sha256": "1b3f218a237c48ff0462148e8ae008aa32c697b7c416bbe94e45a179f88923ed",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.715056499990169,
+    "peak_working_set_bytes": 146354176,
+    "stderr": ""
+  },
+  "result_sha256": "7b031d5a2f1cd8cf4cb10e09716b62f4724e5e118a6ef43fa9b0611f3db39a85"
+}

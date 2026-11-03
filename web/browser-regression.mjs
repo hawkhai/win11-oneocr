@@ -61,7 +61,7 @@ try {
       const digest = [...new Uint8Array(await crypto.subtle.digest('SHA-256', input))].map(x => x.toString(16).padStart(2, '0')).join('');
       if (digest !== entry.sha256) throw new Error('Browser received changed image bytes');
       const began = performance.now();
-      try { return { result: await ocr.recognize(input, { fileName: entry.path }), milliseconds: performance.now() - began }; }
+      try { return { result: await ocr.recognize(input, { fileName: entry.path, maxLines: entry.options?.max_lines ?? 0, resizeWidth: entry.options?.resize_width ?? 0, resizeHeight: entry.options?.resize_height ?? 0 }), milliseconds: performance.now() - began }; }
       catch (error) { return { error: { code: error.code ?? null, message: error.message, stage: error.stage }, milliseconds: performance.now() - began }; }
     }, { url, entry });
     const suffix = actual.error ? '.error.json' : '.json';

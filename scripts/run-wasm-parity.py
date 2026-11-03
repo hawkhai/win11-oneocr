@@ -17,6 +17,7 @@ sys.path.insert(0, str(ROOT/'scripts'))
 from regression_reference import active_reference
 from regression_inputs import current_cases
 from verification_state import checkpoint, destination_for_verification, load_execution, verify_execution
+from regression_options import option_signature,requested_options
 
 
 def read(path):
@@ -83,9 +84,9 @@ def main():
             raise ValueError('Scheduling requires an original inference summary, not a verification report')
         if previous['model_manifest_sha256']!=sha(ROOT/'models/manifest.json'):
             raise ValueError('Scheduling reference uses another model')
-        inputs={entry['name']:entry['input_sha256'] for entry in previous['results']}
+        inputs={entry['name']:(entry['input_sha256'],option_signature(entry.get('options'))) for entry in previous['results']}
         timings={entry['name']:entry['milliseconds'] for entry in previous['execution']['cases']}
-        if any(inputs.get(entry['name'])!=entry['sha256'] or entry['name'] not in timings for entry in cases):
+        if any(inputs.get(entry['name'])!=(entry['sha256'],option_signature(entry.get('options'))) or entry['name'] not in timings for entry in cases):
             raise ValueError('Scheduling reference must cover the exact input hashes')
         groups=[[] for _ in range(jobs)];loads=[0. for _ in range(jobs)]
         for entry in sorted(cases,key=lambda c:(-timings[c['name']],c['name'])):
@@ -156,7 +157,7 @@ def main():
             report = {'passed': False, 'error': read(error_path) if error_path.is_file() else 'No result'}
         write(output/'comparisons'/(item['name']+'.json'), report)
         results.append({'name': item['name'], 'passed': report['passed'], 'failure_count': report.get('failure_count'),
-                        'expected_error': item.get('expected_error'), 'input_sha256': item['sha256'],
+                        'expected_error': item.get('expected_error'), 'input_sha256': item['sha256'],'options':requested_options(item.get('options')),
                         'baseline_sha256': sha(Path(item['baseline'])) if item.get('baseline') else None,
                         'actual_sha256':sha(error_path if item.get('expected_error') else result_path) if (error_path if item.get('expected_error') else result_path).is_file() else None})
         print(item['name'], 'PASS' if report['passed'] else 'FAIL', flush=True)

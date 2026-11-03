@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/images/pp-vertical-plaque.jpg",
+  "image_sha256": "1b3978f3708bc31e3acfe603b052531a480db87ebaa1460559ee7d3eb1160593",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 1.0660443000379018,
+    "peak_working_set_bytes": 260243456,
+    "stderr": ""
+  },
+  "result_sha256": "53ce42a2d99fb01dbbcd9847304fb0668e7c3df4c302df42f560774f1364e816"
+}

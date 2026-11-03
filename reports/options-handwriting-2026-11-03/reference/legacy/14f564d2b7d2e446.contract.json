@@ -1,0 +1,17 @@
+{
+  "file": "ocr-classics/images/quality-heavy-ink.png",
+  "image_sha256": "89b5654328c251f9d6ba989a3c45947f605562bc75fc9b7c19329014b9ed40ed",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.8346652999753132,
+    "peak_working_set_bytes": 148381696,
+    "stderr": ""
+  },
+  "result_sha256": "68a774b3cec437c2e06ce22befc33dd8a73ad7f7ec70cd59bb4c73af89d42203"
+}

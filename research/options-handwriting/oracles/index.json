@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "file": "calligraphy.json",
+      "sha256": "c4482767595db249c7e3aac1a078b55e475cb9b49031e234c3f74bb2bf8d1a7c",
+      "case": "sample-caaf9f2c75e68fb3",
+      "baseline_sha256": "c52845650f8d5a1070e53ba78fbc9594313b7b4fd185695a510e9b266dd0446b",
+      "unmodified_output_strictly_equal": true
+    },
+    {
+      "file": "calligraphy-90.json",
+      "sha256": "74029e4a1f42e8388a0bf3b1f770593c523d4542b44ab45d9c8ea9c6dce67e80",
+      "case": "sample-0cbc944c1fac881f",
+      "baseline_sha256": "76ab989322b22c906a64389c0fc1f896ce7ead51ce4af04293b7b21fa0f8a4ad",
+      "unmodified_output_strictly_equal": true
+    },
+    {
+      "file": "calligraphy-270.json",
+      "sha256": "a7dc99bb7fd70b3f3db49ce3af9c0cb79d4a9e493827eab757bad938245bd547",
+      "case": "sample-88d6f6f571abb9ad",
+      "baseline_sha256": "a077e5d5bafb0875ec7958a4f7fa2a22671917783b7a0ab871bea5cb5b709c2a",
+      "unmodified_output_strictly_equal": true
+    },
+    {
+      "file": "grid-10.json",
+      "sha256": "72d886f8a4dad40eb69647d1379e4c9303b135f528ec8cbbda70810bdcdaa029",
+      "case": "sample-6784152fa17f8d76",
+      "baseline_sha256": "3633d003ffaf285ee70b8c190ba695326ad4dab62973bad4f642177af89bb431",
+      "unmodified_output_strictly_equal": true
+    },
+    {
+      "file": "calligraphy-640.json",
+      "sha256": "d6eb3b8393fb00511353e8050ce43a97f9f4aaa4c51a3e931f59ececd06fdd75",
+      "case": "parameter-red-calligraphy-jason-m1-r640x384",
+      "baseline_sha256": "72e20653505dc0e45b7d3959603ae4cbec5ebc00d296d7dc903212585c3c3317",
+      "unmodified_output_strictly_equal": true
+    },
+    {
+      "file": "grid-budget.json",
+      "sha256": "fff968cf8a976e0bc1b10281b7f49bd4d5d871a6943f73c075626cfddbec4039",
+      "case": "parameter-red-grid-jason-m5-r1152x768",
+      "baseline_sha256": "f4a0848c3af63c612519d2b11423735e9cd15146102cb2caf27fadb74a003169",
+      "unmodified_output_strictly_equal": true
+    }
+  ],
+  "source_files": {
+    "probe-photos-regions.py": "9f533e1c12e444b67d9ca704ae979bc3d3880d31c0d59da05a443b28e7ed65de",
+    "photos_choice_observer.py": "019051d5991db304d31c3bd3294e478f70860074ac9462719a7ac1bfe4bb3f9e",
+    "probe-photos-recognition-choice.py": "d490a80844e5cc76cc85ea8a10949814f19386df11796361e5969cd99766ec5e",
+    "capture-options-oracles.py": "4c0aa59d3abfe54b48aeb114a09e1e198d1749f838a24b9085080de120baded8"
+  }
+}

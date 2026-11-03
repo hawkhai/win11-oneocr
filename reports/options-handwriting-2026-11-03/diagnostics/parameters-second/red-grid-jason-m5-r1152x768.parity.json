@@ -1,0 +1,19 @@
+{
+  "passed": false,
+  "expected_lines": 5,
+  "actual_lines": 6,
+  "same_position_text_matches": 5,
+  "failure_count": 1,
+  "failures": [
+    {
+      "field": "line_count",
+      "expected": 5,
+      "actual": 6
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  }
+}

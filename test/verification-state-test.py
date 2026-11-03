@@ -52,6 +52,14 @@ class ExecutionRecords(unittest.TestCase):
         current=copy.deepcopy(self.build);current['files']['share/doc.md']='updated-doc'
         verify_execution(record,self.cases,current,self.models)
 
+    def test_same_pixels_with_changed_options_require_new_inference(self):
+        record=load_execution(self.directory)
+        for options in [{'max_lines':1},{'resize_width':640,'resize_height':384}]:
+            changed=copy.deepcopy(self.cases);changed[0]['options']=options
+            with self.assertRaisesRegex(ValueError,'input scope differs'):verify_execution(record,changed,self.build,self.models)
+        changed=copy.deepcopy(self.cases);changed[0]['options']={'max_lines':True}
+        with self.assertRaisesRegex(ValueError,'must be integers'):verify_execution(record,changed,self.build,self.models)
+
     def test_changed_execution_output_or_inventory_is_rejected(self):
         for name in ['actual/one.json','cases.json','summary.json','actual/measurements.json']:
             path=self.directory/name;before=path.read_bytes();path.write_bytes(before+b' ')

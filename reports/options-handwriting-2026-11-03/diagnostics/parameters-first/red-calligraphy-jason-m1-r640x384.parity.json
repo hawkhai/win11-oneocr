@@ -1,0 +1,104 @@
+{
+  "passed": false,
+  "expected_lines": 3,
+  "actual_lines": 3,
+  "same_position_text_matches": 2,
+  "failure_count": 18,
+  "failures": [
+    {
+      "field": "lines[0].text",
+      "expected": "稿紙",
+      "actual": "稿"
+    },
+    {
+      "field": "lines[0].bounding_box[0]",
+      "expected": 1103.0,
+      "actual": 1108.0
+    },
+    {
+      "field": "lines[0].bounding_box[1]",
+      "expected": 186.0,
+      "actual": 182.0
+    },
+    {
+      "field": "lines[0].bounding_box[2]",
+      "expected": 1367.0,
+      "actual": 1212.0
+    },
+    {
+      "field": "lines[0].bounding_box[3]",
+      "expected": 341.0,
+      "actual": 241.0
+    },
+    {
+      "field": "lines[0].bounding_box[4]",
+      "expected": 1322.0,
+      "actual": 1157.0
+    },
+    {
+      "field": "lines[0].bounding_box[5]",
+      "expected": 420.0,
+      "actual": 318.0
+    },
+    {
+      "field": "lines[0].bounding_box[6]",
+      "expected": 1058.0,
+      "actual": 1053.0
+    },
+    {
+      "field": "lines[0].word_count",
+      "expected": 2,
+      "actual": 1
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[0]",
+      "expected": 1107.7049560546875,
+      "actual": 1099.774658203125
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[1]",
+      "expected": 186.45245361328125,
+      "actual": 182.0
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[2]",
+      "expected": 1185.1719970703125,
+      "actual": 1213.0
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[3]",
+      "expected": 234.30621337890625,
+      "actual": 244.94479370117188
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[4]",
+      "expected": 1136.97314453125,
+      "actual": 1174.088134765625
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[5]",
+      "expected": 308.46124267578125,
+      "actual": 319.0
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[6]",
+      "expected": 1058.0,
+      "actual": 1053.0
+    },
+    {
+      "field": "lines[0].words[0].bounding_box[7]",
+      "expected": 256.17559814453125,
+      "actual": 258.8222961425781
+    },
+    {
+      "field": "lines[0].words[0].confidence",
+      "expected": 0.9961482286453247,
+      "actual": 0.9941515922546387
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "file": "oneocr-capabilities/script-cjk.png",
+  "image_sha256": "845a6747caa7ca3d7ac2371f02b2b3430bea21029df8cdb26c9e18e5bdc3fc92",
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "measurement": {
+    "exit_code": 0,
+    "seconds": 0.7812739000073634,
+    "peak_working_set_bytes": 165109760,
+    "stderr": ""
+  },
+  "result_sha256": "57b7e12ac4a47527f61c103e4ba044b061a36a9f622daa31f94e815392393689"
+}

@@ -1,7 +1,8 @@
 """Build the current, hash-checked input scope shared by saved-result verifiers."""
 from pathlib import Path
 
-from verification_state import contained, read, sha, signatures
+from verification_state import contained, read, sha, signatures, same_json
+from regression_options import requested_options, effective_options
 
 IMAGE_EXTENSIONS={'.png','.jpg','.jpeg','.bmp','.gif','.tif','.tiff','.webp'}
 
@@ -48,5 +49,18 @@ def current_cases(root,reference):
                       'baseline':str((contained(root,reference['corpus_baseline'])/(item['name']+'.json')).resolve())})
     cases.append({'name':'book','path':str(root/'ocr-book.jpg'),'sha256':sha(root/'ocr-book.jpg'),
                   'baseline':str(contained(root,reference['book_baseline']))})
+    if 'parameter_manifest' in reference:
+        manifest=contained(root,reference['parameter_manifest'])
+        if sha(manifest)!=reference['parameter_manifest_sha256']:raise ValueError('Parameter inventory fingerprint changed')
+        for item in read(manifest)['cases']:
+            path=contained(root,item['file']);options=requested_options(item['options'])
+            golden=contained(root,reference['parameter_baseline'])/(item['name']+'.json')
+            contract=read(golden.with_name(golden.stem+'.contract.json'))
+            if sha(path)!=item['sha256'] or contract['image_sha256']!=item['sha256']:raise ValueError('Parameter input fingerprint changed: '+item['name'])
+            if contract['measurement']['exit_code'] or not contract['result_sha256'] or sha(golden)!=contract['result_sha256']:raise ValueError('Invalid parameter baseline: '+item['name'])
+            if not (same_json(contract['requested_options'],options) and same_json(contract['effective_options'],effective_options(options)) and same_json(contract['original_wrapper_arguments'],effective_options(options))):
+                raise ValueError('Frozen parameter options changed: '+item['name'])
+            if contract['dll_bindings']['oneocr.onemodel']!=reference['model_source_sha256']:raise ValueError('Parameter baseline model changed')
+            cases.append({'name':'parameter-'+item['name'],'path':str(path),'sha256':item['sha256'],'options':options,'baseline':str(golden.resolve())})
     signatures(cases)
     return cases

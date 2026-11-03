@@ -1,0 +1,37 @@
+[
+  {
+    "case": "1-1152-768",
+    "passed": false,
+    "failure_count": 117,
+    "expected_lines": 4,
+    "actual_lines": 1
+  },
+  {
+    "case": "2-640-384",
+    "passed": false,
+    "failure_count": 110,
+    "expected_lines": 4,
+    "actual_lines": 2
+  },
+  {
+    "case": "7-1536-768",
+    "passed": false,
+    "failure_count": null,
+    "expected_lines": null,
+    "actual_lines": null
+  },
+  {
+    "case": "999-33-65",
+    "passed": true,
+    "failure_count": 0,
+    "expected_lines": 0,
+    "actual_lines": 0
+  },
+  {
+    "case": "1000-320-192",
+    "passed": true,
+    "failure_count": 0,
+    "expected_lines": 12,
+    "actual_lines": 12
+  }
+]

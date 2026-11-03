@@ -96,6 +96,16 @@ std::vector<bool> recognition_suppressed(const std::vector<RecognitionCandidate>
 static std::array<float,4> bounds(const std::vector<Point>& p) {
     std::array<float,4> r{p[0].x,p[0].y,p[0].x,p[0].y};for(auto v:p){r[0]=std::min(r[0],v.x);r[1]=std::min(r[1],v.y);r[2]=std::max(r[2],v.x);r[3]=std::max(r[3],v.y);}for(int i=0;i<4;i++)r[i]=i<2?std::floor(r[i]):std::ceil(r[i]);return r;
 }
+bool line_polygon_primary_possible(const std::vector<Point>& a,const std::vector<Point>& b,double threshold) {
+    // Photos 1805841e0, mode 0: the inclusive bounding-box gate is part of
+    // the original algorithm, even when curved polygon IoU is much larger.
+    auto x=bounds(a),y=bounds(b);
+    if(x[0]>y[2] || x[1]>y[3] || y[0]>x[2] || y[1]>x[3])return false;
+    float overlap=std::max(0.f,std::min(x[2],y[2])-std::max(x[0],y[0])+1.f)*
+                  std::max(0.f,std::min(x[3],y[3])-std::max(x[1],y[1])+1.f);
+    float first=(x[2]-x[0]+1.f)*(x[3]-x[1]+1.f),second=(y[2]-y[0]+1.f)*(y[3]-y[1]+1.f);
+    return (double(first+second)/(threshold+1.))*threshold<double(overlap);
+}
 bool line_polygons_joinable(const std::vector<Point>& a,bool ah,const std::vector<Point>& b,bool bh,double divisor,double ratio) {
     // 1800e1ea0: overlap, an endpoint midpoint inside the other curve,
     // compatible thickness, and reciprocal distances to the center chords.

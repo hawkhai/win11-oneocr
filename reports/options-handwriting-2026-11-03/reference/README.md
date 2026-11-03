@@ -1,0 +1,1 @@
+Fresh isolated original DLL capture for every registered sample, corpus, book and parameter case. Capture completeness is separate from portable parity. Zero aliases use the explicitly recorded effective 1000 / 1152x768 defaults; raw wrapper zero-resize skips its resize setter.

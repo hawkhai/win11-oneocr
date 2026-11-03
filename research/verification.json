@@ -99,9 +99,9 @@
   },
   "default_plugin_native_integration": true,
   "remaining": [
-    "Nondefault parameter combinations and direction/linking ambiguity coverage",
-    "Independent real handwritten CJK and further scripts",
-    "Linux ARM64, macOS and Android target build/run verification; other JS engines"
+    "Finite valid-option matrix and two real handwriting sources are covered; broader parameters, linking ambiguity, additional writers and scripts remain incomplete",
+    "Native resize beyond 1152x768 is an extension: the fixed Photos DLL rejects those settings; no equivalent-output claim is made there",
+    "Linux ARM64, macOS and Android target build/run verification; Safari, Firefox, mobile browsers and Node 20 full scope"
   ],
   "case": "research/curve-boundaries",
   "phase1_measurements": {
@@ -411,7 +411,7 @@
       }
     }
   },
-  "active_regression_report": "reports/curve-boundaries-2026-11-03/README.md",
+  "active_regression_report": "reports/options-handwriting-2026-11-03/README.md",
   "history_before_curve_boundaries": {
     "date": "2026-11-02",
     "active_regression_report": "reports/photos-model-update-2026-11-02/README.md",
@@ -459,5 +459,16 @@
     ],
     "goal_complete": false,
     "fresh_inference_report": "reports/curve-boundaries-2026-11-03/README.md"
+  },
+  "options_handwriting": {
+    "status": "fresh five-environment execution in progress",
+    "windows_native_passed": 221,
+    "cases_per_environment": 221,
+    "sample_images": 126,
+    "parameter_combinations": 67,
+    "source_photographs": 2,
+    "handwriting_rotations": 8,
+    "report": "reports/options-handwriting-2026-11-03/README.md",
+    "goal_complete": false
   }
 }

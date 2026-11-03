@@ -24,7 +24,7 @@ try {
     const began = performance.now();
     let status = 'success', code = 0;
     try {
-      const result = engine.recognize(data, { fileName: entry.path });
+        const result = engine.recognize(data, { fileName: entry.path, maxLines: entry.options?.max_lines ?? 0, resizeWidth: entry.options?.resize_width ?? 0, resizeHeight: entry.options?.resize_height ?? 0 });
       await writeFile(resolve(outputDirectory, entry.name + '.json'), JSON.stringify(result, null, 2) + '\n');
     } catch (error) {
       status = 'error'; code = error.code ?? null;

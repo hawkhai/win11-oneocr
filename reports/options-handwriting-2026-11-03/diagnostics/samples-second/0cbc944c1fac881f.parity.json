@@ -1,0 +1,224 @@
+{
+  "passed": false,
+  "expected_lines": 15,
+  "actual_lines": 15,
+  "same_position_text_matches": 13,
+  "failure_count": 42,
+  "failures": [
+    {
+      "field": "lines[3].text",
+      "expected": "枝春风叩祭门、一声雀啼我自",
+      "actual": "一"
+    },
+    {
+      "field": "lines[3].bounding_box[0]",
+      "expected": 251.0,
+      "actual": 224.0
+    },
+    {
+      "field": "lines[3].bounding_box[1]",
+      "expected": 898.0,
+      "actual": 949.0
+    },
+    {
+      "field": "lines[3].bounding_box[2]",
+      "expected": 807.0,
+      "actual": 253.0
+    },
+    {
+      "field": "lines[3].bounding_box[3]",
+      "expected": 35.0,
+      "actual": 906.0
+    },
+    {
+      "field": "lines[3].bounding_box[4]",
+      "expected": 867.0,
+      "actual": 287.0
+    },
+    {
+      "field": "lines[3].bounding_box[5]",
+      "expected": 73.0,
+      "actual": 931.0
+    },
+    {
+      "field": "lines[3].bounding_box[6]",
+      "expected": 306.0,
+      "actual": 260.0
+    },
+    {
+      "field": "lines[3].bounding_box[7]",
+      "expected": 935.0,
+      "actual": 968.0
+    },
+    {
+      "field": "lines[3].style.confidence",
+      "expected": 0.6439999938011169,
+      "actual": 0.982200026512146
+    },
+    {
+      "field": "lines[3].word_count",
+      "expected": 13,
+      "actual": 1
+    },
+    {
+      "field": "lines[3].words[0].text",
+      "expected": "枝",
+      "actual": "一"
+    },
+    {
+      "field": "lines[3].words[0].bounding_box[0]",
+      "expected": 251.0,
+      "actual": 224.0
+    },
+    {
+      "field": "lines[3].words[0].bounding_box[1]",
+      "expected": 896.574462890625,
+      "actual": 947.4251098632812
+    },
+    {
+      "field": "lines[3].words[0].bounding_box[2]",
+      "expected": 284.78466796875,
+      "actual": 256.49371337890625
+    },
+    {
+      "field": "lines[3].words[0].bounding_box[3]",
+      "expected": 846.03857421875,
+      "actual": 906.0
+    },
+    {
+      "field": "lines[3].words[0].bounding_box[4]",
+      "expected": 336.0174255371094,
+      "actual": 288.0
+    },
+    {
+      "field": "lines[3].words[0].bounding_box[5]",
+      "expected": 883.5628662109375,
+      "actual": 925.7796020507812
+    },
+    {
+      "field": "lines[3].words[0].bounding_box[6]",
+      "expected": 302.2286071777344,
+      "actual": 259.1714782714844
+    },
+    {
+      "field": "lines[3].words[0].bounding_box[7]",
+      "expected": 934.048583984375,
+      "actual": 969.0
+    },
+    {
+      "field": "lines[3].words[0].confidence",
+      "expected": 0.8985388278961182,
+      "actual": 0.8145670890808105
+    },
+    {
+      "field": "lines[4].text",
+      "expected": "一",
+      "actual": "枝春风叩祭门、一声雀啼我自"
+    },
+    {
+      "field": "lines[4].bounding_box[0]",
+      "expected": 260.0,
+      "actual": 251.0
+    },
+    {
+      "field": "lines[4].bounding_box[1]",
+      "expected": 968.0,
+      "actual": 898.0
+    },
+    {
+      "field": "lines[4].bounding_box[2]",
+      "expected": 224.0,
+      "actual": 807.0
+    },
+    {
+      "field": "lines[4].bounding_box[3]",
+      "expected": 949.0,
+      "actual": 35.0
+    },
+    {
+      "field": "lines[4].bounding_box[4]",
+      "expected": 253.0,
+      "actual": 867.0
+    },
+    {
+      "field": "lines[4].bounding_box[5]",
+      "expected": 906.0,
+      "actual": 73.0
+    },
+    {
+      "field": "lines[4].bounding_box[6]",
+      "expected": 287.0,
+      "actual": 306.0
+    },
+    {
+      "field": "lines[4].bounding_box[7]",
+      "expected": 931.0,
+      "actual": 935.0
+    },
+    {
+      "field": "lines[4].style.confidence",
+      "expected": 0.982200026512146,
+      "actual": 0.6439999938011169
+    },
+    {
+      "field": "lines[4].word_count",
+      "expected": 1,
+      "actual": 13
+    },
+    {
+      "field": "lines[4].words[0].text",
+      "expected": "一",
+      "actual": "枝"
+    },
+    {
+      "field": "lines[4].words[0].bounding_box[0]",
+      "expected": 259.1714782714844,
+      "actual": 251.0
+    },
+    {
+      "field": "lines[4].words[0].bounding_box[1]",
+      "expected": 969.0,
+      "actual": 896.574462890625
+    },
+    {
+      "field": "lines[4].words[0].bounding_box[2]",
+      "expected": 224.0,
+      "actual": 284.78472900390625
+    },
+    {
+      "field": "lines[4].words[0].bounding_box[3]",
+      "expected": 947.4251098632812,
+      "actual": 846.0384521484375
+    },
+    {
+      "field": "lines[4].words[0].bounding_box[4]",
+      "expected": 256.49371337890625,
+      "actual": 336.0174560546875
+    },
+    {
+      "field": "lines[4].words[0].bounding_box[5]",
+      "expected": 906.0,
+      "actual": 883.5628662109375
+    },
+    {
+      "field": "lines[4].words[0].bounding_box[6]",
+      "expected": 288.0,
+      "actual": 302.2286376953125
+    },
+    {
+      "field": "lines[4].words[0].bounding_box[7]",
+      "expected": 925.7796630859375,
+      "actual": 934.048583984375
+    },
+    {
+      "field": "lines[4].words[0].confidence",
+      "expected": 0.8145671486854553,
+      "actual": 0.8985388278961182
+    }
+  ],
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  }
+}

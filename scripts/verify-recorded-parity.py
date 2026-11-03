@@ -10,7 +10,7 @@ import sys
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
-from verification_state import contained,destination_for_verification,signatures,runtime_assets,check_result_files,load_execution,verify_execution
+from verification_state import contained,destination_for_verification,signatures,runtime_assets,check_result_files,load_execution,verify_execution,native_result_path,same_json
 from regression_inputs import current_cases
 from regression_reference import active_reference
 
@@ -66,10 +66,15 @@ def main():
             execution=load_execution(directory)
             verify_execution(execution,cases,build,ROOT/'models')
         suite={c['name']:c for c in read(directory/'all-samples/suite.json')['cases']} if native else {}
+        parameters={c['name']:c for c in read(directory/'options/suite.json')['cases']} if native and 'parameter_manifest' in active_reference() else {}
         for case in cases:
             name=case['name']
             if native:
-                actual=directory/'book.json' if name=='book' else directory/'corpus/native'/(name.removeprefix('corpus-')+'.json') if name.startswith('corpus-') else directory/'all-samples/native'/(name.removeprefix('sample-')+'.json')
+                actual=native_result_path(directory,name)
+                if name.startswith('parameter-'):
+                    recorded=parameters.get(name.removeprefix('parameter-'),{})
+                    if not same_json(recorded.get('options'),case['options']) or recorded.get('input_sha256')!=case['sha256'] or recorded.get('baseline_sha256')!=baselines[name]:
+                        raise ValueError('Native parameter execution identity changed: '+name)
             else:actual=directory/'actual'/(name+'.json')
             expected=case.get('expected_error')
             if expected:

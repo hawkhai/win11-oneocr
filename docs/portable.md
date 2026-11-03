@@ -1,6 +1,6 @@
 # OneOCR 原生源码运行时
 
-当前曲线与极长行版本已重新推理五个环境，各 **142/142**，共 **710/710**；其中每端 139 项识别输出、3 项预期拒绝。备用 SVD、长行截断及检测 AREA 分支已补齐，见[最新报告](../reports/curve-boundaries-2026-11-03/README.md)。下列早期 110/138 项记录保留其历史范围，未替代本轮新执行。模型与严格阈值不变，未验证平台和剩余覆盖仍明确标注。
+本轮覆盖 126 张图片、27 项固定语料、书页及 67 个参数组合，共 221 项/环境。新增真实纸面中文手写照片及旋转派生图，并修复由其暴露的非默认行预算、区域粗筛、CJK 版式顺序和置信度汇总差异。验证状态与复跑命令见[参数与中文手写报告](../reports/options-handwriting-2026-11-03/README.md)；历史报告保留原执行范围。
 
 当前独立模型已升级为 Photos 2026.11090.22001.0（配套 DLL 11.0.15）。Windows/Linux 的 110 张图片、原 27 项与新版 106 行书页均按原阈值通过，详见 [新版模型报告](../reports/photos-model-update-2026-11-02/README.md)。原生 CPU 运行库仍固定为源码构建的 ORT 1.23.2，已实测兼容新版图；微软配套运行库为 1.24.20260504.1.7444c45，两者没有混为同一个构建。
 
@@ -137,7 +137,7 @@ JSON 继续使用 `file`、`image`、`image_angle`、`lines`、`words`、`boundi
 .\.research-python\python.exe scripts/summarize-parity.py
 ```
 
-固定语料 27 项与全目录 114 张图片（含缩略图、拼图、参考图和新增曲线/长行）均纳入当前回归，另含书页，共 142 项。最新结果与复跑命令见 [曲线与极长行报告](../reports/curve-boundaries-2026-11-03/README.md)；使用 `scripts/run-all-samples.py` 检查，不允许遗漏图片。原始 CLI 不支持 Unicode 路径用例，基准工具使用原始 wrapper 的宽字符入口，并在独立子进程运行。`scripts/run-parity-suite.py` 可复放其他固定清单；所有失败项保留，不自动放宽阈值。`--error-baseline` 只用于已记录的原 DLL 错误契约，不能将识别差异当成预期错误。
+固定语料 27 项与全目录 126 张图片（含缩略图、拼图、参考图、曲线/长行和新增真实手写）均纳入当前回归，另含书页和 67 个参数组合，共 221 项。最新结果与复跑命令见 [参数与中文手写报告](../reports/options-handwriting-2026-11-03/README.md)；使用 `scripts/run-all-samples.py` 检查，不允许遗漏图片。原始 CLI 不支持 Unicode 路径用例，基准工具使用原始 wrapper 的宽字符入口，并在独立子进程运行。`scripts/run-parity-suite.py` 可复放其他固定清单；所有失败项保留，不自动放宽阈值。`--error-baseline` 只用于已记录的原 DLL 错误契约，不能将识别差异当成预期错误。
 
 退化曲线保留原 LU 路径，仅在零主元时使用原 DLL 对应的 SVD 正规方程备用解。超长多边形保留源顶点、零目标尾部及三角形覆盖顺序，并恢复裁剪后的词框逆映射。极长图缩小后的面积比例不超过 0.04 时使用 AREA 插值；这是还原的算法常量，不是验收阈值。内部几何、像素及张量预言机在 Windows、Linux、Wasm 共用，见 [分支证据](../research/curve-boundaries/README.md)。
 

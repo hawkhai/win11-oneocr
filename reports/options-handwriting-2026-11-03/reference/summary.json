@@ -1,0 +1,1124 @@
+{
+  "reference_complete": true,
+  "mode": "original-DLL-capture; not a portable-engine parity claim",
+  "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+  "new_reference_assets": "bin/photos-2026.11090.22001.0",
+  "sample_cases": 126,
+  "parameter_cases": 67,
+  "total_cases": 221,
+  "dll_bindings": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "cases": [
+    {
+      "name": "sample-903c40f10a92c762",
+      "captured": true,
+      "contract": "legacy/903c40f10a92c762.contract.json"
+    },
+    {
+      "name": "sample-df2560f7906cab6d",
+      "captured": true,
+      "contract": "legacy/df2560f7906cab6d.contract.json"
+    },
+    {
+      "name": "sample-4169c134c6189ae6",
+      "captured": true,
+      "contract": "legacy/4169c134c6189ae6.contract.json"
+    },
+    {
+      "name": "sample-7750735bcbce34ec",
+      "captured": true,
+      "contract": "legacy/7750735bcbce34ec.contract.json"
+    },
+    {
+      "name": "sample-39a29be9779394c5",
+      "captured": true,
+      "contract": "legacy/39a29be9779394c5.contract.json"
+    },
+    {
+      "name": "sample-426c4c4b4327f07c",
+      "captured": true,
+      "contract": "legacy/426c4c4b4327f07c.contract.json"
+    },
+    {
+      "name": "sample-35b9cf211491fc5b",
+      "captured": true,
+      "contract": "legacy/35b9cf211491fc5b.contract.json"
+    },
+    {
+      "name": "sample-be771810db2def78",
+      "captured": true,
+      "contract": "legacy/be771810db2def78.contract.json"
+    },
+    {
+      "name": "sample-eb1b381667716066",
+      "captured": true,
+      "contract": "legacy/eb1b381667716066.contract.json"
+    },
+    {
+      "name": "sample-3aabaeed287f6784",
+      "captured": true,
+      "contract": "legacy/3aabaeed287f6784.contract.json"
+    },
+    {
+      "name": "sample-e2147debb746e953",
+      "captured": true,
+      "contract": "legacy/e2147debb746e953.contract.json"
+    },
+    {
+      "name": "sample-a9819bb8f9e9f5ef",
+      "captured": true,
+      "contract": "legacy/a9819bb8f9e9f5ef.contract.json"
+    },
+    {
+      "name": "sample-ab902c56bd93d342",
+      "captured": true,
+      "contract": "legacy/ab902c56bd93d342.contract.json"
+    },
+    {
+      "name": "sample-946c5faeaa0f2ec5",
+      "captured": true,
+      "contract": "legacy/946c5faeaa0f2ec5.contract.json"
+    },
+    {
+      "name": "sample-9e131b7b56e565db",
+      "captured": true,
+      "contract": "legacy/9e131b7b56e565db.contract.json"
+    },
+    {
+      "name": "sample-a87dd8607e0fda5f",
+      "captured": true,
+      "contract": "legacy/a87dd8607e0fda5f.contract.json"
+    },
+    {
+      "name": "sample-e56ebcbad4b3ec61",
+      "captured": true,
+      "contract": "legacy/e56ebcbad4b3ec61.contract.json"
+    },
+    {
+      "name": "sample-2db7bd9b6595c479",
+      "captured": true,
+      "contract": "legacy/2db7bd9b6595c479.contract.json"
+    },
+    {
+      "name": "sample-9d80e98d12d362b3",
+      "captured": true,
+      "contract": "legacy/9d80e98d12d362b3.contract.json"
+    },
+    {
+      "name": "sample-f9dcd81f8ca741ba",
+      "captured": true,
+      "contract": "legacy/f9dcd81f8ca741ba.contract.json"
+    },
+    {
+      "name": "sample-f06b8315200c1abb",
+      "captured": true,
+      "contract": "legacy/f06b8315200c1abb.contract.json"
+    },
+    {
+      "name": "sample-6a86cb9011438813",
+      "captured": true,
+      "contract": "legacy/6a86cb9011438813.contract.json"
+    },
+    {
+      "name": "sample-5fa29af9e63fefc2",
+      "captured": true,
+      "contract": "legacy/5fa29af9e63fefc2.contract.json"
+    },
+    {
+      "name": "sample-60f7669b6fa86751",
+      "captured": true,
+      "contract": "legacy/60f7669b6fa86751.contract.json"
+    },
+    {
+      "name": "sample-abad7ae0707ac749",
+      "captured": true,
+      "contract": "legacy/abad7ae0707ac749.contract.json"
+    },
+    {
+      "name": "sample-1460619f37acbd0c",
+      "captured": true,
+      "contract": "legacy/1460619f37acbd0c.contract.json"
+    },
+    {
+      "name": "sample-9b462fed1772311b",
+      "captured": true,
+      "contract": "legacy/9b462fed1772311b.contract.json"
+    },
+    {
+      "name": "sample-14f564d2b7d2e446",
+      "captured": true,
+      "contract": "legacy/14f564d2b7d2e446.contract.json"
+    },
+    {
+      "name": "sample-fd9577ef8f62f6a7",
+      "captured": true,
+      "contract": "legacy/fd9577ef8f62f6a7.contract.json"
+    },
+    {
+      "name": "sample-c323ed4e5eccd42e",
+      "captured": true,
+      "contract": "legacy/c323ed4e5eccd42e.contract.json"
+    },
+    {
+      "name": "sample-cb5009e20bb1123a",
+      "captured": true,
+      "contract": "legacy/cb5009e20bb1123a.contract.json"
+    },
+    {
+      "name": "sample-2c2835cf707a4fe6",
+      "captured": true,
+      "contract": "legacy/2c2835cf707a4fe6.contract.json"
+    },
+    {
+      "name": "sample-4cb3c7f3a7eae8bb",
+      "captured": true,
+      "contract": "legacy/4cb3c7f3a7eae8bb.contract.json"
+    },
+    {
+      "name": "sample-c9a092125962e322",
+      "captured": true,
+      "contract": "legacy/c9a092125962e322.contract.json"
+    },
+    {
+      "name": "sample-a744c24e96808cb4",
+      "captured": true,
+      "contract": "legacy/a744c24e96808cb4.contract.json"
+    },
+    {
+      "name": "sample-4f45cf0e51f46a54",
+      "captured": true,
+      "contract": "legacy/4f45cf0e51f46a54.contract.json"
+    },
+    {
+      "name": "sample-b0d25177b1a8480c",
+      "captured": true,
+      "contract": "legacy/b0d25177b1a8480c.contract.json"
+    },
+    {
+      "name": "sample-640bb28cd64c2e5b",
+      "captured": true,
+      "contract": "legacy/640bb28cd64c2e5b.contract.json"
+    },
+    {
+      "name": "sample-e8417890fea95361",
+      "captured": true,
+      "contract": "legacy/e8417890fea95361.contract.json"
+    },
+    {
+      "name": "sample-a24e31eb0aa23b4f",
+      "captured": true,
+      "contract": "legacy/a24e31eb0aa23b4f.contract.json"
+    },
+    {
+      "name": "sample-28e79bff204857cf",
+      "captured": true,
+      "contract": "legacy/28e79bff204857cf.contract.json"
+    },
+    {
+      "name": "sample-e4d10781d3be6992",
+      "captured": true,
+      "contract": "legacy/e4d10781d3be6992.contract.json"
+    },
+    {
+      "name": "sample-de900bc558f2dca8",
+      "captured": true,
+      "contract": "legacy/de900bc558f2dca8.contract.json"
+    },
+    {
+      "name": "sample-0486f0c2e5664aed",
+      "captured": true,
+      "contract": "legacy/0486f0c2e5664aed.contract.json"
+    },
+    {
+      "name": "sample-913b6e2fbe4c0d3b",
+      "captured": true,
+      "contract": "legacy/913b6e2fbe4c0d3b.contract.json"
+    },
+    {
+      "name": "sample-c8cde51505833347",
+      "captured": true,
+      "contract": "legacy/c8cde51505833347.contract.json"
+    },
+    {
+      "name": "sample-9d004236328aca8f",
+      "captured": true,
+      "contract": "legacy/9d004236328aca8f.contract.json"
+    },
+    {
+      "name": "sample-db4b91782dd3efb7",
+      "captured": true,
+      "contract": "legacy/db4b91782dd3efb7.contract.json"
+    },
+    {
+      "name": "sample-bbbd4ae8468a6451",
+      "captured": true,
+      "contract": "legacy/bbbd4ae8468a6451.contract.json"
+    },
+    {
+      "name": "sample-440f10edac8d7c0b",
+      "captured": true,
+      "contract": "legacy/440f10edac8d7c0b.contract.json"
+    },
+    {
+      "name": "sample-86a7ffe5513e5633",
+      "captured": true,
+      "contract": "legacy/86a7ffe5513e5633.contract.json"
+    },
+    {
+      "name": "sample-a99b928ceb0f443e",
+      "captured": true,
+      "contract": "legacy/a99b928ceb0f443e.contract.json"
+    },
+    {
+      "name": "sample-da00952f9e92b062",
+      "captured": true,
+      "contract": "legacy/da00952f9e92b062.contract.json"
+    },
+    {
+      "name": "sample-44d499f3f15ffc62",
+      "captured": true,
+      "contract": "legacy/44d499f3f15ffc62.contract.json"
+    },
+    {
+      "name": "sample-914953ff8fb9b879",
+      "captured": true,
+      "contract": "legacy/914953ff8fb9b879.contract.json"
+    },
+    {
+      "name": "sample-4070a7afd9a7184b",
+      "captured": true,
+      "contract": "legacy/4070a7afd9a7184b.contract.json"
+    },
+    {
+      "name": "sample-e6c08e3cc9b0eb2f",
+      "captured": true,
+      "contract": "legacy/e6c08e3cc9b0eb2f.contract.json"
+    },
+    {
+      "name": "sample-8229419c872341b9",
+      "captured": true,
+      "contract": "legacy/8229419c872341b9.contract.json"
+    },
+    {
+      "name": "sample-b3edaa47ba780e0c",
+      "captured": true,
+      "contract": "legacy/b3edaa47ba780e0c.contract.json"
+    },
+    {
+      "name": "sample-c45a727514fb8982",
+      "captured": true,
+      "contract": "legacy/c45a727514fb8982.contract.json"
+    },
+    {
+      "name": "sample-024e54a6c8e3ba17",
+      "captured": true,
+      "contract": "legacy/024e54a6c8e3ba17.contract.json"
+    },
+    {
+      "name": "sample-c9b8504f28656bb2",
+      "captured": true,
+      "contract": "legacy/c9b8504f28656bb2.contract.json"
+    },
+    {
+      "name": "sample-512b352f18af3f4f",
+      "captured": true,
+      "contract": "legacy/512b352f18af3f4f.contract.json"
+    },
+    {
+      "name": "sample-0582df7394486480",
+      "captured": true,
+      "contract": "legacy/0582df7394486480.contract.json"
+    },
+    {
+      "name": "sample-4a2cab3fdba7faea",
+      "captured": true,
+      "contract": "legacy/4a2cab3fdba7faea.contract.json"
+    },
+    {
+      "name": "sample-7d60dfc27e54a03b",
+      "captured": true,
+      "contract": "legacy/7d60dfc27e54a03b.contract.json"
+    },
+    {
+      "name": "sample-eb6e81323fe050ef",
+      "captured": true,
+      "contract": "legacy/eb6e81323fe050ef.contract.json"
+    },
+    {
+      "name": "sample-e3d262776302832f",
+      "captured": true,
+      "contract": "legacy/e3d262776302832f.contract.json"
+    },
+    {
+      "name": "sample-a83d2bf9aa769ebd",
+      "captured": true,
+      "contract": "legacy/a83d2bf9aa769ebd.contract.json"
+    },
+    {
+      "name": "sample-eae7f502cfea5855",
+      "captured": true,
+      "contract": "legacy/eae7f502cfea5855.contract.json"
+    },
+    {
+      "name": "sample-de744546e5b8a0e6",
+      "captured": true,
+      "contract": "legacy/de744546e5b8a0e6.contract.json"
+    },
+    {
+      "name": "sample-058949810e7c76d3",
+      "captured": true,
+      "contract": "legacy/058949810e7c76d3.contract.json"
+    },
+    {
+      "name": "sample-a45fc642aa130558",
+      "captured": true,
+      "contract": "legacy/a45fc642aa130558.contract.json"
+    },
+    {
+      "name": "sample-2f4730c5e82e18ff",
+      "captured": true,
+      "contract": "legacy/2f4730c5e82e18ff.contract.json"
+    },
+    {
+      "name": "sample-133a8c148862ce3a",
+      "captured": true,
+      "contract": "legacy/133a8c148862ce3a.contract.json"
+    },
+    {
+      "name": "sample-0b6fd6de5d12d93c",
+      "captured": true,
+      "contract": "legacy/0b6fd6de5d12d93c.contract.json"
+    },
+    {
+      "name": "sample-9e2ab94f59cf15f8",
+      "captured": true,
+      "contract": "legacy/9e2ab94f59cf15f8.contract.json"
+    },
+    {
+      "name": "sample-cc615a3e5cb1499e",
+      "captured": true,
+      "contract": "legacy/cc615a3e5cb1499e.contract.json"
+    },
+    {
+      "name": "sample-0f2b4483dc0e1c98",
+      "captured": true,
+      "contract": "legacy/0f2b4483dc0e1c98.contract.json"
+    },
+    {
+      "name": "sample-3c6e7c7ab6144e27",
+      "captured": true,
+      "contract": "legacy/3c6e7c7ab6144e27.contract.json"
+    },
+    {
+      "name": "sample-3255119646d641ba",
+      "captured": true,
+      "contract": "legacy/3255119646d641ba.contract.json"
+    },
+    {
+      "name": "sample-c777a45d62cce90a",
+      "captured": true,
+      "contract": "legacy/c777a45d62cce90a.contract.json"
+    },
+    {
+      "name": "sample-ed5b69a9711e3f53",
+      "captured": true,
+      "contract": "legacy/ed5b69a9711e3f53.contract.json"
+    },
+    {
+      "name": "sample-0e06c211cb4a4831",
+      "captured": true,
+      "contract": "legacy/0e06c211cb4a4831.contract.json"
+    },
+    {
+      "name": "sample-6692328598e9c3a8",
+      "captured": true,
+      "contract": "legacy/6692328598e9c3a8.contract.json"
+    },
+    {
+      "name": "sample-92de0a88437e32a3",
+      "captured": true,
+      "contract": "legacy/92de0a88437e32a3.contract.json"
+    },
+    {
+      "name": "sample-493754a016f2232e",
+      "captured": true,
+      "contract": "legacy/493754a016f2232e.contract.json"
+    },
+    {
+      "name": "sample-456fa06428e1e12f",
+      "captured": true,
+      "contract": "legacy/456fa06428e1e12f.contract.json"
+    },
+    {
+      "name": "sample-4b43a6f478545d70",
+      "captured": true,
+      "contract": "legacy/4b43a6f478545d70.contract.json"
+    },
+    {
+      "name": "sample-4f4c989c97595b6e",
+      "captured": true,
+      "contract": "legacy/4f4c989c97595b6e.contract.json"
+    },
+    {
+      "name": "sample-83a365509f1cc2b7",
+      "captured": true,
+      "contract": "legacy/83a365509f1cc2b7.contract.json"
+    },
+    {
+      "name": "sample-c062c4f8b726c822",
+      "captured": true,
+      "contract": "legacy/c062c4f8b726c822.contract.json"
+    },
+    {
+      "name": "sample-9f735a010e88a648",
+      "captured": true,
+      "contract": "legacy/9f735a010e88a648.contract.json"
+    },
+    {
+      "name": "sample-9a0e9586ac3fe4e2",
+      "captured": true,
+      "contract": "legacy/9a0e9586ac3fe4e2.contract.json"
+    },
+    {
+      "name": "sample-0fc39af69da4cfed",
+      "captured": true,
+      "contract": "legacy/0fc39af69da4cfed.contract.json"
+    },
+    {
+      "name": "sample-b563bb5b3e206ad7",
+      "captured": true,
+      "contract": "legacy/b563bb5b3e206ad7.contract.json"
+    },
+    {
+      "name": "sample-3295ba0789edc763",
+      "captured": true,
+      "contract": "legacy/3295ba0789edc763.contract.json"
+    },
+    {
+      "name": "sample-55932e69942ed683",
+      "captured": true,
+      "contract": "legacy/55932e69942ed683.contract.json"
+    },
+    {
+      "name": "sample-41b45e5a7c1f065c",
+      "captured": true,
+      "contract": "legacy/41b45e5a7c1f065c.contract.json"
+    },
+    {
+      "name": "sample-cc5c505c9a91f65a",
+      "captured": true,
+      "contract": "legacy/cc5c505c9a91f65a.contract.json"
+    },
+    {
+      "name": "sample-c159f2e4564feb4f",
+      "captured": true,
+      "contract": "legacy/c159f2e4564feb4f.contract.json"
+    },
+    {
+      "name": "sample-0676d3f4ef6c5e2a",
+      "captured": true,
+      "contract": "legacy/0676d3f4ef6c5e2a.contract.json"
+    },
+    {
+      "name": "sample-4fceece9f2d76a6e",
+      "captured": true,
+      "contract": "legacy/4fceece9f2d76a6e.contract.json"
+    },
+    {
+      "name": "sample-1ea42cacfd82f6c0",
+      "captured": true,
+      "contract": "legacy/1ea42cacfd82f6c0.contract.json"
+    },
+    {
+      "name": "sample-71fe5f6e6888b73b",
+      "captured": true,
+      "contract": "legacy/71fe5f6e6888b73b.contract.json"
+    },
+    {
+      "name": "sample-203573ceb1873d5c",
+      "captured": true,
+      "contract": "legacy/203573ceb1873d5c.contract.json"
+    },
+    {
+      "name": "sample-a2446851712be525",
+      "captured": true,
+      "contract": "legacy/a2446851712be525.contract.json"
+    },
+    {
+      "name": "sample-280528b4b1cb14b3",
+      "captured": true,
+      "contract": "legacy/280528b4b1cb14b3.contract.json"
+    },
+    {
+      "name": "sample-224ffeac6e0cd92d",
+      "captured": true,
+      "contract": "legacy/224ffeac6e0cd92d.contract.json"
+    },
+    {
+      "name": "sample-5f9d77976f578583",
+      "captured": true,
+      "contract": "legacy/5f9d77976f578583.contract.json"
+    },
+    {
+      "name": "sample-1aad6147b578f344",
+      "captured": true,
+      "contract": "legacy/1aad6147b578f344.contract.json"
+    },
+    {
+      "name": "sample-8d1e2d06c5f24990",
+      "captured": true,
+      "contract": "legacy/8d1e2d06c5f24990.contract.json"
+    },
+    {
+      "name": "sample-ab78d5d64fd48439",
+      "captured": true,
+      "contract": "legacy/ab78d5d64fd48439.contract.json"
+    },
+    {
+      "name": "sample-728b694ae01441a4",
+      "captured": true,
+      "contract": "legacy/728b694ae01441a4.contract.json"
+    },
+    {
+      "name": "sample-c8564aeddba82f04",
+      "captured": true,
+      "contract": "legacy/c8564aeddba82f04.contract.json"
+    },
+    {
+      "name": "sample-5a422da9a529a336",
+      "captured": true,
+      "contract": "legacy/5a422da9a529a336.contract.json"
+    },
+    {
+      "name": "sample-e0a96ddd6fe8007f",
+      "captured": true,
+      "contract": "legacy/e0a96ddd6fe8007f.contract.json"
+    },
+    {
+      "name": "sample-88d6f6f571abb9ad",
+      "captured": true,
+      "contract": "legacy/88d6f6f571abb9ad.contract.json"
+    },
+    {
+      "name": "sample-0cbc944c1fac881f",
+      "captured": true,
+      "contract": "legacy/0cbc944c1fac881f.contract.json"
+    },
+    {
+      "name": "sample-caaf9f2c75e68fb3",
+      "captured": true,
+      "contract": "legacy/caaf9f2c75e68fb3.contract.json"
+    },
+    {
+      "name": "sample-6784152fa17f8d76",
+      "captured": true,
+      "contract": "legacy/6784152fa17f8d76.contract.json"
+    },
+    {
+      "name": "sample-40a0423bfcae386f",
+      "captured": true,
+      "contract": "legacy/40a0423bfcae386f.contract.json"
+    },
+    {
+      "name": "sample-540490b03d22b577",
+      "captured": true,
+      "contract": "legacy/540490b03d22b577.contract.json"
+    },
+    {
+      "name": "sample-e37ba8d39f1765ee",
+      "captured": true,
+      "contract": "legacy/e37ba8d39f1765ee.contract.json"
+    },
+    {
+      "name": "sample-b0e62b5268bf3ae1",
+      "captured": true,
+      "contract": "legacy/b0e62b5268bf3ae1.contract.json"
+    },
+    {
+      "name": "sample-f3a0c13bdc84f24b",
+      "captured": true,
+      "contract": "legacy/f3a0c13bdc84f24b.contract.json"
+    },
+    {
+      "name": "corpus-latin-18",
+      "captured": true,
+      "contract": "corpus-legacy/latin-18.contract.json"
+    },
+    {
+      "name": "corpus-latin-36",
+      "captured": true,
+      "contract": "corpus-legacy/latin-36.contract.json"
+    },
+    {
+      "name": "corpus-latin-rotate-0.5",
+      "captured": true,
+      "contract": "corpus-legacy/latin-rotate-0.5.contract.json"
+    },
+    {
+      "name": "corpus-latin-rotate-3",
+      "captured": true,
+      "contract": "corpus-legacy/latin-rotate-3.contract.json"
+    },
+    {
+      "name": "corpus-latin-rotate-10",
+      "captured": true,
+      "contract": "corpus-legacy/latin-rotate-10.contract.json"
+    },
+    {
+      "name": "corpus-latin-rotate-90",
+      "captured": true,
+      "contract": "corpus-legacy/latin-rotate-90.contract.json"
+    },
+    {
+      "name": "corpus-latin-rotate-180",
+      "captured": true,
+      "contract": "corpus-legacy/latin-rotate-180.contract.json"
+    },
+    {
+      "name": "corpus-latin-rotate-270",
+      "captured": true,
+      "contract": "corpus-legacy/latin-rotate-270.contract.json"
+    },
+    {
+      "name": "corpus-cjk-18",
+      "captured": true,
+      "contract": "corpus-legacy/cjk-18.contract.json"
+    },
+    {
+      "name": "corpus-cjk-36",
+      "captured": true,
+      "contract": "corpus-legacy/cjk-36.contract.json"
+    },
+    {
+      "name": "corpus-cjk-rotate-0.5",
+      "captured": true,
+      "contract": "corpus-legacy/cjk-rotate-0.5.contract.json"
+    },
+    {
+      "name": "corpus-cjk-rotate-3",
+      "captured": true,
+      "contract": "corpus-legacy/cjk-rotate-3.contract.json"
+    },
+    {
+      "name": "corpus-cjk-rotate-10",
+      "captured": true,
+      "contract": "corpus-legacy/cjk-rotate-10.contract.json"
+    },
+    {
+      "name": "corpus-cjk-rotate-90",
+      "captured": true,
+      "contract": "corpus-legacy/cjk-rotate-90.contract.json"
+    },
+    {
+      "name": "corpus-cjk-rotate-180",
+      "captured": true,
+      "contract": "corpus-legacy/cjk-rotate-180.contract.json"
+    },
+    {
+      "name": "corpus-cjk-rotate-270",
+      "captured": true,
+      "contract": "corpus-legacy/cjk-rotate-270.contract.json"
+    },
+    {
+      "name": "corpus-cyrillic-36",
+      "captured": true,
+      "contract": "corpus-legacy/cyrillic-36.contract.json"
+    },
+    {
+      "name": "corpus-arabic-36",
+      "captured": true,
+      "contract": "corpus-legacy/arabic-36.contract.json"
+    },
+    {
+      "name": "corpus-devanagari-36",
+      "captured": true,
+      "contract": "corpus-legacy/devanagari-36.contract.json"
+    },
+    {
+      "name": "corpus-hebrew-36",
+      "captured": true,
+      "contract": "corpus-legacy/hebrew-36.contract.json"
+    },
+    {
+      "name": "corpus-thai-36",
+      "captured": true,
+      "contract": "corpus-legacy/thai-36.contract.json"
+    },
+    {
+      "name": "corpus-tamil-36",
+      "captured": true,
+      "contract": "corpus-legacy/tamil-36.contract.json"
+    },
+    {
+      "name": "corpus-greek-36",
+      "captured": true,
+      "contract": "corpus-legacy/greek-36.contract.json"
+    },
+    {
+      "name": "corpus-blank",
+      "captured": true,
+      "contract": "corpus-legacy/blank.contract.json"
+    },
+    {
+      "name": "corpus-透明路径-emoji-😀",
+      "captured": true,
+      "contract": "corpus-legacy/透明路径-emoji-😀.contract.json"
+    },
+    {
+      "name": "corpus-multi-column",
+      "captured": true,
+      "contract": "corpus-legacy/multi-column.contract.json"
+    },
+    {
+      "name": "corpus-vertical-cjk",
+      "captured": true,
+      "contract": "corpus-legacy/vertical-cjk.contract.json"
+    },
+    {
+      "name": "book",
+      "captured": true,
+      "contract": "book-legacy.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m1-r1152x768",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m1-r1152x768.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m1-r640x384",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m1-r640x384.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m1-r320x192",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m1-r320x192.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m1-r768x512",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m1-r768x512.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m1-r33x65",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m1-r33x65.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m2-r1152x768",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m2-r1152x768.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m2-r640x384",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m2-r640x384.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m2-r320x192",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m2-r320x192.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m2-r768x512",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m2-r768x512.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m2-r33x65",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m2-r33x65.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m3-r1152x768",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m3-r1152x768.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m3-r640x384",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m3-r640x384.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m3-r320x192",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m3-r320x192.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m3-r768x512",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m3-r768x512.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m3-r33x65",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m3-r33x65.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m4-r1152x768",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m4-r1152x768.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m4-r640x384",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m4-r640x384.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m4-r320x192",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m4-r320x192.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m4-r768x512",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m4-r768x512.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m4-r33x65",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m4-r33x65.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m5-r1152x768",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m5-r1152x768.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m5-r640x384",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m5-r640x384.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m5-r320x192",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m5-r320x192.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m5-r768x512",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m5-r768x512.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m5-r33x65",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m5-r33x65.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m7-r1152x768",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m7-r1152x768.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m7-r640x384",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m7-r640x384.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m7-r320x192",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m7-r320x192.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m7-r768x512",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m7-r768x512.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m7-r33x65",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m7-r33x65.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m9-r1152x768",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m9-r1152x768.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m9-r640x384",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m9-r640x384.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m9-r320x192",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m9-r320x192.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m9-r768x512",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m9-r768x512.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m9-r33x65",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m9-r33x65.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m11-r1152x768",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m11-r1152x768.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m11-r640x384",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m11-r640x384.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m11-r320x192",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m11-r320x192.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m11-r768x512",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m11-r768x512.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m11-r33x65",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m11-r33x65.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m32-r1152x768",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m32-r1152x768.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m32-r640x384",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m32-r640x384.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m32-r320x192",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m32-r320x192.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m32-r768x512",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m32-r768x512.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m32-r33x65",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m32-r33x65.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m999-r1152x768",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m999-r1152x768.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m999-r640x384",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m999-r640x384.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m999-r320x192",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m999-r320x192.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m999-r768x512",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m999-r768x512.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m999-r33x65",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m999-r33x65.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m1000-r1152x768",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m1000-r1152x768.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m1000-r640x384",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m1000-r640x384.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m1000-r320x192",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m1000-r320x192.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m1000-r768x512",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m1000-r768x512.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m1000-r33x65",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m1000-r33x65.contract.json"
+    },
+    {
+      "name": "parameter-red-grid-jason-m1-r640x384",
+      "captured": true,
+      "contract": "parameters/red-grid-jason-m1-r640x384.contract.json"
+    },
+    {
+      "name": "parameter-red-grid-jason-m5-r1152x768",
+      "captured": true,
+      "contract": "parameters/red-grid-jason-m5-r1152x768.contract.json"
+    },
+    {
+      "name": "parameter-red-grid-jason-m7-r768x512",
+      "captured": true,
+      "contract": "parameters/red-grid-jason-m7-r768x512.contract.json"
+    },
+    {
+      "name": "parameter-red-calligraphy-jason-m1-r640x384",
+      "captured": true,
+      "contract": "parameters/red-calligraphy-jason-m1-r640x384.contract.json"
+    },
+    {
+      "name": "parameter-red-calligraphy-jason-m5-r1152x768",
+      "captured": true,
+      "contract": "parameters/red-calligraphy-jason-m5-r1152x768.contract.json"
+    },
+    {
+      "name": "parameter-red-calligraphy-jason-m7-r768x512",
+      "captured": true,
+      "contract": "parameters/red-calligraphy-jason-m7-r768x512.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m0-r640x384",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m0-r640x384.contract.json"
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m2-r0x0",
+      "captured": true,
+      "contract": "parameters/twelve-printed-lines-m2-r0x0.contract.json"
+    },
+    {
+      "name": "parameter-parameter-blank-m1-r32x32",
+      "captured": true,
+      "contract": "parameters/parameter-blank-m1-r32x32.contract.json"
+    },
+    {
+      "name": "parameter-parameter-blank-m1-r1152x768",
+      "captured": true,
+      "contract": "parameters/parameter-blank-m1-r1152x768.contract.json"
+    },
+    {
+      "name": "parameter-parameter-blank-m1-r1152x767",
+      "captured": true,
+      "contract": "parameters/parameter-blank-m1-r1152x767.contract.json"
+    },
+    {
+      "name": "parameter-parameter-blank-m1-r1151x768",
+      "captured": true,
+      "contract": "parameters/parameter-blank-m1-r1151x768.contract.json"
+    }
+  ],
+  "parameter_manifest": "research/parameter-cases.json",
+  "parameter_manifest_sha256": "b9ccc9bdaad3c0037bd0384b586a800228ff61d99a2956e565447bbb07b0e326"
+}

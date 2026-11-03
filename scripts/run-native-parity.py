@@ -39,11 +39,15 @@ def main():
     if measurement['exit_code']:raise RuntimeError('Book failed: '+measurement['stderr'])
     subprocess.run([sys.executable,'-X','utf8',ROOT/'scripts/compare-results.py',ROOT/reference['book_baseline'],book,'--output',output/'book.parity.json'],check=True,cwd=ROOT)
     samples=read(output/'all-samples/suite.json');corpus=read(output/'corpus/suite.json');book_report=read(output/'book.parity.json')
+    options={'passed':True,'total_cases':0,'passed_cases':0}
+    if 'parameter_manifest' in reference:
+        subprocess.run([sys.executable,'-X','utf8',ROOT/'scripts/run-parameter-parity.py','--binary',binary,'--output',output/'options'],check=True,cwd=ROOT)
+        options=read(output/'options/suite.json')
     if model_hash!=sha(ROOT/'models/manifest.json'):raise ValueError('Model manifest changed during regression')
     sample_count=len(read(ROOT/'samples/manifest.json')['cases']);corpus_count=len(read(ROOT/'research/case/corpus/manifest.json')['cases'])
-    passed=samples['passed'] and corpus['passed'] and book_report['passed'] and samples['completed_cases']==sample_count and corpus['total_cases']==corpus_count
-    summary={'passed':passed,'full_regression':True,'cases':sample_count+corpus_count+1,'passed_cases':samples['passed_cases']+corpus['passed_cases']+int(book_report['passed']),
-             'recognition_output_cases':samples['recognition_passes']+corpus['strict_recognition_passes']+int(book_report['passed']),
+    passed=samples['passed'] and corpus['passed'] and book_report['passed'] and options['passed'] and samples['completed_cases']==sample_count and corpus['total_cases']==corpus_count
+    summary={'passed':passed,'full_regression':True,'cases':sample_count+corpus_count+1+options['total_cases'],'passed_cases':samples['passed_cases']+corpus['passed_cases']+int(book_report['passed'])+options['passed_cases'],
+             'recognition_output_cases':samples['recognition_passes']+corpus['strict_recognition_passes']+int(book_report['passed'])+options['passed_cases'],
              'expected_rejections':samples['passed_cases']-samples['recognition_passes'],
              'comparator_sha256':sha(ROOT/'scripts/compare-results.py'),'model_manifest_sha256':model_hash,
              'model_source_sha256':reference['model_source_sha256'],'binary_sha256':sha(binary),'reference':reference}
