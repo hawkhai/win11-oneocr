@@ -29,7 +29,11 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-native.ps1 -So
 .\build\source-runtime\native\Release\ocr.exe test.png --model-dir models --text
 ```
 
-`prepare-models.py` 只读取现有 `bin/oneocr.onemodel`，不访问 Store，不加载 `oneocr.dll`，不下载模型。输出包含原资源名、SHA-256、图输入输出、算子、字表特殊 token、校准表和转换合约。未知私有特征层不会被猜测为已兼容。
+完整 Git 检出已有准备好的 `models/`，仅重新构建引擎时可跳过模型准备。`prepare-models.py` 默认根据 `research/delivery-manifest.json` 的活动基准选择并核对本地来源，当前为 `bin/photos-2026.11090.22001.0/oneocr.onemodel`；不会回退到旧的 `bin/oneocr.onemodel`。它不访问 Store、不加载微软 DLL、不下载模型。
+
+在任何写入前，工具会拒绝来源与活动根目录模型绑定不符，或覆盖由另一来源准备的模型目录。独立研究其他版本必须显式指定 `--source` 和全新的 `--models` 目录。需要保留现有文件时，可用 `--models work/prepared-photos --unpacked work/prepared-photos-unpacked` 重新提取到独立目录，验证后再决定如何使用；不会自动替换正式模型。
+
+输出包含原资源名、SHA-256、图输入输出、算子、字表特殊 token、校准表和转换合约。未知私有特征层不会被猜测为已兼容。
 
 `-SourceRuntime` 下载固定的 ORT 源码、构建 CPU 动态库并安装到 `work/ort-install`，再编译本项目。依赖源码下载需要网络；准备完成后的识别不需要网络。固定版本见 [dependencies.json](../research/dependencies.json)，研究 Python 的完整版本锁定在 `scripts/requirements-lock.txt`。
 

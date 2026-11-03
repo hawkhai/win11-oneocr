@@ -6,7 +6,10 @@ export async function createOneOcrWorker({ timeoutMs = 120000, signal, workerUrl
   if (signal?.aborted) throw new Error('OneOCR call aborted');
   const node = typeof process !== 'undefined' && process.versions?.node;
   const WorkerClass = node ? (await import('node:worker_threads')).Worker : globalThis.Worker;
-  const worker = new WorkerClass(workerUrl, { type: 'module' });
+  // Node accepts file/data URL objects, but rejects the equivalent URL strings.
+  // Keep native filesystem paths (including Windows drive letters) unchanged.
+  const target = typeof workerUrl === 'string' && /^(file|data):/iu.test(workerUrl) ? new URL(workerUrl) : workerUrl;
+  const worker = new WorkerClass(target, { type: 'module' });
   const pending = new Map();
   let sequence = 0, closed = false, terminalError;
   const stop = error => {

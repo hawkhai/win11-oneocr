@@ -2,12 +2,16 @@
 import { createServer } from 'node:http';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
+import { execFile } from 'node:child_process';
+import { promisify } from 'node:util';
 import { dirname, extname, relative, resolve, sep } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const [inventoryFile, outputDirectory, modelDirectory, executablePath,
-  playwrightPath = fileURLToPath(new URL('../work/wasm-browser/node_modules/playwright-core/index.mjs', import.meta.url))] = process.argv.slice(2);
+  playwrightPath = fileURLToPath(new URL('../work/wasm-browser/node_modules/playwright-core/index.mjs', import.meta.url)), timeoutValue = '1800000'] = process.argv.slice(2);
 if (!inventoryFile || !outputDirectory || !modelDirectory || !executablePath) throw new Error('Expected cases.json output models chromium-executable [playwright-module]');
+const requestTimeoutMs = Number(timeoutValue);
+if (!Number.isSafeInteger(requestTimeoutMs) || requestTimeoutMs < 1) throw new Error('Invalid test request budget');
 const { chromium } = await import(pathToFileURL(resolve(playwrightPath)).href);
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.mjs': 'text/javascript', '.js': 'text/javascript', '.wasm': 'application/wasm', '.json': 'application/json' };
@@ -36,12 +40,12 @@ try {
   await page.goto(origin);
   const relativeModels = relative(root, resolve(modelDirectory));
   if (relativeModels.startsWith('..') || resolve(root, relativeModels) !== resolve(modelDirectory)) throw new Error('Browser test models must be inside repository');
-  const initialization = await page.evaluate(async ({ origin, relativeModels }) => {
+  const initialization = await page.evaluate(async ({ origin, relativeModels, requestTimeoutMs }) => {
     const { createOneOcrWorker } = await import('/artifacts/wasm32/worker-client.mjs');
     const started = performance.now();
-    globalThis.ocr = await createOneOcrWorker({ modelBaseUrl: `${origin}/${relativeModels.split('\\').join('/')}/`, timeoutMs: 600000 });
-    return { initializationMs: performance.now() - started, userAgent: navigator.userAgent, capabilities: ocr.capabilities };
-  }, { origin, relativeModels });
+    globalThis.ocr = await createOneOcrWorker({ modelBaseUrl: `${origin}/${relativeModels.split('\\').join('/')}/`, timeoutMs: requestTimeoutMs });
+    return { initializationMs: performance.now() - started, requestTimeoutMs, userAgent: navigator.userAgent, capabilities: ocr.capabilities };
+  }, { origin, relativeModels, requestTimeoutMs });
   const cases = JSON.parse(await readFile(inventoryFile, 'utf8'));
   await mkdir(outputDirectory, { recursive: true });
   for (const entry of cases) {
@@ -65,6 +69,13 @@ try {
     measurements.push({ name: entry.name, milliseconds: actual.milliseconds, status: actual.error ? 'error' : 'success', code: actual.error?.code ?? 0 });
     await writeFile(resolve(outputDirectory, 'measurements.json'), JSON.stringify({ browser: browser.version(), ...initialization, cases: measurements }, null, 2) + '\n');
     console.log(entry.name, actual.error ? 'error' : 'success', Math.round(actual.milliseconds));
+    if (actual.error && typeof actual.error.code !== 'number') throw new Error(`Regression transport failed: ${actual.error.message}`);
+  }
+  if (process.platform === 'win32') {
+    const { stdout } = await promisify(execFile)('powershell.exe', ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-File',
+      resolve(root, 'scripts/browser-memory.ps1'), '-ControllerProcessId', String(process.pid)], { windowsHide: true });
+    const memory = JSON.parse(stdout.replace(/^\uFEFF/u, ''));
+    await writeFile(resolve(outputDirectory, 'browser-memory.json'), JSON.stringify(memory, null, 2) + '\n');
   }
   await page.evaluate(() => ocr.close());
 } finally {

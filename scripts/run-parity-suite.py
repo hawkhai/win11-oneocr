@@ -11,6 +11,7 @@ def module(name,file):
     spec=importlib.util.spec_from_file_location(name,Path(__file__).with_name(file));value=importlib.util.module_from_spec(spec);spec.loader.exec_module(value);return value
 
 def main():
+    sys.stdout.reconfigure(encoding='utf8')
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--manifest',type=Path,required=True);p.add_argument('--baseline',type=Path,required=True);p.add_argument('--error-baseline',type=Path,help='Explicit frozen original-DLL error contracts, bound to image hashes');p.add_argument('--binary',type=Path,required=True);p.add_argument('--output',type=Path,required=True);args=p.parse_args()
     runner=module('corpus_runner','run-corpus.py');comparator=module('strict_comparator','compare-results.py')
     cases=json.loads(args.manifest.read_text(encoding='utf8'))['cases'];args.output.mkdir(parents=True,exist_ok=True);native=args.output/'native';native.mkdir(exist_ok=True);results=[]

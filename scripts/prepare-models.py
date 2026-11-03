@@ -12,6 +12,8 @@ import sys
 import onnx
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from model_config import settings
+from model_preparation import source_for_preparation
+from regression_reference import active_reference
 
 ROOT=Path(__file__).resolve().parents[1]
 SCRIPTS={'ArabicMixed':'arabic','CJKPrinted':'cjk','CyrillicMixed':'cyrillic','DevanagariMixed':'devanagari','GreekMixed':'greek','HebrewPrinted':'hebrew','LatinPrintedV2':'latin','TamilPrinted':'tamil','ThaiMixed':'thai'}
@@ -127,12 +129,14 @@ def prepare(source,models,unpacked):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--source',type=Path,default=ROOT/'bin/oneocr.onemodel')
+    p.add_argument('--source',type=Path,help='Local model; defaults to the active hash-bound reference, never silently to the legacy model')
     p.add_argument('--models',type=Path,default=ROOT/'models')
     p.add_argument('--unpacked',type=Path,default=ROOT/'work/oneocr-portable/unpacked')
     p.add_argument('--raw-only',action='store_true',help='Research only: skip portable graph conversion')
     p.add_argument('--evidence-dir',type=Path)
-    args=p.parse_args();prepare(args.source,args.models,args.unpacked)
+    args=p.parse_args()
+    args.source=source_for_preparation(ROOT,args.source,args.models,active_reference())
+    prepare(args.source,args.models,args.unpacked)
     if not args.raw_only:
         for script in ('inspect-models.py','convert-auxiliary.py'):
             command=[sys.executable,str(ROOT/'scripts'/script),'--models',str(args.models)]

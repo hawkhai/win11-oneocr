@@ -86,6 +86,8 @@ DSH 插件配置 `{ backend: 'wasm', timeoutMs: 600000 }` 后使用当前 Node �
 
 `createOneOcr` 支持 `loadAsset(relativePath)` 自定义资源读取、`onProgress({file, completed, total})` 加载进度及可选的 `manifestSha256`。引擎初始化会验证清单记录的模型、字表和元数据摘要；有可信的清单摘要时应传入 `manifestSha256`。清单校验不是模型来源权利声明，模型仍归微软所有。
 
+`runtimeUrl` 可传 URL 对象、绝对 URL 字符串，或相对 `oneocr.mjs` 的路径；`wasmUrl` 相对规范化后的运行模块 URL 解析。Node 的 `workerUrl` 同时接受 `file:` URL 对象及等价字符串，仍支持原来的文件系统路径。自定义 Worker 需采用同一消息协议。
+
 ## 从源码构建
 
 ### 数值适配
@@ -122,6 +124,10 @@ node test/wasm-test.mjs
 ```
 
 默认以 4 个独立实例运行所有样本、固定 27 项及书页，不遗漏三个拒绝用例；每项保留原始 JSON/错误、摘要、测量及严格比较报告。内存较少时可用 `--jobs 1`。输出目录须为空，避免残留结果掩盖失败。`--only book` 等选项只做诊断，不标记全量通过。
+
+比较器还检查 `line_count`、`word_count` 与数组长度一致，以及行/词 `index` 的整数类型和连续顺序；缺失字段、错误类型和非有限数值不能通过。主机文件路径与后端专属 `engine` 元数据不要求相等。坐标、角度和置信度阈值保持原值。
+
+可用 `--schedule-from` 指定同模型、同输入摘要的旧完整报告，仅利用耗时安排并行任务，不复用其识别结果。浏览器回归的单请求测试等待预算默认 30 分钟，可用 `--browser-timeout-ms` 调整，以容纳多进程 CPU 争用；这不会修改 Worker/插件的产品默认超时或任何数值验收阈值。Windows 浏览器回归在关闭前记录当前浏览器进程树的 OS 峰值工作集，各进程峰值之和只作为上界，不代表同时占用峰值。
 
 浏览器全量回归可使用本地 Chromium 和固定的 Playwright Core 1.55.0：
 

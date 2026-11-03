@@ -73,9 +73,10 @@ export async function createOneOcr({
   try { manifest = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(manifestBytes)); }
   catch (error) { throw new OneOcrError(-30, `Invalid model manifest: ${error.message}`, 'load'); }
   const files = modelAssetPaths(manifest);
-  const factory = moduleFactory ?? (await import(runtimeUrl.toString())).default;
+  const runtime = new URL(runtimeUrl, import.meta.url);
+  const factory = moduleFactory ?? (await import(runtime.href)).default;
   const configuration = {};
-  if (wasmUrl) configuration.locateFile = name => name.endsWith('.wasm') ? new URL(wasmUrl, runtimeUrl).href : name;
+  if (wasmUrl) configuration.locateFile = name => name.endsWith('.wasm') ? new URL(wasmUrl, runtime).href : name;
   const module = await factory(configuration);
   module.FS.mkdirTree('/models');
   module.FS.mkdirTree('/inputs');

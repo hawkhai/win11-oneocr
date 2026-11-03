@@ -212,6 +212,7 @@ def main():
                                    for p in sorted([*(ROOT/'native').rglob('*'), *(ROOT/'cmake').rglob('*'), *(ROOT/'web').rglob('*'),
                                                     ROOT/'CMakeLists.txt', ROOT/'json.hpp', ROOT/'stb_image.h',
                                                     ROOT/'scripts/build-wasm.py', ROOT/'scripts/run-wasm-parity.py',
+                                                    ROOT/'scripts/compare-results.py', ROOT/'scripts/browser-memory.ps1', ROOT/'test/compare-results-test.py',
                                                     ROOT/'test/wasm-test.mjs', ROOT/'research/dependencies.json']) if p.is_file()},
                   'files': {p.relative_to(output).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
                             for p in sorted(output.rglob('*')) if p.is_file() and p.name != 'BUILD.json'}}

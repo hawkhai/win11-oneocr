@@ -40,7 +40,10 @@ try {
   assert.deepEqual(blank.image, { width, height, step: stride });
 } finally { engine.close(); engine.close(); }
 assert.throws(() => engine.recognize(input), e => e.code === -12);
-const worker = await createOneOcrWorker({ ...configuration, timeoutMs: 120000 });
+const relative = await createOneOcr({ ...configuration, runtimeUrl: '../artifacts/wasm32/oneocr-core.mjs', wasmUrl: './oneocr-core.wasm' });
+try { assert.deepEqual(relative.recognize(input, { fileName: first.file }), first); }
+finally { relative.close(); }
+const worker = await createOneOcrWorker({ ...configuration, workerUrl: new URL('../web/worker.mjs', import.meta.url).href, timeoutMs: 120000 });
 try {
   const results = await Promise.all([worker.recognize(input, { fileName: first.file }), worker.recognize(input, { fileName: first.file })]);
   assert.deepEqual(results, [first, first]);
@@ -56,4 +59,4 @@ const pluginResult = await plugin.execute({ image_path: fileURLToPath(image) }, 
 const actualPlugin = JSON.parse(pluginResult.result);
 assert.deepEqual(actualPlugin.lines, first.lines);
 assert.equal(pluginResult.text, first.lines.map(line => line.text).filter(Boolean).join('\n'));
-console.log('Real Wasm API, ownership, BGRA stride, worker ordering, cancellation and timeout: PASS');
+console.log('Real Wasm API, relative runtime/Wasm URLs, file URL string worker, ownership, BGRA stride, worker ordering, cancellation and timeout: PASS');
