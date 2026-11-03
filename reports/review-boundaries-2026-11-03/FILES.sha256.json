@@ -1,0 +1,3482 @@
+{
+  "all-five/verification.json": {
+    "bytes": 276341,
+    "sha256": "a679bc5fc9ffd89c4b4c36042fd678130f3f46000760f03da00b4e5c10d02d7b"
+  },
+  "evidence/build.log.gz": {
+    "bytes": 3338,
+    "sha256": "d1074f0e946c72e04bc7839466ff3ff4037dd10272a2168ba8f66104543b8189"
+  },
+  "evidence/comparator-tests.log": {
+    "bytes": 111,
+    "sha256": "5a5f749959c4ae7181e38c088af369be85d1a42b1b45a6b98ce7e8fe0b1f8f64"
+  },
+  "evidence/compare-only-cli-tests.log": {
+    "bytes": 105,
+    "sha256": "348b6859a271cffeb4596fb95788367cd08bc4db73597428411b0858f7d9eef6"
+  },
+  "evidence/integrity.json": {
+    "bytes": 459,
+    "sha256": "468385d57de2776d469c8b8d67ad15ea6368d68567480f2dd49831f437264436"
+  },
+  "evidence/model-directory-tests.log": {
+    "bytes": 110,
+    "sha256": "a27464a5543834396c3aca2893c26a97dad49cdd99930d1eaca57f345f45a58b"
+  },
+  "evidence/verification-state-tests.log": {
+    "bytes": 109,
+    "sha256": "659d1b0e8f6aa0c1a9c1404ba54c1c16368766dba6ceaa4b794325b71b9b6599"
+  },
+  "final/all-five/verification.json": {
+    "bytes": 276341,
+    "sha256": "a679bc5fc9ffd89c4b4c36042fd678130f3f46000760f03da00b4e5c10d02d7b"
+  },
+  "final/saved/chrome/comparisons/book.json": {
+    "bytes": 257,
+    "sha256": "fe9e4fa766ffce3ad7d88ed2e762a4bb996647ff5d618c8bd6e237060e6689f0"
+  },
+  "final/saved/chrome/comparisons/corpus-arabic-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/corpus-blank.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/chrome/comparisons/corpus-cjk-18.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/corpus-cjk-36.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/corpus-cjk-rotate-0.5.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/corpus-cjk-rotate-10.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/corpus-cjk-rotate-180.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/corpus-cjk-rotate-270.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/corpus-cjk-rotate-3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/corpus-cjk-rotate-90.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/corpus-cyrillic-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/corpus-devanagari-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/corpus-greek-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/corpus-hebrew-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/corpus-latin-18.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/corpus-latin-36.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/corpus-latin-rotate-0.5.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/corpus-latin-rotate-10.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/corpus-latin-rotate-180.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/corpus-latin-rotate-270.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/corpus-latin-rotate-3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/corpus-latin-rotate-90.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/corpus-multi-column.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "final/saved/chrome/comparisons/corpus-tamil-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/corpus-thai-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/corpus-vertical-cjk.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/corpus-透明路径-emoji-😀.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-024e54a6c8e3ba17.json": {
+    "bytes": 251,
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5"
+  },
+  "final/saved/chrome/comparisons/sample-0486f0c2e5664aed.json": {
+    "bytes": 254,
+    "sha256": "3f9001132140c369616f969192de1dd253ac3500369f07d8eda18a58e6341323"
+  },
+  "final/saved/chrome/comparisons/sample-0582df7394486480.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "final/saved/chrome/comparisons/sample-058949810e7c76d3.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-0676d3f4ef6c5e2a.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-0b6fd6de5d12d93c.json": {
+    "bytes": 251,
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0"
+  },
+  "final/saved/chrome/comparisons/sample-0e06c211cb4a4831.json": {
+    "bytes": 257,
+    "sha256": "2135aed4aab91b45cc6ed272d1086ddc19d219a46ec3e822f5d6b4bec085b060"
+  },
+  "final/saved/chrome/comparisons/sample-0f2b4483dc0e1c98.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/chrome/comparisons/sample-0fc39af69da4cfed.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/sample-133a8c148862ce3a.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/sample-1460619f37acbd0c.json": {
+    "bytes": 254,
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44"
+  },
+  "final/saved/chrome/comparisons/sample-14f564d2b7d2e446.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/chrome/comparisons/sample-1aad6147b578f344.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/sample-1ea42cacfd82f6c0.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-203573ceb1873d5c.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-224ffeac6e0cd92d.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/sample-280528b4b1cb14b3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/sample-28e79bff204857cf.json": {
+    "bytes": 254,
+    "sha256": "ccbb575bd8ac13222ad13095612ba4d4a231cbf27a3aa95056a632a797f393bb"
+  },
+  "final/saved/chrome/comparisons/sample-2c2835cf707a4fe6.json": {
+    "bytes": 254,
+    "sha256": "3670f90c4f4620120fcae0c2418ae1de6008cbf8b4db95991c077c749b9233d4"
+  },
+  "final/saved/chrome/comparisons/sample-2db7bd9b6595c479.json": {
+    "bytes": 254,
+    "sha256": "03d34f9bde8aecda585739eb9cae56889719cd69c5b2f7f886734b7af51d2dd8"
+  },
+  "final/saved/chrome/comparisons/sample-2f4730c5e82e18ff.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-3255119646d641ba.json": {
+    "bytes": 254,
+    "sha256": "728511083d2333d85747b32cc63b584b8ce89633a8a905f278798f23e5b3012e"
+  },
+  "final/saved/chrome/comparisons/sample-3295ba0789edc763.json": {
+    "bytes": 251,
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5"
+  },
+  "final/saved/chrome/comparisons/sample-35b9cf211491fc5b.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "final/saved/chrome/comparisons/sample-39a29be9779394c5.json": {
+    "bytes": 254,
+    "sha256": "03d34f9bde8aecda585739eb9cae56889719cd69c5b2f7f886734b7af51d2dd8"
+  },
+  "final/saved/chrome/comparisons/sample-3aabaeed287f6784.json": {
+    "bytes": 257,
+    "sha256": "e1b4bf6a8bb8e496d7870c4e328528278f1a9c60cce40064e0102706734b4a02"
+  },
+  "final/saved/chrome/comparisons/sample-3c6e7c7ab6144e27.json": {
+    "bytes": 254,
+    "sha256": "1fbdcb75a944f910d47a221eed152df94aa8928ac5d7d55b26513a51602e3494"
+  },
+  "final/saved/chrome/comparisons/sample-4070a7afd9a7184b.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-4169c134c6189ae6.json": {
+    "bytes": 268,
+    "sha256": "0fea9b266e40c2023cb8dd1fcecc21f4a9d60dda8d5f2bd4b0e142a628c33b3f"
+  },
+  "final/saved/chrome/comparisons/sample-41b45e5a7c1f065c.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/sample-426c4c4b4327f07c.json": {
+    "bytes": 254,
+    "sha256": "ee8f3169813a79203eb12131c86e97c7f2ad9e6322afcf7dc8d2c046cf55a143"
+  },
+  "final/saved/chrome/comparisons/sample-440f10edac8d7c0b.json": {
+    "bytes": 268,
+    "sha256": "0fea9b266e40c2023cb8dd1fcecc21f4a9d60dda8d5f2bd4b0e142a628c33b3f"
+  },
+  "final/saved/chrome/comparisons/sample-44d499f3f15ffc62.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "final/saved/chrome/comparisons/sample-4a2cab3fdba7faea.json": {
+    "bytes": 257,
+    "sha256": "b086455188ae5813285e6aa3425f0b95c398fc46527d1026dafb636370bff842"
+  },
+  "final/saved/chrome/comparisons/sample-4cb3c7f3a7eae8bb.json": {
+    "bytes": 254,
+    "sha256": "f07b3d0b122ea62989745db75430ad7ebf81f5b6495ca4c8bd04a1982278e5f7"
+  },
+  "final/saved/chrome/comparisons/sample-4f45cf0e51f46a54.json": {
+    "bytes": 254,
+    "sha256": "aa0fea56c8c56dee0e1814c7e36d36a8014f18c33f2cc1e825ab8f15ce24812c"
+  },
+  "final/saved/chrome/comparisons/sample-4f4c989c97595b6e.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/chrome/comparisons/sample-4fceece9f2d76a6e.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-512b352f18af3f4f.json": {
+    "bytes": 254,
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02"
+  },
+  "final/saved/chrome/comparisons/sample-55932e69942ed683.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-5f9d77976f578583.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/sample-5fa29af9e63fefc2.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-60f7669b6fa86751.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-640bb28cd64c2e5b.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "final/saved/chrome/comparisons/sample-6692328598e9c3a8.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "final/saved/chrome/comparisons/sample-6a86cb9011438813.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-71fe5f6e6888b73b.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-728b694ae01441a4.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/sample-7750735bcbce34ec.json": {
+    "bytes": 254,
+    "sha256": "4e88bd421f7cb6b33b5b6d60693604b8181459828a1d27ce8a7312affb1f5c15"
+  },
+  "final/saved/chrome/comparisons/sample-7d60dfc27e54a03b.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "final/saved/chrome/comparisons/sample-8229419c872341b9.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-83a365509f1cc2b7.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "final/saved/chrome/comparisons/sample-86a7ffe5513e5633.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "final/saved/chrome/comparisons/sample-8d1e2d06c5f24990.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/sample-903c40f10a92c762.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "final/saved/chrome/comparisons/sample-913b6e2fbe4c0d3b.json": {
+    "bytes": 254,
+    "sha256": "8014c99d189a8ad420bfafddcef98583edd9538bae8f71f4d82495a8bdab5a0e"
+  },
+  "final/saved/chrome/comparisons/sample-914953ff8fb9b879.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/chrome/comparisons/sample-946c5faeaa0f2ec5.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "final/saved/chrome/comparisons/sample-9a0e9586ac3fe4e2.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "final/saved/chrome/comparisons/sample-9b462fed1772311b.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "final/saved/chrome/comparisons/sample-9d004236328aca8f.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "final/saved/chrome/comparisons/sample-9d80e98d12d362b3.json": {
+    "bytes": 254,
+    "sha256": "22a11bc3c67a69cbf8604e58d3a68ca77d47ad49d1f3bca2e67df4ff206d1cc3"
+  },
+  "final/saved/chrome/comparisons/sample-9e131b7b56e565db.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/chrome/comparisons/sample-9e2ab94f59cf15f8.json": {
+    "bytes": 254,
+    "sha256": "260f2faa1127060366c3c302caa364e51dc722330115427653cfecdc71a850eb"
+  },
+  "final/saved/chrome/comparisons/sample-9f735a010e88a648.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/chrome/comparisons/sample-a2446851712be525.json": {
+    "bytes": 254,
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485"
+  },
+  "final/saved/chrome/comparisons/sample-a24e31eb0aa23b4f.json": {
+    "bytes": 254,
+    "sha256": "57e838ea54a4468f03371b0f8d3652dfb5f2371b22e10541bdf61334814a61e0"
+  },
+  "final/saved/chrome/comparisons/sample-a45fc642aa130558.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-a744c24e96808cb4.json": {
+    "bytes": 254,
+    "sha256": "c3dc63ec8263de419e813395d0e841df828d17f800bc83bc3d8ce4707f1823a5"
+  },
+  "final/saved/chrome/comparisons/sample-a83d2bf9aa769ebd.json": {
+    "bytes": 254,
+    "sha256": "22a11bc3c67a69cbf8604e58d3a68ca77d47ad49d1f3bca2e67df4ff206d1cc3"
+  },
+  "final/saved/chrome/comparisons/sample-a87dd8607e0fda5f.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "final/saved/chrome/comparisons/sample-a9819bb8f9e9f5ef.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "final/saved/chrome/comparisons/sample-a99b928ceb0f443e.json": {
+    "bytes": 254,
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485"
+  },
+  "final/saved/chrome/comparisons/sample-ab78d5d64fd48439.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/sample-ab902c56bd93d342.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "final/saved/chrome/comparisons/sample-abad7ae0707ac749.json": {
+    "bytes": 254,
+    "sha256": "06fda8c0c1d50a5df59a9537d01986740889d8a086e4c735e62255c5ee40e7ef"
+  },
+  "final/saved/chrome/comparisons/sample-b0d25177b1a8480c.json": {
+    "bytes": 257,
+    "sha256": "b05da171e6d572852165ddb8ce34baf226ce59280b8f6cc01fdb146879af34aa"
+  },
+  "final/saved/chrome/comparisons/sample-b3edaa47ba780e0c.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "final/saved/chrome/comparisons/sample-b563bb5b3e206ad7.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "final/saved/chrome/comparisons/sample-bbbd4ae8468a6451.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/chrome/comparisons/sample-be771810db2def78.json": {
+    "bytes": 254,
+    "sha256": "a0474f8d704d90764f51194ebb9a423bcd8d6972eb80a2095aca28d46d2b686e"
+  },
+  "final/saved/chrome/comparisons/sample-c062c4f8b726c822.json": {
+    "bytes": 254,
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44"
+  },
+  "final/saved/chrome/comparisons/sample-c159f2e4564feb4f.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-c323ed4e5eccd42e.json": {
+    "bytes": 254,
+    "sha256": "3f9001132140c369616f969192de1dd253ac3500369f07d8eda18a58e6341323"
+  },
+  "final/saved/chrome/comparisons/sample-c45a727514fb8982.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "final/saved/chrome/comparisons/sample-c777a45d62cce90a.json": {
+    "bytes": 254,
+    "sha256": "539b4f795d73ad152f72d7e0bc47664199540eac3ba7885ec9fc93a93b4f6ecc"
+  },
+  "final/saved/chrome/comparisons/sample-c8cde51505833347.json": {
+    "bytes": 254,
+    "sha256": "85c956eece3f6895aab21d39ed4284123d976e327bb80a2d3a269a36dd051a01"
+  },
+  "final/saved/chrome/comparisons/sample-c9a092125962e322.json": {
+    "bytes": 254,
+    "sha256": "062b8cb128256bac5afeedd71cc6ec2c12837c4f0f8beb2e4d9a4dae95a00e24"
+  },
+  "final/saved/chrome/comparisons/sample-c9b8504f28656bb2.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/chrome/comparisons/sample-cb5009e20bb1123a.json": {
+    "bytes": 254,
+    "sha256": "09e7050a340b4b445bf853177bd61db15955d4068295dea3674f4d95d2ebee17"
+  },
+  "final/saved/chrome/comparisons/sample-cc5c505c9a91f65a.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/chrome/comparisons/sample-cc615a3e5cb1499e.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/chrome/comparisons/sample-da00952f9e92b062.json": {
+    "bytes": 254,
+    "sha256": "70a3f517c1368091e412e3a5899f6255b0904a71c9188c4ffd2e4ceafa03cba9"
+  },
+  "final/saved/chrome/comparisons/sample-db4b91782dd3efb7.json": {
+    "bytes": 254,
+    "sha256": "251ec8348aee23ae6df587a1e26a0134c0ee740295b8c18d8465a7d3f4b766b3"
+  },
+  "final/saved/chrome/comparisons/sample-de744546e5b8a0e6.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "final/saved/chrome/comparisons/sample-de900bc558f2dca8.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/chrome/comparisons/sample-df2560f7906cab6d.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "final/saved/chrome/comparisons/sample-e2147debb746e953.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "final/saved/chrome/comparisons/sample-e3d262776302832f.json": {
+    "bytes": 254,
+    "sha256": "09e7050a340b4b445bf853177bd61db15955d4068295dea3674f4d95d2ebee17"
+  },
+  "final/saved/chrome/comparisons/sample-e4d10781d3be6992.json": {
+    "bytes": 248,
+    "sha256": "88558c3d9514a3624a4539934a474e532f3be02396ad73cd923a989f87bd59d2"
+  },
+  "final/saved/chrome/comparisons/sample-e56ebcbad4b3ec61.json": {
+    "bytes": 254,
+    "sha256": "4497b60925b216db8f5008973d6272c89c90a6de40249fc2f508365364c2c305"
+  },
+  "final/saved/chrome/comparisons/sample-e6c08e3cc9b0eb2f.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/chrome/comparisons/sample-e8417890fea95361.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/sample-eae7f502cfea5855.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/sample-eb1b381667716066.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "final/saved/chrome/comparisons/sample-eb6e81323fe050ef.json": {
+    "bytes": 254,
+    "sha256": "4497b60925b216db8f5008973d6272c89c90a6de40249fc2f508365364c2c305"
+  },
+  "final/saved/chrome/comparisons/sample-ed5b69a9711e3f53.json": {
+    "bytes": 254,
+    "sha256": "251ec8348aee23ae6df587a1e26a0134c0ee740295b8c18d8465a7d3f4b766b3"
+  },
+  "final/saved/chrome/comparisons/sample-f06b8315200c1abb.json": {
+    "bytes": 254,
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02"
+  },
+  "final/saved/chrome/comparisons/sample-f9dcd81f8ca741ba.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/chrome/comparisons/sample-fd9577ef8f62f6a7.json": {
+    "bytes": 254,
+    "sha256": "ccbb575bd8ac13222ad13095612ba4d4a231cbf27a3aa95056a632a797f393bb"
+  },
+  "final/saved/chrome/verification.json": {
+    "bytes": 113718,
+    "sha256": "165348575433d07509f790971b713c02941c7d4d80e09cb747e7b435e4220b00"
+  },
+  "final/saved/linux-node/comparisons/book.json": {
+    "bytes": 257,
+    "sha256": "fe9e4fa766ffce3ad7d88ed2e762a4bb996647ff5d618c8bd6e237060e6689f0"
+  },
+  "final/saved/linux-node/comparisons/corpus-arabic-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/corpus-blank.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/linux-node/comparisons/corpus-cjk-18.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/corpus-cjk-36.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/corpus-cjk-rotate-0.5.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/corpus-cjk-rotate-10.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/corpus-cjk-rotate-180.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/corpus-cjk-rotate-270.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/corpus-cjk-rotate-3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/corpus-cjk-rotate-90.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/corpus-cyrillic-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/corpus-devanagari-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/corpus-greek-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/corpus-hebrew-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/corpus-latin-18.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/corpus-latin-36.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/corpus-latin-rotate-0.5.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/corpus-latin-rotate-10.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/corpus-latin-rotate-180.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/corpus-latin-rotate-270.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/corpus-latin-rotate-3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/corpus-latin-rotate-90.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/corpus-multi-column.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "final/saved/linux-node/comparisons/corpus-tamil-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/corpus-thai-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/corpus-vertical-cjk.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/corpus-透明路径-emoji-😀.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-024e54a6c8e3ba17.json": {
+    "bytes": 251,
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5"
+  },
+  "final/saved/linux-node/comparisons/sample-0486f0c2e5664aed.json": {
+    "bytes": 254,
+    "sha256": "3f9001132140c369616f969192de1dd253ac3500369f07d8eda18a58e6341323"
+  },
+  "final/saved/linux-node/comparisons/sample-0582df7394486480.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "final/saved/linux-node/comparisons/sample-058949810e7c76d3.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-0676d3f4ef6c5e2a.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-0b6fd6de5d12d93c.json": {
+    "bytes": 251,
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0"
+  },
+  "final/saved/linux-node/comparisons/sample-0e06c211cb4a4831.json": {
+    "bytes": 257,
+    "sha256": "2135aed4aab91b45cc6ed272d1086ddc19d219a46ec3e822f5d6b4bec085b060"
+  },
+  "final/saved/linux-node/comparisons/sample-0f2b4483dc0e1c98.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/linux-node/comparisons/sample-0fc39af69da4cfed.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/sample-133a8c148862ce3a.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/sample-1460619f37acbd0c.json": {
+    "bytes": 254,
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44"
+  },
+  "final/saved/linux-node/comparisons/sample-14f564d2b7d2e446.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/linux-node/comparisons/sample-1aad6147b578f344.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/sample-1ea42cacfd82f6c0.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-203573ceb1873d5c.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-224ffeac6e0cd92d.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/sample-280528b4b1cb14b3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/sample-28e79bff204857cf.json": {
+    "bytes": 254,
+    "sha256": "ccbb575bd8ac13222ad13095612ba4d4a231cbf27a3aa95056a632a797f393bb"
+  },
+  "final/saved/linux-node/comparisons/sample-2c2835cf707a4fe6.json": {
+    "bytes": 254,
+    "sha256": "3670f90c4f4620120fcae0c2418ae1de6008cbf8b4db95991c077c749b9233d4"
+  },
+  "final/saved/linux-node/comparisons/sample-2db7bd9b6595c479.json": {
+    "bytes": 254,
+    "sha256": "03d34f9bde8aecda585739eb9cae56889719cd69c5b2f7f886734b7af51d2dd8"
+  },
+  "final/saved/linux-node/comparisons/sample-2f4730c5e82e18ff.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-3255119646d641ba.json": {
+    "bytes": 254,
+    "sha256": "728511083d2333d85747b32cc63b584b8ce89633a8a905f278798f23e5b3012e"
+  },
+  "final/saved/linux-node/comparisons/sample-3295ba0789edc763.json": {
+    "bytes": 251,
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5"
+  },
+  "final/saved/linux-node/comparisons/sample-35b9cf211491fc5b.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "final/saved/linux-node/comparisons/sample-39a29be9779394c5.json": {
+    "bytes": 254,
+    "sha256": "03d34f9bde8aecda585739eb9cae56889719cd69c5b2f7f886734b7af51d2dd8"
+  },
+  "final/saved/linux-node/comparisons/sample-3aabaeed287f6784.json": {
+    "bytes": 257,
+    "sha256": "e1b4bf6a8bb8e496d7870c4e328528278f1a9c60cce40064e0102706734b4a02"
+  },
+  "final/saved/linux-node/comparisons/sample-3c6e7c7ab6144e27.json": {
+    "bytes": 254,
+    "sha256": "1fbdcb75a944f910d47a221eed152df94aa8928ac5d7d55b26513a51602e3494"
+  },
+  "final/saved/linux-node/comparisons/sample-4070a7afd9a7184b.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-4169c134c6189ae6.json": {
+    "bytes": 268,
+    "sha256": "0fea9b266e40c2023cb8dd1fcecc21f4a9d60dda8d5f2bd4b0e142a628c33b3f"
+  },
+  "final/saved/linux-node/comparisons/sample-41b45e5a7c1f065c.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/sample-426c4c4b4327f07c.json": {
+    "bytes": 254,
+    "sha256": "ee8f3169813a79203eb12131c86e97c7f2ad9e6322afcf7dc8d2c046cf55a143"
+  },
+  "final/saved/linux-node/comparisons/sample-440f10edac8d7c0b.json": {
+    "bytes": 268,
+    "sha256": "0fea9b266e40c2023cb8dd1fcecc21f4a9d60dda8d5f2bd4b0e142a628c33b3f"
+  },
+  "final/saved/linux-node/comparisons/sample-44d499f3f15ffc62.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "final/saved/linux-node/comparisons/sample-4a2cab3fdba7faea.json": {
+    "bytes": 257,
+    "sha256": "b086455188ae5813285e6aa3425f0b95c398fc46527d1026dafb636370bff842"
+  },
+  "final/saved/linux-node/comparisons/sample-4cb3c7f3a7eae8bb.json": {
+    "bytes": 254,
+    "sha256": "f07b3d0b122ea62989745db75430ad7ebf81f5b6495ca4c8bd04a1982278e5f7"
+  },
+  "final/saved/linux-node/comparisons/sample-4f45cf0e51f46a54.json": {
+    "bytes": 254,
+    "sha256": "aa0fea56c8c56dee0e1814c7e36d36a8014f18c33f2cc1e825ab8f15ce24812c"
+  },
+  "final/saved/linux-node/comparisons/sample-4f4c989c97595b6e.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/linux-node/comparisons/sample-4fceece9f2d76a6e.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-512b352f18af3f4f.json": {
+    "bytes": 254,
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02"
+  },
+  "final/saved/linux-node/comparisons/sample-55932e69942ed683.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-5f9d77976f578583.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/sample-5fa29af9e63fefc2.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-60f7669b6fa86751.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-640bb28cd64c2e5b.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "final/saved/linux-node/comparisons/sample-6692328598e9c3a8.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "final/saved/linux-node/comparisons/sample-6a86cb9011438813.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-71fe5f6e6888b73b.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-728b694ae01441a4.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/sample-7750735bcbce34ec.json": {
+    "bytes": 254,
+    "sha256": "4e88bd421f7cb6b33b5b6d60693604b8181459828a1d27ce8a7312affb1f5c15"
+  },
+  "final/saved/linux-node/comparisons/sample-7d60dfc27e54a03b.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "final/saved/linux-node/comparisons/sample-8229419c872341b9.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-83a365509f1cc2b7.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "final/saved/linux-node/comparisons/sample-86a7ffe5513e5633.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "final/saved/linux-node/comparisons/sample-8d1e2d06c5f24990.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/sample-903c40f10a92c762.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "final/saved/linux-node/comparisons/sample-913b6e2fbe4c0d3b.json": {
+    "bytes": 254,
+    "sha256": "8014c99d189a8ad420bfafddcef98583edd9538bae8f71f4d82495a8bdab5a0e"
+  },
+  "final/saved/linux-node/comparisons/sample-914953ff8fb9b879.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/linux-node/comparisons/sample-946c5faeaa0f2ec5.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "final/saved/linux-node/comparisons/sample-9a0e9586ac3fe4e2.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "final/saved/linux-node/comparisons/sample-9b462fed1772311b.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "final/saved/linux-node/comparisons/sample-9d004236328aca8f.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "final/saved/linux-node/comparisons/sample-9d80e98d12d362b3.json": {
+    "bytes": 254,
+    "sha256": "22a11bc3c67a69cbf8604e58d3a68ca77d47ad49d1f3bca2e67df4ff206d1cc3"
+  },
+  "final/saved/linux-node/comparisons/sample-9e131b7b56e565db.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/linux-node/comparisons/sample-9e2ab94f59cf15f8.json": {
+    "bytes": 254,
+    "sha256": "260f2faa1127060366c3c302caa364e51dc722330115427653cfecdc71a850eb"
+  },
+  "final/saved/linux-node/comparisons/sample-9f735a010e88a648.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/linux-node/comparisons/sample-a2446851712be525.json": {
+    "bytes": 254,
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485"
+  },
+  "final/saved/linux-node/comparisons/sample-a24e31eb0aa23b4f.json": {
+    "bytes": 254,
+    "sha256": "57e838ea54a4468f03371b0f8d3652dfb5f2371b22e10541bdf61334814a61e0"
+  },
+  "final/saved/linux-node/comparisons/sample-a45fc642aa130558.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-a744c24e96808cb4.json": {
+    "bytes": 254,
+    "sha256": "c3dc63ec8263de419e813395d0e841df828d17f800bc83bc3d8ce4707f1823a5"
+  },
+  "final/saved/linux-node/comparisons/sample-a83d2bf9aa769ebd.json": {
+    "bytes": 254,
+    "sha256": "22a11bc3c67a69cbf8604e58d3a68ca77d47ad49d1f3bca2e67df4ff206d1cc3"
+  },
+  "final/saved/linux-node/comparisons/sample-a87dd8607e0fda5f.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "final/saved/linux-node/comparisons/sample-a9819bb8f9e9f5ef.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "final/saved/linux-node/comparisons/sample-a99b928ceb0f443e.json": {
+    "bytes": 254,
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485"
+  },
+  "final/saved/linux-node/comparisons/sample-ab78d5d64fd48439.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/sample-ab902c56bd93d342.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "final/saved/linux-node/comparisons/sample-abad7ae0707ac749.json": {
+    "bytes": 254,
+    "sha256": "06fda8c0c1d50a5df59a9537d01986740889d8a086e4c735e62255c5ee40e7ef"
+  },
+  "final/saved/linux-node/comparisons/sample-b0d25177b1a8480c.json": {
+    "bytes": 257,
+    "sha256": "b05da171e6d572852165ddb8ce34baf226ce59280b8f6cc01fdb146879af34aa"
+  },
+  "final/saved/linux-node/comparisons/sample-b3edaa47ba780e0c.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "final/saved/linux-node/comparisons/sample-b563bb5b3e206ad7.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "final/saved/linux-node/comparisons/sample-bbbd4ae8468a6451.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/linux-node/comparisons/sample-be771810db2def78.json": {
+    "bytes": 254,
+    "sha256": "a0474f8d704d90764f51194ebb9a423bcd8d6972eb80a2095aca28d46d2b686e"
+  },
+  "final/saved/linux-node/comparisons/sample-c062c4f8b726c822.json": {
+    "bytes": 254,
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44"
+  },
+  "final/saved/linux-node/comparisons/sample-c159f2e4564feb4f.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-c323ed4e5eccd42e.json": {
+    "bytes": 254,
+    "sha256": "3f9001132140c369616f969192de1dd253ac3500369f07d8eda18a58e6341323"
+  },
+  "final/saved/linux-node/comparisons/sample-c45a727514fb8982.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "final/saved/linux-node/comparisons/sample-c777a45d62cce90a.json": {
+    "bytes": 254,
+    "sha256": "539b4f795d73ad152f72d7e0bc47664199540eac3ba7885ec9fc93a93b4f6ecc"
+  },
+  "final/saved/linux-node/comparisons/sample-c8cde51505833347.json": {
+    "bytes": 254,
+    "sha256": "85c956eece3f6895aab21d39ed4284123d976e327bb80a2d3a269a36dd051a01"
+  },
+  "final/saved/linux-node/comparisons/sample-c9a092125962e322.json": {
+    "bytes": 254,
+    "sha256": "062b8cb128256bac5afeedd71cc6ec2c12837c4f0f8beb2e4d9a4dae95a00e24"
+  },
+  "final/saved/linux-node/comparisons/sample-c9b8504f28656bb2.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/linux-node/comparisons/sample-cb5009e20bb1123a.json": {
+    "bytes": 254,
+    "sha256": "09e7050a340b4b445bf853177bd61db15955d4068295dea3674f4d95d2ebee17"
+  },
+  "final/saved/linux-node/comparisons/sample-cc5c505c9a91f65a.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/linux-node/comparisons/sample-cc615a3e5cb1499e.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/linux-node/comparisons/sample-da00952f9e92b062.json": {
+    "bytes": 254,
+    "sha256": "70a3f517c1368091e412e3a5899f6255b0904a71c9188c4ffd2e4ceafa03cba9"
+  },
+  "final/saved/linux-node/comparisons/sample-db4b91782dd3efb7.json": {
+    "bytes": 254,
+    "sha256": "251ec8348aee23ae6df587a1e26a0134c0ee740295b8c18d8465a7d3f4b766b3"
+  },
+  "final/saved/linux-node/comparisons/sample-de744546e5b8a0e6.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "final/saved/linux-node/comparisons/sample-de900bc558f2dca8.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/linux-node/comparisons/sample-df2560f7906cab6d.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "final/saved/linux-node/comparisons/sample-e2147debb746e953.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "final/saved/linux-node/comparisons/sample-e3d262776302832f.json": {
+    "bytes": 254,
+    "sha256": "09e7050a340b4b445bf853177bd61db15955d4068295dea3674f4d95d2ebee17"
+  },
+  "final/saved/linux-node/comparisons/sample-e4d10781d3be6992.json": {
+    "bytes": 248,
+    "sha256": "88558c3d9514a3624a4539934a474e532f3be02396ad73cd923a989f87bd59d2"
+  },
+  "final/saved/linux-node/comparisons/sample-e56ebcbad4b3ec61.json": {
+    "bytes": 254,
+    "sha256": "4497b60925b216db8f5008973d6272c89c90a6de40249fc2f508365364c2c305"
+  },
+  "final/saved/linux-node/comparisons/sample-e6c08e3cc9b0eb2f.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/linux-node/comparisons/sample-e8417890fea95361.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/sample-eae7f502cfea5855.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/sample-eb1b381667716066.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "final/saved/linux-node/comparisons/sample-eb6e81323fe050ef.json": {
+    "bytes": 254,
+    "sha256": "4497b60925b216db8f5008973d6272c89c90a6de40249fc2f508365364c2c305"
+  },
+  "final/saved/linux-node/comparisons/sample-ed5b69a9711e3f53.json": {
+    "bytes": 254,
+    "sha256": "251ec8348aee23ae6df587a1e26a0134c0ee740295b8c18d8465a7d3f4b766b3"
+  },
+  "final/saved/linux-node/comparisons/sample-f06b8315200c1abb.json": {
+    "bytes": 254,
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02"
+  },
+  "final/saved/linux-node/comparisons/sample-f9dcd81f8ca741ba.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/linux-node/comparisons/sample-fd9577ef8f62f6a7.json": {
+    "bytes": 254,
+    "sha256": "ccbb575bd8ac13222ad13095612ba4d4a231cbf27a3aa95056a632a797f393bb"
+  },
+  "final/saved/linux-node/verification.json": {
+    "bytes": 111200,
+    "sha256": "5cb0dac9864e89cd2d4242e19004a521dc19cd6f412ab5e9e73a57c91e6663af"
+  },
+  "final/saved/windows-node/comparisons/book.json": {
+    "bytes": 257,
+    "sha256": "fe9e4fa766ffce3ad7d88ed2e762a4bb996647ff5d618c8bd6e237060e6689f0"
+  },
+  "final/saved/windows-node/comparisons/corpus-arabic-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/corpus-blank.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/windows-node/comparisons/corpus-cjk-18.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/corpus-cjk-36.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/corpus-cjk-rotate-0.5.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/corpus-cjk-rotate-10.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/corpus-cjk-rotate-180.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/corpus-cjk-rotate-270.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/corpus-cjk-rotate-3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/corpus-cjk-rotate-90.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/corpus-cyrillic-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/corpus-devanagari-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/corpus-greek-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/corpus-hebrew-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/corpus-latin-18.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/corpus-latin-36.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/corpus-latin-rotate-0.5.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/corpus-latin-rotate-10.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/corpus-latin-rotate-180.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/corpus-latin-rotate-270.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/corpus-latin-rotate-3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/corpus-latin-rotate-90.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/corpus-multi-column.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "final/saved/windows-node/comparisons/corpus-tamil-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/corpus-thai-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/corpus-vertical-cjk.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/corpus-透明路径-emoji-😀.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-024e54a6c8e3ba17.json": {
+    "bytes": 251,
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5"
+  },
+  "final/saved/windows-node/comparisons/sample-0486f0c2e5664aed.json": {
+    "bytes": 254,
+    "sha256": "3f9001132140c369616f969192de1dd253ac3500369f07d8eda18a58e6341323"
+  },
+  "final/saved/windows-node/comparisons/sample-0582df7394486480.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "final/saved/windows-node/comparisons/sample-058949810e7c76d3.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-0676d3f4ef6c5e2a.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-0b6fd6de5d12d93c.json": {
+    "bytes": 251,
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0"
+  },
+  "final/saved/windows-node/comparisons/sample-0e06c211cb4a4831.json": {
+    "bytes": 257,
+    "sha256": "2135aed4aab91b45cc6ed272d1086ddc19d219a46ec3e822f5d6b4bec085b060"
+  },
+  "final/saved/windows-node/comparisons/sample-0f2b4483dc0e1c98.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/windows-node/comparisons/sample-0fc39af69da4cfed.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/sample-133a8c148862ce3a.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/sample-1460619f37acbd0c.json": {
+    "bytes": 254,
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44"
+  },
+  "final/saved/windows-node/comparisons/sample-14f564d2b7d2e446.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/windows-node/comparisons/sample-1aad6147b578f344.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/sample-1ea42cacfd82f6c0.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-203573ceb1873d5c.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-224ffeac6e0cd92d.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/sample-280528b4b1cb14b3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/sample-28e79bff204857cf.json": {
+    "bytes": 254,
+    "sha256": "ccbb575bd8ac13222ad13095612ba4d4a231cbf27a3aa95056a632a797f393bb"
+  },
+  "final/saved/windows-node/comparisons/sample-2c2835cf707a4fe6.json": {
+    "bytes": 254,
+    "sha256": "3670f90c4f4620120fcae0c2418ae1de6008cbf8b4db95991c077c749b9233d4"
+  },
+  "final/saved/windows-node/comparisons/sample-2db7bd9b6595c479.json": {
+    "bytes": 254,
+    "sha256": "03d34f9bde8aecda585739eb9cae56889719cd69c5b2f7f886734b7af51d2dd8"
+  },
+  "final/saved/windows-node/comparisons/sample-2f4730c5e82e18ff.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-3255119646d641ba.json": {
+    "bytes": 254,
+    "sha256": "728511083d2333d85747b32cc63b584b8ce89633a8a905f278798f23e5b3012e"
+  },
+  "final/saved/windows-node/comparisons/sample-3295ba0789edc763.json": {
+    "bytes": 251,
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5"
+  },
+  "final/saved/windows-node/comparisons/sample-35b9cf211491fc5b.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "final/saved/windows-node/comparisons/sample-39a29be9779394c5.json": {
+    "bytes": 254,
+    "sha256": "03d34f9bde8aecda585739eb9cae56889719cd69c5b2f7f886734b7af51d2dd8"
+  },
+  "final/saved/windows-node/comparisons/sample-3aabaeed287f6784.json": {
+    "bytes": 257,
+    "sha256": "e1b4bf6a8bb8e496d7870c4e328528278f1a9c60cce40064e0102706734b4a02"
+  },
+  "final/saved/windows-node/comparisons/sample-3c6e7c7ab6144e27.json": {
+    "bytes": 254,
+    "sha256": "1fbdcb75a944f910d47a221eed152df94aa8928ac5d7d55b26513a51602e3494"
+  },
+  "final/saved/windows-node/comparisons/sample-4070a7afd9a7184b.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-4169c134c6189ae6.json": {
+    "bytes": 268,
+    "sha256": "0fea9b266e40c2023cb8dd1fcecc21f4a9d60dda8d5f2bd4b0e142a628c33b3f"
+  },
+  "final/saved/windows-node/comparisons/sample-41b45e5a7c1f065c.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/sample-426c4c4b4327f07c.json": {
+    "bytes": 254,
+    "sha256": "ee8f3169813a79203eb12131c86e97c7f2ad9e6322afcf7dc8d2c046cf55a143"
+  },
+  "final/saved/windows-node/comparisons/sample-440f10edac8d7c0b.json": {
+    "bytes": 268,
+    "sha256": "0fea9b266e40c2023cb8dd1fcecc21f4a9d60dda8d5f2bd4b0e142a628c33b3f"
+  },
+  "final/saved/windows-node/comparisons/sample-44d499f3f15ffc62.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "final/saved/windows-node/comparisons/sample-4a2cab3fdba7faea.json": {
+    "bytes": 257,
+    "sha256": "b086455188ae5813285e6aa3425f0b95c398fc46527d1026dafb636370bff842"
+  },
+  "final/saved/windows-node/comparisons/sample-4cb3c7f3a7eae8bb.json": {
+    "bytes": 254,
+    "sha256": "f07b3d0b122ea62989745db75430ad7ebf81f5b6495ca4c8bd04a1982278e5f7"
+  },
+  "final/saved/windows-node/comparisons/sample-4f45cf0e51f46a54.json": {
+    "bytes": 254,
+    "sha256": "aa0fea56c8c56dee0e1814c7e36d36a8014f18c33f2cc1e825ab8f15ce24812c"
+  },
+  "final/saved/windows-node/comparisons/sample-4f4c989c97595b6e.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/windows-node/comparisons/sample-4fceece9f2d76a6e.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-512b352f18af3f4f.json": {
+    "bytes": 254,
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02"
+  },
+  "final/saved/windows-node/comparisons/sample-55932e69942ed683.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-5f9d77976f578583.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/sample-5fa29af9e63fefc2.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-60f7669b6fa86751.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-640bb28cd64c2e5b.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "final/saved/windows-node/comparisons/sample-6692328598e9c3a8.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "final/saved/windows-node/comparisons/sample-6a86cb9011438813.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-71fe5f6e6888b73b.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-728b694ae01441a4.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/sample-7750735bcbce34ec.json": {
+    "bytes": 254,
+    "sha256": "4e88bd421f7cb6b33b5b6d60693604b8181459828a1d27ce8a7312affb1f5c15"
+  },
+  "final/saved/windows-node/comparisons/sample-7d60dfc27e54a03b.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "final/saved/windows-node/comparisons/sample-8229419c872341b9.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-83a365509f1cc2b7.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "final/saved/windows-node/comparisons/sample-86a7ffe5513e5633.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "final/saved/windows-node/comparisons/sample-8d1e2d06c5f24990.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/sample-903c40f10a92c762.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "final/saved/windows-node/comparisons/sample-913b6e2fbe4c0d3b.json": {
+    "bytes": 254,
+    "sha256": "8014c99d189a8ad420bfafddcef98583edd9538bae8f71f4d82495a8bdab5a0e"
+  },
+  "final/saved/windows-node/comparisons/sample-914953ff8fb9b879.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/windows-node/comparisons/sample-946c5faeaa0f2ec5.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "final/saved/windows-node/comparisons/sample-9a0e9586ac3fe4e2.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "final/saved/windows-node/comparisons/sample-9b462fed1772311b.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "final/saved/windows-node/comparisons/sample-9d004236328aca8f.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "final/saved/windows-node/comparisons/sample-9d80e98d12d362b3.json": {
+    "bytes": 254,
+    "sha256": "22a11bc3c67a69cbf8604e58d3a68ca77d47ad49d1f3bca2e67df4ff206d1cc3"
+  },
+  "final/saved/windows-node/comparisons/sample-9e131b7b56e565db.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/windows-node/comparisons/sample-9e2ab94f59cf15f8.json": {
+    "bytes": 254,
+    "sha256": "260f2faa1127060366c3c302caa364e51dc722330115427653cfecdc71a850eb"
+  },
+  "final/saved/windows-node/comparisons/sample-9f735a010e88a648.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/windows-node/comparisons/sample-a2446851712be525.json": {
+    "bytes": 254,
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485"
+  },
+  "final/saved/windows-node/comparisons/sample-a24e31eb0aa23b4f.json": {
+    "bytes": 254,
+    "sha256": "57e838ea54a4468f03371b0f8d3652dfb5f2371b22e10541bdf61334814a61e0"
+  },
+  "final/saved/windows-node/comparisons/sample-a45fc642aa130558.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-a744c24e96808cb4.json": {
+    "bytes": 254,
+    "sha256": "c3dc63ec8263de419e813395d0e841df828d17f800bc83bc3d8ce4707f1823a5"
+  },
+  "final/saved/windows-node/comparisons/sample-a83d2bf9aa769ebd.json": {
+    "bytes": 254,
+    "sha256": "22a11bc3c67a69cbf8604e58d3a68ca77d47ad49d1f3bca2e67df4ff206d1cc3"
+  },
+  "final/saved/windows-node/comparisons/sample-a87dd8607e0fda5f.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "final/saved/windows-node/comparisons/sample-a9819bb8f9e9f5ef.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "final/saved/windows-node/comparisons/sample-a99b928ceb0f443e.json": {
+    "bytes": 254,
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485"
+  },
+  "final/saved/windows-node/comparisons/sample-ab78d5d64fd48439.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/sample-ab902c56bd93d342.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "final/saved/windows-node/comparisons/sample-abad7ae0707ac749.json": {
+    "bytes": 254,
+    "sha256": "06fda8c0c1d50a5df59a9537d01986740889d8a086e4c735e62255c5ee40e7ef"
+  },
+  "final/saved/windows-node/comparisons/sample-b0d25177b1a8480c.json": {
+    "bytes": 257,
+    "sha256": "b05da171e6d572852165ddb8ce34baf226ce59280b8f6cc01fdb146879af34aa"
+  },
+  "final/saved/windows-node/comparisons/sample-b3edaa47ba780e0c.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "final/saved/windows-node/comparisons/sample-b563bb5b3e206ad7.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "final/saved/windows-node/comparisons/sample-bbbd4ae8468a6451.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/windows-node/comparisons/sample-be771810db2def78.json": {
+    "bytes": 254,
+    "sha256": "a0474f8d704d90764f51194ebb9a423bcd8d6972eb80a2095aca28d46d2b686e"
+  },
+  "final/saved/windows-node/comparisons/sample-c062c4f8b726c822.json": {
+    "bytes": 254,
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44"
+  },
+  "final/saved/windows-node/comparisons/sample-c159f2e4564feb4f.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-c323ed4e5eccd42e.json": {
+    "bytes": 254,
+    "sha256": "3f9001132140c369616f969192de1dd253ac3500369f07d8eda18a58e6341323"
+  },
+  "final/saved/windows-node/comparisons/sample-c45a727514fb8982.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "final/saved/windows-node/comparisons/sample-c777a45d62cce90a.json": {
+    "bytes": 254,
+    "sha256": "539b4f795d73ad152f72d7e0bc47664199540eac3ba7885ec9fc93a93b4f6ecc"
+  },
+  "final/saved/windows-node/comparisons/sample-c8cde51505833347.json": {
+    "bytes": 254,
+    "sha256": "85c956eece3f6895aab21d39ed4284123d976e327bb80a2d3a269a36dd051a01"
+  },
+  "final/saved/windows-node/comparisons/sample-c9a092125962e322.json": {
+    "bytes": 254,
+    "sha256": "062b8cb128256bac5afeedd71cc6ec2c12837c4f0f8beb2e4d9a4dae95a00e24"
+  },
+  "final/saved/windows-node/comparisons/sample-c9b8504f28656bb2.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/windows-node/comparisons/sample-cb5009e20bb1123a.json": {
+    "bytes": 254,
+    "sha256": "09e7050a340b4b445bf853177bd61db15955d4068295dea3674f4d95d2ebee17"
+  },
+  "final/saved/windows-node/comparisons/sample-cc5c505c9a91f65a.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "final/saved/windows-node/comparisons/sample-cc615a3e5cb1499e.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/windows-node/comparisons/sample-da00952f9e92b062.json": {
+    "bytes": 254,
+    "sha256": "70a3f517c1368091e412e3a5899f6255b0904a71c9188c4ffd2e4ceafa03cba9"
+  },
+  "final/saved/windows-node/comparisons/sample-db4b91782dd3efb7.json": {
+    "bytes": 254,
+    "sha256": "251ec8348aee23ae6df587a1e26a0134c0ee740295b8c18d8465a7d3f4b766b3"
+  },
+  "final/saved/windows-node/comparisons/sample-de744546e5b8a0e6.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "final/saved/windows-node/comparisons/sample-de900bc558f2dca8.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "final/saved/windows-node/comparisons/sample-df2560f7906cab6d.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "final/saved/windows-node/comparisons/sample-e2147debb746e953.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "final/saved/windows-node/comparisons/sample-e3d262776302832f.json": {
+    "bytes": 254,
+    "sha256": "09e7050a340b4b445bf853177bd61db15955d4068295dea3674f4d95d2ebee17"
+  },
+  "final/saved/windows-node/comparisons/sample-e4d10781d3be6992.json": {
+    "bytes": 248,
+    "sha256": "88558c3d9514a3624a4539934a474e532f3be02396ad73cd923a989f87bd59d2"
+  },
+  "final/saved/windows-node/comparisons/sample-e56ebcbad4b3ec61.json": {
+    "bytes": 254,
+    "sha256": "4497b60925b216db8f5008973d6272c89c90a6de40249fc2f508365364c2c305"
+  },
+  "final/saved/windows-node/comparisons/sample-e6c08e3cc9b0eb2f.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "final/saved/windows-node/comparisons/sample-e8417890fea95361.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/sample-eae7f502cfea5855.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/sample-eb1b381667716066.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "final/saved/windows-node/comparisons/sample-eb6e81323fe050ef.json": {
+    "bytes": 254,
+    "sha256": "4497b60925b216db8f5008973d6272c89c90a6de40249fc2f508365364c2c305"
+  },
+  "final/saved/windows-node/comparisons/sample-ed5b69a9711e3f53.json": {
+    "bytes": 254,
+    "sha256": "251ec8348aee23ae6df587a1e26a0134c0ee740295b8c18d8465a7d3f4b766b3"
+  },
+  "final/saved/windows-node/comparisons/sample-f06b8315200c1abb.json": {
+    "bytes": 254,
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02"
+  },
+  "final/saved/windows-node/comparisons/sample-f9dcd81f8ca741ba.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "final/saved/windows-node/comparisons/sample-fd9577ef8f62f6a7.json": {
+    "bytes": 254,
+    "sha256": "ccbb575bd8ac13222ad13095612ba4d4a231cbf27a3aa95056a632a797f393bb"
+  },
+  "final/saved/windows-node/verification.json": {
+    "bytes": 111002,
+    "sha256": "53da59d7f6fb6eadc066d74d534cc2e3ebd685322048565bcc6e79b711be26ed"
+  },
+  "fresh/browser/actual/corpus-latin-36.json": {
+    "bytes": 4670,
+    "sha256": "4eb11c11ad6870bbc12298c142fabd8b256cf3d77911376f068b5b3607034f6f"
+  },
+  "fresh/browser/actual/measurements.json": {
+    "bytes": 2630,
+    "sha256": "aebe631689774daec330a18da6d8dcd50bea9b4bbf69f3cd0a81099f07fed430"
+  },
+  "fresh/browser/cases.json": {
+    "bytes": 341,
+    "sha256": "25ff77c43d84b187befba1f2ca9ed3ac0c28f3ef309df5e72125a1a286275243"
+  },
+  "fresh/browser/comparisons/corpus-latin-36.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "fresh/browser/execution-build.json": {
+    "bytes": 12579,
+    "sha256": "d619e4e09815779c9489e75f34fdb9e5d21057023eb8b1423f58f32e23868433"
+  },
+  "fresh/browser/execution-cases.json": {
+    "bytes": 341,
+    "sha256": "25ff77c43d84b187befba1f2ca9ed3ac0c28f3ef309df5e72125a1a286275243"
+  },
+  "fresh/browser/execution.json": {
+    "bytes": 14130,
+    "sha256": "f2983f11f5de13a260aca877bf1f4699bcb533b3a18acbb937171e35f2d5dd19"
+  },
+  "fresh/browser/shards/0/actual/browser-memory.json": {
+    "bytes": 1427,
+    "sha256": "eadf4cd78fc2b13d102053233d3fb5f1854b9a661b83820cb91ae58daa465a07"
+  },
+  "fresh/browser/shards/0/actual/corpus-latin-36.json": {
+    "bytes": 4670,
+    "sha256": "4eb11c11ad6870bbc12298c142fabd8b256cf3d77911376f068b5b3607034f6f"
+  },
+  "fresh/browser/shards/0/actual/measurements.json": {
+    "bytes": 673,
+    "sha256": "9bddd617b2bd0422fe1bcbcbc7d4e7efa2865499bafdb60233aa3df347b1da94"
+  },
+  "fresh/browser/shards/0/cases.json": {
+    "bytes": 341,
+    "sha256": "25ff77c43d84b187befba1f2ca9ed3ac0c28f3ef309df5e72125a1a286275243"
+  },
+  "fresh/browser/summary.json": {
+    "bytes": 17178,
+    "sha256": "0a564145546a8fa9018ed6457d9a7633589a6e7133dd088a0707ed92e174accc"
+  },
+  "fresh/native/parity.json": {
+    "bytes": 249,
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5"
+  },
+  "fresh/native/result.json": {
+    "bytes": 4638,
+    "sha256": "6f9245abd075a77d68bd70b1907b33e8a81327d01c8b65c2d0df452436539f88"
+  },
+  "fresh/node/actual/corpus-latin-36.json": {
+    "bytes": 4670,
+    "sha256": "4eb11c11ad6870bbc12298c142fabd8b256cf3d77911376f068b5b3607034f6f"
+  },
+  "fresh/node/actual/measurements.json": {
+    "bytes": 366,
+    "sha256": "786a60a85154ad9c67822457975d972ee341541260da693448f6bed50eb26fde"
+  },
+  "fresh/node/cases.json": {
+    "bytes": 341,
+    "sha256": "25ff77c43d84b187befba1f2ca9ed3ac0c28f3ef309df5e72125a1a286275243"
+  },
+  "fresh/node/comparisons/corpus-latin-36.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "fresh/node/execution-build.json": {
+    "bytes": 12579,
+    "sha256": "d619e4e09815779c9489e75f34fdb9e5d21057023eb8b1423f58f32e23868433"
+  },
+  "fresh/node/execution-cases.json": {
+    "bytes": 341,
+    "sha256": "25ff77c43d84b187befba1f2ca9ed3ac0c28f3ef309df5e72125a1a286275243"
+  },
+  "fresh/node/execution.json": {
+    "bytes": 14127,
+    "sha256": "525fec90a179ea7fa5636bd5972ece984aefb5d41f44054f7294433b0f0b03bf"
+  },
+  "fresh/node/shards/0/actual/corpus-latin-36.json": {
+    "bytes": 4670,
+    "sha256": "4eb11c11ad6870bbc12298c142fabd8b256cf3d77911376f068b5b3607034f6f"
+  },
+  "fresh/node/shards/0/actual/measurements.json": {
+    "bytes": 286,
+    "sha256": "53388b4dc91f462b7c87609a9b782089c5f1db81b9a029ee3d58f1d31dced8c8"
+  },
+  "fresh/node/shards/0/cases.json": {
+    "bytes": 341,
+    "sha256": "25ff77c43d84b187befba1f2ca9ed3ac0c28f3ef309df5e72125a1a286275243"
+  },
+  "fresh/node/summary.json": {
+    "bytes": 14785,
+    "sha256": "ef6fe9d34306825fca18c2a0a7c71b8416cc73248e05f0366fbc07a811ac5aa6"
+  },
+  "fresh/node-verification/comparisons/corpus-latin-36.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "fresh/node-verification/verification.json": {
+    "bytes": 28334,
+    "sha256": "86a59b15e27d6df59b37b0bcf48fbb6b874f3c52f04ea90b9abbf95274de6c8b"
+  },
+  "README.md": {
+    "bytes": 3708,
+    "sha256": "3fbcdc775dc25512b3f799149ce05d0647d09d7fc9532236ad8e1e19fcf3f60e"
+  },
+  "saved/chrome/comparisons/book.json": {
+    "bytes": 257,
+    "sha256": "fe9e4fa766ffce3ad7d88ed2e762a4bb996647ff5d618c8bd6e237060e6689f0"
+  },
+  "saved/chrome/comparisons/corpus-arabic-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/corpus-blank.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/chrome/comparisons/corpus-cjk-18.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/corpus-cjk-36.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/corpus-cjk-rotate-0.5.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/corpus-cjk-rotate-10.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/corpus-cjk-rotate-180.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/corpus-cjk-rotate-270.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/corpus-cjk-rotate-3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/corpus-cjk-rotate-90.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/corpus-cyrillic-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/corpus-devanagari-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/corpus-greek-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/corpus-hebrew-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/corpus-latin-18.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/corpus-latin-36.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/corpus-latin-rotate-0.5.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/corpus-latin-rotate-10.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/corpus-latin-rotate-180.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/corpus-latin-rotate-270.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/corpus-latin-rotate-3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/corpus-latin-rotate-90.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/corpus-multi-column.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "saved/chrome/comparisons/corpus-tamil-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/corpus-thai-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/corpus-vertical-cjk.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/corpus-透明路径-emoji-😀.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-024e54a6c8e3ba17.json": {
+    "bytes": 251,
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5"
+  },
+  "saved/chrome/comparisons/sample-0486f0c2e5664aed.json": {
+    "bytes": 254,
+    "sha256": "3f9001132140c369616f969192de1dd253ac3500369f07d8eda18a58e6341323"
+  },
+  "saved/chrome/comparisons/sample-0582df7394486480.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "saved/chrome/comparisons/sample-058949810e7c76d3.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-0676d3f4ef6c5e2a.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-0b6fd6de5d12d93c.json": {
+    "bytes": 251,
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0"
+  },
+  "saved/chrome/comparisons/sample-0e06c211cb4a4831.json": {
+    "bytes": 257,
+    "sha256": "2135aed4aab91b45cc6ed272d1086ddc19d219a46ec3e822f5d6b4bec085b060"
+  },
+  "saved/chrome/comparisons/sample-0f2b4483dc0e1c98.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/chrome/comparisons/sample-0fc39af69da4cfed.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/sample-133a8c148862ce3a.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/sample-1460619f37acbd0c.json": {
+    "bytes": 254,
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44"
+  },
+  "saved/chrome/comparisons/sample-14f564d2b7d2e446.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/chrome/comparisons/sample-1aad6147b578f344.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/sample-1ea42cacfd82f6c0.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-203573ceb1873d5c.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-224ffeac6e0cd92d.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/sample-280528b4b1cb14b3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/sample-28e79bff204857cf.json": {
+    "bytes": 254,
+    "sha256": "ccbb575bd8ac13222ad13095612ba4d4a231cbf27a3aa95056a632a797f393bb"
+  },
+  "saved/chrome/comparisons/sample-2c2835cf707a4fe6.json": {
+    "bytes": 254,
+    "sha256": "3670f90c4f4620120fcae0c2418ae1de6008cbf8b4db95991c077c749b9233d4"
+  },
+  "saved/chrome/comparisons/sample-2db7bd9b6595c479.json": {
+    "bytes": 254,
+    "sha256": "03d34f9bde8aecda585739eb9cae56889719cd69c5b2f7f886734b7af51d2dd8"
+  },
+  "saved/chrome/comparisons/sample-2f4730c5e82e18ff.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-3255119646d641ba.json": {
+    "bytes": 254,
+    "sha256": "728511083d2333d85747b32cc63b584b8ce89633a8a905f278798f23e5b3012e"
+  },
+  "saved/chrome/comparisons/sample-3295ba0789edc763.json": {
+    "bytes": 251,
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5"
+  },
+  "saved/chrome/comparisons/sample-35b9cf211491fc5b.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "saved/chrome/comparisons/sample-39a29be9779394c5.json": {
+    "bytes": 254,
+    "sha256": "03d34f9bde8aecda585739eb9cae56889719cd69c5b2f7f886734b7af51d2dd8"
+  },
+  "saved/chrome/comparisons/sample-3aabaeed287f6784.json": {
+    "bytes": 257,
+    "sha256": "e1b4bf6a8bb8e496d7870c4e328528278f1a9c60cce40064e0102706734b4a02"
+  },
+  "saved/chrome/comparisons/sample-3c6e7c7ab6144e27.json": {
+    "bytes": 254,
+    "sha256": "1fbdcb75a944f910d47a221eed152df94aa8928ac5d7d55b26513a51602e3494"
+  },
+  "saved/chrome/comparisons/sample-4070a7afd9a7184b.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-4169c134c6189ae6.json": {
+    "bytes": 268,
+    "sha256": "0fea9b266e40c2023cb8dd1fcecc21f4a9d60dda8d5f2bd4b0e142a628c33b3f"
+  },
+  "saved/chrome/comparisons/sample-41b45e5a7c1f065c.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/sample-426c4c4b4327f07c.json": {
+    "bytes": 254,
+    "sha256": "ee8f3169813a79203eb12131c86e97c7f2ad9e6322afcf7dc8d2c046cf55a143"
+  },
+  "saved/chrome/comparisons/sample-440f10edac8d7c0b.json": {
+    "bytes": 268,
+    "sha256": "0fea9b266e40c2023cb8dd1fcecc21f4a9d60dda8d5f2bd4b0e142a628c33b3f"
+  },
+  "saved/chrome/comparisons/sample-44d499f3f15ffc62.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "saved/chrome/comparisons/sample-4a2cab3fdba7faea.json": {
+    "bytes": 257,
+    "sha256": "b086455188ae5813285e6aa3425f0b95c398fc46527d1026dafb636370bff842"
+  },
+  "saved/chrome/comparisons/sample-4cb3c7f3a7eae8bb.json": {
+    "bytes": 254,
+    "sha256": "f07b3d0b122ea62989745db75430ad7ebf81f5b6495ca4c8bd04a1982278e5f7"
+  },
+  "saved/chrome/comparisons/sample-4f45cf0e51f46a54.json": {
+    "bytes": 254,
+    "sha256": "aa0fea56c8c56dee0e1814c7e36d36a8014f18c33f2cc1e825ab8f15ce24812c"
+  },
+  "saved/chrome/comparisons/sample-4f4c989c97595b6e.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/chrome/comparisons/sample-4fceece9f2d76a6e.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-512b352f18af3f4f.json": {
+    "bytes": 254,
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02"
+  },
+  "saved/chrome/comparisons/sample-55932e69942ed683.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-5f9d77976f578583.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/sample-5fa29af9e63fefc2.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-60f7669b6fa86751.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-640bb28cd64c2e5b.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "saved/chrome/comparisons/sample-6692328598e9c3a8.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "saved/chrome/comparisons/sample-6a86cb9011438813.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-71fe5f6e6888b73b.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-728b694ae01441a4.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/sample-7750735bcbce34ec.json": {
+    "bytes": 254,
+    "sha256": "4e88bd421f7cb6b33b5b6d60693604b8181459828a1d27ce8a7312affb1f5c15"
+  },
+  "saved/chrome/comparisons/sample-7d60dfc27e54a03b.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "saved/chrome/comparisons/sample-8229419c872341b9.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-83a365509f1cc2b7.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "saved/chrome/comparisons/sample-86a7ffe5513e5633.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "saved/chrome/comparisons/sample-8d1e2d06c5f24990.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/sample-903c40f10a92c762.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "saved/chrome/comparisons/sample-913b6e2fbe4c0d3b.json": {
+    "bytes": 254,
+    "sha256": "8014c99d189a8ad420bfafddcef98583edd9538bae8f71f4d82495a8bdab5a0e"
+  },
+  "saved/chrome/comparisons/sample-914953ff8fb9b879.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/chrome/comparisons/sample-946c5faeaa0f2ec5.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "saved/chrome/comparisons/sample-9a0e9586ac3fe4e2.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "saved/chrome/comparisons/sample-9b462fed1772311b.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "saved/chrome/comparisons/sample-9d004236328aca8f.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "saved/chrome/comparisons/sample-9d80e98d12d362b3.json": {
+    "bytes": 254,
+    "sha256": "22a11bc3c67a69cbf8604e58d3a68ca77d47ad49d1f3bca2e67df4ff206d1cc3"
+  },
+  "saved/chrome/comparisons/sample-9e131b7b56e565db.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/chrome/comparisons/sample-9e2ab94f59cf15f8.json": {
+    "bytes": 254,
+    "sha256": "260f2faa1127060366c3c302caa364e51dc722330115427653cfecdc71a850eb"
+  },
+  "saved/chrome/comparisons/sample-9f735a010e88a648.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/chrome/comparisons/sample-a2446851712be525.json": {
+    "bytes": 254,
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485"
+  },
+  "saved/chrome/comparisons/sample-a24e31eb0aa23b4f.json": {
+    "bytes": 254,
+    "sha256": "57e838ea54a4468f03371b0f8d3652dfb5f2371b22e10541bdf61334814a61e0"
+  },
+  "saved/chrome/comparisons/sample-a45fc642aa130558.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-a744c24e96808cb4.json": {
+    "bytes": 254,
+    "sha256": "c3dc63ec8263de419e813395d0e841df828d17f800bc83bc3d8ce4707f1823a5"
+  },
+  "saved/chrome/comparisons/sample-a83d2bf9aa769ebd.json": {
+    "bytes": 254,
+    "sha256": "22a11bc3c67a69cbf8604e58d3a68ca77d47ad49d1f3bca2e67df4ff206d1cc3"
+  },
+  "saved/chrome/comparisons/sample-a87dd8607e0fda5f.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "saved/chrome/comparisons/sample-a9819bb8f9e9f5ef.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "saved/chrome/comparisons/sample-a99b928ceb0f443e.json": {
+    "bytes": 254,
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485"
+  },
+  "saved/chrome/comparisons/sample-ab78d5d64fd48439.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/sample-ab902c56bd93d342.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "saved/chrome/comparisons/sample-abad7ae0707ac749.json": {
+    "bytes": 254,
+    "sha256": "06fda8c0c1d50a5df59a9537d01986740889d8a086e4c735e62255c5ee40e7ef"
+  },
+  "saved/chrome/comparisons/sample-b0d25177b1a8480c.json": {
+    "bytes": 257,
+    "sha256": "b05da171e6d572852165ddb8ce34baf226ce59280b8f6cc01fdb146879af34aa"
+  },
+  "saved/chrome/comparisons/sample-b3edaa47ba780e0c.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "saved/chrome/comparisons/sample-b563bb5b3e206ad7.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "saved/chrome/comparisons/sample-bbbd4ae8468a6451.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/chrome/comparisons/sample-be771810db2def78.json": {
+    "bytes": 254,
+    "sha256": "a0474f8d704d90764f51194ebb9a423bcd8d6972eb80a2095aca28d46d2b686e"
+  },
+  "saved/chrome/comparisons/sample-c062c4f8b726c822.json": {
+    "bytes": 254,
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44"
+  },
+  "saved/chrome/comparisons/sample-c159f2e4564feb4f.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-c323ed4e5eccd42e.json": {
+    "bytes": 254,
+    "sha256": "3f9001132140c369616f969192de1dd253ac3500369f07d8eda18a58e6341323"
+  },
+  "saved/chrome/comparisons/sample-c45a727514fb8982.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "saved/chrome/comparisons/sample-c777a45d62cce90a.json": {
+    "bytes": 254,
+    "sha256": "539b4f795d73ad152f72d7e0bc47664199540eac3ba7885ec9fc93a93b4f6ecc"
+  },
+  "saved/chrome/comparisons/sample-c8cde51505833347.json": {
+    "bytes": 254,
+    "sha256": "85c956eece3f6895aab21d39ed4284123d976e327bb80a2d3a269a36dd051a01"
+  },
+  "saved/chrome/comparisons/sample-c9a092125962e322.json": {
+    "bytes": 254,
+    "sha256": "062b8cb128256bac5afeedd71cc6ec2c12837c4f0f8beb2e4d9a4dae95a00e24"
+  },
+  "saved/chrome/comparisons/sample-c9b8504f28656bb2.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/chrome/comparisons/sample-cb5009e20bb1123a.json": {
+    "bytes": 254,
+    "sha256": "09e7050a340b4b445bf853177bd61db15955d4068295dea3674f4d95d2ebee17"
+  },
+  "saved/chrome/comparisons/sample-cc5c505c9a91f65a.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/chrome/comparisons/sample-cc615a3e5cb1499e.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/chrome/comparisons/sample-da00952f9e92b062.json": {
+    "bytes": 254,
+    "sha256": "70a3f517c1368091e412e3a5899f6255b0904a71c9188c4ffd2e4ceafa03cba9"
+  },
+  "saved/chrome/comparisons/sample-db4b91782dd3efb7.json": {
+    "bytes": 254,
+    "sha256": "251ec8348aee23ae6df587a1e26a0134c0ee740295b8c18d8465a7d3f4b766b3"
+  },
+  "saved/chrome/comparisons/sample-de744546e5b8a0e6.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "saved/chrome/comparisons/sample-de900bc558f2dca8.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/chrome/comparisons/sample-df2560f7906cab6d.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "saved/chrome/comparisons/sample-e2147debb746e953.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "saved/chrome/comparisons/sample-e3d262776302832f.json": {
+    "bytes": 254,
+    "sha256": "09e7050a340b4b445bf853177bd61db15955d4068295dea3674f4d95d2ebee17"
+  },
+  "saved/chrome/comparisons/sample-e4d10781d3be6992.json": {
+    "bytes": 248,
+    "sha256": "88558c3d9514a3624a4539934a474e532f3be02396ad73cd923a989f87bd59d2"
+  },
+  "saved/chrome/comparisons/sample-e56ebcbad4b3ec61.json": {
+    "bytes": 254,
+    "sha256": "4497b60925b216db8f5008973d6272c89c90a6de40249fc2f508365364c2c305"
+  },
+  "saved/chrome/comparisons/sample-e6c08e3cc9b0eb2f.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/chrome/comparisons/sample-e8417890fea95361.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/sample-eae7f502cfea5855.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/sample-eb1b381667716066.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "saved/chrome/comparisons/sample-eb6e81323fe050ef.json": {
+    "bytes": 254,
+    "sha256": "4497b60925b216db8f5008973d6272c89c90a6de40249fc2f508365364c2c305"
+  },
+  "saved/chrome/comparisons/sample-ed5b69a9711e3f53.json": {
+    "bytes": 254,
+    "sha256": "251ec8348aee23ae6df587a1e26a0134c0ee740295b8c18d8465a7d3f4b766b3"
+  },
+  "saved/chrome/comparisons/sample-f06b8315200c1abb.json": {
+    "bytes": 254,
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02"
+  },
+  "saved/chrome/comparisons/sample-f9dcd81f8ca741ba.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/chrome/comparisons/sample-fd9577ef8f62f6a7.json": {
+    "bytes": 254,
+    "sha256": "ccbb575bd8ac13222ad13095612ba4d4a231cbf27a3aa95056a632a797f393bb"
+  },
+  "saved/chrome/verification.json": {
+    "bytes": 113718,
+    "sha256": "355cf5705f4b4a169d0abcc03c7c448b993f26011652425439a701e15d82212c"
+  },
+  "saved/linux-node/comparisons/book.json": {
+    "bytes": 257,
+    "sha256": "fe9e4fa766ffce3ad7d88ed2e762a4bb996647ff5d618c8bd6e237060e6689f0"
+  },
+  "saved/linux-node/comparisons/corpus-arabic-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/corpus-blank.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/linux-node/comparisons/corpus-cjk-18.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/corpus-cjk-36.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/corpus-cjk-rotate-0.5.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/corpus-cjk-rotate-10.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/corpus-cjk-rotate-180.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/corpus-cjk-rotate-270.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/corpus-cjk-rotate-3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/corpus-cjk-rotate-90.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/corpus-cyrillic-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/corpus-devanagari-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/corpus-greek-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/corpus-hebrew-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/corpus-latin-18.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/corpus-latin-36.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/corpus-latin-rotate-0.5.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/corpus-latin-rotate-10.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/corpus-latin-rotate-180.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/corpus-latin-rotate-270.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/corpus-latin-rotate-3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/corpus-latin-rotate-90.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/corpus-multi-column.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "saved/linux-node/comparisons/corpus-tamil-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/corpus-thai-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/corpus-vertical-cjk.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/corpus-透明路径-emoji-😀.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-024e54a6c8e3ba17.json": {
+    "bytes": 251,
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5"
+  },
+  "saved/linux-node/comparisons/sample-0486f0c2e5664aed.json": {
+    "bytes": 254,
+    "sha256": "3f9001132140c369616f969192de1dd253ac3500369f07d8eda18a58e6341323"
+  },
+  "saved/linux-node/comparisons/sample-0582df7394486480.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "saved/linux-node/comparisons/sample-058949810e7c76d3.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-0676d3f4ef6c5e2a.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-0b6fd6de5d12d93c.json": {
+    "bytes": 251,
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0"
+  },
+  "saved/linux-node/comparisons/sample-0e06c211cb4a4831.json": {
+    "bytes": 257,
+    "sha256": "2135aed4aab91b45cc6ed272d1086ddc19d219a46ec3e822f5d6b4bec085b060"
+  },
+  "saved/linux-node/comparisons/sample-0f2b4483dc0e1c98.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/linux-node/comparisons/sample-0fc39af69da4cfed.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/sample-133a8c148862ce3a.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/sample-1460619f37acbd0c.json": {
+    "bytes": 254,
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44"
+  },
+  "saved/linux-node/comparisons/sample-14f564d2b7d2e446.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/linux-node/comparisons/sample-1aad6147b578f344.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/sample-1ea42cacfd82f6c0.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-203573ceb1873d5c.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-224ffeac6e0cd92d.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/sample-280528b4b1cb14b3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/sample-28e79bff204857cf.json": {
+    "bytes": 254,
+    "sha256": "ccbb575bd8ac13222ad13095612ba4d4a231cbf27a3aa95056a632a797f393bb"
+  },
+  "saved/linux-node/comparisons/sample-2c2835cf707a4fe6.json": {
+    "bytes": 254,
+    "sha256": "3670f90c4f4620120fcae0c2418ae1de6008cbf8b4db95991c077c749b9233d4"
+  },
+  "saved/linux-node/comparisons/sample-2db7bd9b6595c479.json": {
+    "bytes": 254,
+    "sha256": "03d34f9bde8aecda585739eb9cae56889719cd69c5b2f7f886734b7af51d2dd8"
+  },
+  "saved/linux-node/comparisons/sample-2f4730c5e82e18ff.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-3255119646d641ba.json": {
+    "bytes": 254,
+    "sha256": "728511083d2333d85747b32cc63b584b8ce89633a8a905f278798f23e5b3012e"
+  },
+  "saved/linux-node/comparisons/sample-3295ba0789edc763.json": {
+    "bytes": 251,
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5"
+  },
+  "saved/linux-node/comparisons/sample-35b9cf211491fc5b.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "saved/linux-node/comparisons/sample-39a29be9779394c5.json": {
+    "bytes": 254,
+    "sha256": "03d34f9bde8aecda585739eb9cae56889719cd69c5b2f7f886734b7af51d2dd8"
+  },
+  "saved/linux-node/comparisons/sample-3aabaeed287f6784.json": {
+    "bytes": 257,
+    "sha256": "e1b4bf6a8bb8e496d7870c4e328528278f1a9c60cce40064e0102706734b4a02"
+  },
+  "saved/linux-node/comparisons/sample-3c6e7c7ab6144e27.json": {
+    "bytes": 254,
+    "sha256": "1fbdcb75a944f910d47a221eed152df94aa8928ac5d7d55b26513a51602e3494"
+  },
+  "saved/linux-node/comparisons/sample-4070a7afd9a7184b.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-4169c134c6189ae6.json": {
+    "bytes": 268,
+    "sha256": "0fea9b266e40c2023cb8dd1fcecc21f4a9d60dda8d5f2bd4b0e142a628c33b3f"
+  },
+  "saved/linux-node/comparisons/sample-41b45e5a7c1f065c.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/sample-426c4c4b4327f07c.json": {
+    "bytes": 254,
+    "sha256": "ee8f3169813a79203eb12131c86e97c7f2ad9e6322afcf7dc8d2c046cf55a143"
+  },
+  "saved/linux-node/comparisons/sample-440f10edac8d7c0b.json": {
+    "bytes": 268,
+    "sha256": "0fea9b266e40c2023cb8dd1fcecc21f4a9d60dda8d5f2bd4b0e142a628c33b3f"
+  },
+  "saved/linux-node/comparisons/sample-44d499f3f15ffc62.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "saved/linux-node/comparisons/sample-4a2cab3fdba7faea.json": {
+    "bytes": 257,
+    "sha256": "b086455188ae5813285e6aa3425f0b95c398fc46527d1026dafb636370bff842"
+  },
+  "saved/linux-node/comparisons/sample-4cb3c7f3a7eae8bb.json": {
+    "bytes": 254,
+    "sha256": "f07b3d0b122ea62989745db75430ad7ebf81f5b6495ca4c8bd04a1982278e5f7"
+  },
+  "saved/linux-node/comparisons/sample-4f45cf0e51f46a54.json": {
+    "bytes": 254,
+    "sha256": "aa0fea56c8c56dee0e1814c7e36d36a8014f18c33f2cc1e825ab8f15ce24812c"
+  },
+  "saved/linux-node/comparisons/sample-4f4c989c97595b6e.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/linux-node/comparisons/sample-4fceece9f2d76a6e.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-512b352f18af3f4f.json": {
+    "bytes": 254,
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02"
+  },
+  "saved/linux-node/comparisons/sample-55932e69942ed683.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-5f9d77976f578583.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/sample-5fa29af9e63fefc2.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-60f7669b6fa86751.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-640bb28cd64c2e5b.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "saved/linux-node/comparisons/sample-6692328598e9c3a8.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "saved/linux-node/comparisons/sample-6a86cb9011438813.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-71fe5f6e6888b73b.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-728b694ae01441a4.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/sample-7750735bcbce34ec.json": {
+    "bytes": 254,
+    "sha256": "4e88bd421f7cb6b33b5b6d60693604b8181459828a1d27ce8a7312affb1f5c15"
+  },
+  "saved/linux-node/comparisons/sample-7d60dfc27e54a03b.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "saved/linux-node/comparisons/sample-8229419c872341b9.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-83a365509f1cc2b7.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "saved/linux-node/comparisons/sample-86a7ffe5513e5633.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "saved/linux-node/comparisons/sample-8d1e2d06c5f24990.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/sample-903c40f10a92c762.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "saved/linux-node/comparisons/sample-913b6e2fbe4c0d3b.json": {
+    "bytes": 254,
+    "sha256": "8014c99d189a8ad420bfafddcef98583edd9538bae8f71f4d82495a8bdab5a0e"
+  },
+  "saved/linux-node/comparisons/sample-914953ff8fb9b879.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/linux-node/comparisons/sample-946c5faeaa0f2ec5.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "saved/linux-node/comparisons/sample-9a0e9586ac3fe4e2.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "saved/linux-node/comparisons/sample-9b462fed1772311b.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "saved/linux-node/comparisons/sample-9d004236328aca8f.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "saved/linux-node/comparisons/sample-9d80e98d12d362b3.json": {
+    "bytes": 254,
+    "sha256": "22a11bc3c67a69cbf8604e58d3a68ca77d47ad49d1f3bca2e67df4ff206d1cc3"
+  },
+  "saved/linux-node/comparisons/sample-9e131b7b56e565db.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/linux-node/comparisons/sample-9e2ab94f59cf15f8.json": {
+    "bytes": 254,
+    "sha256": "260f2faa1127060366c3c302caa364e51dc722330115427653cfecdc71a850eb"
+  },
+  "saved/linux-node/comparisons/sample-9f735a010e88a648.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/linux-node/comparisons/sample-a2446851712be525.json": {
+    "bytes": 254,
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485"
+  },
+  "saved/linux-node/comparisons/sample-a24e31eb0aa23b4f.json": {
+    "bytes": 254,
+    "sha256": "57e838ea54a4468f03371b0f8d3652dfb5f2371b22e10541bdf61334814a61e0"
+  },
+  "saved/linux-node/comparisons/sample-a45fc642aa130558.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-a744c24e96808cb4.json": {
+    "bytes": 254,
+    "sha256": "c3dc63ec8263de419e813395d0e841df828d17f800bc83bc3d8ce4707f1823a5"
+  },
+  "saved/linux-node/comparisons/sample-a83d2bf9aa769ebd.json": {
+    "bytes": 254,
+    "sha256": "22a11bc3c67a69cbf8604e58d3a68ca77d47ad49d1f3bca2e67df4ff206d1cc3"
+  },
+  "saved/linux-node/comparisons/sample-a87dd8607e0fda5f.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "saved/linux-node/comparisons/sample-a9819bb8f9e9f5ef.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "saved/linux-node/comparisons/sample-a99b928ceb0f443e.json": {
+    "bytes": 254,
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485"
+  },
+  "saved/linux-node/comparisons/sample-ab78d5d64fd48439.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/sample-ab902c56bd93d342.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "saved/linux-node/comparisons/sample-abad7ae0707ac749.json": {
+    "bytes": 254,
+    "sha256": "06fda8c0c1d50a5df59a9537d01986740889d8a086e4c735e62255c5ee40e7ef"
+  },
+  "saved/linux-node/comparisons/sample-b0d25177b1a8480c.json": {
+    "bytes": 257,
+    "sha256": "b05da171e6d572852165ddb8ce34baf226ce59280b8f6cc01fdb146879af34aa"
+  },
+  "saved/linux-node/comparisons/sample-b3edaa47ba780e0c.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "saved/linux-node/comparisons/sample-b563bb5b3e206ad7.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "saved/linux-node/comparisons/sample-bbbd4ae8468a6451.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/linux-node/comparisons/sample-be771810db2def78.json": {
+    "bytes": 254,
+    "sha256": "a0474f8d704d90764f51194ebb9a423bcd8d6972eb80a2095aca28d46d2b686e"
+  },
+  "saved/linux-node/comparisons/sample-c062c4f8b726c822.json": {
+    "bytes": 254,
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44"
+  },
+  "saved/linux-node/comparisons/sample-c159f2e4564feb4f.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-c323ed4e5eccd42e.json": {
+    "bytes": 254,
+    "sha256": "3f9001132140c369616f969192de1dd253ac3500369f07d8eda18a58e6341323"
+  },
+  "saved/linux-node/comparisons/sample-c45a727514fb8982.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "saved/linux-node/comparisons/sample-c777a45d62cce90a.json": {
+    "bytes": 254,
+    "sha256": "539b4f795d73ad152f72d7e0bc47664199540eac3ba7885ec9fc93a93b4f6ecc"
+  },
+  "saved/linux-node/comparisons/sample-c8cde51505833347.json": {
+    "bytes": 254,
+    "sha256": "85c956eece3f6895aab21d39ed4284123d976e327bb80a2d3a269a36dd051a01"
+  },
+  "saved/linux-node/comparisons/sample-c9a092125962e322.json": {
+    "bytes": 254,
+    "sha256": "062b8cb128256bac5afeedd71cc6ec2c12837c4f0f8beb2e4d9a4dae95a00e24"
+  },
+  "saved/linux-node/comparisons/sample-c9b8504f28656bb2.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/linux-node/comparisons/sample-cb5009e20bb1123a.json": {
+    "bytes": 254,
+    "sha256": "09e7050a340b4b445bf853177bd61db15955d4068295dea3674f4d95d2ebee17"
+  },
+  "saved/linux-node/comparisons/sample-cc5c505c9a91f65a.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/linux-node/comparisons/sample-cc615a3e5cb1499e.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/linux-node/comparisons/sample-da00952f9e92b062.json": {
+    "bytes": 254,
+    "sha256": "70a3f517c1368091e412e3a5899f6255b0904a71c9188c4ffd2e4ceafa03cba9"
+  },
+  "saved/linux-node/comparisons/sample-db4b91782dd3efb7.json": {
+    "bytes": 254,
+    "sha256": "251ec8348aee23ae6df587a1e26a0134c0ee740295b8c18d8465a7d3f4b766b3"
+  },
+  "saved/linux-node/comparisons/sample-de744546e5b8a0e6.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "saved/linux-node/comparisons/sample-de900bc558f2dca8.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/linux-node/comparisons/sample-df2560f7906cab6d.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "saved/linux-node/comparisons/sample-e2147debb746e953.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "saved/linux-node/comparisons/sample-e3d262776302832f.json": {
+    "bytes": 254,
+    "sha256": "09e7050a340b4b445bf853177bd61db15955d4068295dea3674f4d95d2ebee17"
+  },
+  "saved/linux-node/comparisons/sample-e4d10781d3be6992.json": {
+    "bytes": 248,
+    "sha256": "88558c3d9514a3624a4539934a474e532f3be02396ad73cd923a989f87bd59d2"
+  },
+  "saved/linux-node/comparisons/sample-e56ebcbad4b3ec61.json": {
+    "bytes": 254,
+    "sha256": "4497b60925b216db8f5008973d6272c89c90a6de40249fc2f508365364c2c305"
+  },
+  "saved/linux-node/comparisons/sample-e6c08e3cc9b0eb2f.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/linux-node/comparisons/sample-e8417890fea95361.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/sample-eae7f502cfea5855.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/sample-eb1b381667716066.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "saved/linux-node/comparisons/sample-eb6e81323fe050ef.json": {
+    "bytes": 254,
+    "sha256": "4497b60925b216db8f5008973d6272c89c90a6de40249fc2f508365364c2c305"
+  },
+  "saved/linux-node/comparisons/sample-ed5b69a9711e3f53.json": {
+    "bytes": 254,
+    "sha256": "251ec8348aee23ae6df587a1e26a0134c0ee740295b8c18d8465a7d3f4b766b3"
+  },
+  "saved/linux-node/comparisons/sample-f06b8315200c1abb.json": {
+    "bytes": 254,
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02"
+  },
+  "saved/linux-node/comparisons/sample-f9dcd81f8ca741ba.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/linux-node/comparisons/sample-fd9577ef8f62f6a7.json": {
+    "bytes": 254,
+    "sha256": "ccbb575bd8ac13222ad13095612ba4d4a231cbf27a3aa95056a632a797f393bb"
+  },
+  "saved/linux-node/verification.json": {
+    "bytes": 111200,
+    "sha256": "f2a6e2b79643befb731ae2f5705132363efecb094ae83ae60cb586b3643b37f1"
+  },
+  "saved/windows-node/comparisons/book.json": {
+    "bytes": 257,
+    "sha256": "fe9e4fa766ffce3ad7d88ed2e762a4bb996647ff5d618c8bd6e237060e6689f0"
+  },
+  "saved/windows-node/comparisons/corpus-arabic-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/corpus-blank.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/windows-node/comparisons/corpus-cjk-18.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/corpus-cjk-36.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/corpus-cjk-rotate-0.5.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/corpus-cjk-rotate-10.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/corpus-cjk-rotate-180.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/corpus-cjk-rotate-270.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/corpus-cjk-rotate-3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/corpus-cjk-rotate-90.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/corpus-cyrillic-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/corpus-devanagari-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/corpus-greek-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/corpus-hebrew-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/corpus-latin-18.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/corpus-latin-36.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/corpus-latin-rotate-0.5.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/corpus-latin-rotate-10.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/corpus-latin-rotate-180.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/corpus-latin-rotate-270.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/corpus-latin-rotate-3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/corpus-latin-rotate-90.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/corpus-multi-column.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "saved/windows-node/comparisons/corpus-tamil-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/corpus-thai-36.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/corpus-vertical-cjk.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/corpus-透明路径-emoji-😀.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-024e54a6c8e3ba17.json": {
+    "bytes": 251,
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5"
+  },
+  "saved/windows-node/comparisons/sample-0486f0c2e5664aed.json": {
+    "bytes": 254,
+    "sha256": "3f9001132140c369616f969192de1dd253ac3500369f07d8eda18a58e6341323"
+  },
+  "saved/windows-node/comparisons/sample-0582df7394486480.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "saved/windows-node/comparisons/sample-058949810e7c76d3.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-0676d3f4ef6c5e2a.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-0b6fd6de5d12d93c.json": {
+    "bytes": 251,
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0"
+  },
+  "saved/windows-node/comparisons/sample-0e06c211cb4a4831.json": {
+    "bytes": 257,
+    "sha256": "2135aed4aab91b45cc6ed272d1086ddc19d219a46ec3e822f5d6b4bec085b060"
+  },
+  "saved/windows-node/comparisons/sample-0f2b4483dc0e1c98.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/windows-node/comparisons/sample-0fc39af69da4cfed.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/sample-133a8c148862ce3a.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/sample-1460619f37acbd0c.json": {
+    "bytes": 254,
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44"
+  },
+  "saved/windows-node/comparisons/sample-14f564d2b7d2e446.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/windows-node/comparisons/sample-1aad6147b578f344.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/sample-1ea42cacfd82f6c0.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-203573ceb1873d5c.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-224ffeac6e0cd92d.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/sample-280528b4b1cb14b3.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/sample-28e79bff204857cf.json": {
+    "bytes": 254,
+    "sha256": "ccbb575bd8ac13222ad13095612ba4d4a231cbf27a3aa95056a632a797f393bb"
+  },
+  "saved/windows-node/comparisons/sample-2c2835cf707a4fe6.json": {
+    "bytes": 254,
+    "sha256": "3670f90c4f4620120fcae0c2418ae1de6008cbf8b4db95991c077c749b9233d4"
+  },
+  "saved/windows-node/comparisons/sample-2db7bd9b6595c479.json": {
+    "bytes": 254,
+    "sha256": "03d34f9bde8aecda585739eb9cae56889719cd69c5b2f7f886734b7af51d2dd8"
+  },
+  "saved/windows-node/comparisons/sample-2f4730c5e82e18ff.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-3255119646d641ba.json": {
+    "bytes": 254,
+    "sha256": "728511083d2333d85747b32cc63b584b8ce89633a8a905f278798f23e5b3012e"
+  },
+  "saved/windows-node/comparisons/sample-3295ba0789edc763.json": {
+    "bytes": 251,
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5"
+  },
+  "saved/windows-node/comparisons/sample-35b9cf211491fc5b.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "saved/windows-node/comparisons/sample-39a29be9779394c5.json": {
+    "bytes": 254,
+    "sha256": "03d34f9bde8aecda585739eb9cae56889719cd69c5b2f7f886734b7af51d2dd8"
+  },
+  "saved/windows-node/comparisons/sample-3aabaeed287f6784.json": {
+    "bytes": 257,
+    "sha256": "e1b4bf6a8bb8e496d7870c4e328528278f1a9c60cce40064e0102706734b4a02"
+  },
+  "saved/windows-node/comparisons/sample-3c6e7c7ab6144e27.json": {
+    "bytes": 254,
+    "sha256": "1fbdcb75a944f910d47a221eed152df94aa8928ac5d7d55b26513a51602e3494"
+  },
+  "saved/windows-node/comparisons/sample-4070a7afd9a7184b.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-4169c134c6189ae6.json": {
+    "bytes": 268,
+    "sha256": "0fea9b266e40c2023cb8dd1fcecc21f4a9d60dda8d5f2bd4b0e142a628c33b3f"
+  },
+  "saved/windows-node/comparisons/sample-41b45e5a7c1f065c.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/sample-426c4c4b4327f07c.json": {
+    "bytes": 254,
+    "sha256": "ee8f3169813a79203eb12131c86e97c7f2ad9e6322afcf7dc8d2c046cf55a143"
+  },
+  "saved/windows-node/comparisons/sample-440f10edac8d7c0b.json": {
+    "bytes": 268,
+    "sha256": "0fea9b266e40c2023cb8dd1fcecc21f4a9d60dda8d5f2bd4b0e142a628c33b3f"
+  },
+  "saved/windows-node/comparisons/sample-44d499f3f15ffc62.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "saved/windows-node/comparisons/sample-4a2cab3fdba7faea.json": {
+    "bytes": 257,
+    "sha256": "b086455188ae5813285e6aa3425f0b95c398fc46527d1026dafb636370bff842"
+  },
+  "saved/windows-node/comparisons/sample-4cb3c7f3a7eae8bb.json": {
+    "bytes": 254,
+    "sha256": "f07b3d0b122ea62989745db75430ad7ebf81f5b6495ca4c8bd04a1982278e5f7"
+  },
+  "saved/windows-node/comparisons/sample-4f45cf0e51f46a54.json": {
+    "bytes": 254,
+    "sha256": "aa0fea56c8c56dee0e1814c7e36d36a8014f18c33f2cc1e825ab8f15ce24812c"
+  },
+  "saved/windows-node/comparisons/sample-4f4c989c97595b6e.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/windows-node/comparisons/sample-4fceece9f2d76a6e.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-512b352f18af3f4f.json": {
+    "bytes": 254,
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02"
+  },
+  "saved/windows-node/comparisons/sample-55932e69942ed683.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-5f9d77976f578583.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/sample-5fa29af9e63fefc2.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-60f7669b6fa86751.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-640bb28cd64c2e5b.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "saved/windows-node/comparisons/sample-6692328598e9c3a8.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "saved/windows-node/comparisons/sample-6a86cb9011438813.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-71fe5f6e6888b73b.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-728b694ae01441a4.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/sample-7750735bcbce34ec.json": {
+    "bytes": 254,
+    "sha256": "4e88bd421f7cb6b33b5b6d60693604b8181459828a1d27ce8a7312affb1f5c15"
+  },
+  "saved/windows-node/comparisons/sample-7d60dfc27e54a03b.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "saved/windows-node/comparisons/sample-8229419c872341b9.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-83a365509f1cc2b7.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "saved/windows-node/comparisons/sample-86a7ffe5513e5633.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "saved/windows-node/comparisons/sample-8d1e2d06c5f24990.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/sample-903c40f10a92c762.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "saved/windows-node/comparisons/sample-913b6e2fbe4c0d3b.json": {
+    "bytes": 254,
+    "sha256": "8014c99d189a8ad420bfafddcef98583edd9538bae8f71f4d82495a8bdab5a0e"
+  },
+  "saved/windows-node/comparisons/sample-914953ff8fb9b879.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/windows-node/comparisons/sample-946c5faeaa0f2ec5.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "saved/windows-node/comparisons/sample-9a0e9586ac3fe4e2.json": {
+    "bytes": 251,
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec"
+  },
+  "saved/windows-node/comparisons/sample-9b462fed1772311b.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "saved/windows-node/comparisons/sample-9d004236328aca8f.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "saved/windows-node/comparisons/sample-9d80e98d12d362b3.json": {
+    "bytes": 254,
+    "sha256": "22a11bc3c67a69cbf8604e58d3a68ca77d47ad49d1f3bca2e67df4ff206d1cc3"
+  },
+  "saved/windows-node/comparisons/sample-9e131b7b56e565db.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/windows-node/comparisons/sample-9e2ab94f59cf15f8.json": {
+    "bytes": 254,
+    "sha256": "260f2faa1127060366c3c302caa364e51dc722330115427653cfecdc71a850eb"
+  },
+  "saved/windows-node/comparisons/sample-9f735a010e88a648.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/windows-node/comparisons/sample-a2446851712be525.json": {
+    "bytes": 254,
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485"
+  },
+  "saved/windows-node/comparisons/sample-a24e31eb0aa23b4f.json": {
+    "bytes": 254,
+    "sha256": "57e838ea54a4468f03371b0f8d3652dfb5f2371b22e10541bdf61334814a61e0"
+  },
+  "saved/windows-node/comparisons/sample-a45fc642aa130558.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-a744c24e96808cb4.json": {
+    "bytes": 254,
+    "sha256": "c3dc63ec8263de419e813395d0e841df828d17f800bc83bc3d8ce4707f1823a5"
+  },
+  "saved/windows-node/comparisons/sample-a83d2bf9aa769ebd.json": {
+    "bytes": 254,
+    "sha256": "22a11bc3c67a69cbf8604e58d3a68ca77d47ad49d1f3bca2e67df4ff206d1cc3"
+  },
+  "saved/windows-node/comparisons/sample-a87dd8607e0fda5f.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "saved/windows-node/comparisons/sample-a9819bb8f9e9f5ef.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "saved/windows-node/comparisons/sample-a99b928ceb0f443e.json": {
+    "bytes": 254,
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485"
+  },
+  "saved/windows-node/comparisons/sample-ab78d5d64fd48439.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/sample-ab902c56bd93d342.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "saved/windows-node/comparisons/sample-abad7ae0707ac749.json": {
+    "bytes": 254,
+    "sha256": "06fda8c0c1d50a5df59a9537d01986740889d8a086e4c735e62255c5ee40e7ef"
+  },
+  "saved/windows-node/comparisons/sample-b0d25177b1a8480c.json": {
+    "bytes": 257,
+    "sha256": "b05da171e6d572852165ddb8ce34baf226ce59280b8f6cc01fdb146879af34aa"
+  },
+  "saved/windows-node/comparisons/sample-b3edaa47ba780e0c.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "saved/windows-node/comparisons/sample-b563bb5b3e206ad7.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "saved/windows-node/comparisons/sample-bbbd4ae8468a6451.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/windows-node/comparisons/sample-be771810db2def78.json": {
+    "bytes": 254,
+    "sha256": "a0474f8d704d90764f51194ebb9a423bcd8d6972eb80a2095aca28d46d2b686e"
+  },
+  "saved/windows-node/comparisons/sample-c062c4f8b726c822.json": {
+    "bytes": 254,
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44"
+  },
+  "saved/windows-node/comparisons/sample-c159f2e4564feb4f.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-c323ed4e5eccd42e.json": {
+    "bytes": 254,
+    "sha256": "3f9001132140c369616f969192de1dd253ac3500369f07d8eda18a58e6341323"
+  },
+  "saved/windows-node/comparisons/sample-c45a727514fb8982.json": {
+    "bytes": 251,
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7"
+  },
+  "saved/windows-node/comparisons/sample-c777a45d62cce90a.json": {
+    "bytes": 254,
+    "sha256": "539b4f795d73ad152f72d7e0bc47664199540eac3ba7885ec9fc93a93b4f6ecc"
+  },
+  "saved/windows-node/comparisons/sample-c8cde51505833347.json": {
+    "bytes": 254,
+    "sha256": "85c956eece3f6895aab21d39ed4284123d976e327bb80a2d3a269a36dd051a01"
+  },
+  "saved/windows-node/comparisons/sample-c9a092125962e322.json": {
+    "bytes": 254,
+    "sha256": "062b8cb128256bac5afeedd71cc6ec2c12837c4f0f8beb2e4d9a4dae95a00e24"
+  },
+  "saved/windows-node/comparisons/sample-c9b8504f28656bb2.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/windows-node/comparisons/sample-cb5009e20bb1123a.json": {
+    "bytes": 254,
+    "sha256": "09e7050a340b4b445bf853177bd61db15955d4068295dea3674f4d95d2ebee17"
+  },
+  "saved/windows-node/comparisons/sample-cc5c505c9a91f65a.json": {
+    "bytes": 251,
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117"
+  },
+  "saved/windows-node/comparisons/sample-cc615a3e5cb1499e.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/windows-node/comparisons/sample-da00952f9e92b062.json": {
+    "bytes": 254,
+    "sha256": "70a3f517c1368091e412e3a5899f6255b0904a71c9188c4ffd2e4ceafa03cba9"
+  },
+  "saved/windows-node/comparisons/sample-db4b91782dd3efb7.json": {
+    "bytes": 254,
+    "sha256": "251ec8348aee23ae6df587a1e26a0134c0ee740295b8c18d8465a7d3f4b766b3"
+  },
+  "saved/windows-node/comparisons/sample-de744546e5b8a0e6.json": {
+    "bytes": 254,
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba"
+  },
+  "saved/windows-node/comparisons/sample-de900bc558f2dca8.json": {
+    "bytes": 251,
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6"
+  },
+  "saved/windows-node/comparisons/sample-df2560f7906cab6d.json": {
+    "bytes": 254,
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1"
+  },
+  "saved/windows-node/comparisons/sample-e2147debb746e953.json": {
+    "bytes": 251,
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586"
+  },
+  "saved/windows-node/comparisons/sample-e3d262776302832f.json": {
+    "bytes": 254,
+    "sha256": "09e7050a340b4b445bf853177bd61db15955d4068295dea3674f4d95d2ebee17"
+  },
+  "saved/windows-node/comparisons/sample-e4d10781d3be6992.json": {
+    "bytes": 248,
+    "sha256": "88558c3d9514a3624a4539934a474e532f3be02396ad73cd923a989f87bd59d2"
+  },
+  "saved/windows-node/comparisons/sample-e56ebcbad4b3ec61.json": {
+    "bytes": 254,
+    "sha256": "4497b60925b216db8f5008973d6272c89c90a6de40249fc2f508365364c2c305"
+  },
+  "saved/windows-node/comparisons/sample-e6c08e3cc9b0eb2f.json": {
+    "bytes": 251,
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34"
+  },
+  "saved/windows-node/comparisons/sample-e8417890fea95361.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/sample-eae7f502cfea5855.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/sample-eb1b381667716066.json": {
+    "bytes": 254,
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9"
+  },
+  "saved/windows-node/comparisons/sample-eb6e81323fe050ef.json": {
+    "bytes": 254,
+    "sha256": "4497b60925b216db8f5008973d6272c89c90a6de40249fc2f508365364c2c305"
+  },
+  "saved/windows-node/comparisons/sample-ed5b69a9711e3f53.json": {
+    "bytes": 254,
+    "sha256": "251ec8348aee23ae6df587a1e26a0134c0ee740295b8c18d8465a7d3f4b766b3"
+  },
+  "saved/windows-node/comparisons/sample-f06b8315200c1abb.json": {
+    "bytes": 254,
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02"
+  },
+  "saved/windows-node/comparisons/sample-f9dcd81f8ca741ba.json": {
+    "bytes": 251,
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410"
+  },
+  "saved/windows-node/comparisons/sample-fd9577ef8f62f6a7.json": {
+    "bytes": 254,
+    "sha256": "ccbb575bd8ac13222ad13095612ba4d4a231cbf27a3aa95056a632a797f393bb"
+  },
+  "saved/windows-node/verification.json": {
+    "bytes": 111002,
+    "sha256": "e14c8be534ed2596fcad53803c43819e6e723527fe86d3afa98c54fa2aca4f53"
+  }
+}

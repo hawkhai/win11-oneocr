@@ -15,6 +15,9 @@ def compare(expected,actual):
     def number(value):
         try:return type(value) in (int,float) and math.isfinite(value)
         except OverflowError:return False
+    def bounded(value,lower,upper,field,side,exclusive_upper=False):
+        valid=number(value) and lower<=value and (value<upper if exclusive_upper else value<=upper)
+        check(valid,side+'.'+field+'.range',f'[{lower},{upper}{")" if exclusive_upper else "]"}',value)
     def objects(value,field,side):
         check(isinstance(value,list),side+'.'+field+'.type','array',type(value).__name__)
         return value if isinstance(value,list) else []
@@ -44,6 +47,8 @@ def compare(expected,actual):
     metadata(actual.get('line_count'),len(b),'line_count','actual')
     check(len(a)==len(b),'line_count',len(a),len(b))
     ea,aa=expected.get('image_angle'),actual.get('image_angle')
+    bounded(ea,0,360,'image_angle','baseline',True)
+    bounded(aa,0,360,'image_angle','actual',True)
     numeric=number(ea) and number(aa)
     difference=abs((ea-aa+180)%360-180) if numeric else None
     check(numeric and difference<=.1,'image_angle',ea,aa)
@@ -59,6 +64,8 @@ def compare(expected,actual):
         box(x.get('bounding_box'),y.get('bounding_box'),prefix+'.bounding_box')
         xs=record(x.get('style'),prefix+'.style','baseline');ys=record(y.get('style'),prefix+'.style','actual')
         text(xs.get('type'),ys.get('type'),prefix+'.style.type')
+        bounded(xs.get('confidence'),0,1,prefix+'.style.confidence','baseline')
+        bounded(ys.get('confidence'),0,1,prefix+'.style.confidence','actual')
         close(xs.get('confidence'),ys.get('confidence'),1e-3,prefix+'.style.confidence')
         aw=objects(x.get('words'),prefix+'.words','baseline');bw=objects(y.get('words'),prefix+'.words','actual')
         metadata(x.get('word_count'),len(aw),prefix+'.word_count','baseline')
@@ -71,6 +78,8 @@ def compare(expected,actual):
             metadata(v.get('index'),j,wp+'.index','actual')
             text(u.get('text'),v.get('text'),wp+'.text')
             box(u.get('bounding_box'),v.get('bounding_box'),wp+'.bounding_box')
+            bounded(u.get('confidence'),0,1,wp+'.confidence','baseline')
+            bounded(v.get('confidence'),0,1,wp+'.confidence','actual')
             close(u.get('confidence'),v.get('confidence'),1e-3,wp+'.confidence')
     return {'passed':not failures,'expected_lines':len(a),'actual_lines':len(b),'same_position_text_matches':matched_text,'failure_count':len(failures),'failures':failures,'tolerances':{'coordinates_px':1,'angle_degrees':.1,'confidence':1e-3}}
 

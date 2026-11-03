@@ -1,0 +1,20 @@
+{
+  "jobs": 1,
+  "workers": [
+    {
+      "node": "v24.14.0",
+      "v8": "13.6.233.17-node.41",
+      "initializationMs": 1523.7889,
+      "peakRssBytes": 522760192
+    }
+  ],
+  "cases": [
+    {
+      "name": "corpus-latin-36",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 5704.8911,
+      "rssBytes": 395124736
+    }
+  ]
+}

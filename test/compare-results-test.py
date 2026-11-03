@@ -53,5 +53,26 @@ class StrictComparison(unittest.TestCase):
             self.assertTrue(self.result(lambda x:change(x,limit)),field)
             self.assertFalse(self.result(lambda x:change(x,limit+1e-5)),field)
 
+    def test_angle_representation_range(self):
+        for angle in [-360,-.00001,360,720]:
+            self.assertFalse(self.result(lambda x:x.update(image_angle=angle)))
+        self.assertTrue(self.result(lambda x:x.update(image_angle=359.999)))
+        self.golden['image_angle']=360
+        self.assertFalse(module.compare(self.golden,self.golden)['passed'])
+
+    def test_confidence_range_precedes_tolerance(self):
+        for target in ['word','style']:
+            for endpoint,outside in [(0.,-.0005),(1.,1.0005)]:
+                self.setUp()
+                record=self.golden['lines'][0]['words'][0] if target=='word' else self.golden['lines'][0]['style']
+                record['confidence']=endpoint
+                def change(x):
+                    entry=x['lines'][0]['words'][0] if target=='word' else x['lines'][0]['style']
+                    entry['confidence']=outside
+                self.assertFalse(self.result(change))
+                self.assertTrue(module.compare(self.golden,self.golden)['passed'])
+                record['confidence']=outside
+                self.assertFalse(module.compare(self.golden,self.golden)['passed'])
+
 
 if __name__=='__main__':unittest.main()

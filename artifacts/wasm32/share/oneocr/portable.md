@@ -35,6 +35,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-native.ps1 -So
 
 在任何写入前，工具会拒绝来源与活动根目录模型绑定不符，或覆盖由另一来源准备的模型目录。独立研究其他版本必须显式指定 `--source` 和全新的 `--models` 目录。需要保留现有文件时，可用 `--models work/prepared-photos --unpacked work/prepared-photos-unpacked` 重新提取到独立目录，验证后再决定如何使用；不会自动替换正式模型。
 
+非空输出目录若缺失有效的 `manifest.json`，也会在写入前被拒绝，避免将中断留下的其他版本文件当作新目录继续覆盖。此时应选择新的空目录，不会自动删除或修复未知内容；已存在的空目录仍可使用。
+
 输出包含原资源名、SHA-256、图输入输出、算子、字表特殊 token、校准表和转换合约。未知私有特征层不会被猜测为已兼容。
 
 `-SourceRuntime` 下载固定的 ORT 源码、构建 CPU 动态库并安装到 `work/ort-install`，再编译本项目。依赖源码下载需要网络；准备完成后的识别不需要网络。固定版本见 [dependencies.json](../research/dependencies.json)，研究 Python 的完整版本锁定在 `scripts/requirements-lock.txt`。

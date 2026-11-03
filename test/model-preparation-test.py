@@ -42,5 +42,17 @@ class PreparationSource(unittest.TestCase):
     def test_existing_other_version_is_preserved(self):
         with self.assertRaises(ValueError):source_for_preparation(self.root,self.old,self.models,{})
 
+    def test_unidentified_nonempty_directory_is_preserved(self):
+        target=self.root/'work/partial';(target/'detector').mkdir(parents=True)
+        graph=target/'detector/text_detector.onnx';graph.write_bytes(b'existing partial graph')
+        for source in [None,self.old]:
+            with self.assertRaises(ValueError):source_for_preparation(self.root,source,target,self.reference)
+            self.assertEqual(graph.read_bytes(),b'existing partial graph')
+        self.assertFalse((target/'manifest.json').exists())
+
+    def test_existing_empty_directory_is_accepted(self):
+        target=self.root/'work/empty';target.mkdir(parents=True)
+        self.assertEqual(source_for_preparation(self.root,None,target,self.reference),self.source.resolve())
+
 
 if __name__=='__main__':unittest.main()

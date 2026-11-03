@@ -1,0 +1,266 @@
+{
+  "passed": true,
+  "full_regression": false,
+  "cases": 1,
+  "full_case_count": 138,
+  "passed_cases": 1,
+  "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+  "reference": {
+    "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "book_baseline": "reports/photos-model-update-2026-11-02/book-legacy.json",
+    "all_samples_baseline": "reports/photos-model-update-2026-11-02/legacy",
+    "corpus_baseline": "reports/photos-model-update-2026-11-02/corpus-legacy",
+    "legacy_binary_dir": "bin/photos-2026.11090.22001.0",
+    "report": "reports/photos-model-update-2026-11-02/README.md"
+  },
+  "model_manifest_sha256": "8e6d5b973aad14590890ce78de39e5414b7297df4350d65e7a2990ab9b9c929a",
+  "wasm_build": {
+    "schema_version": 1,
+    "target": "wasm32",
+    "onnxruntime_commit": "a83fc4d58cb48eb68890dd689f94f28288cf2278",
+    "emsdk_commit": "419021fa040428bc69ef1559b325addb8e10211f",
+    "emscripten_version": "4.0.8",
+    "simd": "wasm SIMD128; no relaxed SIMD",
+    "threads": 1,
+    "exceptions": "Emscripten JS-based",
+    "implicit_fp_contraction": "off",
+    "model_directory": "../../models",
+    "opencv_source_adjustment": {
+      "file": "modules/core/include/opencv2/core/hal/intrin_wasm.hpp",
+      "upstream_sha256": "f4a3dea716aee7df92720a485881740207a8d29b4bcaa755fcbb1b966ad41acc",
+      "patched_sha256": "346bcd438c9b59e7b65a6ac5c4df18a19176132062db659d3dfd9a31b7b93bd1",
+      "change": "Wasm v_round matches SSE nearest-even and invalid conversion sentinel"
+    },
+    "ort_source_adjustment": {
+      "profile": "oneocr-wasm-fma-nchwc16-v2",
+      "files": [
+        {
+          "file": "onnxruntime/core/mlas/lib/convolve.cpp",
+          "upstream_sha256": "690ad9b0c8824625f3a6423a2a1e272b2381e6f954f29691e33a07deb1ee83b8",
+          "patched_sha256": "2e91eec74ac2b545d2d1f0a898e09eb1361838b7b3ee462ad5066aba5ca89149",
+          "change": "AVX512 NCHWc channel blocks 16; pointwise batches 128; correctly rounded f32 FMA"
+        },
+        {
+          "file": "onnxruntime/core/mlas/lib/logistic.cpp",
+          "upstream_sha256": "5df5ecb90cc03e00da4d1f7dadc1364af7266983236038c7e0391262c82df19b",
+          "patched_sha256": "0092ffeaa3e59d1867800a66378a9bb6955f100dcd4729e43452a5b8a8dc978a",
+          "change": "Use the native FMA3 polynomial operations for SIMD and scalar tails; coefficients unchanged"
+        },
+        {
+          "file": "onnxruntime/core/mlas/lib/tanh.cpp",
+          "upstream_sha256": "073fefd3cebbd29ad0bae37cee7a93055bf596770a45055da607fefc0b468a36",
+          "patched_sha256": "454fea4e90c307a0c233d1e591aa707b7fcfb1417d11df4239a884edafb25074",
+          "change": "Use the native FMA3 polynomial operations for SIMD and scalar tails; coefficients unchanged"
+        }
+      ]
+    },
+    "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "model_manifest_sha256": "8e6d5b973aad14590890ce78de39e5414b7297df4350d65e7a2990ab9b9c929a",
+    "source_hash_format": "sha256 after CRLF to LF normalization; models and artifacts use exact bytes",
+    "source_files": {
+      "CMakeLists.txt": "734eaec11bbdfd987d03194f33ced6922ac6a917457ee733a27fc8e91874ae27",
+      "cmake/icu-source.cmake": "b9bb19e7e6dc5cfad07f6a1517221f4d3ee1926711f9c8bafc8372d83c04a79b",
+      "cmake/opencv-source.cmake": "ff75d2b436a052fea66e932e6bd9680eea0cf2ed9979a4dd2007b6015c2781dd",
+      "cmake/toolchains/android-arm64.cmake": "d27fad76d3bbfc5f9b461be80f35b21fbc1cbc42a7565b5330f1eff77a35f611",
+      "json.hpp": "7804b38146921d03374549c9e2a5e3acda097814c43caf2b96a0278e58df26e0",
+      "native/CMakeLists.txt": "f81cb44554bb4f40dc4142e596ddb526a5ce668ab8e016a1630ee1cb80a3ab99",
+      "native/android/OneOcr.java": "ae5460e77bdababefd40f53435fb8e90be391eb8d712410b2ffa96315bb2b98e",
+      "native/android/oneocr_jni.cpp": "ddc04ad4144329ec5cf6e5dbfad1cba6e35d7647c97181fdb19a8f1d86ea45d6",
+      "native/include/oneocr_portable.h": "949be635a16e8965c66e455e3247b92f36510eb4f2eff57c5960b9862e7a3e9d",
+      "native/include/oneocr_portable.hpp": "d64c9c7f6cfaf377e6e7e1b2284f91f1fc13c180f86459f2e29acc7501439485",
+      "native/src/alignment.cpp": "b7340ce2474f19e096d1b80d9dbd26d8998775b79130931cf4bf7f48be869a83",
+      "native/src/alignment.hpp": "02622e5d427cfff7edf26f6b6e4b2470c6c29ccb4c39340959f5788338ca2cd6",
+      "native/src/classification.cpp": "9be400417dabd2d1d7bd6bacfdab9842efe402dea521af5d9a0ce04f7f8df608",
+      "native/src/classification.hpp": "97321878267bb7892185f9af8710c240639f685d77ce7158c08df974ef17e4c3",
+      "native/src/cli.cpp": "c6a213b8711b45023dcb8bd482a3aac52f00ca1c236439327ea40b4ea3af086a",
+      "native/src/confidence.cpp": "4c54a2cae12336a56e6270b0de0008c6598c24b5e96c6d3964796a7662ca849d",
+      "native/src/confidence.hpp": "346dc3e4e92e3a4b46e2c38b0ff619fb0dce2b7a3518b0e77788424d7d7d610d",
+      "native/src/detector.cpp": "a90a00b41d6feeeb23ef8b3fd3e10995ec7d6283d34f815882bc5fbfd5ec52c8",
+      "native/src/detector.hpp": "34be34a59a18523ce43645f43ba08c3929d151ec63ee0d71df13361bcc76dc79",
+      "native/src/engine.cpp": "b0db4fe864b6db1128f9d4596fde3f955f30ae722b26f43595a53dd192597d2d",
+      "native/src/fragment.cpp": "bdccc6ca989e4fdfe8cdd7b65bfe8dd4a505b93e0795b0a278ed13924561f93c",
+      "native/src/image.cpp": "b7ffc3b05f5594950ae25364953de59a4b2de78db33bf7708289ee8bd2833916",
+      "native/src/image.hpp": "b4771791b92c3744962c93b1079193ab3ec2509efb238b32772c9da9bfb08566",
+      "native/src/nms.cpp": "3b7e8b6fa41bc4e35be92b8e01134117dbbe40c83c37c676b15a87d22c4ea473",
+      "native/src/nms.hpp": "45c38405e94cb801a92d4b8a8210451215046af655cc69215e81f27210514468",
+      "native/src/normalizer.cpp": "09771f19fc7101c39baa5862a4377dca759cb7e7855828f0685cc757cd116a63",
+      "native/src/normalizer.hpp": "9fd45c8c735f6115b8d0b7c845026bc79d1eb84e4f013a72c5c1ee5b10a4655e",
+      "native/src/ordering.cpp": "7750e834aa86662d052cad52e3c413a88f4f63623e908f74ba3be2b7e05477c3",
+      "native/src/ordering.hpp": "9966c27ab09563370c50eacdb1c77f569ef5402e260f04b56d9263738e77417c",
+      "native/src/sha256.hpp": "ee82fbdae944e2085065c15e4086ca4670879c09bbe00535d400a1fc0c752494",
+      "native/src/trace.hpp": "c5f5b4ac7b31a016b4a184248de677662ba0885c69815a549285b667646fa533",
+      "native/src/unicode.cpp": "86027929d839d708773be5885b3ac3ad0083ac290b699c40628e88f818fbee95",
+      "native/src/unicode.hpp": "4392f873c339724f9de19969650b3490f1ffe42f8566915d9393f1be81c18d0e",
+      "native/src/windows_compat.cpp": "c76b613f8b8f67a40cab8a32bbed3bb66e8a7c66591fa727519df78012a9d804",
+      "native/tests/alignment_test.cpp": "6ea2c16be96b3eea017a3bb7e9bab0a9dfcfbb6b82f77bb60807a0a4c2032d45",
+      "native/tests/api_test.cpp": "4801e645179aa33f022b5df6f17e585ebca1638cfb7b3a2d92e7ad182df3166d",
+      "native/tests/classification_test.cpp": "6d2a777477620b526efa494307f5c120b68a1546c4767fac36093549d000f63a",
+      "native/tests/confidence_test.cpp": "a980d9bf7b98f0548a7227169d1dbe8a4cd28d160ebeb52f53fb88dfff8e9e6a",
+      "native/tests/decode_image.cpp": "06750cff9bb42e8330d36d37ab08bb47e4c327ead9f647ecdd8566f48be5c331",
+      "native/tests/detector_test.cpp": "1f0f7fddf72868a78bd79a0afea15eb60569da6a17544787927b6d90bf018fd7",
+      "native/tests/math_test.cpp": "605c50881ac8e8f8273219c9375563083f6f1e54b9ac237f845fcd2b65e3992f",
+      "native/tests/nms_test.cpp": "c2332dc3d4cb9a6e708cef46e1d81f4dcc54115cb187e8d803bd29d1657afe40",
+      "native/tests/ordering_test.cpp": "450b5ba99e66bd73c7d8449be34895824eda7130b7d712e27580f69363227362",
+      "native/tests/tensor_probe.cpp": "29127ce353106e502d0e9a79a65e4fdd087e40fb29622e3eb4b3f86448bd4443",
+      "native/wasm/activation.hpp": "775d7d025cb638819494093ba5c5c5bbf884154c574cb71b362ddfcddac4757c",
+      "native/wasm/convolution.hpp": "4b5995eef3344fab49b47217f4966d9fb347d0157e5d4a66c325768c07125756",
+      "native/wasm/entry.cpp": "ba681c6b7074825368cd41d7a6874f416ee3b2bd837defbf225e815ea6bace8f",
+      "native/wasm/fma_test.cpp": "ad6275c8aa8d9be36de60c469ea9e7635fdc44eb98d999717bf25c33523c1333",
+      "native/wasm/opencv-rounding.hpp": "0d5d618e6f8cb6f5da3ad78b2cf5c008287ee94f866c5ff489f7fac6dc26aef4",
+      "native/wasm/probe-node.cjs": "ff73a69b6f83a3c310218a8c1885905d8876af563c1cc5f90915166dad3b794c",
+      "native/wasm/rounding_test.cpp": "7d8c36155e88f1cd2700ce78f146a7ef5dd481a6c52cdcc38ab18dc40f95cb5d",
+      "research/dependencies.json": "080541371ea2451ebfe7ef2039dd1ca1cecaecd19091b97fb1336b62041af0eb",
+      "scripts/browser-memory.ps1": "b5870c6b34d3e95f9c71d89aaca6d7369204e454e1f266a6f063dfbbe30c63e2",
+      "scripts/build-wasm.py": "07cdf21a997ef9a6e05c52d240f32bfad9dcc99c4042362755e3dfd7d743c97b",
+      "scripts/compare-results.py": "06d137cc93680f766031d783da9526064808fea1135124348e180bb8607f4869",
+      "scripts/run-wasm-parity.py": "bdb8d8f0bfd04a6bb574bbae8984a47227eb96d44d1881517b5b14a450750a87",
+      "scripts/verification_state.py": "417dcffb0de6b5ee362784a1b38215677dd388325706ae67722529aefbd8b1f7",
+      "stb_image.h": "594c2fe35d49488b4382dbfaec8f98366defca819d916ac95becf3e75f4200b3",
+      "test/compare-results-test.py": "12b3f49edc1096e973ec49132ba5682b7253cf76723a6bcceea71f1ae98488e9",
+      "test/verification-state-test.py": "d3068ad186915711be74dc313238f6348f94602eb40f8648c1f2b5d0851a53d8",
+      "test/wasm-test.mjs": "d63129396eb0f4ffc6b83f5441ac80ad2fb9ad119f11995cb159c8eeb9108fca",
+      "web/browser-regression.mjs": "4016e41a189b33b2c23ffa5d7d02d2fae688e88eb2ebc5f6d0d69a39f2949d6b",
+      "web/cli-entry.mjs": "8e476a986a36cec1fa1b1e443bb5906680515228de8ba8d3a9fdf7cfa2a85bbd",
+      "web/cli.mjs": "385f5bb73c7e77e21fd1f72e373bda66fb4e3aaf8dbfa3300883f0d0a2619ce5",
+      "web/oneocr.d.mts": "16f24369fc5e319187c69f66aa6cc85e8f9cd1b40baf9205ad7e6ec628eb67b9",
+      "web/oneocr.mjs": "7b0f0089bd34ad58a69c2f3f1c3ed316e0d0ded0643fd376bbf0e919360e6dbc",
+      "web/regression.mjs": "74f0b8ab3fd7c6916f7e4b55b7aa0e4c76f42e780f11c55ea59c1fbd886a18f5",
+      "web/trace.mjs": "c0cd73ddbae873418e1c809b104007a58a33f96e736d6caee0e5c23a9f723ef1",
+      "web/worker-client.d.mts": "68ebe35177142af88b554be9c4d7b8feedf4381485a00f25924e2429311ef10f",
+      "web/worker-client.mjs": "1f0ddd9375810fed73c340638bb41b745f126db66180d032fbcb4cab3c6bfb86",
+      "web/worker.mjs": "44a47673174a1b5154b498327d0db8a8b33658ec692edc4bf2c81ab7c709d5a1"
+    },
+    "files": {
+      "cli.mjs": "84b34ee2df1f99bf9111b88e3f0f531e902cf6951b0c43eb405abf4987d2c26f",
+      "oneocr-core.mjs": "fbdfe39a899de3549822e747e105bf5ca6a16e8c87439b4d7ff1d2d3fe21e3c4",
+      "oneocr-core.wasm": "70ad89615c37319c83e74935f8cf5dc9b039d503fc2328e22251ecb98a47739e",
+      "oneocr.d.mts": "16f24369fc5e319187c69f66aa6cc85e8f9cd1b40baf9205ad7e6ec628eb67b9",
+      "oneocr.mjs": "7b0f0089bd34ad58a69c2f3f1c3ed316e0d0ded0643fd376bbf0e919360e6dbc",
+      "share/oneocr/THIRD_PARTY_NOTICES.md": "da3ddebee72ad0c5d1d8c5f29870c58b52bd7cffe899876e10879a2e4feeb715",
+      "share/oneocr/error-codes.md": "5980ae721f3a9fe77c196603e96fb6454c2fc016e64cfaa5cbb0ac7eb8c31629",
+      "share/oneocr/licenses/compiler-rt-LICENSE.txt": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d",
+      "share/oneocr/licenses/emscripten-LICENSE.txt": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86",
+      "share/oneocr/licenses/gcc-runtime-GPL-3.txt": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "share/oneocr/licenses/gcc-runtime-copyright.txt": "d7815dd2364180835891947d96d808878204dea45b8597602a7952332195fbea",
+      "share/oneocr/licenses/icu-Unicode-3.0.txt": "fcd7d69d457ebec8024269777c5d9cf3afc554592484d3dc7d9e619872f89c9c",
+      "share/oneocr/licenses/libcxx-LICENSE.txt": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b",
+      "share/oneocr/licenses/libcxxabi-LICENSE.txt": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c",
+      "share/oneocr/licenses/msvc-runtime-notice.txt": "60943b6388944e8283d620c161b8129e01dc656ad0c43f4d53951e49c3ba44fa",
+      "share/oneocr/licenses/musl-COPYRIGHT.txt": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af",
+      "share/oneocr/licenses/nlohmann-json-MIT.txt": "62f9a1bd84e5f64b4bd1542e556cb94d9872621b6e2e5af4d5d0b3e5bdf38c6a",
+      "share/oneocr/licenses/oneocr-native-AGPL-3.0.txt": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "share/oneocr/licenses/onnxruntime-LICENSE.txt": "c250d6278f0b47a6439fb7592b08b58a55eb9f535aa49a1db63211c3f982b674",
+      "share/oneocr/licenses/onnxruntime-ThirdPartyNotices.txt": "e00f828e0a33de591a355ae6606d2625f5758da7d2c844db7821c9dd3e3647b6",
+      "share/oneocr/licenses/opencv-Apache-2.0.txt": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "share/oneocr/licenses/opencv-softfloat-fdlibm.txt": "07360afca97fb6a725a50797960c4506f592dab5331df2b780c85e459d422ce3",
+      "share/oneocr/licenses/opencv-zlib.txt": "18dbd37f0ab175c37877e9053ff870a7de2809a3e9b9673b2696aa5009264638",
+      "share/oneocr/portable.md": "645e868d5b78c0acbabde5e8cb814781cd773c25c00361cb0008f16ae5826241",
+      "share/oneocr/wasm.md": "8e5b34bc3d6a26e671852ee09e1b3be80dc5bb4aedc405f699a430f1963ac7af",
+      "worker-client.d.mts": "68ebe35177142af88b554be9c4d7b8feedf4381485a00f25924e2429311ef10f",
+      "worker-client.mjs": "1f0ddd9375810fed73c340638bb41b745f126db66180d032fbcb4cab3c6bfb86",
+      "worker.mjs": "44a47673174a1b5154b498327d0db8a8b33658ec692edc4bf2c81ab7c709d5a1"
+    }
+  },
+  "comparator_sha256": "06d137cc93680f766031d783da9526064808fea1135124348e180bb8607f4869",
+  "scheduling": {
+    "method": "round-robin",
+    "jobs": 1
+  },
+  "browser_request_timeout_ms": 1800000,
+  "execution": {
+    "jobs": 1,
+    "workers": [
+      {
+        "browser": "156.0.8078.79",
+        "initializationMs": 3285.300000011921,
+        "requestTimeoutMs": 1800000,
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "capabilities": {
+          "backend": "wasm-onnx-cpu",
+          "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+          "parity": "incomplete",
+          "word_confidence": "native_21_features_mlp",
+          "style_confidence": "native_classifier_calibrated",
+          "geometry": "native_curve_polygons"
+        },
+        "browser_memory": {
+          "method": "Windows OS PeakWorkingSet64 for live browser processes, queried before browser close",
+          "scope": "One regression worker browser tree; process peaks need not occur simultaneously",
+          "maxProcessPeakBytes": 718004224,
+          "sumOfProcessPeaksUpperBoundBytes": 1167376384,
+          "processes": [
+            {
+              "processId": 25712,
+              "name": "chrome.exe",
+              "peakWorkingSetBytes": 125169664,
+              "workingSetBytes": 125165568
+            },
+            {
+              "processId": 21660,
+              "name": "chrome.exe",
+              "peakWorkingSetBytes": 10162176,
+              "workingSetBytes": 10158080
+            },
+            {
+              "processId": 56400,
+              "name": "chrome.exe",
+              "peakWorkingSetBytes": 72499200,
+              "workingSetBytes": 70381568
+            },
+            {
+              "processId": 11388,
+              "name": "chrome.exe",
+              "peakWorkingSetBytes": 93782016,
+              "workingSetBytes": 90554368
+            },
+            {
+              "processId": 48492,
+              "name": "chrome.exe",
+              "peakWorkingSetBytes": 20062208,
+              "workingSetBytes": 20058112
+            },
+            {
+              "processId": 10356,
+              "name": "chrome.exe",
+              "peakWorkingSetBytes": 90279936,
+              "workingSetBytes": 88973312
+            },
+            {
+              "processId": 8776,
+              "name": "chrome.exe",
+              "peakWorkingSetBytes": 37416960,
+              "workingSetBytes": 36421632
+            },
+            {
+              "processId": 43500,
+              "name": "chrome.exe",
+              "peakWorkingSetBytes": 718004224,
+              "workingSetBytes": 608739328
+            }
+          ]
+        }
+      }
+    ],
+    "cases": [
+      {
+        "name": "corpus-latin-36",
+        "milliseconds": 6149.699999988079,
+        "status": "success",
+        "code": 0
+      }
+    ]
+  },
+  "results": [
+    {
+      "name": "corpus-latin-36",
+      "passed": true,
+      "failure_count": 0,
+      "expected_error": null,
+      "input_sha256": "71faad3967856e09ebe7221ddf99112fac37f1aec7ed90a474e8eb6095a1340f",
+      "baseline_sha256": "b6bf5751777ad098746e0292dc3866e22086cdec8b8405e9f6654cc59030cbac",
+      "actual_sha256": "4eb11c11ad6870bbc12298c142fabd8b256cf3d77911376f068b5b3607034f6f"
+    }
+  ],
+  "mode": "fresh-inference",
+  "fresh_inference": true
+}

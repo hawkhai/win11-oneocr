@@ -129,6 +129,18 @@ node test/wasm-test.mjs
 
 比较器还检查 `line_count`、`word_count` 与数组长度一致，以及行/词 `index` 的整数类型和连续顺序；缺失字段、错误类型和非有限数值不能通过。主机文件路径与后端专属 `engine` 元数据不要求相等。坐标、角度和置信度阈值保持原值。
 
+数值误差比较前，基准和结果的角度均须位于 `[0,360)`，词及手写/印刷置信度须位于 `[0,1]`；不会以角度取模或误差容限接受越界值。
+
+复核已保存结果必须使用独立的新目录：
+
+```powershell
+python scripts/run-wasm-parity.py --compare-only --output reports/review-fixes-2026-11-03/linux-node --verification-output work/linux-record-verification
+```
+
+此模式不执行推理，也不修改原来的清单、路径、调度、耗时、构建或结果；只输出新的 `verification.json` 和比较记录。不能传入 `--jobs`、`--browser` 等推理选项来改写历史。复核会检查执行文件摘要、输入和基准绑定，以及当前运行文件和模型是否仍与原执行一致；发生变化时须重新推理。新执行自动保存 `execution.json`，历史报告须保留完整的 `FILES.sha256.json` 索引。该模式不验证尚未编译的源码改动，不能用旧结果声称新引擎已通过。
+
+边界修复的测试与五端历史记录复核见[独立报告](../reports/review-boundaries-2026-11-03/README.md)，与上一轮全新推理分开记录。
+
 可用 `--schedule-from` 指定同模型、同输入摘要的旧完整报告，仅利用耗时安排并行任务，不复用其识别结果。浏览器回归的单请求测试等待预算默认 30 分钟，可用 `--browser-timeout-ms` 调整，以容纳多进程 CPU 争用；这不会修改 Worker/插件的产品默认超时或任何数值验收阈值。Windows 浏览器回归在关闭前记录当前浏览器进程树的 OS 峰值工作集，各进程峰值之和只作为上界，不代表同时占用峰值。
 
 浏览器全量回归可使用本地 Chromium 和固定的 Playwright Core 1.55.0：

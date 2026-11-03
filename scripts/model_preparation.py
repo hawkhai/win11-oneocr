@@ -17,6 +17,8 @@ def source_for_preparation(root, source, models, reference):
     if (implicit or models == (root/'models').resolve()) and expected and actual != expected:
         raise ValueError('Model source differs from the active regression binding; use a separate --models directory for another version')
     manifest = models/'manifest.json'
+    if models.exists() and (not models.is_dir() or (not manifest.is_file() and any(models.iterdir()))):
+        raise ValueError('Refusing a nonempty model directory without a valid source manifest; choose a fresh --models directory')
     if manifest.exists():
         previous = json.loads(manifest.read_text(encoding='utf8'))['source_assets']['oneocr.onemodel']
         if previous != actual:
