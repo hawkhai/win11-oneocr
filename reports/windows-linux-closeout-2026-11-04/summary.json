@@ -1,0 +1,23 @@
+{
+  "policy_id": "windows-linux-native-strict-closeout-v2",
+  "required_platforms": [
+    "win32-x64",
+    "linux-x64"
+  ],
+  "recognition_acceptance_complete": true,
+  "stop_development": true,
+  "current_scope_verified": true,
+  "cases_per_platform": 269,
+  "passed_cases": 538,
+  "recognition_outputs": 532,
+  "expected_rejections": 6,
+  "evidence_mode": "existing sealed complete fresh native inference plus independent saved-result verification",
+  "fresh_inference_in_closeout": false,
+  "known_unresolved_in_scope_failures": 0,
+  "native_ctest_per_platform": 26,
+  "python_full_suite_tests": 67,
+  "further_scope_expansion_requires_user_request": true,
+  "original_cross_platform_goal_status": "incomplete; historical status and unverified platforms retained",
+  "final_delivery_identity_authority": "artifacts/OFFLINE_PACKAGE.json must match final Git HEAD; local commit and verified bundle/source ZIP required",
+  "push_or_upload_performed": false
+}

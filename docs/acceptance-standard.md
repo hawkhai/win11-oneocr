@@ -2,9 +2,12 @@
 
 2026-11-03，用户明确要求“只要逆向的 C++ 版本和原版绝对一致就可以了。网页汇编不用绝对一致”，并进一步确认数值口径为“沿用此前严格阈值”。这条规则取代此前将五个环境全部严格一致作为联合验收门槛的要求。未经用户明确调整，不得改变。
 
+2026-11-04，用户进一步明确收手范围：**当前 Windows x64 / Linux x64 C++ 两端全部登记输入和参数按原 DLL 严格通过，且范围内无未解决的功能错误或回归失败，就完成本地提交、刷新离线包并结束本轮。** 不再主动扩展样本、参数、书写者或平台。Linux ARM64、macOS、Android 与 Wasm 的差异或未验证项不阻塞本轮收尾，仍如实记录；未来扩展由用户另行要求。收手规则完整条款见根目录 `AGENTS.md`。
+
 | 对象 | 与原 DLL 的一致性要求 | 是否阻塞 C++ 验收 |
 |---|---|---|
-| 逆向 C++ 原生引擎，包括各原生平台 CLI、动态库及适配接口 | 按原有严格标准逐项对齐 | 是；未通过或未验证须明确记录 |
+| Windows x64 / Linux x64 C++ 原生 CLI、动态库及适配接口 | 按原有严格标准逐项对齐 | 是；两端全部当前登记项通过后收尾 |
+| Linux ARM64、macOS、Android 等其他原生平台 | 后续验证仍须沿用严格标准；当前未验证 | 否；不纳入本轮收手范围 |
 | JS / WebAssembly，包括 Node 与浏览器 | 不要求绝对一致；比较结果保留为诊断记录 | 否 |
 
 ## C++ 的严格口径
@@ -27,7 +30,9 @@ Linux 原生完整新推理：
 python3 scripts/run-native-parity.py --binary artifacts/linux-x64/bin/ocr --output work/fresh-native-acceptance-linux
 ```
 
-每个平台分别报告构建与运行结果。现有已验证原生环境为 Windows x64 / Linux x64；Linux ARM64、macOS x64/arm64、Android arm64-v8a 仍未验证，不得因为 WebAssembly 能运行就标记对应原生平台通过。整体目标继续保留 incomplete，直到剩余目标有实测证据。
+每个平台分别报告构建与运行结果。现有已验证原生环境为 Windows x64 / Linux x64；Linux ARM64、macOS x64/arm64、Android arm64-v8a 仍未验证，不得因为 WebAssembly 能运行就标记对应原生平台通过。原始完整跨平台目标与既有 `engine.parity` 保留 incomplete 的含义，和本轮 Windows/Linux 收手验收分开记录；其他平台未验证不阻塞本轮完成。
+
+实现、模型、运行资产与登记范围未变化时，可以复用已封存的全量新推理证据并独立复核，无需为收尾文档反复重跑推理；复核必须标记 `fresh_inference=false`。若这些身份或相关行为有变化，重新执行受影响两端完整当前范围，不能靠旧证据收手。本轮收尾记录见[Windows/Linux 验收报告](../reports/windows-linux-closeout-2026-11-04/README.md)。
 
 封存后的原生结果可用以下独立入口重新严格核对；它只将 Windows/Linux 原生识别结果纳入通过判定，Wasm 差异不参与门槛。此模式读取保存输出，不执行新推理：
 

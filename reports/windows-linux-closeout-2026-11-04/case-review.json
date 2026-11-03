@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "case_root": "F:\\pythonx\\myocr\\win11-oneocr\\research\\windows-linux-closeout",
+  "generated_at": "2026-11-03T16:39:44.220346+00:00",
+  "scope": {
+    "auth_status": "granted",
+    "network_mode": "offline",
+    "ready_for_act": "true",
+    "assets": [
+      "F:\\pythonx\\myocr\\win11-oneocr\\bin\\photos-2026.11090.22001.0\\oneocr.dll",
+      "F:/pythonx/myocr/win11-oneocr/AGENTS.md",
+      "F:/pythonx/myocr/win11-oneocr/docs",
+      "F:/pythonx/myocr/win11-oneocr/research",
+      "F:/pythonx/myocr/win11-oneocr/reports",
+      "F:/pythonx/myocr/win11-oneocr/artifacts"
+    ]
+  },
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "evidence": 2,
+    "workitems": 2,
+    "timeline_events": 2,
+    "findings": 2,
+    "paths": 1
+  },
+  "issues": [],
+  "traceability": {
+    "E-001": {
+      "workitems": 1,
+      "timeline": 1,
+      "reports": 2
+    },
+    "E-002": {
+      "workitems": 1,
+      "timeline": 1,
+      "reports": 3
+    }
+  }
+}
