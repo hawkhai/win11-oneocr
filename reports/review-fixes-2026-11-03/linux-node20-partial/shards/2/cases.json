@@ -1,0 +1,336 @@
+[
+  {
+    "name": "sample-b0d25177b1a8480c",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/dewarp-thesis-b-comparison.png",
+    "sha256": "233c13fee537b9d8329bce31c326962efa88980525ce40e482c84db16366ac20",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/b0d25177b1a8480c.json",
+    "expected_error": null
+  },
+  {
+    "name": "book",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/ocr-book.jpg",
+    "sha256": "d7174025c14af059409ebf40baa934bd9910f299bd1509f1cafbaadca09092f1",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/book-legacy.json"
+  },
+  {
+    "name": "sample-fd9577ef8f62f6a7",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/quality-noisy-fraktur.png",
+    "sha256": "85c81c9fedece217a71669fa5a764c140060bc16182bd970f183cddad4ebc9cc",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/fd9577ef8f62f6a7.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-0582df7394486480",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/layout-segmentation.jpg",
+    "sha256": "9b957a6c040405895a2030c3246f4294eb1a1c1952289b63c66c45154992bd25",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/0582df7394486480.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-6692328598e9c3a8",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/warped-pages.jpg",
+    "sha256": "7ba8f602762d53abe1becdef6a024f780fb275de8717d03ca8960e2be06178d4",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/6692328598e9c3a8.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-abad7ae0707ac749",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/psm-sherlock-page.png",
+    "sha256": "0431ff40e12bacdba65adfc45f89bd15831a9327fbf628b43af1e474b9a95813",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/abad7ae0707ac749.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-4f45cf0e51f46a54",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/dewarp-thesis-a-comparison.png",
+    "sha256": "109acb72564d5d7191a002539dc05075300f0feeb41a8dc2b8b4a6292136b21c",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/4f45cf0e51f46a54.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-3255119646d641ba",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/scene-text.jpg",
+    "sha256": "827912802a25b701ddab8cb30e641d7b5e9fd5ed0daaabbc1c04dda53fbcabe7",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/3255119646d641ba.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-c9a092125962e322",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/cn-vertical-result.jpg",
+    "sha256": "b7a9ac077469100c6602558c5ae606ca2adebf6d8eb317d1003aa0616323fc55",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/c9a092125962e322.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-2c2835cf707a4fe6",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/cn-ticket-result.jpg",
+    "sha256": "82c775acfc4ba81b4ed6c09606d78f53e536d94229e97c5109b71c0bbacd47a6",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/2c2835cf707a4fe6.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-eb1b381667716066",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/dewarp-thesis-table.jpg",
+    "sha256": "ca26ff9def88a52b9c64d7161036974fe6efd6843b4997e6415fc73f10fc3de8",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/eb1b381667716066.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-3c6e7c7ab6144e27",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/receipts-labels.jpg",
+    "sha256": "d5f4894fe92fec13003d3fcbe89b91620fb3834c187ea9b9bbfd9b7851b3eec2",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/3c6e7c7ab6144e27.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-eb6e81323fe050ef",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/pp-lab-table.jpg",
+    "sha256": "4352e672744103a123fdf8a88b44fad607929e9174d39546a7a4d97bf3f304d7",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/eb6e81323fe050ef.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-ed5b69a9711e3f53",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/structure-paper-table.jpg",
+    "sha256": "91cd8d98ec206ca438e579cb8b99c4740c0b503ae9d9ad6485148a808d939812",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/ed5b69a9711e3f53.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-9e2ab94f59cf15f8",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/psm-whole-foods-receipt.jpg",
+    "sha256": "79e2221c85e0617b910007473a4b1c6fe599156493afb1680781354cc9f6d7a6",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/9e2ab94f59cf15f8.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-f06b8315200c1abb",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/pp-wash-label.jpg",
+    "sha256": "957a9cc15da49312277796126be225e0ee653f3316578c12d626fa43fbe9561b",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/f06b8315200c1abb.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-b3edaa47ba780e0c",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/easy-health-poster.jpg",
+    "sha256": "84b7f8099f0369fa377e5c93930082e4bbd14fa4efb1c17f550320e3fd736715",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/b3edaa47ba780e0c.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-e3d262776302832f",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/pp-math-exam.jpg",
+    "sha256": "dd39351e864c37741b0edc5bdb5742159e7aecb94068a928455da980cb407dbb",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/e3d262776302832f.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-0b6fd6de5d12d93c",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/psm-sparse-web-menu.jpg",
+    "sha256": "b49281bf5c5117c4288103ca13878e243edb8a1ebe7f87b388102ca108c95a0e",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/0b6fd6de5d12d93c.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-903c40f10a92c762",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/cards-template-input.jpg",
+    "sha256": "48a135b426397c6c38888902e58f212a66ee24843c5d3224369fcf9bdcbe196e",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/903c40f10a92c762.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-640bb28cd64c2e5b",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/digits-result.jpg",
+    "sha256": "6c216427c55a6b79e26cfaff51beedacf2e638e773e90c206fb84282fbf96403",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/640bb28cd64c2e5b.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-9a0e9586ac3fe4e2",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-capabilities/dark-contact-screenshot.png",
+    "sha256": "1d006a3a0e2cc45827a0fe181c1d2f5bed74bf663b0d927b44fdfec135b18876",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/9a0e9586ac3fe4e2.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-bbbd4ae8468a6451",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/cn-english-book-cover.jpg",
+    "sha256": "1b2a5ac75eaa6ee3de90c8548129ede3394c2a7bd379093c9bba221b7e6f714e",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/bbbd4ae8468a6451.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-9e131b7b56e565db",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/easy-yuyuan-road.jpg",
+    "sha256": "7d8f231016c6a35da879b7d79b39c45b694aef962ae30f64063d981e618fbf7f",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/9e131b7b56e565db.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-c45a727514fb8982",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/easy-minato-sign.jpg",
+    "sha256": "e74ee1b1757ad97a383b9ef048b81c9d999ff0a96d65cbd8cac6ea8bf14392d9",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/c45a727514fb8982.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-eae7f502cfea5855",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/pp-vertical-plaque.jpg",
+    "sha256": "28713812096ab5d442a32e0d1c9fbd4fb358f23a7b0b5e5e07c9128999ed7327",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/eae7f502cfea5855.json",
+    "expected_error": null
+  },
+  {
+    "name": "corpus-cjk-rotate-270",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/cjk-rotate-270.png",
+    "sha256": "cadfa1cc8137dba1b51ace236019ff95c034316c2648dbaa36f5bca3d3e2b97c",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/corpus-legacy/cjk-rotate-270.json"
+  },
+  {
+    "name": "corpus-latin-rotate-10",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/latin-rotate-10.png",
+    "sha256": "fac070052bdfc20e02a66224b8e8773f2f86ccf788eb1ad3536db18835e39e45",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/corpus-legacy/latin-rotate-10.json"
+  },
+  {
+    "name": "corpus-cjk-rotate-10",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/cjk-rotate-10.png",
+    "sha256": "0cbe95a596396b049d1e21cacef352c203c40363f06fe1de8918eeb3d91a1a51",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/corpus-legacy/cjk-rotate-10.json"
+  },
+  {
+    "name": "corpus-cjk-rotate-3",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/cjk-rotate-3.png",
+    "sha256": "6a608f80302ea5a0c76063a90a2098c584ad2ff32a2fc97888bfa4ea5f6f295d",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/corpus-legacy/cjk-rotate-3.json"
+  },
+  {
+    "name": "corpus-multi-column",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/multi-column.png",
+    "sha256": "cf3c28acbefbf8c7bea8d338e33441a34fb5fb477b1bff159c4cacc8ffd7b1b0",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/corpus-legacy/multi-column.json"
+  },
+  {
+    "name": "corpus-latin-rotate-0.5",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/latin-rotate-0.5.png",
+    "sha256": "519918dee63a62fc7bb9b57f9238c3ab6f16434abd91390a8033c6138b438204",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/corpus-legacy/latin-rotate-0.5.json"
+  },
+  {
+    "name": "corpus-latin-36",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/latin-36.png",
+    "sha256": "71faad3967856e09ebe7221ddf99112fac37f1aec7ed90a474e8eb6095a1340f",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/corpus-legacy/latin-36.json"
+  },
+  {
+    "name": "corpus-latin-18",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/latin-18.png",
+    "sha256": "1ae202b7659494da9b362f56adcc0b12b8f166d8a7cdb4d93d909ac97e465aca",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/corpus-legacy/latin-18.json"
+  },
+  {
+    "name": "sample-41b45e5a7c1f065c",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-capabilities/script-cjk.png",
+    "sha256": "845a6747caa7ca3d7ac2371f02b2b3430bea21029df8cdb26c9e18e5bdc3fc92",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/41b45e5a7c1f065c.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-ab78d5d64fd48439",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-parity/handwriting-rotate-3.png",
+    "sha256": "dbbde3f98e615790ddcdb67a134cd419261cda494f00d2a6df6b3adaedeb3025",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/ab78d5d64fd48439.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-5fa29af9e63fefc2",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/psm-license-plate.png",
+    "sha256": "7a6c7235932620734e50f2390835aeff238f0b9b4dbac38399b36aede4956102",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/5fa29af9e63fefc2.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-60f7669b6fa86751",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/psm-old-engine-title.png",
+    "sha256": "61b315d7443463a8786e5d89b2bce9c57a8dcba9dd20c457c7d5ed65fbd5a144",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/60f7669b6fa86751.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-2f4730c5e82e18ff",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/psm-old-engine-title.jpg",
+    "sha256": "29299065bcfed9f9c7c587aed561f1d76f6973495553a58ebda021d914993d40",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/2f4730c5e82e18ff.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-e8417890fea95361",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/digits-warped.png",
+    "sha256": "12daccbfaf0996d6a3ab03d4a62bed004d644d7c2bb44f9e533caa316d0e3890",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/e8417890fea95361.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-203573ceb1873d5c",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-capabilities/script-thai.png",
+    "sha256": "0ce235ffaa2c52c2aac207917f46e03ee44a00e45c59220bb5b6504674f5c621",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/203573ceb1873d5c.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-55932e69942ed683",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-capabilities/script-arabic.png",
+    "sha256": "e48442631d86fa27962307a8032d269c763a57935ae745ef6e872f635594b0b2",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/55932e69942ed683.json",
+    "expected_error": null
+  },
+  {
+    "name": "corpus-arabic-36",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/arabic-36.png",
+    "sha256": "796c4585fc52ab1186e26dc19d82f8df758eb7e58aeb991de5f97bd66c3b7992",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/corpus-legacy/arabic-36.json"
+  },
+  {
+    "name": "sample-c159f2e4564feb4f",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-capabilities/script-devanagari.png",
+    "sha256": "817f4a05c40c0cbac98f81814d61152e314b240d4199793dda14a5b940f03f5d",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/legacy/c159f2e4564feb4f.json",
+    "expected_error": null
+  },
+  {
+    "name": "corpus-blank",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/blank.png",
+    "sha256": "e6c1b77f53191625cb96289940e11361f943997ad26799f95900659278d34a45",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/corpus-legacy/blank.json"
+  },
+  {
+    "name": "sample-4169c134c6189ae6",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/cn-single-line-mixed.jpg",
+    "sha256": "337533e2e614050c484797420f080a9b251a61a01acb22d42fb997900a921570",
+    "baseline": null,
+    "expected_error": {
+      "code": -18,
+      "message": "Image dimensions must be 50..10000 pixels"
+    }
+  },
+  {
+    "name": "sample-e4d10781d3be6992",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/quality-border-comparison.png",
+    "sha256": "d6bb202fe300092bcd256b1545ff02c5a100844cd92110248da91518f0ee243f",
+    "baseline": null,
+    "expected_error": {
+      "code": -15,
+      "message": "Unsupported image channel count"
+    }
+  },
+  {
+    "name": "sample-440f10edac8d7c0b",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/cn-single-line-mixed.jpg",
+    "sha256": "ca7fdcb317b8b0fd1cd01dc8ddc83b19dff8d8bb4b28193994d3ded02c25903f",
+    "baseline": null,
+    "expected_error": {
+      "code": -18,
+      "message": "Image dimensions must be 50..10000 pixels"
+    }
+  }
+]

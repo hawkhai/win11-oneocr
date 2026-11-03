@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "environments": 5,
+  "cases_per_environment": 138,
+  "passed_total": 690,
+  "outputs_per_environment": 135,
+  "expected_rejections_per_environment": 3,
+  "tolerances": {
+    "coordinates_px": 1.0,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "model_changed": false,
+  "implementation_commit": "aa52f6bb86fdca851c563a9cec332b0d9a616f8f"
+}

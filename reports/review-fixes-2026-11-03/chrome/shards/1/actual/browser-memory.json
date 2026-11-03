@@ -1,0 +1,56 @@
+{
+  "method": "Windows OS PeakWorkingSet64 for live browser processes, queried before browser close",
+  "scope": "One regression worker browser tree; process peaks need not occur simultaneously",
+  "maxProcessPeakBytes": 996188160,
+  "sumOfProcessPeaksUpperBoundBytes": 1469165568,
+  "processes": [
+    {
+      "processId": 22312,
+      "name": "chrome.exe",
+      "peakWorkingSetBytes": 142499840,
+      "workingSetBytes": 134959104
+    },
+    {
+      "processId": 34220,
+      "name": "chrome.exe",
+      "peakWorkingSetBytes": 10309632,
+      "workingSetBytes": 10166272
+    },
+    {
+      "processId": 39828,
+      "name": "chrome.exe",
+      "peakWorkingSetBytes": 79220736,
+      "workingSetBytes": 74170368
+    },
+    {
+      "processId": 55800,
+      "name": "chrome.exe",
+      "peakWorkingSetBytes": 95821824,
+      "workingSetBytes": 86347776
+    },
+    {
+      "processId": 51120,
+      "name": "chrome.exe",
+      "peakWorkingSetBytes": 20111360,
+      "workingSetBytes": 20090880
+    },
+    {
+      "processId": 14432,
+      "name": "chrome.exe",
+      "peakWorkingSetBytes": 91320320,
+      "workingSetBytes": 80515072
+    },
+    {
+      "processId": 37480,
+      "name": "chrome.exe",
+      "peakWorkingSetBytes": 33693696,
+      "workingSetBytes": 33079296
+    },
+    {
+      "processId": 56148,
+      "name": "chrome.exe",
+      "peakWorkingSetBytes": 996188160,
+      "workingSetBytes": 984399872
+    }
+  ]
+}

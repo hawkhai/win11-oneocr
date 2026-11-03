@@ -1,0 +1,72 @@
+{
+  "windows-native": {
+    "passed_cases": 138,
+    "recognition_outputs": 135,
+    "expected_errors": 3,
+    "lines": 2837,
+    "words": 11561,
+    "maximum_errors": {
+      "line_coordinates_px": 0.0,
+      "word_coordinates_px": 0.00048828125,
+      "angle_degrees": 0.0,
+      "word_confidence": 1.7285346984863281e-06,
+      "style_confidence": 0.0
+    }
+  },
+  "linux-native": {
+    "passed_cases": 138,
+    "recognition_outputs": 135,
+    "expected_errors": 3,
+    "lines": 2837,
+    "words": 11561,
+    "maximum_errors": {
+      "line_coordinates_px": 0.0,
+      "word_coordinates_px": 0.00048828125,
+      "angle_degrees": 0.0,
+      "word_confidence": 1.7285346984863281e-06,
+      "style_confidence": 0.0
+    }
+  },
+  "windows-node": {
+    "passed_cases": 138,
+    "recognition_outputs": 135,
+    "expected_errors": 3,
+    "lines": 2837,
+    "words": 11561,
+    "maximum_errors": {
+      "line_coordinates_px": 0.0,
+      "word_coordinates_px": 0.00048828125,
+      "angle_degrees": 1.1920928955078125e-07,
+      "word_confidence": 0.0009335875511169434,
+      "style_confidence": 0.0
+    }
+  },
+  "chrome": {
+    "passed_cases": 138,
+    "recognition_outputs": 135,
+    "expected_errors": 3,
+    "lines": 2837,
+    "words": 11561,
+    "maximum_errors": {
+      "line_coordinates_px": 0.0,
+      "word_coordinates_px": 0.00048828125,
+      "angle_degrees": 1.1920928955078125e-07,
+      "word_confidence": 0.0009335875511169434,
+      "style_confidence": 0.0
+    }
+  },
+  "linux-node": {
+    "passed_cases": 138,
+    "recognition_outputs": 135,
+    "expected_errors": 3,
+    "lines": 2837,
+    "words": 11561,
+    "maximum_errors": {
+      "line_coordinates_px": 0.0,
+      "word_coordinates_px": 0.00048828125,
+      "angle_degrees": 1.1920928955078125e-07,
+      "word_confidence": 0.0009335875511169434,
+      "style_confidence": 0.0
+    }
+  }
+}

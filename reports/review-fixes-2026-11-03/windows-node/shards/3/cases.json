@@ -1,0 +1,229 @@
+[
+  {
+    "name": "book",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\ocr-book.jpg",
+    "sha256": "d7174025c14af059409ebf40baa934bd9910f299bd1509f1cafbaadca09092f1",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\book-legacy.json"
+  },
+  {
+    "name": "sample-0486f0c2e5664aed",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\references\\quality-skew-comparison.png",
+    "sha256": "07b7a503f54c9ffe133491a3a506dd609e344496f58d6d0e076cafc9e4d51426",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\0486f0c2e5664aed.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-39a29be9779394c5",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\images\\cn-train-ticket.jpeg",
+    "sha256": "651a7be4afcfc53efb71e9a19521637fac002594919f945186830e76f16349ce",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\39a29be9779394c5.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-28e79bff204857cf",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\references\\quality-binarisation-comparison.png",
+    "sha256": "855bcbb4505b90a8ef8544dfe76a118e168f744dfe6b7a2d099ff51d5c1a188e",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\28e79bff204857cf.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-4f45cf0e51f46a54",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\references\\dewarp-thesis-a-comparison.png",
+    "sha256": "109acb72564d5d7191a002539dc05075300f0feeb41a8dc2b8b4a6292136b21c",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\4f45cf0e51f46a54.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-e6c08e3cc9b0eb2f",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\thumbnails\\dewarp-thesis-wordlist.jpg",
+    "sha256": "23cf1ae34268062942e62bb8df9af9074130c090158addaed83d9e30a764c59a",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\e6c08e3cc9b0eb2f.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-0e06c211cb4a4831",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\thumbnails\\tables.jpg",
+    "sha256": "06afada074d5c7b3c36291d89463e6e5847b2b5047485f43f1008aefbf2a0549",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\0e06c211cb4a4831.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-7750735bcbce34ec",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\images\\cn-traditional-sutra.jpg",
+    "sha256": "558913b23995d15397bbb321248981cd85188ad9613a3005ecad9c875f367dec",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\7750735bcbce34ec.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-86a7ffe5513e5633",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\thumbnails\\cn-traditional-sutra.jpg",
+    "sha256": "c61aa101215b21b29061f62f9899a9bec1e30cd89332d857fcd56e450f835870",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\86a7ffe5513e5633.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-eb6e81323fe050ef",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\thumbnails\\pp-lab-table.jpg",
+    "sha256": "4352e672744103a123fdf8a88b44fad607929e9174d39546a7a4d97bf3f304d7",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\eb6e81323fe050ef.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-ed5b69a9711e3f53",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\thumbnails\\structure-paper-table.jpg",
+    "sha256": "91cd8d98ec206ca438e579cb8b99c4740c0b503ae9d9ad6485148a808d939812",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\ed5b69a9711e3f53.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-35b9cf211491fc5b",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\images\\cn-wrapped-paragraph.png",
+    "sha256": "0afff0fd508fa2224067f3c3fcdf1ce535147af9679d40c1e28911e372144dfe",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\35b9cf211491fc5b.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-b3edaa47ba780e0c",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\thumbnails\\easy-health-poster.jpg",
+    "sha256": "84b7f8099f0369fa377e5c93930082e4bbd14fa4efb1c17f550320e3fd736715",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\b3edaa47ba780e0c.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-e3d262776302832f",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\thumbnails\\pp-math-exam.jpg",
+    "sha256": "dd39351e864c37741b0edc5bdb5742159e7aecb94068a928455da980cb407dbb",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\e3d262776302832f.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-0b6fd6de5d12d93c",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\thumbnails\\psm-sparse-web-menu.jpg",
+    "sha256": "b49281bf5c5117c4288103ca13878e243edb8a1ebe7f87b388102ca108c95a0e",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\0b6fd6de5d12d93c.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-946c5faeaa0f2ec5",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\images\\easy-paris-signposts.jpg",
+    "sha256": "549784c349af8a87d53e2fec897d03aa800ed73a64bb9d8de60485cdd71d1e98",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\946c5faeaa0f2ec5.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-9a0e9586ac3fe4e2",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\oneocr-capabilities\\dark-contact-screenshot.png",
+    "sha256": "1d006a3a0e2cc45827a0fe181c1d2f5bed74bf663b0d927b44fdfec135b18876",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\9a0e9586ac3fe4e2.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-9e131b7b56e565db",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\images\\easy-yuyuan-road.jpg",
+    "sha256": "7d8f231016c6a35da879b7d79b39c45b694aef962ae30f64063d981e618fbf7f",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\9e131b7b56e565db.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-c45a727514fb8982",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\thumbnails\\easy-minato-sign.jpg",
+    "sha256": "e74ee1b1757ad97a383b9ef048b81c9d999ff0a96d65cbd8cac6ea8bf14392d9",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\c45a727514fb8982.json",
+    "expected_error": null
+  },
+  {
+    "name": "corpus-latin-rotate-3",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\research\\case\\corpus\\latin-rotate-3.png",
+    "sha256": "bb5f0dd58fad62ec19f772e325b24ce4c637e2c2427db9595e48b6f228d3cf35",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\corpus-legacy\\latin-rotate-3.json"
+  },
+  {
+    "name": "sample-6a86cb9011438813",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\images\\psm-designer-word.png",
+    "sha256": "5fee8c094f5aed6099025a4e9cb76ed39b9b7886acfb4f41ab5444c4014fbda0",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\6a86cb9011438813.json",
+    "expected_error": null
+  },
+  {
+    "name": "corpus-cjk-rotate-10",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\research\\case\\corpus\\cjk-rotate-10.png",
+    "sha256": "0cbe95a596396b049d1e21cacef352c203c40363f06fe1de8918eeb3d91a1a51",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\corpus-legacy\\cjk-rotate-10.json"
+  },
+  {
+    "name": "sample-024e54a6c8e3ba17",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\thumbnails\\easy-paris-signposts.jpg",
+    "sha256": "85b8f4f0d96266dc4b91a731910a7cc0b44f2bccbaef326259ad8f51f880cdc1",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\024e54a6c8e3ba17.json",
+    "expected_error": null
+  },
+  {
+    "name": "corpus-multi-column",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\research\\case\\corpus\\multi-column.png",
+    "sha256": "cf3c28acbefbf8c7bea8d338e33441a34fb5fb477b1bff159c4cacc8ffd7b1b0",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\corpus-legacy\\multi-column.json"
+  },
+  {
+    "name": "corpus-latin-rotate-90",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\research\\case\\corpus\\latin-rotate-90.png",
+    "sha256": "a776f82558945e22363e5e2947e38fa71852b45e0e084c302cc26202b17cdb49",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\corpus-legacy\\latin-rotate-90.json"
+  },
+  {
+    "name": "corpus-latin-rotate-180",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\research\\case\\corpus\\latin-rotate-180.png",
+    "sha256": "772ad824277c62d8547f53cd740bd58bc75cc28b69d1a84b53810bbb40e50444",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\corpus-legacy\\latin-rotate-180.json"
+  },
+  {
+    "name": "sample-ab78d5d64fd48439",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\oneocr-parity\\handwriting-rotate-3.png",
+    "sha256": "dbbde3f98e615790ddcdb67a134cd419261cda494f00d2a6df6b3adaedeb3025",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\ab78d5d64fd48439.json",
+    "expected_error": null
+  },
+  {
+    "name": "corpus-cjk-rotate-0.5",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\research\\case\\corpus\\cjk-rotate-0.5.png",
+    "sha256": "6b38c096acd69f4a4f66c3c04c7310d36ee089b90a8a6e79b0a84f00f7b66ceb",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\corpus-legacy\\cjk-rotate-0.5.json"
+  },
+  {
+    "name": "sample-60f7669b6fa86751",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\images\\psm-old-engine-title.png",
+    "sha256": "61b315d7443463a8786e5d89b2bce9c57a8dcba9dd20c457c7d5ed65fbd5a144",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\60f7669b6fa86751.json",
+    "expected_error": null
+  },
+  {
+    "name": "corpus-透明路径-emoji-😀",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\research\\case\\corpus\\透明路径-emoji-😀.png",
+    "sha256": "b886f751775e202975646e8515b756ff736eaa2a7cea237dc8d4093f3fbe7740",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\corpus-legacy\\透明路径-emoji-😀.json"
+  },
+  {
+    "name": "corpus-tamil-36",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\research\\case\\corpus\\tamil-36.png",
+    "sha256": "0507a145b631876a4b4d8fff5f1615987eaedb2eaafe0f528a2c7a35cd6c79e7",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\corpus-legacy\\tamil-36.json"
+  },
+  {
+    "name": "corpus-greek-36",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\research\\case\\corpus\\greek-36.png",
+    "sha256": "b345ff99149e045be7946507f374af53660bdbb137af64d521cdf37bcb8cf2a7",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\corpus-legacy\\greek-36.json"
+  },
+  {
+    "name": "corpus-arabic-36",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\research\\case\\corpus\\arabic-36.png",
+    "sha256": "796c4585fc52ab1186e26dc19d82f8df758eb7e58aeb991de5f97bd66c3b7992",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\corpus-legacy\\arabic-36.json"
+  },
+  {
+    "name": "sample-9f735a010e88a648",
+    "path": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\oneocr-capabilities\\blank-unicode-空白-😀.png",
+    "sha256": "4f276c6adf8852e89048c73a9c96922effec0893a48e394277a06e3ead39205f",
+    "baseline": "F:\\pythonx\\myocr\\win11-oneocr\\reports\\photos-model-update-2026-11-02\\legacy\\9f735a010e88a648.json",
+    "expected_error": null
+  }
+]

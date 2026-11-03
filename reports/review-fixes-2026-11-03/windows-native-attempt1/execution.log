@@ -1,0 +1,150 @@
+ocr-classics/images/cards-template-input.jpg passed
+ocr-classics/images/cn-english-book-cover.jpeg passed
+ocr-classics/images/cn-single-line-mixed.jpg expected_size_error
+ocr-classics/images/cn-traditional-sutra.jpg passed
+ocr-classics/images/cn-train-ticket.jpeg passed
+ocr-classics/images/cn-vertical-ad.png passed
+ocr-classics/images/cn-wrapped-paragraph.png passed
+ocr-classics/images/dewarp-cooking-page.jpg passed
+ocr-classics/images/dewarp-thesis-table.jpg passed
+ocr-classics/images/dewarp-thesis-wordlist.jpg passed
+ocr-classics/images/digits-thermostat.jpg passed
+ocr-classics/images/easy-health-poster.png passed
+ocr-classics/images/easy-minato-sign.jpg passed
+ocr-classics/images/easy-paris-signposts.jpg passed
+ocr-classics/images/easy-yuyuan-road.jpg passed
+ocr-classics/images/pp-garden-sign.jpg passed
+ocr-classics/images/pp-lab-table.jpg passed
+ocr-classics/images/pp-math-exam.jpg passed
+ocr-classics/images/pp-product-description.jpg passed
+ocr-classics/images/pp-vertical-plaque.jpg passed
+ocr-classics/images/pp-wash-label.jpg passed
+ocr-classics/images/psm-designer-word.png passed
+ocr-classics/images/psm-license-plate.png passed
+ocr-classics/images/psm-old-engine-title.png passed
+ocr-classics/images/psm-sherlock-page.png passed
+ocr-classics/images/psm-sparse-web-menu.png passed
+ocr-classics/images/psm-whole-foods-receipt.png passed
+ocr-classics/images/quality-heavy-ink.png passed
+ocr-classics/images/quality-noisy-fraktur.png passed
+ocr-classics/images/structure-paper-table.jpg passed
+ocr-classics/references/cards-result.jpg passed
+ocr-classics/references/cn-ticket-result.jpg passed
+ocr-classics/references/cn-traditional-result.jpg passed
+ocr-classics/references/cn-vertical-result.jpg passed
+ocr-classics/references/dewarp-cooking-comparison.png passed
+ocr-classics/references/dewarp-thesis-a-comparison.png passed
+ocr-classics/references/dewarp-thesis-b-comparison.png passed
+ocr-classics/references/digits-result.jpg passed
+ocr-classics/references/digits-warped.png passed
+ocr-classics/references/pp-product-result.jpg passed
+ocr-classics/references/quality-binarisation-comparison.png passed
+ocr-classics/references/quality-border-comparison.png expected_channel_error
+ocr-classics/references/quality-erosion-comparison.png passed
+ocr-classics/references/quality-skew-comparison.png passed
+ocr-classics/references/receipt-edges.png passed
+ocr-classics/references/receipt-perspective.png passed
+ocr-classics/thumbnails/cards-template-input.jpg passed
+ocr-classics/thumbnails/chinese-layout.jpg passed
+ocr-classics/thumbnails/cn-english-book-cover.jpg passed
+ocr-classics/thumbnails/cn-single-line-mixed.jpg expected_size_error
+ocr-classics/thumbnails/cn-traditional-sutra.jpg passed
+ocr-classics/thumbnails/cn-train-ticket.jpg passed
+ocr-classics/thumbnails/cn-vertical-ad.jpg passed
+ocr-classics/thumbnails/cn-wrapped-paragraph.jpg passed
+ocr-classics/thumbnails/dewarp-cooking-page.jpg passed
+ocr-classics/thumbnails/dewarp-thesis-table.jpg passed
+ocr-classics/thumbnails/dewarp-thesis-wordlist.jpg passed
+ocr-classics/thumbnails/digits-thermostat.jpg passed
+ocr-classics/thumbnails/easy-health-poster.jpg passed
+ocr-classics/thumbnails/easy-minato-sign.jpg passed
+ocr-classics/thumbnails/easy-paris-signposts.jpg passed
+ocr-classics/thumbnails/easy-yuyuan-road.jpg passed
+ocr-classics/thumbnails/image-quality.jpg passed
+ocr-classics/thumbnails/layout-segmentation.jpg passed
+ocr-classics/thumbnails/overview.jpg passed
+ocr-classics/thumbnails/pp-garden-sign.jpg passed
+ocr-classics/thumbnails/pp-lab-table.jpg passed
+ocr-classics/thumbnails/pp-math-exam.jpg passed
+ocr-classics/thumbnails/pp-product-description.jpg passed
+ocr-classics/thumbnails/pp-vertical-plaque.jpg passed
+ocr-classics/thumbnails/pp-wash-label.jpg passed
+ocr-classics/thumbnails/psm-designer-word.jpg passed
+ocr-classics/thumbnails/psm-license-plate.jpg passed
+ocr-classics/thumbnails/psm-old-engine-title.jpg passed
+ocr-classics/thumbnails/psm-sherlock-page.jpg passed
+ocr-classics/thumbnails/psm-sparse-web-menu.jpg passed
+ocr-classics/thumbnails/psm-whole-foods-receipt.jpg passed
+ocr-classics/thumbnails/quality-heavy-ink.jpg passed
+ocr-classics/thumbnails/quality-noisy-fraktur.jpg passed
+ocr-classics/thumbnails/receipts-labels.jpg passed
+ocr-classics/thumbnails/scene-text.jpg passed
+ocr-classics/thumbnails/special-digits.jpg passed
+ocr-classics/thumbnails/structure-paper-table.jpg passed
+ocr-classics/thumbnails/tables.jpg passed
+ocr-classics/thumbnails/warped-pages.jpg passed
+oneocr-capabilities/azure-dog-negative.jpg passed
+oneocr-capabilities/azure-multilingual.png passed
+oneocr-capabilities/azure-printed-photo.jpg passed
+oneocr-capabilities/blank-unicode-空白-😀.png passed
+oneocr-capabilities/dark-contact-screenshot.png passed
+oneocr-capabilities/low-contrast-small-blur.png passed
+oneocr-capabilities/mixed-nine-scripts.png passed
+oneocr-capabilities/printed-and-real-handwriting.png passed
+oneocr-capabilities/script-arabic.png passed
+oneocr-capabilities/script-cjk.png passed
+oneocr-capabilities/script-cyrillic.png passed
+oneocr-capabilities/script-devanagari.png passed
+oneocr-capabilities/script-greek.png passed
+oneocr-capabilities/script-hebrew.png passed
+oneocr-capabilities/script-latin.png passed
+oneocr-capabilities/script-tamil.png passed
+oneocr-capabilities/script-thai.png passed
+oneocr-capabilities/single-table.png passed
+oneocr-parity/handwriting-azure.jpg passed
+oneocr-parity/handwriting-rotate-0.5.png passed
+oneocr-parity/handwriting-rotate-10.png passed
+oneocr-parity/handwriting-rotate-180.png passed
+oneocr-parity/handwriting-rotate-270.png passed
+oneocr-parity/handwriting-rotate-3.png passed
+oneocr-parity/handwriting-rotate-90.png passed
+latin-18 passed 1.139
+latin-36 passed 2.107
+latin-rotate-0.5 passed 1.345
+latin-rotate-3 passed 1.368
+latin-rotate-10 passed 1.1
+latin-rotate-90 passed 0.965
+latin-rotate-180 passed 1.222
+latin-rotate-270 passed 1.041
+cjk-18 passed 1.056
+cjk-36 passed 1.044
+cjk-rotate-0.5 passed 1.028
+cjk-rotate-3 passed 1.049
+cjk-rotate-10 passed 1.067
+cjk-rotate-90 passed 1.03
+cjk-rotate-180 passed 1.017
+cjk-rotate-270 passed 1.16
+cyrillic-36 passed 0.947
+arabic-36 passed 0.944
+devanagari-36 passed 0.901
+hebrew-36 passed 0.882
+thai-36 passed 0.902
+tamil-36 passed 1.033
+greek-36 passed 1.055
+blank passed 0.877
+Traceback (most recent call last):
+  File "F:\pythonx\myocr\win11-oneocr\scripts\run-parity-suite.py", line 44, in <module>
+    if __name__=='__main__':sys.exit(main())
+                                     ^^^^^^
+  File "F:\pythonx\myocr\win11-oneocr\scripts\run-parity-suite.py", line 41, in main
+    results.append(result);print(name,result['status'],round(measurement['seconds'],3),flush=True)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f600' in position 11: illegal multibyte sequence
+Traceback (most recent call last):
+  File "F:\pythonx\myocr\win11-oneocr\scripts\run-native-parity.py", line 52, in <module>
+    if __name__=='__main__':sys.exit(main())
+                                     ^^^^^^
+  File "F:\pythonx\myocr\win11-oneocr\scripts\run-native-parity.py", line 32, in main
+    subprocess.run([sys.executable,ROOT/'scripts/run-parity-suite.py','--manifest',ROOT/'research/case/corpus/manifest.json',
+  File "subprocess.py", line 571, in run
+subprocess.CalledProcessError: Command '['F:\\pythonx\\myocr\\win11-oneocr\\.research-python\\python.exe', WindowsPath('F:/pythonx/myocr/win11-oneocr/scripts/run-parity-suite.py'), '--manifest', WindowsPath('F:/pythonx/myocr/win11-oneocr/research/case/corpus/manifest.json'), '--baseline', WindowsPath('F:/pythonx/myocr/win11-oneocr/reports/photos-model-update-2026-11-02/corpus-legacy'), '--binary', WindowsPath('F:/pythonx/myocr/win11-oneocr/artifacts/win32-x64/bin/ocr.exe'), '--output', WindowsPath('F:/pythonx/myocr/win11-oneocr/reports/review-fixes-2026-11-03/windows-native/corpus')]' returned non-zero exit status 1.

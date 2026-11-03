@@ -1,0 +1,272 @@
+{
+  "engine": {
+    "backend": "wasm-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\images\\digits-thermostat.jpg",
+  "image": {
+    "height": 882,
+    "step": 2936,
+    "width": 734
+  },
+  "image_angle": 359.2259216308594,
+  "line_count": 7,
+  "lines": [
+    {
+      "bounding_box": [
+        325,
+        259,
+        324,
+        280,
+        302,
+        279,
+        302,
+        259
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "E",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            325.5355224609375,
+            259,
+            325.02484130859375,
+            280.43780517578125,
+            302.0313415527344,
+            279.890625,
+            302.5420227050781,
+            259
+          ],
+          "confidence": 0.5936427116394043,
+          "index": 0,
+          "text": "E"
+        }
+      ]
+    },
+    {
+      "bounding_box": [
+        330,
+        299,
+        485,
+        302,
+        485,
+        362,
+        328,
+        365
+      ],
+      "index": 1,
+      "style": {
+        "confidence": 0.40529999136924744,
+        "type": "printed"
+      },
+      "text": "345°",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            328,
+            299,
+            486,
+            299,
+            486,
+            365,
+            328,
+            364.98046875
+          ],
+          "confidence": 0.5872408151626587,
+          "index": 0,
+          "text": "345°"
+        }
+      ]
+    },
+    {
+      "bounding_box": [
+        378,
+        440,
+        401,
+        439,
+        402,
+        459,
+        379,
+        459
+      ],
+      "index": 2,
+      "style": {
+        "confidence": 0.09809999912977219,
+        "type": "printed"
+      },
+      "text": "+",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            378,
+            439,
+            390.52984619140625,
+            439,
+            390.9643249511719,
+            458.7122497558594,
+            378,
+            458.9946594238281
+          ],
+          "confidence": 0.956045389175415,
+          "index": 0,
+          "text": "+"
+        }
+      ]
+    },
+    {
+      "bounding_box": [
+        463,
+        482,
+        487,
+        482,
+        487,
+        497,
+        463,
+        497
+      ],
+      "index": 3,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "ok",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            463,
+            482,
+            488,
+            482,
+            488,
+            497,
+            463,
+            497
+          ],
+          "confidence": 0.9914168119430542,
+          "index": 0,
+          "text": "ok"
+        }
+      ]
+    },
+    {
+      "bounding_box": [
+        452,
+        534,
+        489,
+        533,
+        489,
+        544,
+        452,
+        546
+      ],
+      "index": 4,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "reset",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            452.2704162597656,
+            534.5399780273438,
+            489.2823791503906,
+            534.0148315429688,
+            489.9013671875,
+            544.5138549804688,
+            452.27557373046875,
+            546
+          ],
+          "confidence": 0.992681622505188,
+          "index": 0,
+          "text": "reset"
+        }
+      ]
+    },
+    {
+      "bounding_box": [
+        450,
+        549,
+        489,
+        548,
+        489,
+        558,
+        450,
+        559
+      ],
+      "index": 5,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "press.56",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            452.86700439453125,
+            549.087890625,
+            489.33074951171875,
+            548.485107421875,
+            488.71173095703125,
+            558.8763427734375,
+            452.24798583984375,
+            559.674072265625
+          ],
+          "confidence": 0.5806480646133423,
+          "index": 0,
+          "text": "press.56"
+        }
+      ]
+    },
+    {
+      "bounding_box": [
+        369,
+        575,
+        406,
+        575,
+        406,
+        587,
+        369,
+        588
+      ],
+      "index": 6,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "mode",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            369.7250061035156,
+            576.5549926757812,
+            407,
+            575.8480224609375,
+            407,
+            587.0054931640625,
+            369.11114501953125,
+            587.5748291015625
+          ],
+          "confidence": 0.9884127378463745,
+          "index": 0,
+          "text": "mode"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\thumbnails\\psm-old-engine-title.jpg",
+  "image": {
+    "height": 72,
+    "step": 1440,
+    "width": 360
+  },
+  "image_angle": 359.82452392578125,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        19.0,
+        18.0,
+        345.0,
+        17.0,
+        346.0,
+        50.0,
+        19.0,
+        51.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "THE OLD ENGINE.",
+      "word_count": 3,
+      "words": [
+        {
+          "bounding_box": [
+            20.496917724609375,
+            18.974367141723633,
+            98.46665954589844,
+            19.103059768676758,
+            97.55181884765625,
+            50.83913803100586,
+            19.29545021057129,
+            50.501373291015625
+          ],
+          "confidence": 0.9980997443199158,
+          "index": 0,
+          "text": "THE"
+        },
+        {
+          "bounding_box": [
+            108.01399993896484,
+            19.10251235961914,
+            179.0880889892578,
+            18.855684280395508,
+            178.47238159179688,
+            51.0,
+            107.13390350341797,
+            50.872310638427734
+          ],
+          "confidence": 0.9979263544082642,
+          "index": 1,
+          "text": "OLD"
+        },
+        {
+          "bounding_box": [
+            189.69607543945313,
+            18.79430389404297,
+            346.0,
+            17.08692169189453,
+            346.0,
+            50.76474380493164,
+            189.11895751953125,
+            51.0
+          ],
+          "confidence": 0.9895231127738953,
+          "index": 2,
+          "text": "ENGINE."
+        }
+      ]
+    }
+  ]
+}

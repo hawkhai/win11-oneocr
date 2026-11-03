@@ -1,0 +1,36 @@
+{
+  "windows-node": {
+    "executed_runtime_and_engine_unchanged": true,
+    "validation_harness_source_updates": [
+      "scripts/browser-memory.ps1",
+      "scripts/build-wasm.py",
+      "scripts/compare-results.py",
+      "scripts/run-wasm-parity.py",
+      "test/compare-results-test.py",
+      "web/browser-regression.mjs"
+    ],
+    "documentation_updates": [
+      "share/oneocr/portable.md",
+      "share/oneocr/wasm.md"
+    ],
+    "note": "Original execution build and host input inventory retained; final summary refreshed only after rechecking runtime identity, active comparator and models"
+  },
+  "chrome": {
+    "executed_runtime_and_engine_unchanged": true,
+    "validation_harness_source_updates": [],
+    "documentation_updates": [
+      "share/oneocr/portable.md",
+      "share/oneocr/wasm.md"
+    ],
+    "note": "Original execution build and host input inventory retained; final summary refreshed only after rechecking runtime identity, active comparator and models"
+  },
+  "linux-node": {
+    "executed_runtime_and_engine_unchanged": true,
+    "validation_harness_source_updates": [],
+    "documentation_updates": [
+      "share/oneocr/portable.md",
+      "share/oneocr/wasm.md"
+    ],
+    "note": "Original execution build and host input inventory retained; final summary refreshed only after rechecking runtime identity, active comparator and models"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "full_regression": false,
+  "reason": "Test request exceeded the original 600000 ms budget under concurrent load; failed attempt not reused"
+}

@@ -1,0 +1,55 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\thumbnails\\psm-license-plate.jpg",
+  "image": {
+    "height": 87,
+    "step": 1440,
+    "width": 360
+  },
+  "image_angle": 0.2845785617828369,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        30.0,
+        19.0,
+        332.0,
+        21.0,
+        332.0,
+        70.0,
+        30.0,
+        69.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "MHO4DW8351",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            30.796375274658203,
+            19.55705451965332,
+            331.72247314453125,
+            22.372772216796875,
+            333.0,
+            69.91709899902344,
+            30.803443908691406,
+            69.92390441894531
+          ],
+          "confidence": 0.8665136098861694,
+          "index": 0,
+          "text": "MHO4DW8351"
+        }
+      ]
+    }
+  ]
+}

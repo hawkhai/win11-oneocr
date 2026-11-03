@@ -1,0 +1,569 @@
+{
+  "id": "dsh-win11-oneocr@0.1.1",
+  "name": "dsh-win11-oneocr",
+  "version": "0.1.1",
+  "size": 85024682,
+  "unpackedSize": 234711721,
+  "shasum": "62e551a284ef18ef31e432113639929ea34c8261",
+  "integrity": "sha512-CRsHl4OtDoQrVmyDMIbz+rXu6R1eb0aU2q4QvlbewvgCdn9bR+4qLMkej0hMT/2mW2lNIcWjYV54m0b/cAVwAA==",
+  "filename": "dsh-win11-oneocr-0.1.1.tgz",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 10857,
+      "mode": 420
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "size": 5033,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/bin/ocr",
+      "size": 147912,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/lib/libgcc_s.so.1",
+      "size": 187120,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/lib/liboneocr_portable.so",
+      "size": 40107600,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/lib/libonnxruntime.so",
+      "size": 29320008,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/lib/libonnxruntime.so.1",
+      "size": 29320008,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/lib/libonnxruntime.so.1.23.2",
+      "size": 29320008,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/lib/libstdc++.so.6",
+      "size": 2735712,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/error-codes.md",
+      "size": 22071,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/licenses/compiler-rt-LICENSE.txt",
+      "size": 16708,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/licenses/emscripten-LICENSE.txt",
+      "size": 5093,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/licenses/gcc-runtime-copyright.txt",
+      "size": 73896,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/licenses/gcc-runtime-GPL-3.txt",
+      "size": 35149,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/licenses/icu-Unicode-3.0.txt",
+      "size": 25697,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/licenses/libcxx-LICENSE.txt",
+      "size": 16703,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/licenses/libcxxabi-LICENSE.txt",
+      "size": 16706,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/licenses/msvc-runtime-notice.txt",
+      "size": 785,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/licenses/musl-COPYRIGHT.txt",
+      "size": 6204,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/licenses/nlohmann-json-MIT.txt",
+      "size": 1145,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/licenses/oneocr-native-AGPL-3.0.txt",
+      "size": 34523,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/licenses/onnxruntime-LICENSE.txt",
+      "size": 1094,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/licenses/onnxruntime-ThirdPartyNotices.txt",
+      "size": 333022,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/licenses/opencv-Apache-2.0.txt",
+      "size": 11560,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/licenses/opencv-softfloat-fdlibm.txt",
+      "size": 2918,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/licenses/opencv-zlib.txt",
+      "size": 1024,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/portable.md",
+      "size": 13774,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/THIRD_PARTY_NOTICES.md",
+      "size": 5033,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/linux-x64/share/oneocr/wasm.md",
+      "size": 11544,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/BUILD.json",
+      "size": 12365,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/cli.mjs",
+      "size": 2753,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/oneocr-core.mjs",
+      "size": 129687,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/oneocr-core.wasm",
+      "size": 50524985,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/oneocr.d.mts",
+      "size": 1878,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/oneocr.mjs",
+      "size": 8967,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/error-codes.md",
+      "size": 22071,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/licenses/compiler-rt-LICENSE.txt",
+      "size": 16708,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/licenses/emscripten-LICENSE.txt",
+      "size": 5093,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/licenses/gcc-runtime-copyright.txt",
+      "size": 73896,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/licenses/gcc-runtime-GPL-3.txt",
+      "size": 35149,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/licenses/icu-Unicode-3.0.txt",
+      "size": 25697,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/licenses/libcxx-LICENSE.txt",
+      "size": 16703,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/licenses/libcxxabi-LICENSE.txt",
+      "size": 16706,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/licenses/msvc-runtime-notice.txt",
+      "size": 785,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/licenses/musl-COPYRIGHT.txt",
+      "size": 6204,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/licenses/nlohmann-json-MIT.txt",
+      "size": 1145,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/licenses/oneocr-native-AGPL-3.0.txt",
+      "size": 34523,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/licenses/onnxruntime-LICENSE.txt",
+      "size": 1094,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/licenses/onnxruntime-ThirdPartyNotices.txt",
+      "size": 333022,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/licenses/opencv-Apache-2.0.txt",
+      "size": 11560,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/licenses/opencv-softfloat-fdlibm.txt",
+      "size": 2918,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/licenses/opencv-zlib.txt",
+      "size": 1024,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/portable.md",
+      "size": 13774,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/THIRD_PARTY_NOTICES.md",
+      "size": 5033,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/share/oneocr/wasm.md",
+      "size": 11544,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/worker-client.d.mts",
+      "size": 717,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/worker-client.mjs",
+      "size": 3569,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/wasm32/worker.mjs",
+      "size": 1419,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/bin/concrt140.dll",
+      "size": 324208,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/bin/msvcp140_1.dll",
+      "size": 35952,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/bin/msvcp140_2.dll",
+      "size": 280200,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/bin/msvcp140_atomic_wait.dll",
+      "size": 50304,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/bin/msvcp140_codecvt_ids.dll",
+      "size": 31872,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/bin/msvcp140.dll",
+      "size": 557728,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/bin/ocr.exe",
+      "size": 147968,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/bin/oneocr_portable.dll",
+      "size": 34368000,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/bin/oneocr_wrapper.dll",
+      "size": 18432,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/bin/onnxruntime.dll",
+      "size": 14422528,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/bin/vcruntime140_1.dll",
+      "size": 49792,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/bin/vcruntime140.dll",
+      "size": 124544,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/lib/oneocr_portable.lib",
+      "size": 2998,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/lib/oneocr_wrapper.lib",
+      "size": 2606,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/error-codes.md",
+      "size": 22071,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/licenses/compiler-rt-LICENSE.txt",
+      "size": 16708,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/licenses/emscripten-LICENSE.txt",
+      "size": 5093,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/licenses/gcc-runtime-copyright.txt",
+      "size": 73896,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/licenses/gcc-runtime-GPL-3.txt",
+      "size": 35149,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/licenses/icu-Unicode-3.0.txt",
+      "size": 25697,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/licenses/libcxx-LICENSE.txt",
+      "size": 16703,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/licenses/libcxxabi-LICENSE.txt",
+      "size": 16706,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/licenses/msvc-runtime-notice.txt",
+      "size": 785,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/licenses/musl-COPYRIGHT.txt",
+      "size": 6204,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/licenses/nlohmann-json-MIT.txt",
+      "size": 1145,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/licenses/oneocr-native-AGPL-3.0.txt",
+      "size": 34523,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/licenses/onnxruntime-LICENSE.txt",
+      "size": 1094,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/licenses/onnxruntime-ThirdPartyNotices.txt",
+      "size": 333022,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/licenses/opencv-Apache-2.0.txt",
+      "size": 11560,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/licenses/opencv-softfloat-fdlibm.txt",
+      "size": 2918,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/licenses/opencv-zlib.txt",
+      "size": 1024,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/portable.md",
+      "size": 13774,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/THIRD_PARTY_NOTICES.md",
+      "size": 5033,
+      "mode": 420
+    },
+    {
+      "path": "artifacts/win32-x64/share/oneocr/wasm.md",
+      "size": 11544,
+      "mode": 420
+    },
+    {
+      "path": "cordis.patch.yml",
+      "size": 152,
+      "mode": 420
+    },
+    {
+      "path": "docs/error-codes.md",
+      "size": 22071,
+      "mode": 420
+    },
+    {
+      "path": "docs/portable.md",
+      "size": 13774,
+      "mode": 420
+    },
+    {
+      "path": "docs/wasm.md",
+      "size": 11544,
+      "mode": 420
+    },
+    {
+      "path": "examples/wasm/index.html",
+      "size": 3425,
+      "mode": 420
+    },
+    {
+      "path": "licenses/gcc-runtime-copyright.txt",
+      "size": 73896,
+      "mode": 420
+    },
+    {
+      "path": "licenses/gcc-runtime-GPL-3.txt",
+      "size": 35149,
+      "mode": 420
+    },
+    {
+      "path": "licenses/icu-Unicode-3.0.txt",
+      "size": 25697,
+      "mode": 420
+    },
+    {
+      "path": "licenses/msvc-runtime-notice.txt",
+      "size": 785,
+      "mode": 420
+    },
+    {
+      "path": "licenses/nlohmann-json-MIT.txt",
+      "size": 1145,
+      "mode": 420
+    },
+    {
+      "path": "licenses/onnxruntime-LICENSE.txt",
+      "size": 1094,
+      "mode": 420
+    },
+    {
+      "path": "licenses/onnxruntime-ThirdPartyNotices.txt",
+      "size": 333022,
+      "mode": 420
+    },
+    {
+      "path": "licenses/opencv-Apache-2.0.txt",
+      "size": 11560,
+      "mode": 420
+    },
+    {
+      "path": "licenses/opencv-softfloat-fdlibm.txt",
+      "size": 2918,
+      "mode": 420
+    },
+    {
+      "path": "licenses/opencv-zlib.txt",
+      "size": 1024,
+      "mode": 420
+    },
+    {
+      "path": "native/include/oneocr_portable.h",
+      "size": 1898,
+      "mode": 420
+    },
+    {
+      "path": "native/include/oneocr_portable.hpp",
+      "size": 1533,
+      "mode": 420
+    },
+    {
+      "path": "package.json",
+      "size": 2082,
+      "mode": 420
+    },
+    {
+      "path": "src/index.js",
+      "size": 7275,
+      "mode": 420
+    }
+  ],
+  "entryCount": 111,
+  "bundled": []
+}

@@ -1,0 +1,22 @@
+{
+  "node": "v20.18.0",
+  "v8": "11.3.244.8-node.23",
+  "initializationMs": 6322.289395,
+  "peakRssBytes": 695844864,
+  "cases": [
+    {
+      "name": "sample-a744c24e96808cb4",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 429418.486256,
+      "rssBytes": 664793088
+    },
+    {
+      "name": "sample-0486f0c2e5664aed",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 281892.23458700004,
+      "rssBytes": 694120448
+    }
+  ]
+}

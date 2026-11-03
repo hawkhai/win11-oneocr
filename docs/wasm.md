@@ -4,6 +4,8 @@
 
 本轮 Windows Node 24.14.0 和 Chrome 156 均通过全量 **138/138**，两端原始结果/错误 JSON 逐字节一致，见[实测报告](../reports/wasm-2026-11-03/README.md)。相对原 DLL 使用坐标 1 像素、角度 0.1 度、置信度 `1e-3` 的原有阈值；文字、顺序、词切分和手写类型要求一致。其他浏览器及设备须单独验证。
 
+后续 [Review 修复与增强回归](../reports/review-fixes-2026-11-03/README.md)补齐了计数和索引校验，并以全新推理验证 Windows Node 24.14.0、Linux Node 24.14.0、Chrome 156，各 **138/138**。Linux Node 完整集在无网络命名空间运行；除主机输入路径外，三端识别字段逐值一致。Node 20 仍只有历史书页和部分输入记录，不标记为完整集通过。
+
 ## 浏览器接入
 
 把 `artifacts/wasm32/` 和独立的 `models/` 部署到同一个静态站点。须通过 HTTP(S) 加载模块，不能直接双击 `file://` HTML；`.mjs` 使用 JavaScript MIME，`.wasm` 使用 `application/wasm`。运行时只访问指定的静态文件，不需要账号、授权服务或原微软 DLL。

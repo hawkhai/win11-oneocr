@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "tests": [
+    {
+      "mutation": "line_count",
+      "rejected": true,
+      "failures": [
+        {
+          "field": "actual.line_count",
+          "expected": 2,
+          "actual": 999
+        }
+      ]
+    },
+    {
+      "mutation": "word_count",
+      "rejected": true,
+      "failures": [
+        {
+          "field": "actual.lines[0].word_count",
+          "expected": 4,
+          "actual": 999
+        }
+      ]
+    },
+    {
+      "mutation": "line_index",
+      "rejected": true,
+      "failures": [
+        {
+          "field": "actual.lines[0].index",
+          "expected": 0,
+          "actual": 999
+        }
+      ]
+    },
+    {
+      "mutation": "word_index",
+      "rejected": true,
+      "failures": [
+        {
+          "field": "actual.lines[0].words[0].index",
+          "expected": 0,
+          "actual": 999
+        }
+      ]
+    }
+  ]
+}

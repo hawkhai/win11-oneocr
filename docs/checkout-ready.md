@@ -23,6 +23,8 @@ Linux x64，glibc 2.43 或更新（实测 Ubuntu 26.04）：
 
 另有 [JavaScript + WebAssembly 交付](wasm.md)：`artifacts/wasm32/` 与同一份 `models/` 可供 Node 和支持 SIMD128 的浏览器加载。Node 入口为 `node web/cli.mjs ...`，可用 `python scripts/verify-delivery.py --wasm` 校验；Node 24.14.0 与 Chrome 156 各通过全量 138 项，见 [Wasm 实测报告](../reports/wasm-2026-11-03/README.md)。
 
+当前 [Review 修复验收](../reports/review-fixes-2026-11-03/README.md)还覆盖增强比较器下的 Windows/Linux 原生、Windows/Linux Node 24、Chrome，五端分别通过完整 138 项；源码、运行文件、模型和报告均纳入 Git。模型准备默认跟随活动模型版本，其他版本只能显式准备到独立目录。
+
 干净 Git 克隆的最终结果见 [换机验收](../reports/checkout-ready-2026-11-02/README.md)：两端各通过 110 张样本、原 27 项及 105 行书页，未使用原机器构建目录或研究环境。
 
 本次没有 push。如通过离线 Git 包转移，在新电脑执行：

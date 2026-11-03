@@ -1,0 +1,22 @@
+{
+  "node": "v20.18.0",
+  "v8": "11.3.244.8-node.23",
+  "initializationMs": 6394.443066000001,
+  "peakRssBytes": 753537024,
+  "cases": [
+    {
+      "name": "sample-b0d25177b1a8480c",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 405488.15306399995,
+      "rssBytes": 670449664
+    },
+    {
+      "name": "book",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 320913.793283,
+      "rssBytes": 751513600
+    }
+  ]
+}
