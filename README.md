@@ -4,6 +4,8 @@
 
 最新[Photos 交集测试 P2 修复](reports/photos-intersection-p2-2026-11-03/README.md)已使超差和非有限值触发失败，并补上 13 个负例、3 个边界正例。Windows/Linux CTest 各 **26/26**，两端原生全新严格回归各 **221/221**，合计 **442/442**（436 项识别、6 项预期拒绝）。Wasm 本轮仅作两项诊断，不是原生验收门槛。
 
+严格比较器的换机字节身份已通过 `.gitattributes` 固定，避免 Git CRLF 转换导致摘要漂移，见[补充校验](reports/photos-intersection-checkout-2026-11-03/README.md)。该修补不改比较器或阈值，历史封存报告保持原样。
+
 ## Clone and run / 拉取即用
 
 完整 Git 检出已包含独立模型与验证过的 Windows x64、Linux x64 原生运行文件，无需 Python、编译器、账号或激活服务即可识别。

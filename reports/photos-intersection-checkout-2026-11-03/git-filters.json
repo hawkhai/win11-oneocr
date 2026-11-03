@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "comparator_sha256": "06d137cc93680f766031d783da9526064808fea1135124348e180bb8607f4869",
+  "current_checkout_sha256": "06d137cc93680f766031d783da9526064808fea1135124348e180bb8607f4869",
+  "filters": [
+    {
+      "core.autocrlf": "true",
+      "command": "git -c core.autocrlf=true cat-file --filters HEAD:scripts/compare-results.py",
+      "sha256": "06d137cc93680f766031d783da9526064808fea1135124348e180bb8607f4869",
+      "bytes": 5839,
+      "passed": true
+    },
+    {
+      "core.autocrlf": "false",
+      "command": "git -c core.autocrlf=false cat-file --filters HEAD:scripts/compare-results.py",
+      "sha256": "06d137cc93680f766031d783da9526064808fea1135124348e180bb8607f4869",
+      "bytes": 5839,
+      "passed": true
+    }
+  ],
+  "previous_bundle_checkout_sha256": "225335070b1648fb9a5fbb5db3831e51a6b2e8e07cfb401b798f8f42a0c4934a",
+  "previous_bundle_checkout_result": "saved-native-results verifier correctly rejected changed raw comparator bytes; OCR delivery smoke passed",
+  "fix": "scripts/compare-results.py -text; preserve exact bytes across checkouts",
+  "recognition_or_threshold_changes": false,
+  "historical_report_modified": false
+}
