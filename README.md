@@ -4,7 +4,9 @@
 
 完整 Git 检出已包含独立模型与验证过的 Windows x64、Linux x64 原生运行文件，无需 Python、编译器、账号或激活服务即可识别。
 
-当前 `models/` 使用 Photos 2026.11090.22001.0 的模型，以配套 OneOCR 11.0.15 为基准。样本已扩展为 126 张，并注册 67 个非默认参数组合；新增两张真实纸面中文手写照片及八张旋转派生图，见 [参数与真实中文手写回归](reports/options-handwriting-2026-11-03/README.md)。曲线备用求解、极长行裁剪等既有能力继续纳入全量。原 9.0.103 DLL/模型仍保存在 `bin/` 作旧版对照；新版对照文件单独位于 `bin/photos-2026.11090.22001.0/`。
+当前 `models/` 使用 Photos 2026.11090.22001.0 的模型，以配套 OneOCR 11.0.15 为基准。样本已扩展为 126 张，并注册 67 个参数组合（66 个非默认组合和一个默认对照）；新增两张真实纸面中文手写照片及八张旋转派生图，见 [参数与真实中文手写回归](reports/options-handwriting-2026-11-03/README.md)。曲线备用求解、极长行裁剪等既有能力继续纳入全量。原 9.0.103 DLL/模型仍保存在 `bin/` 作旧版对照；新版对照文件单独位于 `bin/photos-2026.11090.22001.0/`。
+
+本轮 Windows／Linux 原生、Windows Node／Chrome／Linux Node 的全新严格回归均为 **221/221**，共 **1105/1105**（1090 项识别输出、15 项预期拒绝）。模型与比较阈值保持不变；更多参数、书写者、文字类别和未实测平台仍未完成，整体状态继续为 incomplete。
 
 ```powershell
 .\ocr.cmd .\ocr-book.jpg --text
@@ -44,7 +46,7 @@ implementation documented below remains available as the optional legacy
 backend. The plugin now defaults to the portable backend; use `backend: legacy`
 explicitly for the old Windows executable.
 
-JavaScript/浏览器接入使用同一引擎的 [WebAssembly 版本](docs/wasm.md)，或运行 `node web/cli.mjs ocr-book.jpg --text`。Node 24.14.0 和 Chrome 156 各通过全部 138 项原阈值回归，两端 JSON 逐字节相同，见[实测报告](reports/wasm-2026-11-03/README.md)。插件配置 `backend: wasm` 可选择该后端；模型仍使用根目录 `models/`。
+JavaScript/浏览器接入使用同一引擎的 [WebAssembly 版本](docs/wasm.md)，或运行 `node web/cli.mjs ocr-book.jpg --text`。本轮 Windows/Linux Node 24.14.0 和 Chrome 156 各通过全部 **221 项**原阈值回归，见[实测报告](reports/options-handwriting-2026-11-03/README.md)。插件配置 `backend: wasm` 可选择该后端；模型仍使用根目录 `models/`。
 
 [Review 修复后的增强回归](reports/review-fixes-2026-11-03/README.md)已用全新推理验证 Windows/Linux 原生、Windows/Linux Node 24 和 Chrome，五端各 **138/138**。新比较器额外检查计数、索引及字段类型；模型准备不会默认覆盖回旧版，自定义运行模块/Worker URL 的接入错误已修复。模型与数值阈值保持不变，未验证平台继续标注。
 

@@ -1,0 +1,749 @@
+{
+  "passed": true,
+  "delivered_asset_files": 252,
+  "platforms": {
+    "win32-x64": {
+      "passed": true,
+      "source_files": [
+        {
+          "file": "CMakeLists.txt",
+          "normalized_sha256": "734eaec11bbdfd987d03194f33ced6922ac6a917457ee733a27fc8e91874ae27"
+        },
+        {
+          "file": "json.hpp",
+          "normalized_sha256": "7804b38146921d03374549c9e2a5e3acda097814c43caf2b96a0278e58df26e0"
+        },
+        {
+          "file": "stb_image.h",
+          "normalized_sha256": "594c2fe35d49488b4382dbfaec8f98366defca819d916ac95becf3e75f4200b3"
+        },
+        {
+          "file": "native/CMakeLists.txt",
+          "normalized_sha256": "a4f3a0213ef9c8ea28163cfc5fd2f8d83543a881d52c41770950789e799a04b1"
+        },
+        {
+          "file": "native/android/OneOcr.java",
+          "normalized_sha256": "ae5460e77bdababefd40f53435fb8e90be391eb8d712410b2ffa96315bb2b98e"
+        },
+        {
+          "file": "native/android/oneocr_jni.cpp",
+          "normalized_sha256": "ddc04ad4144329ec5cf6e5dbfad1cba6e35d7647c97181fdb19a8f1d86ea45d6"
+        },
+        {
+          "file": "native/include/oneocr_portable.h",
+          "normalized_sha256": "949be635a16e8965c66e455e3247b92f36510eb4f2eff57c5960b9862e7a3e9d"
+        },
+        {
+          "file": "native/include/oneocr_portable.hpp",
+          "normalized_sha256": "d64c9c7f6cfaf377e6e7e1b2284f91f1fc13c180f86459f2e29acc7501439485"
+        },
+        {
+          "file": "native/src/alignment.cpp",
+          "normalized_sha256": "b7340ce2474f19e096d1b80d9dbd26d8998775b79130931cf4bf7f48be869a83"
+        },
+        {
+          "file": "native/src/alignment.hpp",
+          "normalized_sha256": "02622e5d427cfff7edf26f6b6e4b2470c6c29ccb4c39340959f5788338ca2cd6"
+        },
+        {
+          "file": "native/src/classification.cpp",
+          "normalized_sha256": "9be400417dabd2d1d7bd6bacfdab9842efe402dea521af5d9a0ce04f7f8df608"
+        },
+        {
+          "file": "native/src/classification.hpp",
+          "normalized_sha256": "97321878267bb7892185f9af8710c240639f685d77ce7158c08df974ef17e4c3"
+        },
+        {
+          "file": "native/src/cli.cpp",
+          "normalized_sha256": "c6a213b8711b45023dcb8bd482a3aac52f00ca1c236439327ea40b4ea3af086a"
+        },
+        {
+          "file": "native/src/confidence.cpp",
+          "normalized_sha256": "4c54a2cae12336a56e6270b0de0008c6598c24b5e96c6d3964796a7662ca849d"
+        },
+        {
+          "file": "native/src/confidence.hpp",
+          "normalized_sha256": "346dc3e4e92e3a4b46e2c38b0ff619fb0dce2b7a3518b0e77788424d7d7d610d"
+        },
+        {
+          "file": "native/src/detector.cpp",
+          "normalized_sha256": "8889c0413ee10093cfb7d9593a7f158eff1678d1bfff9179c8aee1541ab4c545"
+        },
+        {
+          "file": "native/src/detector.hpp",
+          "normalized_sha256": "dbbe0a09d661da718b61685d0a97fb01576ecb94e608a86d070dfbc59ea1578c"
+        },
+        {
+          "file": "native/src/engine.cpp",
+          "normalized_sha256": "e4011b161b69db710e465e59388328b47fa4e495dd4101a5ab925d7e8e2c52c1"
+        },
+        {
+          "file": "native/src/fragment.cpp",
+          "normalized_sha256": "bdccc6ca989e4fdfe8cdd7b65bfe8dd4a505b93e0795b0a278ed13924561f93c"
+        },
+        {
+          "file": "native/src/image.cpp",
+          "normalized_sha256": "b7ffc3b05f5594950ae25364953de59a4b2de78db33bf7708289ee8bd2833916"
+        },
+        {
+          "file": "native/src/image.hpp",
+          "normalized_sha256": "b4771791b92c3744962c93b1079193ab3ec2509efb238b32772c9da9bfb08566"
+        },
+        {
+          "file": "native/src/nms.cpp",
+          "normalized_sha256": "c43201e92b77c48ac4d9d9c810ef7b7eaf3669cde76986dc365b9d3a345ddd46"
+        },
+        {
+          "file": "native/src/nms.hpp",
+          "normalized_sha256": "3c70713e6e8b9e07425e5ed37ad2065dc98d25fc2736ed83f7c2d79f68355d0f"
+        },
+        {
+          "file": "native/src/normalizer.cpp",
+          "normalized_sha256": "08dd2a8ff385e69e4fb448ab3532c4f2fc16ceed9549bcd2463f2b6db9c613fa"
+        },
+        {
+          "file": "native/src/normalizer.hpp",
+          "normalized_sha256": "bb6bbc6f4fa7df7102e6bace4159be062b777c813f13629659505bbfb142b22b"
+        },
+        {
+          "file": "native/src/ordering.cpp",
+          "normalized_sha256": "7750e834aa86662d052cad52e3c413a88f4f63623e908f74ba3be2b7e05477c3"
+        },
+        {
+          "file": "native/src/ordering.hpp",
+          "normalized_sha256": "9966c27ab09563370c50eacdb1c77f569ef5402e260f04b56d9263738e77417c"
+        },
+        {
+          "file": "native/src/recognition_budget.hpp",
+          "normalized_sha256": "ab3c9b2f3c68b2449b0ab41b25eff9453267b2402fbd37cff75d73a2f39db729"
+        },
+        {
+          "file": "native/src/sha256.hpp",
+          "normalized_sha256": "ee82fbdae944e2085065c15e4086ca4670879c09bbe00535d400a1fc0c752494"
+        },
+        {
+          "file": "native/src/trace.hpp",
+          "normalized_sha256": "c5f5b4ac7b31a016b4a184248de677662ba0885c69815a549285b667646fa533"
+        },
+        {
+          "file": "native/src/unicode.cpp",
+          "normalized_sha256": "86027929d839d708773be5885b3ac3ad0083ac290b699c40628e88f818fbee95"
+        },
+        {
+          "file": "native/src/unicode.hpp",
+          "normalized_sha256": "4392f873c339724f9de19969650b3490f1ffe42f8566915d9393f1be81c18d0e"
+        },
+        {
+          "file": "native/src/windows_compat.cpp",
+          "normalized_sha256": "c76b613f8b8f67a40cab8a32bbed3bb66e8a7c66591fa727519df78012a9d804"
+        },
+        {
+          "file": "native/tests/alignment_test.cpp",
+          "normalized_sha256": "6ea2c16be96b3eea017a3bb7e9bab0a9dfcfbb6b82f77bb60807a0a4c2032d45"
+        },
+        {
+          "file": "native/tests/api_test.cpp",
+          "normalized_sha256": "4801e645179aa33f022b5df6f17e585ebca1638cfb7b3a2d92e7ad182df3166d"
+        },
+        {
+          "file": "native/tests/boundary_test.cpp",
+          "normalized_sha256": "02ff07fe1bf076a7d292231cfb5257e031e6b2803ae880a5923b4745132c87fa"
+        },
+        {
+          "file": "native/tests/classification_test.cpp",
+          "normalized_sha256": "6d2a777477620b526efa494307f5c120b68a1546c4767fac36093549d000f63a"
+        },
+        {
+          "file": "native/tests/confidence_test.cpp",
+          "normalized_sha256": "a980d9bf7b98f0548a7227169d1dbe8a4cd28d160ebeb52f53fb88dfff8e9e6a"
+        },
+        {
+          "file": "native/tests/decode_image.cpp",
+          "normalized_sha256": "06750cff9bb42e8330d36d37ab08bb47e4c327ead9f647ecdd8566f48be5c331"
+        },
+        {
+          "file": "native/tests/detector_test.cpp",
+          "normalized_sha256": "1f0f7fddf72868a78bd79a0afea15eb60569da6a17544787927b6d90bf018fd7"
+        },
+        {
+          "file": "native/tests/math_test.cpp",
+          "normalized_sha256": "605c50881ac8e8f8273219c9375563083f6f1e54b9ac237f845fcd2b65e3992f"
+        },
+        {
+          "file": "native/tests/nms_test.cpp",
+          "normalized_sha256": "eb1c9590b7e0566f64efd7802af0c01217bd7e66a16c2fc788d029eca057628e"
+        },
+        {
+          "file": "native/tests/ordering_test.cpp",
+          "normalized_sha256": "827998d0de19e45345ac8e2e74f0764ea9c915436e847dd0768a6f771feb31c0"
+        },
+        {
+          "file": "native/tests/tensor_probe.cpp",
+          "normalized_sha256": "29127ce353106e502d0e9a79a65e4fdd087e40fb29622e3eb4b3f86448bd4443"
+        },
+        {
+          "file": "native/tests/word_box_assertions.hpp",
+          "normalized_sha256": "60c9d86662d0065e6b9e801c1cce479162caf27e866f9878e78dd27e829708de"
+        },
+        {
+          "file": "native/tests/word_box_assertions_test.cpp",
+          "normalized_sha256": "0d395b824f5aebb9e9988331c0bca0172a6eab0aceda7f99cb0327399b49cfc9"
+        },
+        {
+          "file": "native/wasm/activation.hpp",
+          "normalized_sha256": "775d7d025cb638819494093ba5c5c5bbf884154c574cb71b362ddfcddac4757c"
+        },
+        {
+          "file": "native/wasm/convolution.hpp",
+          "normalized_sha256": "4b5995eef3344fab49b47217f4966d9fb347d0157e5d4a66c325768c07125756"
+        },
+        {
+          "file": "native/wasm/entry.cpp",
+          "normalized_sha256": "ba681c6b7074825368cd41d7a6874f416ee3b2bd837defbf225e815ea6bace8f"
+        },
+        {
+          "file": "native/wasm/fma_test.cpp",
+          "normalized_sha256": "ad6275c8aa8d9be36de60c469ea9e7635fdc44eb98d999717bf25c33523c1333"
+        },
+        {
+          "file": "native/wasm/opencv-rounding.hpp",
+          "normalized_sha256": "0d5d618e6f8cb6f5da3ad78b2cf5c008287ee94f866c5ff489f7fac6dc26aef4"
+        },
+        {
+          "file": "native/wasm/probe-node.cjs",
+          "normalized_sha256": "ff73a69b6f83a3c310218a8c1885905d8876af563c1cc5f90915166dad3b794c"
+        },
+        {
+          "file": "native/wasm/rounding_test.cpp",
+          "normalized_sha256": "7d8c36155e88f1cd2700ce78f146a7ef5dd481a6c52cdcc38ab18dc40f95cb5d"
+        }
+      ]
+    },
+    "linux-x64": {
+      "passed": true,
+      "source_files": [
+        {
+          "file": "CMakeLists.txt",
+          "normalized_sha256": "734eaec11bbdfd987d03194f33ced6922ac6a917457ee733a27fc8e91874ae27"
+        },
+        {
+          "file": "json.hpp",
+          "normalized_sha256": "7804b38146921d03374549c9e2a5e3acda097814c43caf2b96a0278e58df26e0"
+        },
+        {
+          "file": "stb_image.h",
+          "normalized_sha256": "594c2fe35d49488b4382dbfaec8f98366defca819d916ac95becf3e75f4200b3"
+        },
+        {
+          "file": "native/CMakeLists.txt",
+          "normalized_sha256": "a4f3a0213ef9c8ea28163cfc5fd2f8d83543a881d52c41770950789e799a04b1"
+        },
+        {
+          "file": "native/android/OneOcr.java",
+          "normalized_sha256": "ae5460e77bdababefd40f53435fb8e90be391eb8d712410b2ffa96315bb2b98e"
+        },
+        {
+          "file": "native/android/oneocr_jni.cpp",
+          "normalized_sha256": "ddc04ad4144329ec5cf6e5dbfad1cba6e35d7647c97181fdb19a8f1d86ea45d6"
+        },
+        {
+          "file": "native/include/oneocr_portable.h",
+          "normalized_sha256": "949be635a16e8965c66e455e3247b92f36510eb4f2eff57c5960b9862e7a3e9d"
+        },
+        {
+          "file": "native/include/oneocr_portable.hpp",
+          "normalized_sha256": "d64c9c7f6cfaf377e6e7e1b2284f91f1fc13c180f86459f2e29acc7501439485"
+        },
+        {
+          "file": "native/src/alignment.cpp",
+          "normalized_sha256": "b7340ce2474f19e096d1b80d9dbd26d8998775b79130931cf4bf7f48be869a83"
+        },
+        {
+          "file": "native/src/alignment.hpp",
+          "normalized_sha256": "02622e5d427cfff7edf26f6b6e4b2470c6c29ccb4c39340959f5788338ca2cd6"
+        },
+        {
+          "file": "native/src/classification.cpp",
+          "normalized_sha256": "9be400417dabd2d1d7bd6bacfdab9842efe402dea521af5d9a0ce04f7f8df608"
+        },
+        {
+          "file": "native/src/classification.hpp",
+          "normalized_sha256": "97321878267bb7892185f9af8710c240639f685d77ce7158c08df974ef17e4c3"
+        },
+        {
+          "file": "native/src/cli.cpp",
+          "normalized_sha256": "c6a213b8711b45023dcb8bd482a3aac52f00ca1c236439327ea40b4ea3af086a"
+        },
+        {
+          "file": "native/src/confidence.cpp",
+          "normalized_sha256": "4c54a2cae12336a56e6270b0de0008c6598c24b5e96c6d3964796a7662ca849d"
+        },
+        {
+          "file": "native/src/confidence.hpp",
+          "normalized_sha256": "346dc3e4e92e3a4b46e2c38b0ff619fb0dce2b7a3518b0e77788424d7d7d610d"
+        },
+        {
+          "file": "native/src/detector.cpp",
+          "normalized_sha256": "8889c0413ee10093cfb7d9593a7f158eff1678d1bfff9179c8aee1541ab4c545"
+        },
+        {
+          "file": "native/src/detector.hpp",
+          "normalized_sha256": "dbbe0a09d661da718b61685d0a97fb01576ecb94e608a86d070dfbc59ea1578c"
+        },
+        {
+          "file": "native/src/engine.cpp",
+          "normalized_sha256": "e4011b161b69db710e465e59388328b47fa4e495dd4101a5ab925d7e8e2c52c1"
+        },
+        {
+          "file": "native/src/fragment.cpp",
+          "normalized_sha256": "bdccc6ca989e4fdfe8cdd7b65bfe8dd4a505b93e0795b0a278ed13924561f93c"
+        },
+        {
+          "file": "native/src/image.cpp",
+          "normalized_sha256": "b7ffc3b05f5594950ae25364953de59a4b2de78db33bf7708289ee8bd2833916"
+        },
+        {
+          "file": "native/src/image.hpp",
+          "normalized_sha256": "b4771791b92c3744962c93b1079193ab3ec2509efb238b32772c9da9bfb08566"
+        },
+        {
+          "file": "native/src/nms.cpp",
+          "normalized_sha256": "c43201e92b77c48ac4d9d9c810ef7b7eaf3669cde76986dc365b9d3a345ddd46"
+        },
+        {
+          "file": "native/src/nms.hpp",
+          "normalized_sha256": "3c70713e6e8b9e07425e5ed37ad2065dc98d25fc2736ed83f7c2d79f68355d0f"
+        },
+        {
+          "file": "native/src/normalizer.cpp",
+          "normalized_sha256": "08dd2a8ff385e69e4fb448ab3532c4f2fc16ceed9549bcd2463f2b6db9c613fa"
+        },
+        {
+          "file": "native/src/normalizer.hpp",
+          "normalized_sha256": "bb6bbc6f4fa7df7102e6bace4159be062b777c813f13629659505bbfb142b22b"
+        },
+        {
+          "file": "native/src/ordering.cpp",
+          "normalized_sha256": "7750e834aa86662d052cad52e3c413a88f4f63623e908f74ba3be2b7e05477c3"
+        },
+        {
+          "file": "native/src/ordering.hpp",
+          "normalized_sha256": "9966c27ab09563370c50eacdb1c77f569ef5402e260f04b56d9263738e77417c"
+        },
+        {
+          "file": "native/src/recognition_budget.hpp",
+          "normalized_sha256": "ab3c9b2f3c68b2449b0ab41b25eff9453267b2402fbd37cff75d73a2f39db729"
+        },
+        {
+          "file": "native/src/sha256.hpp",
+          "normalized_sha256": "ee82fbdae944e2085065c15e4086ca4670879c09bbe00535d400a1fc0c752494"
+        },
+        {
+          "file": "native/src/trace.hpp",
+          "normalized_sha256": "c5f5b4ac7b31a016b4a184248de677662ba0885c69815a549285b667646fa533"
+        },
+        {
+          "file": "native/src/unicode.cpp",
+          "normalized_sha256": "86027929d839d708773be5885b3ac3ad0083ac290b699c40628e88f818fbee95"
+        },
+        {
+          "file": "native/src/unicode.hpp",
+          "normalized_sha256": "4392f873c339724f9de19969650b3490f1ffe42f8566915d9393f1be81c18d0e"
+        },
+        {
+          "file": "native/src/windows_compat.cpp",
+          "normalized_sha256": "c76b613f8b8f67a40cab8a32bbed3bb66e8a7c66591fa727519df78012a9d804"
+        },
+        {
+          "file": "native/tests/alignment_test.cpp",
+          "normalized_sha256": "6ea2c16be96b3eea017a3bb7e9bab0a9dfcfbb6b82f77bb60807a0a4c2032d45"
+        },
+        {
+          "file": "native/tests/api_test.cpp",
+          "normalized_sha256": "4801e645179aa33f022b5df6f17e585ebca1638cfb7b3a2d92e7ad182df3166d"
+        },
+        {
+          "file": "native/tests/boundary_test.cpp",
+          "normalized_sha256": "02ff07fe1bf076a7d292231cfb5257e031e6b2803ae880a5923b4745132c87fa"
+        },
+        {
+          "file": "native/tests/classification_test.cpp",
+          "normalized_sha256": "6d2a777477620b526efa494307f5c120b68a1546c4767fac36093549d000f63a"
+        },
+        {
+          "file": "native/tests/confidence_test.cpp",
+          "normalized_sha256": "a980d9bf7b98f0548a7227169d1dbe8a4cd28d160ebeb52f53fb88dfff8e9e6a"
+        },
+        {
+          "file": "native/tests/decode_image.cpp",
+          "normalized_sha256": "06750cff9bb42e8330d36d37ab08bb47e4c327ead9f647ecdd8566f48be5c331"
+        },
+        {
+          "file": "native/tests/detector_test.cpp",
+          "normalized_sha256": "1f0f7fddf72868a78bd79a0afea15eb60569da6a17544787927b6d90bf018fd7"
+        },
+        {
+          "file": "native/tests/math_test.cpp",
+          "normalized_sha256": "605c50881ac8e8f8273219c9375563083f6f1e54b9ac237f845fcd2b65e3992f"
+        },
+        {
+          "file": "native/tests/nms_test.cpp",
+          "normalized_sha256": "eb1c9590b7e0566f64efd7802af0c01217bd7e66a16c2fc788d029eca057628e"
+        },
+        {
+          "file": "native/tests/ordering_test.cpp",
+          "normalized_sha256": "827998d0de19e45345ac8e2e74f0764ea9c915436e847dd0768a6f771feb31c0"
+        },
+        {
+          "file": "native/tests/tensor_probe.cpp",
+          "normalized_sha256": "29127ce353106e502d0e9a79a65e4fdd087e40fb29622e3eb4b3f86448bd4443"
+        },
+        {
+          "file": "native/tests/word_box_assertions.hpp",
+          "normalized_sha256": "60c9d86662d0065e6b9e801c1cce479162caf27e866f9878e78dd27e829708de"
+        },
+        {
+          "file": "native/tests/word_box_assertions_test.cpp",
+          "normalized_sha256": "0d395b824f5aebb9e9988331c0bca0172a6eab0aceda7f99cb0327399b49cfc9"
+        },
+        {
+          "file": "native/wasm/activation.hpp",
+          "normalized_sha256": "775d7d025cb638819494093ba5c5c5bbf884154c574cb71b362ddfcddac4757c"
+        },
+        {
+          "file": "native/wasm/convolution.hpp",
+          "normalized_sha256": "4b5995eef3344fab49b47217f4966d9fb347d0157e5d4a66c325768c07125756"
+        },
+        {
+          "file": "native/wasm/entry.cpp",
+          "normalized_sha256": "ba681c6b7074825368cd41d7a6874f416ee3b2bd837defbf225e815ea6bace8f"
+        },
+        {
+          "file": "native/wasm/fma_test.cpp",
+          "normalized_sha256": "ad6275c8aa8d9be36de60c469ea9e7635fdc44eb98d999717bf25c33523c1333"
+        },
+        {
+          "file": "native/wasm/opencv-rounding.hpp",
+          "normalized_sha256": "0d5d618e6f8cb6f5da3ad78b2cf5c008287ee94f866c5ff489f7fac6dc26aef4"
+        },
+        {
+          "file": "native/wasm/probe-node.cjs",
+          "normalized_sha256": "ff73a69b6f83a3c310218a8c1885905d8876af563c1cc5f90915166dad3b794c"
+        },
+        {
+          "file": "native/wasm/rounding_test.cpp",
+          "normalized_sha256": "7d8c36155e88f1cd2700ce78f146a7ef5dd481a6c52cdcc38ab18dc40f95cb5d"
+        }
+      ]
+    },
+    "wasm32": {
+      "passed": true,
+      "source_files": [
+        {
+          "file": "CMakeLists.txt",
+          "normalized_sha256": "734eaec11bbdfd987d03194f33ced6922ac6a917457ee733a27fc8e91874ae27"
+        },
+        {
+          "file": "cmake/icu-source.cmake",
+          "normalized_sha256": "b9bb19e7e6dc5cfad07f6a1517221f4d3ee1926711f9c8bafc8372d83c04a79b"
+        },
+        {
+          "file": "cmake/opencv-source.cmake",
+          "normalized_sha256": "ff75d2b436a052fea66e932e6bd9680eea0cf2ed9979a4dd2007b6015c2781dd"
+        },
+        {
+          "file": "cmake/toolchains/android-arm64.cmake",
+          "normalized_sha256": "d27fad76d3bbfc5f9b461be80f35b21fbc1cbc42a7565b5330f1eff77a35f611"
+        },
+        {
+          "file": "json.hpp",
+          "normalized_sha256": "7804b38146921d03374549c9e2a5e3acda097814c43caf2b96a0278e58df26e0"
+        },
+        {
+          "file": "native/CMakeLists.txt",
+          "normalized_sha256": "a4f3a0213ef9c8ea28163cfc5fd2f8d83543a881d52c41770950789e799a04b1"
+        },
+        {
+          "file": "native/android/OneOcr.java",
+          "normalized_sha256": "ae5460e77bdababefd40f53435fb8e90be391eb8d712410b2ffa96315bb2b98e"
+        },
+        {
+          "file": "native/android/oneocr_jni.cpp",
+          "normalized_sha256": "ddc04ad4144329ec5cf6e5dbfad1cba6e35d7647c97181fdb19a8f1d86ea45d6"
+        },
+        {
+          "file": "native/include/oneocr_portable.h",
+          "normalized_sha256": "949be635a16e8965c66e455e3247b92f36510eb4f2eff57c5960b9862e7a3e9d"
+        },
+        {
+          "file": "native/include/oneocr_portable.hpp",
+          "normalized_sha256": "d64c9c7f6cfaf377e6e7e1b2284f91f1fc13c180f86459f2e29acc7501439485"
+        },
+        {
+          "file": "native/src/alignment.cpp",
+          "normalized_sha256": "b7340ce2474f19e096d1b80d9dbd26d8998775b79130931cf4bf7f48be869a83"
+        },
+        {
+          "file": "native/src/alignment.hpp",
+          "normalized_sha256": "02622e5d427cfff7edf26f6b6e4b2470c6c29ccb4c39340959f5788338ca2cd6"
+        },
+        {
+          "file": "native/src/classification.cpp",
+          "normalized_sha256": "9be400417dabd2d1d7bd6bacfdab9842efe402dea521af5d9a0ce04f7f8df608"
+        },
+        {
+          "file": "native/src/classification.hpp",
+          "normalized_sha256": "97321878267bb7892185f9af8710c240639f685d77ce7158c08df974ef17e4c3"
+        },
+        {
+          "file": "native/src/cli.cpp",
+          "normalized_sha256": "c6a213b8711b45023dcb8bd482a3aac52f00ca1c236439327ea40b4ea3af086a"
+        },
+        {
+          "file": "native/src/confidence.cpp",
+          "normalized_sha256": "4c54a2cae12336a56e6270b0de0008c6598c24b5e96c6d3964796a7662ca849d"
+        },
+        {
+          "file": "native/src/confidence.hpp",
+          "normalized_sha256": "346dc3e4e92e3a4b46e2c38b0ff619fb0dce2b7a3518b0e77788424d7d7d610d"
+        },
+        {
+          "file": "native/src/detector.cpp",
+          "normalized_sha256": "8889c0413ee10093cfb7d9593a7f158eff1678d1bfff9179c8aee1541ab4c545"
+        },
+        {
+          "file": "native/src/detector.hpp",
+          "normalized_sha256": "dbbe0a09d661da718b61685d0a97fb01576ecb94e608a86d070dfbc59ea1578c"
+        },
+        {
+          "file": "native/src/engine.cpp",
+          "normalized_sha256": "e4011b161b69db710e465e59388328b47fa4e495dd4101a5ab925d7e8e2c52c1"
+        },
+        {
+          "file": "native/src/fragment.cpp",
+          "normalized_sha256": "bdccc6ca989e4fdfe8cdd7b65bfe8dd4a505b93e0795b0a278ed13924561f93c"
+        },
+        {
+          "file": "native/src/image.cpp",
+          "normalized_sha256": "b7ffc3b05f5594950ae25364953de59a4b2de78db33bf7708289ee8bd2833916"
+        },
+        {
+          "file": "native/src/image.hpp",
+          "normalized_sha256": "b4771791b92c3744962c93b1079193ab3ec2509efb238b32772c9da9bfb08566"
+        },
+        {
+          "file": "native/src/nms.cpp",
+          "normalized_sha256": "c43201e92b77c48ac4d9d9c810ef7b7eaf3669cde76986dc365b9d3a345ddd46"
+        },
+        {
+          "file": "native/src/nms.hpp",
+          "normalized_sha256": "3c70713e6e8b9e07425e5ed37ad2065dc98d25fc2736ed83f7c2d79f68355d0f"
+        },
+        {
+          "file": "native/src/normalizer.cpp",
+          "normalized_sha256": "08dd2a8ff385e69e4fb448ab3532c4f2fc16ceed9549bcd2463f2b6db9c613fa"
+        },
+        {
+          "file": "native/src/normalizer.hpp",
+          "normalized_sha256": "bb6bbc6f4fa7df7102e6bace4159be062b777c813f13629659505bbfb142b22b"
+        },
+        {
+          "file": "native/src/ordering.cpp",
+          "normalized_sha256": "7750e834aa86662d052cad52e3c413a88f4f63623e908f74ba3be2b7e05477c3"
+        },
+        {
+          "file": "native/src/ordering.hpp",
+          "normalized_sha256": "9966c27ab09563370c50eacdb1c77f569ef5402e260f04b56d9263738e77417c"
+        },
+        {
+          "file": "native/src/recognition_budget.hpp",
+          "normalized_sha256": "ab3c9b2f3c68b2449b0ab41b25eff9453267b2402fbd37cff75d73a2f39db729"
+        },
+        {
+          "file": "native/src/sha256.hpp",
+          "normalized_sha256": "ee82fbdae944e2085065c15e4086ca4670879c09bbe00535d400a1fc0c752494"
+        },
+        {
+          "file": "native/src/trace.hpp",
+          "normalized_sha256": "c5f5b4ac7b31a016b4a184248de677662ba0885c69815a549285b667646fa533"
+        },
+        {
+          "file": "native/src/unicode.cpp",
+          "normalized_sha256": "86027929d839d708773be5885b3ac3ad0083ac290b699c40628e88f818fbee95"
+        },
+        {
+          "file": "native/src/unicode.hpp",
+          "normalized_sha256": "4392f873c339724f9de19969650b3490f1ffe42f8566915d9393f1be81c18d0e"
+        },
+        {
+          "file": "native/src/windows_compat.cpp",
+          "normalized_sha256": "c76b613f8b8f67a40cab8a32bbed3bb66e8a7c66591fa727519df78012a9d804"
+        },
+        {
+          "file": "native/tests/alignment_test.cpp",
+          "normalized_sha256": "6ea2c16be96b3eea017a3bb7e9bab0a9dfcfbb6b82f77bb60807a0a4c2032d45"
+        },
+        {
+          "file": "native/tests/api_test.cpp",
+          "normalized_sha256": "4801e645179aa33f022b5df6f17e585ebca1638cfb7b3a2d92e7ad182df3166d"
+        },
+        {
+          "file": "native/tests/boundary_test.cpp",
+          "normalized_sha256": "02ff07fe1bf076a7d292231cfb5257e031e6b2803ae880a5923b4745132c87fa"
+        },
+        {
+          "file": "native/tests/classification_test.cpp",
+          "normalized_sha256": "6d2a777477620b526efa494307f5c120b68a1546c4767fac36093549d000f63a"
+        },
+        {
+          "file": "native/tests/confidence_test.cpp",
+          "normalized_sha256": "a980d9bf7b98f0548a7227169d1dbe8a4cd28d160ebeb52f53fb88dfff8e9e6a"
+        },
+        {
+          "file": "native/tests/decode_image.cpp",
+          "normalized_sha256": "06750cff9bb42e8330d36d37ab08bb47e4c327ead9f647ecdd8566f48be5c331"
+        },
+        {
+          "file": "native/tests/detector_test.cpp",
+          "normalized_sha256": "1f0f7fddf72868a78bd79a0afea15eb60569da6a17544787927b6d90bf018fd7"
+        },
+        {
+          "file": "native/tests/math_test.cpp",
+          "normalized_sha256": "605c50881ac8e8f8273219c9375563083f6f1e54b9ac237f845fcd2b65e3992f"
+        },
+        {
+          "file": "native/tests/nms_test.cpp",
+          "normalized_sha256": "eb1c9590b7e0566f64efd7802af0c01217bd7e66a16c2fc788d029eca057628e"
+        },
+        {
+          "file": "native/tests/ordering_test.cpp",
+          "normalized_sha256": "827998d0de19e45345ac8e2e74f0764ea9c915436e847dd0768a6f771feb31c0"
+        },
+        {
+          "file": "native/tests/tensor_probe.cpp",
+          "normalized_sha256": "29127ce353106e502d0e9a79a65e4fdd087e40fb29622e3eb4b3f86448bd4443"
+        },
+        {
+          "file": "native/tests/word_box_assertions.hpp",
+          "normalized_sha256": "60c9d86662d0065e6b9e801c1cce479162caf27e866f9878e78dd27e829708de"
+        },
+        {
+          "file": "native/tests/word_box_assertions_test.cpp",
+          "normalized_sha256": "0d395b824f5aebb9e9988331c0bca0172a6eab0aceda7f99cb0327399b49cfc9"
+        },
+        {
+          "file": "native/wasm/activation.hpp",
+          "normalized_sha256": "775d7d025cb638819494093ba5c5c5bbf884154c574cb71b362ddfcddac4757c"
+        },
+        {
+          "file": "native/wasm/convolution.hpp",
+          "normalized_sha256": "4b5995eef3344fab49b47217f4966d9fb347d0157e5d4a66c325768c07125756"
+        },
+        {
+          "file": "native/wasm/entry.cpp",
+          "normalized_sha256": "ba681c6b7074825368cd41d7a6874f416ee3b2bd837defbf225e815ea6bace8f"
+        },
+        {
+          "file": "native/wasm/fma_test.cpp",
+          "normalized_sha256": "ad6275c8aa8d9be36de60c469ea9e7635fdc44eb98d999717bf25c33523c1333"
+        },
+        {
+          "file": "native/wasm/opencv-rounding.hpp",
+          "normalized_sha256": "0d5d618e6f8cb6f5da3ad78b2cf5c008287ee94f866c5ff489f7fac6dc26aef4"
+        },
+        {
+          "file": "native/wasm/probe-node.cjs",
+          "normalized_sha256": "ff73a69b6f83a3c310218a8c1885905d8876af563c1cc5f90915166dad3b794c"
+        },
+        {
+          "file": "native/wasm/rounding_test.cpp",
+          "normalized_sha256": "7d8c36155e88f1cd2700ce78f146a7ef5dd481a6c52cdcc38ab18dc40f95cb5d"
+        },
+        {
+          "file": "research/dependencies.json",
+          "normalized_sha256": "080541371ea2451ebfe7ef2039dd1ca1cecaecd19091b97fb1336b62041af0eb"
+        },
+        {
+          "file": "scripts/browser-memory.ps1",
+          "normalized_sha256": "b5870c6b34d3e95f9c71d89aaca6d7369204e454e1f266a6f063dfbbe30c63e2"
+        },
+        {
+          "file": "scripts/build-wasm.py",
+          "normalized_sha256": "8384c84e7da0e253112aa752a7d8749ab5f03a2900acb70b1d7a05a26159588e"
+        },
+        {
+          "file": "scripts/compare-results.py",
+          "normalized_sha256": "06d137cc93680f766031d783da9526064808fea1135124348e180bb8607f4869"
+        },
+        {
+          "file": "scripts/regression_inputs.py",
+          "normalized_sha256": "2374a40c220c3505e42367f43760451e9992546ca015332b048a668b90b5e13b"
+        },
+        {
+          "file": "scripts/run-wasm-parity.py",
+          "normalized_sha256": "72c98dbab9e653420167c7664e2f82c38f09943e9107040f7d74ba6353aaffb8"
+        },
+        {
+          "file": "scripts/verification_state.py",
+          "normalized_sha256": "12d6421736c5396495ecb3f07054eb9d0c3b6a9fb30f1be944beaccfec05f7ee"
+        },
+        {
+          "file": "stb_image.h",
+          "normalized_sha256": "594c2fe35d49488b4382dbfaec8f98366defca819d916ac95becf3e75f4200b3"
+        },
+        {
+          "file": "test/compare-results-test.py",
+          "normalized_sha256": "12b3f49edc1096e973ec49132ba5682b7253cf76723a6bcceea71f1ae98488e9"
+        },
+        {
+          "file": "test/verification-state-test.py",
+          "normalized_sha256": "5b80de2552aa4fc0f8d1f37cc9b2b650da2cc40d85e8dc56b703e86e1df21754"
+        },
+        {
+          "file": "test/wasm-test.mjs",
+          "normalized_sha256": "d63129396eb0f4ffc6b83f5441ac80ad2fb9ad119f11995cb159c8eeb9108fca"
+        },
+        {
+          "file": "web/browser-regression.mjs",
+          "normalized_sha256": "9e8f7d1ffa798baa4bc143e8d4b1416e16374b9a8da3caa36f1121ca62257d5a"
+        },
+        {
+          "file": "web/cli-entry.mjs",
+          "normalized_sha256": "8e476a986a36cec1fa1b1e443bb5906680515228de8ba8d3a9fdf7cfa2a85bbd"
+        },
+        {
+          "file": "web/cli.mjs",
+          "normalized_sha256": "385f5bb73c7e77e21fd1f72e373bda66fb4e3aaf8dbfa3300883f0d0a2619ce5"
+        },
+        {
+          "file": "web/oneocr.d.mts",
+          "normalized_sha256": "16f24369fc5e319187c69f66aa6cc85e8f9cd1b40baf9205ad7e6ec628eb67b9"
+        },
+        {
+          "file": "web/oneocr.mjs",
+          "normalized_sha256": "7b0f0089bd34ad58a69c2f3f1c3ed316e0d0ded0643fd376bbf0e919360e6dbc"
+        },
+        {
+          "file": "web/regression.mjs",
+          "normalized_sha256": "a715b9e57dd51ef6c744bdbe4507d0f4d770dd6a73abf06bc4afebc8b0e6d254"
+        },
+        {
+          "file": "web/trace.mjs",
+          "normalized_sha256": "c0cd73ddbae873418e1c809b104007a58a33f96e736d6caee0e5c23a9f723ef1"
+        },
+        {
+          "file": "web/worker-client.d.mts",
+          "normalized_sha256": "68ebe35177142af88b554be9c4d7b8feedf4381485a00f25924e2429311ef10f"
+        },
+        {
+          "file": "web/worker-client.mjs",
+          "normalized_sha256": "1f0ddd9375810fed73c340638bb41b745f126db66180d032fbcb4cab3c6bfb86"
+        },
+        {
+          "file": "web/worker.mjs",
+          "normalized_sha256": "44a47673174a1b5154b498327d0db8a8b33658ec692edc4bf2c81ab7c709d5a1"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,248 @@
++ git -c safe.directory=/root/oneocr-wasm-ort -C /root/oneocr-wasm-ort submodule update --init cmake/external/emsdk
++ /root/oneocr-wasm-ort/cmake/external/emsdk/emsdk install 4.0.8
+Resolving SDK version '4.0.8' to 'sdk-releases-56f86607aeb458086e72f23188789be2ee0e971a-64bit'
+Installing SDK 'sdk-releases-56f86607aeb458086e72f23188789be2ee0e971a-64bit'..
+Skipped installing node-20.18.0-64bit, already installed.
+Skipped installing releases-56f86607aeb458086e72f23188789be2ee0e971a-64bit, already installed.
+All SDK components already installed: 'sdk-releases-56f86607aeb458086e72f23188789be2ee0e971a-64bit'.
++ /root/oneocr-wasm-ort/cmake/external/emsdk/emsdk activate 4.0.8
+Resolving SDK version '4.0.8' to 'sdk-releases-56f86607aeb458086e72f23188789be2ee0e971a-64bit'
+Setting the following tools as active:
+   node-20.18.0-64bit
+   releases-56f86607aeb458086e72f23188789be2ee0e971a-64bit
+
+Next steps:
+- To conveniently access emsdk tools from the command line,
+  consider adding the following directories to your PATH:
+    /root/oneocr-wasm-ort/cmake/external/emsdk
+    /root/oneocr-wasm-ort/cmake/external/emsdk/node/20.18.0_64bit/bin
+    /root/oneocr-wasm-ort/cmake/external/emsdk/upstream/emscripten
+- This can be done for the current shell by running:
+    source "/root/oneocr-wasm-ort/cmake/external/emsdk/emsdk_env.sh"
+- Configure emsdk in your shell startup scripts by running:
+    echo 'source "/root/oneocr-wasm-ort/cmake/external/emsdk/emsdk_env.sh"' >> $HOME/.bash_profile
++ cmake --build /root/oneocr-wasm-build/ort/Release --target bundling_target --parallel 6
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
++ /root/oneocr-wasm-ort/cmake/external/emsdk/upstream/emscripten/emar -M
++ /usr/bin/python3 /mnt/f/pythonx/myocr/win11-oneocr/scripts/prepare-icu.py --source work/vendor/icu-linux --fetch-only
++ /root/oneocr-wasm-ort/cmake/external/emsdk/upstream/emscripten/emcmake cmake -S /mnt/f/pythonx/myocr/win11-oneocr -B /root/oneocr-wasm-build/engine -G Ninja -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DONNXRUNTIME_ROOT=/root/oneocr-wasm-build/ort-sdk -DONEOCR_OPENCV_SOURCE=/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv -DONEOCR_ICU_SOURCE=/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux
+configure: cmake -S /mnt/f/pythonx/myocr/win11-oneocr -B /root/oneocr-wasm-build/engine -G Ninja -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DONNXRUNTIME_ROOT=/root/oneocr-wasm-build/ort-sdk -DONEOCR_OPENCV_SOURCE=/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/opencv -DONEOCR_ICU_SOURCE=/mnt/f/pythonx/myocr/win11-oneocr/work/vendor/icu-linux -DCMAKE_TOOLCHAIN_FILE=/root/oneocr-wasm-ort/cmake/external/emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake -DCMAKE_CROSSCOMPILING_EMULATOR=/root/oneocr-wasm-ort/cmake/external/emsdk/node/20.18.0_64bit/bin/node
+CMake Deprecation Warning at work/vendor/opencv/CMakeLists.txt:25 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- ocv_init_download: OpenCV source tree is not fetched as git repository. 3rdparty resources will be downloaded from github.com by default.
+-- Detected processor: x86
+-- Looking for ccache - not found
+-- SSE is not supported by C++ compiler
+-- SSE2 is not supported by C++ compiler
+-- Optimization SSE2 is not available, skipped
+Cleaning INTERNAL cached variable: ZLIB_LIBRARY
+Cleaning INTERNAL cached variable: ZLIB_INCLUDE_DIR
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR) (Required is at least version "1.2.3")
+-- libva: missing va.h header (VA_INCLUDE_DIR)
+-- Using whitelist: opencv_core;opencv_imgproc
+-- Module opencv_calib3d disabled by whitelist
+-- Module opencv_dnn disabled by whitelist
+-- Module opencv_features2d disabled by whitelist
+-- Module opencv_flann disabled by whitelist
+-- Module opencv_highgui disabled by whitelist
+-- Module opencv_imgcodecs disabled by whitelist
+-- Module opencv_java_bindings_generator disabled by whitelist
+-- Module opencv_js_bindings_generator disabled by whitelist
+-- Module opencv_ml disabled by whitelist
+-- Module opencv_objc_bindings_generator disabled by whitelist
+-- Module opencv_objdetect disabled by whitelist
+-- Module opencv_photo disabled by whitelist
+-- Module opencv_python_bindings_generator disabled by whitelist
+-- Module opencv_python_tests disabled by whitelist
+-- Module opencv_stitching disabled by whitelist
+-- Module opencv_video disabled by whitelist
+-- Allocator metrics storage type: 'long long'
+-- Excluding from source files list: modules/imgproc/src/corner.avx.cpp
+-- Excluding from source files list: modules/imgproc/src/imgwarp.avx2.cpp
+-- Excluding from source files list: modules/imgproc/src/imgwarp.lasx.cpp
+-- Excluding from source files list: modules/imgproc/src/imgwarp.sse4_1.cpp
+-- Excluding from source files list: modules/imgproc/src/resize.avx2.cpp
+-- Excluding from source files list: modules/imgproc/src/resize.lasx.cpp
+-- Excluding from source files list: modules/imgproc/src/resize.sse4_1.cpp
+-- 
+-- General configuration for OpenCV 4.10.0 =====================================
+--   Version control:               unknown
+-- 
+--   Platform:
+--     Timestamp:                   2026-11-02T15:06:48Z
+--     Host:                        Linux 6.18.54.1-microsoft-standard-WSL2 x86_64
+--     Target:                      Emscripten 1 x86
+--     CMake:                       4.2.3
+--     CMake generator:             Ninja
+--     CMake build tool:            /usr/bin/ninja
+--     Configuration:               Release
+-- 
+--   CPU/HW features:
+--     Baseline:
+--       requested:                 SSE2
+-- 
+--   C/C++:
+--     Built as dynamic libs?:      NO
+--     C++ standard:                20
+--     C++ Compiler:                /root/oneocr-wasm-ort/cmake/external/emsdk/upstream/emscripten/em++  (ver 21.0.0)
+--     C++ flags (Release):         -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -O3 -DNDEBUG  -DNDEBUG
+--     C++ flags (Debug):           -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -g  -O0 -DDEBUG -D_DEBUG
+--     C Compiler:                  /root/oneocr-wasm-ort/cmake/external/emsdk/upstream/emscripten/emcc
+--     C flags (Release):           -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -O3 -DNDEBUG  -DNDEBUG
+--     C flags (Debug):             -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -g  -O0 -DDEBUG -D_DEBUG
+--     Linker flags (Release):      -Wl,--gc-sections  
+--     Linker flags (Debug):        -Wl,--gc-sections  
+--     ccache:                      NO
+--     Precompiled headers:         NO
+--     Extra dependencies:
+--     3rdparty dependencies:       zlib
+-- 
+--   OpenCV modules:
+--     To be built:                 core imgproc
+--     Disabled:                    videoio world
+--     Disabled by dependency:      calib3d dnn features2d flann highgui imgcodecs java_bindings_generator js_bindings_generator ml objc_bindings_generator objdetect photo python_bindings_generator python_tests stitching video
+--     Unavailable:                 gapi java python2 python3 ts
+--     Applications:                -
+--     Documentation:               NO
+--     Non-free algorithms:         NO
+-- 
+--   GUI: 
+--     GTK+:                        NO
+-- 
+--   Media I/O: 
+--     ZLib:                        build (ver 1.3.1)
+--     HDR:                         YES
+--     SUNRASTER:                   YES
+--     PXM:                         YES
+--     PFM:                         YES
+-- 
+--   Video I/O:
+--     DC1394:                      NO
+--     v4l/v4l2:                    NO
+-- 
+--   Parallel framework:            none
+-- 
+--   Trace:                         YES (built-in)
+-- 
+--   Other third-party libraries:
+--     VA:                          NO
+--     Custom HAL:                  NO
+--     Flatbuffers:                 builtin/3rdparty (23.5.9)
+-- 
+--   Python (for build):            /usr/bin/python3
+-- 
+--   Install to:                    /root/oneocr-wasm-build/engine/install
+-- -----------------------------------------------------------------
+-- 
+-- Configuring done (10.6s)
+-- Generating done (3.4s)
+-- Build files have been written to: /root/oneocr-wasm-build/engine
++ cmake --build /root/oneocr-wasm-build/engine --target oneocr_wasm oneocr_wasm_rounding_test oneocr_wasm_fma_test oneocr_wasm_boundary_test oneocr_wasm_word_box_assertions_test --parallel 6
+[1/7] Building CXX object native/CMakeFiles/oneocr_wasm_fma_test.dir/wasm/fma_test.cpp.o
+[2/7] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/nms.cpp.o
+[3/7] Linking CXX executable bin/oneocr_wasm_fma_test.js
+[4/7] Building CXX object native/CMakeFiles/oneocr_portable.dir/src/engine.cpp.o
+In file included from /mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:4:
+In file included from /mnt/f/pythonx/myocr/win11-oneocr/native/src/trace.hpp:3:
+/mnt/f/pythonx/myocr/win11-oneocr/json.hpp:25253:35: warning: identifier '_json' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 25253 | inline nlohmann::json operator "" _json(const char* s, std::size_t n)
+       |                       ~~~~~~~~~~~~^~~~~
+       |                       operator""_json
+/mnt/f/pythonx/myocr/win11-oneocr/json.hpp:25272:49: warning: identifier '_json_pointer' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 25272 | inline nlohmann::json::json_pointer operator "" _json_pointer(const char* s, std::size_t n)
+       |                                     ~~~~~~~~~~~~^~~~~~~~~~~~~
+       |                                     operator""_json_pointer
+In file included from /mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:4:
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/trace.hpp:22:36: warning: 'u8path<const char *, 0>' is deprecated [-Wdeprecated-declarations]
+   22 |         directory=std::filesystem::u8path(path)/(std::string(role)+"-"+std::to_string(sequence.fetch_add(1)));
+      |                                    ^
+/root/oneocr-wasm-ort/cmake/external/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/u8path.h:78:23: note: 'u8path<const char *, 0>' has been explicitly marked deprecated here
+   78 | _LIBCPP_HIDE_FROM_ABI _LIBCPP_DEPRECATED_WITH_CHAR8_T path u8path(const _Source& __s) {
+      |                       ^
+/root/oneocr-wasm-ort/cmake/external/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__config:747:45: note: expanded from macro '_LIBCPP_DEPRECATED_WITH_CHAR8_T'
+  747 | #    define _LIBCPP_DEPRECATED_WITH_CHAR8_T _LIBCPP_DEPRECATED
+      |                                             ^
+/root/oneocr-wasm-ort/cmake/external/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__config:688:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  688 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:45:20: warning: 'u8path<std::string, 0>' is deprecated [-Wdeprecated-declarations]
+   45 |     fs::path p=fs::u8path(relative);
+      |                    ^
+/root/oneocr-wasm-ort/cmake/external/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/u8path.h:78:23: note: 'u8path<std::string, 0>' has been explicitly marked deprecated here
+   78 | _LIBCPP_HIDE_FROM_ABI _LIBCPP_DEPRECATED_WITH_CHAR8_T path u8path(const _Source& __s) {
+      |                       ^
+/root/oneocr-wasm-ort/cmake/external/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__config:747:45: note: expanded from macro '_LIBCPP_DEPRECATED_WITH_CHAR8_T'
+  747 | #    define _LIBCPP_DEPRECATED_WITH_CHAR8_T _LIBCPP_DEPRECATED
+      |                                             ^
+/root/oneocr-wasm-ort/cmake/external/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__config:688:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  688 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:120:61: warning: 'u8path<const char *, 0>' is deprecated [-Wdeprecated-declarations]
+  120 |     explicit oneocr_context(const char* directory):root(fs::u8path(directory)) {
+      |                                                             ^
+/root/oneocr-wasm-ort/cmake/external/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/u8path.h:78:23: note: 'u8path<const char *, 0>' has been explicitly marked deprecated here
+   78 | _LIBCPP_HIDE_FROM_ABI _LIBCPP_DEPRECATED_WITH_CHAR8_T path u8path(const _Source& __s) {
+      |                       ^
+/root/oneocr-wasm-ort/cmake/external/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__config:747:45: note: expanded from macro '_LIBCPP_DEPRECATED_WITH_CHAR8_T'
+  747 | #    define _LIBCPP_DEPRECATED_WITH_CHAR8_T _LIBCPP_DEPRECATED
+      |                                             ^
+/root/oneocr-wasm-ort/cmake/external/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__config:688:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  688 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:225:49: warning: variable 'score' set but not used [-Wunused-but-set-variable]
+  225 |                 std::vector<Point> points;float score=0;
+      |                                                 ^
+/mnt/f/pythonx/myocr/win11-oneocr/native/src/engine.cpp:71:6: warning: unused function 'span' [-Wunused-function]
+   71 | Quad span(const Quad& q,float start,float end) {return {interpolate(q[0],q[1],start),interpolate(q[0],q[1],end),interpolate(q[3],q[2],end),interpolate(q[3],q[2],start)};}
+      |      ^~~~
+7 warnings generated.
+[5/7] Linking CXX static library native/liboneocr_portable.a
+[6/7] Linking CXX executable bin/oneocr_wasm_boundary_test.js
+[7/7] Linking CXX executable bin/oneocr-core.mjs
++ /root/oneocr-wasm-ort/cmake/external/emsdk/node/20.18.0_64bit/bin/node /root/oneocr-wasm-build/engine/bin/oneocr_wasm_rounding_test.js
+Wasm SIMD nearest-even, overflow sentinel and pixel SIMD/tail boundaries: PASS
++ /root/oneocr-wasm-ort/cmake/external/emsdk/node/20.18.0_64bit/bin/node /root/oneocr-wasm-build/engine/bin/oneocr_wasm_fma_test.js
+Wasm vector FMA vs scalar IEEE fmaf: boundary matrix and 1000000 random lanes PASS
+Curve fallback and clipped polygon DLL oracles: PASS
++ /root/oneocr-wasm-ort/cmake/external/emsdk/node/20.18.0_64bit/bin/node /root/oneocr-wasm-build/engine/bin/oneocr_wasm_word_box_assertions_test.js
+Final word boxes: 48 nonfinite negatives, 8 finite out-of-tolerance negatives and finite controls PASS
++ cmake --install /root/oneocr-wasm-build/engine --prefix /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32
+-- Install configuration: "Release"
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/./oneocr-core.mjs
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/./oneocr-core.wasm
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/./oneocr.mjs
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/./worker.mjs
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/./worker-client.mjs
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/./oneocr.d.mts
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/./worker-client.d.mts
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/./cli.mjs
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/THIRD_PARTY_NOTICES.md
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/portable.md
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/error-codes.md
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/wasm.md
+-- Up-to-date: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses/compiler-rt-LICENSE.txt
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses/emscripten-LICENSE.txt
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses/gcc-runtime-copyright.txt
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses/gcc-runtime-GPL-3.txt
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses/icu-Unicode-3.0.txt
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses/libcxx-LICENSE.txt
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses/libcxxabi-LICENSE.txt
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses/msvc-runtime-notice.txt
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses/musl-COPYRIGHT.txt
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses/nlohmann-json-MIT.txt
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses/oneocr-native-AGPL-3.0.txt
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses/onnxruntime-LICENSE.txt
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses/onnxruntime-ThirdPartyNotices.txt
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses/opencv-Apache-2.0.txt
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses/opencv-softfloat-fdlibm.txt
+-- Installing: /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32/share/oneocr/licenses/opencv-zlib.txt
+Built /mnt/f/pythonx/myocr/win11-oneocr/artifacts/wasm32

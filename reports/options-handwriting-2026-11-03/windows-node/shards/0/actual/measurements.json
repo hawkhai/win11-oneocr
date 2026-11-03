@@ -1,0 +1,519 @@
+{
+  "node": "v24.14.0",
+  "v8": "13.6.233.17-node.41",
+  "initializationMs": 1748.6081000000004,
+  "peakRssBytes": 715358208,
+  "cases": [
+    {
+      "name": "sample-4a2cab3fdba7faea",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 596740.753,
+      "rssBytes": 569331712
+    },
+    {
+      "name": "sample-fd9577ef8f62f6a7",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 204820.7627999999,
+      "rssBytes": 559837184
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m1000-r1152x768",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 61472.49860000005,
+      "rssBytes": 607420416
+    },
+    {
+      "name": "sample-39a29be9779394c5",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 144353.88160000008,
+      "rssBytes": 617758720
+    },
+    {
+      "name": "sample-be771810db2def78",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 158079.14850000013,
+      "rssBytes": 712568832
+    },
+    {
+      "name": "sample-c8cde51505833347",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 109410.81239999994,
+      "rssBytes": 713437184
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m32-r1152x768",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 80662.40610000002,
+      "rssBytes": 713871360
+    },
+    {
+      "name": "sample-3c6e7c7ab6144e27",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 71577.54269999987,
+      "rssBytes": 713977856
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m999-r640x384",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 53902.628899999894,
+      "rssBytes": 713912320
+    },
+    {
+      "name": "sample-2c2835cf707a4fe6",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 57517.000299999956,
+      "rssBytes": 714125312
+    },
+    {
+      "name": "sample-0e06c211cb4a4831",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 94145.56099999999,
+      "rssBytes": 715350016
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m11-r768x512",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 53415.69289999991,
+      "rssBytes": 714461184
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m32-r640x384",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 59095.91669999994,
+      "rssBytes": 714907648
+    },
+    {
+      "name": "sample-e6c08e3cc9b0eb2f",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 110506.05850000004,
+      "rssBytes": 714530816
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m0-r640x384",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 58889.431700000074,
+      "rssBytes": 714985472
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m7-r768x512",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 46220.874700000044,
+      "rssBytes": 714600448
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m5-r1152x768",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 40394.95559999999,
+      "rssBytes": 543059968
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m2-r1152x768",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 32984.39740000013,
+      "rssBytes": 543072256
+    },
+    {
+      "name": "sample-40a0423bfcae386f",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 52988.14749999996,
+      "rssBytes": 545468416
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m1-r1152x768",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 33584.46400000015,
+      "rssBytes": 545492992
+    },
+    {
+      "name": "sample-7750735bcbce34ec",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 45365.12270000018,
+      "rssBytes": 546000896
+    },
+    {
+      "name": "sample-caaf9f2c75e68fb3",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 42162.194000000134,
+      "rssBytes": 546091008
+    },
+    {
+      "name": "sample-5a422da9a529a336",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 44557.486599999946,
+      "rssBytes": 537755648
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m9-r320x192",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 53075.08529999992,
+      "rssBytes": 495235072
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m4-r768x512",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 31728.420799999963,
+      "rssBytes": 495370240
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m3-r768x512",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 30319.071800000034,
+      "rssBytes": 495546368
+    },
+    {
+      "name": "parameter-red-calligraphy-jason-m7-r768x512",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 34895.03249999974,
+      "rssBytes": 495747072
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m4-r640x384",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 30364.39519999968,
+      "rssBytes": 496910336
+    },
+    {
+      "name": "sample-914953ff8fb9b879",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 80387.8284,
+      "rssBytes": 500047872
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m3-r640x384",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 26580.0260999999,
+      "rssBytes": 500088832
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m1-r320x192",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 23458.092599999625,
+      "rssBytes": 500092928
+    },
+    {
+      "name": "sample-cb5009e20bb1123a",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 28783.467900000047,
+      "rssBytes": 479191040
+    },
+    {
+      "name": "sample-b563bb5b3e206ad7",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 16692.03140000021,
+      "rssBytes": 501329920
+    },
+    {
+      "name": "sample-e56ebcbad4b3ec61",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 43074.23970000027,
+      "rssBytes": 501932032
+    },
+    {
+      "name": "sample-9e2ab94f59cf15f8",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 40604.13370000012,
+      "rssBytes": 501534720
+    },
+    {
+      "name": "sample-ed5b69a9711e3f53",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 29262.31619999977,
+      "rssBytes": 501555200
+    },
+    {
+      "name": "parameter-red-grid-jason-m1-r640x384",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 18193.796999999788,
+      "rssBytes": 501936128
+    },
+    {
+      "name": "sample-c062c4f8b726c822",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 23623.383900000248,
+      "rssBytes": 501944320
+    },
+    {
+      "name": "sample-83a365509f1cc2b7",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 17891.17420000024,
+      "rssBytes": 501952512
+    },
+    {
+      "name": "sample-44d499f3f15ffc62",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 19963.95790000027,
+      "rssBytes": 501952512
+    },
+    {
+      "name": "sample-946c5faeaa0f2ec5",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 11284.576300000306,
+      "rssBytes": 501964800
+    },
+    {
+      "name": "sample-ab902c56bd93d342",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 6766.653400000185,
+      "rssBytes": 501968896
+    },
+    {
+      "name": "sample-3295ba0789edc763",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 6315.966599999927,
+      "rssBytes": 502104064
+    },
+    {
+      "name": "sample-8d1e2d06c5f24990",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 4433.493699999992,
+      "rssBytes": 502112256
+    },
+    {
+      "name": "sample-9a0e9586ac3fe4e2",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 10113.855500000063,
+      "rssBytes": 502194176
+    },
+    {
+      "name": "sample-5f9d77976f578583",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 4304.6725999997,
+      "rssBytes": 502583296
+    },
+    {
+      "name": "sample-df2560f7906cab6d",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 12079.149300000165,
+      "rssBytes": 502599680
+    },
+    {
+      "name": "sample-a2446851712be525",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 7709.566099999938,
+      "rssBytes": 502599680
+    },
+    {
+      "name": "sample-7d60dfc27e54a03b",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 10556.787099999841,
+      "rssBytes": 502620160
+    },
+    {
+      "name": "sample-cc615a3e5cb1499e",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 4847.835800000001,
+      "rssBytes": 481492992
+    },
+    {
+      "name": "corpus-cjk-rotate-0.5",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 4803.432600000408,
+      "rssBytes": 481492992
+    },
+    {
+      "name": "sample-eae7f502cfea5855",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 5866.198799999896,
+      "rssBytes": 481492992
+    },
+    {
+      "name": "corpus-cjk-36",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 4323.063000000082,
+      "rssBytes": 481521664
+    },
+    {
+      "name": "corpus-cjk-rotate-90",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 4305.043000000063,
+      "rssBytes": 481546240
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m7-r33x65",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 24.414099999703467,
+      "rssBytes": 481632256
+    },
+    {
+      "name": "corpus-devanagari-36",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 1461.9529000003822,
+      "rssBytes": 481632256
+    },
+    {
+      "name": "sample-4f4c989c97595b6e",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 1200.3988999999128,
+      "rssBytes": 481632256
+    },
+    {
+      "name": "sample-9d004236328aca8f",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 8030.810599999968,
+      "rssBytes": 481632256
+    },
+    {
+      "name": "corpus-latin-36",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 5295.322900000028,
+      "rssBytes": 481636352
+    },
+    {
+      "name": "sample-c9b8504f28656bb2",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 4413.438200000208,
+      "rssBytes": 481644544
+    },
+    {
+      "name": "sample-e8417890fea95361",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 2407.9175999998115,
+      "rssBytes": 481644544
+    },
+    {
+      "name": "sample-4070a7afd9a7184b",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 9871.875800000038,
+      "rssBytes": 481656832
+    },
+    {
+      "name": "corpus-tamil-36",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 2170.785800000187,
+      "rssBytes": 481665024
+    },
+    {
+      "name": "sample-de900bc558f2dca8",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 5824.176499999594,
+      "rssBytes": 481677312
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m2-r33x65",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 25.012899999972433,
+      "rssBytes": 481677312
+    },
+    {
+      "name": "parameter-twelve-printed-lines-m5-r33x65",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 23.2253999998793,
+      "rssBytes": 481677312
+    },
+    {
+      "name": "sample-1ea42cacfd82f6c0",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 3077.3338000001386,
+      "rssBytes": 481681408
+    },
+    {
+      "name": "sample-4fceece9f2d76a6e",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 1232.221499999985,
+      "rssBytes": 481685504
+    },
+    {
+      "name": "sample-203573ceb1873d5c",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 1140.788700000383,
+      "rssBytes": 481685504
+    },
+    {
+      "name": "sample-a45fc642aa130558",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 831.5655999998562,
+      "rssBytes": 481685504
+    },
+    {
+      "name": "parameter-parameter-blank-m1-r1151x768",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 42.84469999978319,
+      "rssBytes": 481685504
+    },
+    {
+      "name": "parameter-parameter-blank-m1-r32x32",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 4.43320000031963,
+      "rssBytes": 481685504
+    },
+    {
+      "name": "sample-c8564aeddba82f04",
+      "status": "success",
+      "code": 0,
+      "milliseconds": 43.445600000210106,
+      "rssBytes": 481685504
+    }
+  ]
+}

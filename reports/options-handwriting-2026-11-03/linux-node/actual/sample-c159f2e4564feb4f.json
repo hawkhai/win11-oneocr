@@ -1,0 +1,86 @@
+{
+  "engine": {
+    "backend": "wasm-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-capabilities/script-devanagari.png",
+  "image": {
+    "height": 170,
+    "step": 4400,
+    "width": 1100
+  },
+  "image_angle": 359.8976745605469,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        27,
+        54,
+        307,
+        54,
+        307,
+        104,
+        27,
+        105
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "नमस्ते दुनाया 2026",
+      "word_count": 3,
+      "words": [
+        {
+          "bounding_box": [
+            27.866254806518555,
+            54.169254302978516,
+            123.37480926513672,
+            54.24291229248047,
+            122.80510711669922,
+            104.90138244628906,
+            27.001005172729492,
+            106
+          ],
+          "confidence": 0.9741345643997192,
+          "index": 0,
+          "text": "नमस्ते"
+        },
+        {
+          "bounding_box": [
+            133.25497436523438,
+            54.27111053466797,
+            219.70579528808594,
+            54.666107177734375,
+            219.43414306640625,
+            104.10963439941406,
+            132.71546936035156,
+            104.79170227050781
+          ],
+          "confidence": 0.6157777905464172,
+          "index": 1,
+          "text": "दुनाया"
+        },
+        {
+          "bounding_box": [
+            229.58584594726562,
+            54.72243118286133,
+            308,
+            55.36519241333008,
+            308,
+            104.00667572021484,
+            229.34439086914062,
+            104.05514526367188
+          ],
+          "confidence": 0.9919478297233582,
+          "index": 2,
+          "text": "2026"
+        }
+      ]
+    }
+  ]
+}

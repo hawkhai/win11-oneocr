@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "case_root": "F:\\pythonx\\myocr\\win11-oneocr\\research\\options-handwriting",
+  "generated_at": "2026-11-03T11:58:07.157181+00:00",
+  "scope": {
+    "auth_status": "granted",
+    "network_mode": "offline",
+    "ready_for_act": "true",
+    "assets": [
+      "F:\\pythonx\\myocr\\win11-oneocr\\bin\\photos-2026.11090.22001.0\\oneocr.dll",
+      "F:/pythonx/myocr/win11-oneocr/native",
+      "F:/pythonx/myocr/win11-oneocr/scripts",
+      "F:/pythonx/myocr/win11-oneocr/web",
+      "F:/pythonx/myocr/win11-oneocr/test",
+      "F:/pythonx/myocr/win11-oneocr/samples",
+      "F:/pythonx/myocr/win11-oneocr/reports",
+      "F:/pythonx/myocr/win11-oneocr/artifacts",
+      "F:/pythonx/myocr/win11-oneocr/research"
+    ]
+  },
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "evidence": 4,
+    "workitems": 6,
+    "timeline_events": 4,
+    "findings": 4,
+    "paths": 1
+  },
+  "issues": [],
+  "traceability": {
+    "E-001": {
+      "workitems": 4,
+      "timeline": 3,
+      "reports": 2
+    },
+    "E-002": {
+      "workitems": 3,
+      "timeline": 3,
+      "reports": 2
+    },
+    "E-003": {
+      "workitems": 2,
+      "timeline": 3,
+      "reports": 2
+    },
+    "E-004": {
+      "workitems": 2,
+      "timeline": 3,
+      "reports": 2
+    }
+  }
+}

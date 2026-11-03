@@ -1,0 +1,3408 @@
+{
+  "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+  "input_sha256": "611c33683bfede5e139af848d6a7bd31c0b211e84b84d5ecbf6e138cd32225b3",
+  "trace_source": "scripts/research.py trace; native ONEOCR_TRACE_DIR directory; scripts/compare-line-tensors.py",
+  "exact_calls": 95,
+  "bindings": [
+    {
+      "native_call": 1,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-18",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            49
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "ff2c0f78ab0cfeb375e2513b1ba8ecb5f014caf188fc250b4d3f5246d9cdc260",
+          "bytes": 35280
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "45c7045efc61615023e0e9ad13dcb0e70fc04baef1a01d44d21263074b842f74",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "f9b389649ec0a36304743e7f128fb6c12acf352e2d6412d2c8c59567b9d55e61",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "3619bd189230126397a296bbd10384bb632a9fe4ff69d81cd322bc4641cf8cc8",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 2,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-11",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            68
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "84cc634e72b783a88383dd6fdbe24ac0764afc8187c66a4719fed44be142512b",
+          "bytes": 48960
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "2ac4bc45707de8fbb40eb775f8ef8643ae27a0c4a0241e4f97a8372ae08ca61f",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "bcdb8de1520b2e27e043c36a3c22028c4bf48d159aff1dc68a6e48d4fa251865",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "3144e82159a4e645df07638bec48919191adcf25dc6858ab81617b56fd003c88",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 3,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-17",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            247
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "b299f36ef74567c4c5824e94fa998996fcdaea1a170e2eb5b2b129418cfd25d1",
+          "bytes": 177840
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "6d8025c9c780e63fe0a1b5ecb88d7c8481a3593e83eeab480fcfc8a90c0ec47f",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "5529a03105ad69dec9677b352247897f0375ce3c92b261faf173cf97c7a825d0",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "0895d98d04c2904748e13857f90ab46d7347a3f53a46686e1c32daa52ee5d184",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 4,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-14",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            195
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "c1a5988827c0b9c8d40b817b2426dc6027826aa19ea9af7c300ccabf19d36a24",
+          "bytes": 140400
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "024f8d6a5d21822c6ad51195b1cbccf149ae5582c900d1b60fdf3962b0fdec28",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "d8a07016f759142bf11234aa66784b9e0709a40ea29c4e9d62f8db3bfb75f761",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "5110d07eef97c22341af4ef3ee89df0f1d9aec6c9aabcbfda1b2cf690f357a98",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 5,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-1",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            412
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "b20776e45ce9c55667cdaedd70cf742bef0d7f4fdb421b98d7c87e3d566f60bf",
+          "bytes": 296640
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "221188e4cfc70c99d39c9dc105405b686a3219197e0b23d98d6e2f047e32e439",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "7121262b956fc3c82c104868e5e9509645c7adf426612d46ca70124156f2ea24",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "0778c9ee584c7a77a80f9637a5ff79dc488823a49ed521d5bdc80e8b436b857d",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 6,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-15",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            167
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "a30101fdc3874ea4e4b645a2d9d1efaeeb7812a1cce58cbc735a59dd476874a1",
+          "bytes": 120240
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "a981ffede8ac12ad5986f909d786ce834f6f154dab2740efa47751d9754e0f83",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "9a3f7ffee44a31d83d37fb3132bf0165670fec7e20848cb926e61b4d6632bd0a",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "a43b62423a42ce105f0310a80b6e5d3e2c30703ce626b0886e6c304c79e033ac",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 7,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-10",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            381
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "292d2c323250167b750053aac837ef84be7eec555a63faf62c37e70a9eb917e1",
+          "bytes": 274320
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "efec09a05720e50dc111ddc9c70ed09f7ecfd9baef78420143fedf3a15a4ef05",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "729eeea1b9aeda7c51fd9b79a22cc2fbbb5a33bbd748b47530ef107f21596dda",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "f86384b0a9907ac317a98471ca68013930f7f10595e85796de0ffa4e9507a5c0",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 8,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-8",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            398
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "af42f7238059ce7162371b9920b70713c771fedfc320599ba2ea7c9c918e4037",
+          "bytes": 286560
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "78142496d07304209baa4f597c821488eef1f6392779845c578d0da337db3fdb",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "e169e320b97df1750e653f7a68fb988049f55dd8874d664831f3ed321e6311a9",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "b99f2d68dd30ad56598f95505126bc8e59123bf4f8740cd6da7d6f5c33e42ecb",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 9,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-3",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            636
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "917de4c1e0a43e43543d9ff9ab0bfd889d351cbd7dcaeab7ad9487accf64edc4",
+          "bytes": 457920
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "4a9b4e7b243f0b0647f395b04e21756e6db602afe7049a543686cf4918768a60",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "ae0e60544e8a9ce5bfa8d6266ddf24d73574b50e68a7117654f6ccf561fe49b4",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "f6723cfce0ee8c15677bd9e5653e307b749f3779f046aa4bfa23292032925644",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 10,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-2",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            587
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "ccfae1e5a025a6214a61db32cf294f54cab52c1eba4e6e6d66065380e34d5f9c",
+          "bytes": 422640
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "5a853d2c82575ebc7eeede7120b60cf83f04c6674a77aff7f2e05ddc70e8c9ed",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "b4c8403572610987835cc918bbd709b23a364f958b2c538eac2091457cfee7fa",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "43b161883070309f63e1f42c253f56c8251e85b0332b6dab961b19e85b7cd392",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 11,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-13",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            574
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "41253e57273c87a604c32a3b61fee0c294d2aab1215445efbba9007a7905558b",
+          "bytes": 413280
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "c8841efa4908460aab9fa2800413eb4733614b73eda7c196c5a13de0809b5af9",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "12d15568b6089391b5d4297572c81c100d3d93c49f441ae68728f9d7f19833be",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "12da9ad641ddec25494adf3b589301f64e68054b884df614720eb8854472d664",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 12,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-4",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            835
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "0f9d5ffd55c320b1b9182f722dd375aa3fbc9f17cdd64e123134590ac67a2bf4",
+          "bytes": 601200
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "91455bf5fd8f7b2728e93c4af55a3a78de4c30f3618c192d5ad01afb32b1baf4",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "bd7f20df51f7de394e28ee4917801e32d194466f161940bbba68d5da2dce4617",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "9cd4d67d06506eb7da08b538daf3722033d2a30e9819f405c6cb3a36c794376f",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 13,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-9",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            782
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "4d8b71bee1af77b2bcec4c4e342f85bb42752a6e9c518cef598baf874407da0e",
+          "bytes": 563040
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "72fe4b02f3bfa623c008727a7fce510129a34db4a70e727419200745d4757317",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "a4c8fff248b83435b1ee47d810a73e478a838ef9de6958d0b681cef3899114c3",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "ee858e336acfa5657c4fa7eeef1afefd76aac01ee5b58e2c52dfe1c987404c49",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 14,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-5",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            856
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "af963f8fe22aca5dfb705370a5a3b402c0bb1f8fc53d7cb3eaf975cdb11bb9cd",
+          "bytes": 616320
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "d733e9cb6a294eb69a1bbde4149066b8a12e9805555dcdd7163b1076025bdd98",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "d3f2462c7dbe308622c4d1af17616718bab225e10b5f5ea2214a16555a595e7a",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "1657352bc651b3d94d7c84da43d5af9c2913047bab1360cc21156a3323066f0d",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 15,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-7",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            926
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "867ff8c8a7019ada145000a59cbf046c7c4b9abd9ae3855512051f1739b0d17b",
+          "bytes": 666720
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "6299213cfb2d2387aee6998bf73d79d65797b525817e8c7f5183ca7f1236016a",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "7a3ded045fd7cf03f930a29fcd77cdd6b69b528a9b261acc74cf88e38ed12c64",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "17f4268f2d27b8f22f33b9f72841551aecea81eb9ceb9bb7191b30a9d76da5be",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 16,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-6",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            983
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "4515c47933a5d43602c74c8ae7fad1026050804c738dcc9162bef0b2b9fe0d17",
+          "bytes": 707760
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "610f6b923ded04cb67f0341c7cc6c3236951b7cf44f8a40e74d839c361ae5882",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "a1da7024178f2a37fcf69d036b2dc90f709945bb491100ee126cca091c4a1459",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "d9f86bc933c51742ab9990dce18b4509f5310c39de3c8f625c997fe0469f4f85",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 17,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-20",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            80
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "ce52cc15bc8b9350899ad3ecfd35196eb3a45971e1970cf77869759be29657d1",
+          "bytes": 57600
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "8ba5fb4e269ff28f2c77310c61bcf03464f738d1af1cff0cc4584060971aef1a",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "792903ebef1d767ca3a0eed98a524aeefb2136043adad9b169ba0a3132ca32e8",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "a3caa4b672e59573ba63a4550005b9f524d4187f3ec237c5c1792747d12a5a97",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 18,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-22",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            126
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "50730de4ecd9549772b3ba6a84cf81122dc32e8b8c73ee71a15308ee9fc4c286",
+          "bytes": 90720
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "c469c97c387ab6ae51aff791153c283d7b2f11d53be47052ff3830d8e5242727",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "5b0eb1c9f8eeee859e692a1a6d385cbb9360b72271981829e72146479beca4ce",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "fed42789db7c0b2219b4d4f9e8743ade7c3f4f2f9df814ae4ca61c3457324319",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 19,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-24",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            198
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "9f7db35ddf5a616be1f1fd73463db5b1a617e4d6cf5cb0270e0e3f6fa9d8f0c2",
+          "bytes": 142560
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "c7d73f031e5a8777aa222acd00353544da03ba8cd34c7a4fc02cb494f894111d",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "3bffa27a41b68a40cef28d89302784f1a071287b4ea835968aa8e8336f582432",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "1923390dd186b87c0234db35c69797cdd591c64044f252d8467cf3a31535bee7",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 20,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-29",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            47
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "cbf5d2f404ecf17e84033d069f4014268b19dd4547bde50552e68c84bc9a66c8",
+          "bytes": 33840
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "7d6d32c70650b4cca5b569f6789361dcaea9c32b3a400c0ff01810b69749f09b",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "1cabfc0cc6dc2e724f4fb7cbcf6eab5603097b8e7cd245a50dcba0d4f3b8d47f",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "322d5bf2bcdbcffdebd6dbb2322c8c0846ff7cc3c2c5835863a77c82bf370c69",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 21,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-25",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            69
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "eae6df20f250686a6e20b931c6eae13bd50d72e5eadb391fd892c6cbb7f954fa",
+          "bytes": 49680
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "82e1f2b80250a9a2f414c174b30440fddb474045681c986b1775824d1696db26",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "33b07a949f276d7f0fdf7d95b805a284182f4714a97f9492fddce4e80419ab46",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "5fec9f80c53931a667c6d7d047a966bd14252c7b3819ce2d2bab2327395cb67f",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 22,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-27",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            33
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "0e149e2b5f5e5c0313b7c65feae7e79bb20e1c2b09af5faca23e64b4b40f1ee9",
+          "bytes": 23760
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "596ce67bcbaf1065bf9115ba7d7603492c65520eae3d7b23c924df8ae1e599b6",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "fc4ec700cd61fc101393a0f3a7f602015fbb894e53eea081e3e2404cb4b30837",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "3b4e327d967a7879678bc034cfbc76bc9299ebc0f7429ef03111f5be1afd03c7",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 23,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-31",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            80
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "35bd330d1928d1a145aa3d73a0ccce63ad440b5253734b00f4a2d64e6ecfc8a1",
+          "bytes": 57600
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "7e3b16b4eca0794c0381fd8fa7adeff9c90193f9df90f25f23030d89d4c17bab",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "fc9b05b4ff6947d3bda06ffed0b53973be1863a248428936213ee16d9fdd6c9e",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "43741143c04269c0fd153b9f8f26abe69fe867ff91e52e8c7e258de019e2b50f",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 24,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-33",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            63
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "6157a6e24a5464e4919de013aaab31bd91799c9dd25bfdf4c317872f33fb08d9",
+          "bytes": 45360
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "c4c1bc2bf911264c81a905fb1f8678cb727d2ae08b6d962e45253f82fc8a6c5e",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "95549535f2b00d89fd6f6aee7819555a2f919508e027fb21f5ca286f87d872a0",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "2f92d56ee6e73857a32951c7e8bdc3e3938583a7b411e34b2fd9dffe1266683f",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 25,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-35",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            104
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "15f1e1d8bec2616b7933b9a047161b656bb2712b2648dfe7d3d9e63a7137086f",
+          "bytes": 74880
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "d20e91c3027115a5ffc7e0b5a0735d4b9225d9e9d30d44c96ae0f1b63f74fe85",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "9d5581fe6ff9f9bf9d49b836c7540b76d892871444354a8c69b88b47751e535c",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "65e4437a71bc73916e6536ea7c524fcf7f4c32f88d80addb100b00d418db7b68",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 26,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-37",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            122
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "7035c475543fdbdd88d79d514006201fa557368bbe12498c9808e10b17e24614",
+          "bytes": 87840
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "8e499a61407e327d573bcb7b11a128bdf2936f17a8c14ccedb7a32d07b110e8f",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "0f0e359fcc44340544b48c56aa05e4bf072b614a86be092f4012c2e857029190",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "7ae22063b6259b0560c27895909fc9d0628b26a527cc21049f42783c37e10937",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 27,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-41",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            83
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "96762e290da84e0ef01351a016733464672fd43815e8ed81fca2d4814c26e4c5",
+          "bytes": 59760
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "f4b680c86dbef777e5d5380701616ee2e58e43e8e8178eb2aaca13f20903f4de",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "b94d4c235698fe91aafeace99bacd9340eba420bfb35d39295db9cb0d9d151c3",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "9ded7530f0b14b3852493d7b7f16e16bd7cf51d4614cb00619726a47046b1457",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 28,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-43",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            63
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "5b8d52dc242db515aaf4747fcea7cc99e0e155b7b4208a61982cc0176f29adcc",
+          "bytes": 45360
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "9a25315069a77b32269eec0eaef67665a7c0d1e1e9d5f58ca555008121b52df2",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "359af39631583ac53d232c463fe7a1148cf307750fe7cb4df6cc62944ffef99f",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "c9f6fc08173e2e304ccc7d5ef030701e33cececb1cd942af958a9a3d0b8c7b9d",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 29,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-39",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            96
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "0ab7ea41f7a1636de0212f2497399b03e1ef4988a659ee0a611d5e4f62108317",
+          "bytes": 69120
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "3bc278de13618991e6ad80cfe7bca1996d160e5cbc34dee51a17412831c5943b",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "ba7a87fff0001cc8cf29870e2079f704010f8724d98bc3d020414b6f0d0ab3a4",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "8bec35e060bee851d92ced3e2930f795a8e24f3564a1fe571aa127df29c68f6f",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 30,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-45",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            38
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "2dc2d2eba4da3890e6ecc7d7514cf7f65d445e609521fe16430b584be2e85709",
+          "bytes": 27360
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "cb7ca52a0157dc9ab98a2d432bd51205a80f26c3c87ff548ff6ba3e220c08569",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "9232cdd018271eaea8a236ebdede4f12fa5e394cdacd4da60b340296f5be6f1a",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "b5cfc4625157ece393fcf2613fc9c1df4b2f1d3b94d499e391c70fee936a3269",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 31,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-47",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            229
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "a5818d4f329adc0415a31a23659091ab607b82bf756661f6144aed4b0ec8ead1",
+          "bytes": 164880
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "df57060d66106d26f8a69640c4bb79d4cbdfdb911fa7ace954b2dcd002e2062e",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "efd71448ea83f5a953165c818b5dfa9854a8d2ae8fbeac88420e487d610c94b6",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "a4ca1545cf41e147344e193794232df5994d7958da7b46a3bc6a853adc1e4ea4",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 32,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-51",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            70
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "ba9aa3db913c4bb73ca397c4d714e4665d16bf31491fd405798d15010be61c12",
+          "bytes": 50400
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "f19e9144c07d2e1ee389496e01129d280fff3a9a066c73d56d2cc12ea7ed6540",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "b50d88a1407f053577d73337d92a291bc119fed0a8b38ae7525d7d4d4baf8706",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "ffba6e3c4c5dd8e78a236c2dc3862f31bea52d59f16266aa47bbafc7e3d2a929",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 33,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-49",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            148
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "e8d2ce542ae4e71bcea02e05c44bfb3e0831890f442057fb240e409db334164c",
+          "bytes": 106560
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "68db80e85efa447f38ddadd843855c433715e1f76f78081637f9a48c280014f8",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "0f617ff5b38d280732594779a4e32fbc3333a6a9acc08fee071c4c936d635a80",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "2df5aa47753c38e298639caa50a607b34433b34c6290b0a417a3c431a301002e",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 34,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-48",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            358
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "1786434370676b03a3c07001a5792207b8d38e0bdd77cc8a5b71f7a372de3144",
+          "bytes": 257760
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "13db63baa58d03bdfcb07dfdd66c5161745af7e62640ef97ffc52c5b125db6e8",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "72520a46cb105545f28c73d9133ce372c191749f886139a61e2468c1128b1a6e",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "c023a9368cf75811be92439cc6ef63278d8bea443abf2c8281f6b04c33e887fd",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 35,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-55",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            56
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "1698eccc34d63bab70832d789e5d97eaed14a4b79531f3b5e799b0b9a8d99c11",
+          "bytes": 40320
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "2fd74a459b7d74cdc9616d8c10aedcc769fc02675490d991545d7ea2ee59b927",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "95ced5f3968cb4216adbebb55cbcc9bf042d4b19ea9612e2f74b4712230ccf28",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "b937d1e05565b8834339f069f775162c929a211ae0111ddbd98e3278e2f87859",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 36,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-53",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            42
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "e36555ce244bcf0942613df594f31b77a546ed83889ee78ee3f8823454a6ee3e",
+          "bytes": 30240
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "5be38ee242b686c6414dfb89b40fecf86c6737084a7a13a6ac41cd9f53ce10e0",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "c8d75933615464557ebe8e6be6bb7820eb8506cbacb62255ac7997e22d74aaf6",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "85f73e5fc2deb29a439d34d1df57ae0b140b341858d19d90b9a3959e565bdec4",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 37,
+      "model": "classifier/script_classifier.onnx",
+      "cpp_line": "line-57",
+      "arrays": {
+        "classifier_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            177
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "d26e43a27e52d08ac1bb5ddf2f9cefb669182ac64712439d2bf67a386f6ae689",
+          "bytes": 127440
+        },
+        "script_id_score": {
+          "shape": [
+            1,
+            1,
+            10
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "cf8080fc91b4c1fbbf2affa99229138febd17b362fff53a812fcb9f321465974",
+          "bytes": 40
+        },
+        "hwpc_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "f9a578c4002af727a79ce58529bf4e9f6d86bcfb3afc52f1aabdb5fd770c1f3e",
+          "bytes": 4
+        },
+        "flip_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "13e27d159fda964acd51b0304271cf3ae5a48b49373c0bda3e6dd2d87a3af3ee",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 67,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-18",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            56
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "cf4279fc9b8d5e8f7696984c1d329b4627aa94f0d0200d3ec3a47f1e7d71d4d9",
+          "bytes": 40320
+        },
+        "logsoftmax": {
+          "shape": [
+            7,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "faacab25c651f471b2a80ab431aa5f6ce47c5c2393e5ffc7fe0bada2c6781260",
+          "bytes": 913696
+        }
+      }
+    },
+    {
+      "native_call": 68,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-11",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            72
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "128b7aad8d3d5d87128f949287db188c43afdc56423983822848cd5859e179c8",
+          "bytes": 51840
+        },
+        "logsoftmax": {
+          "shape": [
+            9,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "e32cd3c788cab455c140b5add0ad066720e254ed49e4419edb924e937e074773",
+          "bytes": 1174752
+        }
+      }
+    },
+    {
+      "native_call": 69,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-15",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            168
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "36a46ef4286a3e9b62e008d4110ad18df89851fce6385e8c9cd2998d1ed17c80",
+          "bytes": 120960
+        },
+        "logsoftmax": {
+          "shape": [
+            21,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "42ef5b3fd2a36b41f43b436d227789ec4cffe121a05bfdff23e16b4138cddc98",
+          "bytes": 2741088
+        }
+      }
+    },
+    {
+      "native_call": 70,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-14",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            200
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "23a23814e0c21e6f58226a622e4982174c073b18a07648c9797df2b072e5c9e6",
+          "bytes": 144000
+        },
+        "logsoftmax": {
+          "shape": [
+            25,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "9c76a8013e61cd2de9a6ff9fdf1deaa727ee4cf252f00152f5f0e1dd592b696f",
+          "bytes": 3263200
+        }
+      }
+    },
+    {
+      "native_call": 71,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-17",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            248
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "e448c92a9400423ec25d72a60fabe20a7aeb61c68bae4e1e3e1dcff9933a4ede",
+          "bytes": 178560
+        },
+        "logsoftmax": {
+          "shape": [
+            31,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "64f4c556a968d33bfe25851bf03d0b6d6951abe52aedcd8afaaa6cccc657b43a",
+          "bytes": 4046368
+        }
+      }
+    },
+    {
+      "native_call": 75,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-10",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            384
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "67def1e99352fdd6ac64d28b6a27f9cc20e00665f899797d5d5c86763a25cae1",
+          "bytes": 276480
+        },
+        "logsoftmax": {
+          "shape": [
+            48,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "6426e3431ab78549e92da77fa5acfdbb6e25e75efb650a871632bf5f0b2a2d10",
+          "bytes": 6265344
+        }
+      }
+    },
+    {
+      "native_call": 76,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-1",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            416
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "3a94adcc840242dc43a9396b31466d3c337ad81605b04f26918ee1fbe4baf065",
+          "bytes": 299520
+        },
+        "logsoftmax": {
+          "shape": [
+            52,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "4689ae419bae1d87d4f2cd6d7adb705afabf001130bf36b1c2a61b8deeb1f8ec",
+          "bytes": 6787456
+        }
+      }
+    },
+    {
+      "native_call": 77,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-20",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            88
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "b1f3f1c143b0137ae601cf1381311781ce15fa9ad5b8987caea07c78d3a15fc6",
+          "bytes": 63360
+        },
+        "logsoftmax": {
+          "shape": [
+            11,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "6fcbc5f3a2d4e086e025ca4c225fdb014a45d4cb4a3d97c1ec02a6b3264020a1",
+          "bytes": 1435808
+        }
+      }
+    },
+    {
+      "native_call": 78,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-8",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            400
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "bd0f9a3b73fccb9a85533614b2aaa21e0c63621f1eddbaaf26ce72284fda39fb",
+          "bytes": 288000
+        },
+        "logsoftmax": {
+          "shape": [
+            50,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "969d13231f65a9658584f73a4f59e91dbb3dc4c4ef2208a734309d5df64eca9d",
+          "bytes": 6526400
+        }
+      }
+    },
+    {
+      "native_call": 81,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-22",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            128
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "d96ab4f3cd07d01786e85747b7f4c9be3337d0f110bed21653c07f25cbf28e6c",
+          "bytes": 92160
+        },
+        "logsoftmax": {
+          "shape": [
+            16,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "f8fc431d130ae62786b0cdaee75c1f30fea4536a9ddea093768110030122818d",
+          "bytes": 2088448
+        }
+      }
+    },
+    {
+      "native_call": 84,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-13",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            576
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "365d4c96b31aca75a1737fe164316e8f8c4433675af4fb9498e112e549dbe350",
+          "bytes": 414720
+        },
+        "logsoftmax": {
+          "shape": [
+            72,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "bd0eed9627ef83c0e44e4c5c31a5a4fb998e19e8552c05e817a7fb28287a99ad",
+          "bytes": 9398016
+        }
+      }
+    },
+    {
+      "native_call": 88,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-2",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            592
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "3d878658b9126c89689f9474f516b07fb535a9fb9dfbe049f65a38affca4b6cd",
+          "bytes": 426240
+        },
+        "logsoftmax": {
+          "shape": [
+            74,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "784f6909251b7234259dfa5114ff0c6318fcab9a7c2c72e0c5d6753a6a9e34a8",
+          "bytes": 9659072
+        }
+      }
+    },
+    {
+      "native_call": 89,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-3",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            640
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "96e754a752d04330a6ae5773eef4afe5433266adca95381091a3b714c992406c",
+          "bytes": 460800
+        },
+        "logsoftmax": {
+          "shape": [
+            80,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "db81ec9214fe964ec95e6abb5634ed6938640ac31e04258828947db28a2d3e03",
+          "bytes": 10442240
+        }
+      }
+    },
+    {
+      "native_call": 97,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-9",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            784
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "b90756a34d31072e7068dad7cc8b1ab706462dac64f87e63db0220354a0d1863",
+          "bytes": 564480
+        },
+        "logsoftmax": {
+          "shape": [
+            98,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "634cfad7fbd34c8cf3688375bcc2d08d8fd374aed332bcafb9b3d18cb5f09663",
+          "bytes": 12791744
+        }
+      }
+    },
+    {
+      "native_call": 100,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-7",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            928
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "863d010e51a1bb00f38d09693ed1fc9d8b19b94c7310aa8b27af4ab896d55eff",
+          "bytes": 668160
+        },
+        "logsoftmax": {
+          "shape": [
+            116,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "a6158f6c943bf75ee88e17295fd015d23b3b4c3b1417a38f4f4e3a3f45919c2f",
+          "bytes": 15141248
+        }
+      }
+    },
+    {
+      "native_call": 104,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-5",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            864
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "e6832ddd3e49d4d99d4a9666657d7771bb95e8d8001de2d81604525f105cf701",
+          "bytes": 622080
+        },
+        "logsoftmax": {
+          "shape": [
+            108,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "3985e27917c36b2d12fca98156a44addfcdfff26adbe5d18426488db08dec6a2",
+          "bytes": 14097024
+        }
+      }
+    },
+    {
+      "native_call": 105,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-4",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            840
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "7b496b58bb0f1cfe559e4949871b7d2d931ffc9d925b5f78c3b70bc4a5878927",
+          "bytes": 604800
+        },
+        "logsoftmax": {
+          "shape": [
+            105,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "b9a0ad137279694f9d36a74f31f388e1ce5ea8162ed1a77bfa48cd4013707fe2",
+          "bytes": 13705440
+        }
+      }
+    },
+    {
+      "native_call": 106,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-27",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            40
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "bc77cdeec9c4b79786ffbcdbab22003249d30c1532765ac1a140c00d23bd0e27",
+          "bytes": 28800
+        },
+        "logsoftmax": {
+          "shape": [
+            5,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "593fd55767ced67d4d1147ecf405d93b48dbbb5a3062010bfe9eee31032904bc",
+          "bytes": 652640
+        }
+      }
+    },
+    {
+      "native_call": 107,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-25",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            72
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "b7c8cd1d39f46e85193a06b31f812b9f2ac12bb7fedca7dfab2173624bc54d42",
+          "bytes": 51840
+        },
+        "logsoftmax": {
+          "shape": [
+            9,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "a06c4d6a36d38ee306fff80851cd0c463ca04dacb2e1b733b29818eceb84c359",
+          "bytes": 1174752
+        }
+      }
+    },
+    {
+      "native_call": 112,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-24",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            200
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "9414aeba1d27dbcf663b21771108d0aad851c9eec681b3f2b8f2b476a6138627",
+          "bytes": 144000
+        },
+        "logsoftmax": {
+          "shape": [
+            25,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "424c5678e7bfc123420cb92f118da2e4df53c069ce6e7dc77ebceb14f6f1b7b7",
+          "bytes": 3263200
+        }
+      }
+    },
+    {
+      "native_call": 114,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-6",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            984
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "308056ea9f2c7e2caf443ab19acbb5cbf30f7501956757f9d059e0146635445d",
+          "bytes": 708480
+        },
+        "logsoftmax": {
+          "shape": [
+            123,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "7dac87b4aeb65e5491eae00a801b22c8dd128fd84ee7fedc6edf8b6cd7ab794e",
+          "bytes": 16054944
+        }
+      }
+    },
+    {
+      "native_call": 119,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-29",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            48
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "0fdb3a4356733dfbc7e2a8129d3e541c29ceb9aedb02ccf00e40aea3da3314e3",
+          "bytes": 34560
+        },
+        "logsoftmax": {
+          "shape": [
+            6,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "8928a6779e4627efaae508ad66606723ae6875bd8a5385877fb6745bbf283f7a",
+          "bytes": 783168
+        }
+      }
+    },
+    {
+      "native_call": 124,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-31",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            88
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "64dbcda21d8ed92ecec99048bccc0bbb032029dcde928b3ff381ed84420fd6bf",
+          "bytes": 63360
+        },
+        "logsoftmax": {
+          "shape": [
+            11,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "3b0d499680fcad64a5a84e488b784eb783340b372f8c925a9cb66f0e13e06d8d",
+          "bytes": 1435808
+        }
+      }
+    },
+    {
+      "native_call": 134,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-33",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            64
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "647a37635900d00c863923cde70aba9d07e9f0495bde8f168153e17728a2f30d",
+          "bytes": 46080
+        },
+        "logsoftmax": {
+          "shape": [
+            8,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "1d0d263204276a496518668a692d8e08fee7a78f8a0ddafe5c82baae350549c3",
+          "bytes": 1044224
+        }
+      }
+    },
+    {
+      "native_call": 141,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-35",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            112
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "54d009ff67abe1385a1e996c72cfd1fb6bbfcfc26c1449c0cda245112023e3ae",
+          "bytes": 80640
+        },
+        "logsoftmax": {
+          "shape": [
+            14,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "b4df8383451424d9c36d3cc31556875a5ec1b7548a4528f207421faac9bd947f",
+          "bytes": 1827392
+        }
+      }
+    },
+    {
+      "native_call": 143,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-41",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            88
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "f2ce909fb5f8215f906fac8e9051e8b8ff619c8aeb3a1f7e23d2be33219735f2",
+          "bytes": 63360
+        },
+        "logsoftmax": {
+          "shape": [
+            11,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "8f356d3d5fe52bbe09acd2abef3ae02c65dd1bf749e0ddf5d710a2f3fce2f96d",
+          "bytes": 1435808
+        }
+      }
+    },
+    {
+      "native_call": 155,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-45",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            40
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "29de22574b735d81efe316cf0943828062904f5b58dbcad21ddfa586112490c4",
+          "bytes": 28800
+        },
+        "logsoftmax": {
+          "shape": [
+            5,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "2e22ecc1b68244831396388fe95fd6b0ded11e4d61ecacedb2108d32ad37a196",
+          "bytes": 652640
+        }
+      }
+    },
+    {
+      "native_call": 167,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-53",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            48
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "c33f0a00f2889085c3f97321d228bad729d318d0059f63b86ab5e5ac7cf13c36",
+          "bytes": 34560
+        },
+        "logsoftmax": {
+          "shape": [
+            6,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "c6f0c850139178fc31d99ff23f0cf782ddceb378e5fb73a419676f699e6064ba",
+          "bytes": 783168
+        }
+      }
+    },
+    {
+      "native_call": 175,
+      "model": "recognizers/recognizer_cjk.onnx",
+      "cpp_line": "line-49",
+      "arrays": {
+        "recognizer_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            152
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "525aad9db6a43c1ffb8b64bed30b945c2a48fd71b96be660be7c8909b445b738",
+          "bytes": 109440
+        },
+        "logsoftmax": {
+          "shape": [
+            19,
+            1,
+            32632
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "215ecf168760a082baac6f0dfe8db531a235c114aed0f9b02b63237b56ffebbf",
+          "bytes": 2480032
+        }
+      }
+    },
+    {
+      "native_call": 38,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-18",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            49
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "69eaf80d2a78f71fba55e5ae5844f58dd86aaaa6fba6bcb0cb6151991c83ff66",
+          "bytes": 35280
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "c95e5e8b83244161beb5dd16b893ff6347c08b1c46e13d28988786301e4069b3",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 39,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-15",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            167
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "be24c6fe0e6f7c2e9b82be85ca65ec33e88e002da8874771a17f143b78ee49e4",
+          "bytes": 120240
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "08dc70674e2fcd0a2c198d08fbc14b70dc4921487f8c668c2509a8514339abc1",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 40,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-17",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            247
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "b299f36ef74567c4c5824e94fa998996fcdaea1a170e2eb5b2b129418cfd25d1",
+          "bytes": 177840
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "91656ff82fe98ddfa8a4fff45fe7759d77774c3933b14e95944ce85ac5b7ab94",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 41,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-14",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            195
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "4cb66676fcbc45867f73ca68f8ac5a122a28dd44f8a1071d6ade5646a26ad10a",
+          "bytes": 140400
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "e255465423558476825430361aa298fafb395a6c5d18dbc97a435bd2ffba2f39",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 42,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-11",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            68
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "eba1c21a625f003a34196ca6c4980430a9c3299c04f2b6ed416202f88cc597d3",
+          "bytes": 48960
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "d1133c68135bc213627d38cdf04f8b227adc70b3dc3b1a800be1f4b75fa08945",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 43,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-1",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            412
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "b20776e45ce9c55667cdaedd70cf742bef0d7f4fdb421b98d7c87e3d566f60bf",
+          "bytes": 296640
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "d4d29eda77c754c8806f65c43e68c7795a802d2cc4cda98f7de376fcfae1c113",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 44,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-8",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            398
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "e176ee93e77bd4308d8f12586e6cf8b2df813b7a5dcfb357b2576158a438e2b8",
+          "bytes": 286560
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "99febf0df4bd1b61e51ec7efff591c09d50e5122d9b9d490212acafe4f78e571",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 45,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-10",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            381
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "292d2c323250167b750053aac837ef84be7eec555a63faf62c37e70a9eb917e1",
+          "bytes": 274320
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "0b2be4cf0ab5f77d11880e34f51f96e64e4f381a5dd5debb9f10f52ef775318b",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 46,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-13",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            574
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "76ed5ed363cd7fbc33bee0d5ee014c865079e9d5c9fe7bc7fea5f3e2ab2d5d42",
+          "bytes": 413280
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "6f91f712dec0387d22cb6fb77a570d2a1fe862643bcecb115d0212e7d544c26b",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 47,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-2",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            587
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "ccfae1e5a025a6214a61db32cf294f54cab52c1eba4e6e6d66065380e34d5f9c",
+          "bytes": 422640
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "de50bb05490f89dc49dd42bd6e8798a3756801fc94252874f332ebc852301c26",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 48,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-20",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            80
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "63b7d0611129ac2a8ab62755045eb356200bc04d27b2cb11cda7ef98d7940b29",
+          "bytes": 57600
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "fdb87b37e132e22e4a41259825fa21afbb18f5a2a30a0bedc3cf388b27c50786",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 49,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-9",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            782
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "4d8b71bee1af77b2bcec4c4e342f85bb42752a6e9c518cef598baf874407da0e",
+          "bytes": 563040
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "4366c20bb83ce3b0eb72ec5d518a5756187c025ab5b2adca7264c958044ee352",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 50,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-24",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            198
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "2410b888b9702e23a27b9b0c808a1145f2482cd6fe0822543ada1e4757671a09",
+          "bytes": 142560
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "a8cca07264eab96e36363c8465991b6a678c041cc77e5c15dd16c7099d4b846a",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 51,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-3",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            636
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "917de4c1e0a43e43543d9ff9ab0bfd889d351cbd7dcaeab7ad9487accf64edc4",
+          "bytes": 457920
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "549a234aee722c13f6ae5080e7e300b802dbbc74e4c52c133e1126713d9f8fa4",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 52,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-22",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            126
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "36b3a98215278e9ca67b9d255644537cc395ae767b34a596cc5dad7b6a3b3f52",
+          "bytes": 90720
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "12ec630ca823c413ff853954d241937e859ed3d2815293518de6254cd1a296d8",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 53,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-6",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            983
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "4515c47933a5d43602c74c8ae7fad1026050804c738dcc9162bef0b2b9fe0d17",
+          "bytes": 707760
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "e5044d8b8c9eca9e5c467906b931bc378c3c43a46fd03f3744968e4ac87c1adf",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 54,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-7",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            926
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "867ff8c8a7019ada145000a59cbf046c7c4b9abd9ae3855512051f1739b0d17b",
+          "bytes": 666720
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "d138bc6e9af9d81ffffaf8ec4e35dc560686183104581ecdc343a91a98c6beee",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 55,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-4",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            835
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "0f9d5ffd55c320b1b9182f722dd375aa3fbc9f17cdd64e123134590ac67a2bf4",
+          "bytes": 601200
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "a61fe5f8cb3a4745b01b4f852a361bf71de35ca3ceaff705157c6495b1f0554d",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 56,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-27",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            33
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "8d17c0f15aa8df786e3c331da37431bc70a0a9ea1d100c7244cdab6c2ab7679c",
+          "bytes": 23760
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "7d29a97767c001256a9bda535fdb1e5c6561c449dfd284e186a8c7160f018e75",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 57,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-5",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            856
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "af963f8fe22aca5dfb705370a5a3b402c0bb1f8fc53d7cb3eaf975cdb11bb9cd",
+          "bytes": 616320
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "93e7df1ec116af42214f41d1c39cfae5a1234ace4a519d6523ed6cb806180cd4",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 58,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-25",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            69
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "4bef8d81c2957d2f7b2315cd50f21f4c2d47fa1164e85b71cfcdccf43326619e",
+          "bytes": 49680
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "53284dacb1eb17b08646031d7db5aae226eab91168f510f1c616ec61cb4506ae",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 59,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-29",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            47
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "cbf5d2f404ecf17e84033d069f4014268b19dd4547bde50552e68c84bc9a66c8",
+          "bytes": 33840
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "fcd33c1f6bc91173ec830e9302123fd9ac7ac964a04adf8fcddd6ea2527414b5",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 60,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-31",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            80
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "ebf93fff68be5e0e836ff89e8501012637a98465608a9b584ca6dbaab7919e94",
+          "bytes": 57600
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "1e9248da0d5becdf247d5a6d4edc65fac2bb2c7b487371b73e293cdf8b1f830c",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 61,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-33",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            63
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "08c39d598c5e3c13a37df571fc6897c92ba2b348e4f6405086b4333d07620374",
+          "bytes": 45360
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "54fad8e9188ac6a6b1ad0240c149339edd2fe2710f23c8b6de6d1a80d97ebd0a",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 62,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-35",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            104
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "15f1e1d8bec2616b7933b9a047161b656bb2712b2648dfe7d3d9e63a7137086f",
+          "bytes": 74880
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "3147b77aed988bec0fe19fc97a0e4eaef501dcebdf1f67447d6b32b99992e58c",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 63,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-49",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            148
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "e8d2ce542ae4e71bcea02e05c44bfb3e0831890f442057fb240e409db334164c",
+          "bytes": 106560
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "408880e4d7a8129194830d40c36a6519f7a30d9929abec835d1b77d7767398c7",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 64,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-45",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            38
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "f4f12e0162654929411dbd11244dc352b709b9ad59373c1437216b7223919489",
+          "bytes": 27360
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "2a866dc1ddca1d032a4eefaa6b84a71c0666a7fcac842d0eedd3677b6f582535",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 65,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-41",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            83
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "96762e290da84e0ef01351a016733464672fd43815e8ed81fca2d4814c26e4c5",
+          "bytes": 59760
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "a6019aadf1a6edc80a74766b2427a3f8abbd0261eb2329f29e3d0e7c19c8c996",
+          "bytes": 4
+        }
+      }
+    },
+    {
+      "native_call": 66,
+      "model": "auxiliary/2e27620aa8ec34ea100c41464f496eacbf4d6411c3c4a93556a945a6170bbbed.onnx",
+      "cpp_line": "line-53",
+      "arrays": {
+        "layout_input": {
+          "shape": [
+            1,
+            3,
+            60,
+            42
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "c62e1665349dc5815855b3fadbd41fdefb45df9f66fb46af9cf34a07334edcf9",
+          "bytes": 30240
+        },
+        "line_layout_score": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "dtype": "float32-little-endian",
+          "sha256": "9aa451ad64ff0f838ff112a5131468cf419f13ed64047dca758d3aaa2be9ccc5",
+          "bytes": 4
+        }
+      }
+    }
+  ]
+}

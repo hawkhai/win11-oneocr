@@ -1,0 +1,44 @@
+{
+  "implementation_commit": "dfa477b8320d4e485aa9b23ffdb48735dbef8ac3",
+  "fresh_inference": true,
+  "environments": [
+    "windows-native",
+    "linux-native",
+    "windows-node",
+    "chrome",
+    "linux-node"
+  ],
+  "cases_per_environment": 221,
+  "passed_total": 1105,
+  "recognition_outputs": 1090,
+  "expected_rejections": 15,
+  "comparison_scope": "126 sample images + 27 corpus + book + 67 option cases in each environment; all new inference against fresh fixed DLL baselines",
+  "strict_tolerances": {
+    "coordinates_px": 1,
+    "angle_degrees": 0.1,
+    "confidence": 0.001
+  },
+  "exact_fields": [
+    "text",
+    "reading order",
+    "word splitting",
+    "style",
+    "counts",
+    "indices"
+  ],
+  "engine_parity": "incomplete",
+  "goal_complete": false,
+  "unverified": [
+    "Linux ARM64",
+    "macOS x64/arm64",
+    "Android arm64-v8a",
+    "Safari",
+    "Firefox",
+    "mobile browsers",
+    "Node 20 full scope"
+  ],
+  "remaining": [
+    "finite valid-option matrix only; more options/ambiguity branches/writers/scripts need coverage",
+    "native resize beyond DLL common range is an extension without parity claim"
+  ]
+}

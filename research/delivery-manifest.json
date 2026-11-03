@@ -24,7 +24,7 @@
   "source_build": "docs/portable.md",
   "files": {
     "artifacts/linux-x64/BUILD.json": {
-      "sha256": "c1e7dbfe2be18c219dbbeb3c02c11cb654b46583590e207a5faeba12783bab57",
+      "sha256": "16891405430dbaf338ef92933ebb232e7caddf74ee2d47dc29064ab8d07ab8b3",
       "size": 9139
     },
     "artifacts/linux-x64/bin/ocr": {
@@ -68,8 +68,8 @@
       "size": 5560
     },
     "artifacts/linux-x64/share/oneocr/error-codes.md": {
-      "sha256": "5980ae721f3a9fe77c196603e96fb6454c2fc016e64cfaa5cbb0ac7eb8c31629",
-      "size": 22071
+      "sha256": "e5a6d76c1f1d53e504fff68795484abfb1bbc51c42e1bd5322d7465d26fef248",
+      "size": 22462
     },
     "artifacts/linux-x64/share/oneocr/licenses/compiler-rt-LICENSE.txt": {
       "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d",
@@ -136,15 +136,15 @@
       "size": 1024
     },
     "artifacts/linux-x64/share/oneocr/portable.md": {
-      "sha256": "f4bff77833ae1aa80b3c9485b42330446a8c4238402f885272b5646a64cb7b61",
-      "size": 15713
+      "sha256": "96736fdcc2aab9d393e0bcc1745baa348ac5b85df54b4ea02609f11c9d9ba1c8",
+      "size": 16458
     },
     "artifacts/linux-x64/share/oneocr/wasm.md": {
-      "sha256": "afe91c80c8f308018adccbb8f4906dc8d94c80ee144290569c7291980734a301",
-      "size": 14633
+      "sha256": "178644d5a3bd4d33df80d3ea068822c894f8c3b9779c9bf47fd55f56ce05ec98",
+      "size": 15170
     },
     "artifacts/wasm32/BUILD.json": {
-      "sha256": "1b809eacb1195c64d0ef790224d293484fa1153b957ef3c7307c31bcfcf20bf0",
+      "sha256": "df196c7b6ace72d5d0d8502806ccca09eddef57d7e07fdd24d0a5d792a216192",
       "size": 13132
     },
     "artifacts/wasm32/cli.mjs": {
@@ -172,8 +172,8 @@
       "size": 5560
     },
     "artifacts/wasm32/share/oneocr/error-codes.md": {
-      "sha256": "5980ae721f3a9fe77c196603e96fb6454c2fc016e64cfaa5cbb0ac7eb8c31629",
-      "size": 22071
+      "sha256": "e5a6d76c1f1d53e504fff68795484abfb1bbc51c42e1bd5322d7465d26fef248",
+      "size": 22462
     },
     "artifacts/wasm32/share/oneocr/licenses/compiler-rt-LICENSE.txt": {
       "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d",
@@ -240,12 +240,12 @@
       "size": 1024
     },
     "artifacts/wasm32/share/oneocr/portable.md": {
-      "sha256": "f4bff77833ae1aa80b3c9485b42330446a8c4238402f885272b5646a64cb7b61",
-      "size": 15713
+      "sha256": "96736fdcc2aab9d393e0bcc1745baa348ac5b85df54b4ea02609f11c9d9ba1c8",
+      "size": 16458
     },
     "artifacts/wasm32/share/oneocr/wasm.md": {
-      "sha256": "afe91c80c8f308018adccbb8f4906dc8d94c80ee144290569c7291980734a301",
-      "size": 14633
+      "sha256": "178644d5a3bd4d33df80d3ea068822c894f8c3b9779c9bf47fd55f56ce05ec98",
+      "size": 15170
     },
     "artifacts/wasm32/worker-client.d.mts": {
       "sha256": "68ebe35177142af88b554be9c4d7b8feedf4381485a00f25924e2429311ef10f",
@@ -260,7 +260,7 @@
       "size": 1419
     },
     "artifacts/win32-x64/BUILD.json": {
-      "sha256": "c7572cb43e40823a3e9cffdd29f0ad594f860c0799421582ea9f386443a5ef37",
+      "sha256": "d04785f4bc8b96bc77a04fe80608e045ad420526bbcfc43f3dddea1712e6634f",
       "size": 9919
     },
     "artifacts/win32-x64/bin/concrt140.dll": {
@@ -336,8 +336,8 @@
       "size": 5560
     },
     "artifacts/win32-x64/share/oneocr/error-codes.md": {
-      "sha256": "5980ae721f3a9fe77c196603e96fb6454c2fc016e64cfaa5cbb0ac7eb8c31629",
-      "size": 22071
+      "sha256": "e5a6d76c1f1d53e504fff68795484abfb1bbc51c42e1bd5322d7465d26fef248",
+      "size": 22462
     },
     "artifacts/win32-x64/share/oneocr/licenses/compiler-rt-LICENSE.txt": {
       "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d",
@@ -404,12 +404,12 @@
       "size": 1024
     },
     "artifacts/win32-x64/share/oneocr/portable.md": {
-      "sha256": "f4bff77833ae1aa80b3c9485b42330446a8c4238402f885272b5646a64cb7b61",
-      "size": 15713
+      "sha256": "96736fdcc2aab9d393e0bcc1745baa348ac5b85df54b4ea02609f11c9d9ba1c8",
+      "size": 16458
     },
     "artifacts/win32-x64/share/oneocr/wasm.md": {
-      "sha256": "afe91c80c8f308018adccbb8f4906dc8d94c80ee144290569c7291980734a301",
-      "size": 14633
+      "sha256": "178644d5a3bd4d33df80d3ea068822c894f8c3b9779c9bf47fd55f56ce05ec98",
+      "size": 15170
     },
     "models/auxiliary/2e1f404d421766c7c36bbab20204e1e2aa40542b8bdd4be689ec538627c322dc.onnx": {
       "sha256": "2e1f404d421766c7c36bbab20204e1e2aa40542b8bdd4be689ec538627c322dc",

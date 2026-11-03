@@ -1,0 +1,55 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/digits-thermostat.jpg",
+  "image": {
+    "height": 230,
+    "step": 764,
+    "width": 191
+  },
+  "image_angle": 1.3322198390960693,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        82.0,
+        75.0,
+        125.0,
+        76.0,
+        125.0,
+        97.0,
+        82.0,
+        96.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "345",
+      "word_count": 1,
+      "words": [
+        {
+          "bounding_box": [
+            82.0,
+            75.0,
+            125.3775863647461,
+            75.97430419921875,
+            124.88934326171875,
+            96.96862030029297,
+            82.0,
+            95.9595947265625
+          ],
+          "confidence": 0.6547837257385254,
+          "index": 0,
+          "text": "345"
+        }
+      ]
+    }
+  ]
+}

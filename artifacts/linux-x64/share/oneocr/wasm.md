@@ -4,7 +4,7 @@
 
 此后端将同一份 C++20 引擎、OpenCV 4.10.0、ICU 74.2 与 ORT 1.23.2 静态链接进 WebAssembly。JS 只负责文件加载、C ABI 内存管理和 Worker 通信；预处理、识别、词切分、阅读顺序、坐标、置信度、手写及方向判断均在 Wasm 中执行。模型使用仓库现有 `models/manifest.json`，没有换模型。
 
-本轮 Windows Node 24.14.0 和 Chrome 156 均通过全量 **138/138**，两端原始结果/错误 JSON 逐字节一致，见[实测报告](../reports/wasm-2026-11-03/README.md)。相对原 DLL 使用坐标 1 像素、角度 0.1 度、置信度 `1e-3` 的原有阈值；文字、顺序、词切分和手写类型要求一致。其他浏览器及设备须单独验证。
+初版 Wasm 的 Windows Node 24.14.0 和 Chrome 156 曾通过当时全量 **138/138**，两端原始结果/错误 JSON 逐字节一致，见[历史报告](../reports/wasm-2026-11-03/README.md)。本轮 Windows Node、Linux Node 和 Chrome 均为 **221/221**，见[最新报告](../reports/options-handwriting-2026-11-03/README.md)。相对原 DLL 使用坐标 1 像素、角度 0.1 度、置信度 `1e-3` 的原有阈值；文字、顺序、词切分和手写类型要求一致。其他浏览器及设备须单独验证。
 
 后续 [Review 修复与增强回归](../reports/review-fixes-2026-11-03/README.md)补齐了计数和索引校验，并以全新推理验证 Windows Node 24.14.0、Linux Node 24.14.0、Chrome 156，各 **138/138**。Linux Node 完整集在无网络命名空间运行；除主机输入路径外，三端识别字段逐值一致。Node 20 仍只有历史书页和部分输入记录，不标记为完整集通过。
 
@@ -77,6 +77,8 @@ node web/cli.mjs test.png --model-dir models --output work/wasm-test.json --quie
 ```
 
 CLI 保留 `--text/-t`、`--output/-o`、`--max-lines`、`--resize WxH`、`--quiet/-q`；成功退出 0，失败退出 1 并写 stderr。实例可复用；一个 Worker 内按提交顺序串行执行，独立 Worker 的模型及 Wasm 内存互不共享。
+
+`maxLines` 遵循原 DLL 的软批次预算，返回行数可能超过请求值；本轮十二行图 `maxLines: 1` 返回四行，不能把它当硬截断上限。参数组合及零别名的原始对照见[本轮报告](../reports/options-handwriting-2026-11-03/README.md)。原生/Wasm 的 resize 扩展范围超出 Photos DLL 的 `1152×768` 上限时，不声明输出等价。
 
 DSH 插件配置 `{ backend: 'wasm', timeoutMs: 600000 }` 后使用当前 Node 启动交付目录内的 Wasm CLI，`ocrBin` 可指定其他 Wasm CLI 文件，`modelDir`、取消和输出大小限制与原插件一致。默认仍为 `portable`。也可直接执行 `node artifacts/wasm32/cli.mjs ...`，无需仓库的 `web/` 开发目录。
 

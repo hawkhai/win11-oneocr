@@ -21,11 +21,11 @@ Linux x64，glibc 2.43 或更新（实测 Ubuntu 26.04）：
 
 现有原生预编译文件覆盖 Windows x64 和 Linux x64。macOS、Android、ARM64 的源码配置和示例已提交，但不能把它们视作拉取后已可直接执行的平台。
 
-另有 [JavaScript + WebAssembly 交付](wasm.md)：`artifacts/wasm32/` 与同一份 `models/` 可供 Node 和支持 SIMD128 的浏览器加载。Node 入口为 `node web/cli.mjs ...`，可用 `python scripts/verify-delivery.py --wasm` 校验；Node 24.14.0 与 Chrome 156 各通过全量 138 项，见 [Wasm 实测报告](../reports/wasm-2026-11-03/README.md)。
+另有 [JavaScript + WebAssembly 交付](wasm.md)：`artifacts/wasm32/` 与同一份 `models/` 可供 Node 和支持 SIMD128 的浏览器加载。Node 入口为 `node web/cli.mjs ...`，可用 `python scripts/verify-delivery.py --wasm` 校验；本轮 Windows/Linux Node 24.14.0 与 Chrome 156 各通过全量 **221 项**，见[最新实测报告](../reports/options-handwriting-2026-11-03/README.md)。
 
 此前的 [Review 修复验收](../reports/review-fixes-2026-11-03/README.md)还覆盖增强比较器下的 Windows/Linux 原生、Windows/Linux Node 24、Chrome，五端分别通过完整 138 项；源码、运行文件、模型和报告均纳入 Git。模型准备默认跟随活动模型版本，其他版本只能显式准备到独立目录。
 
-干净 Git 克隆的最终结果见 [换机验收](../reports/checkout-ready-2026-11-02/README.md)：两端各通过 110 张样本、原 27 项及 105 行书页，未使用原机器构建目录或研究环境。
+早期干净 Git 克隆的历史结果见[换机验收](../reports/checkout-ready-2026-11-02/README.md)：当时两端各通过 110 张样本、原 27 项及旧模型 105 行书页。当前模型书页为 106 行；最新精确提交的包身份见 `artifacts/OFFLINE_PACKAGE.json`，应按下述校验命令核对当前交付，不能用早期检出报告替代。
 
 本次没有 push。如通过离线 Git 包转移，在新电脑执行：
 
@@ -76,4 +76,4 @@ Linux 使用 `python3`。校验全部模型和运行文件 SHA-256，并从无�
 
 模型不是 MIT。此次把准备资源加入用户授权的本地 Git 交付，不增加微软模型的再分发权，也没有 push、上传或公开发布模型。项目代码、来源图片及各运行库各自保留许可，见 [第三方声明](../THIRD_PARTY_NOTICES.md)。正式执行依赖的 VC release CRT 来源见 [微软官方列表](https://learn.microsoft.com/en-us/visualstudio/releases/2022/redistribution)；其权利不由项目 MIT 许可授予。
 
-当前范围为 126 张图片、27 项固定语料、书页和 67 个参数组合，共 221 项/环境。参数组合、真实中文手写与最新执行记录见[本轮报告](../reports/options-handwriting-2026-11-03/README.md)，内部预言机及静态证据见 `research/curve-boundaries/`。历史 138 项报告仍按原执行保留，不能作为当前运行文件的重新推理证明。
+当前范围为 126 张图片、27 项固定语料、书页和 67 个参数组合，共 221 项/环境，五环境均已通过。参数组合、真实中文手写与最新执行记录见[本轮报告](../reports/options-handwriting-2026-11-03/README.md)，本轮内部预言机及静态证据见 `research/options-handwriting/`，曲线与极长行证据保留在 `research/curve-boundaries/`。历史 138 项报告仍按原执行保留，不能作为当前运行文件的重新推理证明。

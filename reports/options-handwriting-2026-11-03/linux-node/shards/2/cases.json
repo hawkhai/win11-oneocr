@@ -1,0 +1,606 @@
+[
+  {
+    "name": "sample-a744c24e96808cb4",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/dewarp-cooking-comparison.png",
+    "sha256": "f103c5580f648265d284c8d6aa2e47df5d84f73b45161c8b489751bc84f4a0af",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/a744c24e96808cb4.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-b0d25177b1a8480c",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/dewarp-thesis-b-comparison.png",
+    "sha256": "233c13fee537b9d8329bce31c326962efa88980525ce40e482c84db16366ac20",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/b0d25177b1a8480c.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-db4b91782dd3efb7",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/chinese-layout.jpg",
+    "sha256": "106670fcacb14ee72517bc43172c0362c10bd1e89c66e7cada334f1488e851a3",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/db4b91782dd3efb7.json",
+    "expected_error": null
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m999-r768x512",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 999,
+      "resize_width": 768,
+      "resize_height": 512
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m999-r768x512.json"
+  },
+  {
+    "name": "sample-3255119646d641ba",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/scene-text.jpg",
+    "sha256": "827912802a25b701ddab8cb30e641d7b5e9fd5ed0daaabbc1c04dda53fbcabe7",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/3255119646d641ba.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-4cb3c7f3a7eae8bb",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/cn-traditional-result.jpg",
+    "sha256": "c84a1b2e9052328438abe3960e38c0ccd706a43a58782708a76a38253754fc4a",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/4cb3c7f3a7eae8bb.json",
+    "expected_error": null
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m999-r1152x768",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 999,
+      "resize_width": 1152,
+      "resize_height": 768
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m999-r1152x768.json"
+  },
+  {
+    "name": "sample-913b6e2fbe4c0d3b",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/receipt-edges.png",
+    "sha256": "2418d74fd5d8dc0021d4ccb1f3ea51b475f66d0526754aa2e62db20a8ff86cfd",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/913b6e2fbe4c0d3b.json",
+    "expected_error": null
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m1000-r640x384",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 1000,
+      "resize_width": 640,
+      "resize_height": 384
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m1000-r640x384.json"
+  },
+  {
+    "name": "sample-abad7ae0707ac749",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/psm-sherlock-page.png",
+    "sha256": "0431ff40e12bacdba65adfc45f89bd15831a9327fbf628b43af1e474b9a95813",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/abad7ae0707ac749.json",
+    "expected_error": null
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m11-r640x384",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 11,
+      "resize_width": 640,
+      "resize_height": 384
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m11-r640x384.json"
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m7-r1152x768",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 7,
+      "resize_width": 1152,
+      "resize_height": 768
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m7-r1152x768.json"
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m32-r768x512",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 32,
+      "resize_width": 768,
+      "resize_height": 512
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m32-r768x512.json"
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m9-r768x512",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 9,
+      "resize_width": 768,
+      "resize_height": 512
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m9-r768x512.json"
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m9-r640x384",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 9,
+      "resize_width": 640,
+      "resize_height": 384
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m9-r640x384.json"
+  },
+  {
+    "name": "sample-e0a96ddd6fe8007f",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/red-calligraphy-jason-rotate-180.png",
+    "sha256": "0d17412b5c93f40600c731960ffb2ff0dc41026b34f0c2f8fc35b64cfca6682c",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/e0a96ddd6fe8007f.json",
+    "expected_error": null
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m3-r1152x768",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 3,
+      "resize_width": 1152,
+      "resize_height": 768
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m3-r1152x768.json"
+  },
+  {
+    "name": "sample-e37ba8d39f1765ee",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/red-grid-jason-rotate-90.png",
+    "sha256": "000ecdc061c9102e800ae863f25473c2b445887feb4581000df45569313a98b8",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/e37ba8d39f1765ee.json",
+    "expected_error": null
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m11-r320x192",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 11,
+      "resize_width": 320,
+      "resize_height": 192
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m11-r320x192.json"
+  },
+  {
+    "name": "parameter-red-grid-jason-m5-r1152x768",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/red-grid-jason.jpg",
+    "sha256": "5320df1c5938033993e365a1ff9583df76ab42166ada23e68d79f1bd752b32d5",
+    "options": {
+      "max_lines": 5,
+      "resize_width": 1152,
+      "resize_height": 768
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/red-grid-jason-m5-r1152x768.json"
+  },
+  {
+    "name": "sample-0cbc944c1fac881f",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/red-calligraphy-jason-rotate-90.png",
+    "sha256": "6a98ffb9fb41e265fee47d0291db6336f31f49edc02918d2a35465f13f42b4dc",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/0cbc944c1fac881f.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-6784152fa17f8d76",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/red-grid-jason-rotate-10.png",
+    "sha256": "611c33683bfede5e139af848d6a7bd31c0b211e84b84d5ecbf6e138cd32225b3",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/6784152fa17f8d76.json",
+    "expected_error": null
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m7-r320x192",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 7,
+      "resize_width": 320,
+      "resize_height": 192
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m7-r320x192.json"
+  },
+  {
+    "name": "sample-512b352f18af3f4f",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/image-quality.jpg",
+    "sha256": "dd0358f9f93981b7878a5debd734e15e82a54cc0747ddf3491d3eedf6fba9681",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/512b352f18af3f4f.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-9d80e98d12d362b3",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/pp-product-description.jpg",
+    "sha256": "2bb78629be3a6b29025d85db3677642c267d0ff176706ab963e8cb0c132df10b",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/9d80e98d12d362b3.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-b0e62b5268bf3ae1",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/red-grid-jason.jpg",
+    "sha256": "5320df1c5938033993e365a1ff9583df76ab42166ada23e68d79f1bd752b32d5",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/b0e62b5268bf3ae1.json",
+    "expected_error": null
+  },
+  {
+    "name": "parameter-red-grid-jason-m7-r768x512",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/red-grid-jason.jpg",
+    "sha256": "5320df1c5938033993e365a1ff9583df76ab42166ada23e68d79f1bd752b32d5",
+    "options": {
+      "max_lines": 7,
+      "resize_width": 768,
+      "resize_height": 512
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/red-grid-jason-m7-r768x512.json"
+  },
+  {
+    "name": "sample-eb1b381667716066",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/dewarp-thesis-table.jpg",
+    "sha256": "ca26ff9def88a52b9c64d7161036974fe6efd6843b4997e6415fc73f10fc3de8",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/eb1b381667716066.json",
+    "expected_error": null
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m2-r640x384",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 2,
+      "resize_width": 640,
+      "resize_height": 384
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m2-r640x384.json"
+  },
+  {
+    "name": "sample-a83d2bf9aa769ebd",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/pp-product-description.jpg",
+    "sha256": "c373773f4bd6e772226061f4999a8a0263f3e6c2b5514c1a56e05c6c9c75062b",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/a83d2bf9aa769ebd.json",
+    "expected_error": null
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m1-r640x384",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 1,
+      "resize_width": 640,
+      "resize_height": 384
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m1-r640x384.json"
+  },
+  {
+    "name": "sample-86a7ffe5513e5633",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/cn-traditional-sutra.jpg",
+    "sha256": "c61aa101215b21b29061f62f9899a9bec1e30cd89332d857fcd56e450f835870",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/86a7ffe5513e5633.json",
+    "expected_error": null
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m3-r320x192",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 3,
+      "resize_width": 320,
+      "resize_height": 192
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m3-r320x192.json"
+  },
+  {
+    "name": "sample-f06b8315200c1abb",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/pp-wash-label.jpg",
+    "sha256": "957a9cc15da49312277796126be225e0ee653f3316578c12d626fa43fbe9561b",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/f06b8315200c1abb.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-c777a45d62cce90a",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/special-digits.jpg",
+    "sha256": "720f50deff2fb5941572f4e97179f65a1dfc49cd498373b5d2e82c0153997772",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/c777a45d62cce90a.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-eb6e81323fe050ef",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/pp-lab-table.jpg",
+    "sha256": "4352e672744103a123fdf8a88b44fad607929e9174d39546a7a4d97bf3f304d7",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/eb6e81323fe050ef.json",
+    "expected_error": null
+  },
+  {
+    "name": "parameter-red-calligraphy-jason-m1-r640x384",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/red-calligraphy-jason.jpg",
+    "sha256": "f107e685f069226cea0f8b01a91e3800af0d48229596a44c836b124ac5d9b880",
+    "options": {
+      "max_lines": 1,
+      "resize_width": 640,
+      "resize_height": 384
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/red-calligraphy-jason-m1-r640x384.json"
+  },
+  {
+    "name": "sample-a99b928ceb0f443e",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/cn-train-ticket.jpg",
+    "sha256": "b1edb1c110aa37c5a679a82c836493d04827ebf6183acf52154dc2c91c1cbf05",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/a99b928ceb0f443e.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-e3d262776302832f",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/pp-math-exam.jpg",
+    "sha256": "dd39351e864c37741b0edc5bdb5742159e7aecb94068a928455da980cb407dbb",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/e3d262776302832f.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-a9819bb8f9e9f5ef",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/easy-health-poster.png",
+    "sha256": "f9f8c82b6b15ac6c9367c7939129395d6c45a882a2dadde33aaa810da4d450d5",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/a9819bb8f9e9f5ef.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-f9dcd81f8ca741ba",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/pp-vertical-plaque.jpg",
+    "sha256": "1b3978f3708bc31e3acfe603b052531a480db87ebaa1460559ee7d3eb1160593",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/f9dcd81f8ca741ba.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-224ffeac6e0cd92d",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-parity/handwriting-rotate-0.5.png",
+    "sha256": "bb52038fe7e19fa3557934e3b92a56ab1db3be24994327b5ba1645d17c79883a",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/224ffeac6e0cd92d.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-640bb28cd64c2e5b",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/digits-result.jpg",
+    "sha256": "6c216427c55a6b79e26cfaff51beedacf2e638e773e90c206fb84282fbf96403",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/640bb28cd64c2e5b.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-0b6fd6de5d12d93c",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/psm-sparse-web-menu.jpg",
+    "sha256": "b49281bf5c5117c4288103ca13878e243edb8a1ebe7f87b388102ca108c95a0e",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/0b6fd6de5d12d93c.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-280528b4b1cb14b3",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-parity/handwriting-azure.jpg",
+    "sha256": "cafe17111f6a496a5dc976804f33ecff2e66a2375a8e06f3c67f1ea7588a3e23",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/280528b4b1cb14b3.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-9e131b7b56e565db",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/easy-yuyuan-road.jpg",
+    "sha256": "7d8f231016c6a35da879b7d79b39c45b694aef962ae30f64063d981e618fbf7f",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/9e131b7b56e565db.json",
+    "expected_error": null
+  },
+  {
+    "name": "corpus-cjk-rotate-270",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/cjk-rotate-270.png",
+    "sha256": "cadfa1cc8137dba1b51ace236019ff95c034316c2648dbaa36f5bca3d3e2b97c",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/corpus-legacy/cjk-rotate-270.json"
+  },
+  {
+    "name": "corpus-cyrillic-36",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/cyrillic-36.png",
+    "sha256": "253f957eef7b1e3f2ca2a64f07bbf68bbc5ab6f9c751a4524d50384a241b4749",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/corpus-legacy/cyrillic-36.json"
+  },
+  {
+    "name": "sample-ab78d5d64fd48439",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-parity/handwriting-rotate-3.png",
+    "sha256": "dbbde3f98e615790ddcdb67a134cd419261cda494f00d2a6df6b3adaedeb3025",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/ab78d5d64fd48439.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-b3edaa47ba780e0c",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/easy-health-poster.jpg",
+    "sha256": "84b7f8099f0369fa377e5c93930082e4bbd14fa4efb1c17f550320e3fd736715",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/b3edaa47ba780e0c.json",
+    "expected_error": null
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m1-r33x65",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 1,
+      "resize_width": 33,
+      "resize_height": 65
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m1-r33x65.json"
+  },
+  {
+    "name": "sample-c45a727514fb8982",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/easy-minato-sign.jpg",
+    "sha256": "e74ee1b1757ad97a383b9ef048b81c9d999ff0a96d65cbd8cac6ea8bf14392d9",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/c45a727514fb8982.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-493754a016f2232e",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-boundaries/near-collinear-line.png",
+    "sha256": "ae9692f7f8fb2f99d88eec11990828509603b59ca2a336cadf477f51a376a7a3",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/493754a016f2232e.json",
+    "expected_error": null
+  },
+  {
+    "name": "corpus-latin-rotate-180",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/latin-rotate-180.png",
+    "sha256": "772ad824277c62d8547f53cd740bd58bc75cc28b69d1a84b53810bbb40e50444",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/corpus-legacy/latin-rotate-180.json"
+  },
+  {
+    "name": "corpus-thai-36",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/thai-36.png",
+    "sha256": "a0de4e62ae5fcd0648bb47aa3fcd2ff2bb2221d9bd3a0f3574836a90e555e8c4",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/corpus-legacy/thai-36.json"
+  },
+  {
+    "name": "corpus-latin-18",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/latin-18.png",
+    "sha256": "1ae202b7659494da9b362f56adcc0b12b8f166d8a7cdb4d93d909ac97e465aca",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/corpus-legacy/latin-18.json"
+  },
+  {
+    "name": "sample-bbbd4ae8468a6451",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/cn-english-book-cover.jpg",
+    "sha256": "1b2a5ac75eaa6ee3de90c8548129ede3394c2a7bd379093c9bba221b7e6f714e",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/bbbd4ae8468a6451.json",
+    "expected_error": null
+  },
+  {
+    "name": "corpus-latin-rotate-3",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/latin-rotate-3.png",
+    "sha256": "bb5f0dd58fad62ec19f772e325b24ce4c637e2c2427db9595e48b6f228d3cf35",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/corpus-legacy/latin-rotate-3.json"
+  },
+  {
+    "name": "corpus-arabic-36",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/arabic-36.png",
+    "sha256": "796c4585fc52ab1186e26dc19d82f8df758eb7e58aeb991de5f97bd66c3b7992",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/corpus-legacy/arabic-36.json"
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m3-r33x65",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 3,
+      "resize_width": 33,
+      "resize_height": 65
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m3-r33x65.json"
+  },
+  {
+    "name": "sample-9f735a010e88a648",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-capabilities/blank-unicode-空白-😀.png",
+    "sha256": "4f276c6adf8852e89048c73a9c96922effec0893a48e394277a06e3ead39205f",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/9f735a010e88a648.json",
+    "expected_error": null
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m11-r33x65",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 11,
+      "resize_width": 33,
+      "resize_height": 65
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m11-r33x65.json"
+  },
+  {
+    "name": "sample-5fa29af9e63fefc2",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/psm-license-plate.png",
+    "sha256": "7a6c7235932620734e50f2390835aeff238f0b9b4dbac38399b36aede4956102",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/5fa29af9e63fefc2.json",
+    "expected_error": null
+  },
+  {
+    "name": "corpus-hebrew-36",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/research/case/corpus/hebrew-36.png",
+    "sha256": "b06341d3189e9ece0ce4e2ab502fe06060e13135457dbacf64cd82d38b1e2cc6",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/corpus-legacy/hebrew-36.json"
+  },
+  {
+    "name": "sample-0fc39af69da4cfed",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-capabilities/low-contrast-small-blur.png",
+    "sha256": "9b1bc333919d27b1dfee8296cbf25eb5376a14f78de8cb4e2d2d83beebbd4f53",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/0fc39af69da4cfed.json",
+    "expected_error": null
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m32-r33x65",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 32,
+      "resize_width": 33,
+      "resize_height": 65
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m32-r33x65.json"
+  },
+  {
+    "name": "sample-8229419c872341b9",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/digits-thermostat.jpg",
+    "sha256": "9f2d3131c09556d986523b4e84bdb86b2a1874553ed5b8da2f6437d7a0fb10a0",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/8229419c872341b9.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-cc5c505c9a91f65a",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-capabilities/script-cyrillic.png",
+    "sha256": "a8deedce268eda416e2d9367adf814e415708dd8fd4eea97ce452dbd579faf4d",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/cc5c505c9a91f65a.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-024e54a6c8e3ba17",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/easy-paris-signposts.jpg",
+    "sha256": "85b8f4f0d96266dc4b91a731910a7cc0b44f2bccbaef326259ad8f51f880cdc1",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/024e54a6c8e3ba17.json",
+    "expected_error": null
+  },
+  {
+    "name": "parameter-twelve-printed-lines-m1000-r33x65",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/options-handwriting/twelve-printed-lines.png",
+    "sha256": "924c1468e5625209e7d66a75c0e4f4e4e770b4d4c7bbbc127753d8fbbb2f12f3",
+    "options": {
+      "max_lines": 1000,
+      "resize_width": 33,
+      "resize_height": 65
+    },
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/parameters/twelve-printed-lines-m1000-r33x65.json"
+  },
+  {
+    "name": "sample-e4d10781d3be6992",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/references/quality-border-comparison.png",
+    "sha256": "d6bb202fe300092bcd256b1545ff02c5a100844cd92110248da91518f0ee243f",
+    "baseline": null,
+    "expected_error": {
+      "code": -15,
+      "message": "Unsupported image channel count"
+    }
+  },
+  {
+    "name": "sample-2f4730c5e82e18ff",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/thumbnails/psm-old-engine-title.jpg",
+    "sha256": "29299065bcfed9f9c7c587aed561f1d76f6973495553a58ebda021d914993d40",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/2f4730c5e82e18ff.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-456fa06428e1e12f",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-boundaries/normalizer-grid.png",
+    "sha256": "1b3f218a237c48ff0462148e8ae008aa32c697b7c416bbe94e45a179f88923ed",
+    "baseline": "/mnt/f/pythonx/myocr/win11-oneocr/reports/options-handwriting-2026-11-03/reference/legacy/456fa06428e1e12f.json",
+    "expected_error": null
+  },
+  {
+    "name": "sample-4169c134c6189ae6",
+    "path": "/mnt/f/pythonx/myocr/win11-oneocr/samples/ocr-classics/images/cn-single-line-mixed.jpg",
+    "sha256": "337533e2e614050c484797420f080a9b251a61a01acb22d42fb997900a921570",
+    "baseline": null,
+    "expected_error": {
+      "code": -18,
+      "message": "Image dimensions must be 50..10000 pixels"
+    }
+  }
+]

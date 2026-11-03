@@ -1,0 +1,86 @@
+{
+  "engine": {
+    "backend": "wasm-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\ocr-classics\\images\\psm-old-engine-title.png",
+  "image": {
+    "height": 200,
+    "step": 4000,
+    "width": 1000
+  },
+  "image_angle": 0.03222483769059181,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        53,
+        55,
+        942,
+        55,
+        942,
+        138,
+        53,
+        137
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "THE OLD ENGINE.",
+      "word_count": 3,
+      "words": [
+        {
+          "bounding_box": [
+            53.86019515991211,
+            55.150413513183594,
+            268.1337890625,
+            55.83778381347656,
+            270.9154052734375,
+            138.08181762695312,
+            56.641815185546875,
+            139
+          ],
+          "confidence": 0.9977143406867981,
+          "index": 0,
+          "text": "THE"
+        },
+        {
+          "bounding_box": [
+            299.3255920410156,
+            55.91490936279297,
+            495.9700622558594,
+            56.08792495727539,
+            498.75164794921875,
+            137.76483154296875,
+            302.107177734375,
+            137.97219848632812
+          ],
+          "confidence": 0.9970461130142212,
+          "index": 1,
+          "text": "OLD"
+        },
+        {
+          "bounding_box": [
+            525.8057861328125,
+            56.08740234375,
+            943,
+            55.15913772583008,
+            943,
+            139,
+            528.5873413085938,
+            137.77593994140625
+          ],
+          "confidence": 0.9907914996147156,
+          "index": 2,
+          "text": "ENGINE."
+        }
+      ]
+    }
+  ]
+}

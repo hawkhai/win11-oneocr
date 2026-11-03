@@ -1,0 +1,19 @@
+{
+  "engine": {
+    "backend": "wasm-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\samples\\oneocr-capabilities\\blank-unicode-空白-😀.png",
+  "image": {
+    "height": 360,
+    "step": 2560,
+    "width": 640
+  },
+  "image_angle": 0,
+  "line_count": 0,
+  "lines": []
+}

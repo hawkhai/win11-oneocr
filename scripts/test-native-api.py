@@ -8,8 +8,10 @@ from pathlib import Path
 import tempfile
 import struct
 import subprocess
+import sys
 
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'scripts'))
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
@@ -80,9 +82,22 @@ if __name__=='__main__':
         text(error)
         if code!=-13 or result.value:raise AssertionError('Missing-image error contract')
         checks.append('missing image leaves JSON null with image error')
-        limited=recognize(context,options=Options(1,0,0))
-        if limited['line_count']>1:raise AssertionError('max_lines exceeded')
-        checks.append('max_lines=1')
+        # The original DLL has a soft batch budget, not a hard line cap.
+        # Exercise the multi-line fixture and compare the whole actual output;
+        # a one-line image cannot detect a mistaken max_lines truncation.
+        from regression_reference import active_reference
+        import importlib.util
+        reference=active_reference()
+        contract='twelve-printed-lines-m1-r1152x768'
+        inventory=json.loads((ROOT/reference['parameter_manifest']).read_text(encoding='utf8'))
+        case=next(c for c in inventory['cases'] if c['name']==contract)
+        limited=recognize(context,path=ROOT/case['file'],options=Options(1,1152,768))
+        expected=json.loads((ROOT/reference['parameter_baseline']/(contract+'.json')).read_text(encoding='utf8'))
+        spec=importlib.util.spec_from_file_location('api_strict_compare',ROOT/'scripts/compare-results.py')
+        comparator=importlib.util.module_from_spec(spec);spec.loader.exec_module(comparator)
+        comparison=comparator.compare(expected,limited)
+        if not comparison['passed']:raise AssertionError('Soft line-budget parity: '+json.dumps(comparison))
+        checks.append('max_lines=1 multi-line soft batch budget strictly matches original DLL')
     finally:dll.oneocr_destroy(context)
     workspace=(ROOT/'work/oneocr-portable').resolve();workspace.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='api-corrupt-',dir=workspace) as temp:

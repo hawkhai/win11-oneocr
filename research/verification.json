@@ -30,14 +30,14 @@
         "six concurrent calls on one context",
         "two concurrent independent contexts",
         "missing image leaves JSON null with image error",
-        "max_lines=1",
+        "max_lines=1 multi-line soft batch budget strictly matches original DLL",
         "existing invalid image leaves JSON null with image error",
         "corrupt vocabulary rejected before inference; source assets unchanged"
       ],
       "legacy_api_adapter": true,
-      "strict_regression_cases_passed": 142,
+      "strict_regression_cases_passed": 221,
       "active_model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
-      "native_unit_test_count": 9
+      "native_unit_test_count": 10
     },
     "linux-x64": {
       "native_build": "passed",
@@ -47,9 +47,18 @@
       "ort_origin": "pinned v1.23.2 built from source with implicit FP contraction disabled",
       "native_matches_windows": true,
       "ort_source_build": true,
-      "strict_regression_cases_passed": 142,
+      "strict_regression_cases_passed": 221,
       "active_model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
-      "native_unit_test_count": 9
+      "native_unit_test_count": 10,
+      "api_integration": [
+        "file versus padded BGRA exact result equivalence",
+        "six concurrent calls on one context",
+        "two concurrent independent contexts",
+        "missing image leaves JSON null with image error",
+        "max_lines=1 multi-line soft batch budget strictly matches original DLL",
+        "existing invalid image leaves JSON null with image error",
+        "corrupt vocabulary rejected before inference; source assets unchanged"
+      ]
     },
     "linux-arm64": {
       "native_build": "not_verified",
@@ -70,9 +79,9 @@
     },
     "wasm32": {
       "build": "passed",
-      "windows_node_24_full_cases": 142,
-      "linux_node_24_full_cases": 142,
-      "chrome_156_full_cases": 142,
+      "windows_node_24_full_cases": 221,
+      "linux_node_24_full_cases": 221,
+      "chrome_156_full_cases": 221,
       "other_browsers": "not_verified",
       "node_20_full_scope": "not_verified",
       "branch_oracle_tests": "passed"
@@ -84,18 +93,20 @@
     "total": 27,
     "strict_parity_passes": 27,
     "strict_parity_total": 27,
-    "mean_native_seconds_including_startup": 0.7781522333302915,
-    "max_native_peak_working_set_bytes": 181231616,
+    "mean_native_seconds_including_startup": 0.6326761740729799,
+    "max_native_peak_working_set_bytes": 179613696,
     "coverage_gaps": [
-      "Complementary real Latin handwriting is in samples/oneocr-parity; other handwritten scripts remain uncovered."
-    ]
+      "Finite corpus and two real Chinese handwriting photo sources; additional handwritten scripts and writers need coverage"
+    ],
+    "report": "reports/options-handwriting-2026-11-03/windows-native/corpus/suite.json"
   },
   "book_sample": {
-    "original_lines": 105,
-    "native_lines": 105,
-    "reference_lines": 58,
+    "original_lines": 106,
+    "native_lines": 106,
     "native_strict_parity": true,
-    "reference_strict_parity": false
+    "active_reference": "reports/options-handwriting-2026-11-03/reference/book-legacy.json",
+    "reference_python_current_scope_verified": false,
+    "note": "Current task compares DLL/native/Wasm; prior reference-Python measurements remain under phase1_measurements"
   },
   "default_plugin_native_integration": true,
   "remaining": [
@@ -103,7 +114,7 @@
     "Native resize beyond 1152x768 is an extension: the fixed Photos DLL rejects those settings; no equivalent-output claim is made there",
     "Linux ARM64, macOS and Android target build/run verification; Safari, Firefox, mobile browsers and Node 20 full scope"
   ],
-  "case": "research/curve-boundaries",
+  "case": "research/options-handwriting",
   "phase1_measurements": {
     "corpus": {
       "process_successes": 27,
@@ -446,6 +457,45 @@
     "goal_complete": false
   },
   "latest_review": {
+    "report": "reports/options-handwriting-review-2026-11-03/README.md",
+    "passed": true,
+    "mode": "saved-results-verification",
+    "fresh_inference": false,
+    "cases": 1105,
+    "python_tests": 62,
+    "native_ctest_per_platform": 10,
+    "goal_complete": false,
+    "fresh_inference_report": "reports/options-handwriting-2026-11-03/README.md",
+    "fixes": [
+      "whole-component soft recognition budget",
+      "inclusive bbox gate before polygon IoU",
+      "CJK layout after flip",
+      "UTF-8 weighted final word confidence for direction suppression",
+      "option-bound execution identities and negative tests",
+      "real Chinese handwriting and rotations",
+      "native API soft-budget integration test"
+    ]
+  },
+  "options_handwriting": {
+    "status": "passed; fresh five-environment inference",
+    "windows_native_passed": 221,
+    "cases_per_environment": 221,
+    "sample_images": 126,
+    "parameter_combinations": 67,
+    "source_photographs": 2,
+    "handwriting_rotations": 8,
+    "report": "reports/options-handwriting-2026-11-03/README.md",
+    "goal_complete": false,
+    "passed": true,
+    "environments": 5,
+    "passed_total": 1105,
+    "recognition_outputs": 1090,
+    "expected_rejections": 15,
+    "parameter_nondefault_combinations": 66,
+    "parameter_default_controls": 1,
+    "implementation_commit": "dfa477b8320d4e485aa9b23ffdb48735dbef8ac3"
+  },
+  "previous_review_before_options_handwriting": {
     "report": "reports/word-box-zip-p2-2026-11-03/README.md",
     "passed": true,
     "mode": "saved-results-verification",
@@ -459,16 +509,5 @@
     ],
     "goal_complete": false,
     "fresh_inference_report": "reports/curve-boundaries-2026-11-03/README.md"
-  },
-  "options_handwriting": {
-    "status": "fresh five-environment execution in progress",
-    "windows_native_passed": 221,
-    "cases_per_environment": 221,
-    "sample_images": 126,
-    "parameter_combinations": 67,
-    "source_photographs": 2,
-    "handwriting_rotations": 8,
-    "report": "reports/options-handwriting-2026-11-03/README.md",
-    "goal_complete": false
   }
 }

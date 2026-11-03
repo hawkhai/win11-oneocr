@@ -1,0 +1,47 @@
+{
+  "windows-native": {
+    "cases": 221,
+    "sum_case_milliseconds": 233493.48660046235,
+    "median_case_milliseconds": 883.2709999987856,
+    "maximum_case_milliseconds": 6681.5274999826215,
+    "peak_bytes": 395329536,
+    "memory_measurement": "process peak working set",
+    "timing_note": "sum of actual per-case durations, not wall-clock; concurrent processes compete for CPU"
+  },
+  "linux-native": {
+    "cases": 221,
+    "sum_case_milliseconds": 430066.82552599953,
+    "median_case_milliseconds": 1725.7216479999897,
+    "maximum_case_milliseconds": 8684.893209000053,
+    "peak_bytes": 418533376,
+    "memory_measurement": "process peak working set",
+    "timing_note": "sum of actual per-case durations, not wall-clock; concurrent processes compete for CPU"
+  },
+  "windows-node": {
+    "cases": 221,
+    "sum_case_milliseconds": 8722085.707100002,
+    "median_case_milliseconds": 23286.702300000004,
+    "maximum_case_milliseconds": 596740.753,
+    "peak_bytes": 758239232,
+    "memory_measurement": "per-worker process peak RSS; Chrome uses maximum individual process peak working set, not simultaneous browser-tree total",
+    "timing_note": "sum of actual per-case durations, not wall-clock; concurrent processes compete for CPU"
+  },
+  "chrome": {
+    "cases": 221,
+    "sum_case_milliseconds": 7658360.80000031,
+    "median_case_milliseconds": 22730.5,
+    "maximum_case_milliseconds": 501190.6999999881,
+    "peak_bytes": 1055404032,
+    "memory_measurement": "per-worker process peak RSS; Chrome uses maximum individual process peak working set, not simultaneous browser-tree total",
+    "timing_note": "sum of actual per-case durations, not wall-clock; concurrent processes compete for CPU"
+  },
+  "linux-node": {
+    "cases": 221,
+    "sum_case_milliseconds": 8657236.246708997,
+    "median_case_milliseconds": 22890.674551999662,
+    "maximum_case_milliseconds": 588336.714082,
+    "peak_bytes": 989270016,
+    "memory_measurement": "per-worker process peak RSS; Chrome uses maximum individual process peak working set, not simultaneous browser-tree total",
+    "timing_note": "sum of actual per-case durations, not wall-clock; concurrent processes compete for CPU"
+  }
+}

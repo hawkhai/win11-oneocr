@@ -1,0 +1,19 @@
+{
+  "windows": "Microsoft Windows NT 10.0.19045.0",
+  "windows_compiler": "MSVC 19.44.35227.0",
+  "windows_cmake": "3.31.6-msvc6",
+  "linux": "Ubuntu 26.04 LTS x86_64 via WSL2",
+  "linux_kernel": "6.18.54.1-microsoft-standard-WSL2",
+  "linux_compiler": "GNU 15.2.0",
+  "linux_cmake": "4.2.3",
+  "linux_python": "3.14.4",
+  "node_windows": "24.14.0",
+  "node_linux": "24.14.0",
+  "chrome": "156.0.8078.79",
+  "emscripten": "4.0.8",
+  "emsdk_commit": "419021fa040428bc69ef1559b325addb8e10211f",
+  "ghidra": "11.3.2",
+  "jdk": "21.0.8+9",
+  "implementation_commit": "dfa477b8320d4e485aa9b23ffdb48735dbef8ac3",
+  "note": "Build and runtime versions measured locally; other targets remain unverified"
+}

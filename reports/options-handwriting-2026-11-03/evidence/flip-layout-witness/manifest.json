@@ -1,0 +1,61 @@
+{
+  "classifier_call": 24,
+  "layout_call": 61,
+  "cpp_line": "line-33",
+  "files": {
+    "classifier-input.f32": {
+      "shape": [
+        1,
+        3,
+        60,
+        63
+      ],
+      "dtype": "float32-little-endian",
+      "sha256": "6157a6e24a5464e4919de013aaab31bd91799c9dd25bfdf4c317872f33fb08d9",
+      "bytes": 45360
+    },
+    "photos-layout-input.f32": {
+      "shape": [
+        1,
+        3,
+        60,
+        63
+      ],
+      "dtype": "float32-little-endian",
+      "sha256": "08c39d598c5e3c13a37df571fc6897c92ba2b348e4f6405086b4333d07620374",
+      "bytes": 45360
+    },
+    "photos-layout-score.f32": {
+      "shape": [
+        1,
+        1,
+        1
+      ],
+      "dtype": "float32-little-endian",
+      "sha256": "54fad8e9188ac6a6b1ad0240c149339edd2fe2710f23c8b6de6d1a80d97ebd0a",
+      "bytes": 4
+    },
+    "cpp-layout-input.f32": {
+      "shape": [
+        1,
+        3,
+        60,
+        63
+      ],
+      "dtype": "float32-little-endian",
+      "sha256": "08c39d598c5e3c13a37df571fc6897c92ba2b348e4f6405086b4333d07620374",
+      "bytes": 45360
+    },
+    "cpp-layout-score.f32": {
+      "shape": [
+        1,
+        1,
+        1
+      ],
+      "dtype": "float32-little-endian",
+      "sha256": "54fad8e9188ac6a6b1ad0240c149339edd2fe2710f23c8b6de6d1a80d97ebd0a",
+      "bytes": 4
+    }
+  },
+  "relation": "Photos layout input equals classifier input rotated 180 degrees; CPP input and score byte-exact"
+}

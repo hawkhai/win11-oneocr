@@ -1,0 +1,19 @@
+{
+  "engine": {
+    "backend": "wasm-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "/mnt/f/pythonx/myocr/win11-oneocr/samples/oneocr-boundaries/normalizer-grid.png",
+  "image": {
+    "height": 100,
+    "step": 1680,
+    "width": 420
+  },
+  "image_angle": 0,
+  "line_count": 0,
+  "lines": []
+}
