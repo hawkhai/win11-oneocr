@@ -26,6 +26,8 @@
 
 ## 本机重新构建
 
+同事拉取后的构建入口与外部依赖路径参数见 [colleague-build.md](colleague-build.md)。依赖由同事自行准备，不向 Git 新增大体积依赖包或构建二进制。Windows 使用 `scripts/build-native.ps1 -SdkRoot ... -OpenCvSource ... -IcuSource ... -IcuData ... -BuildDirectory build/colleague` 时只执行配置/编译/CTest，不要求研究 Python 或 WSL；以下 `-SourceRuntime` 是显式选择的完整依赖准备流程。
+
 在项目根目录运行。研究环境仅用于模型准备、构建和验证。
 
 图像校正使用与固定 DLL 内一致的 OpenCV 4.10.0 源码版本，只构建 `core` 和 `imgproc` 并静态链接。构建脚本自动调用 `scripts/fetch-opencv.py`，核对固定提交；直接调用 CMake 或在其他平台构建时，先运行 `python3 scripts/fetch-opencv.py`，也可通过 `ONEOCR_OPENCV_SOURCE` 指定已有的同版本源码。关闭 IPP、视频、图像编解码器和其他模块的下载。

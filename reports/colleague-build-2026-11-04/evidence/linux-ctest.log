@@ -1,0 +1,448 @@
+Start testing: Nov 04 01:27 CST
+----------------------------------------------------------
+1/26 Testing: portable_word_box_assertions
+1/26 Test: portable_word_box_assertions
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_word_box_assertions_test"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_word_box_assertions" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Final word boxes: 48 nonfinite negatives, 8 finite out-of-tolerance negatives and finite controls PASS
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"portable_word_box_assertions" end time: Nov 04 01:27 CST
+"portable_word_box_assertions" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/26 Testing: portable_curve_boundaries
+2/26 Test: portable_curve_boundaries
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_boundary_test"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_curve_boundaries" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Curve fallback and clipped polygon DLL oracles: PASS
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"portable_curve_boundaries" end time: Nov 04 01:27 CST
+"portable_curve_boundaries" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/26 Testing: portable_classification
+3/26 Test: portable_classification
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_classification_test"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_classification" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+201 native classifier and 80 global script decisions: PASS
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"portable_classification" end time: Nov 04 01:27 CST
+"portable_classification" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/26 Testing: portable_api
+4/26 Test: portable_api
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native/oneocr_api_test"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_api" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+API ownership and failure contracts: PASS
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"portable_api" end time: Nov 04 01:27 CST
+"portable_api" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/26 Testing: portable_math
+5/26 Test: portable_math
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_math_test"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_math" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Hash, geometry, pixels and stride: PASS
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"portable_math" end time: Nov 04 01:27 CST
+"portable_math" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/26 Testing: portable_reading_order
+6/26 Test: portable_reading_order
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_ordering_test"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_reading_order" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Native reading-order and observed recognition-group contracts: PASS
+<end of output>
+Test time =   0.34 sec
+----------------------------------------------------------
+Test Passed.
+"portable_reading_order" end time: Nov 04 01:27 CST
+"portable_reading_order" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/26 Testing: portable_detector_geometry
+7/26 Test: portable_detector_geometry
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_detector_test"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_detector_geometry" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Native polygon geometry contracts: PASS
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"portable_detector_geometry" end time: Nov 04 01:27 CST
+"portable_detector_geometry" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/26 Testing: portable_word_alignment
+8/26 Test: portable_word_alignment
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_alignment_test"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_word_alignment" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Native word alignment contracts: PASS
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"portable_word_alignment" end time: Nov 04 01:27 CST
+"portable_word_alignment" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/26 Testing: portable_confidence_features
+9/26 Test: portable_confidence_features
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_confidence_test"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_confidence_features" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Native sparse CTC and confidence feature contracts: PASS
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"portable_confidence_features" end time: Nov 04 01:27 CST
+"portable_confidence_features" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/26 Testing: portable_polygon_nms
+10/26 Test: portable_polygon_nms
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_polygon_nms" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 0
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"portable_polygon_nms" end time: Nov 04 01:27 CST
+"portable_polygon_nms" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/26 Testing: portable_photos_intersection_at-positive-tolerance
+11/26 Test: portable_photos_intersection_at-positive-tolerance
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test" "--photos-intersection-case" "at-positive-tolerance"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_photos_intersection_at-positive-tolerance" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 0.01
+Photos intersection case at-positive-tolerance: PASS (0 expected rejection)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"portable_photos_intersection_at-positive-tolerance" end time: Nov 04 01:27 CST
+"portable_photos_intersection_at-positive-tolerance" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/26 Testing: portable_photos_intersection_at-negative-tolerance
+12/26 Test: portable_photos_intersection_at-negative-tolerance
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test" "--photos-intersection-case" "at-negative-tolerance"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_photos_intersection_at-negative-tolerance" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 0.01
+Photos intersection case at-negative-tolerance: PASS (0 expected rejection)
+<end of output>
+Test time =   0.44 sec
+----------------------------------------------------------
+Test Passed.
+"portable_photos_intersection_at-negative-tolerance" end time: Nov 04 01:27 CST
+"portable_photos_intersection_at-negative-tolerance" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/26 Testing: portable_photos_intersection_equal-large-finite
+13/26 Test: portable_photos_intersection_equal-large-finite
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test" "--photos-intersection-case" "equal-large-finite"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_photos_intersection_equal-large-finite" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 0
+Photos intersection case equal-large-finite: PASS (0 expected rejection)
+<end of output>
+Test time =   0.44 sec
+----------------------------------------------------------
+Test Passed.
+"portable_photos_intersection_equal-large-finite" end time: Nov 04 01:27 CST
+"portable_photos_intersection_equal-large-finite" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/26 Testing: portable_photos_intersection_over-positive-tolerance
+14/26 Test: portable_photos_intersection_over-positive-tolerance
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test" "--photos-intersection-case" "over-positive-tolerance"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_photos_intersection_over-positive-tolerance" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Intersection mismatch Photos calligraphy.json 0,1: 0.01 versus 0
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 0.01
+Photos intersection case over-positive-tolerance: PASS (1 expected rejection)
+<end of output>
+Test time =   0.44 sec
+----------------------------------------------------------
+Test Passed.
+"portable_photos_intersection_over-positive-tolerance" end time: Nov 04 01:27 CST
+"portable_photos_intersection_over-positive-tolerance" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/26 Testing: portable_photos_intersection_over-negative-tolerance
+15/26 Test: portable_photos_intersection_over-negative-tolerance
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test" "--photos-intersection-case" "over-negative-tolerance"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_photos_intersection_over-negative-tolerance" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Intersection mismatch Photos calligraphy.json 0,1: -0.01 versus 0
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 0.01
+Photos intersection case over-negative-tolerance: PASS (1 expected rejection)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"portable_photos_intersection_over-negative-tolerance" end time: Nov 04 01:27 CST
+"portable_photos_intersection_over-negative-tolerance" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/26 Testing: portable_photos_intersection_review-large-delta
+16/26 Test: portable_photos_intersection_review-large-delta
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test" "--photos-intersection-case" "review-large-delta"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_photos_intersection_review-large-delta" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Intersection mismatch Photos calligraphy.json 0,1: 0 versus 1e+09
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 1e+09
+Photos intersection case review-large-delta: PASS (1 expected rejection)
+<end of output>
+Test time =   0.39 sec
+----------------------------------------------------------
+Test Passed.
+"portable_photos_intersection_review-large-delta" end time: Nov 04 01:27 CST
+"portable_photos_intersection_review-large-delta" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/26 Testing: portable_photos_intersection_actual-nan
+17/26 Test: portable_photos_intersection_actual-nan
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test" "--photos-intersection-case" "actual-nan"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_photos_intersection_actual-nan" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Intersection mismatch Photos calligraphy.json 0,1: nan versus 0
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 0
+Photos intersection case actual-nan: PASS (1 expected rejection)
+<end of output>
+Test time =   0.43 sec
+----------------------------------------------------------
+Test Passed.
+"portable_photos_intersection_actual-nan" end time: Nov 04 01:27 CST
+"portable_photos_intersection_actual-nan" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/26 Testing: portable_photos_intersection_actual-positive-infinity
+18/26 Test: portable_photos_intersection_actual-positive-infinity
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test" "--photos-intersection-case" "actual-positive-infinity"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_photos_intersection_actual-positive-infinity" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Intersection mismatch Photos calligraphy.json 0,1: inf versus 0
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 0
+Photos intersection case actual-positive-infinity: PASS (1 expected rejection)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"portable_photos_intersection_actual-positive-infinity" end time: Nov 04 01:27 CST
+"portable_photos_intersection_actual-positive-infinity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/26 Testing: portable_photos_intersection_actual-negative-infinity
+19/26 Test: portable_photos_intersection_actual-negative-infinity
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test" "--photos-intersection-case" "actual-negative-infinity"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_photos_intersection_actual-negative-infinity" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Intersection mismatch Photos calligraphy.json 0,1: -inf versus 0
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 0
+Photos intersection case actual-negative-infinity: PASS (1 expected rejection)
+<end of output>
+Test time =   0.39 sec
+----------------------------------------------------------
+Test Passed.
+"portable_photos_intersection_actual-negative-infinity" end time: Nov 04 01:27 CST
+"portable_photos_intersection_actual-negative-infinity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/26 Testing: portable_photos_intersection_expected-nan
+20/26 Test: portable_photos_intersection_expected-nan
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test" "--photos-intersection-case" "expected-nan"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_photos_intersection_expected-nan" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Intersection mismatch Photos calligraphy.json 0,1: 0 versus nan
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 0
+Photos intersection case expected-nan: PASS (1 expected rejection)
+<end of output>
+Test time =   0.47 sec
+----------------------------------------------------------
+Test Passed.
+"portable_photos_intersection_expected-nan" end time: Nov 04 01:27 CST
+"portable_photos_intersection_expected-nan" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/26 Testing: portable_photos_intersection_expected-positive-infinity
+21/26 Test: portable_photos_intersection_expected-positive-infinity
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test" "--photos-intersection-case" "expected-positive-infinity"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_photos_intersection_expected-positive-infinity" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Intersection mismatch Photos calligraphy.json 0,1: 0 versus inf
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 0
+Photos intersection case expected-positive-infinity: PASS (1 expected rejection)
+<end of output>
+Test time =   0.39 sec
+----------------------------------------------------------
+Test Passed.
+"portable_photos_intersection_expected-positive-infinity" end time: Nov 04 01:27 CST
+"portable_photos_intersection_expected-positive-infinity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/26 Testing: portable_photos_intersection_expected-negative-infinity
+22/26 Test: portable_photos_intersection_expected-negative-infinity
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test" "--photos-intersection-case" "expected-negative-infinity"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_photos_intersection_expected-negative-infinity" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Intersection mismatch Photos calligraphy.json 0,1: 0 versus -inf
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 0
+Photos intersection case expected-negative-infinity: PASS (1 expected rejection)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"portable_photos_intersection_expected-negative-infinity" end time: Nov 04 01:27 CST
+"portable_photos_intersection_expected-negative-infinity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/26 Testing: portable_photos_intersection_both-nan
+23/26 Test: portable_photos_intersection_both-nan
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test" "--photos-intersection-case" "both-nan"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_photos_intersection_both-nan" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Intersection mismatch Photos calligraphy.json 0,1: nan versus nan
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 0
+Photos intersection case both-nan: PASS (1 expected rejection)
+<end of output>
+Test time =   0.44 sec
+----------------------------------------------------------
+Test Passed.
+"portable_photos_intersection_both-nan" end time: Nov 04 01:27 CST
+"portable_photos_intersection_both-nan" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/26 Testing: portable_photos_intersection_same-positive-infinity
+24/26 Test: portable_photos_intersection_same-positive-infinity
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test" "--photos-intersection-case" "same-positive-infinity"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_photos_intersection_same-positive-infinity" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Intersection mismatch Photos calligraphy.json 0,1: inf versus inf
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 0
+Photos intersection case same-positive-infinity: PASS (1 expected rejection)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"portable_photos_intersection_same-positive-infinity" end time: Nov 04 01:27 CST
+"portable_photos_intersection_same-positive-infinity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/26 Testing: portable_photos_intersection_same-negative-infinity
+25/26 Test: portable_photos_intersection_same-negative-infinity
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test" "--photos-intersection-case" "same-negative-infinity"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_photos_intersection_same-negative-infinity" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Intersection mismatch Photos calligraphy.json 0,1: -inf versus -inf
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 0
+Photos intersection case same-negative-infinity: PASS (1 expected rejection)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"portable_photos_intersection_same-negative-infinity" end time: Nov 04 01:27 CST
+"portable_photos_intersection_same-negative-infinity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/26 Testing: portable_photos_intersection_finite-subtraction-overflow
+26/26 Test: portable_photos_intersection_finite-subtraction-overflow
+Command: "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/bin/oneocr_nms_test" "--photos-intersection-case" "finite-subtraction-overflow"
+Directory: /mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/build/linux-x64/native
+"portable_photos_intersection_finite-subtraction-overflow" start time: Nov 04 01:27 CST
+Output:
+----------------------------------------------------------
+Intersection mismatch Photos calligraphy.json 0,1: 3.40282e+38 versus -3.40282e+38
+54748 native polygon probes and 79 recognition NMS cases; maximum area error 0
+Photos intersection case finite-subtraction-overflow: PASS (1 expected rejection)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"portable_photos_intersection_finite-subtraction-overflow" end time: Nov 04 01:27 CST
+"portable_photos_intersection_finite-subtraction-overflow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 04 01:27 CST

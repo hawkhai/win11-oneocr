@@ -1,0 +1,237 @@
+{
+  "files": {
+    "CMakeLists.txt": {
+      "sha256": "734eaec11bbdfd987d03194f33ced6922ac6a917457ee733a27fc8e91874ae27",
+      "format": "lf"
+    },
+    "CMakePresets.json": {
+      "sha256": "31342d2b7b9d71742ddcb24fb1a39615f1dabc7428667b2684a56dcfb4edc133",
+      "format": "lf"
+    },
+    "json.hpp": {
+      "sha256": "7804b38146921d03374549c9e2a5e3acda097814c43caf2b96a0278e58df26e0",
+      "format": "lf"
+    },
+    "stb_image.h": {
+      "sha256": "594c2fe35d49488b4382dbfaec8f98366defca819d916ac95becf3e75f4200b3",
+      "format": "lf"
+    },
+    "scripts/build-native.ps1": {
+      "sha256": "8d15bf9af8aa8c91eee4f9336d440ae3d580932d881a07fd0253b32b822689cb",
+      "format": "lf"
+    },
+    "cmake/icu-source.cmake": {
+      "sha256": "b9bb19e7e6dc5cfad07f6a1517221f4d3ee1926711f9c8bafc8372d83c04a79b",
+      "format": "lf"
+    },
+    "cmake/opencv-source.cmake": {
+      "sha256": "ff75d2b436a052fea66e932e6bd9680eea0cf2ed9979a4dd2007b6015c2781dd",
+      "format": "lf"
+    },
+    "cmake/toolchains/android-arm64.cmake": {
+      "sha256": "d27fad76d3bbfc5f9b461be80f35b21fbc1cbc42a7565b5330f1eff77a35f611",
+      "format": "lf"
+    },
+    "native/android/OneOcr.java": {
+      "sha256": "ae5460e77bdababefd40f53435fb8e90be391eb8d712410b2ffa96315bb2b98e",
+      "format": "lf"
+    },
+    "native/android/oneocr_jni.cpp": {
+      "sha256": "ddc04ad4144329ec5cf6e5dbfad1cba6e35d7647c97181fdb19a8f1d86ea45d6",
+      "format": "lf"
+    },
+    "native/CMakeLists.txt": {
+      "sha256": "524c14e488f01bab461d2c78560d50bcc5b66705509fad67162e7c1e57a7e8e1",
+      "format": "lf"
+    },
+    "native/include/oneocr_portable.h": {
+      "sha256": "949be635a16e8965c66e455e3247b92f36510eb4f2eff57c5960b9862e7a3e9d",
+      "format": "lf"
+    },
+    "native/include/oneocr_portable.hpp": {
+      "sha256": "d64c9c7f6cfaf377e6e7e1b2284f91f1fc13c180f86459f2e29acc7501439485",
+      "format": "lf"
+    },
+    "native/src/alignment.cpp": {
+      "sha256": "b7340ce2474f19e096d1b80d9dbd26d8998775b79130931cf4bf7f48be869a83",
+      "format": "lf"
+    },
+    "native/src/alignment.hpp": {
+      "sha256": "02622e5d427cfff7edf26f6b6e4b2470c6c29ccb4c39340959f5788338ca2cd6",
+      "format": "lf"
+    },
+    "native/src/classification.cpp": {
+      "sha256": "9be400417dabd2d1d7bd6bacfdab9842efe402dea521af5d9a0ce04f7f8df608",
+      "format": "lf"
+    },
+    "native/src/classification.hpp": {
+      "sha256": "97321878267bb7892185f9af8710c240639f685d77ce7158c08df974ef17e4c3",
+      "format": "lf"
+    },
+    "native/src/cli.cpp": {
+      "sha256": "c6a213b8711b45023dcb8bd482a3aac52f00ca1c236439327ea40b4ea3af086a",
+      "format": "lf"
+    },
+    "native/src/confidence.cpp": {
+      "sha256": "4c54a2cae12336a56e6270b0de0008c6598c24b5e96c6d3964796a7662ca849d",
+      "format": "lf"
+    },
+    "native/src/confidence.hpp": {
+      "sha256": "346dc3e4e92e3a4b46e2c38b0ff619fb0dce2b7a3518b0e77788424d7d7d610d",
+      "format": "lf"
+    },
+    "native/src/detector.cpp": {
+      "sha256": "8889c0413ee10093cfb7d9593a7f158eff1678d1bfff9179c8aee1541ab4c545",
+      "format": "lf"
+    },
+    "native/src/detector.hpp": {
+      "sha256": "dbbe0a09d661da718b61685d0a97fb01576ecb94e608a86d070dfbc59ea1578c",
+      "format": "lf"
+    },
+    "native/src/engine.cpp": {
+      "sha256": "e4011b161b69db710e465e59388328b47fa4e495dd4101a5ab925d7e8e2c52c1",
+      "format": "lf"
+    },
+    "native/src/fragment.cpp": {
+      "sha256": "bdccc6ca989e4fdfe8cdd7b65bfe8dd4a505b93e0795b0a278ed13924561f93c",
+      "format": "lf"
+    },
+    "native/src/image.cpp": {
+      "sha256": "b7ffc3b05f5594950ae25364953de59a4b2de78db33bf7708289ee8bd2833916",
+      "format": "lf"
+    },
+    "native/src/image.hpp": {
+      "sha256": "b4771791b92c3744962c93b1079193ab3ec2509efb238b32772c9da9bfb08566",
+      "format": "lf"
+    },
+    "native/src/nms.cpp": {
+      "sha256": "c43201e92b77c48ac4d9d9c810ef7b7eaf3669cde76986dc365b9d3a345ddd46",
+      "format": "lf"
+    },
+    "native/src/nms.hpp": {
+      "sha256": "3c70713e6e8b9e07425e5ed37ad2065dc98d25fc2736ed83f7c2d79f68355d0f",
+      "format": "lf"
+    },
+    "native/src/normalizer.cpp": {
+      "sha256": "08dd2a8ff385e69e4fb448ab3532c4f2fc16ceed9549bcd2463f2b6db9c613fa",
+      "format": "lf"
+    },
+    "native/src/normalizer.hpp": {
+      "sha256": "bb6bbc6f4fa7df7102e6bace4159be062b777c813f13629659505bbfb142b22b",
+      "format": "lf"
+    },
+    "native/src/ordering.cpp": {
+      "sha256": "7750e834aa86662d052cad52e3c413a88f4f63623e908f74ba3be2b7e05477c3",
+      "format": "lf"
+    },
+    "native/src/ordering.hpp": {
+      "sha256": "9966c27ab09563370c50eacdb1c77f569ef5402e260f04b56d9263738e77417c",
+      "format": "lf"
+    },
+    "native/src/recognition_budget.hpp": {
+      "sha256": "ab3c9b2f3c68b2449b0ab41b25eff9453267b2402fbd37cff75d73a2f39db729",
+      "format": "lf"
+    },
+    "native/src/sha256.hpp": {
+      "sha256": "ee82fbdae944e2085065c15e4086ca4670879c09bbe00535d400a1fc0c752494",
+      "format": "lf"
+    },
+    "native/src/trace.hpp": {
+      "sha256": "c5f5b4ac7b31a016b4a184248de677662ba0885c69815a549285b667646fa533",
+      "format": "lf"
+    },
+    "native/src/unicode.cpp": {
+      "sha256": "86027929d839d708773be5885b3ac3ad0083ac290b699c40628e88f818fbee95",
+      "format": "lf"
+    },
+    "native/src/unicode.hpp": {
+      "sha256": "4392f873c339724f9de19969650b3490f1ffe42f8566915d9393f1be81c18d0e",
+      "format": "lf"
+    },
+    "native/src/windows_compat.cpp": {
+      "sha256": "c76b613f8b8f67a40cab8a32bbed3bb66e8a7c66591fa727519df78012a9d804",
+      "format": "lf"
+    },
+    "native/tests/alignment_test.cpp": {
+      "sha256": "6ea2c16be96b3eea017a3bb7e9bab0a9dfcfbb6b82f77bb60807a0a4c2032d45",
+      "format": "lf"
+    },
+    "native/tests/api_test.cpp": {
+      "sha256": "4801e645179aa33f022b5df6f17e585ebca1638cfb7b3a2d92e7ad182df3166d",
+      "format": "lf"
+    },
+    "native/tests/boundary_test.cpp": {
+      "sha256": "02ff07fe1bf076a7d292231cfb5257e031e6b2803ae880a5923b4745132c87fa",
+      "format": "lf"
+    },
+    "native/tests/classification_test.cpp": {
+      "sha256": "6d2a777477620b526efa494307f5c120b68a1546c4767fac36093549d000f63a",
+      "format": "lf"
+    },
+    "native/tests/confidence_test.cpp": {
+      "sha256": "a980d9bf7b98f0548a7227169d1dbe8a4cd28d160ebeb52f53fb88dfff8e9e6a",
+      "format": "lf"
+    },
+    "native/tests/decode_image.cpp": {
+      "sha256": "06750cff9bb42e8330d36d37ab08bb47e4c327ead9f647ecdd8566f48be5c331",
+      "format": "lf"
+    },
+    "native/tests/detector_test.cpp": {
+      "sha256": "1f0f7fddf72868a78bd79a0afea15eb60569da6a17544787927b6d90bf018fd7",
+      "format": "lf"
+    },
+    "native/tests/math_test.cpp": {
+      "sha256": "605c50881ac8e8f8273219c9375563083f6f1e54b9ac237f845fcd2b65e3992f",
+      "format": "lf"
+    },
+    "native/tests/nms_test.cpp": {
+      "sha256": "b8a2f6a516e110d47392a8b2cf27bf2d795027a57110d6ddffa3614ff61ba09b",
+      "format": "lf"
+    },
+    "native/tests/ordering_test.cpp": {
+      "sha256": "827998d0de19e45345ac8e2e74f0764ea9c915436e847dd0768a6f771feb31c0",
+      "format": "lf"
+    },
+    "native/tests/tensor_probe.cpp": {
+      "sha256": "29127ce353106e502d0e9a79a65e4fdd087e40fb29622e3eb4b3f86448bd4443",
+      "format": "lf"
+    },
+    "native/tests/word_box_assertions.hpp": {
+      "sha256": "60c9d86662d0065e6b9e801c1cce479162caf27e866f9878e78dd27e829708de",
+      "format": "lf"
+    },
+    "native/tests/word_box_assertions_test.cpp": {
+      "sha256": "0d395b824f5aebb9e9988331c0bca0172a6eab0aceda7f99cb0327399b49cfc9",
+      "format": "lf"
+    },
+    "native/wasm/activation.hpp": {
+      "sha256": "775d7d025cb638819494093ba5c5c5bbf884154c574cb71b362ddfcddac4757c",
+      "format": "lf"
+    },
+    "native/wasm/convolution.hpp": {
+      "sha256": "4b5995eef3344fab49b47217f4966d9fb347d0157e5d4a66c325768c07125756",
+      "format": "lf"
+    },
+    "native/wasm/entry.cpp": {
+      "sha256": "ba681c6b7074825368cd41d7a6874f416ee3b2bd837defbf225e815ea6bace8f",
+      "format": "lf"
+    },
+    "native/wasm/fma_test.cpp": {
+      "sha256": "ad6275c8aa8d9be36de60c469ea9e7635fdc44eb98d999717bf25c33523c1333",
+      "format": "lf"
+    },
+    "native/wasm/opencv-rounding.hpp": {
+      "sha256": "0d5d618e6f8cb6f5da3ad78b2cf5c008287ee94f866c5ff489f7fac6dc26aef4",
+      "format": "lf"
+    },
+    "native/wasm/probe-node.cjs": {
+      "sha256": "ff73a69b6f83a3c310218a8c1885905d8876af563c1cc5f90915166dad3b794c",
+      "format": "lf"
+    },
+    "native/wasm/rounding_test.cpp": {
+      "sha256": "7d8c36155e88f1cd2700ce78f146a7ef5dd481a6c52cdcc38ab18dc40f95cb5d",
+      "format": "lf"
+    }
+  },
+  "scope": "tracked compiler/build inputs; externally supplied dependencies are documented separately"
+}

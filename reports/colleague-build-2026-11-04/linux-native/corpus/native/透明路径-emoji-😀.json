@@ -1,0 +1,100 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/research/case/corpus/透明路径-emoji-😀.png",
+  "image": {
+    "height": 220,
+    "step": 4000,
+    "width": 1000
+  },
+  "image_angle": 359.7430725097656,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        26.0,
+        43.0,
+        472.0,
+        42.0,
+        472.0,
+        79.0,
+        26.0,
+        82.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "Alpha transparent text 2026",
+      "word_count": 4,
+      "words": [
+        {
+          "bounding_box": [
+            26.886390686035156,
+            43.56821823120117,
+            121.75826263427734,
+            42.97367858886719,
+            120.96839904785156,
+            81.53440856933594,
+            26.096508026123047,
+            80.47028350830078
+          ],
+          "confidence": 0.9940590858459473,
+          "index": 0,
+          "text": "Alpha"
+        },
+        {
+          "bounding_box": [
+            132.09695434570313,
+            42.92201614379883,
+            314.5458679199219,
+            42.55998229980469,
+            313.7560119628906,
+            80.32217407226563,
+            131.3070831298828,
+            81.59420776367188
+          ],
+          "confidence": 0.9911799430847168,
+          "index": 1,
+          "text": "transparent"
+        },
+        {
+          "bounding_box": [
+            323.6683349609375,
+            42.56620407104492,
+            382.6602783203125,
+            42.677734375,
+            381.87042236328125,
+            78.76958465576172,
+            322.87847900390625,
+            80.15827941894531
+          ],
+          "confidence": 0.9864868521690369,
+          "index": 2,
+          "text": "text"
+        },
+        {
+          "bounding_box": [
+            392.99908447265625,
+            42.7043571472168,
+            473.0,
+            42.95292282104492,
+            473.0,
+            75.82994079589844,
+            392.209228515625,
+            78.50198364257813
+          ],
+          "confidence": 0.9791170954704285,
+          "index": 3,
+          "text": "2026"
+        }
+      ]
+    }
+  ]
+}

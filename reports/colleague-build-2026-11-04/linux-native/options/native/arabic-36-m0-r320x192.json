@@ -1,0 +1,85 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/research/case/corpus/arabic-36.png",
+  "image": {
+    "height": 220,
+    "step": 4000,
+    "width": 1000
+  },
+  "image_angle": 358.6938171386719,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        20.0,
+        46.0,
+        327.0,
+        39.0,
+        328.0,
+        80.0,
+        21.0,
+        87.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "2026 ملاعلاب ابحرم",
+      "word_count": 3,
+      "words": [
+        {
+          "bounding_box": [
+            242.1027374267578,
+            40.40389633178711,
+            328.0,
+            39.29814147949219,
+            327.2555236816406,
+            81.31539916992188,
+            241.1944580078125,
+            81.77151489257813
+          ],
+          "confidence": 0.9908198118209839,
+          "index": 0,
+          "text": "2026"
+        },
+        {
+          "bounding_box": [
+            123.23809051513672,
+            43.98590850830078,
+            231.53469848632813,
+            40.64006042480469,
+            230.77297973632813,
+            81.88987731933594,
+            123.89913940429688,
+            83.78572082519531
+          ],
+          "confidence": 0.7074055075645447,
+          "index": 1,
+          "text": "ملاعلاب"
+        },
+        {
+          "bounding_box": [
+            21.613426208496094,
+            48.86924362182617,
+            112.01509857177734,
+            44.42049026489258,
+            112.82158660888672,
+            84.04427337646484,
+            23.61074447631836,
+            86.75160217285156
+          ],
+          "confidence": 0.9161633849143982,
+          "index": 2,
+          "text": "ابحرم"
+        }
+      ]
+    }
+  ]
+}

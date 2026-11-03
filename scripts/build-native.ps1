@@ -2,6 +2,9 @@ param(
     [string]$SdkRoot = '',
     [switch]$SourceRuntime,
     [string]$IcuSource = 'work/vendor/icu-source',
+    [string]$OpenCvSource = '',
+    [string]$IcuData = '',
+    [string]$BuildDirectory = 'build/source-runtime',
     [int]$Jobs = 6
 )
 $ErrorActionPreference = 'Stop'
@@ -17,13 +20,24 @@ try {
         if (-not (Test-Path -LiteralPath $cmake)) { throw 'Visual Studio CMake component is missing' }
     }
     $env:PATH = (Split-Path $cmake) + ';' + $env:PATH
+    if (-not $SdkRoot -and $env:ONNXRUNTIME_ROOT) { $SdkRoot = $env:ONNXRUNTIME_ROOT }
+    if (-not $OpenCvSource) { $OpenCvSource = if ($env:ONEOCR_OPENCV_SOURCE) { $env:ONEOCR_OPENCV_SOURCE } else { 'work/vendor/opencv' } }
+    if (-not $PSBoundParameters.ContainsKey('IcuSource') -and $env:ONEOCR_ICU_SOURCE) { $IcuSource = $env:ONEOCR_ICU_SOURCE }
+    $explicitIcuData = [bool]$IcuData -or [bool]$env:ONEOCR_ICU_DATA_C
+    if (-not $IcuData) { $IcuData = if ($env:ONEOCR_ICU_DATA_C) { $env:ONEOCR_ICU_DATA_C } else { 'work/icu-generated/icudt74l_dat.c' } }
+    if (-not $SourceRuntime -and -not $SdkRoot) { throw 'Provide -SdkRoot (or ONNXRUNTIME_ROOT) and prepared OpenCV/ICU paths; see docs/colleague-build.md. Use -SourceRuntime only to explicitly rebuild ORT.' }
     $python = Join-Path $ProjectRoot '.research-python/python.exe'
-    if (-not (Test-Path -LiteralPath $python)) { throw 'Run scripts/bootstrap-research.ps1 first' }
-    & $python scripts/fetch-opencv.py
-    if ($LASTEXITCODE -ne 0) { throw 'OpenCV source preparation failed' }
-    & $python scripts/prepare-icu.py --source $IcuSource --fetch-only
-    if ($LASTEXITCODE -ne 0) { throw 'ICU source preparation failed' }
-    if (-not (Test-Path -LiteralPath 'work/icu-generated/icudt74l_dat.c')) {
+    if ($SourceRuntime) {
+        if (-not (Test-Path -LiteralPath $python)) { throw 'Run scripts/bootstrap-research.ps1 first for the optional -SourceRuntime workflow' }
+        if (-not (Test-Path -LiteralPath $OpenCvSource)) {
+            if ($OpenCvSource -ne 'work/vendor/opencv') { throw 'The supplied OpenCV source directory does not exist' }
+            & $python scripts/fetch-opencv.py
+            if ($LASTEXITCODE -ne 0) { throw 'OpenCV source preparation failed' }
+        }
+        & $python scripts/prepare-icu.py --source $IcuSource --fetch-only
+        if ($LASTEXITCODE -ne 0) { throw 'ICU source preparation failed' }
+    }
+    if ($SourceRuntime -and -not $explicitIcuData -and -not (Test-Path -LiteralPath $IcuData)) {
         if (-not (Get-Command wsl.exe -ErrorAction SilentlyContinue)) { throw 'ICU data needs a Linux/macOS build host. Run scripts/prepare-icu.py there and copy work/icu-generated back.' }
         $IcuSourcePath = (Resolve-Path -LiteralPath $IcuSource).Path
         $IcuWslSource = (& wsl.exe --exec wslpath -u $IcuSourcePath).Trim()
@@ -41,13 +55,14 @@ try {
         & $cmake --install work/ort-source/Release --config Release --prefix $SdkRoot
         if ($LASTEXITCODE -ne 0) { throw 'ORT source install failed' }
     }
-    if (-not $SdkRoot) { throw 'Use -SourceRuntime, or explicitly supply -SdkRoot for an optional prebuilt SDK' }
     $SdkRoot = (Resolve-Path -LiteralPath $SdkRoot).Path
+    $OpenCvSourcePath = (Resolve-Path -LiteralPath $OpenCvSource).Path
     $IcuSourcePath = (Resolve-Path -LiteralPath $IcuSource).Path
-    & $cmake -S . -B build/source-runtime -G 'Visual Studio 17 2022' -A x64 -U ONNXRUNTIME_INCLUDE_DIR -U ONNXRUNTIME_LIBRARY -U ORT_RUNTIME_DLL "-DONNXRUNTIME_ROOT=$SdkRoot" "-DONEOCR_ICU_SOURCE=$IcuSourcePath"
+    $IcuDataPath = (Resolve-Path -LiteralPath $IcuData).Path
+    & $cmake -S . -B $BuildDirectory -G 'Visual Studio 17 2022' -A x64 -U ONNXRUNTIME_INCLUDE_DIR -U ONNXRUNTIME_LIBRARY -U ORT_RUNTIME_DLL "-DONNXRUNTIME_ROOT=$SdkRoot" "-DONEOCR_OPENCV_SOURCE=$OpenCvSourcePath" "-DONEOCR_ICU_SOURCE=$IcuSourcePath" "-DONEOCR_ICU_DATA_C=$IcuDataPath"
     if ($LASTEXITCODE -ne 0) { throw 'Native configure failed' }
-    & $cmake --build build/source-runtime --config Release --parallel $Jobs
+    & $cmake --build $BuildDirectory --config Release --parallel $Jobs
     if ($LASTEXITCODE -ne 0) { throw 'Native build failed' }
-    & (Join-Path (Split-Path $cmake) 'ctest.exe') --test-dir build/source-runtime -C Release --output-on-failure
+    & (Join-Path (Split-Path $cmake) 'ctest.exe') --test-dir $BuildDirectory -C Release --output-on-failure
     if ($LASTEXITCODE -ne 0) { throw 'Native tests failed' }
 } finally { Pop-Location }

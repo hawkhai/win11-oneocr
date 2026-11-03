@@ -1,0 +1,100 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\work\\colleague-build-2026-11-04\\manual-source\\samples\\options-handwriting\\red-calligraphy-jason-rotate-270.png",
+  "image": {
+    "height": 1600,
+    "step": 4268,
+    "width": 1067
+  },
+  "image_angle": 125.68238067626953,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        219.0,
+        21.0,
+        36.0,
+        273.0,
+        0.0,
+        238.0,
+        169.0,
+        0.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.22290000319480896,
+        "type": "printed"
+      },
+      "text": "孙何必间",
+      "word_count": 4,
+      "words": [
+        {
+          "bounding_box": [
+            219.2542724609375,
+            21.981603622436523,
+            195.96392822265625,
+            54.03131103515625,
+            136.9652557373047,
+            30.474685668945313,
+            161.0360870361328,
+            0.0
+          ],
+          "confidence": 0.9679162502288818,
+          "index": 0,
+          "text": "孙"
+        },
+        {
+          "bounding_box": [
+            172.66709899902344,
+            86.07627868652344,
+            150.36871337890625,
+            116.45730590820313,
+            92.05728149414063,
+            90.59515380859375,
+            113.02761840820313,
+            61.317378997802734
+          ],
+          "confidence": 0.9959784746170044,
+          "index": 1,
+          "text": "何"
+        },
+        {
+          "bounding_box": [
+            131.50083923339844,
+            142.16433715820313,
+            109.08452606201172,
+            172.4583740234375,
+            55.04315185546875,
+            144.5240020751953,
+            74.31314086914063,
+            115.36865234375
+          ],
+          "confidence": 0.8933584094047546,
+          "index": 2,
+          "text": "必"
+        },
+        {
+          "bounding_box": [
+            76.25555419921875,
+            216.6848907470703,
+            32.067718505859375,
+            273.0,
+            0.0,
+            245.2559051513672,
+            28.21954345703125,
+            187.10585021972656
+          ],
+          "confidence": 0.7368781566619873,
+          "index": 3,
+          "text": "间"
+        }
+      ]
+    }
+  ]
+}

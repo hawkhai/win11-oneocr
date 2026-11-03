@@ -1,0 +1,270 @@
+ocr-classics/images/cards-template-input.jpg passed
+ocr-classics/images/cn-english-book-cover.jpeg passed
+ocr-classics/images/cn-single-line-mixed.jpg expected_size_error
+ocr-classics/images/cn-traditional-sutra.jpg passed
+ocr-classics/images/cn-train-ticket.jpeg passed
+ocr-classics/images/cn-vertical-ad.png passed
+ocr-classics/images/cn-wrapped-paragraph.png passed
+ocr-classics/images/dewarp-cooking-page.jpg passed
+ocr-classics/images/dewarp-thesis-table.jpg passed
+ocr-classics/images/dewarp-thesis-wordlist.jpg passed
+ocr-classics/images/digits-thermostat.jpg passed
+ocr-classics/images/easy-health-poster.png passed
+ocr-classics/images/easy-minato-sign.jpg passed
+ocr-classics/images/easy-paris-signposts.jpg passed
+ocr-classics/images/easy-yuyuan-road.jpg passed
+ocr-classics/images/pp-garden-sign.jpg passed
+ocr-classics/images/pp-lab-table.jpg passed
+ocr-classics/images/pp-math-exam.jpg passed
+ocr-classics/images/pp-product-description.jpg passed
+ocr-classics/images/pp-vertical-plaque.jpg passed
+ocr-classics/images/pp-wash-label.jpg passed
+ocr-classics/images/psm-designer-word.png passed
+ocr-classics/images/psm-license-plate.png passed
+ocr-classics/images/psm-old-engine-title.png passed
+ocr-classics/images/psm-sherlock-page.png passed
+ocr-classics/images/psm-sparse-web-menu.png passed
+ocr-classics/images/psm-whole-foods-receipt.png passed
+ocr-classics/images/quality-heavy-ink.png passed
+ocr-classics/images/quality-noisy-fraktur.png passed
+ocr-classics/images/structure-paper-table.jpg passed
+ocr-classics/references/cards-result.jpg passed
+ocr-classics/references/cn-ticket-result.jpg passed
+ocr-classics/references/cn-traditional-result.jpg passed
+ocr-classics/references/cn-vertical-result.jpg passed
+ocr-classics/references/dewarp-cooking-comparison.png passed
+ocr-classics/references/dewarp-thesis-a-comparison.png passed
+ocr-classics/references/dewarp-thesis-b-comparison.png passed
+ocr-classics/references/digits-result.jpg passed
+ocr-classics/references/digits-warped.png passed
+ocr-classics/references/pp-product-result.jpg passed
+ocr-classics/references/quality-binarisation-comparison.png passed
+ocr-classics/references/quality-border-comparison.png expected_channel_error
+ocr-classics/references/quality-erosion-comparison.png passed
+ocr-classics/references/quality-skew-comparison.png passed
+ocr-classics/references/receipt-edges.png passed
+ocr-classics/references/receipt-perspective.png passed
+ocr-classics/thumbnails/cards-template-input.jpg passed
+ocr-classics/thumbnails/chinese-layout.jpg passed
+ocr-classics/thumbnails/cn-english-book-cover.jpg passed
+ocr-classics/thumbnails/cn-single-line-mixed.jpg expected_size_error
+ocr-classics/thumbnails/cn-traditional-sutra.jpg passed
+ocr-classics/thumbnails/cn-train-ticket.jpg passed
+ocr-classics/thumbnails/cn-vertical-ad.jpg passed
+ocr-classics/thumbnails/cn-wrapped-paragraph.jpg passed
+ocr-classics/thumbnails/dewarp-cooking-page.jpg passed
+ocr-classics/thumbnails/dewarp-thesis-table.jpg passed
+ocr-classics/thumbnails/dewarp-thesis-wordlist.jpg passed
+ocr-classics/thumbnails/digits-thermostat.jpg passed
+ocr-classics/thumbnails/easy-health-poster.jpg passed
+ocr-classics/thumbnails/easy-minato-sign.jpg passed
+ocr-classics/thumbnails/easy-paris-signposts.jpg passed
+ocr-classics/thumbnails/easy-yuyuan-road.jpg passed
+ocr-classics/thumbnails/image-quality.jpg passed
+ocr-classics/thumbnails/layout-segmentation.jpg passed
+ocr-classics/thumbnails/overview.jpg passed
+ocr-classics/thumbnails/pp-garden-sign.jpg passed
+ocr-classics/thumbnails/pp-lab-table.jpg passed
+ocr-classics/thumbnails/pp-math-exam.jpg passed
+ocr-classics/thumbnails/pp-product-description.jpg passed
+ocr-classics/thumbnails/pp-vertical-plaque.jpg passed
+ocr-classics/thumbnails/pp-wash-label.jpg passed
+ocr-classics/thumbnails/psm-designer-word.jpg passed
+ocr-classics/thumbnails/psm-license-plate.jpg passed
+ocr-classics/thumbnails/psm-old-engine-title.jpg passed
+ocr-classics/thumbnails/psm-sherlock-page.jpg passed
+ocr-classics/thumbnails/psm-sparse-web-menu.jpg passed
+ocr-classics/thumbnails/psm-whole-foods-receipt.jpg passed
+ocr-classics/thumbnails/quality-heavy-ink.jpg passed
+ocr-classics/thumbnails/quality-noisy-fraktur.jpg passed
+ocr-classics/thumbnails/receipts-labels.jpg passed
+ocr-classics/thumbnails/scene-text.jpg passed
+ocr-classics/thumbnails/special-digits.jpg passed
+ocr-classics/thumbnails/structure-paper-table.jpg passed
+ocr-classics/thumbnails/tables.jpg passed
+ocr-classics/thumbnails/warped-pages.jpg passed
+oneocr-boundaries/curved-line.png passed
+oneocr-boundaries/near-collinear-line.png passed
+oneocr-boundaries/normalizer-grid.png passed
+oneocr-boundaries/very-long-line.png passed
+oneocr-capabilities/azure-dog-negative.jpg passed
+oneocr-capabilities/azure-multilingual.png passed
+oneocr-capabilities/azure-printed-photo.jpg passed
+oneocr-capabilities/blank-unicode-空白-😀.png passed
+oneocr-capabilities/dark-contact-screenshot.png passed
+oneocr-capabilities/low-contrast-small-blur.png passed
+oneocr-capabilities/mixed-nine-scripts.png passed
+oneocr-capabilities/printed-and-real-handwriting.png passed
+oneocr-capabilities/script-arabic.png passed
+oneocr-capabilities/script-cjk.png passed
+oneocr-capabilities/script-cyrillic.png passed
+oneocr-capabilities/script-devanagari.png passed
+oneocr-capabilities/script-greek.png passed
+oneocr-capabilities/script-hebrew.png passed
+oneocr-capabilities/script-latin.png passed
+oneocr-capabilities/script-tamil.png passed
+oneocr-capabilities/script-thai.png passed
+oneocr-capabilities/single-table.png passed
+oneocr-parity/handwriting-azure.jpg passed
+oneocr-parity/handwriting-rotate-0.5.png passed
+oneocr-parity/handwriting-rotate-10.png passed
+oneocr-parity/handwriting-rotate-180.png passed
+oneocr-parity/handwriting-rotate-270.png passed
+oneocr-parity/handwriting-rotate-3.png passed
+oneocr-parity/handwriting-rotate-90.png passed
+options-handwriting/parameter-blank.png passed
+options-handwriting/red-calligraphy-jason-rotate-10.png passed
+options-handwriting/red-calligraphy-jason-rotate-180.png passed
+options-handwriting/red-calligraphy-jason-rotate-270.png passed
+options-handwriting/red-calligraphy-jason-rotate-90.png passed
+options-handwriting/red-calligraphy-jason.jpg passed
+options-handwriting/red-grid-jason-rotate-10.png passed
+options-handwriting/red-grid-jason-rotate-180.png passed
+options-handwriting/red-grid-jason-rotate-270.png passed
+options-handwriting/red-grid-jason-rotate-90.png passed
+options-handwriting/red-grid-jason.jpg passed
+options-handwriting/twelve-printed-lines.png passed
+latin-18 passed 1.304
+latin-36 passed 1.198
+latin-rotate-0.5 passed 1.156
+latin-rotate-3 passed 1.156
+latin-rotate-10 passed 1.528
+latin-rotate-90 passed 1.551
+latin-rotate-180 passed 1.28
+latin-rotate-270 passed 1.239
+cjk-18 passed 1.32
+cjk-36 passed 1.237
+cjk-rotate-0.5 passed 1.238
+cjk-rotate-3 passed 1.237
+cjk-rotate-10 passed 1.319
+cjk-rotate-90 passed 1.217
+cjk-rotate-180 passed 1.238
+cjk-rotate-270 passed 1.217
+cyrillic-36 passed 1.156
+arabic-36 passed 1.136
+devanagari-36 passed 1.096
+hebrew-36 passed 1.095
+thai-36 passed 1.115
+tamil-36 passed 1.156
+greek-36 passed 1.136
+blank passed 1.014
+透明路径-emoji-😀 passed 1.115
+multi-column passed 1.156
+vertical-cjk passed 1.257
+{"passed": true, "expected_lines": 106, "actual_lines": 106, "same_position_text_matches": 106, "failure_count": 0, "tolerances": {"coordinates_px": 1, "angle_degrees": 0.1, "confidence": 0.001}}
+twelve-printed-lines-m1-r1152x768 True
+twelve-printed-lines-m1-r640x384 True
+twelve-printed-lines-m1-r320x192 True
+twelve-printed-lines-m1-r768x512 True
+twelve-printed-lines-m1-r33x65 True
+twelve-printed-lines-m2-r1152x768 True
+twelve-printed-lines-m2-r640x384 True
+twelve-printed-lines-m2-r320x192 True
+twelve-printed-lines-m2-r768x512 True
+twelve-printed-lines-m2-r33x65 True
+twelve-printed-lines-m3-r1152x768 True
+twelve-printed-lines-m3-r640x384 True
+twelve-printed-lines-m3-r320x192 True
+twelve-printed-lines-m3-r768x512 True
+twelve-printed-lines-m3-r33x65 True
+twelve-printed-lines-m4-r1152x768 True
+twelve-printed-lines-m4-r640x384 True
+twelve-printed-lines-m4-r320x192 True
+twelve-printed-lines-m4-r768x512 True
+twelve-printed-lines-m4-r33x65 True
+twelve-printed-lines-m5-r1152x768 True
+twelve-printed-lines-m5-r640x384 True
+twelve-printed-lines-m5-r320x192 True
+twelve-printed-lines-m5-r768x512 True
+twelve-printed-lines-m5-r33x65 True
+twelve-printed-lines-m7-r1152x768 True
+twelve-printed-lines-m7-r640x384 True
+twelve-printed-lines-m7-r320x192 True
+twelve-printed-lines-m7-r768x512 True
+twelve-printed-lines-m7-r33x65 True
+twelve-printed-lines-m9-r1152x768 True
+twelve-printed-lines-m9-r640x384 True
+twelve-printed-lines-m9-r320x192 True
+twelve-printed-lines-m9-r768x512 True
+twelve-printed-lines-m9-r33x65 True
+twelve-printed-lines-m11-r1152x768 True
+twelve-printed-lines-m11-r640x384 True
+twelve-printed-lines-m11-r320x192 True
+twelve-printed-lines-m11-r768x512 True
+twelve-printed-lines-m11-r33x65 True
+twelve-printed-lines-m32-r1152x768 True
+twelve-printed-lines-m32-r640x384 True
+twelve-printed-lines-m32-r320x192 True
+twelve-printed-lines-m32-r768x512 True
+twelve-printed-lines-m32-r33x65 True
+twelve-printed-lines-m999-r1152x768 True
+twelve-printed-lines-m999-r640x384 True
+twelve-printed-lines-m999-r320x192 True
+twelve-printed-lines-m999-r768x512 True
+twelve-printed-lines-m999-r33x65 True
+twelve-printed-lines-m1000-r1152x768 True
+twelve-printed-lines-m1000-r640x384 True
+twelve-printed-lines-m1000-r320x192 True
+twelve-printed-lines-m1000-r768x512 True
+twelve-printed-lines-m1000-r33x65 True
+red-grid-jason-m1-r640x384 True
+red-grid-jason-m5-r1152x768 True
+red-grid-jason-m7-r768x512 True
+red-calligraphy-jason-m1-r640x384 True
+red-calligraphy-jason-m5-r1152x768 True
+red-calligraphy-jason-m7-r768x512 True
+twelve-printed-lines-m0-r640x384 True
+twelve-printed-lines-m2-r0x0 True
+parameter-blank-m1-r32x32 True
+parameter-blank-m1-r1152x768 True
+parameter-blank-m1-r1152x767 True
+parameter-blank-m1-r1151x768 True
+red-grid-jason-rotate-90-m1-r1152x768 True
+red-grid-jason-rotate-90-m5-r640x384 True
+red-grid-jason-rotate-90-m6-r768x512 True
+red-grid-jason-rotate-90-m1000-r33x65 True
+red-grid-jason-rotate-180-m1-r1152x768 True
+red-grid-jason-rotate-180-m5-r640x384 True
+red-grid-jason-rotate-180-m6-r768x512 True
+red-grid-jason-rotate-180-m1000-r33x65 True
+red-grid-jason-rotate-270-m1-r1152x768 True
+red-grid-jason-rotate-270-m5-r640x384 True
+red-grid-jason-rotate-270-m6-r768x512 True
+red-grid-jason-rotate-270-m1000-r33x65 True
+red-grid-jason-rotate-10-m1-r1152x768 True
+red-grid-jason-rotate-10-m5-r640x384 True
+red-grid-jason-rotate-10-m6-r768x512 True
+red-grid-jason-rotate-10-m1000-r33x65 True
+red-calligraphy-jason-rotate-90-m1-r1152x768 True
+red-calligraphy-jason-rotate-90-m5-r640x384 True
+red-calligraphy-jason-rotate-90-m6-r768x512 True
+red-calligraphy-jason-rotate-90-m1000-r33x65 True
+red-calligraphy-jason-rotate-180-m1-r1152x768 True
+red-calligraphy-jason-rotate-180-m5-r640x384 True
+red-calligraphy-jason-rotate-180-m6-r768x512 True
+red-calligraphy-jason-rotate-180-m1000-r33x65 True
+red-calligraphy-jason-rotate-270-m1-r1152x768 True
+red-calligraphy-jason-rotate-270-m5-r640x384 True
+red-calligraphy-jason-rotate-270-m6-r768x512 True
+red-calligraphy-jason-rotate-270-m1000-r33x65 True
+red-calligraphy-jason-rotate-10-m1-r1152x768 True
+red-calligraphy-jason-rotate-10-m5-r640x384 True
+red-calligraphy-jason-rotate-10-m6-r768x512 True
+red-calligraphy-jason-rotate-10-m1000-r33x65 True
+arabic-36-m1-r640x384 True
+arabic-36-m2-r1151x767 True
+arabic-36-m0-r320x192 True
+hebrew-36-m1-r640x384 True
+hebrew-36-m2-r1151x767 True
+hebrew-36-m0-r320x192 True
+devanagari-36-m1-r640x384 True
+devanagari-36-m2-r1151x767 True
+devanagari-36-m0-r320x192 True
+thai-36-m1-r640x384 True
+thai-36-m2-r1151x767 True
+thai-36-m0-r320x192 True
+multi-column-m1-r640x384 True
+multi-column-m5-r1151x767 True
+vertical-cjk-m1-r640x384 True
+vertical-cjk-m5-r1151x767 True
+{"passed": true, "full_regression": true, "cases": 269, "passed_cases": 269, "recognition_output_cases": 266, "expected_rejections": 3, "comparator_sha256": "06d137cc93680f766031d783da9526064808fea1135124348e180bb8607f4869", "model_manifest_sha256": "8e6d5b973aad14590890ce78de39e5414b7297df4350d65e7a2990ab9b9c929a", "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155", "binary_sha256": "da5db82b8f0c9abaa9fd5542def0139815bc3af088d7d71ee702bdd61d887808", "reference": {"model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155", "book_baseline": "reports/parameter-expansion-2026-11-04/reference/book-legacy.json", "all_samples_baseline": "reports/parameter-expansion-2026-11-04/reference/legacy", "corpus_baseline": "reports/parameter-expansion-2026-11-04/reference/corpus-legacy", "legacy_binary_dir": "bin/photos-2026.11090.22001.0", "report": "reports/parameter-expansion-2026-11-04/reference/README.md", "parameter_manifest": "research/parameter-cases-2026-11-04.json", "parameter_manifest_sha256": "e88eb181285e4357e4e4af59d39ca657bf75e8001764aa34e3f17fe3cb922267", "parameter_baseline": "reports/parameter-expansion-2026-11-04/reference/parameters"}}

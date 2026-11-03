@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "fresh_inference": true,
+  "cases_per_environment": 269,
+  "passed_cases": 538,
+  "recognition_outputs": 532,
+  "expected_rejections": 6,
+  "clean_source_export": "tracked Git index, without local build/work/research-Python directories",
+  "external_dependencies_supplied_explicitly": true,
+  "windows_ctest": 26,
+  "linux_ctest": 26,
+  "python_full_suite_tests": 67,
+  "dependency_archives_or_new_runtime_binaries_committed": false,
+  "production_cpp_model_and_registered_scope_changed": false,
+  "staged_runtime_replaced": false,
+  "wasm_is_acceptance_gate": false,
+  "stop_after_local_commit_and_verified_packages": true,
+  "other_platforms_remain_unverified": true
+}

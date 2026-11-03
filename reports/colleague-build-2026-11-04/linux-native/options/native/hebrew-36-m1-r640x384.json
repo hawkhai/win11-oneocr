@@ -1,0 +1,85 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/research/case/corpus/hebrew-36.png",
+  "image": {
+    "height": 220,
+    "step": 4000,
+    "width": 1000
+  },
+  "image_angle": 359.6492004394531,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        26.0,
+        42.0,
+        271.0,
+        41.0,
+        271.0,
+        76.0,
+        26.0,
+        78.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "2026 םלוע םולש",
+      "word_count": 3,
+      "words": [
+        {
+          "bounding_box": [
+            191.3724822998047,
+            42.29053497314453,
+            272.0,
+            41.52374267578125,
+            272.0,
+            77.59761047363281,
+            190.36045837402344,
+            77.62862396240234
+          ],
+          "confidence": 0.9791944026947021,
+          "index": 0,
+          "text": "2026"
+        },
+        {
+          "bounding_box": [
+            113.47767639160156,
+            43.029380798339844,
+            177.7266845703125,
+            42.420162200927734,
+            176.71466064453125,
+            77.59173583984375,
+            112.46564483642578,
+            77.3658447265625
+          ],
+          "confidence": 0.8613823652267456,
+          "index": 1,
+          "text": "םלוע"
+        },
+        {
+          "bounding_box": [
+            27.622787475585938,
+            43.8392219543457,
+            100.9690170288086,
+            43.14763641357422,
+            99.95698547363281,
+            77.28925323486328,
+            26.61075782775879,
+            76.76040649414063
+          ],
+          "confidence": 0.8043354153633118,
+          "index": 2,
+          "text": "םולש"
+        }
+      ]
+    }
+  ]
+}

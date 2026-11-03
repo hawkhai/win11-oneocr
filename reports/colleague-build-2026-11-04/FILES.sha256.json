@@ -1,0 +1,4402 @@
+{
+  "evidence/bindings.json": {
+    "sha256": "1ec70193d07db25b5cd9ccd38814ba93ac2e26de7f36666aa86bd901c53f7c5c",
+    "size": 1417
+  },
+  "evidence/case-review.json": {
+    "sha256": "00cdab11a1edf22a970f1ff95f960d56f9da4e7b7486a3dbb3533401c468ae4c",
+    "size": 958
+  },
+  "evidence/execution-cases.json": {
+    "sha256": "2d4127cfce1756dfdf2ae2317705dd6b32c13e8aff29cb2c0c76f259c46d9de2",
+    "size": 145073
+  },
+  "evidence/external-dependencies.json": {
+    "sha256": "7fcb4fabb6a0e05d492b1bd006e389241a9846f7ec22b404ec83f84491c2aa9a",
+    "size": 4958
+  },
+  "evidence/installed-linux-book.json": {
+    "sha256": "46eaf77a6383458dca886c92537541f4f7651d9234f3b22fbcc3c460397b3a43",
+    "size": 244020
+  },
+  "evidence/installed-linux-book.parity.json": {
+    "sha256": "4ecf845a84426207d65e799d24eb835736ac525c9307b3daa367a54a789f892b",
+    "size": 255
+  },
+  "evidence/installed-linux.log": {
+    "sha256": "de0e29b5c384bb943907f17fba7fe251d9f3cfc7754779b06f355c893ea48407",
+    "size": 4156
+  },
+  "evidence/installed-windows-book.json": {
+    "sha256": "e5831912b3afc68835ae6b7f96ff0f49bb91b6d92283db2e905fa4cbc92507bf",
+    "size": 244018
+  },
+  "evidence/installed-windows-book.parity.json": {
+    "sha256": "4ecf845a84426207d65e799d24eb835736ac525c9307b3daa367a54a789f892b",
+    "size": 255
+  },
+  "evidence/installed-windows.log": {
+    "sha256": "0976dfd3fd72dadd0958740cf8d2ecf3b8af6f2b6c679b903f767e3b640a931f",
+    "size": 3933
+  },
+  "evidence/linux-build.log": {
+    "sha256": "339f2be58f6082811c28a4414334dfa1086d7011a8557c0588b204c99850cd0b",
+    "size": 3614175
+  },
+  "evidence/linux-CMakeCache.txt": {
+    "sha256": "37916afd55da78a3d498f85e2ad0fb59a161dd4426ff21caefae104f25331a24",
+    "size": 137783
+  },
+  "evidence/linux-ctest.log": {
+    "sha256": "63324fdd875b89c38bf9379ee81cc4e47c519a7c3614a7c062b295053289bf9a",
+    "size": 25470
+  },
+  "evidence/linux-native.log": {
+    "sha256": "944cb80ab8b854ce20447e6c402b586098a37f9fd2bf4d2482e5c63a2c1c52dd",
+    "size": 13423
+  },
+  "evidence/missing-dependency.json": {
+    "sha256": "ffce43c9d089eeff0d5d15c5c61b8624b3d25a1b272bfc4fd7dc628447adefe2",
+    "size": 953
+  },
+  "evidence/python-full.json": {
+    "sha256": "8db56803403e2dc717f40c73209d332d5c92acb41e796904fd73c502b010ecae",
+    "size": 442
+  },
+  "evidence/python-full.log": {
+    "sha256": "50a6bed26fcdf876cecddbd524acd7bb518f0019834c39a879c20de8a37af423",
+    "size": 9763
+  },
+  "evidence/review-build-results.py": {
+    "sha256": "1f3e043addedad51279cd6a019b9d57d4326b7c1dac56287470bbdd061653ca0",
+    "size": 5421
+  },
+  "evidence/source-bindings.json": {
+    "sha256": "909d4271e5a450878632c6f14addd3f6b6d89db1d56c0f255f785d6020bed21f",
+    "size": 8903
+  },
+  "evidence/unit-tests.json": {
+    "sha256": "35fa56d3bc7ede99a8eb8d80147d456eb871c01062ee30d2685dfb10f203cf30",
+    "size": 311
+  },
+  "evidence/windows-build.log": {
+    "sha256": "cc3f0cc60d54d08391efddbf4b127fc47d429f8c8b7b036d587423e1063da65d",
+    "size": 34384
+  },
+  "evidence/windows-CMakeCache.txt": {
+    "sha256": "563e9e030b6ac2e770f4c5c8ef71cf4329f3e619453f9bddcb32644646f84d3e",
+    "size": 127713
+  },
+  "evidence/windows-ctest.log": {
+    "sha256": "552b9909ec9d45c870159e489202ed84a90a7b3f7a6930a8ab150f7cd63c5ae2",
+    "size": 26508
+  },
+  "evidence/windows-native.log": {
+    "sha256": "468573e1cea0d1be81336f32df9ffa62cf0d5bd9f4ac29097d21a6aa9e138386",
+    "size": 13420
+  },
+  "linux-native/all-samples/024e54a6c8e3ba17.parity.json": {
+    "sha256": "a7d4ff2411a3f446600f26f240eb6c0cf6077180083286c9f31910137a44a65e",
+    "size": 238
+  },
+  "linux-native/all-samples/0486f0c2e5664aed.parity.json": {
+    "sha256": "8c03f9f21fbbc329c0533f4b726ddfbccbc0ccca785ac40b1995ce46581866f4",
+    "size": 241
+  },
+  "linux-native/all-samples/0582df7394486480.parity.json": {
+    "sha256": "67a198960a0e3f279c88507b102b634978b2c0f79a57e484d36bcd5d6102c15a",
+    "size": 241
+  },
+  "linux-native/all-samples/058949810e7c76d3.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/0676d3f4ef6c5e2a.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/0b6fd6de5d12d93c.parity.json": {
+    "sha256": "dcd499baf3803264e2c7104f8a3f4eec67e3e4adae4c0dedf69aab8a9fbe6116",
+    "size": 238
+  },
+  "linux-native/all-samples/0cbc944c1fac881f.parity.json": {
+    "sha256": "6812f59f9d69145db00974fdb8eea3a32e2aeb1931c68b832ead987d6d0333c1",
+    "size": 241
+  },
+  "linux-native/all-samples/0e06c211cb4a4831.parity.json": {
+    "sha256": "d179c903331702734e1aa447bf55d637e6547b1ae14017d98dd8b7de3d4a279e",
+    "size": 244
+  },
+  "linux-native/all-samples/0f2b4483dc0e1c98.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/all-samples/0fc39af69da4cfed.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/all-samples/133a8c148862ce3a.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/all-samples/1460619f37acbd0c.parity.json": {
+    "sha256": "6812f59f9d69145db00974fdb8eea3a32e2aeb1931c68b832ead987d6d0333c1",
+    "size": 241
+  },
+  "linux-native/all-samples/14f564d2b7d2e446.parity.json": {
+    "sha256": "8c7780d88503a5b719ea6e34bc45de0def597406e7b9c4268dd4a0d924ec01ca",
+    "size": 238
+  },
+  "linux-native/all-samples/1aad6147b578f344.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/all-samples/1ea42cacfd82f6c0.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/203573ceb1873d5c.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/224ffeac6e0cd92d.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/all-samples/280528b4b1cb14b3.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/all-samples/28e79bff204857cf.parity.json": {
+    "sha256": "9e96540d8317ecc0e5e8e0bcb829d0a8b8979f357342fac14108acbea9a9737d",
+    "size": 241
+  },
+  "linux-native/all-samples/2c2835cf707a4fe6.parity.json": {
+    "sha256": "164c7c4174d2a9104a2d5a51e106fc835b6c5b734df231fda3a755caac87c6b7",
+    "size": 241
+  },
+  "linux-native/all-samples/2db7bd9b6595c479.parity.json": {
+    "sha256": "e67df85aff79fee6505640d4854bd3daa48ecf390906110677bf9d1e1fca41b0",
+    "size": 241
+  },
+  "linux-native/all-samples/2f4730c5e82e18ff.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/3255119646d641ba.parity.json": {
+    "sha256": "944d28d435d201b4460c72035cf5c38460d714e72cba75bd77a4cb01e3b0bf32",
+    "size": 241
+  },
+  "linux-native/all-samples/3295ba0789edc763.parity.json": {
+    "sha256": "2069ce331c0a06b074467ee3124b055db8c1cc954607cba43f63fe8db99d3a4f",
+    "size": 238
+  },
+  "linux-native/all-samples/35b9cf211491fc5b.parity.json": {
+    "sha256": "8f7b7faa35ee077f49d39cc7c54593bc8b034a5e35061b40afdd6651e57d4ec1",
+    "size": 238
+  },
+  "linux-native/all-samples/39a29be9779394c5.parity.json": {
+    "sha256": "e67df85aff79fee6505640d4854bd3daa48ecf390906110677bf9d1e1fca41b0",
+    "size": 241
+  },
+  "linux-native/all-samples/3aabaeed287f6784.parity.json": {
+    "sha256": "1dee512b6fb07200605e0e7d772fda893972d05d691d3d4598614561dc42ce9e",
+    "size": 244
+  },
+  "linux-native/all-samples/3c6e7c7ab6144e27.parity.json": {
+    "sha256": "5c703cbcae0cdfc72e3983ffa8f0a9e46778995f47e1e66819a106840639789b",
+    "size": 241
+  },
+  "linux-native/all-samples/4070a7afd9a7184b.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/40a0423bfcae386f.parity.json": {
+    "sha256": "e2b05a5e4732512e03ee83367a6efdaba1d66a20b4759a5c3312e111b1cde972",
+    "size": 241
+  },
+  "linux-native/all-samples/41b45e5a7c1f065c.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/all-samples/426c4c4b4327f07c.parity.json": {
+    "sha256": "d8be9f2e022d4a7d7f86951181dd8af9b2bf4549f11a0a5120da2f87a6b8cb85",
+    "size": 241
+  },
+  "linux-native/all-samples/44d499f3f15ffc62.parity.json": {
+    "sha256": "8f7b7faa35ee077f49d39cc7c54593bc8b034a5e35061b40afdd6651e57d4ec1",
+    "size": 238
+  },
+  "linux-native/all-samples/456fa06428e1e12f.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/all-samples/493754a016f2232e.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/4a2cab3fdba7faea.parity.json": {
+    "sha256": "5b45453d958808a0c293558703d13184ffe01317a8bb7e63b961f1615cc7ebea",
+    "size": 244
+  },
+  "linux-native/all-samples/4b43a6f478545d70.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/4cb3c7f3a7eae8bb.parity.json": {
+    "sha256": "6811e1dbb49249f2a26af61ccae8edd87491a2b130543f0133d5a4555dea6c16",
+    "size": 241
+  },
+  "linux-native/all-samples/4f45cf0e51f46a54.parity.json": {
+    "sha256": "19f1bf408374b6cf985230e88bcec1dfa2877dd81e44df72a0df0ebf9c8fe061",
+    "size": 241
+  },
+  "linux-native/all-samples/4f4c989c97595b6e.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/all-samples/4fceece9f2d76a6e.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/512b352f18af3f4f.parity.json": {
+    "sha256": "1307ec6696ea00f5b6e1eb825815700e5c870acfcb391ee14030788af34a2d7c",
+    "size": 241
+  },
+  "linux-native/all-samples/540490b03d22b577.parity.json": {
+    "sha256": "f264dc013bcb3775bdf687ec50f8b897e2bb1fba3f819d372253cd8f27a21342",
+    "size": 241
+  },
+  "linux-native/all-samples/55932e69942ed683.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/5a422da9a529a336.parity.json": {
+    "sha256": "e2b05a5e4732512e03ee83367a6efdaba1d66a20b4759a5c3312e111b1cde972",
+    "size": 241
+  },
+  "linux-native/all-samples/5f9d77976f578583.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/all-samples/5fa29af9e63fefc2.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/60f7669b6fa86751.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/640bb28cd64c2e5b.parity.json": {
+    "sha256": "8f7b7faa35ee077f49d39cc7c54593bc8b034a5e35061b40afdd6651e57d4ec1",
+    "size": 238
+  },
+  "linux-native/all-samples/6692328598e9c3a8.parity.json": {
+    "sha256": "f264dc013bcb3775bdf687ec50f8b897e2bb1fba3f819d372253cd8f27a21342",
+    "size": 241
+  },
+  "linux-native/all-samples/6784152fa17f8d76.parity.json": {
+    "sha256": "1307ec6696ea00f5b6e1eb825815700e5c870acfcb391ee14030788af34a2d7c",
+    "size": 241
+  },
+  "linux-native/all-samples/6a86cb9011438813.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/71fe5f6e6888b73b.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/728b694ae01441a4.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/all-samples/7750735bcbce34ec.parity.json": {
+    "sha256": "b1c9df1c187d0aeb7bd3db28700f5346ce5e3ee0945486cdae10bd72e1b96656",
+    "size": 241
+  },
+  "linux-native/all-samples/7d60dfc27e54a03b.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/all-samples/8229419c872341b9.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/83a365509f1cc2b7.parity.json": {
+    "sha256": "8f7b7faa35ee077f49d39cc7c54593bc8b034a5e35061b40afdd6651e57d4ec1",
+    "size": 238
+  },
+  "linux-native/all-samples/86a7ffe5513e5633.parity.json": {
+    "sha256": "f264dc013bcb3775bdf687ec50f8b897e2bb1fba3f819d372253cd8f27a21342",
+    "size": 241
+  },
+  "linux-native/all-samples/88d6f6f571abb9ad.parity.json": {
+    "sha256": "1307ec6696ea00f5b6e1eb825815700e5c870acfcb391ee14030788af34a2d7c",
+    "size": 241
+  },
+  "linux-native/all-samples/8d1e2d06c5f24990.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/all-samples/903c40f10a92c762.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/all-samples/913b6e2fbe4c0d3b.parity.json": {
+    "sha256": "94b75f83f8afd781e653a0cfe1760bb798794a4d1330961078ac614f39956fc3",
+    "size": 241
+  },
+  "linux-native/all-samples/914953ff8fb9b879.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/all-samples/92de0a88437e32a3.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/946c5faeaa0f2ec5.parity.json": {
+    "sha256": "c7aa340d9fcf0dd797822d983d669876fa9b93dec49a642bd3bd8c8f6418e63d",
+    "size": 238
+  },
+  "linux-native/all-samples/9a0e9586ac3fe4e2.parity.json": {
+    "sha256": "c7aa340d9fcf0dd797822d983d669876fa9b93dec49a642bd3bd8c8f6418e63d",
+    "size": 238
+  },
+  "linux-native/all-samples/9b462fed1772311b.parity.json": {
+    "sha256": "67a198960a0e3f279c88507b102b634978b2c0f79a57e484d36bcd5d6102c15a",
+    "size": 241
+  },
+  "linux-native/all-samples/9d004236328aca8f.parity.json": {
+    "sha256": "f264dc013bcb3775bdf687ec50f8b897e2bb1fba3f819d372253cd8f27a21342",
+    "size": 241
+  },
+  "linux-native/all-samples/9d80e98d12d362b3.parity.json": {
+    "sha256": "062f728fd88ff2b5e32e308932e7f532e70110817fa1bd720f7aa4c142a38155",
+    "size": 241
+  },
+  "linux-native/all-samples/9e131b7b56e565db.parity.json": {
+    "sha256": "8c7780d88503a5b719ea6e34bc45de0def597406e7b9c4268dd4a0d924ec01ca",
+    "size": 238
+  },
+  "linux-native/all-samples/9e2ab94f59cf15f8.parity.json": {
+    "sha256": "c6fa3cbb71d2242ad5dd2f2f73ad73170c8933f1f0ceeff4a3ac2086caaeeafb",
+    "size": 241
+  },
+  "linux-native/all-samples/9f735a010e88a648.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/all-samples/a2446851712be525.parity.json": {
+    "sha256": "f5e28ba17013fd98ad85433757002990f0a0ca27bab63a52b1d50b1daab86835",
+    "size": 241
+  },
+  "linux-native/all-samples/a24e31eb0aa23b4f.parity.json": {
+    "sha256": "61471a857faf72c8ee6e0afbb4a0192a3d2e651876b2aa9bd1c385ba3f9b8d44",
+    "size": 241
+  },
+  "linux-native/all-samples/a45fc642aa130558.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/a744c24e96808cb4.parity.json": {
+    "sha256": "57420d1f03e4e01f13e42530c97b285bb85034f3ddeebca508bd6aa53d310e0d",
+    "size": 241
+  },
+  "linux-native/all-samples/a83d2bf9aa769ebd.parity.json": {
+    "sha256": "062f728fd88ff2b5e32e308932e7f532e70110817fa1bd720f7aa4c142a38155",
+    "size": 241
+  },
+  "linux-native/all-samples/a87dd8607e0fda5f.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/all-samples/a9819bb8f9e9f5ef.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/all-samples/a99b928ceb0f443e.parity.json": {
+    "sha256": "f5e28ba17013fd98ad85433757002990f0a0ca27bab63a52b1d50b1daab86835",
+    "size": 241
+  },
+  "linux-native/all-samples/ab78d5d64fd48439.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/all-samples/ab902c56bd93d342.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/all-samples/abad7ae0707ac749.parity.json": {
+    "sha256": "bd581e80e025a08f8fb34ef0996186f218b172cc1f5b16b07dc5343b43f3197c",
+    "size": 241
+  },
+  "linux-native/all-samples/b0d25177b1a8480c.parity.json": {
+    "sha256": "27dc11edea2efcc1ee26f260eede90c87503c58948bcd8c63f9f18152284eb9e",
+    "size": 244
+  },
+  "linux-native/all-samples/b0e62b5268bf3ae1.parity.json": {
+    "sha256": "dcd499baf3803264e2c7104f8a3f4eec67e3e4adae4c0dedf69aab8a9fbe6116",
+    "size": 238
+  },
+  "linux-native/all-samples/b3edaa47ba780e0c.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/all-samples/b563bb5b3e206ad7.parity.json": {
+    "sha256": "f264dc013bcb3775bdf687ec50f8b897e2bb1fba3f819d372253cd8f27a21342",
+    "size": 241
+  },
+  "linux-native/all-samples/bbbd4ae8468a6451.parity.json": {
+    "sha256": "8c7780d88503a5b719ea6e34bc45de0def597406e7b9c4268dd4a0d924ec01ca",
+    "size": 238
+  },
+  "linux-native/all-samples/be771810db2def78.parity.json": {
+    "sha256": "dc8b2f291dffe5288c1836eb0e4c22017714801e365e32b9688698a895cc1c09",
+    "size": 241
+  },
+  "linux-native/all-samples/c062c4f8b726c822.parity.json": {
+    "sha256": "6812f59f9d69145db00974fdb8eea3a32e2aeb1931c68b832ead987d6d0333c1",
+    "size": 241
+  },
+  "linux-native/all-samples/c159f2e4564feb4f.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/c323ed4e5eccd42e.parity.json": {
+    "sha256": "8c03f9f21fbbc329c0533f4b726ddfbccbc0ccca785ac40b1995ce46581866f4",
+    "size": 241
+  },
+  "linux-native/all-samples/c45a727514fb8982.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/all-samples/c777a45d62cce90a.parity.json": {
+    "sha256": "448d85a0b55ab20a351c52598231346795fd066d4cb161192dce86ddb1484739",
+    "size": 241
+  },
+  "linux-native/all-samples/c8564aeddba82f04.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/all-samples/c8cde51505833347.parity.json": {
+    "sha256": "1cf8089972db830e826b7f1f623999482eaa422d208dab5c6a05b588eda5f466",
+    "size": 241
+  },
+  "linux-native/all-samples/c9a092125962e322.parity.json": {
+    "sha256": "c3077fb0496eee1ffa399ceb8a1c8767564d7a48eb64ccf40f7855a80b7bac43",
+    "size": 241
+  },
+  "linux-native/all-samples/c9b8504f28656bb2.parity.json": {
+    "sha256": "8c7780d88503a5b719ea6e34bc45de0def597406e7b9c4268dd4a0d924ec01ca",
+    "size": 238
+  },
+  "linux-native/all-samples/caaf9f2c75e68fb3.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/all-samples/cb5009e20bb1123a.parity.json": {
+    "sha256": "b73a08ab0d491c9ba2ef603ba867703f743453c0a1182412009fb484b0566504",
+    "size": 241
+  },
+  "linux-native/all-samples/cc5c505c9a91f65a.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/all-samples/cc615a3e5cb1499e.parity.json": {
+    "sha256": "8c7780d88503a5b719ea6e34bc45de0def597406e7b9c4268dd4a0d924ec01ca",
+    "size": 238
+  },
+  "linux-native/all-samples/da00952f9e92b062.parity.json": {
+    "sha256": "e2b05a5e4732512e03ee83367a6efdaba1d66a20b4759a5c3312e111b1cde972",
+    "size": 241
+  },
+  "linux-native/all-samples/db4b91782dd3efb7.parity.json": {
+    "sha256": "ff289ff71ecd7107bacbafc9c634d8fbb281b7f2b276b11ef07d97184078a40c",
+    "size": 241
+  },
+  "linux-native/all-samples/de744546e5b8a0e6.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/all-samples/de900bc558f2dca8.parity.json": {
+    "sha256": "8c7780d88503a5b719ea6e34bc45de0def597406e7b9c4268dd4a0d924ec01ca",
+    "size": 238
+  },
+  "linux-native/all-samples/df2560f7906cab6d.parity.json": {
+    "sha256": "f264dc013bcb3775bdf687ec50f8b897e2bb1fba3f819d372253cd8f27a21342",
+    "size": 241
+  },
+  "linux-native/all-samples/e0a96ddd6fe8007f.parity.json": {
+    "sha256": "f5e28ba17013fd98ad85433757002990f0a0ca27bab63a52b1d50b1daab86835",
+    "size": 241
+  },
+  "linux-native/all-samples/e2147debb746e953.parity.json": {
+    "sha256": "8f7b7faa35ee077f49d39cc7c54593bc8b034a5e35061b40afdd6651e57d4ec1",
+    "size": 238
+  },
+  "linux-native/all-samples/e37ba8d39f1765ee.parity.json": {
+    "sha256": "f264dc013bcb3775bdf687ec50f8b897e2bb1fba3f819d372253cd8f27a21342",
+    "size": 241
+  },
+  "linux-native/all-samples/e3d262776302832f.parity.json": {
+    "sha256": "b73a08ab0d491c9ba2ef603ba867703f743453c0a1182412009fb484b0566504",
+    "size": 241
+  },
+  "linux-native/all-samples/e56ebcbad4b3ec61.parity.json": {
+    "sha256": "77a4a6fa7119bb6122f68964b3066eefbc3f1f211653c290e72487df379caa76",
+    "size": 241
+  },
+  "linux-native/all-samples/e6c08e3cc9b0eb2f.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/all-samples/e8417890fea95361.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/all-samples/eae7f502cfea5855.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/all-samples/eb1b381667716066.parity.json": {
+    "sha256": "67a198960a0e3f279c88507b102b634978b2c0f79a57e484d36bcd5d6102c15a",
+    "size": 241
+  },
+  "linux-native/all-samples/eb6e81323fe050ef.parity.json": {
+    "sha256": "77a4a6fa7119bb6122f68964b3066eefbc3f1f211653c290e72487df379caa76",
+    "size": 241
+  },
+  "linux-native/all-samples/ed5b69a9711e3f53.parity.json": {
+    "sha256": "ff289ff71ecd7107bacbafc9c634d8fbb281b7f2b276b11ef07d97184078a40c",
+    "size": 241
+  },
+  "linux-native/all-samples/f06b8315200c1abb.parity.json": {
+    "sha256": "1307ec6696ea00f5b6e1eb825815700e5c870acfcb391ee14030788af34a2d7c",
+    "size": 241
+  },
+  "linux-native/all-samples/f3a0c13bdc84f24b.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/all-samples/f9dcd81f8ca741ba.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/all-samples/fd9577ef8f62f6a7.parity.json": {
+    "sha256": "9e96540d8317ecc0e5e8e0bcb829d0a8b8979f357342fac14108acbea9a9737d",
+    "size": 241
+  },
+  "linux-native/all-samples/native/024e54a6c8e3ba17.json": {
+    "sha256": "45360d960c21e1f03a80559380509b900134e6e4d95eeb1fc94b6966c7f53eb4",
+    "size": 9459
+  },
+  "linux-native/all-samples/native/0486f0c2e5664aed.json": {
+    "sha256": "3ae8db06047a7d046d9083d19a59f2726bb20cacd90719a2e680d8d80dfe449b",
+    "size": 241026
+  },
+  "linux-native/all-samples/native/0582df7394486480.json": {
+    "sha256": "b12ce05afac04952672be7042a2e85c2bd7907fd04550209363f3f32b54a7834",
+    "size": 96783
+  },
+  "linux-native/all-samples/native/058949810e7c76d3.json": {
+    "sha256": "3de12c9fa825e7335c48b2c2dba826b037b58dad5c244ee18a03eefc5e85cd03",
+    "size": 1236
+  },
+  "linux-native/all-samples/native/0676d3f4ef6c5e2a.json": {
+    "sha256": "a6b091f9bb5400d13186383fb9a97a41d1d762810698cdba10f5c85d8f03ec1f",
+    "size": 2476
+  },
+  "linux-native/all-samples/native/0b6fd6de5d12d93c.json": {
+    "sha256": "8f51e5d87c9a7b38b5dfe6135df4825071fd6c21f3dd87568a4c764b9c6d9a37",
+    "size": 16212
+  },
+  "linux-native/all-samples/native/0cbc944c1fac881f.json": {
+    "sha256": "297f5559b61a0e70c0f815624ff8638cfcdb0f3f8786424c0c892305f22ade64",
+    "size": 45223
+  },
+  "linux-native/all-samples/native/0e06c211cb4a4831.json": {
+    "sha256": "a233a3f144a15540c96a24c4b00396383799444138b4176be99a198425138b8f",
+    "size": 152972
+  },
+  "linux-native/all-samples/native/0f2b4483dc0e1c98.json": {
+    "sha256": "b78f4088e2bca97dda31476f8bb3bb3af2265708dd2b924b80c0b2e515db3ccb",
+    "size": 507
+  },
+  "linux-native/all-samples/native/0fc39af69da4cfed.json": {
+    "sha256": "b2d462ce30e190bb14cccc4c01659bba1e43c7c1da0d3b2d5bd8a4356404a519",
+    "size": 5650
+  },
+  "linux-native/all-samples/native/133a8c148862ce3a.json": {
+    "sha256": "cef206d820a44fd40340bc4725d4f8ccd3fb6249ec8c668774d356ee676e18e6",
+    "size": 2340
+  },
+  "linux-native/all-samples/native/1460619f37acbd0c.json": {
+    "sha256": "d3af66428b499b32b6c736d89a227c51e8b8b4e22ce89f101333a12901c22a72",
+    "size": 27875
+  },
+  "linux-native/all-samples/native/14f564d2b7d2e446.json": {
+    "sha256": "dc07fd905e67c992563bf82c8072e972d985b6da457bfb6cff63488ae8a9b92b",
+    "size": 8626
+  },
+  "linux-native/all-samples/native/1aad6147b578f344.json": {
+    "sha256": "99930f084bf7f8d4a66da556bc99cf6e85c1b91bcdc7b2471289f93243240108",
+    "size": 5968
+  },
+  "linux-native/all-samples/native/1ea42cacfd82f6c0.json": {
+    "sha256": "8ad3610983ebeae8c8d0bd940016648b87c0771e39893c009c03525b98f167a5",
+    "size": 3682
+  },
+  "linux-native/all-samples/native/203573ceb1873d5c.json": {
+    "sha256": "8680950c2adcb5d2928ff1c1e2c407b545938eeb88c02293d53442d54e56d98b",
+    "size": 2480
+  },
+  "linux-native/all-samples/native/224ffeac6e0cd92d.json": {
+    "sha256": "320a047409a86e01031df510c7d4db3d8c077720730bc8fd58bed8b6aed029df",
+    "size": 6355
+  },
+  "linux-native/all-samples/native/280528b4b1cb14b3.json": {
+    "sha256": "c194e4b934b238d30f30195a419fed1a7d2e12ee6c503ecdfcc383671ce3d58d",
+    "size": 6361
+  },
+  "linux-native/all-samples/native/28e79bff204857cf.json": {
+    "sha256": "e3be18c3d1c111bcd04ef870a6c3a5748793de31cff948c6a05fb86f6177bbd3",
+    "size": 127994
+  },
+  "linux-native/all-samples/native/2c2835cf707a4fe6.json": {
+    "sha256": "0e4c67dd2e9965f66a51d101ffabc5718b4ed3c9c4da00d62a54d40d53feee6f",
+    "size": 64677
+  },
+  "linux-native/all-samples/native/2db7bd9b6595c479.json": {
+    "sha256": "245118853893b39eaa570cc84b2138e3e390c09f30c89b7fa6d59034477db42d",
+    "size": 38067
+  },
+  "linux-native/all-samples/native/2f4730c5e82e18ff.json": {
+    "sha256": "9d0912eff6af8f6a0f2b749db9fadbda4b7ea196cbbc64c98da4020847c0aad1",
+    "size": 2037
+  },
+  "linux-native/all-samples/native/3255119646d641ba.json": {
+    "sha256": "96cf42ca9f3589b94f5831249caa07e5ae31804f776f7adf11682a008af32518",
+    "size": 105421
+  },
+  "linux-native/all-samples/native/3295ba0789edc763.json": {
+    "sha256": "70db9bb7af42135f3fb119b3dd20a00a8152775bd1533ffad51b2136d71e4a45",
+    "size": 8690
+  },
+  "linux-native/all-samples/native/35b9cf211491fc5b.json": {
+    "sha256": "38ca875039a25b139922dd7fb42d0526792b043e5a7be4f0d324ccd4643bd116",
+    "size": 38227
+  },
+  "linux-native/all-samples/native/39a29be9779394c5.json": {
+    "sha256": "79c844e47c75bb548443742c7d14f8195998c3ed4f270380219119e7d9b880ac",
+    "size": 36047
+  },
+  "linux-native/all-samples/native/3aabaeed287f6784.json": {
+    "sha256": "c35efd040f92162808f1bdd26cac275b25da91f11b888cc7e5ffd1c4ee16856e",
+    "size": 151410
+  },
+  "linux-native/all-samples/native/3c6e7c7ab6144e27.json": {
+    "sha256": "f1deaf48b47b53960b6e3d30570474a1da00cc3e5d388d221e474ea52a1973d8",
+    "size": 86008
+  },
+  "linux-native/all-samples/native/4070a7afd9a7184b.json": {
+    "sha256": "472e58a735a5ddeda35161b4fc38b44193c96e3265bb71f18db4db158a1e10ca",
+    "size": 1178
+  },
+  "linux-native/all-samples/native/40a0423bfcae386f.json": {
+    "sha256": "a36d01daf7e855f49c2dc94208a77118fb084d8a06d114df721a56f956df3585",
+    "size": 36801
+  },
+  "linux-native/all-samples/native/41b45e5a7c1f065c.json": {
+    "sha256": "918973b153cbb5bc6adfccd1dbbe2ac5f1674b5dacdf0bc15876cb370f179358",
+    "size": 5496
+  },
+  "linux-native/all-samples/native/426c4c4b4327f07c.json": {
+    "sha256": "2d286f3e888cd5659b631572fbbb2628673eef8d5aeba4f70b172884214fefb7",
+    "size": 53792
+  },
+  "linux-native/all-samples/native/44d499f3f15ffc62.json": {
+    "sha256": "42e1a4a1caedfed63592b0a30dca8bc4afe1259019c4831eb0102c4c513e181a",
+    "size": 38272
+  },
+  "linux-native/all-samples/native/456fa06428e1e12f.json": {
+    "sha256": "122298af28991956cfc83b85bdf1dd1551f19cd5ae35f2c1515e627767616bb2",
+    "size": 496
+  },
+  "linux-native/all-samples/native/493754a016f2232e.json": {
+    "sha256": "719de1f7c71bfa278b33153c421918571132974c53117272372223c12085dd5b",
+    "size": 8857
+  },
+  "linux-native/all-samples/native/4a2cab3fdba7faea.json": {
+    "sha256": "f28e04bbdb0fae4622650f68a6343eaec308deec522aff72d5673f262e071598",
+    "size": 661151
+  },
+  "linux-native/all-samples/native/4b43a6f478545d70.json": {
+    "sha256": "5dbf237a8faf87cf3ac76794cd8d6d89f748b59c7e87eef880c417c9a31ece7c",
+    "size": 40321
+  },
+  "linux-native/all-samples/native/4cb3c7f3a7eae8bb.json": {
+    "sha256": "4f23a9944edafd8c9cba79e1608a81798d64bf68fb2e1694551945b0d4ec6784",
+    "size": 131719
+  },
+  "linux-native/all-samples/native/4f45cf0e51f46a54.json": {
+    "sha256": "d5a8318e7329f69d9d1f434791de07a93ac0b91d21360852eb226659998d0108",
+    "size": 90165
+  },
+  "linux-native/all-samples/native/4f4c989c97595b6e.json": {
+    "sha256": "53a96741941479d8d5a3e231092dcf80f8cc27de5960e76e1ec2a06c4834db2b",
+    "size": 501
+  },
+  "linux-native/all-samples/native/4fceece9f2d76a6e.json": {
+    "sha256": "d4f05a09b957a210ec4e5b9370fdb481918966259934c027d5b9a3728068a7a7",
+    "size": 2051
+  },
+  "linux-native/all-samples/native/512b352f18af3f4f.json": {
+    "sha256": "01624dc24bec052f4b103e29ebef59d896859cbd76e6a602ab7cb76c289b30d0",
+    "size": 25681
+  },
+  "linux-native/all-samples/native/540490b03d22b577.json": {
+    "sha256": "06aa9c9f41bdf4ed0e703d3e2ad15aad051d6f7d468b5721f0b73207fbafa918",
+    "size": 39217
+  },
+  "linux-native/all-samples/native/55932e69942ed683.json": {
+    "sha256": "1d8003293d9949138a7fdc94ff15042d611ee3b7e9cb291b13810f7adf8331ba",
+    "size": 2066
+  },
+  "linux-native/all-samples/native/5a422da9a529a336.json": {
+    "sha256": "887a1da17454693437e7542f0b7873d3e07d913a016c9c578a548d9e0f20af5a",
+    "size": 38366
+  },
+  "linux-native/all-samples/native/5f9d77976f578583.json": {
+    "sha256": "a37807d05d752face3581941145eb934e2ef645bc39e80ee7853f5cecd0e5999",
+    "size": 6378
+  },
+  "linux-native/all-samples/native/5fa29af9e63fefc2.json": {
+    "sha256": "6d0f0245e955030284fd891450dcc980cfed62cdfc8a2c930a8c6bedee7329b8",
+    "size": 1238
+  },
+  "linux-native/all-samples/native/60f7669b6fa86751.json": {
+    "sha256": "5aecefe48099d83b1c882824b7bc577fa4c9a9401ecedca6debb86bf4e43b805",
+    "size": 2029
+  },
+  "linux-native/all-samples/native/640bb28cd64c2e5b.json": {
+    "sha256": "0f27aedc017f2f725b9118c79cbe03ee419f3c505f86ff4b2a75cebd17d03b1a",
+    "size": 6289
+  },
+  "linux-native/all-samples/native/6692328598e9c3a8.json": {
+    "sha256": "dfbfddf478abc402e06e414759cedffce85b049edbcdf8575ac09180e9230994",
+    "size": 26185
+  },
+  "linux-native/all-samples/native/6784152fa17f8d76.json": {
+    "sha256": "6b7140118905b73a8e96059b1c73fa83bf84b85647e20c31568c788bda5dadad",
+    "size": 40159
+  },
+  "linux-native/all-samples/native/6a86cb9011438813.json": {
+    "sha256": "63be66ef9933411fcab15fee69fc2758d150801f18cf60194ee7268180e162cc",
+    "size": 1244
+  },
+  "linux-native/all-samples/native/71fe5f6e6888b73b.json": {
+    "sha256": "f8647601388ac9b17ff7718114e846d07bc56ab85ce766ff5b0fbcfdd551464c",
+    "size": 2075
+  },
+  "linux-native/all-samples/native/728b694ae01441a4.json": {
+    "sha256": "c4ec17a15be927da8d71e2bd212404be9e7d4f7ac5ee6372a0eb58ed604833dd",
+    "size": 6364
+  },
+  "linux-native/all-samples/native/7750735bcbce34ec.json": {
+    "sha256": "17bcc6f4f4216b0bdac85885abb42af7cbd3bf92df448aea64806afa892b7bf7",
+    "size": 67417
+  },
+  "linux-native/all-samples/native/7d60dfc27e54a03b.json": {
+    "sha256": "0f6654e3581f72513873d72219cf803b2802267051a259c960e5449f0f71ee72",
+    "size": 14729
+  },
+  "linux-native/all-samples/native/8229419c872341b9.json": {
+    "sha256": "7c16de2b35db8d591bbe5cb036942983ac0c9fc86a2601995222728d335e5f2e",
+    "size": 1220
+  },
+  "linux-native/all-samples/native/83a365509f1cc2b7.json": {
+    "sha256": "715e120c013077f05b751162737b3a29fa36a164ab2747de69d85d4adb38cf84",
+    "size": 16474
+  },
+  "linux-native/all-samples/native/86a7ffe5513e5633.json": {
+    "sha256": "360d17cd0d891d62c6382534fdc6d9402b1052e08316b24031ee7a0ca15de95d",
+    "size": 61987
+  },
+  "linux-native/all-samples/native/88d6f6f571abb9ad.json": {
+    "sha256": "7394e277946434ec2fc235c35cab2a3f0bf69066f28a1cab395ddd688f1c9579",
+    "size": 43401
+  },
+  "linux-native/all-samples/native/8d1e2d06c5f24990.json": {
+    "sha256": "5d2bb0eba1bab67ed95dea7b2b85dec52678b4d9ff8ab49edf9b98afc75dbe77",
+    "size": 6339
+  },
+  "linux-native/all-samples/native/903c40f10a92c762.json": {
+    "sha256": "3063599e14ae0cec0b4a995fc6bda4a41e7c38ee78d822197b645e280a2b32a0",
+    "size": 11642
+  },
+  "linux-native/all-samples/native/913b6e2fbe4c0d3b.json": {
+    "sha256": "db51984b2f7f8b8fd5dfb749453a9ae90dbc5327029984d91b605f1ef5ab8a30",
+    "size": 56236
+  },
+  "linux-native/all-samples/native/914953ff8fb9b879.json": {
+    "sha256": "af7f8aa88d11ebf550e71d1c0c7bd93c96aece906c64a345c994c6a51ea682ba",
+    "size": 505
+  },
+  "linux-native/all-samples/native/92de0a88437e32a3.json": {
+    "sha256": "fab29e34a308c898c968e0b2a915e8b19de669906619731ffe692666b29e25d9",
+    "size": 3715
+  },
+  "linux-native/all-samples/native/946c5faeaa0f2ec5.json": {
+    "sha256": "40b93b51bb5e9da292b44da5ddfd8d859e00a27195251ea8e7528b93cf127f3f",
+    "size": 8568
+  },
+  "linux-native/all-samples/native/9a0e9586ac3fe4e2.json": {
+    "sha256": "1f6d72cb09dc957f7c3261de7e832c834a12f1099449e172e894dce9c08d18ad",
+    "size": 8907
+  },
+  "linux-native/all-samples/native/9b462fed1772311b.json": {
+    "sha256": "c8c6d0beeae093130bb9c36abbfe3dc8e94996c9619c99a4ce35f6d5a5d27331",
+    "size": 56727
+  },
+  "linux-native/all-samples/native/9d004236328aca8f.json": {
+    "sha256": "63dbdd4d24f28b755f70cad1dadc9616fb6d776150a7e5ba5d31d070fa99d436",
+    "size": 9817
+  },
+  "linux-native/all-samples/native/9d80e98d12d362b3.json": {
+    "sha256": "d21352d0d9f3bb6eecf51fc87bd6680eaf17c4454f9a9305e6d7f0f8a1a6f1ae",
+    "size": 73528
+  },
+  "linux-native/all-samples/native/9e131b7b56e565db.json": {
+    "sha256": "caffcd277de6a9cd5370c24c37113f50fca3490f286b7158d7cccb89b3dc25b5",
+    "size": 7222
+  },
+  "linux-native/all-samples/native/9e2ab94f59cf15f8.json": {
+    "sha256": "8f10b5e68005d4686b882d7c2baf149121c2919265baaa264c8e7bdd1f204a4f",
+    "size": 49751
+  },
+  "linux-native/all-samples/native/9f735a010e88a648.json": {
+    "sha256": "e854f7279fe52d360dcd7b0cb045588f88cb01c2010fdf32645429c97b082eb0",
+    "size": 508
+  },
+  "linux-native/all-samples/native/a2446851712be525.json": {
+    "sha256": "dc1f51d894d3b08d3d3cb0dde5f2dace3ac24484ddc207a1c743c0bd0b6fb625",
+    "size": 13500
+  },
+  "linux-native/all-samples/native/a24e31eb0aa23b4f.json": {
+    "sha256": "f58412cc70a181966e7270ea8d13792eeb0bfc9c1b9b57f5b27fa5621c22cbbe",
+    "size": 176557
+  },
+  "linux-native/all-samples/native/a45fc642aa130558.json": {
+    "sha256": "cedb10d3d8f7e0743174c48f5981334fbd72ad7f1f2d3a43482676fdf1582e42",
+    "size": 1265
+  },
+  "linux-native/all-samples/native/a744c24e96808cb4.json": {
+    "sha256": "ce23b2c62373c0f72ed00cecba2c2b4fb19cc8b3a805e589db10e98ad9f01297",
+    "size": 300218
+  },
+  "linux-native/all-samples/native/a83d2bf9aa769ebd.json": {
+    "sha256": "8f02f944a074f5605ffff80517e07f61940367e267a1974064509531fbc95df0",
+    "size": 73626
+  },
+  "linux-native/all-samples/native/a87dd8607e0fda5f.json": {
+    "sha256": "a1eb1bcbb0363d0ae50b3e8f1901be4a0e39ffeff77b6069b9fbb9da4083e399",
+    "size": 14633
+  },
+  "linux-native/all-samples/native/a9819bb8f9e9f5ef.json": {
+    "sha256": "350c400db8407110f50e2d58c20672160c6a0cc8b1b92a7a029f7c663a28ca24",
+    "size": 27105
+  },
+  "linux-native/all-samples/native/a99b928ceb0f443e.json": {
+    "sha256": "524c87a45850c162eef0fb250e6b6a9c3fba740901111078803e65c703b2ea9c",
+    "size": 32260
+  },
+  "linux-native/all-samples/native/ab78d5d64fd48439.json": {
+    "sha256": "05e86e10b4c2eeec837ebbab663de8726b26cb440c444f3148cef47822eac9b5",
+    "size": 6334
+  },
+  "linux-native/all-samples/native/ab902c56bd93d342.json": {
+    "sha256": "3ce06b5f4038d9144480388008d3a4d15cab5a7ff00685845240390f71cb3f4b",
+    "size": 10898
+  },
+  "linux-native/all-samples/native/abad7ae0707ac749.json": {
+    "sha256": "936517cd3c489f3c2684eae4e61232d10028c21ed8434616dd3b7fbc08d962b0",
+    "size": 101575
+  },
+  "linux-native/all-samples/native/b0d25177b1a8480c.json": {
+    "sha256": "6df32069beb556aa4f46674bba17453336c3788a7f870d6587fe353fa8a22cfe",
+    "size": 309427
+  },
+  "linux-native/all-samples/native/b0e62b5268bf3ae1.json": {
+    "sha256": "2c36eeb0f84e98c9400249964128be071079f7c4f97e46a4e222c181ea8f7cbf",
+    "size": 37309
+  },
+  "linux-native/all-samples/native/b3edaa47ba780e0c.json": {
+    "sha256": "a14e40f268b14320515d4852b6e385cff48b0a93f174fb3f33f5650454113db3",
+    "size": 27484
+  },
+  "linux-native/all-samples/native/b563bb5b3e206ad7.json": {
+    "sha256": "c4958fe928b257308a9c1dff19a39133edb251c5dc7829e289b5d3f303be0c2e",
+    "size": 21053
+  },
+  "linux-native/all-samples/native/bbbd4ae8468a6451.json": {
+    "sha256": "1e0281228af05c6a52dd4b84655bd719d54ca8fd233944ef611497543911602f",
+    "size": 10740
+  },
+  "linux-native/all-samples/native/be771810db2def78.json": {
+    "sha256": "37ab206f9c74559298a0c5be0e7dcec147e003b5fb263b14108770dddda7116c",
+    "size": 148730
+  },
+  "linux-native/all-samples/native/c062c4f8b726c822.json": {
+    "sha256": "9c6c67db94ba9f33072c8d9c0a43a96992c897e54a642e6e04c86596446bd936",
+    "size": 25069
+  },
+  "linux-native/all-samples/native/c159f2e4564feb4f.json": {
+    "sha256": "1c82d8cb6f8b5f513d67538fe8b19f7428904f07c008898e22e87b020383ba4a",
+    "size": 2107
+  },
+  "linux-native/all-samples/native/c323ed4e5eccd42e.json": {
+    "sha256": "265c7a8a528f5561d1faf91361e76f416c2c9f118fc0259d3ad1565b26534cbb",
+    "size": 55717
+  },
+  "linux-native/all-samples/native/c45a727514fb8982.json": {
+    "sha256": "98db913df7756316d1d54c98257325a6f098c4bece38043983b69d54e0dcfb45",
+    "size": 11831
+  },
+  "linux-native/all-samples/native/c777a45d62cce90a.json": {
+    "sha256": "37bda3cf31194dde670f4ed3c92232faebc600f3c0e9ae14414d2d1d4c9d45ba",
+    "size": 23552
+  },
+  "linux-native/all-samples/native/c8564aeddba82f04.json": {
+    "sha256": "a2345ea4f23498b96b27d09a0eed7550d96b0ecefd0101d1c29c3f6abb148335",
+    "size": 497
+  },
+  "linux-native/all-samples/native/c8cde51505833347.json": {
+    "sha256": "09c3267c1b377285161ec575ab76fc354716fed9ba784783d3e3815a7a3a968a",
+    "size": 113816
+  },
+  "linux-native/all-samples/native/c9a092125962e322.json": {
+    "sha256": "3aa0af7d5e008c4dd0b004cea56ea4cff8905bdec3b42bde5c698c4f5779ac42",
+    "size": 71163
+  },
+  "linux-native/all-samples/native/c9b8504f28656bb2.json": {
+    "sha256": "d7ad7ea271907dee1f88f4e0f1b974aa21ca63f5a6d2107abd9808f82130743b",
+    "size": 7155
+  },
+  "linux-native/all-samples/native/caaf9f2c75e68fb3.json": {
+    "sha256": "0ab84e874fffa55a49a27a0aed933dd38ae95935d0d96d5e20774512bcd6b76c",
+    "size": 45487
+  },
+  "linux-native/all-samples/native/cb5009e20bb1123a.json": {
+    "sha256": "63dbc3fd0bc2228565f9d8b17e674762910509ef1ccf07aeb68d8867b5088048",
+    "size": 22287
+  },
+  "linux-native/all-samples/native/cc5c505c9a91f65a.json": {
+    "sha256": "03c18784026975e5b61dd639e4d9524b5f7dd3c2d73930fced07e0553e7c21d7",
+    "size": 2864
+  },
+  "linux-native/all-samples/native/cc615a3e5cb1499e.json": {
+    "sha256": "5a62c218ac5e05dfada15063525c8421827d5bb4cb0f33b66fbc87e03aa54dcb",
+    "size": 8644
+  },
+  "linux-native/all-samples/native/da00952f9e92b062.json": {
+    "sha256": "a9f247e0604caa3eb7bfb15279c1efa919763c20999db4d02bf3910a3ba9591d",
+    "size": 20657
+  },
+  "linux-native/all-samples/native/db4b91782dd3efb7.json": {
+    "sha256": "86b5352f5caf57cfc49a063ee881ca1c515c733e602ce57f486492643a8e00f2",
+    "size": 262821
+  },
+  "linux-native/all-samples/native/de744546e5b8a0e6.json": {
+    "sha256": "77965b47b4adcdb3529bafbc3aebce93cee47b6882807c725890540f3e1911e3",
+    "size": 38744
+  },
+  "linux-native/all-samples/native/de900bc558f2dca8.json": {
+    "sha256": "57d69fddf49089edcebabe467bb43af320bd3e9b67757d080372e0d4ffd85ab6",
+    "size": 8591
+  },
+  "linux-native/all-samples/native/df2560f7906cab6d.json": {
+    "sha256": "0da8f8fde8cfdaa4bb3b778ae9874a2bbc946af65110fafb858285951d9b15b6",
+    "size": 12658
+  },
+  "linux-native/all-samples/native/e0a96ddd6fe8007f.json": {
+    "sha256": "60c8c96f654b68220e64d9b6e7639731884df4ca7aa10074c0c359162848e766",
+    "size": 46286
+  },
+  "linux-native/all-samples/native/e2147debb746e953.json": {
+    "sha256": "9f1dac236b939c3710d61d39326d524438c3aa771583dfb5d3051c398c2b83c6",
+    "size": 5441
+  },
+  "linux-native/all-samples/native/e37ba8d39f1765ee.json": {
+    "sha256": "75469d86723f49f3d79bffedf9026ee2a912d99d1855e8dcdb1cd0b4b39f7e5c",
+    "size": 35348
+  },
+  "linux-native/all-samples/native/e3d262776302832f.json": {
+    "sha256": "ef560cd1bd060edd55b70844276c342e5e251448b40a6d6603555352a1d2baff",
+    "size": 36191
+  },
+  "linux-native/all-samples/native/e56ebcbad4b3ec61.json": {
+    "sha256": "d94c85cc1c75b2c7401951c2f4911cd74b011a93ea332e49ddbc1dea03aca7ea",
+    "size": 77470
+  },
+  "linux-native/all-samples/native/e6c08e3cc9b0eb2f.json": {
+    "sha256": "555aa1691b8e07fed2959f9e1982610ff5ac9a92a8d2fec654240b0b1019e44e",
+    "size": 508
+  },
+  "linux-native/all-samples/native/e8417890fea95361.json": {
+    "sha256": "9735198f21bdf9f4475abaec915083b7ac191ff78acdf6a4e150f6d6a6427b3b",
+    "size": 1952
+  },
+  "linux-native/all-samples/native/eae7f502cfea5855.json": {
+    "sha256": "de22442b9bf313abca35dc51d07bd0304b1f0407a31c34ba6fda3592524822c3",
+    "size": 9577
+  },
+  "linux-native/all-samples/native/eb1b381667716066.json": {
+    "sha256": "0f13e8fbcb899369f877dbc66233a6d48104ee6e03d1918fb98e27ecbb17ed36",
+    "size": 46614
+  },
+  "linux-native/all-samples/native/eb6e81323fe050ef.json": {
+    "sha256": "111321fbf936218b4c69d02eb88fd710ad00582002d5acdcc5cc259bf7e0b018",
+    "size": 77444
+  },
+  "linux-native/all-samples/native/ed5b69a9711e3f53.json": {
+    "sha256": "a308fedc131498415494cf567c18cae2229ab5de62d7da2717205f2fdb1932c6",
+    "size": 57464
+  },
+  "linux-native/all-samples/native/f06b8315200c1abb.json": {
+    "sha256": "175a10246be49766514823eb83738da1a0623be511f1bcb4ddcfa7ad7a46161d",
+    "size": 39351
+  },
+  "linux-native/all-samples/native/f3a0c13bdc84f24b.json": {
+    "sha256": "e71dd2941e5b836370460d1b271b77f80b7bbaab2af5091592428159ae5ffe67",
+    "size": 71626
+  },
+  "linux-native/all-samples/native/f9dcd81f8ca741ba.json": {
+    "sha256": "3ea9e10a0db16b5954fd66762060ff75dd503545bb0c699c0c872a9f309ab10c",
+    "size": 9955
+  },
+  "linux-native/all-samples/native/fd9577ef8f62f6a7.json": {
+    "sha256": "0262d1f5f25fdb619128e684f322bc9f28fe6860e4a829eab09b6682ccc889fd",
+    "size": 168781
+  },
+  "linux-native/all-samples/suite.json": {
+    "sha256": "c234f3d2642c4dc55ebac08dde7830869f9b878f7e08c1d13df7e66cbaf54cf8",
+    "size": 69780
+  },
+  "linux-native/book-measurement.json": {
+    "sha256": "e398b5d483d49ca136f5ed1ccaf7d331fc2948f81717ca4707de7cc19a06484a",
+    "size": 109
+  },
+  "linux-native/book.json": {
+    "sha256": "e06cb38e9f2d276749cad118c685bf51f93280be7f846f37a4bbc233d84d6295",
+    "size": 244066
+  },
+  "linux-native/book.parity.json": {
+    "sha256": "1741f882055b4f8b055e4faedcd265177787549e8b867f1c47c1f5429e87be6d",
+    "size": 243
+  },
+  "linux-native/corpus/arabic-36.parity.json": {
+    "sha256": "ffccd80b797af2a85f7089dbeeeb126b342db03d5b93d92501b6d1f41d2f519e",
+    "size": 237
+  },
+  "linux-native/corpus/blank.parity.json": {
+    "sha256": "7436de3cce4b89b7370459a0c62c057ba3d5be8a217ab10ac77c344c9fda5a6c",
+    "size": 237
+  },
+  "linux-native/corpus/cjk-18.parity.json": {
+    "sha256": "daab0d5ef3c4cee78dbcbda59b71ce56862aab54554f3a0ea3e46b967c600add",
+    "size": 237
+  },
+  "linux-native/corpus/cjk-36.parity.json": {
+    "sha256": "daab0d5ef3c4cee78dbcbda59b71ce56862aab54554f3a0ea3e46b967c600add",
+    "size": 237
+  },
+  "linux-native/corpus/cjk-rotate-0.5.parity.json": {
+    "sha256": "daab0d5ef3c4cee78dbcbda59b71ce56862aab54554f3a0ea3e46b967c600add",
+    "size": 237
+  },
+  "linux-native/corpus/cjk-rotate-10.parity.json": {
+    "sha256": "daab0d5ef3c4cee78dbcbda59b71ce56862aab54554f3a0ea3e46b967c600add",
+    "size": 237
+  },
+  "linux-native/corpus/cjk-rotate-180.parity.json": {
+    "sha256": "daab0d5ef3c4cee78dbcbda59b71ce56862aab54554f3a0ea3e46b967c600add",
+    "size": 237
+  },
+  "linux-native/corpus/cjk-rotate-270.parity.json": {
+    "sha256": "daab0d5ef3c4cee78dbcbda59b71ce56862aab54554f3a0ea3e46b967c600add",
+    "size": 237
+  },
+  "linux-native/corpus/cjk-rotate-3.parity.json": {
+    "sha256": "daab0d5ef3c4cee78dbcbda59b71ce56862aab54554f3a0ea3e46b967c600add",
+    "size": 237
+  },
+  "linux-native/corpus/cjk-rotate-90.parity.json": {
+    "sha256": "daab0d5ef3c4cee78dbcbda59b71ce56862aab54554f3a0ea3e46b967c600add",
+    "size": 237
+  },
+  "linux-native/corpus/cyrillic-36.parity.json": {
+    "sha256": "ffccd80b797af2a85f7089dbeeeb126b342db03d5b93d92501b6d1f41d2f519e",
+    "size": 237
+  },
+  "linux-native/corpus/devanagari-36.parity.json": {
+    "sha256": "ffccd80b797af2a85f7089dbeeeb126b342db03d5b93d92501b6d1f41d2f519e",
+    "size": 237
+  },
+  "linux-native/corpus/greek-36.parity.json": {
+    "sha256": "ffccd80b797af2a85f7089dbeeeb126b342db03d5b93d92501b6d1f41d2f519e",
+    "size": 237
+  },
+  "linux-native/corpus/hebrew-36.parity.json": {
+    "sha256": "ffccd80b797af2a85f7089dbeeeb126b342db03d5b93d92501b6d1f41d2f519e",
+    "size": 237
+  },
+  "linux-native/corpus/latin-18.parity.json": {
+    "sha256": "daab0d5ef3c4cee78dbcbda59b71ce56862aab54554f3a0ea3e46b967c600add",
+    "size": 237
+  },
+  "linux-native/corpus/latin-36.parity.json": {
+    "sha256": "daab0d5ef3c4cee78dbcbda59b71ce56862aab54554f3a0ea3e46b967c600add",
+    "size": 237
+  },
+  "linux-native/corpus/latin-rotate-0.5.parity.json": {
+    "sha256": "daab0d5ef3c4cee78dbcbda59b71ce56862aab54554f3a0ea3e46b967c600add",
+    "size": 237
+  },
+  "linux-native/corpus/latin-rotate-10.parity.json": {
+    "sha256": "daab0d5ef3c4cee78dbcbda59b71ce56862aab54554f3a0ea3e46b967c600add",
+    "size": 237
+  },
+  "linux-native/corpus/latin-rotate-180.parity.json": {
+    "sha256": "daab0d5ef3c4cee78dbcbda59b71ce56862aab54554f3a0ea3e46b967c600add",
+    "size": 237
+  },
+  "linux-native/corpus/latin-rotate-270.parity.json": {
+    "sha256": "daab0d5ef3c4cee78dbcbda59b71ce56862aab54554f3a0ea3e46b967c600add",
+    "size": 237
+  },
+  "linux-native/corpus/latin-rotate-3.parity.json": {
+    "sha256": "daab0d5ef3c4cee78dbcbda59b71ce56862aab54554f3a0ea3e46b967c600add",
+    "size": 237
+  },
+  "linux-native/corpus/latin-rotate-90.parity.json": {
+    "sha256": "daab0d5ef3c4cee78dbcbda59b71ce56862aab54554f3a0ea3e46b967c600add",
+    "size": 237
+  },
+  "linux-native/corpus/multi-column.parity.json": {
+    "sha256": "6e1a6a04bb51a4d38cbb76938592b4a8b4208eab0e086bfe68114bdcddf67469",
+    "size": 237
+  },
+  "linux-native/corpus/native/arabic-36.json": {
+    "sha256": "b0f8a9f9c5316a3cc7a6c0da29f7b882e69839cf32a115a9bddb0c948ce22ca3",
+    "size": 2058
+  },
+  "linux-native/corpus/native/blank.json": {
+    "sha256": "f88a11560ad65be99ec399b28215e476e3b57b5fa7d3b80149e3384a11f106a9",
+    "size": 481
+  },
+  "linux-native/corpus/native/cjk-18.json": {
+    "sha256": "bdad051c14d544c0cee1247843bb0b83bc59a700730d5dc644383350c9e69479",
+    "size": 7992
+  },
+  "linux-native/corpus/native/cjk-36.json": {
+    "sha256": "90859c8e04970490c088513a3485fa201528a39007c96c1ae972f2dafd55adaa",
+    "size": 7752
+  },
+  "linux-native/corpus/native/cjk-rotate-0.5.json": {
+    "sha256": "7d04b3b354427225512e777ecc4c7585365b701f426451967bd82e4c61b66b3b",
+    "size": 7924
+  },
+  "linux-native/corpus/native/cjk-rotate-10.json": {
+    "sha256": "03edcff7b18ae818b3ceec0565e4b909fad9d058968e3e1596cba129fc13defd",
+    "size": 8006
+  },
+  "linux-native/corpus/native/cjk-rotate-180.json": {
+    "sha256": "cdb5e7d9290fcecc10f02d6005677930c6f3d26939149ca93eb8d451422b3e1e",
+    "size": 7970
+  },
+  "linux-native/corpus/native/cjk-rotate-270.json": {
+    "sha256": "db4e5c34a073eb943718b7cc219d2e1cd02b47c929c0309d25635f0d312ba6bd",
+    "size": 7942
+  },
+  "linux-native/corpus/native/cjk-rotate-3.json": {
+    "sha256": "6c23ec1dc3370be80ee1a892a6e9fd43eea991e2b304cc017334e1fb647cc862",
+    "size": 8000
+  },
+  "linux-native/corpus/native/cjk-rotate-90.json": {
+    "sha256": "1cddb1f078fbac8bc44a5d65773fc2b29dfb35c3e7059658bd6b7c6286f55aa3",
+    "size": 7833
+  },
+  "linux-native/corpus/native/cyrillic-36.json": {
+    "sha256": "391feacc1ce7f89a7cf21e04c598a03536bbd544fc8fc1d778f646d3d6b5f5d4",
+    "size": 2928
+  },
+  "linux-native/corpus/native/devanagari-36.json": {
+    "sha256": "3975668f680bbcd46640eb0157802cca8851bfd6825a96911578ae8ccf351510",
+    "size": 2081
+  },
+  "linux-native/corpus/native/greek-36.json": {
+    "sha256": "1db801a3468243050205190c04df498c1f77e1e98352ce5d2b5e1fbf056fdcf5",
+    "size": 2453
+  },
+  "linux-native/corpus/native/hebrew-36.json": {
+    "sha256": "74a37c80ca6d3c6e1a931da13c6af52c47e8fa1bbaa5d62dbb6e850c6075ec4d",
+    "size": 2036
+  },
+  "linux-native/corpus/native/latin-18.json": {
+    "sha256": "8efd9770842fa7df74c00995662f3e1875bf52b68a979bf4b72887d925342797",
+    "size": 4770
+  },
+  "linux-native/corpus/native/latin-36.json": {
+    "sha256": "1880a887c7986a1ea952d0423d66f15d733806e2ecb839d418645491ea2eb080",
+    "size": 4718
+  },
+  "linux-native/corpus/native/latin-rotate-0.5.json": {
+    "sha256": "7b73bf40f07ebee5d0167e0e13a9fd4db7fa45b46eaf3009fd47835fe35f0859",
+    "size": 4827
+  },
+  "linux-native/corpus/native/latin-rotate-10.json": {
+    "sha256": "17544d450d1db713a8fba61fda8c8d24a0ab0e292a87668457bc73a30ecbcc67",
+    "size": 4834
+  },
+  "linux-native/corpus/native/latin-rotate-180.json": {
+    "sha256": "78dd70a2ae77c690c05494399ea9d529d3707985b11ca781761becd71e2f2776",
+    "size": 4703
+  },
+  "linux-native/corpus/native/latin-rotate-270.json": {
+    "sha256": "b2cccd5bc1efc4b5bfc88bb5100bde6370e713e8549a9aaada148352e71f15bb",
+    "size": 4747
+  },
+  "linux-native/corpus/native/latin-rotate-3.json": {
+    "sha256": "929fa939f52b78e1d0765e27b2fb22950b5dd699b9a650b329f033aa2b072b6e",
+    "size": 4804
+  },
+  "linux-native/corpus/native/latin-rotate-90.json": {
+    "sha256": "5fa2ac6a9e8204ad0522f63db85b17284b2fc082a36995fb1f1cb0f8bb28634b",
+    "size": 4651
+  },
+  "linux-native/corpus/native/multi-column.json": {
+    "sha256": "647a5ed9b44a99b6fe79efa5deedfa936fe8d3150a12cb533960edea95e62f93",
+    "size": 7237
+  },
+  "linux-native/corpus/native/tamil-36.json": {
+    "sha256": "02c84ffc2752837b69200c5f87ce76ab701c58740175be23d283b1a7e3c329f1",
+    "size": 2060
+  },
+  "linux-native/corpus/native/thai-36.json": {
+    "sha256": "9c11140163d77480674df40f12579b0445f902b128cd98d69f9edb49b205fc6e",
+    "size": 2462
+  },
+  "linux-native/corpus/native/vertical-cjk.json": {
+    "sha256": "1969d80528012eb634d73e1b85ddfe98affa5e98fd3840b5f820dbfabff1f6ac",
+    "size": 3867
+  },
+  "linux-native/corpus/native/透明路径-emoji-😀.json": {
+    "sha256": "8cf9be4bb57de77dd4b798de44c659d8a7b9831a350605b3e57de100ece84213",
+    "size": 2465
+  },
+  "linux-native/corpus/suite.json": {
+    "sha256": "421cef29a51a1d703baa28d07cd6b34f772aabe1e9b32143080b754e5d6fa2cf",
+    "size": 13501
+  },
+  "linux-native/corpus/tamil-36.parity.json": {
+    "sha256": "ffccd80b797af2a85f7089dbeeeb126b342db03d5b93d92501b6d1f41d2f519e",
+    "size": 237
+  },
+  "linux-native/corpus/thai-36.parity.json": {
+    "sha256": "ffccd80b797af2a85f7089dbeeeb126b342db03d5b93d92501b6d1f41d2f519e",
+    "size": 237
+  },
+  "linux-native/corpus/vertical-cjk.parity.json": {
+    "sha256": "ffccd80b797af2a85f7089dbeeeb126b342db03d5b93d92501b6d1f41d2f519e",
+    "size": 237
+  },
+  "linux-native/corpus/透明路径-emoji-😀.parity.json": {
+    "sha256": "ffccd80b797af2a85f7089dbeeeb126b342db03d5b93d92501b6d1f41d2f519e",
+    "size": 237
+  },
+  "linux-native/options/arabic-36-m0-r320x192.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/options/arabic-36-m1-r640x384.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/options/arabic-36-m2-r1151x767.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/options/devanagari-36-m0-r320x192.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/options/devanagari-36-m1-r640x384.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/options/devanagari-36-m2-r1151x767.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/options/hebrew-36-m0-r320x192.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/options/hebrew-36-m1-r640x384.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/options/hebrew-36-m2-r1151x767.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/options/multi-column-m1-r640x384.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/multi-column-m5-r1151x767.parity.json": {
+    "sha256": "a7d4ff2411a3f446600f26f240eb6c0cf6077180083286c9f31910137a44a65e",
+    "size": 238
+  },
+  "linux-native/options/native/arabic-36-m0-r320x192.json": {
+    "sha256": "eb0154f7316a1c6f4838043ec226ff634914f40513728fb55a18af4899d35252",
+    "size": 2080
+  },
+  "linux-native/options/native/arabic-36-m1-r640x384.json": {
+    "sha256": "1b290f8c041d5ff19a02eeeaae00fa84e7815a8b3eafca074c87d99474bb56b9",
+    "size": 2067
+  },
+  "linux-native/options/native/arabic-36-m2-r1151x767.json": {
+    "sha256": "b0f8a9f9c5316a3cc7a6c0da29f7b882e69839cf32a115a9bddb0c948ce22ca3",
+    "size": 2058
+  },
+  "linux-native/options/native/devanagari-36-m0-r320x192.json": {
+    "sha256": "104a0bb6ac490efaa141dde85e1de914df6f5b49f55a79dce740a2610c2096cb",
+    "size": 2064
+  },
+  "linux-native/options/native/devanagari-36-m1-r640x384.json": {
+    "sha256": "7e1d732386d7a2c3c0b1f907772d29ba56bc064e1ab4a45681586579d3d2dfdc",
+    "size": 2085
+  },
+  "linux-native/options/native/devanagari-36-m2-r1151x767.json": {
+    "sha256": "3975668f680bbcd46640eb0157802cca8851bfd6825a96911578ae8ccf351510",
+    "size": 2081
+  },
+  "linux-native/options/native/hebrew-36-m0-r320x192.json": {
+    "sha256": "d386a042d8c3f169d05abe35c33e0f308097ef6d357fcc209218ba5e4432bebf",
+    "size": 2031
+  },
+  "linux-native/options/native/hebrew-36-m1-r640x384.json": {
+    "sha256": "0ba073d264926f5abafd87cf34084a242863ef86ba6f48ee58698e98e319bacb",
+    "size": 2050
+  },
+  "linux-native/options/native/hebrew-36-m2-r1151x767.json": {
+    "sha256": "74a37c80ca6d3c6e1a931da13c6af52c47e8fa1bbaa5d62dbb6e850c6075ec4d",
+    "size": 2036
+  },
+  "linux-native/options/native/multi-column-m1-r640x384.json": {
+    "sha256": "8391bbcc4755cdada7e3d64a072694ea9e6d906b39580948725d9fb7dd1b7916",
+    "size": 5012
+  },
+  "linux-native/options/native/multi-column-m5-r1151x767.json": {
+    "sha256": "ad197c2f58c304d846b9dbc161c3afd35a0a8ba215e4a37d58419e37bd07976b",
+    "size": 6111
+  },
+  "linux-native/options/native/parameter-blank-m1-r1151x768.json": {
+    "sha256": "a2345ea4f23498b96b27d09a0eed7550d96b0ecefd0101d1c29c3f6abb148335",
+    "size": 497
+  },
+  "linux-native/options/native/parameter-blank-m1-r1152x767.json": {
+    "sha256": "a2345ea4f23498b96b27d09a0eed7550d96b0ecefd0101d1c29c3f6abb148335",
+    "size": 497
+  },
+  "linux-native/options/native/parameter-blank-m1-r1152x768.json": {
+    "sha256": "a2345ea4f23498b96b27d09a0eed7550d96b0ecefd0101d1c29c3f6abb148335",
+    "size": 497
+  },
+  "linux-native/options/native/parameter-blank-m1-r32x32.json": {
+    "sha256": "a2345ea4f23498b96b27d09a0eed7550d96b0ecefd0101d1c29c3f6abb148335",
+    "size": 497
+  },
+  "linux-native/options/native/red-calligraphy-jason-m1-r640x384.json": {
+    "sha256": "4fe7bfff32ce5f61aff31dc7b35cb671e32e51019857363a06a14d39cd676a67",
+    "size": 13477
+  },
+  "linux-native/options/native/red-calligraphy-jason-m5-r1152x768.json": {
+    "sha256": "c21c9f463eed856eafa26a04af191ac20c00cdda41290f2918ce6c48c3d1ef44",
+    "size": 29092
+  },
+  "linux-native/options/native/red-calligraphy-jason-m7-r768x512.json": {
+    "sha256": "d9e9054fba4b07aba266d4c3b14424193e05bae960db2177941b5f9629aee3e5",
+    "size": 36481
+  },
+  "linux-native/options/native/red-calligraphy-jason-rotate-10-m1-r1152x768.json": {
+    "sha256": "5cb2176d0ef54409bc697ad141789ca99f3abce8ea81c0f9b256f201c8c9f60a",
+    "size": 7145
+  },
+  "linux-native/options/native/red-calligraphy-jason-rotate-10-m1000-r33x65.json": {
+    "sha256": "049e07bac6eca089c5f0e1d0eb126b1ba3ebc168ee5dbf106504240f88b8515f",
+    "size": 20388
+  },
+  "linux-native/options/native/red-calligraphy-jason-rotate-10-m5-r640x384.json": {
+    "sha256": "4e1bc34f91b699cf88774e305f5859830a3ff3be3f11fb7a463feb2522364824",
+    "size": 20014
+  },
+  "linux-native/options/native/red-calligraphy-jason-rotate-10-m6-r768x512.json": {
+    "sha256": "a821fae73a8e61ebabb61687d7f611431eaea63d8e58b4465398cb7d01544581",
+    "size": 21943
+  },
+  "linux-native/options/native/red-calligraphy-jason-rotate-180-m1-r1152x768.json": {
+    "sha256": "c870226baa5b62ed52f27a06f90f21807e77e339d40fd555de87cc1d4dd474b6",
+    "size": 4874
+  },
+  "linux-native/options/native/red-calligraphy-jason-rotate-180-m1000-r33x65.json": {
+    "sha256": "5836dd9afb319b027730a27ac6f3bef0778beb27b25fbd3047d7ce0382b46c6e",
+    "size": 15483
+  },
+  "linux-native/options/native/red-calligraphy-jason-rotate-180-m5-r640x384.json": {
+    "sha256": "10598d686a8a95597c0822cf761e0fd71b4575406e41c4fefe4354189a45c1d3",
+    "size": 26498
+  },
+  "linux-native/options/native/red-calligraphy-jason-rotate-180-m6-r768x512.json": {
+    "sha256": "c7851dd9195be57bcf5e65dae4709b25d71ad62ef4a8c718876b5249ddf16f46",
+    "size": 24717
+  },
+  "linux-native/options/native/red-calligraphy-jason-rotate-270-m1-r1152x768.json": {
+    "sha256": "507ae375e23cc34056f802e891e11c70405944c0f8158eae3885a8704dcb36d5",
+    "size": 2450
+  },
+  "linux-native/options/native/red-calligraphy-jason-rotate-270-m1000-r33x65.json": {
+    "sha256": "8f83c1a428a8e3649bc9187fdd071e4293882a5afa3ea5f9476c114d94168569",
+    "size": 517
+  },
+  "linux-native/options/native/red-calligraphy-jason-rotate-270-m5-r640x384.json": {
+    "sha256": "dd4430072626e18adf73a7b313a42ee4ab5f67c4b41122c202357bd783f7cd57",
+    "size": 16601
+  },
+  "linux-native/options/native/red-calligraphy-jason-rotate-270-m6-r768x512.json": {
+    "sha256": "d143f5db5f1544feaba72eee48aeef73593456078006674e482dc8627590c8ab",
+    "size": 29562
+  },
+  "linux-native/options/native/red-calligraphy-jason-rotate-90-m1-r1152x768.json": {
+    "sha256": "2acfac5b97aaafe5b92653bc209183a0ae490bf51ce42e88cd1d00209322522c",
+    "size": 12746
+  },
+  "linux-native/options/native/red-calligraphy-jason-rotate-90-m1000-r33x65.json": {
+    "sha256": "399923554e914e34f3dcd64850ec00cfeefaa144542f03b801ebde022b6d50f0",
+    "size": 25561
+  },
+  "linux-native/options/native/red-calligraphy-jason-rotate-90-m5-r640x384.json": {
+    "sha256": "a0305e45829171a4c53c938c007f057a6ffca66a241198f30fa3858aaec30b35",
+    "size": 27013
+  },
+  "linux-native/options/native/red-calligraphy-jason-rotate-90-m6-r768x512.json": {
+    "sha256": "27bd7eab685b44666a72a546cd148cef1f4dfc948240ffdcf7ba2fdaf2c73d23",
+    "size": 25501
+  },
+  "linux-native/options/native/red-grid-jason-m1-r640x384.json": {
+    "sha256": "8b69427f989d27122f4beeacf53eb2c629f911bbe483791a156b74c7e34fc7c9",
+    "size": 12603
+  },
+  "linux-native/options/native/red-grid-jason-m5-r1152x768.json": {
+    "sha256": "f134273a0bd8bf01987de48f28b94c9d712469416415ae3791442ec577aba82b",
+    "size": 22871
+  },
+  "linux-native/options/native/red-grid-jason-m7-r768x512.json": {
+    "sha256": "7face5907fdeca447a39483d65ffdce5ceb5ef64390024b37d027ec2cacdc651",
+    "size": 40051
+  },
+  "linux-native/options/native/red-grid-jason-rotate-10-m1-r1152x768.json": {
+    "sha256": "58b3f9f442b60c2f089b9867bf4d35a9f2d774777b420a7e52e8b4f030861251",
+    "size": 12649
+  },
+  "linux-native/options/native/red-grid-jason-rotate-10-m1000-r33x65.json": {
+    "sha256": "7d4f9465419a8321948e40e69378a0351080c59f533637119ac773507828a8e5",
+    "size": 509
+  },
+  "linux-native/options/native/red-grid-jason-rotate-10-m5-r640x384.json": {
+    "sha256": "31cdda3cdb0128780fe20858a023b46a65f5b86097482fa2b7518888e89d355e",
+    "size": 30740
+  },
+  "linux-native/options/native/red-grid-jason-rotate-10-m6-r768x512.json": {
+    "sha256": "4a48435d63b01008424611da31e226d6a36568b2953bbc79d80f4586c31dae1e",
+    "size": 24396
+  },
+  "linux-native/options/native/red-grid-jason-rotate-180-m1-r1152x768.json": {
+    "sha256": "b3132fd98c0d88b4d8a4c06df925c8d647d051c451d748de045d48a023d81cec",
+    "size": 9053
+  },
+  "linux-native/options/native/red-grid-jason-rotate-180-m1000-r33x65.json": {
+    "sha256": "b409865d9fa5940af6f1d0a4d09b36359e780ed8950b8e80cd583cedccfee53c",
+    "size": 18880
+  },
+  "linux-native/options/native/red-grid-jason-rotate-180-m5-r640x384.json": {
+    "sha256": "c1b4d00a0531f3004ba86739402326237d99892b1a23a239a35ca0b62e184c22",
+    "size": 34574
+  },
+  "linux-native/options/native/red-grid-jason-rotate-180-m6-r768x512.json": {
+    "sha256": "7d32dbdf4075ec44e4f5f51bcce1c5e9946dc38eabd429878453cc84e2e4334c",
+    "size": 31479
+  },
+  "linux-native/options/native/red-grid-jason-rotate-270-m1-r1152x768.json": {
+    "sha256": "9e3a5106330bb08981cbaaa00505a8fe94621a2c41c7650f71de8130542f9509",
+    "size": 11185
+  },
+  "linux-native/options/native/red-grid-jason-rotate-270-m1000-r33x65.json": {
+    "sha256": "14a63720cdbc8652ced62b5893a86745bf78d329beebe7fb0374fa4c8635c1dc",
+    "size": 26184
+  },
+  "linux-native/options/native/red-grid-jason-rotate-270-m5-r640x384.json": {
+    "sha256": "5ca1c73eef0997b4765534fb12a9fb01d3a47ae13ffb1ecea995a26b7c225d0e",
+    "size": 24820
+  },
+  "linux-native/options/native/red-grid-jason-rotate-270-m6-r768x512.json": {
+    "sha256": "828b9dd74b27534f26ba2ce6582eff2138f308b7146ee32bcc187a4a02bd481d",
+    "size": 27912
+  },
+  "linux-native/options/native/red-grid-jason-rotate-90-m1-r1152x768.json": {
+    "sha256": "48ac2cfb5121f9465d27b6bedd1f3d14344aeed4345a4273720537411e39fac4",
+    "size": 5567
+  },
+  "linux-native/options/native/red-grid-jason-rotate-90-m1000-r33x65.json": {
+    "sha256": "32730cab6ca98beb3dbc8e64213a9fea2e550a0858670cdc21aa6506e52dd174",
+    "size": 18034
+  },
+  "linux-native/options/native/red-grid-jason-rotate-90-m5-r640x384.json": {
+    "sha256": "1cb94aa3de9cc7699a681d1e92606b7f18d6abd065928cd1ea5d947ee05d9cc1",
+    "size": 33826
+  },
+  "linux-native/options/native/red-grid-jason-rotate-90-m6-r768x512.json": {
+    "sha256": "e3c9219dac7acb793252f8106e8824fb03dc74d02a4be9c1b9794403db55bd95",
+    "size": 25622
+  },
+  "linux-native/options/native/thai-36-m0-r320x192.json": {
+    "sha256": "88a3830e85e11974ea87779bbf8b6eba4b33558e64e9fe9c2beaa9e3b85e2dbd",
+    "size": 2492
+  },
+  "linux-native/options/native/thai-36-m1-r640x384.json": {
+    "sha256": "f9156075ca3a9aabaf032c003e52bfd761caacc8e7fcfffcf580f543dc3633ef",
+    "size": 2479
+  },
+  "linux-native/options/native/thai-36-m2-r1151x767.json": {
+    "sha256": "9c11140163d77480674df40f12579b0445f902b128cd98d69f9edb49b205fc6e",
+    "size": 2462
+  },
+  "linux-native/options/native/twelve-printed-lines-m0-r640x384.json": {
+    "sha256": "b12e4813649478d1af0b76fb7c686b1f25f71a9f2ec26ff1adefc013b02a233b",
+    "size": 70599
+  },
+  "linux-native/options/native/twelve-printed-lines-m1-r1152x768.json": {
+    "sha256": "f7c5cad451c40a8fdf26468b07ff31119a6e7ca529217d2d7c46803cce9df94e",
+    "size": 24291
+  },
+  "linux-native/options/native/twelve-printed-lines-m1-r320x192.json": {
+    "sha256": "f3a48b3cfee1b1d5ca058ba81473d0a9d8f8a04e79cebf85bb269e00cd1d161f",
+    "size": 23988
+  },
+  "linux-native/options/native/twelve-printed-lines-m1-r33x65.json": {
+    "sha256": "6eba2edab3bbb88bbae212ccb8550dd747dbc567dad95f4d2608637a8415d4a3",
+    "size": 504
+  },
+  "linux-native/options/native/twelve-printed-lines-m1-r640x384.json": {
+    "sha256": "e992c1310aba1a372349a3483fab33861d564bf9712a3962b1febf56263b3bac",
+    "size": 23729
+  },
+  "linux-native/options/native/twelve-printed-lines-m1-r768x512.json": {
+    "sha256": "3a4c0001328b8e99ce05dd83eecbeaf31bf7deb69592c45aa47eadbee18781ff",
+    "size": 23915
+  },
+  "linux-native/options/native/twelve-printed-lines-m1000-r1152x768.json": {
+    "sha256": "e71dd2941e5b836370460d1b271b77f80b7bbaab2af5091592428159ae5ffe67",
+    "size": 71626
+  },
+  "linux-native/options/native/twelve-printed-lines-m1000-r320x192.json": {
+    "sha256": "81a52be37fc38feec4691e73199496577f5de65ccee950d3643bf2e15e6b581c",
+    "size": 70961
+  },
+  "linux-native/options/native/twelve-printed-lines-m1000-r33x65.json": {
+    "sha256": "6eba2edab3bbb88bbae212ccb8550dd747dbc567dad95f4d2608637a8415d4a3",
+    "size": 504
+  },
+  "linux-native/options/native/twelve-printed-lines-m1000-r640x384.json": {
+    "sha256": "b12e4813649478d1af0b76fb7c686b1f25f71a9f2ec26ff1adefc013b02a233b",
+    "size": 70599
+  },
+  "linux-native/options/native/twelve-printed-lines-m1000-r768x512.json": {
+    "sha256": "12fb384cca83ebb50289bfa17397a28edb59b41de5c8e917452e30b208edb90e",
+    "size": 70808
+  },
+  "linux-native/options/native/twelve-printed-lines-m11-r1152x768.json": {
+    "sha256": "e71dd2941e5b836370460d1b271b77f80b7bbaab2af5091592428159ae5ffe67",
+    "size": 71626
+  },
+  "linux-native/options/native/twelve-printed-lines-m11-r320x192.json": {
+    "sha256": "81a52be37fc38feec4691e73199496577f5de65ccee950d3643bf2e15e6b581c",
+    "size": 70961
+  },
+  "linux-native/options/native/twelve-printed-lines-m11-r33x65.json": {
+    "sha256": "6eba2edab3bbb88bbae212ccb8550dd747dbc567dad95f4d2608637a8415d4a3",
+    "size": 504
+  },
+  "linux-native/options/native/twelve-printed-lines-m11-r640x384.json": {
+    "sha256": "b12e4813649478d1af0b76fb7c686b1f25f71a9f2ec26ff1adefc013b02a233b",
+    "size": 70599
+  },
+  "linux-native/options/native/twelve-printed-lines-m11-r768x512.json": {
+    "sha256": "12fb384cca83ebb50289bfa17397a28edb59b41de5c8e917452e30b208edb90e",
+    "size": 70808
+  },
+  "linux-native/options/native/twelve-printed-lines-m2-r0x0.json": {
+    "sha256": "f7c5cad451c40a8fdf26468b07ff31119a6e7ca529217d2d7c46803cce9df94e",
+    "size": 24291
+  },
+  "linux-native/options/native/twelve-printed-lines-m2-r1152x768.json": {
+    "sha256": "f7c5cad451c40a8fdf26468b07ff31119a6e7ca529217d2d7c46803cce9df94e",
+    "size": 24291
+  },
+  "linux-native/options/native/twelve-printed-lines-m2-r320x192.json": {
+    "sha256": "f3a48b3cfee1b1d5ca058ba81473d0a9d8f8a04e79cebf85bb269e00cd1d161f",
+    "size": 23988
+  },
+  "linux-native/options/native/twelve-printed-lines-m2-r33x65.json": {
+    "sha256": "6eba2edab3bbb88bbae212ccb8550dd747dbc567dad95f4d2608637a8415d4a3",
+    "size": 504
+  },
+  "linux-native/options/native/twelve-printed-lines-m2-r640x384.json": {
+    "sha256": "e992c1310aba1a372349a3483fab33861d564bf9712a3962b1febf56263b3bac",
+    "size": 23729
+  },
+  "linux-native/options/native/twelve-printed-lines-m2-r768x512.json": {
+    "sha256": "3a4c0001328b8e99ce05dd83eecbeaf31bf7deb69592c45aa47eadbee18781ff",
+    "size": 23915
+  },
+  "linux-native/options/native/twelve-printed-lines-m3-r1152x768.json": {
+    "sha256": "f7c5cad451c40a8fdf26468b07ff31119a6e7ca529217d2d7c46803cce9df94e",
+    "size": 24291
+  },
+  "linux-native/options/native/twelve-printed-lines-m3-r320x192.json": {
+    "sha256": "f3a48b3cfee1b1d5ca058ba81473d0a9d8f8a04e79cebf85bb269e00cd1d161f",
+    "size": 23988
+  },
+  "linux-native/options/native/twelve-printed-lines-m3-r33x65.json": {
+    "sha256": "6eba2edab3bbb88bbae212ccb8550dd747dbc567dad95f4d2608637a8415d4a3",
+    "size": 504
+  },
+  "linux-native/options/native/twelve-printed-lines-m3-r640x384.json": {
+    "sha256": "e992c1310aba1a372349a3483fab33861d564bf9712a3962b1febf56263b3bac",
+    "size": 23729
+  },
+  "linux-native/options/native/twelve-printed-lines-m3-r768x512.json": {
+    "sha256": "3a4c0001328b8e99ce05dd83eecbeaf31bf7deb69592c45aa47eadbee18781ff",
+    "size": 23915
+  },
+  "linux-native/options/native/twelve-printed-lines-m32-r1152x768.json": {
+    "sha256": "e71dd2941e5b836370460d1b271b77f80b7bbaab2af5091592428159ae5ffe67",
+    "size": 71626
+  },
+  "linux-native/options/native/twelve-printed-lines-m32-r320x192.json": {
+    "sha256": "81a52be37fc38feec4691e73199496577f5de65ccee950d3643bf2e15e6b581c",
+    "size": 70961
+  },
+  "linux-native/options/native/twelve-printed-lines-m32-r33x65.json": {
+    "sha256": "6eba2edab3bbb88bbae212ccb8550dd747dbc567dad95f4d2608637a8415d4a3",
+    "size": 504
+  },
+  "linux-native/options/native/twelve-printed-lines-m32-r640x384.json": {
+    "sha256": "b12e4813649478d1af0b76fb7c686b1f25f71a9f2ec26ff1adefc013b02a233b",
+    "size": 70599
+  },
+  "linux-native/options/native/twelve-printed-lines-m32-r768x512.json": {
+    "sha256": "12fb384cca83ebb50289bfa17397a28edb59b41de5c8e917452e30b208edb90e",
+    "size": 70808
+  },
+  "linux-native/options/native/twelve-printed-lines-m4-r1152x768.json": {
+    "sha256": "f7c5cad451c40a8fdf26468b07ff31119a6e7ca529217d2d7c46803cce9df94e",
+    "size": 24291
+  },
+  "linux-native/options/native/twelve-printed-lines-m4-r320x192.json": {
+    "sha256": "f3a48b3cfee1b1d5ca058ba81473d0a9d8f8a04e79cebf85bb269e00cd1d161f",
+    "size": 23988
+  },
+  "linux-native/options/native/twelve-printed-lines-m4-r33x65.json": {
+    "sha256": "6eba2edab3bbb88bbae212ccb8550dd747dbc567dad95f4d2608637a8415d4a3",
+    "size": 504
+  },
+  "linux-native/options/native/twelve-printed-lines-m4-r640x384.json": {
+    "sha256": "e992c1310aba1a372349a3483fab33861d564bf9712a3962b1febf56263b3bac",
+    "size": 23729
+  },
+  "linux-native/options/native/twelve-printed-lines-m4-r768x512.json": {
+    "sha256": "3a4c0001328b8e99ce05dd83eecbeaf31bf7deb69592c45aa47eadbee18781ff",
+    "size": 23915
+  },
+  "linux-native/options/native/twelve-printed-lines-m5-r1152x768.json": {
+    "sha256": "987b3963e0feaa316a4882a6a1ff1cad9e462b9d814832c8446e737fa870e6f2",
+    "size": 30248
+  },
+  "linux-native/options/native/twelve-printed-lines-m5-r320x192.json": {
+    "sha256": "305f68114e6d2bb7d80f26803b7a3af63b4321f8c6a921a71bfa94ec76de056c",
+    "size": 29953
+  },
+  "linux-native/options/native/twelve-printed-lines-m5-r33x65.json": {
+    "sha256": "6eba2edab3bbb88bbae212ccb8550dd747dbc567dad95f4d2608637a8415d4a3",
+    "size": 504
+  },
+  "linux-native/options/native/twelve-printed-lines-m5-r640x384.json": {
+    "sha256": "c0f70e99a316e53621a8f07f84c8d3f743a6bf6777495aab307a9b5776454fb0",
+    "size": 29644
+  },
+  "linux-native/options/native/twelve-printed-lines-m5-r768x512.json": {
+    "sha256": "65d2f2e0b05442a01ec892f97d1fec26ab4db6905efb63ab33b3f254a71e72da",
+    "size": 29746
+  },
+  "linux-native/options/native/twelve-printed-lines-m7-r1152x768.json": {
+    "sha256": "0eddff0ca31605784f3c2da77664cf3c8d20f915d300a778b7f03652232b6883",
+    "size": 42124
+  },
+  "linux-native/options/native/twelve-printed-lines-m7-r320x192.json": {
+    "sha256": "5a36a9e90080f670bf331dc92596b6dbb725c3d312c748253013699eb12fcc32",
+    "size": 41690
+  },
+  "linux-native/options/native/twelve-printed-lines-m7-r33x65.json": {
+    "sha256": "6eba2edab3bbb88bbae212ccb8550dd747dbc567dad95f4d2608637a8415d4a3",
+    "size": 504
+  },
+  "linux-native/options/native/twelve-printed-lines-m7-r640x384.json": {
+    "sha256": "10293c2fb5c01ffd9684edad0d0b77d236aea317b2a473bbe14b41d41273530d",
+    "size": 41360
+  },
+  "linux-native/options/native/twelve-printed-lines-m7-r768x512.json": {
+    "sha256": "2d38c2095c4abd311e993f927818c44de0ac8c5962c7f401304948c3e2ad3b46",
+    "size": 41426
+  },
+  "linux-native/options/native/twelve-printed-lines-m9-r1152x768.json": {
+    "sha256": "7ec99e695f42bacd1465c36788b79480389c21c333458572a97b81491226667b",
+    "size": 53985
+  },
+  "linux-native/options/native/twelve-printed-lines-m9-r320x192.json": {
+    "sha256": "db1b9b90dc1d46ce5f21125a6177713041f01776170af0582b645c85067daf59",
+    "size": 53232
+  },
+  "linux-native/options/native/twelve-printed-lines-m9-r33x65.json": {
+    "sha256": "6eba2edab3bbb88bbae212ccb8550dd747dbc567dad95f4d2608637a8415d4a3",
+    "size": 504
+  },
+  "linux-native/options/native/twelve-printed-lines-m9-r640x384.json": {
+    "sha256": "401f75da7fedd296c7cdc3b52ce828a87d01025cbe656beae530c8c913b8c5ae",
+    "size": 52909
+  },
+  "linux-native/options/native/twelve-printed-lines-m9-r768x512.json": {
+    "sha256": "ecb368c4853d5e1ce8aa465dc394930bde91e91f43433c616030a9ab4340d628",
+    "size": 53130
+  },
+  "linux-native/options/native/twelve-printed-lines-m999-r1152x768.json": {
+    "sha256": "e71dd2941e5b836370460d1b271b77f80b7bbaab2af5091592428159ae5ffe67",
+    "size": 71626
+  },
+  "linux-native/options/native/twelve-printed-lines-m999-r320x192.json": {
+    "sha256": "81a52be37fc38feec4691e73199496577f5de65ccee950d3643bf2e15e6b581c",
+    "size": 70961
+  },
+  "linux-native/options/native/twelve-printed-lines-m999-r33x65.json": {
+    "sha256": "6eba2edab3bbb88bbae212ccb8550dd747dbc567dad95f4d2608637a8415d4a3",
+    "size": 504
+  },
+  "linux-native/options/native/twelve-printed-lines-m999-r640x384.json": {
+    "sha256": "b12e4813649478d1af0b76fb7c686b1f25f71a9f2ec26ff1adefc013b02a233b",
+    "size": 70599
+  },
+  "linux-native/options/native/twelve-printed-lines-m999-r768x512.json": {
+    "sha256": "12fb384cca83ebb50289bfa17397a28edb59b41de5c8e917452e30b208edb90e",
+    "size": 70808
+  },
+  "linux-native/options/native/vertical-cjk-m1-r640x384.json": {
+    "sha256": "e9636f51a49b3a51bec476a9f014e9f9d0329ca9ccf5239a1a62d272ca216e8b",
+    "size": 3927
+  },
+  "linux-native/options/native/vertical-cjk-m5-r1151x767.json": {
+    "sha256": "1969d80528012eb634d73e1b85ddfe98affa5e98fd3840b5f820dbfabff1f6ac",
+    "size": 3867
+  },
+  "linux-native/options/parameter-blank-m1-r1151x768.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/parameter-blank-m1-r1152x767.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/parameter-blank-m1-r1152x768.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/parameter-blank-m1-r32x32.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-m1-r640x384.parity.json": {
+    "sha256": "2069ce331c0a06b074467ee3124b055db8c1cc954607cba43f63fe8db99d3a4f",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-m5-r1152x768.parity.json": {
+    "sha256": "8f7b7faa35ee077f49d39cc7c54593bc8b034a5e35061b40afdd6651e57d4ec1",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-m7-r768x512.parity.json": {
+    "sha256": "dcd499baf3803264e2c7104f8a3f4eec67e3e4adae4c0dedf69aab8a9fbe6116",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-rotate-10-m1-r1152x768.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-rotate-10-m1000-r33x65.parity.json": {
+    "sha256": "a7d4ff2411a3f446600f26f240eb6c0cf6077180083286c9f31910137a44a65e",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-rotate-10-m5-r640x384.parity.json": {
+    "sha256": "c7aa340d9fcf0dd797822d983d669876fa9b93dec49a642bd3bd8c8f6418e63d",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-rotate-10-m6-r768x512.parity.json": {
+    "sha256": "c7aa340d9fcf0dd797822d983d669876fa9b93dec49a642bd3bd8c8f6418e63d",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-rotate-180-m1-r1152x768.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-rotate-180-m1000-r33x65.parity.json": {
+    "sha256": "2069ce331c0a06b074467ee3124b055db8c1cc954607cba43f63fe8db99d3a4f",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-rotate-180-m5-r640x384.parity.json": {
+    "sha256": "8f7b7faa35ee077f49d39cc7c54593bc8b034a5e35061b40afdd6651e57d4ec1",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-rotate-180-m6-r768x512.parity.json": {
+    "sha256": "dcd499baf3803264e2c7104f8a3f4eec67e3e4adae4c0dedf69aab8a9fbe6116",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-rotate-270-m1-r1152x768.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-rotate-270-m1000-r33x65.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-rotate-270-m5-r640x384.parity.json": {
+    "sha256": "a7d4ff2411a3f446600f26f240eb6c0cf6077180083286c9f31910137a44a65e",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-rotate-270-m6-r768x512.parity.json": {
+    "sha256": "8f7b7faa35ee077f49d39cc7c54593bc8b034a5e35061b40afdd6651e57d4ec1",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-rotate-90-m1-r1152x768.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-rotate-90-m1000-r33x65.parity.json": {
+    "sha256": "c7aa340d9fcf0dd797822d983d669876fa9b93dec49a642bd3bd8c8f6418e63d",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-rotate-90-m5-r640x384.parity.json": {
+    "sha256": "8c7780d88503a5b719ea6e34bc45de0def597406e7b9c4268dd4a0d924ec01ca",
+    "size": 238
+  },
+  "linux-native/options/red-calligraphy-jason-rotate-90-m6-r768x512.parity.json": {
+    "sha256": "c7aa340d9fcf0dd797822d983d669876fa9b93dec49a642bd3bd8c8f6418e63d",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-m1-r640x384.parity.json": {
+    "sha256": "2069ce331c0a06b074467ee3124b055db8c1cc954607cba43f63fe8db99d3a4f",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-m5-r1152x768.parity.json": {
+    "sha256": "a7d4ff2411a3f446600f26f240eb6c0cf6077180083286c9f31910137a44a65e",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-m7-r768x512.parity.json": {
+    "sha256": "f264dc013bcb3775bdf687ec50f8b897e2bb1fba3f819d372253cd8f27a21342",
+    "size": 241
+  },
+  "linux-native/options/red-grid-jason-rotate-10-m1-r1152x768.parity.json": {
+    "sha256": "2069ce331c0a06b074467ee3124b055db8c1cc954607cba43f63fe8db99d3a4f",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-rotate-10-m1000-r33x65.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-rotate-10-m5-r640x384.parity.json": {
+    "sha256": "8f7b7faa35ee077f49d39cc7c54593bc8b034a5e35061b40afdd6651e57d4ec1",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-rotate-10-m6-r768x512.parity.json": {
+    "sha256": "c7aa340d9fcf0dd797822d983d669876fa9b93dec49a642bd3bd8c8f6418e63d",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-rotate-180-m1-r1152x768.parity.json": {
+    "sha256": "2069ce331c0a06b074467ee3124b055db8c1cc954607cba43f63fe8db99d3a4f",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-rotate-180-m1000-r33x65.parity.json": {
+    "sha256": "a7d4ff2411a3f446600f26f240eb6c0cf6077180083286c9f31910137a44a65e",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-rotate-180-m5-r640x384.parity.json": {
+    "sha256": "8c7780d88503a5b719ea6e34bc45de0def597406e7b9c4268dd4a0d924ec01ca",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-rotate-180-m6-r768x512.parity.json": {
+    "sha256": "8f7b7faa35ee077f49d39cc7c54593bc8b034a5e35061b40afdd6651e57d4ec1",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-rotate-270-m1-r1152x768.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-rotate-270-m1000-r33x65.parity.json": {
+    "sha256": "8f7b7faa35ee077f49d39cc7c54593bc8b034a5e35061b40afdd6651e57d4ec1",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-rotate-270-m5-r640x384.parity.json": {
+    "sha256": "a7d4ff2411a3f446600f26f240eb6c0cf6077180083286c9f31910137a44a65e",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-rotate-270-m6-r768x512.parity.json": {
+    "sha256": "c7aa340d9fcf0dd797822d983d669876fa9b93dec49a642bd3bd8c8f6418e63d",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-rotate-90-m1-r1152x768.parity.json": {
+    "sha256": "8a5cc73057e6c8276c38317bee3f504133d7588a470f02fc029fb6a14c67d98b",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-rotate-90-m1000-r33x65.parity.json": {
+    "sha256": "a7d4ff2411a3f446600f26f240eb6c0cf6077180083286c9f31910137a44a65e",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-rotate-90-m5-r640x384.parity.json": {
+    "sha256": "8c7780d88503a5b719ea6e34bc45de0def597406e7b9c4268dd4a0d924ec01ca",
+    "size": 238
+  },
+  "linux-native/options/red-grid-jason-rotate-90-m6-r768x512.parity.json": {
+    "sha256": "c7aa340d9fcf0dd797822d983d669876fa9b93dec49a642bd3bd8c8f6418e63d",
+    "size": 238
+  },
+  "linux-native/options/suite.json": {
+    "sha256": "4d25bd4af76431b9644158d1afe1a1c32ddb8fcb58ecb4c975a34c7f8595fe94",
+    "size": 89338
+  },
+  "linux-native/options/thai-36-m0-r320x192.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/options/thai-36-m1-r640x384.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/options/thai-36-m2-r1151x767.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m0-r640x384.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/twelve-printed-lines-m1-r1152x768.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m1-r320x192.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m1-r33x65.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m1-r640x384.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m1-r768x512.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m1000-r1152x768.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/twelve-printed-lines-m1000-r320x192.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/twelve-printed-lines-m1000-r33x65.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m1000-r640x384.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/twelve-printed-lines-m1000-r768x512.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/twelve-printed-lines-m11-r1152x768.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/twelve-printed-lines-m11-r320x192.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/twelve-printed-lines-m11-r33x65.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m11-r640x384.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/twelve-printed-lines-m11-r768x512.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/twelve-printed-lines-m2-r0x0.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m2-r1152x768.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m2-r320x192.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m2-r33x65.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m2-r640x384.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m2-r768x512.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m3-r1152x768.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m3-r320x192.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m3-r33x65.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m3-r640x384.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m3-r768x512.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m32-r1152x768.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/twelve-printed-lines-m32-r320x192.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/twelve-printed-lines-m32-r33x65.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m32-r640x384.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/twelve-printed-lines-m32-r768x512.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/twelve-printed-lines-m4-r1152x768.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m4-r320x192.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m4-r33x65.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m4-r640x384.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m4-r768x512.parity.json": {
+    "sha256": "8f2994fe92eafc307a1ee3447f08a2f113b2e51d2daec90731b6264cdefb3369",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m5-r1152x768.parity.json": {
+    "sha256": "a7d4ff2411a3f446600f26f240eb6c0cf6077180083286c9f31910137a44a65e",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m5-r320x192.parity.json": {
+    "sha256": "a7d4ff2411a3f446600f26f240eb6c0cf6077180083286c9f31910137a44a65e",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m5-r33x65.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m5-r640x384.parity.json": {
+    "sha256": "a7d4ff2411a3f446600f26f240eb6c0cf6077180083286c9f31910137a44a65e",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m5-r768x512.parity.json": {
+    "sha256": "a7d4ff2411a3f446600f26f240eb6c0cf6077180083286c9f31910137a44a65e",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m7-r1152x768.parity.json": {
+    "sha256": "8f7b7faa35ee077f49d39cc7c54593bc8b034a5e35061b40afdd6651e57d4ec1",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m7-r320x192.parity.json": {
+    "sha256": "8f7b7faa35ee077f49d39cc7c54593bc8b034a5e35061b40afdd6651e57d4ec1",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m7-r33x65.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m7-r640x384.parity.json": {
+    "sha256": "8f7b7faa35ee077f49d39cc7c54593bc8b034a5e35061b40afdd6651e57d4ec1",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m7-r768x512.parity.json": {
+    "sha256": "8f7b7faa35ee077f49d39cc7c54593bc8b034a5e35061b40afdd6651e57d4ec1",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m9-r1152x768.parity.json": {
+    "sha256": "dcd499baf3803264e2c7104f8a3f4eec67e3e4adae4c0dedf69aab8a9fbe6116",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m9-r320x192.parity.json": {
+    "sha256": "dcd499baf3803264e2c7104f8a3f4eec67e3e4adae4c0dedf69aab8a9fbe6116",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m9-r33x65.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m9-r640x384.parity.json": {
+    "sha256": "dcd499baf3803264e2c7104f8a3f4eec67e3e4adae4c0dedf69aab8a9fbe6116",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m9-r768x512.parity.json": {
+    "sha256": "dcd499baf3803264e2c7104f8a3f4eec67e3e4adae4c0dedf69aab8a9fbe6116",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m999-r1152x768.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/twelve-printed-lines-m999-r320x192.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/twelve-printed-lines-m999-r33x65.parity.json": {
+    "sha256": "1f638dbec3c10a45b9caa0d5a97fb9636c36240f9b417ee892c9ea6fa612d399",
+    "size": 238
+  },
+  "linux-native/options/twelve-printed-lines-m999-r640x384.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/twelve-printed-lines-m999-r768x512.parity.json": {
+    "sha256": "3bd3e1a994e162f5c3b70e77314a54a6bafc301096e37228de2fda432e9150a0",
+    "size": 241
+  },
+  "linux-native/options/vertical-cjk-m1-r640x384.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/options/vertical-cjk-m5-r1151x767.parity.json": {
+    "sha256": "20ab31eccfb60f378b7633179519b6dba10d3e55e403d1dff9708eb8ec3b4cbc",
+    "size": 238
+  },
+  "linux-native/summary.json": {
+    "sha256": "50b1f1a2339da680578654794e901edd21e0b745b23361bfcc1621ae94122e50",
+    "size": 1292
+  },
+  "README.md": {
+    "sha256": "24c607554254c6fa3f0f2049ff1ce573cba3da903a7ee2fcf58d9ceafc557af5",
+    "size": 4908
+  },
+  "summary.json": {
+    "sha256": "f99822dde1622bfc24e53a90748c541d4f00ff831e77745cade9860aadefafc9",
+    "size": 712
+  },
+  "windows-native/all-samples/024e54a6c8e3ba17.parity.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "windows-native/all-samples/0486f0c2e5664aed.parity.json": {
+    "sha256": "3f9001132140c369616f969192de1dd253ac3500369f07d8eda18a58e6341323",
+    "size": 254
+  },
+  "windows-native/all-samples/0582df7394486480.parity.json": {
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9",
+    "size": 254
+  },
+  "windows-native/all-samples/058949810e7c76d3.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/0676d3f4ef6c5e2a.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/0b6fd6de5d12d93c.parity.json": {
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0",
+    "size": 251
+  },
+  "windows-native/all-samples/0cbc944c1fac881f.parity.json": {
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44",
+    "size": 254
+  },
+  "windows-native/all-samples/0e06c211cb4a4831.parity.json": {
+    "sha256": "2135aed4aab91b45cc6ed272d1086ddc19d219a46ec3e822f5d6b4bec085b060",
+    "size": 257
+  },
+  "windows-native/all-samples/0f2b4483dc0e1c98.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/all-samples/0fc39af69da4cfed.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/all-samples/133a8c148862ce3a.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/all-samples/1460619f37acbd0c.parity.json": {
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44",
+    "size": 254
+  },
+  "windows-native/all-samples/14f564d2b7d2e446.parity.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "windows-native/all-samples/1aad6147b578f344.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/all-samples/1ea42cacfd82f6c0.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/203573ceb1873d5c.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/224ffeac6e0cd92d.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/all-samples/280528b4b1cb14b3.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/all-samples/28e79bff204857cf.parity.json": {
+    "sha256": "ccbb575bd8ac13222ad13095612ba4d4a231cbf27a3aa95056a632a797f393bb",
+    "size": 254
+  },
+  "windows-native/all-samples/2c2835cf707a4fe6.parity.json": {
+    "sha256": "3670f90c4f4620120fcae0c2418ae1de6008cbf8b4db95991c077c749b9233d4",
+    "size": 254
+  },
+  "windows-native/all-samples/2db7bd9b6595c479.parity.json": {
+    "sha256": "03d34f9bde8aecda585739eb9cae56889719cd69c5b2f7f886734b7af51d2dd8",
+    "size": 254
+  },
+  "windows-native/all-samples/2f4730c5e82e18ff.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/3255119646d641ba.parity.json": {
+    "sha256": "728511083d2333d85747b32cc63b584b8ce89633a8a905f278798f23e5b3012e",
+    "size": 254
+  },
+  "windows-native/all-samples/3295ba0789edc763.parity.json": {
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5",
+    "size": 251
+  },
+  "windows-native/all-samples/35b9cf211491fc5b.parity.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "windows-native/all-samples/39a29be9779394c5.parity.json": {
+    "sha256": "03d34f9bde8aecda585739eb9cae56889719cd69c5b2f7f886734b7af51d2dd8",
+    "size": 254
+  },
+  "windows-native/all-samples/3aabaeed287f6784.parity.json": {
+    "sha256": "e1b4bf6a8bb8e496d7870c4e328528278f1a9c60cce40064e0102706734b4a02",
+    "size": 257
+  },
+  "windows-native/all-samples/3c6e7c7ab6144e27.parity.json": {
+    "sha256": "1fbdcb75a944f910d47a221eed152df94aa8928ac5d7d55b26513a51602e3494",
+    "size": 254
+  },
+  "windows-native/all-samples/4070a7afd9a7184b.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/40a0423bfcae386f.parity.json": {
+    "sha256": "70a3f517c1368091e412e3a5899f6255b0904a71c9188c4ffd2e4ceafa03cba9",
+    "size": 254
+  },
+  "windows-native/all-samples/41b45e5a7c1f065c.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/all-samples/426c4c4b4327f07c.parity.json": {
+    "sha256": "ee8f3169813a79203eb12131c86e97c7f2ad9e6322afcf7dc8d2c046cf55a143",
+    "size": 254
+  },
+  "windows-native/all-samples/44d499f3f15ffc62.parity.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "windows-native/all-samples/456fa06428e1e12f.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/all-samples/493754a016f2232e.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/4a2cab3fdba7faea.parity.json": {
+    "sha256": "b086455188ae5813285e6aa3425f0b95c398fc46527d1026dafb636370bff842",
+    "size": 257
+  },
+  "windows-native/all-samples/4b43a6f478545d70.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/4cb3c7f3a7eae8bb.parity.json": {
+    "sha256": "f07b3d0b122ea62989745db75430ad7ebf81f5b6495ca4c8bd04a1982278e5f7",
+    "size": 254
+  },
+  "windows-native/all-samples/4f45cf0e51f46a54.parity.json": {
+    "sha256": "aa0fea56c8c56dee0e1814c7e36d36a8014f18c33f2cc1e825ab8f15ce24812c",
+    "size": 254
+  },
+  "windows-native/all-samples/4f4c989c97595b6e.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/all-samples/4fceece9f2d76a6e.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/512b352f18af3f4f.parity.json": {
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02",
+    "size": 254
+  },
+  "windows-native/all-samples/540490b03d22b577.parity.json": {
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1",
+    "size": 254
+  },
+  "windows-native/all-samples/55932e69942ed683.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/5a422da9a529a336.parity.json": {
+    "sha256": "70a3f517c1368091e412e3a5899f6255b0904a71c9188c4ffd2e4ceafa03cba9",
+    "size": 254
+  },
+  "windows-native/all-samples/5f9d77976f578583.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/all-samples/5fa29af9e63fefc2.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/60f7669b6fa86751.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/640bb28cd64c2e5b.parity.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "windows-native/all-samples/6692328598e9c3a8.parity.json": {
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1",
+    "size": 254
+  },
+  "windows-native/all-samples/6784152fa17f8d76.parity.json": {
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02",
+    "size": 254
+  },
+  "windows-native/all-samples/6a86cb9011438813.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/71fe5f6e6888b73b.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/728b694ae01441a4.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/all-samples/7750735bcbce34ec.parity.json": {
+    "sha256": "4e88bd421f7cb6b33b5b6d60693604b8181459828a1d27ce8a7312affb1f5c15",
+    "size": 254
+  },
+  "windows-native/all-samples/7d60dfc27e54a03b.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/all-samples/8229419c872341b9.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/83a365509f1cc2b7.parity.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "windows-native/all-samples/86a7ffe5513e5633.parity.json": {
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1",
+    "size": 254
+  },
+  "windows-native/all-samples/88d6f6f571abb9ad.parity.json": {
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02",
+    "size": 254
+  },
+  "windows-native/all-samples/8d1e2d06c5f24990.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/all-samples/903c40f10a92c762.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/all-samples/913b6e2fbe4c0d3b.parity.json": {
+    "sha256": "8014c99d189a8ad420bfafddcef98583edd9538bae8f71f4d82495a8bdab5a0e",
+    "size": 254
+  },
+  "windows-native/all-samples/914953ff8fb9b879.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/all-samples/92de0a88437e32a3.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/946c5faeaa0f2ec5.parity.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "windows-native/all-samples/9a0e9586ac3fe4e2.parity.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "windows-native/all-samples/9b462fed1772311b.parity.json": {
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9",
+    "size": 254
+  },
+  "windows-native/all-samples/9d004236328aca8f.parity.json": {
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1",
+    "size": 254
+  },
+  "windows-native/all-samples/9d80e98d12d362b3.parity.json": {
+    "sha256": "22a11bc3c67a69cbf8604e58d3a68ca77d47ad49d1f3bca2e67df4ff206d1cc3",
+    "size": 254
+  },
+  "windows-native/all-samples/9e131b7b56e565db.parity.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "windows-native/all-samples/9e2ab94f59cf15f8.parity.json": {
+    "sha256": "260f2faa1127060366c3c302caa364e51dc722330115427653cfecdc71a850eb",
+    "size": 254
+  },
+  "windows-native/all-samples/9f735a010e88a648.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/all-samples/a2446851712be525.parity.json": {
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485",
+    "size": 254
+  },
+  "windows-native/all-samples/a24e31eb0aa23b4f.parity.json": {
+    "sha256": "57e838ea54a4468f03371b0f8d3652dfb5f2371b22e10541bdf61334814a61e0",
+    "size": 254
+  },
+  "windows-native/all-samples/a45fc642aa130558.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/a744c24e96808cb4.parity.json": {
+    "sha256": "c3dc63ec8263de419e813395d0e841df828d17f800bc83bc3d8ce4707f1823a5",
+    "size": 254
+  },
+  "windows-native/all-samples/a83d2bf9aa769ebd.parity.json": {
+    "sha256": "22a11bc3c67a69cbf8604e58d3a68ca77d47ad49d1f3bca2e67df4ff206d1cc3",
+    "size": 254
+  },
+  "windows-native/all-samples/a87dd8607e0fda5f.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/all-samples/a9819bb8f9e9f5ef.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/all-samples/a99b928ceb0f443e.parity.json": {
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485",
+    "size": 254
+  },
+  "windows-native/all-samples/ab78d5d64fd48439.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/all-samples/ab902c56bd93d342.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/all-samples/abad7ae0707ac749.parity.json": {
+    "sha256": "06fda8c0c1d50a5df59a9537d01986740889d8a086e4c735e62255c5ee40e7ef",
+    "size": 254
+  },
+  "windows-native/all-samples/b0d25177b1a8480c.parity.json": {
+    "sha256": "b05da171e6d572852165ddb8ce34baf226ce59280b8f6cc01fdb146879af34aa",
+    "size": 257
+  },
+  "windows-native/all-samples/b0e62b5268bf3ae1.parity.json": {
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0",
+    "size": 251
+  },
+  "windows-native/all-samples/b3edaa47ba780e0c.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/all-samples/b563bb5b3e206ad7.parity.json": {
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1",
+    "size": 254
+  },
+  "windows-native/all-samples/bbbd4ae8468a6451.parity.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "windows-native/all-samples/be771810db2def78.parity.json": {
+    "sha256": "a0474f8d704d90764f51194ebb9a423bcd8d6972eb80a2095aca28d46d2b686e",
+    "size": 254
+  },
+  "windows-native/all-samples/c062c4f8b726c822.parity.json": {
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44",
+    "size": 254
+  },
+  "windows-native/all-samples/c159f2e4564feb4f.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/c323ed4e5eccd42e.parity.json": {
+    "sha256": "3f9001132140c369616f969192de1dd253ac3500369f07d8eda18a58e6341323",
+    "size": 254
+  },
+  "windows-native/all-samples/c45a727514fb8982.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/all-samples/c777a45d62cce90a.parity.json": {
+    "sha256": "539b4f795d73ad152f72d7e0bc47664199540eac3ba7885ec9fc93a93b4f6ecc",
+    "size": 254
+  },
+  "windows-native/all-samples/c8564aeddba82f04.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/all-samples/c8cde51505833347.parity.json": {
+    "sha256": "85c956eece3f6895aab21d39ed4284123d976e327bb80a2d3a269a36dd051a01",
+    "size": 254
+  },
+  "windows-native/all-samples/c9a092125962e322.parity.json": {
+    "sha256": "062b8cb128256bac5afeedd71cc6ec2c12837c4f0f8beb2e4d9a4dae95a00e24",
+    "size": 254
+  },
+  "windows-native/all-samples/c9b8504f28656bb2.parity.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "windows-native/all-samples/caaf9f2c75e68fb3.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/all-samples/cb5009e20bb1123a.parity.json": {
+    "sha256": "09e7050a340b4b445bf853177bd61db15955d4068295dea3674f4d95d2ebee17",
+    "size": 254
+  },
+  "windows-native/all-samples/cc5c505c9a91f65a.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/all-samples/cc615a3e5cb1499e.parity.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "windows-native/all-samples/da00952f9e92b062.parity.json": {
+    "sha256": "70a3f517c1368091e412e3a5899f6255b0904a71c9188c4ffd2e4ceafa03cba9",
+    "size": 254
+  },
+  "windows-native/all-samples/db4b91782dd3efb7.parity.json": {
+    "sha256": "251ec8348aee23ae6df587a1e26a0134c0ee740295b8c18d8465a7d3f4b766b3",
+    "size": 254
+  },
+  "windows-native/all-samples/de744546e5b8a0e6.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/all-samples/de900bc558f2dca8.parity.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "windows-native/all-samples/df2560f7906cab6d.parity.json": {
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1",
+    "size": 254
+  },
+  "windows-native/all-samples/e0a96ddd6fe8007f.parity.json": {
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485",
+    "size": 254
+  },
+  "windows-native/all-samples/e2147debb746e953.parity.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "windows-native/all-samples/e37ba8d39f1765ee.parity.json": {
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1",
+    "size": 254
+  },
+  "windows-native/all-samples/e3d262776302832f.parity.json": {
+    "sha256": "09e7050a340b4b445bf853177bd61db15955d4068295dea3674f4d95d2ebee17",
+    "size": 254
+  },
+  "windows-native/all-samples/e56ebcbad4b3ec61.parity.json": {
+    "sha256": "4497b60925b216db8f5008973d6272c89c90a6de40249fc2f508365364c2c305",
+    "size": 254
+  },
+  "windows-native/all-samples/e6c08e3cc9b0eb2f.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/all-samples/e8417890fea95361.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/all-samples/eae7f502cfea5855.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/all-samples/eb1b381667716066.parity.json": {
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9",
+    "size": 254
+  },
+  "windows-native/all-samples/eb6e81323fe050ef.parity.json": {
+    "sha256": "4497b60925b216db8f5008973d6272c89c90a6de40249fc2f508365364c2c305",
+    "size": 254
+  },
+  "windows-native/all-samples/ed5b69a9711e3f53.parity.json": {
+    "sha256": "251ec8348aee23ae6df587a1e26a0134c0ee740295b8c18d8465a7d3f4b766b3",
+    "size": 254
+  },
+  "windows-native/all-samples/f06b8315200c1abb.parity.json": {
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02",
+    "size": 254
+  },
+  "windows-native/all-samples/f3a0c13bdc84f24b.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/all-samples/f9dcd81f8ca741ba.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/all-samples/fd9577ef8f62f6a7.parity.json": {
+    "sha256": "ccbb575bd8ac13222ad13095612ba4d4a231cbf27a3aa95056a632a797f393bb",
+    "size": 254
+  },
+  "windows-native/all-samples/native/024e54a6c8e3ba17.json": {
+    "sha256": "49c6cda0d9aa576c4ba541145455f34ef720ed1bcac0a831f9ef34ab753f509c",
+    "size": 9465
+  },
+  "windows-native/all-samples/native/0486f0c2e5664aed.json": {
+    "sha256": "c452d3a9b403e7b26ab921a430473b11570cb96f9699ee5150ba600bc5136656",
+    "size": 241034
+  },
+  "windows-native/all-samples/native/0582df7394486480.json": {
+    "sha256": "87b0f37b9f4c623f50d5d703f394e075f02eeb6b3e1ee5b63ca85e7d0d8689fe",
+    "size": 96789
+  },
+  "windows-native/all-samples/native/058949810e7c76d3.json": {
+    "sha256": "c9a98549ae05333302c821cd0be1d5867c8faa66b5d47e726c3fd5be644090cd",
+    "size": 1242
+  },
+  "windows-native/all-samples/native/0676d3f4ef6c5e2a.json": {
+    "sha256": "d92cad0ae74d9609e585942ecb6559ec80ff841508de2e2769bd27a85086db40",
+    "size": 2481
+  },
+  "windows-native/all-samples/native/0b6fd6de5d12d93c.json": {
+    "sha256": "d7655807a6da1fb4ea4958882203db80fabe5b720ade31888563109acf578bea",
+    "size": 16218
+  },
+  "windows-native/all-samples/native/0cbc944c1fac881f.json": {
+    "sha256": "250fe33e4d501964bc76cd18bad8e20cb3cca42ed7ca5f0be2eff8655a1209c9",
+    "size": 45228
+  },
+  "windows-native/all-samples/native/0e06c211cb4a4831.json": {
+    "sha256": "139436f6fcac708fe3d81cec1eae895459447fe262cade0201f440e4d2baeb42",
+    "size": 152979
+  },
+  "windows-native/all-samples/native/0f2b4483dc0e1c98.json": {
+    "sha256": "5e7bf38cc11a5debb9410c315dbda1d929f7ac108fa62b618238bb6f5b3d6acd",
+    "size": 513
+  },
+  "windows-native/all-samples/native/0fc39af69da4cfed.json": {
+    "sha256": "cf9cd6df7d40a1e49e89f2be523a100d0fd67f4fa30e6da3947c1f5636d61f96",
+    "size": 5655
+  },
+  "windows-native/all-samples/native/133a8c148862ce3a.json": {
+    "sha256": "602b6c852f4be8f12d4b015293fab0523b6360dd04cd55600e47b1736e2f3503",
+    "size": 2346
+  },
+  "windows-native/all-samples/native/1460619f37acbd0c.json": {
+    "sha256": "6764750d019dbc11918264f4d481f50e233dd779044bdef7b867c806575a7c1e",
+    "size": 27881
+  },
+  "windows-native/all-samples/native/14f564d2b7d2e446.json": {
+    "sha256": "b0688259337c8a5537af95d3deab8728c9298a013a3b16c886d28ccecbc14b2f",
+    "size": 8631
+  },
+  "windows-native/all-samples/native/1aad6147b578f344.json": {
+    "sha256": "d339cb5bdd333cd81caf09df7f51a0884f2f650c2f602dd3862bb3ab6cadcbb2",
+    "size": 5973
+  },
+  "windows-native/all-samples/native/1ea42cacfd82f6c0.json": {
+    "sha256": "ffb10f43af6763246a337a6ada1d79f2d2dce01ebe6553a70012ea8a3a34d7d8",
+    "size": 3687
+  },
+  "windows-native/all-samples/native/203573ceb1873d5c.json": {
+    "sha256": "9f6dd2aff089409f44eef6c47eb92320f8a4b3bb1fd662afff348f0e068bf7e6",
+    "size": 2485
+  },
+  "windows-native/all-samples/native/224ffeac6e0cd92d.json": {
+    "sha256": "a0e9f936cd4b1e2c329ee78813112bfcc6886e804d5f286c9dd1c27e50f50fe3",
+    "size": 6360
+  },
+  "windows-native/all-samples/native/280528b4b1cb14b3.json": {
+    "sha256": "785317456e182fd43796a0e54ed0c5430524385ade0a32639d7f143da98d1711",
+    "size": 6366
+  },
+  "windows-native/all-samples/native/28e79bff204857cf.json": {
+    "sha256": "9c247cd42f92aefebd7740ef85172a53f163a7dfdf2f036737c71c2b549775c1",
+    "size": 127999
+  },
+  "windows-native/all-samples/native/2c2835cf707a4fe6.json": {
+    "sha256": "752d49a868f978d066100501516685f737d8d1932f43ccaabc7e60962abb305e",
+    "size": 64683
+  },
+  "windows-native/all-samples/native/2db7bd9b6595c479.json": {
+    "sha256": "48c3164ebdcc204f501e543e6efdf7d5f44809e2c4a9da84730cacf094311c04",
+    "size": 38073
+  },
+  "windows-native/all-samples/native/2f4730c5e82e18ff.json": {
+    "sha256": "5e20483970f36189a0cfabbd7357a22fd0823d03aeb2c33fb955f4771b71c225",
+    "size": 2043
+  },
+  "windows-native/all-samples/native/3255119646d641ba.json": {
+    "sha256": "ff00457eb7670ad962e22adc9cc413233fdbb5d467627ed6766e4ea60f4567fb",
+    "size": 105427
+  },
+  "windows-native/all-samples/native/3295ba0789edc763.json": {
+    "sha256": "ebcf9a821444d1539699a4cd7f1e27e940cca7f093ef0a165edc8cc4b9619409",
+    "size": 8695
+  },
+  "windows-native/all-samples/native/35b9cf211491fc5b.json": {
+    "sha256": "121bb90e357311645eaca36a08dcfc63cb1f7cf5dd480a73a5c7464200a35b63",
+    "size": 38233
+  },
+  "windows-native/all-samples/native/39a29be9779394c5.json": {
+    "sha256": "6893fb67f837431c8fb5b7275a77088572301b0ffe404dff3533defd050067f1",
+    "size": 36054
+  },
+  "windows-native/all-samples/native/3aabaeed287f6784.json": {
+    "sha256": "ebe4a985621d73369074fc07ce28fc00847fbe3d0fa1cc0177be43a635960893",
+    "size": 151416
+  },
+  "windows-native/all-samples/native/3c6e7c7ab6144e27.json": {
+    "sha256": "bad6abd8e218a4e65bf3a633c9d8fdbc33cbbbb048a9a477094aa17227065bc4",
+    "size": 86014
+  },
+  "windows-native/all-samples/native/4070a7afd9a7184b.json": {
+    "sha256": "1b7039abb1b6b37b7ae7bea5b85723f828645f9b5de12729b9d4be5550c908f7",
+    "size": 1184
+  },
+  "windows-native/all-samples/native/40a0423bfcae386f.json": {
+    "sha256": "029aab471d2b1a07108937f067778387466d97c74076ca9bc8883dde768850a4",
+    "size": 36806
+  },
+  "windows-native/all-samples/native/41b45e5a7c1f065c.json": {
+    "sha256": "abc3cac65cb3733c61a37e16fa3e5f6e7866b9b471611efa5ef4ab601c03b82f",
+    "size": 5501
+  },
+  "windows-native/all-samples/native/426c4c4b4327f07c.json": {
+    "sha256": "fc01c5b4d96406b444d1db7cb42aa3d56f07fba0e37a431762c4ae30171f4e12",
+    "size": 53798
+  },
+  "windows-native/all-samples/native/44d499f3f15ffc62.json": {
+    "sha256": "db9e474c07f775f14f6c95d595a82e8f720db9257d77baf4e43d3ed55ebd709a",
+    "size": 38278
+  },
+  "windows-native/all-samples/native/456fa06428e1e12f.json": {
+    "sha256": "c8b1314fe0a8233c5466259ad5d081ecbafbfa52d104022e7676e9e4db5419d3",
+    "size": 501
+  },
+  "windows-native/all-samples/native/493754a016f2232e.json": {
+    "sha256": "004d3a4fab640202211b33c935910d878b6cf9fad3ada67beb871116944c9ae4",
+    "size": 8862
+  },
+  "windows-native/all-samples/native/4a2cab3fdba7faea.json": {
+    "sha256": "a79666159b95fdfb65a885c163eb68a3aeb5df5dc8d3c64abcccb514e9ca58a9",
+    "size": 661159
+  },
+  "windows-native/all-samples/native/4b43a6f478545d70.json": {
+    "sha256": "50b70a1d0a87a058bb981b98382b6dcad11d05eea6297410773149833c031388",
+    "size": 40326
+  },
+  "windows-native/all-samples/native/4cb3c7f3a7eae8bb.json": {
+    "sha256": "f034763ca6d2c6c4118a5e4df2a963f62a95012a76a1dc4b79ba9bf51c81177e",
+    "size": 131725
+  },
+  "windows-native/all-samples/native/4f45cf0e51f46a54.json": {
+    "sha256": "74704d093bc9b65c3346ddcb79f7cd67f0ee357b02c66bf09359b37acfabd697",
+    "size": 90172
+  },
+  "windows-native/all-samples/native/4f4c989c97595b6e.json": {
+    "sha256": "2e13983b108fbd9900b401062ef751d9c00c4b370fbd0cd43e853ad388812ccb",
+    "size": 506
+  },
+  "windows-native/all-samples/native/4fceece9f2d76a6e.json": {
+    "sha256": "332ad018a8bfb5f8842ee57ed47ef2ef9e5d286043f512a15ffc8ea65d5a2d4f",
+    "size": 2056
+  },
+  "windows-native/all-samples/native/512b352f18af3f4f.json": {
+    "sha256": "ed2c9ce6b6c62b395d157d02d97d3524e56b379a633cf844b20d42c347fb8fd0",
+    "size": 25687
+  },
+  "windows-native/all-samples/native/540490b03d22b577.json": {
+    "sha256": "e312f4fe8b7703c648a548f9ee89ad219ffdf24180b9fcb652b2d5a28e96cc56",
+    "size": 39222
+  },
+  "windows-native/all-samples/native/55932e69942ed683.json": {
+    "sha256": "d5e546517e5b467da3ed77e05571bd79f8a13d3fe598bf5b343411aa3923cda7",
+    "size": 2071
+  },
+  "windows-native/all-samples/native/5a422da9a529a336.json": {
+    "sha256": "1092ac9e3bff8364b83da7317d48652503a9be0f4c5d0abbbc8a26999089d575",
+    "size": 38371
+  },
+  "windows-native/all-samples/native/5f9d77976f578583.json": {
+    "sha256": "7819c35e9cd684af5c01a9b2509965e674f5bd8389b21c4a31d4a5e59c87cf16",
+    "size": 6383
+  },
+  "windows-native/all-samples/native/5fa29af9e63fefc2.json": {
+    "sha256": "7df46abd00f26ac11470a5b1c59390881d76122779162a4a1bf74df5f3073ffa",
+    "size": 1244
+  },
+  "windows-native/all-samples/native/60f7669b6fa86751.json": {
+    "sha256": "ec3e4489467be37bbf1d3291d69c49a4734e6d0edd58ab3c95d789a5b19b0227",
+    "size": 2035
+  },
+  "windows-native/all-samples/native/640bb28cd64c2e5b.json": {
+    "sha256": "1277fda1229f4779484c200af338808ad10aad4d9d6894531693c437382d93f8",
+    "size": 6295
+  },
+  "windows-native/all-samples/native/6692328598e9c3a8.json": {
+    "sha256": "5868db2ba18731c33b66e88a6a03e22c2cbeac93c03f295f266d0a6246ae4ea2",
+    "size": 26191
+  },
+  "windows-native/all-samples/native/6784152fa17f8d76.json": {
+    "sha256": "6e59114177f03884f997a2ec37ddd957b3150312695ef50c309a07fd5699690f",
+    "size": 40164
+  },
+  "windows-native/all-samples/native/6a86cb9011438813.json": {
+    "sha256": "8b089577a44c6c8f842530f412ec04f5e70c5afa487abf642a9d0cb7673707ec",
+    "size": 1250
+  },
+  "windows-native/all-samples/native/71fe5f6e6888b73b.json": {
+    "sha256": "3f17d38629064b58d13b94ab06bfced45b0cd1a680740722b24205f919be8306",
+    "size": 2080
+  },
+  "windows-native/all-samples/native/728b694ae01441a4.json": {
+    "sha256": "667c113327afd4d3cb4c2b64945b24f015031bd32bfc74115cc58efc9e441ce0",
+    "size": 6369
+  },
+  "windows-native/all-samples/native/7750735bcbce34ec.json": {
+    "sha256": "e954d6e657c79634f017dd9d0bb651e3c350ce494a625a6c2e625fdad59edd01",
+    "size": 67423
+  },
+  "windows-native/all-samples/native/7d60dfc27e54a03b.json": {
+    "sha256": "c9eaadaa871c85157c32c220601b97450a01cc2d23f48afb68eb17ee4b0d2087",
+    "size": 14735
+  },
+  "windows-native/all-samples/native/8229419c872341b9.json": {
+    "sha256": "922382c73d2198be2daf70761f90e48cc1453b1b4e0f49216096e99541d4818d",
+    "size": 1226
+  },
+  "windows-native/all-samples/native/83a365509f1cc2b7.json": {
+    "sha256": "a18d371286f0d2fcd0d0da7dbf26f05008c95723dc2fbda39e8855f2b45bb816",
+    "size": 16479
+  },
+  "windows-native/all-samples/native/86a7ffe5513e5633.json": {
+    "sha256": "716272a5fdba045f64cc5f7b238cac3dc3ad3af87fcead5207966e31ca131e10",
+    "size": 61993
+  },
+  "windows-native/all-samples/native/88d6f6f571abb9ad.json": {
+    "sha256": "1394bbc8f9e4667acbd0a2a0c2397a78bcd02194a505a75aa1ddb389f65fc6c1",
+    "size": 43406
+  },
+  "windows-native/all-samples/native/8d1e2d06c5f24990.json": {
+    "sha256": "63faec6d3fe57d09a77033f2b7968d704d4952ebcdb1eff66945a05c52ecdfea",
+    "size": 6344
+  },
+  "windows-native/all-samples/native/903c40f10a92c762.json": {
+    "sha256": "ff60b76dda80713b5f8b7f439d2f8c9aa8676965c99c68931102fad1c1cbc132",
+    "size": 11648
+  },
+  "windows-native/all-samples/native/913b6e2fbe4c0d3b.json": {
+    "sha256": "def07c3ed35583e2a3c892ef1c42b81b7ff426b36f69e3d2749c1fdb642c3fe6",
+    "size": 56241
+  },
+  "windows-native/all-samples/native/914953ff8fb9b879.json": {
+    "sha256": "4bdca81429026bc427427c25c9acc80b1761164b125d3f271e7c995f0d176d62",
+    "size": 511
+  },
+  "windows-native/all-samples/native/92de0a88437e32a3.json": {
+    "sha256": "23061d0f6060f99c02b1488352e349326e2b9a85e5b3801c29ad431fc812d9b7",
+    "size": 3720
+  },
+  "windows-native/all-samples/native/946c5faeaa0f2ec5.json": {
+    "sha256": "8556ea0a40634279661a459be09622bb098ce1fbc42f590ed03408eca61b39b8",
+    "size": 8574
+  },
+  "windows-native/all-samples/native/9a0e9586ac3fe4e2.json": {
+    "sha256": "48ea319e9ce369774307d4a944eaf0231ea611f08def8c16c97753f4dfaa276d",
+    "size": 8912
+  },
+  "windows-native/all-samples/native/9b462fed1772311b.json": {
+    "sha256": "48fe615f64183d80a023db4d9137c5d98993605154f4b23acb68ee4e0f08704c",
+    "size": 56733
+  },
+  "windows-native/all-samples/native/9d004236328aca8f.json": {
+    "sha256": "f2abc0cf4d27c37161b8e1d705d4cbd1406d808351487452e539c607b9bb4ab1",
+    "size": 9824
+  },
+  "windows-native/all-samples/native/9d80e98d12d362b3.json": {
+    "sha256": "ae1725591ccf8476df1d9090cf93d8b84b7a589027a819367e583ff52d1e3e8c",
+    "size": 73534
+  },
+  "windows-native/all-samples/native/9e131b7b56e565db.json": {
+    "sha256": "424f06078748123a321b341a025a36958aa942070557e0d4f5c167a1967c8d4f",
+    "size": 7228
+  },
+  "windows-native/all-samples/native/9e2ab94f59cf15f8.json": {
+    "sha256": "c19d8c118e4c71832137448441256a2ee83aa4cfa90e7849cff86a68d519ef2e",
+    "size": 49756
+  },
+  "windows-native/all-samples/native/9f735a010e88a648.json": {
+    "sha256": "5aa014d604d41d920db1806f2cfdd46fd00143998c97bb26b7dfe56996c40697",
+    "size": 513
+  },
+  "windows-native/all-samples/native/a2446851712be525.json": {
+    "sha256": "2871fbeafdd22f7357275afa51aec9e424a4da3a671c4669ec55a05c1dffacf9",
+    "size": 13505
+  },
+  "windows-native/all-samples/native/a24e31eb0aa23b4f.json": {
+    "sha256": "28a1c9a9dc3bf72fe74d732c8a80815f4b31d482225a31338acf4888c1ce2747",
+    "size": 176563
+  },
+  "windows-native/all-samples/native/a45fc642aa130558.json": {
+    "sha256": "431531fb3ab77190ba0eef1bd16dee1f9adb9923064024fd64ea7aeb412bdb99",
+    "size": 1271
+  },
+  "windows-native/all-samples/native/a744c24e96808cb4.json": {
+    "sha256": "3cb2aec84bba9645f1eb85fb90b37a311ef13f704dd822b58a0d50aa0d01951d",
+    "size": 300224
+  },
+  "windows-native/all-samples/native/a83d2bf9aa769ebd.json": {
+    "sha256": "4025ead3934692c0a6890c23caf62ef1b7a2fa18c4b67e5fc0ea2be33ca8c955",
+    "size": 73632
+  },
+  "windows-native/all-samples/native/a87dd8607e0fda5f.json": {
+    "sha256": "2b628c8f3eceb794b3ba1c647c38082d3b8b13ed996a153fa8dbd2f1efceb0e6",
+    "size": 14639
+  },
+  "windows-native/all-samples/native/a9819bb8f9e9f5ef.json": {
+    "sha256": "bddfc9ffa885b5758be239d8427cd0302752d6cfe94bce783d0896fa82e0cbd0",
+    "size": 27111
+  },
+  "windows-native/all-samples/native/a99b928ceb0f443e.json": {
+    "sha256": "39e08a8d770c95ec46c8dde9c66a75fd2b02c588cedf77407dfdab0ba505c9cf",
+    "size": 32266
+  },
+  "windows-native/all-samples/native/ab78d5d64fd48439.json": {
+    "sha256": "28f2fa1ab50c9c0ee5f05716cc6680ee6fada22875332ae2d993e1180babd769",
+    "size": 6339
+  },
+  "windows-native/all-samples/native/ab902c56bd93d342.json": {
+    "sha256": "cd889a7274f5aa3ba2f6326fc4b22f58615206c43c3f9f7934df6f09c8658f7b",
+    "size": 10904
+  },
+  "windows-native/all-samples/native/abad7ae0707ac749.json": {
+    "sha256": "091de74eab2744f9661d47d13396149c653a0eda797931b1b35d6ce8a98d7f4d",
+    "size": 101581
+  },
+  "windows-native/all-samples/native/b0d25177b1a8480c.json": {
+    "sha256": "6bc489662fe41a3284583e56e671908ddbaacf4628a0b0ae4c7f284b11e2db83",
+    "size": 309433
+  },
+  "windows-native/all-samples/native/b0e62b5268bf3ae1.json": {
+    "sha256": "2466270ae9656395503a4a4cb81d8a1f2715e542a159351e6557caf39a9f61cb",
+    "size": 37314
+  },
+  "windows-native/all-samples/native/b3edaa47ba780e0c.json": {
+    "sha256": "0c94532f894953b362ab8b3fdf3d553009283114fe88bcca298370ec9e032822",
+    "size": 27490
+  },
+  "windows-native/all-samples/native/b563bb5b3e206ad7.json": {
+    "sha256": "921c06cc210945c31c393e4b4d2b053d4d9e07ea85c5cb6ec8c3277bad912e84",
+    "size": 21058
+  },
+  "windows-native/all-samples/native/bbbd4ae8468a6451.json": {
+    "sha256": "2a41f3e8ca0415d69948974e09c2c00a89c64173db4e9b42f41ee6d5b0180d57",
+    "size": 10746
+  },
+  "windows-native/all-samples/native/be771810db2def78.json": {
+    "sha256": "8024aeeeee8f3078094c2924fa91edc271cc46be3c3cfafc889d9a20a48dc6e4",
+    "size": 148737
+  },
+  "windows-native/all-samples/native/c062c4f8b726c822.json": {
+    "sha256": "debe502582e5a156b2449d7529a781d360512c13ad57c8b95ffde5cd2d44f936",
+    "size": 25074
+  },
+  "windows-native/all-samples/native/c159f2e4564feb4f.json": {
+    "sha256": "776fce7a77f999dbf5d466bd25feccdd2f79d3456926c118601d45ebcb53cdee",
+    "size": 2112
+  },
+  "windows-native/all-samples/native/c323ed4e5eccd42e.json": {
+    "sha256": "a70a8255b8c64489b87100ce7db14370f7ac40793677b11b4704f38745b395c6",
+    "size": 55723
+  },
+  "windows-native/all-samples/native/c45a727514fb8982.json": {
+    "sha256": "ceab18c601ed2d661e354e1782803e26b4c111dff1330d1c454b6206b085b2c2",
+    "size": 11837
+  },
+  "windows-native/all-samples/native/c777a45d62cce90a.json": {
+    "sha256": "585c7ab54fb1bbdf8b4bbdd69f85f8352a2db82d0b0e880f960d4ca5894511e0",
+    "size": 23558
+  },
+  "windows-native/all-samples/native/c8564aeddba82f04.json": {
+    "sha256": "5eb5ac204cda8d370039cf3ba7aed51655f90aae2b7f5324744c64cbfbca53a3",
+    "size": 502
+  },
+  "windows-native/all-samples/native/c8cde51505833347.json": {
+    "sha256": "50365174accf92f55540293e4f4d18f69c2c3112a5ef3f53e86195c7e2d76e4f",
+    "size": 113821
+  },
+  "windows-native/all-samples/native/c9a092125962e322.json": {
+    "sha256": "550087c1bfeff599ccf311059a924da6a1ca7027df4c453e2fcf57bef42622d7",
+    "size": 71169
+  },
+  "windows-native/all-samples/native/c9b8504f28656bb2.json": {
+    "sha256": "6767f010010da401f3ac4b9193590e1fbdadfaa56b2f24ec08c18cc581d66d8b",
+    "size": 7161
+  },
+  "windows-native/all-samples/native/caaf9f2c75e68fb3.json": {
+    "sha256": "9bf820b7927445d3dbedcba76c7202e9b65209d81e74f5ff9a7575f50b15ba31",
+    "size": 45492
+  },
+  "windows-native/all-samples/native/cb5009e20bb1123a.json": {
+    "sha256": "3347636684294f9eab92ccd0828f12d617da9d074d02937ef3916890bbdeb344",
+    "size": 22293
+  },
+  "windows-native/all-samples/native/cc5c505c9a91f65a.json": {
+    "sha256": "a01378da698f3dfe071770ff5704f5a9fd02ba2c79ad24d234226340bb728d65",
+    "size": 2869
+  },
+  "windows-native/all-samples/native/cc615a3e5cb1499e.json": {
+    "sha256": "b914236049981b91cc5332c0c580a13159809f9b180728856958364c675577a1",
+    "size": 8650
+  },
+  "windows-native/all-samples/native/da00952f9e92b062.json": {
+    "sha256": "f993a0abae44ccbe5c91714350b9e3d2cf8827fbe3b7f4ea3ef21588581394c0",
+    "size": 20663
+  },
+  "windows-native/all-samples/native/db4b91782dd3efb7.json": {
+    "sha256": "a9c58d2c08dcc0c72fba89208c57a091334d30f29bc38e68f32cf642c262fffa",
+    "size": 262827
+  },
+  "windows-native/all-samples/native/de744546e5b8a0e6.json": {
+    "sha256": "ec49c7820035e3cbb1ceb956c5489135e72e30975beb57fb2a4ebe8f74f48f46",
+    "size": 38750
+  },
+  "windows-native/all-samples/native/de900bc558f2dca8.json": {
+    "sha256": "a7929a782f7bf4e1e1401c3800e7aa21778ea0da9925439d6984b99d247a3da5",
+    "size": 8597
+  },
+  "windows-native/all-samples/native/df2560f7906cab6d.json": {
+    "sha256": "70807787f0a2434f53e0a7884e079b54f4528d38e45533639d9b700046353339",
+    "size": 12664
+  },
+  "windows-native/all-samples/native/e0a96ddd6fe8007f.json": {
+    "sha256": "6f9a539bcb650519e5ee89e1965717f21e29f39006456f6059f007f0285c6e5e",
+    "size": 46290
+  },
+  "windows-native/all-samples/native/e2147debb746e953.json": {
+    "sha256": "dfd584180038578f9d20944f3b77b24fd1616b6fcb914e8530e1b1bd22dc0007",
+    "size": 5447
+  },
+  "windows-native/all-samples/native/e37ba8d39f1765ee.json": {
+    "sha256": "385e2361f5bc014befa8f7a6ec878233d41258a02788f8f6571f45ddd7823721",
+    "size": 35353
+  },
+  "windows-native/all-samples/native/e3d262776302832f.json": {
+    "sha256": "e8633825c30ad0e422f5856262961ee3af34b5ae8467b0b2863c191d4c7a5e0f",
+    "size": 36197
+  },
+  "windows-native/all-samples/native/e56ebcbad4b3ec61.json": {
+    "sha256": "f6367233710865ed4c0d2798872d1d320e1a68b0dc8c6c46f0b5fed773561049",
+    "size": 77476
+  },
+  "windows-native/all-samples/native/e6c08e3cc9b0eb2f.json": {
+    "sha256": "5f66cb15a204393b1a28ac749bfde3b49c30937fd4c04ee83e258962ed1c68eb",
+    "size": 514
+  },
+  "windows-native/all-samples/native/e8417890fea95361.json": {
+    "sha256": "414f2bd2e2dbbfc440bd40b333811d7918d96cb45562228508c83504c9f21f93",
+    "size": 1958
+  },
+  "windows-native/all-samples/native/eae7f502cfea5855.json": {
+    "sha256": "f43a2a6aa2ef69b4b84e13dc0b49e484c19caac0d0272e963bc96fd89938dade",
+    "size": 9583
+  },
+  "windows-native/all-samples/native/eb1b381667716066.json": {
+    "sha256": "e2db611bad2c6a1e33c8f836ac3f69dceac2c605f83f3d43e5e4a6439bd873e5",
+    "size": 46620
+  },
+  "windows-native/all-samples/native/eb6e81323fe050ef.json": {
+    "sha256": "40b3a1c6b8327f9f1b09d8aeee7440a5968d6a29e99f9716718d0172fd5ddd2c",
+    "size": 77450
+  },
+  "windows-native/all-samples/native/ed5b69a9711e3f53.json": {
+    "sha256": "bb310e4fe30a0e6e1bf9b62f8fe89e94d7a8a2e8308f618d0afbe4964024fc83",
+    "size": 57470
+  },
+  "windows-native/all-samples/native/f06b8315200c1abb.json": {
+    "sha256": "70e1c33686e5229a609e989aff2b2e3a1b04b3cd733c82d68d122b62a0ec515f",
+    "size": 39357
+  },
+  "windows-native/all-samples/native/f3a0c13bdc84f24b.json": {
+    "sha256": "107d43e684cfd3a557942a5d14d02682121ccee242a8e1f3579634dce6643461",
+    "size": 71630
+  },
+  "windows-native/all-samples/native/f9dcd81f8ca741ba.json": {
+    "sha256": "e597ce9754ea2b554f3d99ec8d65249010da94fdc79ecce1a26025fcaf6c71ee",
+    "size": 9961
+  },
+  "windows-native/all-samples/native/fd9577ef8f62f6a7.json": {
+    "sha256": "9d3d4c5aaf34e61a6c527f5e1a0f9f6c815afebac970ce05e136a449a75a9f64",
+    "size": 168786
+  },
+  "windows-native/all-samples/suite.json": {
+    "sha256": "bf09e35f6ebee446441a26d9c0c7e70f172081f75929debeeb514f34b69fb3d4",
+    "size": 72521
+  },
+  "windows-native/book-measurement.json": {
+    "sha256": "339de302654b55f4a6dfb1150eba6f2d694e235dfa1da00efa8bc328ca5c78ef",
+    "size": 114
+  },
+  "windows-native/book.json": {
+    "sha256": "89dbc947fb3b84759e5fb4892729aeb71d2437ec5370271bf08dbbcee2b140f8",
+    "size": 244071
+  },
+  "windows-native/book.parity.json": {
+    "sha256": "4ecf845a84426207d65e799d24eb835736ac525c9307b3daa367a54a789f892b",
+    "size": 255
+  },
+  "windows-native/corpus/arabic-36.parity.json": {
+    "sha256": "1fd52432fc10750a50d3f4a8646617d250cc046a2318a16b701f72ff34ef9d02",
+    "size": 249
+  },
+  "windows-native/corpus/blank.parity.json": {
+    "sha256": "c1b40eedfc8ece1c5afceae106b21086a681e683abbd03159e255950b31822ee",
+    "size": 249
+  },
+  "windows-native/corpus/cjk-18.parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "windows-native/corpus/cjk-36.parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "windows-native/corpus/cjk-rotate-0.5.parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "windows-native/corpus/cjk-rotate-10.parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "windows-native/corpus/cjk-rotate-180.parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "windows-native/corpus/cjk-rotate-270.parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "windows-native/corpus/cjk-rotate-3.parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "windows-native/corpus/cjk-rotate-90.parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "windows-native/corpus/cyrillic-36.parity.json": {
+    "sha256": "1fd52432fc10750a50d3f4a8646617d250cc046a2318a16b701f72ff34ef9d02",
+    "size": 249
+  },
+  "windows-native/corpus/devanagari-36.parity.json": {
+    "sha256": "1fd52432fc10750a50d3f4a8646617d250cc046a2318a16b701f72ff34ef9d02",
+    "size": 249
+  },
+  "windows-native/corpus/greek-36.parity.json": {
+    "sha256": "1fd52432fc10750a50d3f4a8646617d250cc046a2318a16b701f72ff34ef9d02",
+    "size": 249
+  },
+  "windows-native/corpus/hebrew-36.parity.json": {
+    "sha256": "1fd52432fc10750a50d3f4a8646617d250cc046a2318a16b701f72ff34ef9d02",
+    "size": 249
+  },
+  "windows-native/corpus/latin-18.parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "windows-native/corpus/latin-36.parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "windows-native/corpus/latin-rotate-0.5.parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "windows-native/corpus/latin-rotate-10.parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "windows-native/corpus/latin-rotate-180.parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "windows-native/corpus/latin-rotate-270.parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "windows-native/corpus/latin-rotate-3.parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "windows-native/corpus/latin-rotate-90.parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "windows-native/corpus/multi-column.parity.json": {
+    "sha256": "ebf113eaca0cc96ab6d4762c0e52326a01c9cabbf8b4d2774f3b756dc3998563",
+    "size": 249
+  },
+  "windows-native/corpus/native/arabic-36.json": {
+    "sha256": "6d96c3bbf4c96a265c9f152d0c94f0088a7c802317c296bb96856473ee2874bb",
+    "size": 2064
+  },
+  "windows-native/corpus/native/blank.json": {
+    "sha256": "e9125808ef4e6222bbb7be86ab57bc5efcbf6be5daee5756455aef04ba224554",
+    "size": 487
+  },
+  "windows-native/corpus/native/cjk-18.json": {
+    "sha256": "201d42212ce257d6a20b5f912a34c28cf7438041ba97efe1c8b8248da94bd1e2",
+    "size": 7998
+  },
+  "windows-native/corpus/native/cjk-36.json": {
+    "sha256": "17aba24423150c6f570b598247ee33e66d9b64869e8d99236ff5b6b4176e5110",
+    "size": 7758
+  },
+  "windows-native/corpus/native/cjk-rotate-0.5.json": {
+    "sha256": "ad92ce0d29c3e49c0af41b3bcf9211e75d42e5b61378f4b63161bbf0ddc60985",
+    "size": 7930
+  },
+  "windows-native/corpus/native/cjk-rotate-10.json": {
+    "sha256": "367929a98e6e2f6d8132075e35cbba19beaf21bc10a363c8230f35cf288c44e5",
+    "size": 8012
+  },
+  "windows-native/corpus/native/cjk-rotate-180.json": {
+    "sha256": "a0a50cac1127c513f6049f518513fdedcff892e635929fa79ba838c6a5b67448",
+    "size": 7976
+  },
+  "windows-native/corpus/native/cjk-rotate-270.json": {
+    "sha256": "df6fed5eaf16ad351051f3e0bda29a9a1b59331b1e4d0159cd06e4234a62fd8b",
+    "size": 7948
+  },
+  "windows-native/corpus/native/cjk-rotate-3.json": {
+    "sha256": "887077d1f2559607a585cef2a72a3bd9b24cc43052b9e7e850a158d3cce191e2",
+    "size": 8006
+  },
+  "windows-native/corpus/native/cjk-rotate-90.json": {
+    "sha256": "d1414340e33fe4f7596bb76cb7af9d15304fdf3cdd23bf1f0c2a7064c239476c",
+    "size": 7839
+  },
+  "windows-native/corpus/native/cyrillic-36.json": {
+    "sha256": "bfe1a4c092c84281be4218e97d33be451ba4dd135253b48db60ccde7c4288493",
+    "size": 2934
+  },
+  "windows-native/corpus/native/devanagari-36.json": {
+    "sha256": "83f26a22cf5e9953523087b52984e1badaa8e119e0b1fc3b2760707c929a5463",
+    "size": 2087
+  },
+  "windows-native/corpus/native/greek-36.json": {
+    "sha256": "ff682cee989dc0f7c1ae6199dfa0702503c6664c8e7205c6a0b3bc3360709cef",
+    "size": 2459
+  },
+  "windows-native/corpus/native/hebrew-36.json": {
+    "sha256": "cd9920dd13f0ad4f39dd6e937ed665f02e66ec508a55a4d40890c3bc1cfad7c4",
+    "size": 2042
+  },
+  "windows-native/corpus/native/latin-18.json": {
+    "sha256": "5e56eb3e9a704f4b6282895aa9e2573dc8e898b88a10adae37838cc13ae3f2f8",
+    "size": 4776
+  },
+  "windows-native/corpus/native/latin-36.json": {
+    "sha256": "b8f6a0d3080d6e467a4d318d2fcc5bceaf0a99dd08a8aea4e1720ef92632de3d",
+    "size": 4724
+  },
+  "windows-native/corpus/native/latin-rotate-0.5.json": {
+    "sha256": "3712725e975553ff69b6ab7d5b88c39826fb1791f3ef1875a120df7c87823571",
+    "size": 4833
+  },
+  "windows-native/corpus/native/latin-rotate-10.json": {
+    "sha256": "adda7dbfbeb18f4ea17dad4e6360212a41efffc7a8bc0fcc8b4bf0438990aa23",
+    "size": 4840
+  },
+  "windows-native/corpus/native/latin-rotate-180.json": {
+    "sha256": "b6e6088ce30882c13caede4d09d43125ea032e37795566434bff35b7b13417fd",
+    "size": 4709
+  },
+  "windows-native/corpus/native/latin-rotate-270.json": {
+    "sha256": "fa4f3a1ad74c133fe52b799b4dd77143d99acfd3a70e1a3690291d8466321cfc",
+    "size": 4753
+  },
+  "windows-native/corpus/native/latin-rotate-3.json": {
+    "sha256": "5a070811b7448b8c456f7397ec0800766519be2d1c8a6188247fb0fd067c2aed",
+    "size": 4810
+  },
+  "windows-native/corpus/native/latin-rotate-90.json": {
+    "sha256": "fc920196ec28a5c66ba4012f228ef0038d4570958cd0b4598943feab5c1297af",
+    "size": 4657
+  },
+  "windows-native/corpus/native/multi-column.json": {
+    "sha256": "26ffaa081d63fa91e053305cb5dca8b63fdcdd935e9d234f42ece593d17100e7",
+    "size": 7243
+  },
+  "windows-native/corpus/native/tamil-36.json": {
+    "sha256": "87d93d88c6a91a9f5b3a79f51bff32cba26d643550e17a24134b4f7faaeab527",
+    "size": 2066
+  },
+  "windows-native/corpus/native/thai-36.json": {
+    "sha256": "54730ed8a9c62f67d2d13ee3451f133be3b7c8f9d302f5f05ba8727ef77d0005",
+    "size": 2468
+  },
+  "windows-native/corpus/native/vertical-cjk.json": {
+    "sha256": "63a22b6e679c831626ef45f05624f4be7e3400df1f2bad44c1c9db10a99cb6e7",
+    "size": 3873
+  },
+  "windows-native/corpus/native/透明路径-emoji-😀.json": {
+    "sha256": "1c2c3951355cfe84dae319a061ee0aa7a8cdab408ac124b2870e017f8dfd4187",
+    "size": 2471
+  },
+  "windows-native/corpus/suite.json": {
+    "sha256": "e01cb8296fbf6457afcbbfd4f7149d77e8669b89114795b05e49b87d375daf0a",
+    "size": 14057
+  },
+  "windows-native/corpus/tamil-36.parity.json": {
+    "sha256": "1fd52432fc10750a50d3f4a8646617d250cc046a2318a16b701f72ff34ef9d02",
+    "size": 249
+  },
+  "windows-native/corpus/thai-36.parity.json": {
+    "sha256": "1fd52432fc10750a50d3f4a8646617d250cc046a2318a16b701f72ff34ef9d02",
+    "size": 249
+  },
+  "windows-native/corpus/vertical-cjk.parity.json": {
+    "sha256": "1fd52432fc10750a50d3f4a8646617d250cc046a2318a16b701f72ff34ef9d02",
+    "size": 249
+  },
+  "windows-native/corpus/透明路径-emoji-😀.parity.json": {
+    "sha256": "1fd52432fc10750a50d3f4a8646617d250cc046a2318a16b701f72ff34ef9d02",
+    "size": 249
+  },
+  "windows-native/options/arabic-36-m0-r320x192.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/options/arabic-36-m1-r640x384.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/options/arabic-36-m2-r1151x767.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/options/devanagari-36-m0-r320x192.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/options/devanagari-36-m1-r640x384.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/options/devanagari-36-m2-r1151x767.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/options/hebrew-36-m0-r320x192.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/options/hebrew-36-m1-r640x384.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/options/hebrew-36-m2-r1151x767.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/options/multi-column-m1-r640x384.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/multi-column-m5-r1151x767.parity.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "windows-native/options/native/arabic-36-m0-r320x192.json": {
+    "sha256": "a53412266faedcbd0091b018feab7be31aa356ee9e89c0c0d94c03d9ee8384d5",
+    "size": 2086
+  },
+  "windows-native/options/native/arabic-36-m1-r640x384.json": {
+    "sha256": "bd9ce7f0e9f80ea71991046c86cf27c50bae47c024d9ebb6cdb6dfe96e35d3d1",
+    "size": 2073
+  },
+  "windows-native/options/native/arabic-36-m2-r1151x767.json": {
+    "sha256": "6d96c3bbf4c96a265c9f152d0c94f0088a7c802317c296bb96856473ee2874bb",
+    "size": 2064
+  },
+  "windows-native/options/native/devanagari-36-m0-r320x192.json": {
+    "sha256": "c329dc98b2dbc50130b08f5f55d50988f6b79248cebbe4784bbbf98e613a72d7",
+    "size": 2070
+  },
+  "windows-native/options/native/devanagari-36-m1-r640x384.json": {
+    "sha256": "55ded031e36a299490a6e68512e8cab9da5f58d1dac1abb082d8112e629a0723",
+    "size": 2091
+  },
+  "windows-native/options/native/devanagari-36-m2-r1151x767.json": {
+    "sha256": "83f26a22cf5e9953523087b52984e1badaa8e119e0b1fc3b2760707c929a5463",
+    "size": 2087
+  },
+  "windows-native/options/native/hebrew-36-m0-r320x192.json": {
+    "sha256": "77ff6c1016f8143c3d34bfa012783561f7ea32c6374fcf5edeb272f3ee924458",
+    "size": 2037
+  },
+  "windows-native/options/native/hebrew-36-m1-r640x384.json": {
+    "sha256": "90669e746405c8fecedfdb29dd6d102f792c277a00b425ac8a946a06269c125f",
+    "size": 2056
+  },
+  "windows-native/options/native/hebrew-36-m2-r1151x767.json": {
+    "sha256": "cd9920dd13f0ad4f39dd6e937ed665f02e66ec508a55a4d40890c3bc1cfad7c4",
+    "size": 2042
+  },
+  "windows-native/options/native/multi-column-m1-r640x384.json": {
+    "sha256": "9352275bee4d13b3361643c00519d25aa6f4cc045abb38e61d17d4153fa4c5e1",
+    "size": 5018
+  },
+  "windows-native/options/native/multi-column-m5-r1151x767.json": {
+    "sha256": "537aa1fff7f464d2e6538c8f71a23d6381fd61756b806fc0eca89f79722e4598",
+    "size": 6117
+  },
+  "windows-native/options/native/parameter-blank-m1-r1151x768.json": {
+    "sha256": "5eb5ac204cda8d370039cf3ba7aed51655f90aae2b7f5324744c64cbfbca53a3",
+    "size": 502
+  },
+  "windows-native/options/native/parameter-blank-m1-r1152x767.json": {
+    "sha256": "5eb5ac204cda8d370039cf3ba7aed51655f90aae2b7f5324744c64cbfbca53a3",
+    "size": 502
+  },
+  "windows-native/options/native/parameter-blank-m1-r1152x768.json": {
+    "sha256": "5eb5ac204cda8d370039cf3ba7aed51655f90aae2b7f5324744c64cbfbca53a3",
+    "size": 502
+  },
+  "windows-native/options/native/parameter-blank-m1-r32x32.json": {
+    "sha256": "5eb5ac204cda8d370039cf3ba7aed51655f90aae2b7f5324744c64cbfbca53a3",
+    "size": 502
+  },
+  "windows-native/options/native/red-calligraphy-jason-m1-r640x384.json": {
+    "sha256": "9ad35fbe428ab41eee7c03dcaaae54a94230f62fd0e25725cac96c1615148f39",
+    "size": 13482
+  },
+  "windows-native/options/native/red-calligraphy-jason-m5-r1152x768.json": {
+    "sha256": "226432e62b77c3382e7d2684ccc71cb81f6e53d0bca457edbf1426bbea9885ca",
+    "size": 29097
+  },
+  "windows-native/options/native/red-calligraphy-jason-m7-r768x512.json": {
+    "sha256": "81c2f325ad8835b5a4ed4531e568fba8f5363b674c4372caec9e5632fcd32168",
+    "size": 36486
+  },
+  "windows-native/options/native/red-calligraphy-jason-rotate-10-m1-r1152x768.json": {
+    "sha256": "0158229452a27eec20e145dc7ea924bd3615eb0cf7275639059b891cd6287138",
+    "size": 7150
+  },
+  "windows-native/options/native/red-calligraphy-jason-rotate-10-m1000-r33x65.json": {
+    "sha256": "cc0cb854c4336afc981b00b8eff83b7dc1f76d22f45dbaf9148ab9441c9ecd77",
+    "size": 20393
+  },
+  "windows-native/options/native/red-calligraphy-jason-rotate-10-m5-r640x384.json": {
+    "sha256": "0599c44fa6a452d72a1f67853a51ed5ce5149de47ba5c5e1a6b465b923372694",
+    "size": 20019
+  },
+  "windows-native/options/native/red-calligraphy-jason-rotate-10-m6-r768x512.json": {
+    "sha256": "c51ac9d7fe2dcb5f5414f109541637f7755572b1196e23d32058e8ecadc956e5",
+    "size": 21948
+  },
+  "windows-native/options/native/red-calligraphy-jason-rotate-180-m1-r1152x768.json": {
+    "sha256": "0a8361474f6b279852cdf63d8f1bbfff007cef267be9e8ed56e05dd762280a34",
+    "size": 4879
+  },
+  "windows-native/options/native/red-calligraphy-jason-rotate-180-m1000-r33x65.json": {
+    "sha256": "6dfb91d3227457136cd9a2b9673a2f3f3f5223caff4b437825803709b64383f9",
+    "size": 15488
+  },
+  "windows-native/options/native/red-calligraphy-jason-rotate-180-m5-r640x384.json": {
+    "sha256": "7cf77b18f202efd3186bcb4062d36a98d903b90ddc08b12da42f0cd84ede904a",
+    "size": 26503
+  },
+  "windows-native/options/native/red-calligraphy-jason-rotate-180-m6-r768x512.json": {
+    "sha256": "f79e90d6aa888057272e8a4a0066ca6a7b09f5a49da434ad741552ea5d66162e",
+    "size": 24722
+  },
+  "windows-native/options/native/red-calligraphy-jason-rotate-270-m1-r1152x768.json": {
+    "sha256": "8b4972bb178a3d6029d2361071d4d0685cfb2a8effdaad2a9c4ef24c7a34d418",
+    "size": 2455
+  },
+  "windows-native/options/native/red-calligraphy-jason-rotate-270-m1000-r33x65.json": {
+    "sha256": "734e407d6260e4ab9e3061a6ca83941060e0ff0d3d16b8ba38f2120cad9ef0dc",
+    "size": 522
+  },
+  "windows-native/options/native/red-calligraphy-jason-rotate-270-m5-r640x384.json": {
+    "sha256": "ffbd38d79607c4689e65abad3fded469487da576ce2e9fafb9f65fb3208f7a2d",
+    "size": 16605
+  },
+  "windows-native/options/native/red-calligraphy-jason-rotate-270-m6-r768x512.json": {
+    "sha256": "f6e28f06257c4381237a0189eb6f46bc3f9504ad3089598a9f294fc0652d8e34",
+    "size": 29567
+  },
+  "windows-native/options/native/red-calligraphy-jason-rotate-90-m1-r1152x768.json": {
+    "sha256": "93ca5af0d6e45ab5a0c9a67406236e8b93df3956e9db7293b3654903cf4f1f9f",
+    "size": 12751
+  },
+  "windows-native/options/native/red-calligraphy-jason-rotate-90-m1000-r33x65.json": {
+    "sha256": "63c6791728eec9bd921a11022f2982b450cefb417f356b909ad9c369a8eb7cb2",
+    "size": 25566
+  },
+  "windows-native/options/native/red-calligraphy-jason-rotate-90-m5-r640x384.json": {
+    "sha256": "e88c4b4fbec04b80c8063a16f461f762e4109d07bce9eebca749ed71b2b4b5d4",
+    "size": 27018
+  },
+  "windows-native/options/native/red-calligraphy-jason-rotate-90-m6-r768x512.json": {
+    "sha256": "a0fa3c29db05b3cc8576cf8dc31282d48281dcdb28c4fb894addc1bfa967f357",
+    "size": 25506
+  },
+  "windows-native/options/native/red-grid-jason-m1-r640x384.json": {
+    "sha256": "40e6ff712df9670f4b7cd121488d07837c06b82f7e40715fb97c83a6824d3ae5",
+    "size": 12608
+  },
+  "windows-native/options/native/red-grid-jason-m5-r1152x768.json": {
+    "sha256": "207c973ba809bec12cc2c72f9b860245a2f00ace6f8fdd0037f7039b0317ac58",
+    "size": 22876
+  },
+  "windows-native/options/native/red-grid-jason-m7-r768x512.json": {
+    "sha256": "84632c75d92fc78057ebb5fb3a5727c4b9efc8458a4fd9448fc98541953b16de",
+    "size": 40056
+  },
+  "windows-native/options/native/red-grid-jason-rotate-10-m1-r1152x768.json": {
+    "sha256": "05d80c39403e2a092209c7432e4d970684b4580d996f5daa9034b2304f9cbd1c",
+    "size": 12654
+  },
+  "windows-native/options/native/red-grid-jason-rotate-10-m1000-r33x65.json": {
+    "sha256": "2f1b8523d4fe0555633571a3f0d9b95382e725f0d98ea09087ca34418cd75642",
+    "size": 514
+  },
+  "windows-native/options/native/red-grid-jason-rotate-10-m5-r640x384.json": {
+    "sha256": "d207c31f04cbb824881d0633d796f7aded483d560d49bb693ff8e9358c203004",
+    "size": 30744
+  },
+  "windows-native/options/native/red-grid-jason-rotate-10-m6-r768x512.json": {
+    "sha256": "fa9a8e6638855e9dfaca1463a924ab4fa00779671e6e60b3312d000ce9941ed9",
+    "size": 24401
+  },
+  "windows-native/options/native/red-grid-jason-rotate-180-m1-r1152x768.json": {
+    "sha256": "503481919767d1d2e318f5a0dff5d2c0851d59958d020ebe8686012cd2c29db3",
+    "size": 9058
+  },
+  "windows-native/options/native/red-grid-jason-rotate-180-m1000-r33x65.json": {
+    "sha256": "ef8c643c35a75706351ba5cad490687c843d843345a3dab33a8233933c356601",
+    "size": 18885
+  },
+  "windows-native/options/native/red-grid-jason-rotate-180-m5-r640x384.json": {
+    "sha256": "63bf55800ad2d5442d609b86642287f2dc576aab5cb187f9a4b7c0558452932f",
+    "size": 34579
+  },
+  "windows-native/options/native/red-grid-jason-rotate-180-m6-r768x512.json": {
+    "sha256": "f50c2e9a11f739c67712467a800b8129544190e0015a937ef9f7d2db2a0e31f7",
+    "size": 31484
+  },
+  "windows-native/options/native/red-grid-jason-rotate-270-m1-r1152x768.json": {
+    "sha256": "c59071e6a128a2681b619f81071128eb5e98f977db867e83fef043b8f32bc4bf",
+    "size": 11190
+  },
+  "windows-native/options/native/red-grid-jason-rotate-270-m1000-r33x65.json": {
+    "sha256": "379ddc653a2587ff4777761fda6fa5d0c1c75119e6df21dbf3aa2479961a52c1",
+    "size": 26189
+  },
+  "windows-native/options/native/red-grid-jason-rotate-270-m5-r640x384.json": {
+    "sha256": "699c66c237fb28dbd8f2c91a690dd779e9a2846d16bf4dd6743c5384c22be0ca",
+    "size": 24825
+  },
+  "windows-native/options/native/red-grid-jason-rotate-270-m6-r768x512.json": {
+    "sha256": "be5e6b7883c8909a2bf024afbfa570286236758b30fa8b240dc41e9d2a0ac22a",
+    "size": 27917
+  },
+  "windows-native/options/native/red-grid-jason-rotate-90-m1-r1152x768.json": {
+    "sha256": "1995cf14a16b5095b39d9343e052e3e5bbe747a6f02c5c0eab36ddc78c06ccf4",
+    "size": 5572
+  },
+  "windows-native/options/native/red-grid-jason-rotate-90-m1000-r33x65.json": {
+    "sha256": "3374ed526cce15b2216277520763f2b9581f75e278786d78b0749851e91b8051",
+    "size": 18039
+  },
+  "windows-native/options/native/red-grid-jason-rotate-90-m5-r640x384.json": {
+    "sha256": "e9b553c2a6d03958437bb566b1e2cd862fce0bccbc541bc1ff3b0b2ef2da658d",
+    "size": 33831
+  },
+  "windows-native/options/native/red-grid-jason-rotate-90-m6-r768x512.json": {
+    "sha256": "0139145f7045b032074558d9fabf8ea9c63b254796fdc098e0d756e334c6309b",
+    "size": 25627
+  },
+  "windows-native/options/native/thai-36-m0-r320x192.json": {
+    "sha256": "cdb53e63095d7f3eb541778bc16d85e66473baa945c83e114c65b584eb83de08",
+    "size": 2498
+  },
+  "windows-native/options/native/thai-36-m1-r640x384.json": {
+    "sha256": "cd29c7cbdb13e9785134f12fe2654242b39fe69bf70f9c58e7b69fe96b47ff21",
+    "size": 2485
+  },
+  "windows-native/options/native/thai-36-m2-r1151x767.json": {
+    "sha256": "54730ed8a9c62f67d2d13ee3451f133be3b7c8f9d302f5f05ba8727ef77d0005",
+    "size": 2468
+  },
+  "windows-native/options/native/twelve-printed-lines-m0-r640x384.json": {
+    "sha256": "2dfac0b1b3ee5927c16586218e3e84feef9f358eb5e61d0746e57242fbb81fc2",
+    "size": 70604
+  },
+  "windows-native/options/native/twelve-printed-lines-m1-r1152x768.json": {
+    "sha256": "38b8d07e9e65eeeec0d4ccf460f76bacdc3f53588a5d2992665c76fe5ca2db03",
+    "size": 24295
+  },
+  "windows-native/options/native/twelve-printed-lines-m1-r320x192.json": {
+    "sha256": "dd36dacddabde3f5b0f18612a6644ebbcc346b97ccb749cebf22aab79a2e62fd",
+    "size": 23993
+  },
+  "windows-native/options/native/twelve-printed-lines-m1-r33x65.json": {
+    "sha256": "20f64c798c81223d3915fa5db89bac14e9e0316922b722709c65d017eff298df",
+    "size": 509
+  },
+  "windows-native/options/native/twelve-printed-lines-m1-r640x384.json": {
+    "sha256": "02b5d5ae0bfbc77c34ba84b7a6e903c3e526b16c4c75da63baffb024bd6399ed",
+    "size": 23734
+  },
+  "windows-native/options/native/twelve-printed-lines-m1-r768x512.json": {
+    "sha256": "a992ab03d595fb5b663e8f1d893946b7a63a16ef8b65036dc7149aa82e31f8e7",
+    "size": 23920
+  },
+  "windows-native/options/native/twelve-printed-lines-m1000-r1152x768.json": {
+    "sha256": "107d43e684cfd3a557942a5d14d02682121ccee242a8e1f3579634dce6643461",
+    "size": 71630
+  },
+  "windows-native/options/native/twelve-printed-lines-m1000-r320x192.json": {
+    "sha256": "dc8031947418589c1d4d51659026c47d287ef293ca511bca79f013e79cf9c19f",
+    "size": 70966
+  },
+  "windows-native/options/native/twelve-printed-lines-m1000-r33x65.json": {
+    "sha256": "20f64c798c81223d3915fa5db89bac14e9e0316922b722709c65d017eff298df",
+    "size": 509
+  },
+  "windows-native/options/native/twelve-printed-lines-m1000-r640x384.json": {
+    "sha256": "2dfac0b1b3ee5927c16586218e3e84feef9f358eb5e61d0746e57242fbb81fc2",
+    "size": 70604
+  },
+  "windows-native/options/native/twelve-printed-lines-m1000-r768x512.json": {
+    "sha256": "2a167ff9727d5272d4d1ea70848df2cc31f9f1deed6b63db9b9af22394edff04",
+    "size": 70813
+  },
+  "windows-native/options/native/twelve-printed-lines-m11-r1152x768.json": {
+    "sha256": "107d43e684cfd3a557942a5d14d02682121ccee242a8e1f3579634dce6643461",
+    "size": 71630
+  },
+  "windows-native/options/native/twelve-printed-lines-m11-r320x192.json": {
+    "sha256": "dc8031947418589c1d4d51659026c47d287ef293ca511bca79f013e79cf9c19f",
+    "size": 70966
+  },
+  "windows-native/options/native/twelve-printed-lines-m11-r33x65.json": {
+    "sha256": "20f64c798c81223d3915fa5db89bac14e9e0316922b722709c65d017eff298df",
+    "size": 509
+  },
+  "windows-native/options/native/twelve-printed-lines-m11-r640x384.json": {
+    "sha256": "2dfac0b1b3ee5927c16586218e3e84feef9f358eb5e61d0746e57242fbb81fc2",
+    "size": 70604
+  },
+  "windows-native/options/native/twelve-printed-lines-m11-r768x512.json": {
+    "sha256": "2a167ff9727d5272d4d1ea70848df2cc31f9f1deed6b63db9b9af22394edff04",
+    "size": 70813
+  },
+  "windows-native/options/native/twelve-printed-lines-m2-r0x0.json": {
+    "sha256": "38b8d07e9e65eeeec0d4ccf460f76bacdc3f53588a5d2992665c76fe5ca2db03",
+    "size": 24295
+  },
+  "windows-native/options/native/twelve-printed-lines-m2-r1152x768.json": {
+    "sha256": "38b8d07e9e65eeeec0d4ccf460f76bacdc3f53588a5d2992665c76fe5ca2db03",
+    "size": 24295
+  },
+  "windows-native/options/native/twelve-printed-lines-m2-r320x192.json": {
+    "sha256": "dd36dacddabde3f5b0f18612a6644ebbcc346b97ccb749cebf22aab79a2e62fd",
+    "size": 23993
+  },
+  "windows-native/options/native/twelve-printed-lines-m2-r33x65.json": {
+    "sha256": "20f64c798c81223d3915fa5db89bac14e9e0316922b722709c65d017eff298df",
+    "size": 509
+  },
+  "windows-native/options/native/twelve-printed-lines-m2-r640x384.json": {
+    "sha256": "02b5d5ae0bfbc77c34ba84b7a6e903c3e526b16c4c75da63baffb024bd6399ed",
+    "size": 23734
+  },
+  "windows-native/options/native/twelve-printed-lines-m2-r768x512.json": {
+    "sha256": "a992ab03d595fb5b663e8f1d893946b7a63a16ef8b65036dc7149aa82e31f8e7",
+    "size": 23920
+  },
+  "windows-native/options/native/twelve-printed-lines-m3-r1152x768.json": {
+    "sha256": "38b8d07e9e65eeeec0d4ccf460f76bacdc3f53588a5d2992665c76fe5ca2db03",
+    "size": 24295
+  },
+  "windows-native/options/native/twelve-printed-lines-m3-r320x192.json": {
+    "sha256": "dd36dacddabde3f5b0f18612a6644ebbcc346b97ccb749cebf22aab79a2e62fd",
+    "size": 23993
+  },
+  "windows-native/options/native/twelve-printed-lines-m3-r33x65.json": {
+    "sha256": "20f64c798c81223d3915fa5db89bac14e9e0316922b722709c65d017eff298df",
+    "size": 509
+  },
+  "windows-native/options/native/twelve-printed-lines-m3-r640x384.json": {
+    "sha256": "02b5d5ae0bfbc77c34ba84b7a6e903c3e526b16c4c75da63baffb024bd6399ed",
+    "size": 23734
+  },
+  "windows-native/options/native/twelve-printed-lines-m3-r768x512.json": {
+    "sha256": "a992ab03d595fb5b663e8f1d893946b7a63a16ef8b65036dc7149aa82e31f8e7",
+    "size": 23920
+  },
+  "windows-native/options/native/twelve-printed-lines-m32-r1152x768.json": {
+    "sha256": "107d43e684cfd3a557942a5d14d02682121ccee242a8e1f3579634dce6643461",
+    "size": 71630
+  },
+  "windows-native/options/native/twelve-printed-lines-m32-r320x192.json": {
+    "sha256": "dc8031947418589c1d4d51659026c47d287ef293ca511bca79f013e79cf9c19f",
+    "size": 70966
+  },
+  "windows-native/options/native/twelve-printed-lines-m32-r33x65.json": {
+    "sha256": "20f64c798c81223d3915fa5db89bac14e9e0316922b722709c65d017eff298df",
+    "size": 509
+  },
+  "windows-native/options/native/twelve-printed-lines-m32-r640x384.json": {
+    "sha256": "2dfac0b1b3ee5927c16586218e3e84feef9f358eb5e61d0746e57242fbb81fc2",
+    "size": 70604
+  },
+  "windows-native/options/native/twelve-printed-lines-m32-r768x512.json": {
+    "sha256": "2a167ff9727d5272d4d1ea70848df2cc31f9f1deed6b63db9b9af22394edff04",
+    "size": 70813
+  },
+  "windows-native/options/native/twelve-printed-lines-m4-r1152x768.json": {
+    "sha256": "38b8d07e9e65eeeec0d4ccf460f76bacdc3f53588a5d2992665c76fe5ca2db03",
+    "size": 24295
+  },
+  "windows-native/options/native/twelve-printed-lines-m4-r320x192.json": {
+    "sha256": "dd36dacddabde3f5b0f18612a6644ebbcc346b97ccb749cebf22aab79a2e62fd",
+    "size": 23993
+  },
+  "windows-native/options/native/twelve-printed-lines-m4-r33x65.json": {
+    "sha256": "20f64c798c81223d3915fa5db89bac14e9e0316922b722709c65d017eff298df",
+    "size": 509
+  },
+  "windows-native/options/native/twelve-printed-lines-m4-r640x384.json": {
+    "sha256": "02b5d5ae0bfbc77c34ba84b7a6e903c3e526b16c4c75da63baffb024bd6399ed",
+    "size": 23734
+  },
+  "windows-native/options/native/twelve-printed-lines-m4-r768x512.json": {
+    "sha256": "a992ab03d595fb5b663e8f1d893946b7a63a16ef8b65036dc7149aa82e31f8e7",
+    "size": 23920
+  },
+  "windows-native/options/native/twelve-printed-lines-m5-r1152x768.json": {
+    "sha256": "e00f60c0fb26b7297646e3a1f0ba88e82040ebc9090a01d8120998edf76c2b37",
+    "size": 30252
+  },
+  "windows-native/options/native/twelve-printed-lines-m5-r320x192.json": {
+    "sha256": "cfc4e8bba7e837b368fa2da78cb66e2d615e5ec182a7f3ded9fe36722baa7893",
+    "size": 29958
+  },
+  "windows-native/options/native/twelve-printed-lines-m5-r33x65.json": {
+    "sha256": "20f64c798c81223d3915fa5db89bac14e9e0316922b722709c65d017eff298df",
+    "size": 509
+  },
+  "windows-native/options/native/twelve-printed-lines-m5-r640x384.json": {
+    "sha256": "3a9a1cb803503ee35c1f55ac34f0d621ae3a72c59f20bb32c648a7087822ba2f",
+    "size": 29649
+  },
+  "windows-native/options/native/twelve-printed-lines-m5-r768x512.json": {
+    "sha256": "6b28019c6b902ff3abdf451f27979b5f7868b9dcd0918f1cbbdb642a7d9bcd59",
+    "size": 29751
+  },
+  "windows-native/options/native/twelve-printed-lines-m7-r1152x768.json": {
+    "sha256": "e68b0d2979bcd016bb1b0e0bb4c95354dcb91620f1ec719af95708f993079144",
+    "size": 42128
+  },
+  "windows-native/options/native/twelve-printed-lines-m7-r320x192.json": {
+    "sha256": "94b5a67aa84a7068903dcc357066f08137b7f05ad782593d4704e524dedb0e6f",
+    "size": 41695
+  },
+  "windows-native/options/native/twelve-printed-lines-m7-r33x65.json": {
+    "sha256": "20f64c798c81223d3915fa5db89bac14e9e0316922b722709c65d017eff298df",
+    "size": 509
+  },
+  "windows-native/options/native/twelve-printed-lines-m7-r640x384.json": {
+    "sha256": "da82dbf5e28edfe4bb5ef03f9832db5fdd604cd6c75c5426d0c79bd16b93fda3",
+    "size": 41365
+  },
+  "windows-native/options/native/twelve-printed-lines-m7-r768x512.json": {
+    "sha256": "79523228a733f7fa521275f9a3e890780d9806e8468a0f717eb8ec2fa432e56a",
+    "size": 41431
+  },
+  "windows-native/options/native/twelve-printed-lines-m9-r1152x768.json": {
+    "sha256": "f795d2799361177316f2d265c1ee400f6584674c7677a388b68f7e1e2e0d13d5",
+    "size": 53989
+  },
+  "windows-native/options/native/twelve-printed-lines-m9-r320x192.json": {
+    "sha256": "387ff08de0f2fe8caf416322d5267ae57c613123023ed1029faeeb3d78dbf222",
+    "size": 53237
+  },
+  "windows-native/options/native/twelve-printed-lines-m9-r33x65.json": {
+    "sha256": "20f64c798c81223d3915fa5db89bac14e9e0316922b722709c65d017eff298df",
+    "size": 509
+  },
+  "windows-native/options/native/twelve-printed-lines-m9-r640x384.json": {
+    "sha256": "0d29df82a59b2c8644c03351fedb9241c666891da6c6a0ed4c0f966f883ffe84",
+    "size": 52914
+  },
+  "windows-native/options/native/twelve-printed-lines-m9-r768x512.json": {
+    "sha256": "8a0b6926f2cf063db6868a60331bb0dd934b6dac767dd191786cf97ad5411800",
+    "size": 53135
+  },
+  "windows-native/options/native/twelve-printed-lines-m999-r1152x768.json": {
+    "sha256": "107d43e684cfd3a557942a5d14d02682121ccee242a8e1f3579634dce6643461",
+    "size": 71630
+  },
+  "windows-native/options/native/twelve-printed-lines-m999-r320x192.json": {
+    "sha256": "dc8031947418589c1d4d51659026c47d287ef293ca511bca79f013e79cf9c19f",
+    "size": 70966
+  },
+  "windows-native/options/native/twelve-printed-lines-m999-r33x65.json": {
+    "sha256": "20f64c798c81223d3915fa5db89bac14e9e0316922b722709c65d017eff298df",
+    "size": 509
+  },
+  "windows-native/options/native/twelve-printed-lines-m999-r640x384.json": {
+    "sha256": "2dfac0b1b3ee5927c16586218e3e84feef9f358eb5e61d0746e57242fbb81fc2",
+    "size": 70604
+  },
+  "windows-native/options/native/twelve-printed-lines-m999-r768x512.json": {
+    "sha256": "2a167ff9727d5272d4d1ea70848df2cc31f9f1deed6b63db9b9af22394edff04",
+    "size": 70813
+  },
+  "windows-native/options/native/vertical-cjk-m1-r640x384.json": {
+    "sha256": "44945522acc5d4053aff5379f48bdcbbcb218559a56a75ffc05b7606595a4263",
+    "size": 3933
+  },
+  "windows-native/options/native/vertical-cjk-m5-r1151x767.json": {
+    "sha256": "63a22b6e679c831626ef45f05624f4be7e3400df1f2bad44c1c9db10a99cb6e7",
+    "size": 3873
+  },
+  "windows-native/options/parameter-blank-m1-r1151x768.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/parameter-blank-m1-r1152x767.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/parameter-blank-m1-r1152x768.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/parameter-blank-m1-r32x32.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-m1-r640x384.parity.json": {
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-m5-r1152x768.parity.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-m7-r768x512.parity.json": {
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-rotate-10-m1-r1152x768.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-rotate-10-m1000-r33x65.parity.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-rotate-10-m5-r640x384.parity.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-rotate-10-m6-r768x512.parity.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-rotate-180-m1-r1152x768.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-rotate-180-m1000-r33x65.parity.json": {
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-rotate-180-m5-r640x384.parity.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-rotate-180-m6-r768x512.parity.json": {
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-rotate-270-m1-r1152x768.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-rotate-270-m1000-r33x65.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-rotate-270-m5-r640x384.parity.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-rotate-270-m6-r768x512.parity.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-rotate-90-m1-r1152x768.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-rotate-90-m1000-r33x65.parity.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-rotate-90-m5-r640x384.parity.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "windows-native/options/red-calligraphy-jason-rotate-90-m6-r768x512.parity.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-m1-r640x384.parity.json": {
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-m5-r1152x768.parity.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-m7-r768x512.parity.json": {
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1",
+    "size": 254
+  },
+  "windows-native/options/red-grid-jason-rotate-10-m1-r1152x768.parity.json": {
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-rotate-10-m1000-r33x65.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-rotate-10-m5-r640x384.parity.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-rotate-10-m6-r768x512.parity.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-rotate-180-m1-r1152x768.parity.json": {
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-rotate-180-m1000-r33x65.parity.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-rotate-180-m5-r640x384.parity.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-rotate-180-m6-r768x512.parity.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-rotate-270-m1-r1152x768.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-rotate-270-m1000-r33x65.parity.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-rotate-270-m5-r640x384.parity.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-rotate-270-m6-r768x512.parity.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-rotate-90-m1-r1152x768.parity.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-rotate-90-m1000-r33x65.parity.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-rotate-90-m5-r640x384.parity.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "windows-native/options/red-grid-jason-rotate-90-m6-r768x512.parity.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "windows-native/options/suite.json": {
+    "sha256": "25ecddca275a12cf7cb9884bd2314ae938357b25e6bb373d8e2ff64ef8c40d56",
+    "size": 92350
+  },
+  "windows-native/options/thai-36-m0-r320x192.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/options/thai-36-m1-r640x384.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/options/thai-36-m2-r1151x767.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m0-r640x384.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/twelve-printed-lines-m1-r1152x768.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m1-r320x192.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m1-r33x65.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m1-r640x384.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m1-r768x512.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m1000-r1152x768.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/twelve-printed-lines-m1000-r320x192.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/twelve-printed-lines-m1000-r33x65.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m1000-r640x384.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/twelve-printed-lines-m1000-r768x512.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/twelve-printed-lines-m11-r1152x768.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/twelve-printed-lines-m11-r320x192.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/twelve-printed-lines-m11-r33x65.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m11-r640x384.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/twelve-printed-lines-m11-r768x512.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/twelve-printed-lines-m2-r0x0.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m2-r1152x768.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m2-r320x192.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m2-r33x65.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m2-r640x384.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m2-r768x512.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m3-r1152x768.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m3-r320x192.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m3-r33x65.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m3-r640x384.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m3-r768x512.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m32-r1152x768.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/twelve-printed-lines-m32-r320x192.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/twelve-printed-lines-m32-r33x65.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m32-r640x384.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/twelve-printed-lines-m32-r768x512.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/twelve-printed-lines-m4-r1152x768.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m4-r320x192.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m4-r33x65.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m4-r640x384.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m4-r768x512.parity.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m5-r1152x768.parity.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m5-r320x192.parity.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m5-r33x65.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m5-r640x384.parity.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m5-r768x512.parity.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m7-r1152x768.parity.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m7-r320x192.parity.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m7-r33x65.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m7-r640x384.parity.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m7-r768x512.parity.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m9-r1152x768.parity.json": {
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m9-r320x192.parity.json": {
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m9-r33x65.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m9-r640x384.parity.json": {
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m9-r768x512.parity.json": {
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m999-r1152x768.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/twelve-printed-lines-m999-r320x192.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/twelve-printed-lines-m999-r33x65.parity.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "windows-native/options/twelve-printed-lines-m999-r640x384.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/twelve-printed-lines-m999-r768x512.parity.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "windows-native/options/vertical-cjk-m1-r640x384.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/options/vertical-cjk-m5-r1151x767.parity.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "windows-native/summary.json": {
+    "sha256": "7bd21bcb16e629f804cef5a6b8a2790758fd5c3cca3e033b50a06b473dc9980e",
+    "size": 1315
+  }
+}

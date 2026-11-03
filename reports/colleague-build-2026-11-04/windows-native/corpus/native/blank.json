@@ -1,0 +1,18 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\work\\colleague-build-2026-11-04\\manual-source\\research\\case\\corpus\\blank.png",
+  "image": {
+    "height": 180,
+    "step": 1280,
+    "width": 320
+  },
+  "image_angle": 0.0,
+  "line_count": 0,
+  "lines": []
+}

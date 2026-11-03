@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "expected_rejection": "missing explicit ORT SDK",
+  "exit_code": 1,
+  "research_python_created": false,
+  "dependency_work_directory_created": false,
+  "output": "Provide -SdkRoot (or ONNXRUNTIME_ROOT) and prepared OpenCV/ICU paths; see docs/colleague-build.md. Use -SourceRuntime o\r\nnly to explicitly rebuild ORT.\r\nAt F:\\pythonx\\myocr\\win11-oneocr\\work\\colleague-build-2026-11-04\\manual-source\\scripts\\build-native.ps1:28 char:51\r\n+ ... $SdkRoot) { throw 'Provide -SdkRoot (or ONNXRUNTIME_ROOT) and prepare ...\r\n+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : OperationStopped: (Provide -SdkRoo...ly rebuild ORT.:String) [], RuntimeException\r\n    + FullyQualifiedErrorId : Provide -SdkRoot (or ONNXRUNTIME_ROOT) and prepared OpenCV/ICU paths; see docs/colleague \r\n   -build.md. Use -SourceRuntime only to explicitly rebuild ORT.\r\n \r\n"
+}

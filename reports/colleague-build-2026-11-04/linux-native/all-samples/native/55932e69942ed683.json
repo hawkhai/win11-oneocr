@@ -1,0 +1,85 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "/mnt/f/pythonx/myocr/win11-oneocr/work/colleague-build-2026-11-04/manual-source/samples/oneocr-capabilities/script-arabic.png",
+  "image": {
+    "height": 170,
+    "step": 4400,
+    "width": 1100
+  },
+  "image_angle": 359.42449951171875,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        24.0,
+        57.0,
+        322.0,
+        55.0,
+        323.0,
+        96.0,
+        24.0,
+        100.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "2026 ملاعلاب ابحرم",
+      "word_count": 3,
+      "words": [
+        {
+          "bounding_box": [
+            241.38021850585938,
+            56.974124908447266,
+            323.0,
+            55.43846130371094,
+            323.0,
+            96.52409362792969,
+            241.38021850585938,
+            96.35174560546875
+          ],
+          "confidence": 0.9913771152496338,
+          "index": 0,
+          "text": "2026"
+        },
+        {
+          "bounding_box": [
+            132.22567749023438,
+            57.95459747314453,
+            231.39707946777344,
+            57.11470413208008,
+            231.39706420898438,
+            96.40640258789063,
+            132.22567749023438,
+            97.75347900390625
+          ],
+          "confidence": 0.7651216983795166,
+          "index": 1,
+          "text": "ملاعلاب"
+        },
+        {
+          "bounding_box": [
+            24.398101806640625,
+            57.61815643310547,
+            119.5791015625,
+            57.962276458740234,
+            119.5791015625,
+            98.06912231445313,
+            24.398101806640625,
+            101.0
+          ],
+          "confidence": 0.8314089775085449,
+          "index": 2,
+          "text": "ابحرم"
+        }
+      ]
+    }
+  ]
+}

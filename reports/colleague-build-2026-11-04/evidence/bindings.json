@@ -1,0 +1,24 @@
+{
+  "comparator_sha256": "06d137cc93680f766031d783da9526064808fea1135124348e180bb8607f4869",
+  "original_assets": {
+    "oneocr.dll": "0a5e99041af902d6825f0af04ab25e62d2e2378ace69d10175f0dcc22816aae0",
+    "oneocr.onemodel": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+    "onnxruntime.dll": "bf14eb254d0a3fe50abe55b341d70abdbbf9bd4affd810998a86fac9ef81fc69",
+    "oneocr_wrapper.dll": "1e9027763cf23f144dd84f3a1a83ab067bbb9d0401934c36741315ff9a42a2a7"
+  },
+  "rebuilt_outputs": {
+    "windows-native": {
+      "cli_sha256": "8b027814b78831ed1b0d6adb17760f28e80b5e8734bb989183d0aa9aa42c9188",
+      "engine_library_sha256": "ce6610b1a3d01282d063d86a901782466ebad9e7b9405821f426d7becfe5c26b",
+      "build_directory": "F:\\pythonx\\myocr\\win11-oneocr\\work\\colleague-build-2026-11-04\\manual-source\\build\\colleague",
+      "staged_runtime_replaced": false
+    },
+    "linux-native": {
+      "cli_sha256": "da5db82b8f0c9abaa9fd5542def0139815bc3af088d7d71ee702bdd61d887808",
+      "engine_library_sha256": "eca6bd278eb1b459061468ad551f192adfd3c8d2425bb32e6e4925a17f595dd1",
+      "build_directory": "F:\\pythonx\\myocr\\win11-oneocr\\work\\colleague-build-2026-11-04\\manual-source\\build\\linux-x64",
+      "staged_runtime_replaced": false
+    }
+  },
+  "mode": "new clean-checkout engine builds with explicitly supplied dependencies; compiled outputs stay ignored"
+}

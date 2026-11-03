@@ -1,0 +1,85 @@
+{
+  "engine": {
+    "backend": "native-onnx-cpu",
+    "geometry": "native_curve_polygons",
+    "parity": "incomplete",
+    "style_confidence": "native_classifier_calibrated",
+    "word_confidence": "native_21_features_mlp"
+  },
+  "file": "F:\\pythonx\\myocr\\win11-oneocr\\work\\colleague-build-2026-11-04\\manual-source\\samples\\oneocr-capabilities\\script-tamil.png",
+  "image": {
+    "height": 170,
+    "step": 4400,
+    "width": 1100
+  },
+  "image_angle": 359.80511474609375,
+  "line_count": 1,
+  "lines": [
+    {
+      "bounding_box": [
+        27.0,
+        61.0,
+        468.0,
+        60.0,
+        468.0,
+        98.0,
+        27.0,
+        100.0
+      ],
+      "index": 0,
+      "style": {
+        "confidence": 0.03550000116229057,
+        "type": "printed"
+      },
+      "text": "வணக்கம் உலகம் 2026",
+      "word_count": 3,
+      "words": [
+        {
+          "bounding_box": [
+            28.670040130615234,
+            63.2365608215332,
+            224.6519317626953,
+            60.90153884887695,
+            223.7830810546875,
+            100.0,
+            27.801172256469727,
+            99.42430877685547
+          ],
+          "confidence": 0.8963770866394043,
+          "index": 0,
+          "text": "வணக்கம்"
+        },
+        {
+          "bounding_box": [
+            239.1934051513672,
+            60.82168197631836,
+            377.65484619140625,
+            60.50270080566406,
+            376.7859802246094,
+            99.67648315429688,
+            238.32455444335938,
+            100.0
+          ],
+          "confidence": 0.9675934314727783,
+          "index": 1,
+          "text": "உலகம்"
+        },
+        {
+          "bounding_box": [
+            392.196533203125,
+            60.51990509033203,
+            469.0,
+            60.78181838989258,
+            469.0,
+            98.37552642822266,
+            391.3276672363281,
+            99.52044677734375
+          ],
+          "confidence": 0.9838694334030151,
+          "index": 2,
+          "text": "2026"
+        }
+      ]
+    }
+  ]
+}
