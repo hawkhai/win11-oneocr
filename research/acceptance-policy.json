@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "policy_id": "native-dll-strict-wasm-diagnostic-v1",
+  "effective_date": "2026-11-03",
+  "authority": "explicit user instruction and clarification: retain previous strict tolerances",
+  "native_cpp": {
+    "required": true,
+    "reference": "original Microsoft OneOCR DLL with the same model, image and options",
+    "comparator": "scripts/compare-results.py",
+    "numeric_zero_error_required": false,
+    "maximum_errors": {"coordinates_px": 1, "image_angle_degrees": 0.1, "confidence": 0.001},
+    "exact_fields": ["text", "reading order", "line and word splitting", "style type", "counts", "indices", "existing field semantics"],
+    "excluded_host_metadata": ["file", "engine"],
+    "reject_nonfinite_and_invalid_fields": true,
+    "all_registered_cases_required": true,
+    "expected_rejections": "verify error contracts separately; do not count as recognition successes",
+    "fresh_inference_entrypoint": "scripts/run-native-parity.py"
+  },
+  "javascript_webassembly": {
+    "absolute_parity_required": false,
+    "blocks_native_acceptance": false,
+    "comparison_role": "diagnostic",
+    "report_differences_and_functional_errors_truthfully": true,
+    "new_numeric_tolerances_defined": false
+  },
+  "model_substitution_allowed": false,
+  "native_threshold_relaxation_allowed": false,
+  "unverified_platforms_must_remain_unverified": true,
+  "sealed_historical_reports_are_immutable": true,
+  "policy_changes_require_explicit_user_instruction": true,
+  "agent_instructions": "AGENTS.md",
+  "documentation": "docs/acceptance-standard.md"
+}
