@@ -1,5 +1,7 @@
 # Windows 11 Snipping Tool OCR (OneOCR)
 
+新接手先看 [一页入口](docs/start-here.md)：当前结论、运行、编译、复核和当前离线包选择。第二轮交付工具完整测试 70/70、已有全量结果复核 538/538，见 [补强报告](reports/cross-delivery-v2-2026-11-04/README.md)。下文旧测试计数与历史证据仍保留。
+
 **验收铁律（2026-11-03 用户确认）：C++ 原生版本必须按原 DLL 严格对齐；沿用坐标 1px、角度 0.1°、置信度 1e-3 的阈值，其余识别字段按既有契约一致。JS/WebAssembly 不要求绝对一致，其差异不阻塞 C++ 验收。** 详见 [AGENTS.md](AGENTS.md) 和[当前验收标准](docs/acceptance-standard.md)。下述五环境结果为历史实测记录。
 
 **收手范围（2026-11-04 用户确认）：Windows x64 / Linux x64 C++ 当前全部登记项严格通过后，本地提交并刷新离线包即结束本轮，不继续自动扩大输入、参数或平台。** 当前两端全量新推理与独立复核均为 538/538，收尾依据见 [Windows/Linux 验收报告](reports/windows-linux-closeout-2026-11-04/README.md)。其他平台的未验证状态继续保留，不阻塞本轮完成。

@@ -31,9 +31,15 @@ python3 scripts/check-native-isolation.py --runtime artifacts/linux-x64 --output
 
 ```powershell
 python -X utf8 scripts/package-offline.py
-python -X utf8 scripts/package-source.py --verify artifacts/oneocr-source.zip
+# 当前路径按 artifacts/OFFLINE_PACKAGE.json.files 读取，详见 start-here.md
 ```
 
 打包要求干净 HEAD，先独立复核最新保存的 538 项结果，再生成 bundle/源码 ZIP，结束时重新检查 HEAD 和工作树；生成状态表分别记录包内原有程序与最新重编程序。最终检查 OFFLINE_PACKAGE.json 的 commit、两个包的 SHA-256 和 DELIVERY_STATUS.json 摘要。生成物仍在忽略目录，不提交自身、不 push 或上传模型。
 
 本次没有改变引擎、模型、运行资产、比较器或登记范围。相关身份或行为以后发生变化时，仍须按原规则重新执行受影响两端的完整当前范围回归。
+
+## 第二轮交付补强
+
+源码 ZIP 读取 Git HEAD 的提交字节与执行位，按源码目录／根文件选择，不再扫描工作目录或依赖扩展名白名单。报告索引的全部文件仍须存在且摘要／长度一致；可加 `--commit <提交号>` 将源码 ZIP 与该提交逐字节核对。新扩展名会随已提交源码进入包，忽略缓存和本地修改不会混入。
+
+`package-offline.py` 每次创建全新的 `artifacts/releases/<上海时间>-<提交号>/`，也可用 `--output artifacts/releases/<新目录>`。拒绝复用已有目录；完成 bundle、源码 ZIP、摘要、状态和 HEAD 检查后原子更新当前 OFFLINE_PACKAGE.json。索引 files 与 delivery_status.path 均相对 artifacts，directory 指向本次发行目录；每个发行目录保留自身索引。旧固定名称包／状态不覆盖，首次升级还保存旧索引。当前包核验命令见 [一页接手入口](start-here.md)，历史目录不可当作最新包。使用 Python 3.11+。

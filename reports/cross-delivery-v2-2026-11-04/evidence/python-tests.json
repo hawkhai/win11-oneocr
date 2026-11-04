@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "full_suite": true,
+  "tests": 70,
+  "failures": 0,
+  "errors": 0,
+  "files": [
+    "archive-verification-test.py",
+    "compare-only-test.py",
+    "compare-results-test.py",
+    "model-preparation-test.py",
+    "native-results-test.py",
+    "ocr-classics-test.py",
+    "package-offline-test.py",
+    "package-source-test.py",
+    "reference-inputs-test.py",
+    "regression-options-test.py",
+    "verification-state-test.py"
+  ]
+}

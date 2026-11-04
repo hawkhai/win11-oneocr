@@ -7,6 +7,7 @@ import io
 import json
 from pathlib import Path
 import tempfile
+import subprocess
 import unittest
 from unittest.mock import patch
 import zipfile
@@ -29,12 +30,40 @@ class SourceReports(unittest.TestCase):
         self.save_index();self.destination=self.root/'artifacts/source.zip'
         self.addCleanup(patch.stopall)
         patch.object(pack,'ROOT',self.root).start();patch.object(pack,'ROOT_FILES',('CMakeLists.txt',)).start()
+        self.git('init');self.git('config','core.autocrlf','false')
+        (self.root/'.gitignore').write_text('artifacts/\nignored-cache/\n',encoding='utf8')
+
+    def git(self,*args):
+        return subprocess.check_output(['git','-C',str(self.root),*args],stderr=subprocess.STDOUT)
 
     def save_index(self):
         (self.report/'FILES.sha256.json').write_text(json.dumps(self.index),encoding='utf8')
 
-    def package(self):
+    def package(self,commit=True):
+        if commit:
+            self.git('add','-A')
+            self.git('-c','user.name=Delivery Test','-c','user.email=delivery@example.invalid','commit','--allow-empty','-m','fixture')
         with contextlib.redirect_stdout(io.StringIO()):pack.package(self.destination)
+
+    def test_committed_blobs_exclude_ignored_files_and_keep_new_extensions(self):
+        (self.root/'docs').mkdir()
+        (self.root/'docs/contract.new-extension').write_bytes(b'committed\n')
+        (self.root/'docs/.gitignore').write_text('cache.txt\n',encoding='utf8')
+        (self.root/'docs/cache.txt').write_bytes(b'ignored private cache')
+        self.package()
+        commit=self.git('rev-parse','HEAD').decode().strip()
+        self.assertTrue(pack.verify_source_archive(self.destination,commit)['passed'])
+        self.destination.unlink()
+        (self.root/'docs/contract.new-extension').write_bytes(b'local edit\r\n')
+        self.package(commit=False)
+        with zipfile.ZipFile(self.destination) as archive:
+            self.assertEqual(archive.read('docs/contract.new-extension'),b'committed\n')
+            self.assertNotIn('docs/cache.txt',archive.namelist())
+
+    def test_archive_does_not_replace_previous_output(self):
+        self.package();original=self.destination.read_bytes()
+        with self.assertRaisesRegex(ValueError,'Refusing to replace'):self.package(commit=False)
+        self.assertEqual(self.destination.read_bytes(),original)
 
     def old_style_archive(self,omit=False,corrupt=False):
         # Mimic the original bug: SOURCE_BUILD agrees with the ZIP, while the
