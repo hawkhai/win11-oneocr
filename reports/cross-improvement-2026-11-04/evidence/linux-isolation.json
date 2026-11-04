@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "checks": [
+    "success-error-success exact result recovery",
+    "stale outputs cleared",
+    "original DLL strict comparison",
+    "private native engine/ORT modules"
+  ],
+  "loaded_modules": [
+    "/tmp/oneocr-isolated-snj519xm/libgcc_s.so.1",
+    "/tmp/oneocr-isolated-snj519xm/liboneocr_portable.so",
+    "/tmp/oneocr-isolated-snj519xm/libonnxruntime.so.1",
+    "/tmp/oneocr-isolated-snj519xm/libstdc++.so.6",
+    "/usr/bin/python3.14",
+    "/usr/lib/locale/C.utf8/LC_CTYPE",
+    "/usr/lib/python3.14/lib-dynload/_bz2.cpython-314-x86_64-linux-gnu.so",
+    "/usr/lib/python3.14/lib-dynload/_ctypes.cpython-314-x86_64-linux-gnu.so",
+    "/usr/lib/python3.14/lib-dynload/_hashlib.cpython-314-x86_64-linux-gnu.so",
+    "/usr/lib/python3.14/lib-dynload/_lzma.cpython-314-x86_64-linux-gnu.so",
+    "/usr/lib/python3.14/lib-dynload/_zstd.cpython-314-x86_64-linux-gnu.so",
+    "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache",
+    "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+    "/usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4",
+    "/usr/lib/x86_64-linux-gnu/libc.so.6",
+    "/usr/lib/x86_64-linux-gnu/libcrypto.so.3",
+    "/usr/lib/x86_64-linux-gnu/libexpat.so.1.11.2",
+    "/usr/lib/x86_64-linux-gnu/libffi.so.8.2.0",
+    "/usr/lib/x86_64-linux-gnu/liblzma.so.5.8.3",
+    "/usr/lib/x86_64-linux-gnu/libm.so.6",
+    "/usr/lib/x86_64-linux-gnu/libz.so.1.3.1",
+    "/usr/lib/x86_64-linux-gnu/libzstd.so.1.5.7"
+  ],
+  "native_modules": {
+    "/tmp/oneocr-isolated-snj519xm/liboneocr_portable.so": "d764c4360dec3675303d3f38183bc689dc183b2b6e710a9c11001c13efb66e3a",
+    "/tmp/oneocr-isolated-snj519xm/libonnxruntime.so.1": "49c78b3bb1c401e77fbdbb6460bb55a3c610413770f17c977fdf4e86af054f75"
+  },
+  "input_sha256": "d7174025c14af059409ebf40baa934bd9910f299bd1509f1cafbaadca09092f1",
+  "baseline_sha256": "287e9ca5dea12430d0d965086a71987274f665da927e42da1a475c172f2e8ea7",
+  "fresh_inference": true,
+  "full_regression": false,
+  "registered_scope_unchanged": true,
+  "python_is_test_harness_only": true
+}
