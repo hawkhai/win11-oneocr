@@ -1,0 +1,2314 @@
+{
+  "chrome/actual/book.json": {
+    "sha256": "2109b257351b895d70f2ac95c7b7624082be5d0df46dea34798c0da158675ab1",
+    "size": 241839
+  },
+  "chrome/actual/corpus-arabic-36.json": {
+    "sha256": "15279878f81eed1e6430ce3c1130048748d2ed16eaaf2bd73830d25e7a9a555f",
+    "size": 2044
+  },
+  "chrome/actual/corpus-blank.json": {
+    "sha256": "a9df11843dea7c2f8e2b449ea44bc288c1fcdf2c199123e855ba5c21a8dc0610",
+    "size": 487
+  },
+  "chrome/actual/corpus-cjk-18.json": {
+    "sha256": "e82c0f588425539048837a5f280b4f7692d56acae1924db2207a3c3554d404c8",
+    "size": 7961
+  },
+  "chrome/actual/corpus-cjk-36.json": {
+    "sha256": "3618eca1dbb0dfda7f4e05a3ac3fefeb7e415f436244d6d45500046a62b23865",
+    "size": 7681
+  },
+  "chrome/actual/corpus-cjk-rotate-0.5.json": {
+    "sha256": "112517c78272bf1c6836a81c0fc360d19876105250cea150e8aa261c76143ef1",
+    "size": 7884
+  },
+  "chrome/actual/corpus-cjk-rotate-10.json": {
+    "sha256": "6ea1510abcad12ee6a7e57991017670b2cd29cdce9f50539aa73f405faf619f8",
+    "size": 7975
+  },
+  "chrome/actual/corpus-cjk-rotate-180.json": {
+    "sha256": "fcba519e8f5c5a99a92016a54b182dff434c899a1f6b7ae9aa6c0f7af92dcd8c",
+    "size": 7940
+  },
+  "chrome/actual/corpus-cjk-rotate-270.json": {
+    "sha256": "acfef01a36799d651149e131872ac3033de247c5023c878fbfd6acabbe858a78",
+    "size": 7897
+  },
+  "chrome/actual/corpus-cjk-rotate-3.json": {
+    "sha256": "338d53bf447307849af3409ea8d73e227645673e1d281b263f516a1e91cc58ed",
+    "size": 7966
+  },
+  "chrome/actual/corpus-cjk-rotate-90.json": {
+    "sha256": "3e4ebd996193ff757ba5fb0706665a15f7df7e8f967c80da0acd191d512e7d36",
+    "size": 7786
+  },
+  "chrome/actual/corpus-cyrillic-36.json": {
+    "sha256": "047d9e2c5e867beedc8dee5fcef5d198532259c0fecaca88fb1893d30d5b7821",
+    "size": 2915
+  },
+  "chrome/actual/corpus-devanagari-36.json": {
+    "sha256": "3ec73df92af7c5f5890597f42fa5a0f7acaacc692f43eb9b2340c202db12b840",
+    "size": 2067
+  },
+  "chrome/actual/corpus-greek-36.json": {
+    "sha256": "0175bb06b8132a4bfb9c516af2be0a39b9808cb7d08f1c4f6d462421a3dc70f1",
+    "size": 2441
+  },
+  "chrome/actual/corpus-hebrew-36.json": {
+    "sha256": "78a65d4ab09930afc84c0244733e99909bdea21ffd7171eb649efda9c332ebb8",
+    "size": 2023
+  },
+  "chrome/actual/corpus-latin-18.json": {
+    "sha256": "2751cc44eee15353b1ab595524cc48c08ff8c0ddfd9e7bb24730cae6906c6fa0",
+    "size": 4734
+  },
+  "chrome/actual/corpus-latin-36.json": {
+    "sha256": "4eb11c11ad6870bbc12298c142fabd8b256cf3d77911376f068b5b3607034f6f",
+    "size": 4670
+  },
+  "chrome/actual/corpus-latin-rotate-0.5.json": {
+    "sha256": "a81b7eb056d86706f3690f36e25825dd4f4c5e3ff785ba19ab6418d1767fc9a9",
+    "size": 4793
+  },
+  "chrome/actual/corpus-latin-rotate-10.json": {
+    "sha256": "dd12d4c59d54e5c4143c822ab72df3e2d88d924257552f3b9e3598ac059f13f7",
+    "size": 4804
+  },
+  "chrome/actual/corpus-latin-rotate-180.json": {
+    "sha256": "d6639a61361eff74e061249e0cb787638f081ee497c7b77cb814ea585d8b3ef6",
+    "size": 4656
+  },
+  "chrome/actual/corpus-latin-rotate-270.json": {
+    "sha256": "80dd9e60c060bdda427f724309f72850eef9fe0c985b11159a91a6a3235e1c79",
+    "size": 4701
+  },
+  "chrome/actual/corpus-latin-rotate-3.json": {
+    "sha256": "1c0be3f9c604f39f2cbf23e739a90679799a3afa15e7ccbc48e26e442ee5c9eb",
+    "size": 4768
+  },
+  "chrome/actual/corpus-latin-rotate-90.json": {
+    "sha256": "3a83a40f0151703a4bbd9f858a53b394aa5b721766f45524b253a26b1d65f348",
+    "size": 4596
+  },
+  "chrome/actual/corpus-multi-column.json": {
+    "sha256": "a9b560bb67531707d748832cbc5b26a0ce15b76ea19caaaf76f6ee600cb9af7c",
+    "size": 7118
+  },
+  "chrome/actual/corpus-tamil-36.json": {
+    "sha256": "5c83b79806c89d33a2412c4e9ce700b0777a02de0f47eb79ebeb3f196893612f",
+    "size": 2044
+  },
+  "chrome/actual/corpus-thai-36.json": {
+    "sha256": "0c75b0320211cdd705ec4cc7701543bb2dd504a92dbc85e9b65266a90afa4c3d",
+    "size": 2445
+  },
+  "chrome/actual/corpus-vertical-cjk.json": {
+    "sha256": "db3f225a01788f8b738696fafaf95d222b1e2f17b79b7781ea82912101ad4955",
+    "size": 3829
+  },
+  "chrome/actual/corpus-透明路径-emoji-😀.json": {
+    "sha256": "30301bd712429bb6a2e3afa1f1df72184f854ee8d82b4e4b7e6efc2f1e04d61a",
+    "size": 2452
+  },
+  "chrome/actual/measurements.json": {
+    "sha256": "3c7db180d8f155eb67c70ecf43cbd57b3f1d613fa2b8aebb69f11a0f4aa2443b",
+    "size": 50317
+  },
+  "chrome/actual/parameter-arabic-36-m0-r320x192.json": {
+    "sha256": "6c080b9d084939db46cba429557ae4205b94235259065b76ecc11c130f175b98",
+    "size": 2070
+  },
+  "chrome/actual/parameter-arabic-36-m1-r640x384.json": {
+    "sha256": "ec431d841687bb6cdab9b88187618c486e2e75958164b83b3286bcea8f1d29bc",
+    "size": 2053
+  },
+  "chrome/actual/parameter-arabic-36-m2-r1151x767.json": {
+    "sha256": "15279878f81eed1e6430ce3c1130048748d2ed16eaaf2bd73830d25e7a9a555f",
+    "size": 2044
+  },
+  "chrome/actual/parameter-devanagari-36-m0-r320x192.json": {
+    "sha256": "8f4453a02972010be97f330fe6ae31e2b314cf32725ba8b7c457cd6f2ea068da",
+    "size": 2048
+  },
+  "chrome/actual/parameter-devanagari-36-m1-r640x384.json": {
+    "sha256": "0e6680c00c20e2196d7f16f4245d5ab3201b48ec139701cc9b8a907b4bc6b947",
+    "size": 2073
+  },
+  "chrome/actual/parameter-devanagari-36-m2-r1151x767.json": {
+    "sha256": "3ec73df92af7c5f5890597f42fa5a0f7acaacc692f43eb9b2340c202db12b840",
+    "size": 2067
+  },
+  "chrome/actual/parameter-hebrew-36-m0-r320x192.json": {
+    "sha256": "2fe4ee86ad3b353db83395f1b526706530a7c54f7d44a7aba99b2fbe8b69e6fe",
+    "size": 2017
+  },
+  "chrome/actual/parameter-hebrew-36-m1-r640x384.json": {
+    "sha256": "0df40abf8b7f6cebc9becc270ae0a24aef274033aee197a1c706cf6659526846",
+    "size": 2038
+  },
+  "chrome/actual/parameter-hebrew-36-m2-r1151x767.json": {
+    "sha256": "78a65d4ab09930afc84c0244733e99909bdea21ffd7171eb649efda9c332ebb8",
+    "size": 2023
+  },
+  "chrome/actual/parameter-multi-column-m1-r640x384.json": {
+    "sha256": "e8ee802fa4eee592f78f6acfcae89958ceb8b879279c91eca002f7045151cdfe",
+    "size": 4942
+  },
+  "chrome/actual/parameter-multi-column-m5-r1151x767.json": {
+    "sha256": "727ae57800ddc620d1b7bfb8d358c460a5f6e04a649d43f1637c77e40f030450",
+    "size": 6014
+  },
+  "chrome/actual/parameter-parameter-blank-m1-r1151x768.json": {
+    "sha256": "a87dc8369e5f9351630d28aed07c77230f3076a5d87cb3361b695c827e9c660b",
+    "size": 502
+  },
+  "chrome/actual/parameter-parameter-blank-m1-r1152x767.json": {
+    "sha256": "a87dc8369e5f9351630d28aed07c77230f3076a5d87cb3361b695c827e9c660b",
+    "size": 502
+  },
+  "chrome/actual/parameter-parameter-blank-m1-r1152x768.json": {
+    "sha256": "a87dc8369e5f9351630d28aed07c77230f3076a5d87cb3361b695c827e9c660b",
+    "size": 502
+  },
+  "chrome/actual/parameter-parameter-blank-m1-r32x32.json": {
+    "sha256": "a87dc8369e5f9351630d28aed07c77230f3076a5d87cb3361b695c827e9c660b",
+    "size": 502
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-m1-r640x384.json": {
+    "sha256": "f161653784993596f39f593bd7f1256a94091a2907edcf07bbbc2214382c98e1",
+    "size": 13421
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-m5-r1152x768.json": {
+    "sha256": "c9c347c2b4a0c6790223141999722ae223228e48a2bf651f94fae25e56e11d97",
+    "size": 28948
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-m7-r768x512.json": {
+    "sha256": "1d8ffce50025a7a93b568cd11d2a5efad9ffba1a9835190bf4ab97eb5ddec945",
+    "size": 36296
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-rotate-10-m1-r1152x768.json": {
+    "sha256": "0deb8064287d5e4d0e8d7d962b9ba3cb50c087acb3ad40361a494617d15fac38",
+    "size": 7109
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-rotate-10-m1000-r33x65.json": {
+    "sha256": "2733bc4392f16d185a92d37d4d26d43accc78a7e721174611e5eb60b88397418",
+    "size": 20274
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-rotate-10-m5-r640x384.json": {
+    "sha256": "4870c0abfc4ac29120edf6861d3f9f543d3a8792e1567ab23916842802953ba1",
+    "size": 19897
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-rotate-10-m6-r768x512.json": {
+    "sha256": "28360f52959ad61c20556b09960eaf17b84f72ba8dd20001c7689143a65b9600",
+    "size": 21815
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-rotate-180-m1-r1152x768.json": {
+    "sha256": "6321e7ac60682d471f4beab0c4d899fbdea761b6d965d2a8a52f01d707909f09",
+    "size": 4861
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-rotate-180-m1000-r33x65.json": {
+    "sha256": "c391e5baaf10fe4928ad4c4a6cb897ce09bc6db6636d181053d8a098ca249e27",
+    "size": 15424
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-rotate-180-m5-r640x384.json": {
+    "sha256": "e63c8cac9ac8e1a96df94bb121e9885b2ecb7eef9e907f671d0ba0e9b3bf6e60",
+    "size": 26367
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-rotate-180-m6-r768x512.json": {
+    "sha256": "d8be29b9d8820d0347d3618bdd534014b734528141d74021825f977d781f08f8",
+    "size": 24542
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-rotate-270-m1-r1152x768.json": {
+    "sha256": "775897d5d62a473fac1119886f3b5b6cc5b105768914c4a6af206d2a308abf7c",
+    "size": 2435
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-rotate-270-m1000-r33x65.json": {
+    "sha256": "e2982b9e6965fe5976398135435d7858f3900a5d00354ff39dfc04656db235f8",
+    "size": 522
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-rotate-270-m5-r640x384.json": {
+    "sha256": "0d7af8103a0daf96c5b8975545239c46b6bfbd46de12023b6b507d51806a8d1b",
+    "size": 16514
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-rotate-270-m6-r768x512.json": {
+    "sha256": "977c2993846b4385d379d336c3a7adec0443f74d1dab2707a4003350c576f5d4",
+    "size": 29421
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-rotate-90-m1-r1152x768.json": {
+    "sha256": "c12ecd15b49946a2bc371357bb4b3cfec2002b4b5af12995d1180b16e7ca2aaf",
+    "size": 12712
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-rotate-90-m1000-r33x65.json": {
+    "sha256": "a65b0d87eff7134a49a26afa7b95f660f648f7a817a69cf00cc08c9b2163ddd8",
+    "size": 25449
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-rotate-90-m5-r640x384.json": {
+    "sha256": "00e9fc7da433477d11533a271ff07b41b079a85dcca07da19f1d835488a7cb8a",
+    "size": 26856
+  },
+  "chrome/actual/parameter-red-calligraphy-jason-rotate-90-m6-r768x512.json": {
+    "sha256": "b1a560cbf516db5c5c9a5f52929d8a981a5e94b75bf717f67e059c24df70f977",
+    "size": 25375
+  },
+  "chrome/actual/parameter-red-grid-jason-m1-r640x384.json": {
+    "sha256": "9a928a45778f2c846e40c8ee1b429582737a38762ac11f7a95b3d2b0b3c83064",
+    "size": 12541
+  },
+  "chrome/actual/parameter-red-grid-jason-m5-r1152x768.json": {
+    "sha256": "6bc6e9c9c83d89e6122f009bba3d13da80dcb75e08205467104985731d9c6f06",
+    "size": 22773
+  },
+  "chrome/actual/parameter-red-grid-jason-m7-r768x512.json": {
+    "sha256": "9462d4007945f3e8be45791497807d818455acd9cc6be8d38efcb2cd05e9d119",
+    "size": 39835
+  },
+  "chrome/actual/parameter-red-grid-jason-rotate-10-m1-r1152x768.json": {
+    "sha256": "021cefc9741726e9975a957640d2bf843d159cd7d69892e91539302e8be9fab2",
+    "size": 12595
+  },
+  "chrome/actual/parameter-red-grid-jason-rotate-10-m1000-r33x65.json": {
+    "sha256": "a4dd882b43f3270b51c65a0b6b5d0576c2a4d52c5125285289f9cac85515a49f",
+    "size": 514
+  },
+  "chrome/actual/parameter-red-grid-jason-rotate-10-m5-r640x384.json": {
+    "sha256": "68a7a82413c36402d4fbe8ba4b68386a7baf602318f62f2186f07b88e164503e",
+    "size": 30591
+  },
+  "chrome/actual/parameter-red-grid-jason-rotate-10-m6-r768x512.json": {
+    "sha256": "5ca7def54df5ca07eb19e2fde66cba2c26ef3bac62450096a1e5531bafbe6261",
+    "size": 24262
+  },
+  "chrome/actual/parameter-red-grid-jason-rotate-180-m1-r1152x768.json": {
+    "sha256": "585616d8b0e577efc09d2a7e6fe682775713e22ca5df64933b2ec602a5700159",
+    "size": 8999
+  },
+  "chrome/actual/parameter-red-grid-jason-rotate-180-m1000-r33x65.json": {
+    "sha256": "4edfd8b537476b83959c34a0d02a5b78e795f1b1955848a68c09e338d8790a6c",
+    "size": 18785
+  },
+  "chrome/actual/parameter-red-grid-jason-rotate-180-m5-r640x384.json": {
+    "sha256": "898ce9144f021f1cd301a0897c8d979fb9c3682bf3553f07a3acd033d772f70b",
+    "size": 34410
+  },
+  "chrome/actual/parameter-red-grid-jason-rotate-180-m6-r768x512.json": {
+    "sha256": "7e9e6d08d9394b498893cbe2bbd0af37caa1089c640e135ffdb6c8af2bcc4eaf",
+    "size": 31343
+  },
+  "chrome/actual/parameter-red-grid-jason-rotate-270-m1-r1152x768.json": {
+    "sha256": "6875ad297b3d8d8b85cf9c3ed15072710f091a481cb3b8b75955e805ace7fd8b",
+    "size": 11151
+  },
+  "chrome/actual/parameter-red-grid-jason-rotate-270-m1000-r33x65.json": {
+    "sha256": "d97dc92e5930991c40dd5f4a9d6405bc962fa0443758bb348a34bc16cdc2e5b6",
+    "size": 26024
+  },
+  "chrome/actual/parameter-red-grid-jason-rotate-270-m5-r640x384.json": {
+    "sha256": "58a04990b8f7f793103011eec2a3014fd85406e92ac79a58f8dafd072ee2d024",
+    "size": 24707
+  },
+  "chrome/actual/parameter-red-grid-jason-rotate-270-m6-r768x512.json": {
+    "sha256": "abc8c0519ac3e7b1d32ed6e1ed7c1497d15040f7dcc9757ddc1901fb9a50d09c",
+    "size": 27775
+  },
+  "chrome/actual/parameter-red-grid-jason-rotate-90-m1-r1152x768.json": {
+    "sha256": "5b46331f22bf0a97d626aa591cc16e6f2dbf9dd0a75b81a5a84115f06c2c92fe",
+    "size": 5535
+  },
+  "chrome/actual/parameter-red-grid-jason-rotate-90-m1000-r33x65.json": {
+    "sha256": "382e129765779269bfd5dc5838124bb5b146b23548b0bc76629a4ec5d9a7ab2b",
+    "size": 17947
+  },
+  "chrome/actual/parameter-red-grid-jason-rotate-90-m5-r640x384.json": {
+    "sha256": "700dca90606e4820b8224fe817dcb2d514255b08a74fd96073398780f7aa15a3",
+    "size": 33673
+  },
+  "chrome/actual/parameter-red-grid-jason-rotate-90-m6-r768x512.json": {
+    "sha256": "a69bf32abf28733fb302a4eaf46cc02f78176250d6600946d76d2e3cf567e9ce",
+    "size": 25510
+  },
+  "chrome/actual/parameter-thai-36-m0-r320x192.json": {
+    "sha256": "57fe2beb3b4e1eb747e31fe5180dde1038d1dd94cd6f4e98803d6613d81df6f6",
+    "size": 2480
+  },
+  "chrome/actual/parameter-thai-36-m1-r640x384.json": {
+    "sha256": "71ff91c5ea78a0ccd92cae340d9b3e581e0030a09ef0a77460da8fc43fa9557c",
+    "size": 2467
+  },
+  "chrome/actual/parameter-thai-36-m2-r1151x767.json": {
+    "sha256": "0c75b0320211cdd705ec4cc7701543bb2dd504a92dbc85e9b65266a90afa4c3d",
+    "size": 2445
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m0-r640x384.json": {
+    "sha256": "9f28f14e5a3a8f74dac810c3932fe10f3b7a2e1509f1be581624075efb3acc44",
+    "size": 70143
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m1-r1152x768.json": {
+    "sha256": "4babc1a1a340bec21d17d542d8e3a72203873b2f8f0095bfe467c95e42a1a89a",
+    "size": 24194
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m1-r320x192.json": {
+    "sha256": "bb73cfaafdfa4db051f7c93b619559254b80fc7b90c0aa0a19e36e635d2681a1",
+    "size": 23841
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m1-r33x65.json": {
+    "sha256": "79283d745f20e51e5619cbf11ce6635d0442f073791a4ca9e1677963c69ca877",
+    "size": 509
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m1-r640x384.json": {
+    "sha256": "0c80c5d2a9c3bca25bf8a9926587115c386fdb0ceb5aedc80ee700731825d6d5",
+    "size": 23547
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m1-r768x512.json": {
+    "sha256": "82073d47fc6c581c04977ae8cc867e265b78050859d6851d85dffc8e93a828a7",
+    "size": 23770
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m1000-r1152x768.json": {
+    "sha256": "ed0ca7fe0f39eaaeda27ee546e64a840b35b1255ddaf4f648aa7e7504884cccc",
+    "size": 71335
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m1000-r320x192.json": {
+    "sha256": "2c51cf0457e77c6c760543d1012e7a2980f4dfc1e7a94c2ad19cdea7dd6f24de",
+    "size": 70554
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m1000-r33x65.json": {
+    "sha256": "79283d745f20e51e5619cbf11ce6635d0442f073791a4ca9e1677963c69ca877",
+    "size": 509
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m1000-r640x384.json": {
+    "sha256": "9f28f14e5a3a8f74dac810c3932fe10f3b7a2e1509f1be581624075efb3acc44",
+    "size": 70143
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m1000-r768x512.json": {
+    "sha256": "5633e87a00ceb074e12c53a80239d5854cf513726e3181afc8e69599d3183af9",
+    "size": 70399
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m11-r1152x768.json": {
+    "sha256": "ed0ca7fe0f39eaaeda27ee546e64a840b35b1255ddaf4f648aa7e7504884cccc",
+    "size": 71335
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m11-r320x192.json": {
+    "sha256": "2c51cf0457e77c6c760543d1012e7a2980f4dfc1e7a94c2ad19cdea7dd6f24de",
+    "size": 70554
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m11-r33x65.json": {
+    "sha256": "79283d745f20e51e5619cbf11ce6635d0442f073791a4ca9e1677963c69ca877",
+    "size": 509
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m11-r640x384.json": {
+    "sha256": "9f28f14e5a3a8f74dac810c3932fe10f3b7a2e1509f1be581624075efb3acc44",
+    "size": 70143
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m11-r768x512.json": {
+    "sha256": "5633e87a00ceb074e12c53a80239d5854cf513726e3181afc8e69599d3183af9",
+    "size": 70399
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m2-r0x0.json": {
+    "sha256": "4babc1a1a340bec21d17d542d8e3a72203873b2f8f0095bfe467c95e42a1a89a",
+    "size": 24194
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m2-r1152x768.json": {
+    "sha256": "4babc1a1a340bec21d17d542d8e3a72203873b2f8f0095bfe467c95e42a1a89a",
+    "size": 24194
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m2-r320x192.json": {
+    "sha256": "bb73cfaafdfa4db051f7c93b619559254b80fc7b90c0aa0a19e36e635d2681a1",
+    "size": 23841
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m2-r33x65.json": {
+    "sha256": "79283d745f20e51e5619cbf11ce6635d0442f073791a4ca9e1677963c69ca877",
+    "size": 509
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m2-r640x384.json": {
+    "sha256": "0c80c5d2a9c3bca25bf8a9926587115c386fdb0ceb5aedc80ee700731825d6d5",
+    "size": 23547
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m2-r768x512.json": {
+    "sha256": "82073d47fc6c581c04977ae8cc867e265b78050859d6851d85dffc8e93a828a7",
+    "size": 23770
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m3-r1152x768.json": {
+    "sha256": "4babc1a1a340bec21d17d542d8e3a72203873b2f8f0095bfe467c95e42a1a89a",
+    "size": 24194
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m3-r320x192.json": {
+    "sha256": "bb73cfaafdfa4db051f7c93b619559254b80fc7b90c0aa0a19e36e635d2681a1",
+    "size": 23841
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m3-r33x65.json": {
+    "sha256": "79283d745f20e51e5619cbf11ce6635d0442f073791a4ca9e1677963c69ca877",
+    "size": 509
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m3-r640x384.json": {
+    "sha256": "0c80c5d2a9c3bca25bf8a9926587115c386fdb0ceb5aedc80ee700731825d6d5",
+    "size": 23547
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m3-r768x512.json": {
+    "sha256": "82073d47fc6c581c04977ae8cc867e265b78050859d6851d85dffc8e93a828a7",
+    "size": 23770
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m32-r1152x768.json": {
+    "sha256": "ed0ca7fe0f39eaaeda27ee546e64a840b35b1255ddaf4f648aa7e7504884cccc",
+    "size": 71335
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m32-r320x192.json": {
+    "sha256": "2c51cf0457e77c6c760543d1012e7a2980f4dfc1e7a94c2ad19cdea7dd6f24de",
+    "size": 70554
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m32-r33x65.json": {
+    "sha256": "79283d745f20e51e5619cbf11ce6635d0442f073791a4ca9e1677963c69ca877",
+    "size": 509
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m32-r640x384.json": {
+    "sha256": "9f28f14e5a3a8f74dac810c3932fe10f3b7a2e1509f1be581624075efb3acc44",
+    "size": 70143
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m32-r768x512.json": {
+    "sha256": "5633e87a00ceb074e12c53a80239d5854cf513726e3181afc8e69599d3183af9",
+    "size": 70399
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m4-r1152x768.json": {
+    "sha256": "4babc1a1a340bec21d17d542d8e3a72203873b2f8f0095bfe467c95e42a1a89a",
+    "size": 24194
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m4-r320x192.json": {
+    "sha256": "bb73cfaafdfa4db051f7c93b619559254b80fc7b90c0aa0a19e36e635d2681a1",
+    "size": 23841
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m4-r33x65.json": {
+    "sha256": "79283d745f20e51e5619cbf11ce6635d0442f073791a4ca9e1677963c69ca877",
+    "size": 509
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m4-r640x384.json": {
+    "sha256": "0c80c5d2a9c3bca25bf8a9926587115c386fdb0ceb5aedc80ee700731825d6d5",
+    "size": 23547
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m4-r768x512.json": {
+    "sha256": "82073d47fc6c581c04977ae8cc867e265b78050859d6851d85dffc8e93a828a7",
+    "size": 23770
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m5-r1152x768.json": {
+    "sha256": "56d91632debd9e65b728d5d5f5705f896619ac49728067db98c8d68c30d8a3b0",
+    "size": 30137
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m5-r320x192.json": {
+    "sha256": "f44a7fa19f18ce75441baeca7b1d89e77abcd8a02449157c4c1086e8e33ab634",
+    "size": 29786
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m5-r33x65.json": {
+    "sha256": "79283d745f20e51e5619cbf11ce6635d0442f073791a4ca9e1677963c69ca877",
+    "size": 509
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m5-r640x384.json": {
+    "sha256": "cde07f6378dd78ffbee6a9a9829d7859d723f287815345aea7ecb3772c2cdf04",
+    "size": 29437
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m5-r768x512.json": {
+    "sha256": "ff9cb7cbc52165b3fe309f0cc54504564474a030db9d2ca9d3401135e6ced899",
+    "size": 29564
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m7-r1152x768.json": {
+    "sha256": "650ab3a1c3168be3d97ac7b42a4f969fc5247aa6184e289b85eedd2dfaead0af",
+    "size": 41966
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m7-r320x192.json": {
+    "sha256": "6a9a0ef475c588f677ecec7b4ae0773e9aebe0dc71d51ffb3ba9732bd6c85bfc",
+    "size": 41451
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m7-r33x65.json": {
+    "sha256": "79283d745f20e51e5619cbf11ce6635d0442f073791a4ca9e1677963c69ca877",
+    "size": 509
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m7-r640x384.json": {
+    "sha256": "cc711e7d0ae2f71fb449aeca754ecb646b7a923226531c65bb0c28b093094f39",
+    "size": 41085
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m7-r768x512.json": {
+    "sha256": "3650de8034b88befcfe8519b135e51280048a5f640209065ded838b55052d0f3",
+    "size": 41163
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m9-r1152x768.json": {
+    "sha256": "9ebe84302e50c64d339384cec481e373adc18d8f2c8b703c975f135f26f1f4d2",
+    "size": 53778
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m9-r320x192.json": {
+    "sha256": "db8a938f74b2adac85898e57b97d18fcc96d6410b3f33b67ae3a62d0f9e23f71",
+    "size": 52897
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m9-r33x65.json": {
+    "sha256": "79283d745f20e51e5619cbf11ce6635d0442f073791a4ca9e1677963c69ca877",
+    "size": 509
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m9-r640x384.json": {
+    "sha256": "f34145ddc8c709088794846059f9902e9de10a9826ebd267177806d31747a975",
+    "size": 52537
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m9-r768x512.json": {
+    "sha256": "caeac347a7dd3a73fdce23b68110364f06431eb32ae2a2ef41be83da423e5f73",
+    "size": 52798
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m999-r1152x768.json": {
+    "sha256": "ed0ca7fe0f39eaaeda27ee546e64a840b35b1255ddaf4f648aa7e7504884cccc",
+    "size": 71335
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m999-r320x192.json": {
+    "sha256": "2c51cf0457e77c6c760543d1012e7a2980f4dfc1e7a94c2ad19cdea7dd6f24de",
+    "size": 70554
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m999-r33x65.json": {
+    "sha256": "79283d745f20e51e5619cbf11ce6635d0442f073791a4ca9e1677963c69ca877",
+    "size": 509
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m999-r640x384.json": {
+    "sha256": "9f28f14e5a3a8f74dac810c3932fe10f3b7a2e1509f1be581624075efb3acc44",
+    "size": 70143
+  },
+  "chrome/actual/parameter-twelve-printed-lines-m999-r768x512.json": {
+    "sha256": "5633e87a00ceb074e12c53a80239d5854cf513726e3181afc8e69599d3183af9",
+    "size": 70399
+  },
+  "chrome/actual/parameter-vertical-cjk-m1-r640x384.json": {
+    "sha256": "cda8e3c3986f3fbd44d756202b678a40f232aba178dcbfcd6d1a6b41f79d8f80",
+    "size": 3897
+  },
+  "chrome/actual/parameter-vertical-cjk-m5-r1151x767.json": {
+    "sha256": "db3f225a01788f8b738696fafaf95d222b1e2f17b79b7781ea82912101ad4955",
+    "size": 3829
+  },
+  "chrome/actual/sample-024e54a6c8e3ba17.json": {
+    "sha256": "bcbd702a7dd24096491e04a333b9791b8160eb64fc4a95df225813ad8593562e",
+    "size": 9377
+  },
+  "chrome/actual/sample-0486f0c2e5664aed.json": {
+    "sha256": "072a782b65305cdaba8cec3cd7b15e104a202e2e18e356efbaf00dd52b3e99c0",
+    "size": 239688
+  },
+  "chrome/actual/sample-0582df7394486480.json": {
+    "sha256": "300375732357f634fcbcff579cc25d20fef4b728ace2a4b99c0a9a580d4fef2a",
+    "size": 95889
+  },
+  "chrome/actual/sample-058949810e7c76d3.json": {
+    "sha256": "64be19a5128bb93e5bd98a8f2848d2c805809a4b7f0c1ea7663cb30b1113687d",
+    "size": 1222
+  },
+  "chrome/actual/sample-0676d3f4ef6c5e2a.json": {
+    "sha256": "c7cfdd3791dbe012070ad8698d8f524917f2d4a82b0fb1dff9153a7dc9dd12d2",
+    "size": 2463
+  },
+  "chrome/actual/sample-0b6fd6de5d12d93c.json": {
+    "sha256": "ec6a3e31de27460b6e8a0dc855e010cd5406db0bd54daf6f13d8b28a4aed51bc",
+    "size": 16064
+  },
+  "chrome/actual/sample-0cbc944c1fac881f.json": {
+    "sha256": "ff61ad092f141cedf31daca91f1c637d682abe82377881acfa0ccf4feb035ee2",
+    "size": 44909
+  },
+  "chrome/actual/sample-0e06c211cb4a4831.json": {
+    "sha256": "9e57a73afd2853c57908c467cd37396e6054020d7dfecabb4eeed2b9157d31b2",
+    "size": 149594
+  },
+  "chrome/actual/sample-0f2b4483dc0e1c98.json": {
+    "sha256": "720fe4708f325877341e32faeb7a062575100ef52706143aa67b9a749ea0fac1",
+    "size": 513
+  },
+  "chrome/actual/sample-0fc39af69da4cfed.json": {
+    "sha256": "2b3949d621951b46002dc003725b6460651b44fdedddd9009c2ba8495b5045c0",
+    "size": 5615
+  },
+  "chrome/actual/sample-133a8c148862ce3a.json": {
+    "sha256": "8587d79272991c7d3e39e77d836d39707b05e780c376fd8522e9e63f4deb1f63",
+    "size": 2305
+  },
+  "chrome/actual/sample-1460619f37acbd0c.json": {
+    "sha256": "d04e932a8201c2f760e77e738d588394b3654f0b360a63939432ae21b5ea5a11",
+    "size": 27524
+  },
+  "chrome/actual/sample-14f564d2b7d2e446.json": {
+    "sha256": "8eb7de8ee14cf539cf6a9ab443e9f37dd6fd7b05acec3db16bb03acda40738a0",
+    "size": 8467
+  },
+  "chrome/actual/sample-1aad6147b578f344.json": {
+    "sha256": "08856ae09d22bc3efdb88d978e667257a2e69a63a6d7a4eb1bfcf0bd9f3e0ca1",
+    "size": 5937
+  },
+  "chrome/actual/sample-1ea42cacfd82f6c0.json": {
+    "sha256": "07d2b3221c2927c62393a8f4031e8d2a3f05a841867aff0311013d6b4014dff2",
+    "size": 3672
+  },
+  "chrome/actual/sample-203573ceb1873d5c.json": {
+    "sha256": "7f78dbb460d8446509dbd3134a08c62012b310b9147ddc7e4faf67e4733709e2",
+    "size": 2465
+  },
+  "chrome/actual/sample-224ffeac6e0cd92d.json": {
+    "sha256": "ea035c5dee8c1b412d0e820b38cc03395ab75e034e8d6e1938856a77f5ee28c3",
+    "size": 6314
+  },
+  "chrome/actual/sample-280528b4b1cb14b3.json": {
+    "sha256": "340f0cc31a20b63402e88974a3dcd30e6af725d162039c8b5308ec6c0a602531",
+    "size": 6324
+  },
+  "chrome/actual/sample-28e79bff204857cf.json": {
+    "sha256": "d5396804242abd94ab03d5abadcc5f493c836af9d6ca44084115303fb9588e18",
+    "size": 127226
+  },
+  "chrome/actual/sample-2c2835cf707a4fe6.json": {
+    "sha256": "9478285aeb55b23f69d1cfde179bfebf7ab7c5aa381dfa3fdb2f9df37fd3b279",
+    "size": 63806
+  },
+  "chrome/actual/sample-2db7bd9b6595c479.json": {
+    "sha256": "4f8a882a9d9ee2ca992a48658fe19627a0ec0d8fc2c94c3b97281c59a55a0b42",
+    "size": 37519
+  },
+  "chrome/actual/sample-2f4730c5e82e18ff.json": {
+    "sha256": "c23cdfb528b0ab41f2f9f3742bf5b206ee06bb737fad5f4aaf13f6aedb910745",
+    "size": 2021
+  },
+  "chrome/actual/sample-3255119646d641ba.json": {
+    "sha256": "4083af2b8fc69c956c74cdf07e3868577ea57fca9a8410f514642105f0c30a2f",
+    "size": 104392
+  },
+  "chrome/actual/sample-3295ba0789edc763.json": {
+    "sha256": "a8d6ae65d821ca5e96a13b39f6d93bea2ec0c6098e788f77b163a7820cd4ac0a",
+    "size": 8626
+  },
+  "chrome/actual/sample-35b9cf211491fc5b.json": {
+    "sha256": "0ab5199dc03d2d4a867ff582df5cc511d2c5f7612f32400781af86fe36ba6927",
+    "size": 38070
+  },
+  "chrome/actual/sample-39a29be9779394c5.json": {
+    "sha256": "8a5ce1ddb31ade0f14423f8fb8bbd50e6d6eb2e9c1e1b751b42026c096665aef",
+    "size": 35471
+  },
+  "chrome/actual/sample-3aabaeed287f6784.json": {
+    "sha256": "f498d7fb1c4cb7b24548f1c2ca20c1f9b233f42048dc3c00adf1995dc2f3b769",
+    "size": 148865
+  },
+  "chrome/actual/sample-3c6e7c7ab6144e27.json": {
+    "sha256": "b2e50fbf481bbf330a10a4f3e08bf5edf4622fcdd9184de6a43eae4905d8cfcc",
+    "size": 85255
+  },
+  "chrome/actual/sample-4070a7afd9a7184b.json": {
+    "sha256": "3ded0c24bdf7ea4f6bdb040d7ca03dc3ea248a427fe22350154b7d466fa042ac",
+    "size": 1156
+  },
+  "chrome/actual/sample-40a0423bfcae386f.json": {
+    "sha256": "6eb1d2d8bb81724b969bcd543d5d58a90c06711c6374b9cdde02a0cf3c55f342",
+    "size": 36577
+  },
+  "chrome/actual/sample-4169c134c6189ae6.error.json": {
+    "sha256": "83f9231d4baf56dd83bf3d5454243168ef3b1731e056746a9cc9bd16cbd0a769",
+    "size": 105
+  },
+  "chrome/actual/sample-41b45e5a7c1f065c.json": {
+    "sha256": "d03851f0f4422a8d981e8e8f96b11515b3589556015a77e92b5f6f41a7e90de3",
+    "size": 5452
+  },
+  "chrome/actual/sample-426c4c4b4327f07c.json": {
+    "sha256": "5ea474acb3f5d67960ecc1b658f8f41d31dcb1adfd9a5dd874a7ed3fb51cce83",
+    "size": 53195
+  },
+  "chrome/actual/sample-440f10edac8d7c0b.error.json": {
+    "sha256": "83f9231d4baf56dd83bf3d5454243168ef3b1731e056746a9cc9bd16cbd0a769",
+    "size": 105
+  },
+  "chrome/actual/sample-44d499f3f15ffc62.json": {
+    "sha256": "a4c5178865498491cfb6ece28b761adce5594a08ff98ca45ea949bc1c10640d0",
+    "size": 38128
+  },
+  "chrome/actual/sample-456fa06428e1e12f.json": {
+    "sha256": "763674f3418fdb49d2cbc45da9890a3b564a3943ba3b61e7a49494754624c08a",
+    "size": 501
+  },
+  "chrome/actual/sample-493754a016f2232e.json": {
+    "sha256": "3a34d2663c29920793e2ed4c348fcd085b496b0e4a022dd883965ad210b0082f",
+    "size": 8816
+  },
+  "chrome/actual/sample-4a2cab3fdba7faea.json": {
+    "sha256": "5cdddde4f646e663904af2c05c6972baf4aed3de5cb75ceeb34787194901e544",
+    "size": 655473
+  },
+  "chrome/actual/sample-4b43a6f478545d70.json": {
+    "sha256": "d43c68272c6aa19d99fe3ab4d29a067a68ae71b78610c2cbbb155e9dfc9cd69f",
+    "size": 40259
+  },
+  "chrome/actual/sample-4cb3c7f3a7eae8bb.json": {
+    "sha256": "b07c25cf2dda644d11de9d2573baa92afd43bc539f26591f6e6b4d9b5c34ce6e",
+    "size": 130121
+  },
+  "chrome/actual/sample-4f45cf0e51f46a54.json": {
+    "sha256": "1dbcf0b0e23dda0bc40ab5425e45fe2e47f243b4edb9c8f78209bc8adfc66166",
+    "size": 88390
+  },
+  "chrome/actual/sample-4f4c989c97595b6e.json": {
+    "sha256": "4df8da68e65e816d45683b1483f3e0fa10a0cebe734c3ba3f7d7e4cd838975b7",
+    "size": 506
+  },
+  "chrome/actual/sample-4fceece9f2d76a6e.json": {
+    "sha256": "38b006345edfffce8ea2bf6947a1b2cd9013838a817350b887ae0a2d9c7a6582",
+    "size": 2038
+  },
+  "chrome/actual/sample-512b352f18af3f4f.json": {
+    "sha256": "9a4603d248bee45fcb159f9ce22dd73b9496eec7a58b20f2ff5849e0383f9c58",
+    "size": 25431
+  },
+  "chrome/actual/sample-540490b03d22b577.json": {
+    "sha256": "6b1896f91d0437315051d3749d16206c479eadd9d7c6f4d0a70348975beb987d",
+    "size": 39010
+  },
+  "chrome/actual/sample-55932e69942ed683.json": {
+    "sha256": "b3f00756677a572dad44dfc36147bb1f5dd30aab8a0dec9b1de0df2d49c31810",
+    "size": 2050
+  },
+  "chrome/actual/sample-5a422da9a529a336.json": {
+    "sha256": "a94c811e2781224de77168fa95be08db09fd3bd6470ebf44832b9c64d9b699b9",
+    "size": 38140
+  },
+  "chrome/actual/sample-5f9d77976f578583.json": {
+    "sha256": "351e5023161882cbf390a9b5185c1352f2609e579e96ae8d8bc781125cb3b7eb",
+    "size": 6345
+  },
+  "chrome/actual/sample-5fa29af9e63fefc2.json": {
+    "sha256": "bce69a4fa291fdd63c5f6801aad1b93e3e62fd52b807c2d196cf3882d80c5f5c",
+    "size": 1223
+  },
+  "chrome/actual/sample-60f7669b6fa86751.json": {
+    "sha256": "160594b405379bed13a9fc41b428665204425069e4bf9a3d533298fbb64ed0ef",
+    "size": 2013
+  },
+  "chrome/actual/sample-640bb28cd64c2e5b.json": {
+    "sha256": "80157b7736fbfa36b1e51433eb31c44947ec37374b5b32d7f96c20962a29316a",
+    "size": 6132
+  },
+  "chrome/actual/sample-6692328598e9c3a8.json": {
+    "sha256": "71bbeb42e05a97736f06f7ebb9d2eb1ff90d33ab6bc8e99612c6b18dde509cfc",
+    "size": 25978
+  },
+  "chrome/actual/sample-6784152fa17f8d76.json": {
+    "sha256": "2f3675c4de6e37dfdb948c7b1114dd6e89096a3e1d09130736182fce428e00e6",
+    "size": 39896
+  },
+  "chrome/actual/sample-6a86cb9011438813.json": {
+    "sha256": "d0367564a4e414eb3ecb1804ef27e74882601bde723f8d1c88ac20068bba7a74",
+    "size": 1232
+  },
+  "chrome/actual/sample-71fe5f6e6888b73b.json": {
+    "sha256": "41c46d41f6cf0d3136eb7ad5fe3eaf22ca00665fdd0ab2abaef78af66302d011",
+    "size": 2058
+  },
+  "chrome/actual/sample-728b694ae01441a4.json": {
+    "sha256": "e1e24687cef7ea040a3dc03e4a403b0f7562892a43a47edcaab75500b13373ac",
+    "size": 6325
+  },
+  "chrome/actual/sample-7750735bcbce34ec.json": {
+    "sha256": "836a7d933e38787ffd2fccf028cf5465672ce47fa3925d69be57d0e648fc7304",
+    "size": 66534
+  },
+  "chrome/actual/sample-7d60dfc27e54a03b.json": {
+    "sha256": "b54e8da062ca336100a9b9cbedd50d8ceac8163753ac5e702a53dab15ca9c2e1",
+    "size": 14670
+  },
+  "chrome/actual/sample-8229419c872341b9.json": {
+    "sha256": "be7be931ea734670eaf3bcb8bf33d5c032add3f0ac2f7f743a1401909ec7691e",
+    "size": 1206
+  },
+  "chrome/actual/sample-83a365509f1cc2b7.json": {
+    "sha256": "4d40e452bee7a6df6b24b7db949ad1fe9918e3c50d6d04a4da7eb7589fb622d1",
+    "size": 16323
+  },
+  "chrome/actual/sample-86a7ffe5513e5633.json": {
+    "sha256": "4afe9f46f5069de61f539dbe8d9837f6137a3897862e1b17587c5b53e29962e1",
+    "size": 61792
+  },
+  "chrome/actual/sample-88d6f6f571abb9ad.json": {
+    "sha256": "42a71704d591994462bf977bf80e242f931c5ca6b59be72a0dde0b741648f2ec",
+    "size": 43132
+  },
+  "chrome/actual/sample-8d1e2d06c5f24990.json": {
+    "sha256": "7aec879d72e29ee3b69af38ba760db59daa98948ffa32f7141695acff3d7258c",
+    "size": 6298
+  },
+  "chrome/actual/sample-903c40f10a92c762.json": {
+    "sha256": "d167d3e258f8196489a2672a063943186610c0ce188280fbf7d8bbfe7e8c6e50",
+    "size": 11403
+  },
+  "chrome/actual/sample-913b6e2fbe4c0d3b.json": {
+    "sha256": "e7b5e13fb485e1edcd04cfb7e227144b2a5c3f52b356dcf48e3df7ae17002276",
+    "size": 55399
+  },
+  "chrome/actual/sample-914953ff8fb9b879.json": {
+    "sha256": "e21b10c82e2c8230f78cc355c7216b1663f1628bbb43098a0294aada1531bca9",
+    "size": 511
+  },
+  "chrome/actual/sample-92de0a88437e32a3.json": {
+    "sha256": "f6796507ff24e6f5df786c1380aaff2aa3ef30c6d5c490b970685b3380d9fc31",
+    "size": 3702
+  },
+  "chrome/actual/sample-946c5faeaa0f2ec5.json": {
+    "sha256": "f6139f8aa1e028d00e1f5662f8ab3e00acee2c9df329d58d62a9e5944db47089",
+    "size": 8460
+  },
+  "chrome/actual/sample-9a0e9586ac3fe4e2.json": {
+    "sha256": "71b4c880782d03aa022cf8c2bd34190330a72ca2f031bef181742160ae781c6f",
+    "size": 8767
+  },
+  "chrome/actual/sample-9b462fed1772311b.json": {
+    "sha256": "fa2ea42c0407eb1d095ef98ada946eb0f37bcde02f1c56230bfd66c595185e23",
+    "size": 55688
+  },
+  "chrome/actual/sample-9d004236328aca8f.json": {
+    "sha256": "02c53871ce7b0ab7fa336485e5a56d62ab7c177dbf6305fcbef8b03a25b19668",
+    "size": 9624
+  },
+  "chrome/actual/sample-9d80e98d12d362b3.json": {
+    "sha256": "95cf15b119ea7f67de8d8ba12e1fd820422b4904624e904b151d655cce84c882",
+    "size": 73177
+  },
+  "chrome/actual/sample-9e131b7b56e565db.json": {
+    "sha256": "10efb68ccad44a75e190d51c88ca858bedaaede8ac3f187dde48cfdf3307529e",
+    "size": 7029
+  },
+  "chrome/actual/sample-9e2ab94f59cf15f8.json": {
+    "sha256": "fc7e21fc803a100e3ec75ede1b6afa17cfcc706dfd4a9cfa347b7d051605f5df",
+    "size": 49121
+  },
+  "chrome/actual/sample-9f735a010e88a648.json": {
+    "sha256": "f2e6ef14dffad5a959422fbc8718c88d731102bee4329d9d1eb262ce01baaba4",
+    "size": 513
+  },
+  "chrome/actual/sample-a2446851712be525.json": {
+    "sha256": "a5444fb4756e96ff70d6b3af45910b15d7af4af1f80885dd43152b3f20003fd9",
+    "size": 13073
+  },
+  "chrome/actual/sample-a24e31eb0aa23b4f.json": {
+    "sha256": "604f18c2e89c0e1eac709e338b20ce47a2f06bd7e2783c2052d5c74071147127",
+    "size": 174647
+  },
+  "chrome/actual/sample-a45fc642aa130558.json": {
+    "sha256": "eeab6b7a84055892cf64e84e4ac7d8206d2a13c72bd1425c461cfcbc73673146",
+    "size": 1255
+  },
+  "chrome/actual/sample-a744c24e96808cb4.json": {
+    "sha256": "226728559d40e76d04991b2a363a2a39f806bb9c8c20af3d60a9c82bfd7ccdd4",
+    "size": 298765
+  },
+  "chrome/actual/sample-a83d2bf9aa769ebd.json": {
+    "sha256": "901e2840408aec00c46107c1bcb3fddd901ada6d6e9bb22daeaf1dac3bbbf04c",
+    "size": 73263
+  },
+  "chrome/actual/sample-a87dd8607e0fda5f.json": {
+    "sha256": "f7fe8c70ac1c5b4eea54fafb90534019d8d1f3d1ccc4f06c52cb19386c0eaa71",
+    "size": 14554
+  },
+  "chrome/actual/sample-a9819bb8f9e9f5ef.json": {
+    "sha256": "1179b816602a13dd164f48d423ae5ec083a2e5e7c14cc1e65192b1588d8e9911",
+    "size": 26861
+  },
+  "chrome/actual/sample-a99b928ceb0f443e.json": {
+    "sha256": "f85b43d43767387040fb18f738834a1fb949aa5d9e8d20885b1fa8a22561e543",
+    "size": 31867
+  },
+  "chrome/actual/sample-ab78d5d64fd48439.json": {
+    "sha256": "e2ad4395ace51fbb80b9b9160607c0954ec41487ece9e9d15f93726a1e0c4bc0",
+    "size": 6295
+  },
+  "chrome/actual/sample-ab902c56bd93d342.json": {
+    "sha256": "4837e612678e10b37f7ef8c381ff0f0105c4ef12995c5afb10b5f72f4cee2524",
+    "size": 10798
+  },
+  "chrome/actual/sample-abad7ae0707ac749.json": {
+    "sha256": "274e20082d1d151270b6a287795bcbdaec71eda984b77df2abb2275371935082",
+    "size": 100878
+  },
+  "chrome/actual/sample-b0d25177b1a8480c.json": {
+    "sha256": "dfccb60b7dbc3cad2fb513c2840f077fde6b9c1b8d67733b17d64e64e6970210",
+    "size": 305404
+  },
+  "chrome/actual/sample-b0e62b5268bf3ae1.json": {
+    "sha256": "3e68239e1409e400a73655ee30816c0678dfc9fb679388505d2ab486c413ee77",
+    "size": 37128
+  },
+  "chrome/actual/sample-b3edaa47ba780e0c.json": {
+    "sha256": "3e99a4efae1ac17f91c96c4b287fb17469ef5975d5786dd2cd30ed72366c3a1c",
+    "size": 27274
+  },
+  "chrome/actual/sample-b563bb5b3e206ad7.json": {
+    "sha256": "cfb4985181b6689d684126c46edf6320147836eb4aee22faf4c6354dcae69a14",
+    "size": 20807
+  },
+  "chrome/actual/sample-bbbd4ae8468a6451.json": {
+    "sha256": "fa310a4fc39627e3dcb4dc607cc9516f24c28d85831bd6479146ceaa9c6a0d3a",
+    "size": 10583
+  },
+  "chrome/actual/sample-be771810db2def78.json": {
+    "sha256": "1b09e89e892dc8108c23a02e51298b9742ed0010278cf7b1d96a2f8e1b577680",
+    "size": 147838
+  },
+  "chrome/actual/sample-c062c4f8b726c822.json": {
+    "sha256": "931c638b87ceff0471d01aff8e2f042af63132c24b2128ffc81ed680f9513d8e",
+    "size": 24761
+  },
+  "chrome/actual/sample-c159f2e4564feb4f.json": {
+    "sha256": "2f45fe817d505d67216ccae50c77161838bbc8a3cc941d9bcdbfeca9d4bbe2b5",
+    "size": 2092
+  },
+  "chrome/actual/sample-c323ed4e5eccd42e.json": {
+    "sha256": "2cf8558c136e31a3243235e59df982414b8a964cc9c6c3c086a9e534ba7706db",
+    "size": 53933
+  },
+  "chrome/actual/sample-c45a727514fb8982.json": {
+    "sha256": "1b8c7e06187d56f476139f7d265af61018c4ef07d597297d35889c36a4d26111",
+    "size": 11744
+  },
+  "chrome/actual/sample-c777a45d62cce90a.json": {
+    "sha256": "1a3e147154f9aa3bef81694938e63a41b77b50273cc4db00239cc6058db2adc0",
+    "size": 23273
+  },
+  "chrome/actual/sample-c8564aeddba82f04.json": {
+    "sha256": "a87dc8369e5f9351630d28aed07c77230f3076a5d87cb3361b695c827e9c660b",
+    "size": 502
+  },
+  "chrome/actual/sample-c8cde51505833347.json": {
+    "sha256": "44268518b7966b9f9da7d639e3c5f16c54b16d04f8402afdef618ea508cf77cd",
+    "size": 112092
+  },
+  "chrome/actual/sample-c9a092125962e322.json": {
+    "sha256": "6729aebcf58c63855a35d22c9b61498596d3689e55bd58eb4e35f4a2fb317bd7",
+    "size": 70248
+  },
+  "chrome/actual/sample-c9b8504f28656bb2.json": {
+    "sha256": "029bb04b85c078e39fb1c84d3e8bdf940c3271b11774dfbf845a1e76367d9db9",
+    "size": 6958
+  },
+  "chrome/actual/sample-caaf9f2c75e68fb3.json": {
+    "sha256": "ac8440741cfbb21edb7563e3707be072b054e62bbdcc88da92e539c531644e4c",
+    "size": 45242
+  },
+  "chrome/actual/sample-cb5009e20bb1123a.json": {
+    "sha256": "c756cea0235ae6257926af9569f9f7198003b91fd48af2ee4aa9c744347290ee",
+    "size": 21782
+  },
+  "chrome/actual/sample-cc5c505c9a91f65a.json": {
+    "sha256": "ecbe271c2294d0bd668d82bb2c8510c4afd93729d068b9abee1fafaeb5f1ec42",
+    "size": 2843
+  },
+  "chrome/actual/sample-cc615a3e5cb1499e.json": {
+    "sha256": "e508afb00fae494478de61fcafc9a3e2cede27ab0adebb6e574062c83f9df758",
+    "size": 8484
+  },
+  "chrome/actual/sample-da00952f9e92b062.json": {
+    "sha256": "1bafb81a95d18e267aa5a051dc200bba000613b7588defc82d0d1cbd56c254a9",
+    "size": 20449
+  },
+  "chrome/actual/sample-db4b91782dd3efb7.json": {
+    "sha256": "26d29d827928ead4630b331b0ee05362ab402b7026975d6a85cad0b0cc7714ca",
+    "size": 261200
+  },
+  "chrome/actual/sample-de744546e5b8a0e6.json": {
+    "sha256": "cc7ddfcd1cc1fd307377b0a779e5f84d6f3ccc37493a5689ae524a858f7a8a19",
+    "size": 38522
+  },
+  "chrome/actual/sample-de900bc558f2dca8.json": {
+    "sha256": "2f766c233065988c7d41647bf61f84c90d472695f83e298376b972f5db35a919",
+    "size": 8427
+  },
+  "chrome/actual/sample-df2560f7906cab6d.json": {
+    "sha256": "208f3fe4eb9ed7909b2ab7d15b3fd352f0fa0deb035505152829813ff3cde5e9",
+    "size": 12459
+  },
+  "chrome/actual/sample-e0a96ddd6fe8007f.json": {
+    "sha256": "7a1b631f10713e4e22c8e9aa3974ba0275d8887a0e2237636bed6e2913e5fe3b",
+    "size": 45922
+  },
+  "chrome/actual/sample-e2147debb746e953.json": {
+    "sha256": "00f3b72aaa9c510be806486ef9514acce67a585067e685752704c8ffee6a04cc",
+    "size": 5287
+  },
+  "chrome/actual/sample-e37ba8d39f1765ee.json": {
+    "sha256": "7f14f89056c2a5f1f344511c5709d60a22795b93faa6c7297a5fc63632816a1e",
+    "size": 35163
+  },
+  "chrome/actual/sample-e3d262776302832f.json": {
+    "sha256": "d0132ca6e19f241700015a2217c5d181954d89f4afedd7d749b548da071ff737",
+    "size": 35758
+  },
+  "chrome/actual/sample-e4d10781d3be6992.error.json": {
+    "sha256": "937f6b9d683a13c33a77a5390e92db63fd929d821fe2148a20e6213cc3c395ee",
+    "size": 95
+  },
+  "chrome/actual/sample-e56ebcbad4b3ec61.json": {
+    "sha256": "0eb0a574dff8ee35d006e11299f38d3f1a11de772db17d1675286b0b017706e2",
+    "size": 75815
+  },
+  "chrome/actual/sample-e6c08e3cc9b0eb2f.json": {
+    "sha256": "cde7c3024d7de690f2d872f621aae7a15f1d9c60b0bdb90c6f1dc09b556ab0be",
+    "size": 514
+  },
+  "chrome/actual/sample-e8417890fea95361.json": {
+    "sha256": "23def80dd5790f0177da223ff13406cc1ea29cb1cad70014e9cc5a2efc92291a",
+    "size": 1920
+  },
+  "chrome/actual/sample-eae7f502cfea5855.json": {
+    "sha256": "2d170367724fdfdb8137bc1a4e93d1be20479aa9e40008a242e039f4d10b9437",
+    "size": 9537
+  },
+  "chrome/actual/sample-eb1b381667716066.json": {
+    "sha256": "ea11107416cf50c9b6d6eb32be6ab096d44e9226d134de4e537c29b9df2eaacb",
+    "size": 45553
+  },
+  "chrome/actual/sample-eb6e81323fe050ef.json": {
+    "sha256": "42efd59f0c5e6011e716bc404bf5daec4913d08b0cfecf2fa555b910460b24a2",
+    "size": 75771
+  },
+  "chrome/actual/sample-ed5b69a9711e3f53.json": {
+    "sha256": "9e39286f37c0a0d75f9c7c5cd2d419eb54ce1c3e849eca15cc254329b7fb218b",
+    "size": 55831
+  },
+  "chrome/actual/sample-f06b8315200c1abb.json": {
+    "sha256": "d70be6c5472d2d7f92fed2c065e71a6322e0a5a570a8f85102a7f98339bb7fe6",
+    "size": 39074
+  },
+  "chrome/actual/sample-f3a0c13bdc84f24b.json": {
+    "sha256": "ed0ca7fe0f39eaaeda27ee546e64a840b35b1255ddaf4f648aa7e7504884cccc",
+    "size": 71335
+  },
+  "chrome/actual/sample-f9dcd81f8ca741ba.json": {
+    "sha256": "5a742612ccd94fb116550061d38d067f1ef03b3cff4ad5a00606e0b6f6221f52",
+    "size": 9922
+  },
+  "chrome/actual/sample-fd9577ef8f62f6a7.json": {
+    "sha256": "395298bf24e344379468841f7863dcd19007d67200de28f523a17b17828ec402",
+    "size": 167819
+  },
+  "chrome/cases.json": {
+    "sha256": "4460b2b4d8bb9be16b45ffe8c604e1acd45f9cf1b50c637722f23319f61ba19c",
+    "size": 120511
+  },
+  "chrome/comparisons/book.json": {
+    "sha256": "fe9e4fa766ffce3ad7d88ed2e762a4bb996647ff5d618c8bd6e237060e6689f0",
+    "size": 257
+  },
+  "chrome/comparisons/corpus-arabic-36.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-blank.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-cjk-18.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-cjk-36.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-cjk-rotate-0.5.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-cjk-rotate-10.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-cjk-rotate-180.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-cjk-rotate-270.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-cjk-rotate-3.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-cjk-rotate-90.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-cyrillic-36.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-devanagari-36.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-greek-36.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-hebrew-36.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-latin-18.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-latin-36.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-latin-rotate-0.5.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-latin-rotate-10.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-latin-rotate-180.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-latin-rotate-270.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-latin-rotate-3.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-latin-rotate-90.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-multi-column.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-tamil-36.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-thai-36.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-vertical-cjk.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/corpus-透明路径-emoji-😀.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-arabic-36-m0-r320x192.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-arabic-36-m1-r640x384.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-arabic-36-m2-r1151x767.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-devanagari-36-m0-r320x192.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-devanagari-36-m1-r640x384.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-devanagari-36-m2-r1151x767.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-hebrew-36-m0-r320x192.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-hebrew-36-m1-r640x384.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-hebrew-36-m2-r1151x767.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-multi-column-m1-r640x384.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-multi-column-m5-r1151x767.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-parameter-blank-m1-r1151x768.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-parameter-blank-m1-r1152x767.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-parameter-blank-m1-r1152x768.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-parameter-blank-m1-r32x32.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-m1-r640x384.json": {
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-m5-r1152x768.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-m7-r768x512.json": {
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-rotate-10-m1-r1152x768.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-rotate-10-m1000-r33x65.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-rotate-10-m5-r640x384.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-rotate-10-m6-r768x512.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-rotate-180-m1-r1152x768.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-rotate-180-m1000-r33x65.json": {
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-rotate-180-m5-r640x384.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-rotate-180-m6-r768x512.json": {
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-rotate-270-m1-r1152x768.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-rotate-270-m1000-r33x65.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-rotate-270-m5-r640x384.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-rotate-270-m6-r768x512.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-rotate-90-m1-r1152x768.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-rotate-90-m1000-r33x65.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-rotate-90-m5-r640x384.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-calligraphy-jason-rotate-90-m6-r768x512.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-m1-r640x384.json": {
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-m5-r1152x768.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-m7-r768x512.json": {
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-red-grid-jason-rotate-10-m1-r1152x768.json": {
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-rotate-10-m1000-r33x65.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-rotate-10-m5-r640x384.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-rotate-10-m6-r768x512.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-rotate-180-m1-r1152x768.json": {
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-rotate-180-m1000-r33x65.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-rotate-180-m5-r640x384.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-rotate-180-m6-r768x512.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-rotate-270-m1-r1152x768.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-rotate-270-m1000-r33x65.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-rotate-270-m5-r640x384.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-rotate-270-m6-r768x512.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-rotate-90-m1-r1152x768.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-rotate-90-m1000-r33x65.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-rotate-90-m5-r640x384.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-red-grid-jason-rotate-90-m6-r768x512.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-thai-36-m0-r320x192.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-thai-36-m1-r640x384.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-thai-36-m2-r1151x767.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m0-r640x384.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m1-r1152x768.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m1-r320x192.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m1-r33x65.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m1-r640x384.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m1-r768x512.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m1000-r1152x768.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m1000-r320x192.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m1000-r33x65.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m1000-r640x384.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m1000-r768x512.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m11-r1152x768.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m11-r320x192.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m11-r33x65.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m11-r640x384.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m11-r768x512.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m2-r0x0.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m2-r1152x768.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m2-r320x192.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m2-r33x65.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m2-r640x384.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m2-r768x512.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m3-r1152x768.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m3-r320x192.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m3-r33x65.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m3-r640x384.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m3-r768x512.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m32-r1152x768.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m32-r320x192.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m32-r33x65.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m32-r640x384.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m32-r768x512.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m4-r1152x768.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m4-r320x192.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m4-r33x65.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m4-r640x384.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m4-r768x512.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m5-r1152x768.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m5-r320x192.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m5-r33x65.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m5-r640x384.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m5-r768x512.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m7-r1152x768.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m7-r320x192.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m7-r33x65.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m7-r640x384.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m7-r768x512.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m9-r1152x768.json": {
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m9-r320x192.json": {
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m9-r33x65.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m9-r640x384.json": {
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m9-r768x512.json": {
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m999-r1152x768.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m999-r320x192.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m999-r33x65.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m999-r640x384.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-twelve-printed-lines-m999-r768x512.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/parameter-vertical-cjk-m1-r640x384.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/parameter-vertical-cjk-m5-r1151x767.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-024e54a6c8e3ba17.json": {
+    "sha256": "4f00aecde159d33e36ab8f9ea7b54f7a9f8434909823a1a50e2008b22e7772a5",
+    "size": 251
+  },
+  "chrome/comparisons/sample-0486f0c2e5664aed.json": {
+    "sha256": "3f9001132140c369616f969192de1dd253ac3500369f07d8eda18a58e6341323",
+    "size": 254
+  },
+  "chrome/comparisons/sample-0582df7394486480.json": {
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9",
+    "size": 254
+  },
+  "chrome/comparisons/sample-058949810e7c76d3.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-0676d3f4ef6c5e2a.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-0b6fd6de5d12d93c.json": {
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0",
+    "size": 251
+  },
+  "chrome/comparisons/sample-0cbc944c1fac881f.json": {
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44",
+    "size": 254
+  },
+  "chrome/comparisons/sample-0e06c211cb4a4831.json": {
+    "sha256": "2135aed4aab91b45cc6ed272d1086ddc19d219a46ec3e822f5d6b4bec085b060",
+    "size": 257
+  },
+  "chrome/comparisons/sample-0f2b4483dc0e1c98.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/sample-0fc39af69da4cfed.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/sample-133a8c148862ce3a.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/sample-1460619f37acbd0c.json": {
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44",
+    "size": 254
+  },
+  "chrome/comparisons/sample-14f564d2b7d2e446.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "chrome/comparisons/sample-1aad6147b578f344.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/sample-1ea42cacfd82f6c0.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-203573ceb1873d5c.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-224ffeac6e0cd92d.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/sample-280528b4b1cb14b3.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/sample-28e79bff204857cf.json": {
+    "sha256": "ccbb575bd8ac13222ad13095612ba4d4a231cbf27a3aa95056a632a797f393bb",
+    "size": 254
+  },
+  "chrome/comparisons/sample-2c2835cf707a4fe6.json": {
+    "sha256": "3670f90c4f4620120fcae0c2418ae1de6008cbf8b4db95991c077c749b9233d4",
+    "size": 254
+  },
+  "chrome/comparisons/sample-2db7bd9b6595c479.json": {
+    "sha256": "03d34f9bde8aecda585739eb9cae56889719cd69c5b2f7f886734b7af51d2dd8",
+    "size": 254
+  },
+  "chrome/comparisons/sample-2f4730c5e82e18ff.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-3255119646d641ba.json": {
+    "sha256": "728511083d2333d85747b32cc63b584b8ce89633a8a905f278798f23e5b3012e",
+    "size": 254
+  },
+  "chrome/comparisons/sample-3295ba0789edc763.json": {
+    "sha256": "c1c083710070ec8184083c5d6a263f7c6db7f9f73a95721cc745e8cb376073e5",
+    "size": 251
+  },
+  "chrome/comparisons/sample-35b9cf211491fc5b.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "chrome/comparisons/sample-39a29be9779394c5.json": {
+    "sha256": "03d34f9bde8aecda585739eb9cae56889719cd69c5b2f7f886734b7af51d2dd8",
+    "size": 254
+  },
+  "chrome/comparisons/sample-3aabaeed287f6784.json": {
+    "sha256": "e1b4bf6a8bb8e496d7870c4e328528278f1a9c60cce40064e0102706734b4a02",
+    "size": 257
+  },
+  "chrome/comparisons/sample-3c6e7c7ab6144e27.json": {
+    "sha256": "1fbdcb75a944f910d47a221eed152df94aa8928ac5d7d55b26513a51602e3494",
+    "size": 254
+  },
+  "chrome/comparisons/sample-4070a7afd9a7184b.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-40a0423bfcae386f.json": {
+    "sha256": "70a3f517c1368091e412e3a5899f6255b0904a71c9188c4ffd2e4ceafa03cba9",
+    "size": 254
+  },
+  "chrome/comparisons/sample-4169c134c6189ae6.json": {
+    "sha256": "0fea9b266e40c2023cb8dd1fcecc21f4a9d60dda8d5f2bd4b0e142a628c33b3f",
+    "size": 268
+  },
+  "chrome/comparisons/sample-41b45e5a7c1f065c.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/sample-426c4c4b4327f07c.json": {
+    "sha256": "ee8f3169813a79203eb12131c86e97c7f2ad9e6322afcf7dc8d2c046cf55a143",
+    "size": 254
+  },
+  "chrome/comparisons/sample-440f10edac8d7c0b.json": {
+    "sha256": "0fea9b266e40c2023cb8dd1fcecc21f4a9d60dda8d5f2bd4b0e142a628c33b3f",
+    "size": 268
+  },
+  "chrome/comparisons/sample-44d499f3f15ffc62.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "chrome/comparisons/sample-456fa06428e1e12f.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/sample-493754a016f2232e.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-4a2cab3fdba7faea.json": {
+    "sha256": "b086455188ae5813285e6aa3425f0b95c398fc46527d1026dafb636370bff842",
+    "size": 257
+  },
+  "chrome/comparisons/sample-4b43a6f478545d70.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-4cb3c7f3a7eae8bb.json": {
+    "sha256": "f07b3d0b122ea62989745db75430ad7ebf81f5b6495ca4c8bd04a1982278e5f7",
+    "size": 254
+  },
+  "chrome/comparisons/sample-4f45cf0e51f46a54.json": {
+    "sha256": "aa0fea56c8c56dee0e1814c7e36d36a8014f18c33f2cc1e825ab8f15ce24812c",
+    "size": 254
+  },
+  "chrome/comparisons/sample-4f4c989c97595b6e.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/sample-4fceece9f2d76a6e.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-512b352f18af3f4f.json": {
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02",
+    "size": 254
+  },
+  "chrome/comparisons/sample-540490b03d22b577.json": {
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1",
+    "size": 254
+  },
+  "chrome/comparisons/sample-55932e69942ed683.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-5a422da9a529a336.json": {
+    "sha256": "70a3f517c1368091e412e3a5899f6255b0904a71c9188c4ffd2e4ceafa03cba9",
+    "size": 254
+  },
+  "chrome/comparisons/sample-5f9d77976f578583.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/sample-5fa29af9e63fefc2.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-60f7669b6fa86751.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-640bb28cd64c2e5b.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "chrome/comparisons/sample-6692328598e9c3a8.json": {
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1",
+    "size": 254
+  },
+  "chrome/comparisons/sample-6784152fa17f8d76.json": {
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02",
+    "size": 254
+  },
+  "chrome/comparisons/sample-6a86cb9011438813.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-71fe5f6e6888b73b.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-728b694ae01441a4.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/sample-7750735bcbce34ec.json": {
+    "sha256": "4e88bd421f7cb6b33b5b6d60693604b8181459828a1d27ce8a7312affb1f5c15",
+    "size": 254
+  },
+  "chrome/comparisons/sample-7d60dfc27e54a03b.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/sample-8229419c872341b9.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-83a365509f1cc2b7.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "chrome/comparisons/sample-86a7ffe5513e5633.json": {
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1",
+    "size": 254
+  },
+  "chrome/comparisons/sample-88d6f6f571abb9ad.json": {
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02",
+    "size": 254
+  },
+  "chrome/comparisons/sample-8d1e2d06c5f24990.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/sample-903c40f10a92c762.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/sample-913b6e2fbe4c0d3b.json": {
+    "sha256": "8014c99d189a8ad420bfafddcef98583edd9538bae8f71f4d82495a8bdab5a0e",
+    "size": 254
+  },
+  "chrome/comparisons/sample-914953ff8fb9b879.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/sample-92de0a88437e32a3.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-946c5faeaa0f2ec5.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "chrome/comparisons/sample-9a0e9586ac3fe4e2.json": {
+    "sha256": "f22b3ca9d520d4ba1fdf04711d8c101aa946f33ce00ed2ace225e2e6626b62ec",
+    "size": 251
+  },
+  "chrome/comparisons/sample-9b462fed1772311b.json": {
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9",
+    "size": 254
+  },
+  "chrome/comparisons/sample-9d004236328aca8f.json": {
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1",
+    "size": 254
+  },
+  "chrome/comparisons/sample-9d80e98d12d362b3.json": {
+    "sha256": "22a11bc3c67a69cbf8604e58d3a68ca77d47ad49d1f3bca2e67df4ff206d1cc3",
+    "size": 254
+  },
+  "chrome/comparisons/sample-9e131b7b56e565db.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "chrome/comparisons/sample-9e2ab94f59cf15f8.json": {
+    "sha256": "260f2faa1127060366c3c302caa364e51dc722330115427653cfecdc71a850eb",
+    "size": 254
+  },
+  "chrome/comparisons/sample-9f735a010e88a648.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/sample-a2446851712be525.json": {
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485",
+    "size": 254
+  },
+  "chrome/comparisons/sample-a24e31eb0aa23b4f.json": {
+    "sha256": "57e838ea54a4468f03371b0f8d3652dfb5f2371b22e10541bdf61334814a61e0",
+    "size": 254
+  },
+  "chrome/comparisons/sample-a45fc642aa130558.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-a744c24e96808cb4.json": {
+    "sha256": "c3dc63ec8263de419e813395d0e841df828d17f800bc83bc3d8ce4707f1823a5",
+    "size": 254
+  },
+  "chrome/comparisons/sample-a83d2bf9aa769ebd.json": {
+    "sha256": "22a11bc3c67a69cbf8604e58d3a68ca77d47ad49d1f3bca2e67df4ff206d1cc3",
+    "size": 254
+  },
+  "chrome/comparisons/sample-a87dd8607e0fda5f.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/sample-a9819bb8f9e9f5ef.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/sample-a99b928ceb0f443e.json": {
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485",
+    "size": 254
+  },
+  "chrome/comparisons/sample-ab78d5d64fd48439.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/sample-ab902c56bd93d342.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/sample-abad7ae0707ac749.json": {
+    "sha256": "06fda8c0c1d50a5df59a9537d01986740889d8a086e4c735e62255c5ee40e7ef",
+    "size": 254
+  },
+  "chrome/comparisons/sample-b0d25177b1a8480c.json": {
+    "sha256": "b05da171e6d572852165ddb8ce34baf226ce59280b8f6cc01fdb146879af34aa",
+    "size": 257
+  },
+  "chrome/comparisons/sample-b0e62b5268bf3ae1.json": {
+    "sha256": "3903ad7783ea5f03b62cb6ecd3f7966d579863790376d6f25ec087f9000dafb0",
+    "size": 251
+  },
+  "chrome/comparisons/sample-b3edaa47ba780e0c.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/sample-b563bb5b3e206ad7.json": {
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1",
+    "size": 254
+  },
+  "chrome/comparisons/sample-bbbd4ae8468a6451.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "chrome/comparisons/sample-be771810db2def78.json": {
+    "sha256": "a0474f8d704d90764f51194ebb9a423bcd8d6972eb80a2095aca28d46d2b686e",
+    "size": 254
+  },
+  "chrome/comparisons/sample-c062c4f8b726c822.json": {
+    "sha256": "3adae9ad4369adc4e2dd797d0a82d887bb8d3acb5b200b9dbaafc4f45c2c4d44",
+    "size": 254
+  },
+  "chrome/comparisons/sample-c159f2e4564feb4f.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-c323ed4e5eccd42e.json": {
+    "sha256": "3f9001132140c369616f969192de1dd253ac3500369f07d8eda18a58e6341323",
+    "size": 254
+  },
+  "chrome/comparisons/sample-c45a727514fb8982.json": {
+    "sha256": "00529eb3b70e4e9c628543a0db12d451bef29950fe90572f47d00f58553575e7",
+    "size": 251
+  },
+  "chrome/comparisons/sample-c777a45d62cce90a.json": {
+    "sha256": "539b4f795d73ad152f72d7e0bc47664199540eac3ba7885ec9fc93a93b4f6ecc",
+    "size": 254
+  },
+  "chrome/comparisons/sample-c8564aeddba82f04.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/sample-c8cde51505833347.json": {
+    "sha256": "85c956eece3f6895aab21d39ed4284123d976e327bb80a2d3a269a36dd051a01",
+    "size": 254
+  },
+  "chrome/comparisons/sample-c9a092125962e322.json": {
+    "sha256": "062b8cb128256bac5afeedd71cc6ec2c12837c4f0f8beb2e4d9a4dae95a00e24",
+    "size": 254
+  },
+  "chrome/comparisons/sample-c9b8504f28656bb2.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "chrome/comparisons/sample-caaf9f2c75e68fb3.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/sample-cb5009e20bb1123a.json": {
+    "sha256": "09e7050a340b4b445bf853177bd61db15955d4068295dea3674f4d95d2ebee17",
+    "size": 254
+  },
+  "chrome/comparisons/sample-cc5c505c9a91f65a.json": {
+    "sha256": "41557ced40d567cad8fc2df9bc98839cdd1de6d9a36fa88ea7d5bc6f183a4117",
+    "size": 251
+  },
+  "chrome/comparisons/sample-cc615a3e5cb1499e.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "chrome/comparisons/sample-da00952f9e92b062.json": {
+    "sha256": "70a3f517c1368091e412e3a5899f6255b0904a71c9188c4ffd2e4ceafa03cba9",
+    "size": 254
+  },
+  "chrome/comparisons/sample-db4b91782dd3efb7.json": {
+    "sha256": "251ec8348aee23ae6df587a1e26a0134c0ee740295b8c18d8465a7d3f4b766b3",
+    "size": 254
+  },
+  "chrome/comparisons/sample-de744546e5b8a0e6.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/sample-de900bc558f2dca8.json": {
+    "sha256": "3d8fd291c306e11250c96a554bc7ec8fa5cb2e90c800e1aefdd295b7e4f2dcc6",
+    "size": 251
+  },
+  "chrome/comparisons/sample-df2560f7906cab6d.json": {
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1",
+    "size": 254
+  },
+  "chrome/comparisons/sample-e0a96ddd6fe8007f.json": {
+    "sha256": "c30387dfb86594241ae5699baeae75189a44d2f5ff09491c615d201f2e56b485",
+    "size": 254
+  },
+  "chrome/comparisons/sample-e2147debb746e953.json": {
+    "sha256": "b2bd85a72190086097e600f5952c1d60cb343724e6ff9ae27bb8d1e56e28b586",
+    "size": 251
+  },
+  "chrome/comparisons/sample-e37ba8d39f1765ee.json": {
+    "sha256": "22fca75ab4ba443fff37f009d67d44f79cbc277b28fc409d60c7027c54953ec1",
+    "size": 254
+  },
+  "chrome/comparisons/sample-e3d262776302832f.json": {
+    "sha256": "09e7050a340b4b445bf853177bd61db15955d4068295dea3674f4d95d2ebee17",
+    "size": 254
+  },
+  "chrome/comparisons/sample-e4d10781d3be6992.json": {
+    "sha256": "88558c3d9514a3624a4539934a474e532f3be02396ad73cd923a989f87bd59d2",
+    "size": 248
+  },
+  "chrome/comparisons/sample-e56ebcbad4b3ec61.json": {
+    "sha256": "4497b60925b216db8f5008973d6272c89c90a6de40249fc2f508365364c2c305",
+    "size": 254
+  },
+  "chrome/comparisons/sample-e6c08e3cc9b0eb2f.json": {
+    "sha256": "e8c198950a8f8b1c561b579ed0ba5ae96a099b41c009a9d7ed02b8efdad0ae34",
+    "size": 251
+  },
+  "chrome/comparisons/sample-e8417890fea95361.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/sample-eae7f502cfea5855.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/sample-eb1b381667716066.json": {
+    "sha256": "98db8302969d14b481bfad751ab93e12ecb672f305834393ae1751bf1a523bc9",
+    "size": 254
+  },
+  "chrome/comparisons/sample-eb6e81323fe050ef.json": {
+    "sha256": "4497b60925b216db8f5008973d6272c89c90a6de40249fc2f508365364c2c305",
+    "size": 254
+  },
+  "chrome/comparisons/sample-ed5b69a9711e3f53.json": {
+    "sha256": "251ec8348aee23ae6df587a1e26a0134c0ee740295b8c18d8465a7d3f4b766b3",
+    "size": 254
+  },
+  "chrome/comparisons/sample-f06b8315200c1abb.json": {
+    "sha256": "a5c1a3ab55dca47bce69e0e38939aa5bd9e2c8c021e475404896b5ca43a70f02",
+    "size": 254
+  },
+  "chrome/comparisons/sample-f3a0c13bdc84f24b.json": {
+    "sha256": "1fe3ecbcdff58bc7a2edebeaebe5158f3d48c5f7171d7ecf09e4838dc77414ba",
+    "size": 254
+  },
+  "chrome/comparisons/sample-f9dcd81f8ca741ba.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "chrome/comparisons/sample-fd9577ef8f62f6a7.json": {
+    "sha256": "ccbb575bd8ac13222ad13095612ba4d4a231cbf27a3aa95056a632a797f393bb",
+    "size": 254
+  },
+  "chrome/execution-build.json": {
+    "sha256": "faed6d3f7f21334f9e0b66aaf5f06a0b4f222416a0165d861916f397c4f2329d",
+    "size": 13238
+  },
+  "chrome/execution-cases.json": {
+    "sha256": "4460b2b4d8bb9be16b45ffe8c604e1acd45f9cf1b50c637722f23319f61ba19c",
+    "size": 120511
+  },
+  "chrome/execution.json": {
+    "sha256": "694f4a8b362e7dabffd860511448c828ce926cfa422fddaca6a5f0be19f4554f",
+    "size": 200589
+  },
+  "chrome/summary.json": {
+    "sha256": "f87a5ae496bc6b26c225ae041d3268010993e996e032eb0e55f9bed50279ac2c",
+    "size": 213050
+  },
+  "evidence/api.log": {
+    "sha256": "0a7b29e06be5e16e44fa49f21a62533e4a4abf4ca00fa0dd974ec2145d56b384",
+    "size": 140
+  },
+  "evidence/browser-verification.json": {
+    "sha256": "bb73b4c860e3b6a5ee56a52d6472f750b4e11c6cb6aed15e3ec0a7311c22d438",
+    "size": 227372
+  },
+  "evidence/browser.log": {
+    "sha256": "9caed182ed8052a8f9095435e4436fb1f0676d2667e2e3a5a3ef8ebdcb8e5dab",
+    "size": 22776
+  },
+  "evidence/build.log": {
+    "sha256": "6de5b526c0f57a2ca18e2c726b96a28175687359ce31045b22033cf071625244",
+    "size": 15365
+  },
+  "evidence/coverage.json": {
+    "sha256": "7a52b83812d93f6a737947e132d93d62807c7e6d986f4a7dc6b1407f565678a8",
+    "size": 4228
+  },
+  "evidence/node-verification.json": {
+    "sha256": "7c9fe576da9066238c68cc879037df6e4e9ec655072277407a50f9590a72361c",
+    "size": 30196
+  },
+  "evidence/python-current-tests.json": {
+    "sha256": "cf301b2e78759cde212be8abe38ceea645e236255bba21a6c1fc1aedc0154efe",
+    "size": 474
+  },
+  "evidence/python-current-tests.log": {
+    "sha256": "78504cbda14493f1b4ec7314f23735d432a1d0af97b991c4c08ab3f5dceb3874",
+    "size": 10415
+  },
+  "evidence/rebuilt-BUILD.json": {
+    "sha256": "42d2582c70eff9c689ae37b80b2506b78902c2a4b06e12cf3804ff6a273f984b",
+    "size": 13085
+  },
+  "evidence/runtime-identity.json": {
+    "sha256": "0dbfbd5c0ef07a9a1f59d42556dfea2ea755189f8f72492d40fb21b727b73b05",
+    "size": 1354
+  },
+  "evidence/selected-delivery-tests.log": {
+    "sha256": "8c000c35884b0e759a17e4e1b5114462c866077100d21cb10a3a2b4589182892",
+    "size": 108
+  },
+  "evidence/source-files.json": {
+    "sha256": "28f3920bc69101a215b6b2993258be4632d4c6c529cf47e2ae49d709b425724a",
+    "size": 777
+  },
+  "evidence/ui.log": {
+    "sha256": "2722e8d9ff1c35b3b5057dbf7a49de8dc3a97ab5ea2a4b02fb761dc2bd970ff8",
+    "size": 39
+  },
+  "node-subset/actual/corpus-latin-36.json": {
+    "sha256": "4eb11c11ad6870bbc12298c142fabd8b256cf3d77911376f068b5b3607034f6f",
+    "size": 4670
+  },
+  "node-subset/actual/measurements.json": {
+    "sha256": "5b3b58d76b905d3096cd1a7402d047b9b0ad513641623066558e84d2a78ca5db",
+    "size": 365
+  },
+  "node-subset/cases.json": {
+    "sha256": "1d40d163c28940edcc70e662ca112d36696a214348fad9c3878cb34b6b972c64",
+    "size": 352
+  },
+  "node-subset/comparisons/corpus-latin-36.json": {
+    "sha256": "098c4781da05673c533f1f31660973b4cd467d349f8532c98b929add88079410",
+    "size": 251
+  },
+  "node-subset/execution-build.json": {
+    "sha256": "faed6d3f7f21334f9e0b66aaf5f06a0b4f222416a0165d861916f397c4f2329d",
+    "size": 13238
+  },
+  "node-subset/execution-cases.json": {
+    "sha256": "1d40d163c28940edcc70e662ca112d36696a214348fad9c3878cb34b6b972c64",
+    "size": 352
+  },
+  "node-subset/execution.json": {
+    "sha256": "7ada0713bb88ef03feb2b2e3fae1692097933fa98a7d7208f59fb69ebc541cf8",
+    "size": 14809
+  },
+  "node-subset/shards/0/actual/corpus-latin-36.json": {
+    "sha256": "4eb11c11ad6870bbc12298c142fabd8b256cf3d77911376f068b5b3607034f6f",
+    "size": 4670
+  },
+  "node-subset/shards/0/actual/measurements.json": {
+    "sha256": "8c93e9ce50b140498771e6be7e8435ab6fc72b200f07ea8c3257c6e9950611f7",
+    "size": 285
+  },
+  "node-subset/shards/0/cases.json": {
+    "sha256": "1d40d163c28940edcc70e662ca112d36696a214348fad9c3878cb34b6b972c64",
+    "size": 352
+  },
+  "node-subset/summary.json": {
+    "sha256": "353d6cfd41eed0d073d71b6e28948ee18590ea51a26542fa64d3b400e3971850",
+    "size": 15869
+  },
+  "README.md": {
+    "sha256": "2c944061d5327c16c7b38f0eccf1668a40e7e8be83c315f55feb43cb339bc072",
+    "size": 7049
+  },
+  "ui/default-parity.json": {
+    "sha256": "3d1aaf251772ac61f710cc9b15baacc53bc4812f1a3acf76de21d0d84f66c6a5",
+    "size": 249
+  },
+  "ui/page.png": {
+    "sha256": "63f5351b4f830c52f11295e6b751f6b0abb0b99a79f674e1b4fc459a8052670a",
+    "size": 66426
+  },
+  "ui/resized-parity.json": {
+    "sha256": "28a4ecd5198a1088c6981489273a07ca41cc8055b2fc42ab276405cb7d1dc6b8",
+    "size": 249
+  },
+  "ui/resized.json": {
+    "sha256": "7e680640c9579994a540aaecec1ca9a3a8b33507a1bbaa65714982a833c31996",
+    "size": 23483
+  },
+  "ui/result.json": {
+    "sha256": "0a6d7868a43932dfb9af57971b1af5f02612527be99981e484ac2f20e356d9de",
+    "size": 4612
+  },
+  "ui/soft-budget-parity.json": {
+    "sha256": "28a4ecd5198a1088c6981489273a07ca41cc8055b2fc42ab276405cb7d1dc6b8",
+    "size": 249
+  },
+  "ui/soft-budget.json": {
+    "sha256": "b5f833a40f059a5d1241b086292ccff9f5539374784a45ecca938893aa97c1c8",
+    "size": 24130
+  },
+  "ui/summary.json": {
+    "sha256": "d0f59073d2c9ad05d241edf90207233a1ed41f36d1b92cfb7b959f0bfc43b256",
+    "size": 367
+  },
+  "ui/worker-contracts.json": {
+    "sha256": "c05def19a4e9c90a93357fd7aec0c4f6f0b9a23fa39b3224ccd5b04056480beb",
+    "size": 1447
+  }
+}

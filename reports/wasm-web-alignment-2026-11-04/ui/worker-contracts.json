@@ -1,0 +1,60 @@
+{
+  "timeout": {
+    "message": "OneOCR timed out after 1 ms"
+  },
+  "checksum": {
+    "message": "Model manifest checksum mismatch",
+    "code": -30
+  },
+  "missing": {
+    "message": "Cannot load http://127.0.0.1:53877/missing-models/manifest.json: HTTP 404",
+    "code": -30
+  },
+  "blanks": [
+    {
+      "engine": {
+        "backend": "wasm-onnx-cpu",
+        "geometry": "native_curve_polygons",
+        "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+        "parity": "incomplete",
+        "style_confidence": "native_classifier_calibrated",
+        "word_confidence": "native_21_features_mlp"
+      },
+      "file": "",
+      "image": {
+        "height": 64,
+        "step": 272,
+        "width": 64
+      },
+      "image_angle": 0,
+      "line_count": 0,
+      "lines": []
+    },
+    {
+      "engine": {
+        "backend": "wasm-onnx-cpu",
+        "geometry": "native_curve_polygons",
+        "numeric_profile": "oneocr-wasm-fma-nchwc16-v2",
+        "parity": "incomplete",
+        "style_confidence": "native_classifier_calibrated",
+        "word_confidence": "native_21_features_mlp"
+      },
+      "file": "",
+      "image": {
+        "height": 64,
+        "step": 272,
+        "width": 64
+      },
+      "image_angle": 0,
+      "line_count": 0,
+      "lines": []
+    }
+  ],
+  "invalid": {
+    "message": "Invalid BGRA pointer, byte count or stride",
+    "code": -12
+  },
+  "closed": {
+    "message": "OneOCR worker is closed"
+  }
+}

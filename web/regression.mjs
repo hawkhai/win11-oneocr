@@ -4,15 +4,16 @@ import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { performance } from 'node:perf_hooks';
-import { createOneOcr } from './oneocr.mjs';
 
-const [inventoryFile, outputDirectory, modelDirectory] = process.argv.slice(2);
+const [inventoryFile, outputDirectory, modelDirectory, wasmDirectory = new URL('../artifacts/wasm32/', import.meta.url)] = process.argv.slice(2);
 if (!inventoryFile || !outputDirectory || !modelDirectory) throw new Error('Expected cases.json output models');
 const cases = JSON.parse(await readFile(inventoryFile, 'utf8'));
+const delivery = wasmDirectory instanceof URL ? wasmDirectory : pathToFileURL(resolve(wasmDirectory) + '/');
+const { createOneOcr } = await import(new URL('oneocr.mjs', delivery));
 const started = performance.now();
 const engine = await createOneOcr({
   modelBaseUrl: pathToFileURL(resolve(modelDirectory) + '/'),
-  runtimeUrl: new URL('../artifacts/wasm32/oneocr-core.mjs', import.meta.url),
+  runtimeUrl: new URL('oneocr-core.mjs', delivery),
 });
 const initializationMs = performance.now() - started;
 await mkdir(outputDirectory, { recursive: true });

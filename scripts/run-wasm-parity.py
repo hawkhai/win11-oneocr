@@ -36,6 +36,7 @@ def write(path, value):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--node')
+    parser.add_argument('--wasm-dir', type=Path, default=ROOT/'artifacts/wasm32', help='Actual built delivery directory (including BUILD.json); keeps rebuilt binaries out of Git')
     parser.add_argument('--jobs', type=int, help='Independent inference processes (default: 4)')
     parser.add_argument('--schedule-from', type=Path, help='Use previous same-input timings only to balance process workloads')
     parser.add_argument('--output', type=Path, default=ROOT/'work/wasm-parity')
@@ -62,9 +63,10 @@ def main():
         parser.error('--jobs must be positive')
     if args.browser_timeout_ms < 1:
         parser.error('--browser-timeout-ms must be positive')
-    build = read(ROOT/'artifacts/wasm32/BUILD.json')
+    wasm_directory = args.wasm_dir.resolve()
+    build = read(wasm_directory/'BUILD.json')
     for name, expected in build['files'].items():
-        if sha(ROOT/'artifacts/wasm32'/name) != expected:
+        if sha(wasm_directory/name) != expected:
             raise ValueError('Wasm delivery asset changed: '+name)
     if not args.compare_only:
         for name, expected in build['source_files'].items():
@@ -123,6 +125,7 @@ def main():
                 command.append(args.browser)
                 command.append(args.playwright_path or ROOT/'work/wasm-browser/node_modules/playwright-core/index.mjs')
                 command.append(str(args.browser_timeout_ms))
+            command.append(wasm_directory)
             subprocess.run(command, check=True, cwd=ROOT)
             return destination
         with ThreadPoolExecutor(max_workers=jobs) as executor:

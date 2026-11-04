@@ -4,9 +4,11 @@
 
 此前参数与手写回归覆盖 126 张图片、27 项固定语料、书页及 67 个参数组合，共 221 项/环境，见[历史报告](../reports/options-handwriting-2026-11-03/README.md)。最新 Photos 交集测试修复一轮仅用既有 Wasm 资产做两项诊断，未重建 Wasm、未跑其完整集，也不将诊断结果作为原生门槛；详见[本轮报告](../reports/photos-intersection-p2-2026-11-03/README.md)。
 
+2026-11-04 应用户后续要求，已补齐网页行预算与缩放入口，实际执行独立目录增量构建、网页/Worker/Node API 测试和 Chrome 156 当前 **269/269 全量新推理**（266 识别、3 预期拒绝），另行保存结果复核 269/269；包括新增 48 组参数。8 个 Wasm 运行文件与现有交付资产逐字节一致，没有新增二进制入 Git。证据见[网页能力对齐报告](../reports/wasm-web-alignment-2026-11-04/README.md)。Node 此次仅接口及单项新推理，不扩写其历史全量范围；其他浏览器仍未验证。
+
 此后端将同一份 C++20 引擎、OpenCV 4.10.0、ICU 74.2 与 ORT 1.23.2 静态链接进 WebAssembly。JS 只负责文件加载、C ABI 内存管理和 Worker 通信；预处理、识别、词切分、阅读顺序、坐标、置信度、手写及方向判断均在 Wasm 中执行。模型使用仓库现有 `models/manifest.json`，没有换模型。
 
-初版 Wasm 的 Windows Node 24.14.0 和 Chrome 156 曾通过当时全量 **138/138**，两端原始结果/错误 JSON 逐字节一致，见[历史报告](../reports/wasm-2026-11-03/README.md)。本轮 Windows Node、Linux Node 和 Chrome 均为 **221/221**，见[最新报告](../reports/options-handwriting-2026-11-03/README.md)。相对原 DLL 使用坐标 1 像素、角度 0.1 度、置信度 `1e-3` 的原有阈值；文字、顺序、词切分和手写类型要求一致。其他浏览器及设备须单独验证。
+初版 Wasm 的 Windows Node 24.14.0 和 Chrome 156 曾通过当时全量 **138/138**，两端原始结果/错误 JSON 逐字节一致，见[历史报告](../reports/wasm-2026-11-03/README.md)。后续历史 Windows Node、Linux Node 和 Chrome 均为 **221/221**，见[参数与手写历史报告](../reports/options-handwriting-2026-11-03/README.md)。这些诊断相对原 DLL 使用坐标 1 像素、角度 0.1 度、置信度 `1e-3` 的原有阈值；文字、顺序、词切分和手写类型要求一致。其他浏览器及设备须单独验证。
 
 后续 [Review 修复与增强回归](../reports/review-fixes-2026-11-03/README.md)补齐了计数和索引校验，并以全新推理验证 Windows Node 24.14.0、Linux Node 24.14.0、Chrome 156，各 **138/138**。Linux Node 完整集在无网络命名空间运行；除主机输入路径外，三端识别字段逐值一致。Node 20 仍只有历史书页和部分输入记录，不标记为完整集通过。
 
@@ -15,6 +17,8 @@
 把 `artifacts/wasm32/` 和独立的 `models/` 部署到同一个静态站点。须通过 HTTP(S) 加载模块，不能直接双击 `file://` HTML；`.mjs` 使用 JavaScript MIME，`.wasm` 使用 `application/wasm`。运行时只访问指定的静态文件，不需要账号、授权服务或原微软 DLL。
 
 可直接打开仓库内的浏览器示例：在仓库根目录执行 `python -m http.server 8000 --bind 127.0.0.1`，访问 `http://127.0.0.1:8000/examples/wasm/`。Python 仅作为示例的静态文件服务器，识别在浏览器 Worker 中执行；也可换用任意静态服务器。
+
+示例网页提供行预算和缩放宽高，与 JS API 的 `maxLines`、`resizeWidth`、`resizeHeight` 对应。行预算 0 表示 1000；宽高同时为 0 表示 1152×768，否则须同时在 32..8192。网页直接传递原文件字节，完整 JSON 保留行词坐标、置信度、方向和手写类型；取消会销毁 Worker，下次识别自动重新创建。
 
 推荐 Worker，避免同步推理阻塞页面：
 
@@ -120,6 +124,8 @@ python3 scripts/build-wasm.py --jobs 6
 
 输出在 `artifacts/wasm32/`：`oneocr-core.mjs`、`oneocr-core.wasm`、JS/Worker 封装、声明及带摘要的 `BUILD.json`。模型不嵌入 Wasm，也不从其他服务下载；`models/` 与桌面平台共用。Emscripten CMake preset `wasm32` 可用于已准备静态 ORT SDK 的独立构建。
 
+按当前交付约定，新编译二进制保留在忽略目录，使用 `--output work/wasm-local/runtime` 指定输出；不覆盖已封存运行资产。回归可用 `--wasm-dir work/wasm-local/runtime` 选择这份真实构建，仍逐项核验 BUILD 文件摘要和源码指纹。默认目录仍为 `artifacts/wasm32`，旧 BUILD 不得手工刷新为当前源码。
+
 当前配置为单线程、SIMD128、无 relaxed SIMD，保留 C++ 异常，禁用隐式浮点收缩；不依赖 SharedArrayBuffer 或 COOP/COEP。浏览器/Node 需要支持 WebAssembly SIMD 和 BigInt。线性内存可增长至 4 GiB；这是地址空间上限，不是每台设备都能分配的内存保证。移动设备及未实测浏览器不得视为已验证。
 
 上游说明：[ORT Wasm 静态库构建](https://onnxruntime.ai/docs/build/web)、[Emscripten 异常](https://emscripten.org/docs/porting/exceptions.html)、[SIMD](https://emscripten.org/docs/porting/simd)。许可与第三方声明在交付目录 `share/oneocr/` 中，模型不适用项目 MIT 许可。
@@ -131,7 +137,7 @@ node test/wasm-test.mjs
 .research-python/python.exe -X utf8 scripts/run-wasm-parity.py --output work/wasm-parity-fresh
 ```
 
-默认以 4 个独立实例运行当前 126 张图片、固定 27 项、书页及 67 个参数组合，共 221 项，不遗漏三个拒绝用例；每项保留原始 JSON/错误、摘要、测量及严格比较报告。内存较少时可用 `--jobs 1`。输出目录须为空，避免残留结果掩盖失败。`--only book` 等选项只做诊断，不标记全量通过。
+默认以 4 个独立实例运行当前 126 张图片、固定 27 项、书页及 115 个参数组合，共 269 项（266 项识别及三个预期拒绝）；每项保留原始 JSON/错误、摘要、测量及严格比较报告。内存较少时可用 `--jobs 1`。输出目录须为空，避免残留结果掩盖失败。`--only book` 等选项只做诊断，不标记全量通过。完整执行范围不等于 Wasm 必须严格一致；任何差异仍如实记录。
 
 比较器还检查 `line_count`、`word_count` 与数组长度一致，以及行/词 `index` 的整数类型和连续顺序；缺失字段、错误类型和非有限数值不能通过。主机文件路径与后端专属 `engine` 元数据不要求相等。坐标、角度和置信度阈值保持原值。
 
@@ -159,6 +165,8 @@ python scripts/run-wasm-parity.py --compare-only --output reports/curve-boundari
 npm install --prefix work/wasm-browser --no-package-lock --no-save playwright-core@1.55.0
 .research-python/python.exe -X utf8 scripts/run-wasm-parity.py --browser "C:/Program Files/Google/Chrome/Application/chrome.exe" --output work/wasm-browser-fresh
 ```
+
+对于忽略目录的新构建，在上述命令加 `--wasm-dir work/wasm-local/runtime`；保存结果复核也须选择同一运行资产。页面交互及 Worker 功能测试使用 `node test/wasm-demo-test.mjs <chromium-executable> <fresh-output> [playwright-module] [wasm-directory]`，覆盖参数、取消后重建、错误后恢复、BGRA 步长、超时、关闭及加载失败。直接 API/插件集成测试可通过环境变量 `ONEOCR_WASM_DIR` 选择同一构建。
 
 该流程启动仅监听 `127.0.0.1` 的临时静态服务器，并阻止测试上下文向其他 origin 请求；图像和模型字节保持原样。在不同浏览器、CPU 或 JS 引擎版本上，需要分别执行回归才能报告运行及一致性通过。
 

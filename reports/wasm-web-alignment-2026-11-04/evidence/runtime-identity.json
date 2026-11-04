@@ -1,0 +1,20 @@
+{
+  "all_registered_delivery_assets_unchanged": true,
+  "verified_delivery_assets": 252,
+  "runtime_equal_to_packaged": true,
+  "runtime_assets": {
+    "cli.mjs": "84b34ee2df1f99bf9111b88e3f0f531e902cf6951b0c43eb405abf4987d2c26f",
+    "oneocr-core.mjs": "3759e807f4f5869746075b0e86e47e78a8956bbcc808552709014a022fec9460",
+    "oneocr-core.wasm": "5ad0eedbc3d072c938d4cebf2d07cd1c136e1ae9a53d7ffbef0bf45e2894b7ec",
+    "oneocr.d.mts": "16f24369fc5e319187c69f66aa6cc85e8f9cd1b40baf9205ad7e6ec628eb67b9",
+    "oneocr.mjs": "7b0f0089bd34ad58a69c2f3f1c3ed316e0d0ded0643fd376bbf0e919360e6dbc",
+    "worker-client.d.mts": "68ebe35177142af88b554be9c4d7b8feedf4381485a00f25924e2429311ef10f",
+    "worker-client.mjs": "1f0ddd9375810fed73c340638bb41b745f126db66180d032fbcb4cab3c6bfb86",
+    "worker.mjs": "44a47673174a1b5154b498327d0db8a8b33658ec692edc4bf2c81ab7c709d5a1"
+  },
+  "model_manifest_sha256": "8e6d5b973aad14590890ce78de39e5414b7297df4350d65e7a2990ab9b9c929a",
+  "model_source_sha256": "f6cef38b839012cd824abf8b854ee9fa4f87d4c5265440661d66b23f4fab5155",
+  "comparator_sha256": "06d137cc93680f766031d783da9526064808fea1135124348e180bb8607f4869",
+  "build_mode": "incremental configure/build, ORT archive rebundled, install to ignored directory; existing OCR engine was already up to date",
+  "new_compiled_files_added_to_git": false
+}

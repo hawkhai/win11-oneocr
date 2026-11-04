@@ -8,7 +8,8 @@ import { dirname, extname, relative, resolve, sep } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const [inventoryFile, outputDirectory, modelDirectory, executablePath,
-  playwrightPath = fileURLToPath(new URL('../work/wasm-browser/node_modules/playwright-core/index.mjs', import.meta.url)), timeoutValue = '1800000'] = process.argv.slice(2);
+  playwrightPath = fileURLToPath(new URL('../work/wasm-browser/node_modules/playwright-core/index.mjs', import.meta.url)), timeoutValue = '1800000',
+  wasmDirectory = fileURLToPath(new URL('../artifacts/wasm32/', import.meta.url))] = process.argv.slice(2);
 if (!inventoryFile || !outputDirectory || !modelDirectory || !executablePath) throw new Error('Expected cases.json output models chromium-executable [playwright-module]');
 const requestTimeoutMs = Number(timeoutValue);
 if (!Number.isSafeInteger(requestTimeoutMs) || requestTimeoutMs < 1) throw new Error('Invalid test request budget');
@@ -19,8 +20,10 @@ const server = createServer(async (request, response) => {
   try {
     const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
     if (pathname === '/') { response.setHeader('Content-Type', 'text/html'); response.end('<!doctype html><title>Local OneOCR regression</title>'); return; }
-    const path = resolve(root, '.' + pathname);
-    if (!path.startsWith(root + sep)) throw new Error('Invalid path');
+    const deliveryRequest = pathname.startsWith('/artifacts/wasm32/');
+    const base = deliveryRequest ? resolve(wasmDirectory) : root;
+    const path = resolve(base, deliveryRequest ? pathname.slice('/artifacts/wasm32/'.length) : '.' + pathname);
+    if (!path.startsWith(base + sep)) throw new Error('Invalid path');
     const data = await readFile(path);
     response.setHeader('Content-Type', mime[extname(path)] ?? 'application/octet-stream');
     response.end(data);

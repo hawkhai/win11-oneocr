@@ -68,5 +68,21 @@ class CompareOnlyCli(unittest.TestCase):
         self.assertIn('--reference is only for historical --compare-only',result.stderr)
         self.assertFalse(output.exists())
 
+    def test_explicit_wasm_directory_checks_the_selected_delivery(self):
+        delivery=self.root/'selected-runtime'
+        shutil.copytree(ROOT/'artifacts/wasm32',delivery)
+        destination=self.root/'selected-verification'
+        result=self.invoke('--wasm-dir',str(delivery),'--verification-output',str(destination),
+                           '--reference',str(ROOT/'research/references/options-handwriting-2026-11-03.json'))
+        self.assertEqual(result.returncode,0,result.stderr)
+        with (delivery/'worker.mjs').open('ab') as stream:stream.write(b'\n// tampered runtime\n')
+        rejected=self.root/'tampered-verification'
+        result=self.invoke('--wasm-dir',str(delivery),'--verification-output',str(rejected),
+                           '--reference',str(ROOT/'research/references/options-handwriting-2026-11-03.json'))
+        self.assertNotEqual(result.returncode,0)
+        self.assertIn('Wasm delivery asset changed: worker.mjs',result.stderr)
+        self.assertFalse(rejected.exists())
+        self.assertEqual(tree(self.record),self.before)
+
 
 if __name__=='__main__':unittest.main()

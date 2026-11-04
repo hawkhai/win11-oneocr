@@ -2,13 +2,15 @@
 
 新接手先看 [一页入口](docs/start-here.md)：当前结论、运行、编译、复核和当前离线包选择。第二轮交付工具完整测试 70/70、已有全量结果复核 538/538，见 [补强报告](reports/cross-delivery-v2-2026-11-04/README.md)。下文旧测试计数与历史证据仍保留。
 
+2026-11-04 用户后续要求的 [Wasm 网页能力对齐](reports/wasm-web-alignment-2026-11-04/README.md)已完成：网页支持行预算及缩放参数，Chrome 当前 **269/269** 新推理及独立复核通过（266 识别、3 预期拒绝），网页/Worker/Node API 功能检查通过，Python 当前完整套件 **71/71**。未修改模型、原生实现或阈值，原有运行资产不变，Wasm 仍不作为 C++ 收手门槛。
+
 **验收铁律（2026-11-03 用户确认）：C++ 原生版本必须按原 DLL 严格对齐；沿用坐标 1px、角度 0.1°、置信度 1e-3 的阈值，其余识别字段按既有契约一致。JS/WebAssembly 不要求绝对一致，其差异不阻塞 C++ 验收。** 详见 [AGENTS.md](AGENTS.md) 和[当前验收标准](docs/acceptance-standard.md)。下述五环境结果为历史实测记录。
 
 **收手范围（2026-11-04 用户确认）：Windows x64 / Linux x64 C++ 当前全部登记项严格通过后，本地提交并刷新离线包即结束本轮，不继续自动扩大输入、参数或平台。** 当前两端全量新推理与独立复核均为 538/538，收尾依据见 [Windows/Linux 验收报告](reports/windows-linux-closeout-2026-11-04/README.md)。其他平台的未验证状态继续保留，不阻塞本轮完成。
 
 交付和换机接手先读[最终交接文档（2026-11-04 更新）](docs/handoff-2026-11-03.md)：当前收手状态、最新证据、资产/包身份、同事自备依赖的编译入口、历史快照与后续边界均已整理。本轮已结束，未经用户另行要求不自动恢复开发。
 
-最新[同事自备依赖的干净源码构建](reports/colleague-build-2026-11-04/README.md)已验证显式 SDK/源码/数据路径；[此前联合参数扩展](reports/parameter-expansion-2026-11-04/README.md)保留旧范围并增加 48 组旋转手写、多语种及版式参数。Windows/Linux 原生全新严格回归各 **269/269**，合计 **538/538**（532 项识别、6 项预期拒绝），保存结果独立复核亦为 538/538；CTest 各 **26/26**，Python 完整套件 **67/67**。生产算法、模型和阈值未改，本轮未执行新的 Wasm 推理。此前 [Photos 交集测试 P2 修复](reports/photos-intersection-p2-2026-11-03/README.md)的 13 个负例和 3 个边界正例继续保留。
+最新[同事自备依赖的干净源码构建](reports/colleague-build-2026-11-04/README.md)已验证显式 SDK/源码/数据路径；[此前联合参数扩展](reports/parameter-expansion-2026-11-04/README.md)保留旧范围并增加 48 组旋转手写、多语种及版式参数。Windows/Linux 原生全新严格回归各 **269/269**，合计 **538/538**（532 项识别、6 项预期拒绝），保存结果独立复核亦为 538/538；CTest 各 **26/26**，该次 Python 完整套件 **67/67**。生产算法、模型和阈值未改，该次原生收尾未执行新的 Wasm 推理。此前 [Photos 交集测试 P2 修复](reports/photos-intersection-p2-2026-11-03/README.md)的 13 个负例和 3 个边界正例继续保留。
 
 严格比较器的换机字节身份已通过 `.gitattributes` 固定，避免 Git CRLF 转换导致摘要漂移，见[补充校验](reports/photos-intersection-checkout-2026-11-03/README.md)。该修补不改比较器或阈值，历史封存报告保持原样。
 
@@ -60,7 +62,7 @@ implementation documented below remains available as the optional legacy
 backend. The plugin now defaults to the portable backend; use `backend: legacy`
 explicitly for the old Windows executable.
 
-JavaScript/浏览器接入使用同一引擎的 [WebAssembly 版本](docs/wasm.md)，或运行 `node web/cli.mjs ocr-book.jpg --text`。历史一轮 Windows/Linux Node 24.14.0 和 Chrome 156 各通过当时全部 **221 项**原阈值回归；本轮新增 48 组的 Wasm 输出未验证，见[实测报告](reports/options-handwriting-2026-11-03/README.md)。插件配置 `backend: wasm` 可选择该后端；模型仍使用根目录 `models/`。
+JavaScript/浏览器接入使用同一引擎的 [WebAssembly 版本](docs/wasm.md)，或运行 `node web/cli.mjs ocr-book.jpg --text`。Chrome 156 已通过当前全部 **269 项**原阈值诊断；Windows/Linux Node 24.14.0 的完整集仍为历史 **221 项**，见[历史实测报告](reports/options-handwriting-2026-11-03/README.md)。插件配置 `backend: wasm` 可选择该后端；模型仍使用根目录 `models/`。
 
 [Review 修复后的增强回归](reports/review-fixes-2026-11-03/README.md)已用全新推理验证 Windows/Linux 原生、Windows/Linux Node 24 和 Chrome，五端各 **138/138**。新比较器额外检查计数、索引及字段类型；模型准备不会默认覆盖回旧版，自定义运行模块/Worker URL 的接入错误已修复。模型与数值阈值保持不变，未验证平台继续标注。
 

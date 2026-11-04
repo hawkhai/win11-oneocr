@@ -7,6 +7,7 @@
 | 直接运行 | Windows `ocr.cmd ocr-book.jpg --text`；Linux `./ocr.sh ./ocr-book.jpg --text`，现有 Linux 包要求 glibc ≥2.43 |
 | 找到当前离线包 | `artifacts/OFFLINE_PACKAGE.json`，其中 files 和 delivery_status.path 均相对 artifacts；directory 指向本次独立发行目录 |
 | 自己编译 | [colleague-build.md](colleague-build.md)，依赖自行准备，普通 SDK 模式无需研究 Python/WSL |
+| 使用 Wasm 网页 | [接入与构建](wasm.md)、[网页能力对齐报告](../reports/wasm-web-alignment-2026-11-04/README.md)：Chrome 当前 269 项通过，其他浏览器状态单独保留 |
 | 复核已有结果 | [delivery-status.md](delivery-status.md)，保存结果复核不执行新推理 |
 | 查看实现、历史与排错 | [详细交接](handoff-2026-11-03.md)、[错误语义](error-codes.md) |
 

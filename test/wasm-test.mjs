@@ -4,11 +4,13 @@ import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { createOneOcr, OneOcrError, modelAssetPaths } from '../web/oneocr.mjs';
 import { createOneOcrWorker } from '../web/worker-client.mjs';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+import { resolve, relative as relativePath } from 'node:path';
 import { apply } from '../src/index.js';
 
 const root = new URL('../', import.meta.url);
-const configuration = { modelBaseUrl: new URL('models/', root), runtimeUrl: new URL('artifacts/wasm32/oneocr-core.mjs', root) };
+const delivery = process.env.ONEOCR_WASM_DIR ? pathToFileURL(resolve(process.env.ONEOCR_WASM_DIR) + '/') : new URL('artifacts/wasm32/', root);
+const configuration = { modelBaseUrl: new URL('models/', root), runtimeUrl: new URL('oneocr-core.mjs', delivery) };
 const image = new URL('research/case/corpus/latin-36.png', root);
 const input = new Uint8Array(await readFile(image));
 const unchanged = createHash('sha256').update(input).digest('hex');
@@ -40,7 +42,7 @@ try {
   assert.deepEqual(blank.image, { width, height, step: stride });
 } finally { engine.close(); engine.close(); }
 assert.throws(() => engine.recognize(input), e => e.code === -12);
-const relative = await createOneOcr({ ...configuration, runtimeUrl: '../artifacts/wasm32/oneocr-core.mjs', wasmUrl: './oneocr-core.wasm' });
+const relative = await createOneOcr({ ...configuration, runtimeUrl: relativePath(fileURLToPath(new URL('../web/', import.meta.url)), fileURLToPath(configuration.runtimeUrl)).replaceAll('\\', '/'), wasmUrl: './oneocr-core.wasm' });
 try { assert.deepEqual(relative.recognize(input, { fileName: first.file }), first); }
 finally { relative.close(); }
 const worker = await createOneOcrWorker({ ...configuration, workerUrl: new URL('../web/worker.mjs', import.meta.url).href, timeoutMs: 120000 });
@@ -54,7 +56,7 @@ controller.abort();
 await assert.rejects(aborting, /aborted/);
 await assert.rejects(createOneOcrWorker({ ...configuration, timeoutMs: 1 }), /timed out/);
 let plugin;
-apply({ tools: { register(value) { plugin = value; } } }, { backend: 'wasm', timeoutMs: 120000 });
+apply({ tools: { register(value) { plugin = value; } } }, { backend: 'wasm', ocrBin: fileURLToPath(new URL('cli.mjs', delivery)), timeoutMs: 120000 });
 const pluginResult = await plugin.execute({ image_path: fileURLToPath(image) }, {});
 const actualPlugin = JSON.parse(pluginResult.result);
 assert.deepEqual(actualPlugin.lines, first.lines);

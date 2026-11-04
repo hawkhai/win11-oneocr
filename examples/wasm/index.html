@@ -7,10 +7,18 @@
   body{font:16px/1.6 system-ui,sans-serif;max-width:960px;margin:40px auto;padding:0 20px;color:#192936;background:#f6f8fa}
   h1{font-size:26px}button,input{font:inherit}button{padding:6px 18px;margin:8px 8px 8px 0;cursor:pointer}button:disabled{cursor:default}
   #preview{display:block;max-width:100%;max-height:400px;margin:20px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #d5dfe6;border-radius:8px;padding:18px}summary{cursor:pointer}
+  fieldset{border:1px solid #d5dfe6;border-radius:8px;margin:16px 0}label{display:inline-block;margin:4px 16px 4px 0}input[type=number]{width:100px}small{display:block;color:#42586a}
 </style>
 <h1>OneOCR · WebAssembly</h1>
 <p>在浏览器本地识别。首次加载约 125 MiB 模型；识别期间可以取消。图像不会上传到 OCR 服务。</p>
 <input id="image" type="file" accept="image/*" aria-label="选择待识别图片">
+<fieldset id="options">
+  <legend>识别参数</legend>
+  <label>行预算 <input id="max-lines" type="number" min="0" max="1000" step="1" value="0" required></label>
+  <label>缩放宽度 <input id="resize-width" type="number" min="0" max="8192" step="1" value="0" required></label>
+  <label>缩放高度 <input id="resize-height" type="number" min="0" max="8192" step="1" value="0" required></label>
+  <small>行预算 0 使用默认 1000 行；宽高同时为 0 使用默认 1152 × 768。行预算是软批次预算，返回行数可能超过设定值。非默认宽高须同时为 32 至 8192；超出 1152 × 768 属于引擎扩展范围。</small>
+</fieldset>
 <div><button id="run" disabled>识别</button><button id="cancel" disabled>取消</button></div>
 <p id="status" role="status">请选择图片。</p>
 <img id="preview" hidden alt="待识别图片预览">
@@ -21,6 +29,8 @@ import { createOneOcrWorker } from '../../artifacts/wasm32/worker-client.mjs';
 const image = document.querySelector('#image'), run = document.querySelector('#run');
 const cancel = document.querySelector('#cancel'), status = document.querySelector('#status');
 const text = document.querySelector('#text'), json = document.querySelector('#json'), preview = document.querySelector('#preview');
+const options = document.querySelector('#options');
+const maxLines = document.querySelector('#max-lines'), resizeWidth = document.querySelector('#resize-width'), resizeHeight = document.querySelector('#resize-height');
 let engine, controller, previewUrl, busy = false;
 image.onchange = () => {
   if (previewUrl) URL.revokeObjectURL(previewUrl);
@@ -33,7 +43,13 @@ cancel.onclick = () => controller?.abort();
 run.onclick = async () => {
   const file = image.files[0];
   if (!file || busy) return;
-  busy = true; run.disabled = true; image.disabled = true; cancel.disabled = false;
+  for (const input of [maxLines, resizeWidth, resizeHeight]) {
+    const mixedZero = (resizeWidth.valueAsNumber === 0) !== (resizeHeight.valueAsNumber === 0);
+    input.setCustomValidity(input !== maxLines && (mixedZero || (input.valueAsNumber > 0 && input.valueAsNumber < 32)) ? '宽高须同时为 0，或同时为 32 至 8192 的整数。' : '');
+    if (!input.reportValidity()) return;
+  }
+  const recognitionOptions = { fileName: file.name, maxLines: maxLines.valueAsNumber, resizeWidth: resizeWidth.valueAsNumber, resizeHeight: resizeHeight.valueAsNumber };
+  busy = true; run.disabled = true; image.disabled = true; options.disabled = true; cancel.disabled = false;
   text.textContent = ''; json.textContent = '';
   const began = performance.now();
   try {
@@ -43,7 +59,7 @@ run.onclick = async () => {
       engine = await createOneOcrWorker({ modelBaseUrl: new URL('../../models/', import.meta.url), signal: controller.signal, timeoutMs: 600000 });
     }
     status.textContent = '正在识别…';
-    const result = await engine.recognize(await file.arrayBuffer(), { fileName: file.name });
+    const result = await engine.recognize(await file.arrayBuffer(), recognitionOptions);
     text.textContent = result.lines.map(line => line.text).join('\n');
     json.textContent = JSON.stringify(result, null, 2);
     status.textContent = `完成：${result.line_count} 行，用时 ${((performance.now()-began)/1000).toFixed(1)} 秒。`;
@@ -51,7 +67,7 @@ run.onclick = async () => {
     engine?.terminate(); engine = undefined;
     status.textContent = controller?.signal.aborted ? '已取消。' : `失败${typeof error.code === 'number' ? ` (${error.code})` : ''}：${error.message}`;
   } finally {
-    busy = false; run.disabled = !image.files[0]; image.disabled = false; cancel.disabled = true;
+    busy = false; run.disabled = !image.files[0]; image.disabled = false; options.disabled = false; cancel.disabled = true;
   }
 };
 addEventListener('pagehide', () => { engine?.terminate(); if (previewUrl) URL.revokeObjectURL(previewUrl); });
