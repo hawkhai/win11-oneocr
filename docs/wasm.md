@@ -136,7 +136,7 @@ python3 scripts/build-wasm.py --jobs 6
 
 ```powershell
 node test/wasm-test.mjs
-.research-python/python.exe -X utf8 scripts/run-wasm-parity.py --output work/wasm-parity-fresh
+python -X utf8 scripts/run-wasm-parity.py --output work/wasm-parity-fresh
 ```
 
 默认以 4 个独立实例运行当前 126 张图片、固定 27 项、书页及 115 个参数组合，共 269 项（266 项识别及三个预期拒绝）；每项保留原始 JSON/错误、摘要、测量及严格比较报告。内存较少时可用 `--jobs 1`。输出目录须为空，避免残留结果掩盖失败。`--only book` 等选项只做诊断，不标记全量通过。完整执行范围不等于 Wasm 必须严格一致；任何差异仍如实记录。
@@ -165,7 +165,9 @@ python scripts/run-wasm-parity.py --compare-only --output reports/curve-boundari
 
 ```powershell
 npm install --prefix work/wasm-browser --no-package-lock --no-save playwright-core@1.55.0
-.research-python/python.exe -X utf8 scripts/run-wasm-parity.py --browser "C:/Program Files/Google/Chrome/Application/chrome.exe" --output work/wasm-browser-fresh
+$chrome = 'C:/Program Files/Google/Chrome/Application/chrome.exe'
+python -X utf8 scripts/run-wasm-parity.py --browser $chrome --output work/wasm-browser-fresh
+node test/wasm-demo-test.mjs $chrome work/wasm-ui-fresh
 ```
 
 对于忽略目录的新构建，在上述命令加 `--wasm-dir work/wasm-local/runtime`；保存结果复核也须选择同一运行资产。页面交互及 Worker 功能测试使用 `node test/wasm-demo-test.mjs <chromium-executable> <fresh-output> [playwright-module] [wasm-directory]`，覆盖参数、取消后重建、错误后恢复、BGRA 步长、超时、关闭及加载失败。直接 API/插件集成测试可通过环境变量 `ONEOCR_WASM_DIR` 选择同一构建。
@@ -173,3 +175,14 @@ npm install --prefix work/wasm-browser --no-package-lock --no-save playwright-co
 该流程启动仅监听 `127.0.0.1` 的临时静态服务器，并阻止测试上下文向其他 origin 请求；图像和模型字节保持原样。在不同浏览器、CPU 或 JS 引擎版本上，需要分别执行回归才能报告运行及一致性通过。
 
 曲线备用求解、裁剪像素与词框逆映射、长图 AREA 检测输入在 Wasm 构建阶段使用 DLL 预言机逐元素检验；执行未到达 C++ 成功标记时构建失败。详情见[本轮报告](../reports/curve-boundaries-2026-11-03/README.md)。
+
+## 2026-11-14 网页修复后的实测记录
+
+Windows x64 上使用修复提交 `34e92aa`、Python 3.13.5、Node 22.17.0 和 Playwright Core 1.55.0。默认 Node 回归和无头 Chrome 157.0.8103.78 全量回归各通过 **269/269 项新推理**。每端 266 项识别输出通过原 DLL 对照，书页均为 106 行。3 项预期拒绝逐项校验错误码和消息，其中两项尺寸错误 `-18`，一项通道错误 `-15`。
+
+- 换图问题要在选中新图后、点击识别前检查。页面测试先完成一张图，再换图并立即断言旧文字和 JSON 为空、状态提示可以开始识别。清空文件还要检查预览隐藏、识别按钮禁用。全量浏览器回归通过 Worker 跑登记输入，页面交互由 `test/wasm-demo-test.mjs` 覆盖。
+- 默认命令遇到 `Wasm build is stale for source` 时，先区分交付清单的旧指纹与实际源码改动。当前默认目录通过报告索引验证封存重编清单，并核对运行文件与模型身份。新运行在 `summary.json` 记录 `wasm_source_provenance` 和回归脚本摘要。若运行时源码确有变化，重新构建到独立目录，再用 `--wasm-dir` 指定。
+- 本次四路浏览器测试用 `--schedule-from work/web-fix-2026-11-14/default-full/summary.json` 按同一范围的 Node 全量耗时均衡分组。长图排在前面，Chrome 最长单项约 431 秒，前几分钟可能只有少量结果落盘。可查看 `shards/<编号>/actual/measurements.json` 的用例进度，并在结束时核对 `summary.json` 的 `fresh_inference`、`full_regression`、`passed_cases` 和浏览器版本。
+- 本次页面冒烟与 Node 四路全量同时启动时，页面测试曾超时。等内存有余量后重跑通过。资源紧张时可错开两个测试，或用 `--jobs 1` 降低全量并发。默认浏览器单请求预算为 30 分钟，页面冒烟有独立的等待预算。
+
+本机 Chrome 全量目录为 `work/chrome-full-2026-11-14/`，其中 `summary.json` 的 SHA-256 为 `2e9018cfb855f5549ca00b0139eb13f9796372a91df643b2fab4f64c5a93da02`。`summary.json`、`execution.json`、`actual/` 和 `comparisons/` 可用于追溯逐项结果。页面复测记录保存在 `work/web-fix-2026-11-14/chrome-early/summary.json`。这些路径是本机测试产物位置。

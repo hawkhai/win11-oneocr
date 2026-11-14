@@ -2,7 +2,9 @@
 
 新接手先看 [一页入口](docs/start-here.md)：当前结论、运行、编译、复核和当前离线包选择。第二轮交付工具完整测试 70/70、已有全量结果复核 538/538，见 [补强报告](reports/cross-delivery-v2-2026-11-04/README.md)。下文旧测试计数与历史证据仍保留。
 
-2026-11-04 用户后续要求的 [Wasm 网页能力对齐](reports/wasm-web-alignment-2026-11-04/README.md)已完成：网页支持行预算及缩放参数，Chrome 当前 **269/269** 新推理及独立复核通过（266 识别、3 预期拒绝），网页/Worker/Node API 功能检查通过，Python 当前完整套件 **71/71**。未修改模型、原生实现或阈值，原有运行资产不变，Wasm 仍不作为 C++ 收手门槛。
+2026-11-14 修复了网页换图后残留的识别结果和默认 Wasm 回归入口。Windows 上的无头 Chrome 157 与 Node 22 各通过 269 项全量新推理，其中各有 266 项识别输出和 3 项预期拒绝。复现命令和排查经验见 [网页修复后的实测记录](docs/wasm.md#2026-11-14-网页修复后的实测记录)。
+
+2026-11-04 的 [Wasm 网页能力对齐](reports/wasm-web-alignment-2026-11-04/README.md)补齐了行预算和缩放参数。该轮 Chrome 156 新推理及保存结果独立复核各通过 **269/269**（266 项识别、3 项预期拒绝），网页、Worker 和 Node API 功能检查通过，Python 套件通过 **71/71**。
 
 **验收铁律（2026-11-03 用户确认）：C++ 原生版本必须按原 DLL 严格对齐；沿用坐标 1px、角度 0.1°、置信度 1e-3 的阈值，其余识别字段按既有契约一致。JS/WebAssembly 不要求绝对一致，其差异不阻塞 C++ 验收。** 详见 [AGENTS.md](AGENTS.md) 和[当前验收标准](docs/acceptance-standard.md)。下述五环境结果为历史实测记录。
 
@@ -32,7 +34,7 @@
 ./ocr.sh ./ocr-book.jpg --text
 ```
 
-Linux 现有预编译包要求 **glibc 2.43+**（在 Ubuntu 26.04 x64 验证），不满足时需在目标系统从源码构建。macOS、Android、ARM64 仍需目标平台构建验证。模型与运行库均使用普通 Git 文件，未使用 Git LFS；首次克隆会下载较多二进制资源。完整资产范围、来源声明和标准库校验命令见 [交付说明](docs/checkout-ready.md)。本次仅本地 commit，未 push 或发布模型。
+Linux 现有预编译包要求 **glibc 2.43+**（在 Ubuntu 26.04 x64 验证），不满足时需在目标系统从源码构建。macOS、Android、ARM64 仍需目标平台构建验证。模型与运行库均使用普通 Git 文件，未使用 Git LFS；首次克隆会下载较多二进制资源。完整资产范围、来源声明和标准库校验命令见 [交付说明](docs/checkout-ready.md)。
 
 上一轮[曲线与极长行补齐回归](reports/curve-boundaries-2026-11-03/README.md)曾用全新推理完成五端各 **142/142**，共 **710/710**（695 项识别、15 项预期拒绝）。模型、原始图片和严格比较阈值均未改变；源码、四张新增样本、内部预言机、运行文件与报告均已提交。
 
@@ -62,7 +64,7 @@ implementation documented below remains available as the optional legacy
 backend. The plugin now defaults to the portable backend; use `backend: legacy`
 explicitly for the old Windows executable.
 
-JavaScript/浏览器接入使用同一引擎的 [WebAssembly 版本](docs/wasm.md)，或运行 `node web/cli.mjs ocr-book.jpg --text`。Chrome 156 已通过当前全部 **269 项**原阈值诊断；Windows/Linux Node 24.14.0 的完整集仍为历史 **221 项**，见[历史实测报告](reports/options-handwriting-2026-11-03/README.md)。插件配置 `backend: wasm` 可选择该后端；模型仍使用根目录 `models/`。
+JavaScript 和浏览器接入可使用 `backend: wasm` 或直接运行 `node web/cli.mjs ocr-book.jpg --text`，模型位于根目录 `models/`。Windows 和 Linux 上的 Node 24.14.0 曾分别通过当时的 **221 项**。 [WebAssembly 接入说明](docs/wasm.md) · [历史实测报告](reports/options-handwriting-2026-11-03/README.md)
 
 [Review 修复后的增强回归](reports/review-fixes-2026-11-03/README.md)已用全新推理验证 Windows/Linux 原生、Windows/Linux Node 24 和 Chrome，五端各 **138/138**。新比较器额外检查计数、索引及字段类型；模型准备不会默认覆盖回旧版，自定义运行模块/Worker URL 的接入错误已修复。模型与数值阈值保持不变，未验证平台继续标注。
 
