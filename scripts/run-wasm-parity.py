@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'scripts'))
 from regression_reference import active_reference
 from regression_inputs import current_cases
-from verification_state import checkpoint, destination_for_verification, load_execution, verify_execution
+from verification_state import check_report_index, checkpoint, destination_for_verification, load_execution, runtime_assets, verify_execution
 from regression_options import option_signature,requested_options
 
 
@@ -33,10 +33,45 @@ def write(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2)+'\n', encoding='utf8')
 
 
+PACKAGED_WASM = ROOT/'artifacts/wasm32'
+PACKAGED_WASM_REBUILD = ROOT/'reports/wasm-web-alignment-2026-11-04/evidence/rebuilt-BUILD.json'
+RUNNER_SOURCE = 'scripts/run-wasm-parity.py'
+
+
+def stale_build_source(build):
+    for name, expected in build['source_files'].items():
+        # The runner exercises the installed runtime and is not compiled or installed into it.
+        if name == RUNNER_SOURCE:
+            continue
+        source = ROOT/name
+        if not source.is_file() or hashlib.sha256(source.read_bytes().replace(b'\r\n', b'\n')).hexdigest() != expected:
+            return name
+    return None
+
+
+def verify_build_sources(directory, build):
+    stale = stale_build_source(build)
+    if stale and directory == PACKAGED_WASM.resolve():
+        # The packaged runtime bytes were reproduced by the sealed November 4 build.
+        # Keep both build records intact and use the later source attestation only for those bytes.
+        proof = PACKAGED_WASM_REBUILD
+        check_report_index(proof.parent, [proof.name], proof.name, required=True)
+        rebuilt = read(proof)
+        model_keys = ('model_source_sha256', 'model_manifest_sha256')
+        if runtime_assets(build) != runtime_assets(rebuilt) or any(build[key] != rebuilt[key] for key in model_keys):
+            raise ValueError('Packaged Wasm runtime or model identity differs from the sealed rebuild')
+        stale = stale_build_source(rebuilt)
+        if not stale:
+            return proof.relative_to(ROOT).as_posix()
+    if stale:
+        raise ValueError('Wasm build is stale for source: '+stale)
+    return str(directory/'BUILD.json')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--node')
-    parser.add_argument('--wasm-dir', type=Path, default=ROOT/'artifacts/wasm32', help='Actual built delivery directory (including BUILD.json); keeps rebuilt binaries out of Git')
+    parser.add_argument('--wasm-dir', type=Path, default=PACKAGED_WASM, help='Actual built delivery directory (including BUILD.json); keeps rebuilt binaries out of Git')
     parser.add_argument('--jobs', type=int, help='Independent inference processes (default: 4)')
     parser.add_argument('--schedule-from', type=Path, help='Use previous same-input timings only to balance process workloads')
     parser.add_argument('--output', type=Path, default=ROOT/'work/wasm-parity')
@@ -69,9 +104,7 @@ def main():
         if sha(wasm_directory/name) != expected:
             raise ValueError('Wasm delivery asset changed: '+name)
     if not args.compare_only:
-        for name, expected in build['source_files'].items():
-            if hashlib.sha256((ROOT/name).read_bytes().replace(b'\r\n', b'\n')).hexdigest() != expected:
-                raise ValueError('Wasm build is stale for source: '+name)
+        source_provenance = verify_build_sources(wasm_directory, build)
     reference = active_reference(args.reference)
     cases = current_cases(ROOT,reference)
     total = len(cases)
@@ -185,7 +218,9 @@ def main():
                         'current_delivery_build':build,'runtime_identity_checked':True})
         write(output/'verification.json',summary)
     else:
-        summary.update({'mode':'fresh-inference','fresh_inference':True})
+        summary.update({'mode':'fresh-inference','fresh_inference':True,
+                        'wasm_source_provenance':source_provenance,
+                        'runner_source_sha256':sha(ROOT/RUNNER_SOURCE)})
         write(output/'summary.json', summary)
         write(output/'execution.json',checkpoint(output,build,cases,scheduling,args.browser_timeout_ms if args.browser else None))
     print('Passed', summary['passed_cases'], '/', len(cases), '; full regression:', summary['full_regression'])

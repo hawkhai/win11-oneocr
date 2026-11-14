@@ -58,6 +58,9 @@ try {
   assert.equal(await page.locator('#resize-width').evaluate(input => input.validity.valid), false);
   await page.locator('#resize-width').fill('0');
   await page.locator('#image').setInputFiles(resolve(root, 'samples/options-handwriting/twelve-printed-lines.png'));
+  assert.equal(await page.locator('#text').textContent(), '');
+  assert.equal(await page.locator('#json').textContent(), '');
+  assert.equal(await page.locator('#status').textContent(), '图片已选择，请点击识别。');
   await page.locator('#run').click();
   await page.waitForFunction(() => document.querySelector('#status').textContent.startsWith('完成：'), undefined, { timeout: 120000 });
   const softBudget = JSON.parse(await page.locator('#json').textContent());
@@ -120,6 +123,12 @@ try {
   assert.match(contracts.closed.message, /closed/);
   await writeFile(resolve(output, 'worker-contracts.json'), JSON.stringify(contracts, null, 2) + '\n');
   await page.screenshot({ path: resolve(output, 'page.png'), fullPage: true });
-  await writeFile(resolve(output, 'summary.json'), JSON.stringify({ passed: true, browser: browser.version(), cancellation: 'passed during initialization and reused inference', reloadAfterCancel: 'passed', errorRecovery: 'passed', options: 'soft budget and resize passed; invalid values rejected', workerContracts: 'BGRA padding, queue, close, timeout, checksum and HTTP failure passed', lineCount: result.line_count }, null, 2) + '\n');
+  await page.locator('#image').setInputFiles([]);
+  assert.equal(await page.locator('#preview').isHidden(), true);
+  assert.equal(await page.locator('#run').isDisabled(), true);
+  assert.equal(await page.locator('#text').textContent(), '');
+  assert.equal(await page.locator('#json').textContent(), '');
+  assert.equal(await page.locator('#status').textContent(), '请选择图片。');
+  await writeFile(resolve(output, 'summary.json'), JSON.stringify({ passed: true, browser: browser.version(), imageSelection: 'changing or clearing the image resets text, JSON and status', cancellation: 'passed during initialization and reused inference', reloadAfterCancel: 'passed', errorRecovery: 'passed', options: 'soft budget and resize passed; invalid values rejected', workerContracts: 'BGRA padding, queue, close, timeout, checksum and HTTP failure passed', lineCount: result.line_count }, null, 2) + '\n');
   console.log('Browser UI and Worker contracts: PASS');
 } finally { await browser?.close(); await new Promise(done => server.close(done)); }

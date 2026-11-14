@@ -7,6 +7,7 @@
   body{font:16px/1.6 system-ui,sans-serif;max-width:960px;margin:40px auto;padding:0 20px;color:#192936;background:#f6f8fa}
   h1{font-size:26px}button,input{font:inherit}button{padding:6px 18px;margin:8px 8px 8px 0;cursor:pointer}button:disabled{cursor:default}
   #preview{display:block;max-width:100%;max-height:400px;margin:20px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #d5dfe6;border-radius:8px;padding:18px}summary{cursor:pointer}
+  #preview[hidden]{display:none}
   fieldset{border:1px solid #d5dfe6;border-radius:8px;margin:16px 0}label{display:inline-block;margin:4px 16px 4px 0}input[type=number]{width:100px}small{display:block;color:#42586a}
 </style>
 <h1>OneOCR · WebAssembly</h1>
@@ -35,8 +36,13 @@ let engine, controller, previewUrl, busy = false;
 image.onchange = () => {
   if (previewUrl) URL.revokeObjectURL(previewUrl);
   const file = image.files[0];
+  previewUrl = file ? URL.createObjectURL(file) : undefined;
   preview.hidden = !file;
-  if (file) preview.src = previewUrl = URL.createObjectURL(file);
+  if (previewUrl) preview.src = previewUrl;
+  else preview.removeAttribute('src');
+  text.textContent = '';
+  json.textContent = '';
+  status.textContent = file ? '图片已选择，请点击识别。' : '请选择图片。';
   run.disabled = busy || !file;
 };
 cancel.onclick = () => controller?.abort();

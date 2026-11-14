@@ -18,7 +18,7 @@
 
 可直接打开仓库内的浏览器示例：在仓库根目录执行 `python -m http.server 8000 --bind 127.0.0.1`，访问 `http://127.0.0.1:8000/examples/wasm/`。Python 仅作为示例的静态文件服务器，识别在浏览器 Worker 中执行；也可换用任意静态服务器。
 
-示例网页提供行预算和缩放宽高，与 JS API 的 `maxLines`、`resizeWidth`、`resizeHeight` 对应。行预算 0 表示 1000；宽高同时为 0 表示 1152×768，否则须同时在 32..8192。网页直接传递原文件字节，完整 JSON 保留行词坐标、置信度、方向和手写类型；取消会销毁 Worker，下次识别自动重新创建。
+示例网页提供行预算和缩放宽高，与 JS API 的 `maxLines`、`resizeWidth`、`resizeHeight` 对应。行预算 0 表示 1000；宽高同时为 0 表示 1152×768，否则须同时在 32..8192。网页直接传递原文件字节，完整 JSON 保留行词坐标、置信度、方向和手写类型。换图时清空上一张图的文字和 JSON。取消会销毁 Worker，下次识别自动重新创建。
 
 推荐 Worker，避免同步推理阻塞页面：
 
@@ -125,6 +125,8 @@ python3 scripts/build-wasm.py --jobs 6
 输出在 `artifacts/wasm32/`：`oneocr-core.mjs`、`oneocr-core.wasm`、JS/Worker 封装、声明及带摘要的 `BUILD.json`。模型不嵌入 Wasm，也不从其他服务下载；`models/` 与桌面平台共用。Emscripten CMake preset `wasm32` 可用于已准备静态 ORT SDK 的独立构建。
 
 按当前交付约定，新编译二进制保留在忽略目录，使用 `--output work/wasm-local/runtime` 指定输出；不覆盖已封存运行资产。回归可用 `--wasm-dir work/wasm-local/runtime` 选择这份真实构建，仍逐项核验 BUILD 文件摘要和源码指纹。默认目录仍为 `artifacts/wasm32`，旧 BUILD 不得手工刷新为当前源码。
+
+默认目录的 `BUILD.json` 保留交付时的指纹。若源码指纹过期，回归入口会核对 [2026-11-04 封存重编清单](../reports/wasm-web-alignment-2026-11-04/evidence/rebuilt-BUILD.json) 的报告索引，并要求两份清单的运行文件与模型身份一致，再按重编清单校验源码。回归脚本本身独立于运行时构建，其当前摘要记录在新推理的 `summary.json` 中。
 
 当前配置为单线程、SIMD128、无 relaxed SIMD，保留 C++ 异常，禁用隐式浮点收缩；不依赖 SharedArrayBuffer 或 COOP/COEP。浏览器/Node 需要支持 WebAssembly SIMD 和 BigInt。线性内存可增长至 4 GiB；这是地址空间上限，不是每台设备都能分配的内存保证。移动设备及未实测浏览器不得视为已验证。
 
